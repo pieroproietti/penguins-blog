@@ -6,15 +6,15 @@
 title: penguin's eggs
 subtitle: don't remaster it, let him to reproduce!
 description: On the road of Remastersys, Systemback and father Knoppix!
-keywords:
+keywords: remastersys, systemback, knoppix, 
 author: Piero Proietti
 language: en
 timezone: 'Europe/Rome'
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://127.0.0.1/blog
-root: /blog/
+url: http://127.0.0.1/
+root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 pretty_urls:
@@ -63,8 +63,8 @@ index_generator:
 
 # Category & Tag
 default_category: uncategorized
-category_map:
-tag_map:
+category_map: category
+tag_map: tag
 
 # Metadata elements
 ## https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta
@@ -107,6 +107,16 @@ deploy:
 menu:
   Home: /
   Archives: /archives
+  About me: /about/me
+  github: https://github.com/pieroproietti/penguins-eggs
+  sourceforge: https://sourceforge.net/projects/penguins-eggs/
+  npm: https://www.npmjs.com/package/penguins-eggs
+  book: https://book.penguins-eggs.net/
 
 fb_admins: 
 fb_app_id:
+
+  # 
+  ## siteman
+  sitemap:
+    path: sitemap.xml
