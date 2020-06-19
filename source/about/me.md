@@ -1,6 +1,8 @@
 ---
 title: About me
 permalink: About me
+category: aboutme
+tag: io
 date: 2020-06-19 14:24:56
 ---
 Hi, my name is Piero Proietti,
