@@ -3,18 +3,18 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: penguins-eggs.net
-subtitle: 'let him to reproduce'
-description: 'On the road of Remastersys, Systemback and father Knoppix!'
+title: penguin's eggs
+subtitle: don't remaster it, let him to reproduce!
+description: On the road of Remastersys, Systemback and father Knoppix!
 keywords:
 author: Piero Proietti
-language: it
+language: en
 timezone: 'Europe/Rome'
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: hptt://127.0.0.1
-root: /
+url: http://127.0.0.1/blog
+root: /blog/
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 pretty_urls:
@@ -100,11 +100,13 @@ theme: landscape
 deploy:
   type: ''
 
-# Override theme
+
+# Override 
+## theme
+#
 menu:
   Home: /
-  About me: /about
   Archives: /archives
 
-fb_admins: https://www.facebook.com/thewind61
+fb_admins: 
 fb_app_id:
