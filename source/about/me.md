@@ -14,3 +14,18 @@ I kindly hate bash, it is wonderfull but it is quite difficult to mantain, so �
 Well, this is the result: a reasonable pratical way to let you customize your versione of Linux on the road of Remastersys, Systemback and father Knoppix.
 
 ![artisan](./images/artisan-little.jpg)
+
+# That's all Folks!
+No need other configurations, penguins-eggs are battery included or better, as in the real, live is inside! :-D
+
+## More informations
+* site: [penguins-eggs.net](https://penguins-eggs.net)
+* facebook author: [Piero Proietti](https://www.facebook.com/thewind61)
+* facebook group:  [Penguin's Eggs](https://www.facebook.com/groups/128861437762355/)
+* facebook page:  [Penguin's Eggs](https://www.facebook.com/penguinseggs)
+* mail: piero.proietti@gmail.com
+
+
+## Copyright and licenses
+Copyright (c) 2017, 2020 [Piero Proietti](https://github.com/pieroproietti), dual licensed under the MIT or GPL Version 2 licenses.
+

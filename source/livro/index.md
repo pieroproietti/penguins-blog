@@ -407,4 +407,3 @@ Este é um vídeo antigo, eu gostaria de fazer outros, talvez em breve.
 
 ![debu](/images/debu.png)
 
-
