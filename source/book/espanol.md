@@ -157,7 +157,7 @@ Nota: en caso de que queramos crear una imagen de arranque en modo UEFI y hayamo
 # Los comandos
 
 ## Comandos y opciones de eggs
-Eggs necesita derechos de root, por lo que, a excepción de la información sobre los huevos, DEBE llamarse precedido por sudo.
+Eggs necesita derechos de root, por lo que, a excepción de la información sobre eggs, DEBE llamarse precedido por sudo.
 
 * adjust
 * calamares
