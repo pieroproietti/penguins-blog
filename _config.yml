@@ -132,8 +132,8 @@ menu:
   github: https://github.com/pieroproietti/penguins-eggs
   sourceforge: https://sourceforge.net/projects/penguins-eggs/
   npm: https://www.npmjs.com/package/penguins-eggs
-  book: https://book.penguins-eggs.net/
-  Livro: /livro
+  Libro italiano: https://book.penguins-eggs.net/
+  Livro brasileiro: /livro
 
 fb_admins: 
 fb_app_id:

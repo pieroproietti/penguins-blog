@@ -147,6 +147,118 @@ Bem, agora estamos finalmente prontos para usar ovos para a reprodução do noss
 Nota: caso desejemos criar uma imagem inicializável no modo UEFI e instalamos o grub-efi-amd64 após a instalação dos pré-requisitos, precisamos editar o arquivo **/etc/penguins-eggs.conf** e definir **make_efi = yes**.
 
 
+# Os comandos
+Comandos e opções de Eggs
+
+## Controles e opções
+O eggs precisam de direitos de root, portanto - exceto informações sobre o eggs - DEVE ser chamado precedido por da **sudo**.
+
+* adjust
+* calamares
+* help
+* howto
+* info
+* install
+* kill
+* prerequisites
+* produce
+* skel
+* sterilize
+* update
+
+Não se assuste com esses poucos comandos, os que você usará são essencialmente dois: produce para criar o ISO e kill para excluí-lo.
+
+Cada comando pode ter alguns flag, o mais importante dos quais é o flag -f o --fast do comando produce, que permitirá que o eggs usem lz4 como um algoritmo de compactação em vez do xz padrão, permitindo assim economizar muito tempo durante as fases desenvolvimento do seu remix.
+
+Outro flag importante e presente em quase todos os casos é o flag -v ou --verbose, que mostrará na tela a sucessão dos vários comandos.
+
+Vamos ilustrar os comandos em ordem alfabética estrita, para a conveniência do escritor. Lembre-se de que os comandos que você normalmente usa são kill e produce.
+
+```bash
+eggs adjust
+```
+
+Adapta o vídeo aos recursos do monitor ou ao tamanho da janela no caso de uma máquina virtual. Eu acho muito conveniente redimensionar máquinas virtuais com interfaces gráficas diferentes do cinnamon, gnome3 e kde, para as quais não é necessário. Basicamente, eggs chama xrandr para adaptar a tela à resolução atual.
 
 
+```bash
+eggs calamares
+```
+
+Instale e configure o instalador gráfico universal calamares. Também pode ser usado no caso de um ISO feito sem calamares e que, durante a instalação, você deseja instalar com ele.
+
+```bash
+eggs help
+```
+Como o próprio comando diz, ele gera a lista de comandos disponíveis. Por sua vez, cada comando com os problemas de sinalizador -h ou --help usa sua descrição.
+
+
+```bash
+eggs howto
+```
+
+Mostre ao vídeo algumas dicas muito curtas. No momento, inicialize a partir do grub rescue e como configurar o eggs.
+
+```bash
+eggs howto:grub
+```
+Como começar do resgate grub.
+
+```bash
+eggs howto:configure
+```
+
+Como configurar o eggs.
+
+```bash
+eggs info
+```
+
+Mostre a configuração dos ovos e o sistema na tela. É o único comando que pode ser usado sem o sudo.
+
+
+Inicie o instalador de eggs cli. Como alternativa, com a opção -g ou --gui, inicie o calamares. 
+
+```bash
+eggs install
+```
+
+Atenção, o instalador do cli é mais rápido que o calamares, mas é MUITO rudimentar e não é recomendado para não especialistas. Ele apagará completamente o disco rígido alvo! Use-o apenas em máquinas ou computadores virtuais limpos ou limpos.
+
+```bash
+eggs kill
+```
+
+Exclua as imagens e o diretório de trabalho do eggs (o ninho). Execute **rm /home/eggs -rf** para excluir todo o iso criado. Ele também possui um flag útil -u que, antes de prosseguir com a remoção, tenta desmontar qualquer sistema de arquivos presente nele.
+
+```bash
+eggs prerequisites
+```
+
+Instale os pacotes deb necessários para os ovos funcionarem. Em particular, o seguinte está instalado:
+
+'isolinux', 'live-boot', 'live-boot-initramfs-tools', 'live-config-systemd', 'squashfs-tools', 'xorriso', 'xterm', 'whois'
+
+e, se você optou por instalar calamares:
+
+calamares', 'qml-module-qtquick2', 'qml-module-qtquick-controls'
+
+Além disso, os arquivos de configuração são criados.
+
+
+```bash
+eggs produce
+```
+
+Este é o comando que você mais usará, na verdade, basicamente o único, juntamente com o kill, usado para se livrar das imagens ISO criadas.
+Utilizado sem parâmetros, produz o ISO com compressão tipo xz. Verifique também se os pré-requisitos estão instalados ou não e se os arquivos de configuração foram criados e, de fato, ele produz o iso.
+Possui algumas flag utilizáveis:
+
+```
+-b, --basename=basename basename egg
+-c, --compress max compression 
+-f, --fast compression fast 
+-h, --info show CLI help 
+-v, --verbose verbose
+```
 
