@@ -32,7 +32,7 @@ O que outras pessoas estão dizendo
 Nota: a situação systemBack não é mais a do início do Penguin's eggs. Recentemente, conheci o bom Franco Conidi (Edmond), que ainda cuida das atualizações.
 
 # Instalação
-Faça o download dos pacotes de instalação dos ovos ou use o código-fonte diretamente
+Faça o download dos pacotes de instalação do eggs ou use o código-fonte diretamente
 
 ## Pacote Debian
 A instalação do pacote Debian é certamente a mais fácil. Basta baixar a versão mais recente do eggs no site sourceforge e instalar com o comando:
@@ -51,7 +51,7 @@ sudo eggs update
 
 Para instalar esta versão, você deve primeiro instalar o pacote nodejs. A descrição de quais nodejs usar e como instalar nodejs são relatados no arquivo README, md incluído no repositório eggs.
 
-A instalação dos ovos do pacote npm é simples e segura, apenas estes comandos:
+A instalação do eggs do pacote npm é simples e segura, apenas estes comandos:
 
 ```bash
 sudo npm config set unsafe-perm true
@@ -81,7 +81,7 @@ Para desenvolvedores ou curiosos, será possível visualizar, relatar ou corrigi
 
 
 #Pré-requisitos e configuração
-Coisas a fazer antes de iniciar a produção de ovos.
+Coisas a fazer antes de iniciar a produção de  ISOS.
 
 Depois que o pacote for instalado como na página anterior, teremos um novo comando em nosso sistema:
 
@@ -89,7 +89,7 @@ Depois que o pacote for instalado como na página anterior, teremos um novo coma
 eggs
 ```
 
-Comece os ovos sem nenhum comando, obteremos a lista de comandos disponíveis:
+Comece os eggs sem nenhum comando, obteremos a lista de comandos disponíveis:
 
 
 ![eggs-senza-parametri](/images/eggs-senza-parametri.png)
@@ -149,7 +149,7 @@ sudo eggs prerequisites -c
 
 ## eggs está pronto!
 
-Bem, agora estamos finalmente prontos para usar ovos para a reprodução do nosso pinguim.
+Bem, agora estamos finalmente prontos para usar eggs para a reprodução do nosso pinguim.
 
 Nota: caso desejemos criar uma imagem inicializável no modo UEFI e instalamos o grub-efi-amd64 após a instalação dos pré-requisitos, precisamos editar o arquivo **/etc/penguins-eggs.conf** e definir **make_efi = yes**.
 
@@ -221,7 +221,7 @@ Como configurar o eggs.
 eggs info
 ```
 
-Mostre a configuração dos ovos e o sistema na tela. É o único comando que pode ser usado sem o sudo.
+Mostre a configuração do eggs e o sistema na tela. É o único comando que pode ser usado sem o sudo.
 
 
 Inicie o instalador de eggs cli. Como alternativa, com a opção -g ou --gui, inicie o calamares. 
@@ -242,7 +242,7 @@ Exclua as imagens e o diretório de trabalho do eggs (o ninho). Execute **rm /ho
 eggs prerequisites
 ```
 
-Instale os pacotes deb necessários para os ovos funcionarem. Em particular, o seguinte está instalado:
+Instale os pacotes deb necessários para os eggs funcionarem. Em particular, o seguinte está instalado:
 
 'isolinux', 'live-boot', 'live-boot-initramfs-tools', 'live-config-systemd', 'squashfs-tools', 'xorriso', 'xterm', 'whois'
 
@@ -301,7 +301,7 @@ eggs sterilize
 eggs update
 ```
 
-Atualize o pacote de ovos para a versão atual. Atenção, a atualização do eggs funciona apenas com a versão empacotada npm, para a versão lançada como um pacote deb, precisaríamos de um repositório que não está disponível no momento.
+Atualize o pacote de eggs para a versão atual. Atenção, a atualização do eggs funciona apenas com a versão empacotada npm, para a versão lançada como um pacote deb, precisaríamos de um repositório que não está disponível no momento.
 
 
 # Vamos criar nosso próprio remix
@@ -355,7 +355,7 @@ Você economiza pelo menos 200 MB, o que não é uma quantia pequena e seria ape
 
 ## Produção ISO
 
-Uma vez instalados os ovos e seus pré-requisitos, estamos prontos para o grande salto.
+Uma vez instalados os eggs e seus pré-requisitos, estamos prontos para o grande salto.
 
 ```
 sudo eggs produce
