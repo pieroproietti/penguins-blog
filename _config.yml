@@ -127,8 +127,7 @@ sitemap:
 ## theme override
 menu:
   Home: /
-  Libro italiano: https://book.penguins-eggs.net/
-  Livro brasileiro: /livro
+  Book: /book
   About me: /about-me.html
   Archives: /archives
   github: https://github.com/pieroproietti/penguins-eggs

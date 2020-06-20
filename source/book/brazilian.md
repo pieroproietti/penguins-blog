@@ -1,8 +1,15 @@
 ---
-title: livro
+title: brazilian
 layout: page
 date: 2020-06-20 07:38:32
 ---
+# índice
+* [Introdução](#introducao)
+* [Instalação](#instalacão)
+* [Pré-requisitos e configuração](#pré-requisitos-e-configuracão)
+* [Os comandos](#os-comandos)
+* [Vamos criar nosso próprio remix](#vamos-criar-nosso-proprio-remix)
+* [Faça o download das imagens ISO](#faca-o-download-das-imagens-iso)
 
 # Introdução
 
@@ -73,7 +80,7 @@ npm install
 Para desenvolvedores ou curiosos, será possível visualizar, relatar ou corrigir o código.
 
 
-# Pré-requisitos e configuração
+#Pré-requisitos e configuração
 Coisas a fazer antes de iniciar a produção de ovos.
 
 Depois que o pacote for instalado como na página anterior, teremos um novo comando em nosso sistema:
