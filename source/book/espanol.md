@@ -110,11 +110,14 @@ sudo eggs prerequisites
 
 que luego instalará los siguientes paquetes:
 
-```isolinux, live-boot, live-boot-initramfs-tools, lvm2, squashfs-tools, xorriso, xterm, whois```
+```
+isolinux, live-boot, live-boot-initramfs-tools, lvm2, squashfs-tools, xorriso, xterm, whois
+```
 
 ## Installador grafico
 
 En este punto, si lo necesitamos, será mejor instalar el instalador gráfico calamares, con el comando:
+
 ```
 sudo eggs calamares
 ```
