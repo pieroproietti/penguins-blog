@@ -4,7 +4,8 @@ layout: page
 date: 2020-06-20 07:38:32
 ---
 
-* [Brazilian](./brazilian.html)
-* [English](./english.html)
+Etiamsi debemus gratias agere Civitatibus Foederatis Americae, faciemus iocus!
+
+* [Português](./portugues.html)
 * [Italiano](https://book.penguins-eggs.net)
-* [Peruano](./peruano.html)
+* [Español](./espanol.html)

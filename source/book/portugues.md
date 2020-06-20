@@ -1,5 +1,5 @@
 ---
-title: brazilian
+title: Português
 layout: page
 date: 2020-06-20 07:38:32
 ---
@@ -29,7 +29,7 @@ Mais cedo ou mais tarde, como se trata de um ovo, também vou encontrar uma mane
 
 O que outras pessoas estão dizendo
 
-Nota: a situação systemBack não é mais a do início dos ovos. Recentemente, conheci o bom Franco Conidi (Edmond), que ainda cuida das atualizações.
+Nota: a situação systemBack não é mais a do início do Penguin's eggs. Recentemente, conheci o bom Franco Conidi (Edmond), que ainda cuida das atualizações.
 
 # Instalação
 Faça o download dos pacotes de instalação dos ovos ou use o código-fonte diretamente
