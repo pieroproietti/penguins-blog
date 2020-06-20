@@ -102,7 +102,8 @@ deploy:
   type: ''
 
 
-
+# feed-generator
+## 
 feed:
   type: atom
   path: atom.xml
@@ -117,20 +118,22 @@ feed:
   template:
 
 
-## sitemap
+# sitemap generator
+##
 sitemap:
   path: sitemap.xml
 
-# Override 
-## theme
-#
+# theme 
+## theme override
 menu:
   Home: /
+  About me: /about-me.html
   Archives: /archives
   github: https://github.com/pieroproietti/penguins-eggs
   sourceforge: https://sourceforge.net/projects/penguins-eggs/
   npm: https://www.npmjs.com/package/penguins-eggs
   book: https://book.penguins-eggs.net/
+  Livro: /livro
 
 fb_admins: 
 fb_app_id:
