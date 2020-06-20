@@ -262,3 +262,84 @@ Possui algumas flag utilizáveis:
 -v, --verbose verbose
 ```
 
+De longe o modo de uso que eu prefiro, pessoalmente é:
+
+```
+eggs produce -fv
+```
+
+o que me permite ter uma remasterização rápida e observar os vários comandos lançados na tela.
+
+
+```
+eggs produce -fv
+```
+
+```
+eggs skel
+```
+
+Com este comando, recriamos o diretório / etc / skel do nosso remix. É útil para dar uma aparência coerente e personalizada ao usuário ativo e aos futuros usuários que criaremos quando o sistema estiver instalado. Essencialmente, copia as configurações do usuário principal ou do usuário passado com o sinalizador -u na pasta **/etc/skel**, que será usada para gerar o esqueleto da casa dos usuários criados.
+
+Considerando que existem vários gerenciadores de desktop, gnome2, gnome3, cinnamonn, mate, kde, lxqt, lxde, etc, e que uma operação é executada para limpar possíveis dados confidenciais, é um comando que está sempre evoluindo. Atualmente, é bastante confiável para cinnamon e, para os testes que fiz com os outros Desktop Managers.
+
+```
+eggs sterilize
+```
+
+É o comando inverso dos pré-requisitos, basicamente remove os pacotes listados acima, tornando nosso sistema não mais capaz de se reproduzir.
+
+
+```
+eggs update
+```
+
+Atualize o pacote de ovos para a versão atual. Atenção, a atualização do eggs funciona apenas com a versão empacotada npm, para a versão lançada como um pacote deb, precisaríamos de um repositório que não está disponível no momento.
+
+
+# Vamos criar nosso próprio remix
+
+A criação do nosso remix iso é um processo que requer paciência e paixão, mas pode nos dar uma grande satisfação e, em muitos casos, em última análise, economizará tempo e esforço.
+
+## Pré-requisitos
+
+Instalamos nossa distribuição Debian Buster ou derivada favorita e instalamos o eggss com um dos métodos descritos acima.
+
+Instalamos o eggs e certifique-se de carregar os pré-requisitos e criar os arquivos de configuração, dando o comando:
+
+```
+eggs prerequisites
+```
+
+Além de instalar os vários pacotes Debian necessários, o arquivo de configuração com as configurações padrão será criado. Encontre o arquivo de configuração em **/etc/penguins-eggs.conf** e você pode editá-lo para modificar as configurações. Encontre a documentação das opções usadas diretamente nos comentários do próprio arquivo.
+
+Nesse ponto, o eggs está pronto para trabalhar e criar a imagem iso do nosso sistema.
+
+
+## Adicionado instalador gráfico Calamares
+Se você deseja usar o calamares como instalador gráfico, é melhor instalá-lo agora.
+
+Apenas continue com o comando:
+
+```
+eggs calamares
+```
+
+Como alternativa, se você não quiser calamares, edite o arquivo de instalação **/etc/penguins-eggs.conf** e defina **force_installer = No** o egg não será instalado em seu nome.
+
+Posteriormente, essa imagem deve ser colocada em um stick ou em um disco de DVD e pode ser reinstalada com o instalador gráfico da calamares ou - de maneira mais espartana - com seu próprio instalador cli. Para o calamares do instalador gráfico, deixe o arquivo de configuração como está, enquanto se você decidir não usá-lo, precisará editar o arquivo de configuração **/etc/penguins-eggs.com** e colocar **force-installer = no**.
+
+Eu também recomendo a instalação do bleachbit, porque isso permitirá limpar facilmente nossos remixes sem queimar dados inúteis. Você também pode fazer isso no terminal com o comando:
+
+```
+apt install bleachbit
+```
+
+## Vamos limpar nosso sistema
+
+Primeiro - por isso instalamos o bleachbit - sugiro que você limpe seu sistema.
+
+Normalmente, o bleachbit limpa tudo, exceto a localização - caso contrário, os idiomas estrangeiros não funcionam - liberam espaço em disco e memória.
+
+
+![bleachbit-selezione](/images/bleachbit-selezione.png)

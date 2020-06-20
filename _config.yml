@@ -127,13 +127,13 @@ sitemap:
 ## theme override
 menu:
   Home: /
+  Libro italiano: https://book.penguins-eggs.net/
+  Livro brasileiro: /livro
   About me: /about-me.html
   Archives: /archives
   github: https://github.com/pieroproietti/penguins-eggs
   sourceforge: https://sourceforge.net/projects/penguins-eggs/
   npm: https://www.npmjs.com/package/penguins-eggs
-  Libro italiano: https://book.penguins-eggs.net/
-  Livro brasileiro: /livro
 
 fb_admins: 
 fb_app_id:
