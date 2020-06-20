@@ -343,3 +343,68 @@ Normalmente, o bleachbit limpa tudo, exceto a localização - caso contrário, o
 
 
 ![bleachbit-selezione](/images/bleachbit-selezione.png)
+
+Você economiza pelo menos 200 MB, o que não é uma quantia pequena e seria apenas um lastro.
+
+## Produção ISO
+
+Uma vez instalados os ovos e seus pré-requisitos, estamos prontos para o grande salto.
+
+```
+sudo eggs produce
+```
+
+Com este comando, você inicia a construção do ovo de pinguim, que consiste basicamente em três fases:
+
+* criação de uma imagem do fs montado com overlayfs - instantâneo e sem nenhuma cópia dos dados - para permitir modificações na criação do sistema de arquivos da imagem;
+* compactação do sistema de arquivos inteiro em /home/eggs/work/iso/live/filesystem.squashfs;
+* geração da imagem iso da estrutura anterior em /home/eggs/basename-X64_AAAA-MM-DD-HHMM.iso
+
+O processo tem um certo peso - é inútil ocultá-lo - você não o aceita nem com a cópia do sistema de arquivos que não é totalmente executada e nem mesmo com a interface gráfica - já que não o usamos.
+
+O peso é dado pelo fato de termos que compactar todo o sistema de arquivos.
+
+Durante os testes, no entanto, ou em qualquer caso em que você considere apropriado, recomendo que você use o produce com a opção -f ou --fast. Fazer isso usará o algoritmo de compactação lz4 em vez do xz "mais pesado" e reduzirá pela metade o tempo de execução. Para a versão final, uma vez verificado que tudo está no lugar, podemos usar a compactação padrão para obter um ISO mais enxuto ou a opção -c --compress que comprime um pouco mais, ao preço de mais lentidão.
+
+Como foi relatado inicialmente no código, a sugestão é tomar um café enquanto isso e tentar reservar energia de processamento suficiente para a máquina. No meu caso - eu uso uma máquina virtual com 4 núcleos e 4 GB de memória - para um sistema de arquivos de 7/8 GB, leva cerca de dez minutos com a compactação xz, enquanto usando a compactação lz4 a espera é reduzida para apenas um minuto e meio. Não temos mais tempo para tomar café, um cigarro dói e a imagem obtida chega a 3,0 GB em comparação com 2,00 GB de compressão xz (consulte a nota).
+
+Uma recomendação. Normalmente, esse comando é dado na máquina em que você está trabalhando e talvez uma versão anterior já tenha sido produzida. Eu recomendo excluir imagens anteriores com o comando **sudo eggs kill**, que remove toda a árvore de diretórios em / home / eggs).
+
+Nota: Nem todo mal chega a prejudicar. Se considerarmos que atualmente os DVDs são usados ​​relativamente pouco e os sticks estão ficando cada vez mais rápidos, há casos em que nosso remix pode ser mais otimizado com um sistema de arquivos maior, mas menos compactado! De fato, levando em conta que durante o uso - oculto aos nossos olhos - haverá um processo contínuo de leitura e descompactação do sistema de arquivos, a descompactação xz ainda é mais lenta que a lz4.
+
+Tendo em mente que não há mais o limite do tamanho das imagens ISO em 4 GB, a solução para usar sempre o lz4 pode ser duplamente vantajosa, especialmente se usada com máquinas virtuais que - quase sempre - leem o arquivo de imagem diretamente no disco corrigido em vez de um DVD real. Além disso, todos os principais programas para a criação de sticks inicializáveis ​​leem arquivos ISO.
+
+Então, por que produzir formatos diferentes?
+
+Eventualmente, você pode criar o iso com o lz4 e, posteriormente, compactá-lo com o xz para aliviar os uploads e downloads na internet.
+
+# Faça o download das imagens ISO
+
+## Premissa
+Aqui estão uma série de remixes feitos por mim e criados com o penguin's eggs. Não é meu objetivo criar um novo remix, prefiro construir e manter o pacote. Mas o ditado: o ovo ou a galinha primeiro? E eu faço alguns remixes e continuo a oferecê-los.
+
+Estas são essencialmente versões do Debian Buster, apesar de eu lançar uma versão mínima do ubuntu com as ferramentas de desenvolvimento Typescript.
+
+Atualmente, os derivados do Debian Buster estão online, menos é uma versão less - apenas a necessária para o desenvolvimento, que eu normalmente uso. Debu, mais confortável e refinado, sempre com ferramentas de desenvolvimento e tudo o que você precisa para escritório, design, desenvolvimento etc. Debu está errado - comparado a less - que, sendo relativamente grande, 1,9 GB em comparação com 900KB de menos less mais tempo para "reprodução".
+
+Existe também uma versão ainda mais leve, chamada naked, sem interface gráfica, mas útil como base.
+
+Basicamente, recomendo debu ou less para quem deseja participar do desenvolvimento, naked para quem deseja começar de uma base e depois continuar criando seu próprio remix. Por fim, mas não sou especialista no assunto, fiz uma versão chamada blockchain para o estudo do mesmo. Pode ser interessante para especialistas do setor, não tanto para uso pessoal, mas para criar demos e chaves que podem ser instaladas para disseminação.
+
+## Onde posso baixar o ISO
+
+Todas as versões estão disponíveis para download no site [sourgeforge.net](https://sourceforge.net/projects/penguins-eggs/files/iso/), procurando o projeto pingüin's eggs.
+
+## Usuário e senha
+Todas as distribuições mostradas aqui são configuradas com usuário **live** e usuário **root**.
+
+* live/evolution
+* root/evolution
+
+## Video
+Este é um vídeo antigo, eu gostaria de fazer outros, talvez em breve.
+
+
+![debu](/images/debu.png)
+
+
