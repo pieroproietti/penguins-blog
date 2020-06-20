@@ -35,11 +35,13 @@ Nota: a situação systemBack não é mais a do início do Penguin's eggs. Recen
 Faça o download dos pacotes de instalação do eggs ou use o código-fonte diretamente
 
 ## Pacote Debian
-A instalação do pacote Debian é certamente a mais fácil. Basta baixar a versão mais recente do eggs no site sourceforge e instalar com o comando:
+A instalação do pacote Debian é certamente a mais fácil. Basta baixar a versão mais recente do eggs no site [sourceforge](https://sourceforge.net/projects/penguins-eggs/files/packages-deb/) e instalar com o comando:
 
 ```bash
 sudo dpkg -i eggs-7.5.81-1.deb
 ```
+A versão .deb inclui nodejs dentro, portanto, não é necessário ter este pacote.
+
 
 ## Pacote npm (nodejs)
 
@@ -101,7 +103,7 @@ A primeira coisa que precisamos fazer neste momento é permitir que os eggs baix
 sudo eggs prerequisites
 ```
 
-![eggs-senza-parametri](/images/eggs-prerequisites-yes-no.png)
+![eggs-prerequisites](/images/eggs-prerequisites-yes-no.png)
 
 Selecionar Yes aceitará a instalação dos pacotes necessários para o funcionamento do eggs e a produção de imagens iso. Basicamente, podemos dividir os pacotes instalados em três:
 
