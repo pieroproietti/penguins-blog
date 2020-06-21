@@ -7,7 +7,12 @@
   "homepage": "https://penguins-eggs.net/",
   "repository": "https://github.com/pieroproietti/penguins-blog",
   "bugs": "https://github.com/pieroproietti/penguins-blog/issues",
-    "scripts": {
+  "scripts": {
+    "start": "pm2 start --name blog hexo -- s",
+    "stop": "pm2 stop blog",
+    "delete": "pm2 delete blog",
+    "status": "pm2 status blog",
+    "restart": "pm2 restart blog",
     "build": "hexo generate",
     "clean": "hexo clean",
     "deploy": "hexo deploy",

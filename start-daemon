@@ -5,5 +5,3 @@ npm run stop
 npm run clean
 npm run generate
 npm run start
-
-
