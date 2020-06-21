@@ -1,8 +1,13 @@
 {
-  "name": "penguins-net-sit",
+  "name": "penguins-blog",
   "version": "0.0.1",
+  "description": "penguin's eggs blogo",
+  "author": "Piero Proietti @pieroproietti",
   "private": true,
-  "scripts": {
+  "homepage": "https://penguins-eggs.net/",
+  "repository": "https://github.com/pieroproietti/penguins-blog",
+  "bugs": "https://github.com/pieroproietti/penguins-blog/issues",
+    "scripts": {
     "build": "hexo generate",
     "clean": "hexo clean",
     "deploy": "hexo deploy",

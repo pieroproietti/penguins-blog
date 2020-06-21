@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+echo "refresh site"
+git pull
+pm2 stop hexo.sh
+npx hexo clean
+npx hexo generate
+pm2 start hexo.sh
