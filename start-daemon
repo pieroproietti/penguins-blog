@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 echo "daemon stop/start"
 #git pull
-pm2 stop hexo
+pm2 stop blog
 npx hexo clean
 npx hexo generate
 pm2 start ./blog
