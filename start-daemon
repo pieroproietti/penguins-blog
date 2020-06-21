@@ -2,6 +2,7 @@
 echo "daemon stop/start"
 git pull
 npm run stop
+npm run delete
 npm run clean
 npm run generate
 npm run start
