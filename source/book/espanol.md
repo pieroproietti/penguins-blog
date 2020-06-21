@@ -293,7 +293,78 @@ sudo eggs update
 ```
 Actualice eggs a la versión actual. Advertencia, la actualización de eggs solo funciona con la versión empaquetada npm, para la versión lanzada como un paquete deb necesitaríamos un repositorio que actualmente no está disponible.
 
+# Creemos nuestro propio remix
+La creación de nuestro iso de remezcla es un proceso que requiere paciencia y pasión, pero que puede darnos una gran satisfacción y, en muchos casos, en el análisis final, nos ahorrará tiempo y esfuerzo.
 
+## Prerrequisitos
+Instalamos nuestro Debian Buster favorito o distribución derivada y vamos a instalar eggs con uno de los métodos descritos anteriormente.
+
+Instalamos eggs y nos aseguramos de cargar los requisitos previos y crear los archivos de configuración dando el comando:
+
+```
+sudo eggs prerequisites
+```
+Además de instalar los diversos paquetes necesarios de Debian, se creará el archivo de configuración con la configuración predeterminada. Busque el archivo de configuración en /etc/penguins-eggs.conf y posiblemente pueda editarlo para modificar la configuración. Encuentre la documentación de las opciones utilizadas directamente en los comentarios del archivo en sí.
+
+En este punto, eggs está listo para trabajar y crear la imagen iso de nuestro sistema.
+
+## Instalador gráfico Calamares agregado
+
+Si desea utilizar calamares como instalador gráfico, es mejor instalarlo ahora. Simplemente proceda con el comando:
+
+```
+sudo eggs calamares
+```
+
+Alternativamente, si no es calamares veces, edite el archivo de instalación /etc/penguins-eggs.conf y configure force_installer = No, de lo contrario, eggs lo instalará en su nombre.
+
+Posteriormente, esta imagen debe colocarse en una unidad de disco o un disco DVD y puede reinstalarse con el instalador gráfico calamares o, de una manera más espartana, con su propio instalador cli. Para el instalador gráfico calamares, simplemente deje el archivo de configuración como está, mientras que si decide no usar calamares, debe editar el archivo de configuración /etc/penguins-eggs.com y poner force-installer = no-
+
+También recomiendo instalar bleachbit porque nos permitirá limpiar fácilmente nuestros remixes sin grabar datos inútiles. También puede hacer esto desde la terminal con el comando:
+
+```
+sudo apt install bleachbit
+```
+
+## Limpiemos nuestro sistema
+
+Primero, para esto hemos instalado bleachbit, le sugiero que limpie su sistema.
+
+Normalmente tengo bleachbit para limpiar todo excepto las localizaciones, de lo contrario los idiomas extranjeros no funcionan, espacio libre en disco y memoria.
+
+![bleachbit-selezione](/images/bleachbit-selezione.png)
+
+## Creación de la iso
+
+Una vez instalado eggs y sus requisitos previos, estamos listos para el gran salto.
+
+```
+sudo eggs produce
+```
+
+Con este comando, comienza la construcción del huevo de pingüino que básicamente consta de tres fases:
+
+* creación de una imagen de fs montada con overlayfs, que es instantánea y sin ninguna copia de los datos, para permitir modificaciones para la creación del sistema de archivos para la imagen;
+* compresión de todo el sistema de archivos en /home/eggs/work/iso/live/filesystem.squashfs;
+* generación de la imagen iso de la estructura anterior en /home/eggs/basename-X64_AAAA-MM-DD-HHMM.iso
+
+El proceso tiene un cierto peso (es inútil ocultarlo), no lo toma con la copia del sistema de archivos que no se hace en absoluto y ni siquiera con la interfaz gráfica, ya que no lo usamos.
+
+El peso está dado por el hecho de que tenemos que comprimir todo el sistema de archivos.
+
+Sin embargo, durante las pruebas, o en cualquier caso cuando lo considere apropiado, le recomiendo que use produce con la opción -f o --fast. Al hacerlo, se usará el algoritmo de compresión lz4 en lugar del xz "más pesado" y reducirá a la mitad el tiempo de ejecución. Para la versión final, una vez comprobado que todo está en su lugar, podemos usar la compresión predeterminada para obtener un ISO más ágil, o la opción -c --compress que comprime un poco más, al precio de otra lentitud.
+
+Como se informó inicialmente en el código algo, la sugerencia es tomar un café mientras tanto e intentar reservar suficiente potencia de procesamiento para la máquina. En mi caso, utilizo una máquina virtual con 4 core y 4 GB de memoria, para un sistema de archivos de 7/8 GB, se tarda diez minutos con la compresión xz, mientras que con la compresión lz4 la espera se reduce a un minuto y medio . Ya no tenemos tiempo para tomar café, un cigarrillo duele y la imagen obtenida llega a 3.0 GB en comparación con 2.00 GB de compresión xz (ver nota).
+
+Una recomendación: normalmente, este comando se da en la máquina donde está trabajando y tal vez ya se haya producido una versión anterior. Recomiendo eliminar imágenes anteriores con el comando sudo eggs kill que elimina todo el árbol de directorios en /home/eggs.
+
+Nota: *Sin embargo, no todo el mal viene a dañar. Si consideramos que los DVD se usan actualmente relativamente poco y los sticks se vuelven cada vez más rápidos, ¡hay casos en que nuestro remix podría optimizarse más con un sistema de archivos más grande pero menos comprimido! De hecho, teniendo en cuenta que durante el uso, oculto a nuestros ojos, habrá un proceso continuo de lectura y descompresión del sistema de archivos, el decompressioone xz es aún más lento que el lz4*.
+
+*Teniendo en cuenta que ya no existe el límite del tamaño de las imágenes ISO a 4 GB, la solución para usar siempre lz4 podría resultar doblemente ventajosa, especialmente si se usa con máquinas virtuales que, casi siempre, leen el archivo de imagen directamente en el disco arreglado en lugar de un DVD real. Además, todos los programas principales para crear dispositivos de arranque leen archivos ISO*.
+
+*Entonces, ¿por qué producir diferentes formatos?*
+
+*Si es así, puede crear el ISO con lz4 y luego comprimirlo con xz para aligerar las cargas y descargas en Internet*.
 
 
 
