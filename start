@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
-echo "start locale"
+echo "starting locale..."
 npx hexo clean
 npx hexo generate
-npx hexo serve
+npx hexo server
+
 
