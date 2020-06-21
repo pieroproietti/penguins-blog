@@ -22,10 +22,10 @@ No need other configurations, penguins-eggs are battery included or better, as i
 * site: [penguins-eggs.net](https://penguins-eggs.net)
 * gitter: [Penghuin's eggs](https://gitter.im/penguins-eggs-1/community?source=orgpage)
 * issues: [github](https://github.com/pieroproietti/penguins-eggs/issues).
-* facebook:  [Penguin's Eggs group](https://www.facebook.com/groups/128861437762355/)
-* facebook:  [Penguin's Eggs page](https://www.facebook.com/penguinseggs)
-* facebook private: [Piero Proietti](https://www.facebook.com/thewind61)
-* mail: piero.proietti@gmail.com
+* facebook:  
+   * [Penuin's Eggs group](https://www.facebook.com/groups/128861437762355/)
+   * [Penguin's Eggs page](https://www.facebook.com/penguinseggs)
+   * mail: piero.proietti@gmail.com
 
 ## Copyright and licenses
 Copyright (c) 2017, 2020 [Piero Proietti](https://github.com/pieroproietti), dual licensed under the MIT or GPL Version 2 licenses.
