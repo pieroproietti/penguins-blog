@@ -6,3 +6,4 @@ npm run delete
 npm run clean
 npm run generate
 npm run start
+npm run status
