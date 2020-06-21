@@ -16,15 +16,16 @@ Well, this is the result: a reasonable pratical way to let you customize your ve
 ![artisan](./images/artisan-little.jpg)
 
 # That's all Folks!
-No need other configurations, penguins-eggs are battery included or better, as in the real, live is inside! :-D
+No need other configurations, penguins-eggs are battery included or better, as in the real, live is inside!
 
 ## More informations
 * site: [penguins-eggs.net](https://penguins-eggs.net)
-* facebook author: [Piero Proietti](https://www.facebook.com/thewind61)
-* facebook group:  [Penguin's Eggs](https://www.facebook.com/groups/128861437762355/)
-* facebook page:  [Penguin's Eggs](https://www.facebook.com/penguinseggs)
+* gitter: [Penghuin's eggs](https://gitter.im/penguins-eggs-1/community?source=orgpage)
+* issues: [github](https://github.com/pieroproietti/penguins-eggs/issues).
+* facebook penguin's eggs group:  [Penguin's Eggs](https://www.facebook.com/groups/128861437762355/)
+* facebook penguin's eggs page:  [Penguin's Eggs](https://www.facebook.com/penguinseggs)
+* facebook private: [Piero Proietti](https://www.facebook.com/thewind61)
 * mail: piero.proietti@gmail.com
-
 
 ## Copyright and licenses
 Copyright (c) 2017, 2020 [Piero Proietti](https://github.com/pieroproietti), dual licensed under the MIT or GPL Version 2 licenses.
