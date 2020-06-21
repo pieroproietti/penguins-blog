@@ -366,5 +366,34 @@ Nota: *Sin embargo, no todo el mal viene a dañar. Si consideramos que los DVD s
 
 *Si es así, puede crear el ISO con lz4 y luego comprimirlo con xz para aligerar las cargas y descargas en Internet*.
 
+# Descargue las imágenes ISO
+Imágenes de los remixes realizados por el autor.
+
+## Premisa
+Aquí hay una serie de remixes hechos por mí y creados con los eggs. No es mi propósito crear un nuevo remix, prefiero crear y mantener el paquete. Pero el dicho dice: ¿el huevo o la gallina primero? Y hago algunos remixes y sigo ofreciéndolos.
+
+Estas son esencialmente versiones de Debian Buster, aunque lanzaré una versión mínima de ubuntu con las herramientas de desarrollo de Typescript.
+
+Actualmente, los derivados de Debian Buster están en línea, less es una versión ligera, solo la necesaria para el desarrollo, que normalmente uso. Debu, más cómodo y refinado, siempre con herramientas de desarrollo y todo lo que necesita para oficina, diseño, desarrollo, etc. Debu solo está equivocado, en comparación con less, que al ser relativamente grande, 1.9 GB en comparación con 900 KB de less toma más tiempo para la "reproducción".
+
+También hay una versión aún más ligera, llamada naked sin ninguna interfaz gráfica, pero útil como base.
+
+Básicamente, recomiendo debu o menos para aquellos que desean participar en el desarrollo, desnudos para aquellos que desean comenzar desde una base y luego proceder a crear su propio remix. Finalmente, pero no soy un experto en el tema, hice una versión llamada blockchain para el estudio de la misma. Podría ser interesante para los expertos en el sector, no tanto para uso personal sino para crear demostraciones y claves que se puedan instalar para su difusión.
+
+## ¿Dónde puedo descargar el ISO?
+
+Todas las versiones se pueden descargar desde [sourgeforge.net](https://sourceforge.net/projects/penguins-eggs/files/iso/) buscando el proyecto penguins-eggs.
+
+## Usuario y contraseña
+
+Todas las distribuciones que se muestran aquí están configuradas con usuario live y usuario root.
+
+* live/evolution
+* root/evolution
+
+Este es un video antiguo, me gustaría hacer otros, tal vez pronto.
+
+![debu](/images/debu.png)
+
 
 
