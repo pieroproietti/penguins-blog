@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-echo "daemon stop/start"
+echo "git pull/ daemon stop/delete/clean/start/status"
 git pull
 npm run stop
 npm run delete

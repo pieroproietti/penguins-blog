@@ -172,12 +172,126 @@ Eggs necesita derechos de root, por lo que, a excepción de la información sobr
 * sterilize
 * update
 
+No se asuste con estos pocos comandos, los que usará son esencialmente dos: **produce** para crear el ISO y **kill** para eliminarlo.
+
+Cada comando puede tener algunas flag, la más importante de las cuales es  -fo --fast del comando **produce** que permitirá a los huevos usar lz4 como algoritmo de compresión en lugar de la xz predeterminada, lo que le permite ahorrar mucho tiempo durante las fases desarrollo de tu remix.
+
+Otro flag importante y presente en casi todos los casos es el flag -v o --verbose que le mostrará en la pantalla la sucesión de los diversos comandos.
+
+Vamos a ilustrar los comandos en estricto orden alfabético, para conveniencia del escritor. Tenga en cuenta que los comandos que usará normalmente son kill y produce.
+
+```
+eggs adjust
+```
+
+Adapta el video a las capacidades del monitor o al tamaño de la ventana en el caso de una máquina virtual. Me resulta muy conveniente cambiar el tamaño de las 
+máquinas virtuales con interfaces gráficas que no sean cinnamon, gnome3 y kde para las que no es necesario. Básicamente, eggs llama a xrandr para adaptar la pantalla a la resolución actual.
+
+```
+sudo eggs calamares
+```
+
+Instale y configure el instalador gráfico universal calamares. También se puede usar en el caso de un ISO hecho sin calamares y que, durante la instalación, desea instalar con él.
+
+```
+eggs help
+```
+Como dice el comando en sí, genera la lista de comandos disponibles. A su vez, cada comando con los problemas de indicador -h o --help usa su descripción.
+
+```
+eggs howto
+```
+Muestre videos algunos consejos muy breves. Por el momento, arranque desde grub rescue y cómo configurar eggs.
 
 
+```
+eggs howto:grub
+```
+Cómo comenzar desde el rescue de grub.
+
+```
+eggs howto:configure
+```
+Cómo configurar eggs.
+
+```
+eggs info
+```
+Muestra la configuración de los huevos y el sistema en la pantalla. Es el único comando que se puede usar sin sudo.
+
+```
+sudo eggs install
+```
+Inicie el instalador de eggs cli. Alternativamente, con la opción -g o --gui, inicie calamares en su lugar.
+
+Advertencia, el instalador de cli es más rápido que calamares, pero es MUY rudimentario y no recomendado para no expertos. ¡Borrará completamente el disco duro de destino! Úselo solo en máquinas o computadoras virtuales limpias o limpias.
+
+```
+sudo eggs kill
+```
+Eliminar las imágenes y el directorio de trabajo de eggs (el nido). Ejecute rm /home/eggs -rf para eliminar todas las iso creadas. También tiene un útil flag -u que, antes de continuar con la eliminación, intenta desmontar cualquier sistema de archivos presente en él.
 
 
+```
+sudo eggs prerequisites
+```
 
+Instale los paquetes deb necesarios para que los huevos funcionen. En particular, se instala lo siguiente:
+```
+isolinux, live-boot, live-boot-initramfs-tools, live-config-systemd, squashfs-tools, xorriso, xterm, whois
+```
 
+y en este caso si eliges instalar calamares:
+
+```
+calamares, qml-module-qtquick2, qml-module-qtquick-controls
+```
+
+Además de esto, se crean archivos de configuración.
+
+```
+sudo eggs produce
+```
+
+Este es el comando que usará más, de hecho, básicamente, el único junto con kill que sirve para deshacerse de las imágenes ISO creadas.
+
+Usado sin parámetros, produce el ISO con compresión tipo xz. Compruebe también si los requisitos previos están instalados o no, y si se crean los archivos de configuración y, de hecho, produce la iso.
+
+Tiene algunas flag utilizables:
+
+```
+-b, --basename=basename basename egg
+-c, --compress max compression 
+-f, --fast compression fast 
+-h, --info show CLI help 
+-v, --verbose verbose
+```
+
+Con mucho, el modo de uso que prefiero, personalmente es:
+
+```
+sudo eggs produce -fv
+```
+
+lo que me permite tener un remaster rápido y observar los diversos comandos lanzados en la pantalla.
+
+```
+sudo eggs skel
+```
+
+Con este comando recreamos el directorio /etc/skel de nuestro remix. Es útil dar un aspecto coherente y personalizado al usuario en vivo y a los futuros usuarios que crearemos una vez que nuestro sistema esté instalado. Básicamente, copia las configuraciones del usuario principal o el pasado con el indicador -u en la carpeta /etc/skel que luego se utilizará para generar el esqueleto del hogar de los usuarios creados.
+
+Teniendo en cuenta que hay varios administradores de escritorio, gnome2, gnome3, cinnamon, mate, kde, lxqt, lxde, etc. y que se realiza una operación para limpiar posibles datos confidenciales, es un comando que siempre está en evolución. Actualmente es bastante confiable para cinnamon y para las pruebas que he realizado con los otros administradores de escritorio.
+
+```
+sudo eggs sterilize
+```
+Es el comando inverso de requisites, básicamente elimina los paquetes enumerados anteriormente, lo que hace que nuestro sistema ya no pueda reproducirse.
+
+```
+sudo eggs update
+```
+Actualice eggs a la versión actual. Advertencia, la actualización de eggs solo funciona con la versión empaquetada npm, para la versión lanzada como un paquete deb necesitaríamos un repositorio que actualmente no está disponible.
 
 
 
