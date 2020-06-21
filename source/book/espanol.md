@@ -37,13 +37,11 @@ sudo dpkg -i eggs-7.5.81-1.deb
 ```
 La versión .deb incluye nodejs dentro, por lo que no es necesario tener este paquete.
 
-## Paquete Debian
+## Paquete npm
 Siendo eggs un software desarrollado con nodejs, la versión original y preferible, y siempre la más actualizada. Además, una vez instalada, esta versión siempre se puede actualizar simplemente con el comando 
 ```bash
 sudo eggs update.
 ```
-
-## Paquete npm
 
 Para instalar esta versión, primero debe instalar el paquete nodejs. La descripción de qué nodejs usar y cómo instalar nodejs se informa en el archivo README, incluido en el repositorio de eggs.
 
