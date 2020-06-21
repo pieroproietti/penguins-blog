@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 echo "starting locale..."
-npx hexo clean
-npx hexo generate
-npx hexo server
+npm run clean
+npm run generate
+npm run server
 
 
