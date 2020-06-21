@@ -29,7 +29,7 @@ Nota: la situación de systemBack ya no es la de los inicios de Penguin's eggs. 
 
 Descargue los paquetes de instalación de egga o use el código fuente directamente.
 
-# Paquete Debian
+## Paquete Debian
 La instalación desde el paquete Debian es ciertamente la más fácil. Simplemente descargue la última versión de eggs del sitio web [sourceforge](https://sourceforge.net/projects/penguins-eggs/files/packages-deb/) e instálela con el comando:
 
 ```bash
