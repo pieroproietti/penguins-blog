@@ -5,9 +5,17 @@ date: 2020-06-20 07:38:32
 lang: it_IT
 ---
 # Indice
+* [Introduzione](#introduzione)
+* [Installazione](#installazione)
+* [Prerequisiti e configurazione](#prerequisiti-e-configurazione)
+* [I comando](#i-comandi)
+* [Creiamo una nostra remix](#creiamo-una-nostra-remix)
+* [Scarica le immagini ISO](#scarica-le-immagini-iso)
 
 
 # Introduzione
+
+Un sistema riproduttivo per pinguini!
 
 Penguin's eggs nasce con l'idea della "riproduzione" e "selezione delle popolazioni" applicata ai sistemi operativi. 
 
@@ -25,8 +33,6 @@ Prima o poi, trattandosi di un uovo, troverò anche il modo di implementare un s
 
 **Nota**: _la situazione  di systemBack  in effetti non è più quella degli inizi di eggs,. Ho conosciuto recentemente il buon Franco Conidi  \(Edmond \) che  ne cura tutt'ora gli aggiornamenti._
 
----
-
 # Installazione
 
 Cose da fare prima di cominciare la produzione delle "uova".
@@ -35,7 +41,9 @@ Cose da fare prima di cominciare la produzione delle "uova".
 
 L'installazione da pacchetto Debian è senz'altro la più semplice. Basta scaricare l'ultima versione di eggs dal sito di [sourceforge](https://sourceforge.net/projects/penguins-eggs/files/DEBS/) ed installarla con il comando:
 
-`sudo dpkg -i eggs-7.5.81-1.deb`
+```
+sudo dpkg -i eggs-7.5.81-1.deb`
+```
 
 La versione .deb  comprende al suo interno nodejs per cui non è necessario disporre di questo pacchetto. 
 
@@ -53,21 +61,29 @@ L'installazione di eggs da pacchetto npm è semplice e sicura, solo questi coman
 
 Per aggiornare il pacchetto - una volta installato - alle successive versioni, basterà il comando
 
-`sudo eggs update`
+```
+sudo eggs update`
+```
 
 ### Utilizzo di eggs da codice sorgente
 
 Utilizzare eggs a partire dai sorgenti può essere estremamente utile sia per debug che collaborare allo sviluppo. Una volta scaricato il sorgente con il comando
 
-`git clone` [`https://github.com/pieroproietti/penguins-eggs`](https://github.com/pieroproietti/penguins-eggs)\`\`
+```
+git clone https://github.com/pieroproietti/penguins-eggs
+```
 
 entrare. quindi, nella directory penguins-eggs e dare il comando
 
-`npm install`
+```
+npm install`
+```
 
 A questo punto, dalla directory penguins-eggs stessa, si potrà utilizzare il sorgente direttamente. Ad esempio
 
+```
 sudo ./eggs produce -f -v
+```
 
 Per gli sviluppatori od i curiosi, sarà possibile vedere, segnalare o correggere il codice. 
 ---
@@ -80,13 +96,16 @@ Una volta installato il pacchetto come nella pagina precedente, disporremo sul n
 
 Avviano eggs senza alcun comando otterremo la lista dei comandi disponibili:
 
-![](.gitbook/assets/eggs-senza-parametri.png)
+![eggs-senza-parametri](/images/eggs-senza-parametri.png)
+
 
 La prima cosa che dobbiamo fare a questo punto è permettere ad eggs di scaricare i pacchetti Debian necessari al suo funzionamento. Per far questo basterà avviare il comando
 
+```
 sudo eggs prerequisites
+```
 
-![](.gitbook/assets/eggs-prerequisites-yes-no.png)
+![eggs-prerequisites](/images/eggs-prerequisites-yes-no.png)
 
 Selezionando Yes verrà accettata l'installazione dei pacchetti necessari al funzionamento di eggs ed alla produzione delle immagini iso. Essenzialmente possiamo divide in tre i pacchetti installti:
 
@@ -96,7 +115,9 @@ Selezionando Yes verrà accettata l'installazione dei pacchetti necessari al fun
 
 Tutti i pacchetti per il funzionamento di eggs e la produzione di iso sono installati dal comando 
 
-`eggs prerequisites`
+```
+eggs prerequisites
+```
 
 Installerà, quindi, i seguenti pacchetti;
 
@@ -106,7 +127,9 @@ Installerà, quindi, i seguenti pacchetti;
 
 A questo punto, se ne abbiamo la necessità converrà installare anche l'installer grafico calamares, con il comando 
 
+```
 sudo eggs calamares
+```
 
 che installerà calamares ed i moduli `qml-module-qtquick2, qml-module-qtquick-controls` necessari per la visualizzazione delle slide durante l'installazione del sistema.
 
@@ -114,9 +137,11 @@ che installerà calamares ed i moduli `qml-module-qtquick2, qml-module-qtquick-c
 
 se vogliamo che le nostre iso vengano create compatibili UEFI \(Attenzione questo è stato testato solamente con Debian Buster, probabilmente in Ubuntu ancora non va\) dobbiamo installare il pacchetto grub-efi-amd64, con il comando.
 
-`apt install grub-efi-amd64`
+```
+apt install grub-efi-amd64
+```
 
-\(vedi **Nota**\)
+vedi **Nota**
 
 ### File di configurazione penguins-eggs.conf
 
@@ -128,7 +153,9 @@ Se avete scelto di non toccare per il momento /etc/penguins-eggs.conf, si ricord
 
 Se invece avete modificato o cancellato il file di configurazione, potete sempre ripristinarlo con il comando:
 
-`sudo eggs prerequisites -c`
+```
+sudo eggs prerequisites -c
+```
 
 ### eggs è pronto!
 
@@ -169,11 +196,11 @@ Andiamo ad illustrare i comandi in rigoroso ordine alfabetico, per comodità del
 
 Adatta il video alle capacità del monitor o alla grandezza della finestra in caso di macchina virtuale. Lo trovo molto comodo per ridimensionare le macchine virtuali con interfacce grafiche diverse da cinnamon gnome3 e kde per la quale non è necessario. In pratica eggs richiama xrandr per adattare lo schermo alla risoluzione corrente.
 
-### eggs calamares
+### sudo eggs calamares
 
 Installa e configura l'installatore grafico universale calamares. Può essere utilizzato anche in caso di una iso realizzata senza calamares e che, in sede di installazione si voglia installare con esso.
 
-### help
+### eggs help
 
 Come dice il comando stesso genera la lista dei comandi disponibili. A sua volta ogni comando con il flag -h o --help emette usa sua descrizione.
 
@@ -193,7 +220,7 @@ Come configurare eggs.
 
 Mostra a video la configurazione di eggs e del sistema. E' l'unico comando che può essere usato senza sudo.
 
-### eggs install
+### sudo eggs install
 
 Lancia l'installaler cli di eggs. 
 
@@ -201,19 +228,19 @@ In alternativa con l'opzione -g o --gui lancia invece calamares.
 
 Attenzione, l'installatore cli è più veloce di calamares, però è MOLTO rudimentale e non raccomandato per i non esperti. Cancellerà compleamente il disco rigido di destinazione! Utilizzatelo solo su macchine virtuali o computer puliti o da pulire.
 
-### eggs kill
+### sudo eggs kill
 
 Cancella le immagini realizzate e la directory di lavoro di eggs \(il nido\). Esegue rm /home/eggs -rf per cancellare tutte le iso create. Presenta anche un utile flag -u che, prima di procedere alla rimozione tenta smonta i filesystem eventualmente presenti in essa.
 
-### eggs prerequisites
+### sudo eggs prerequisites
 
 Installa i pacchetti deb necessari al funzionamento di eggs. In particolare, vengono installati:
 
-`'isolinux', 'live-boot', 'live-boot-initramfs-tools', 'live-config-systemd', 'squashfs-tools', 'xorriso', 'xterm', 'whois'`
+`isolinux, live-boot, live-boot-initramfs-tools, live-config-systemd, squashfs-tools, xorriso, xterm, whois`
 
 e, nel caso si sia scelto di installare calamares
 
-`calamares', 'qml-module-qtquick2', 'qml-module-qtquick-controls'`
+`calamares, qml-module-qtquick2, qml-module-qtquick-controls`
 
 Oltre a questo vengono creati i file di configurazione.
 
@@ -237,35 +264,29 @@ Presenta alcuni flag utilizzabili:
 
 Di gran lunga la modalità d'uso che preferisco, personalmente è
 
-`eggs produce -fv`
+```
+eggs produce -fv
+```
 
 che mi consente si avere una veloce rimasterizzazione ed osservare a video i vari comandi lanciati.
 
-### eggs skel
+### sudo eggs skel
 
 Con questo comando si ricrea la directory /etc/skel della nostra remix. E' utile per dare una veste coerente e personalizzata all'utente live ed ai futuri utenti che creeremo una volta che il nostro sistema sarà installato. Essenzialmente copia le configurazioni dell'utente primario o di quello passato con il flag -u nella cartella /etc/skel che verrà quindi utilizzata per generare lo scheletro della home degli utenti creati.
 
 Considerando che esistono diversi desktop manager, gnome2, gnome3, cinnamon, mate, kde, lxqt, lxde, etc e che viene fatta una operazione di pulizia dei possibili dati sensibili, è un comando sempre in evoluzione. Attualmente è abbastanza affidabile per cinnamon e, per le prove che ho fatto anche con gli altri Desktop Manager.
 
-### eggs sterilize
+### sudo eggs sterilize
 
 E' il comando inverso di prerequisites, sostanzialmente rimuove i pacchetti sopra elencati rendendo il nostro sistema non più in grado di riprodursi.
 
-### eggs update
+### sudo eggs update
 
 Aggiorna il pacchetto eggs alla versione corrente. Attenzione, eggs update funziona solo con la versione pacchettizata npm, per la versione rilasciata come pacchetto deb avremmo bisogno di un repository al momento non disponibile.
 
 ---
-
-description: >-
-  La creazione di una iso nostra remix è un processo che richiede pazienza e
-  passione ma può darci grandi soddisfazioni ed in molti casi, in ultima
-  analisi, farci risparmiare tempo e fatica.
----
-
 # Creiamo una nostra remix
-  La creazione di una iso nostra remix è un processo che richiede pazienza e passione ma può darci grandi soddisfazioni ed in molti casi, in ultima
-  analisi, farci risparmiare tempo e fatica.
+La creazione di una iso nostra remix è un processo che richiede pazienza e passione ma può darci grandi soddisfazioni ed in molti casi, in ultima analisi, farci risparmiare tempo e fatica.
 
 ## Prerequisiti
 
@@ -273,7 +294,9 @@ Installiamo la nostra distribuzione preferita Debian Buster o derivata ed andiam
 
 Installiamo eggs ed assicuriamoci di caricare i prerequisiti e creare i file di configurazione dando il comando
 
-`eggs prerequisites`
+```
+eggs prerequisites
+```
 
 Oltre all'installazione dei vari pacchetti Debian necessari, verrà creato il file di configurazione con le impostazioni di default.  Trovate il file di configurazione in /etc/penguins-eggs.conf e potete eventualmente editarlo per modificare le impostazioni. Trovate la documentazione delle opzioni utilizzate direttamente nei commenti del file stesso.
 
@@ -285,7 +308,9 @@ Nel caso si desideri utilizzare calamares come installer grafico, conviene insta
 
 Basterà procedere con il comando:
 
-`eggs calamares`
+```
+eggs calamares
+```
 
 In alternativa, se non volte calamares,   editate il file di installazione `/etc/penguins-eggs.conf` ed impostare `force_installer=No` altrimenti eggs lo installerà per suo conto.
 
@@ -293,7 +318,9 @@ Successivamente questa immagine dovrà essere posta su una chiavetta o un disco 
 
 Consiglio, inoltre di installare bleachbit perchè ci consentirà di pulire facilmente le nostre remix senza masterizzare dati inutili. Potete falrlo anche da terminale con il comando:
 
-`apt install bleachbit`
+```
+apt install bleachbit
+```
 
 ### Ripuliamo il nostro sistema
 
@@ -301,7 +328,7 @@ Per prima cosa - per questo abbiamo installato bleachbit - vi suggerisco di puli
 
 Normalmente faccio pulire tutto a bleachbit tranne le localizzazione - altrimenti non funzionano le lingue estere - libera spazio su disco e Memoria. 
 
-![](.gitbook/assets/bleachbit-selezione.png)
+![bleachbit-selezione](/images/bleachbit-selezione.png)
 
 Si risparmiano almeno 200 MB che non sono pochi e sarebbero solamente zavorra.
 
@@ -309,7 +336,9 @@ Si risparmiano almeno 200 MB che non sono pochi e sarebbero solamente zavorra.
 
 Una volta installato eggs ed i suoi prerequisiti, siamo pronti al grande salto.
 
-`sudo eggs produce`
+```
+sudo eggs produce
+```
 
 Con questo comando si avvia la costruzione dell'_uovo di pinguino_ che consiste sostanzialmente in tre fasi:
 
@@ -336,7 +365,6 @@ _Perchè produrre , quindi, formati diversi ?_
 _Eventualmente, si potrebbe creare la iso con lz4 e, successivamente, comprimere  la stessa con xz per alleggerire gli upload  ed i download su internet_.
 
 ---
-
 # Scarica le immagini ISO
 Immagini delle remix realizzate dall'autore.
 
@@ -360,15 +388,14 @@ Tutte le versioni sono scaricabili da **sourgeforge.net** cercando il progetto [
 
 Tutte le distribuzioni qui riportate sono impostate con user live ed user di root.
 
-live/evolution
-
-root/evolution
+* live/evolution
+* root/evolution
 
 ### Video
 
 Questo è un vecchio video, vorrei farne altri, magari prossimamente.
 
-![](.gitbook/assets/schermata-del-2019-05-13-15-47-36.png)
+![debu](/images/debu.png)
 
 
 
