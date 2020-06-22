@@ -1,9 +1,0 @@
-if [ "$1" != "" ]; then
-   text = $1
-else
-   text='just a little edit'
-fi
-
-git add -A 
-git commit -m "$text"
-git push
