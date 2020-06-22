@@ -13,7 +13,7 @@ lang: es_ES
 
 Penguin's eggs nacieron con la idea de "reproducción" y "selección de poblaciones" aplicada a los sistemas operativos.
 
-Era el momento de remastersys y systemBack, dos de los programas más populares para remasterizar un sistema operativo, en algún momento, ambos remastersys, que siempre habían tenido problemas de mantenimiento por parte de su autor, y que de alguna manera se interrumpieron los sistemas de bloqueo. (Ver nota)
+Era la época de Remastersys y Systemback, dos de los programas más populares para remasterizar un sistema operativo, en algún momento, tanto Remastersys, que siempre había sufrido problemas de mantenimiento por su autor, como Systemback de alguna manera se suspendió. \(_Ver nota**_\)
 
 En realidad, por un tiempo no hubo problema, pero cuando los "primeros dolores" comenzaron a no ser capaces de remasterizar las últimas versiones de mis distribuciones favoritas, esencialmente Debian y derivados, lo que era una idea, comenzó a tomar forma.
 
@@ -24,7 +24,7 @@ Imaginé un proceso de producción de huevos, llamado **produce**, la operación
 
 Tarde o temprano, siendo un huevo, también encontraré la manera de implementar un servidor PXE que lo distribuya a través de la red local, en este momento, además de la intención, está el nombre y solo podría ser **cuckoo** (cuco), por el comportamiento del cuco que tiene sus huevos eclosionados por otros.
 
-Nota: la situación de systemBack ya no es la de los inicios de Penguin's eggs. Recientemente conocí al buen Franco Conidi (Edmond) que todavía se encarga de las actualizaciones.
+**Nota**: _la situación de Systemback ya no es la de los inicios de Penguin's eggs. Recientemente conocí al buen Franco Conidi (Edmond) que todavía se encarga de las actualizaciones_.
 
 # Instalación
 

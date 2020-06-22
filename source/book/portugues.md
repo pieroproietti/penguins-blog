@@ -18,7 +18,7 @@ Um sistema reprodutivo para pinguins!
 
 Penguin's eggs nasceram com a idéia de "reprodução" e "seleção de populações" aplicadas aos sistemas operacionais.
 
-Era a época do remastersys e do systemBack, dois dos programas mais populares para remasterizar um sistema operacional - em algum momento - ambos os remastersys, que sempre sofreram problemas de manutenção por parte do autor e que systembacks foram interrompidos de alguma forma. (Veja a nota)
+Era a época do Remastersys e do Systemback, dois dos programas mais populares para remasterizar um sistema operacional - em algum momento - ambos os remastersys, que sempre sofreram problemas de manutenção por parte do autor e que Systembacks foram interrompidos de alguma forma. (Veja a nota)
 
 Na verdade, por um tempo não houve problema, mas quando as "primeiras dores" começaram a não ser capazes de remasterizar as versões mais recentes das minhas distribuições favoritas, essencialmente Debian e derivados, o que era uma idéia, começaram a tomar forma.
 
@@ -30,7 +30,7 @@ Mais cedo ou mais tarde, como se trata de um ovo, também vou encontrar uma mane
 
 O que outras pessoas estão dizendo
 
-Nota: a situação systemBack não é mais a do início do Penguin's eggs. Recentemente, conheci o bom Franco Conidi (Edmond), que ainda cuida das atualizações.
+**Nota**: _a situação Systemback não é mais a do início do Penguin's eggs. Recentemente, conheci o bom Franco Conidi (Edmond), que ainda cuida das atualizações_.
 
 # Instalação
 Faça o download dos pacotes de instalação do eggs ou use o código-fonte diretamente

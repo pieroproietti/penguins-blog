@@ -19,7 +19,7 @@ Un sistema riproduttivo per pinguini!
 
 Penguin's eggs nasce con l'idea della "riproduzione" e "selezione delle popolazioni" applicata ai sistemi operativi. 
 
-Erano i tempi di remastersys e systemBack, due dei più diffusi programmi per rimasterizzare un sistema operativo - ad un certo punto - sia remastersys, che aveva sempre sofferto di problemi di manutenzione da parte del suo autore, che systemback furono in qualche modo dismessi. \(_Vedi **nota**_\) 
+Erano i tempi di Remastersys e Systemback, due dei più diffusi programmi per rimasterizzare un sistema operativo - ad un certo punto - sia Remastersys, che aveva sempre sofferto di problemi di manutenzione da parte del suo autore, che Systemback furono in qualche modo dismessi. _Vedi **nota**_
 
 Per la verità per un po' non vi fu problema alcuno, ma quando cominciarono i "primi dolori" per non poter più rimasterizzare le ultime versioni delle mie distro preferite, essenzialmente Debian e derivate, quella che era una idea, cominciò a prendere forma.
 
@@ -31,7 +31,7 @@ Prima o poi, trattandosi di un uovo, troverò anche il modo di implementare un s
 
 
 
-**Nota**: _la situazione  di systemBack  in effetti non è più quella degli inizi di eggs,. Ho conosciuto recentemente il buon Franco Conidi  \(Edmond \) che  ne cura tutt'ora gli aggiornamenti._
+**Nota**: _la situazione  di Systemback  in effetti non è più quella degli inizi di eggs,. Ho conosciuto recentemente il buon Franco Conidi  \(Edmond \) che  ne cura tutt'ora gli aggiornamenti._
 
 # Installazione
 
@@ -42,7 +42,7 @@ Cose da fare prima di cominciare la produzione delle "uova".
 L'installazione da pacchetto Debian è senz'altro la più semplice. Basta scaricare l'ultima versione di eggs dal sito di [sourceforge](https://sourceforge.net/projects/penguins-eggs/files/DEBS/) ed installarla con il comando:
 
 ```
-sudo dpkg -i eggs-7.5.81-1.deb`
+sudo dpkg -i eggs-7.5.81-1.deb
 ```
 
 La versione .deb  comprende al suo interno nodejs per cui non è necessario disporre di questo pacchetto. 
@@ -55,14 +55,15 @@ Per poter installare questa versione è necessario quindi installare prima il pa
 
 L'installazione di eggs da pacchetto npm è semplice e sicura, solo questi comandi:
 
-`sudo npm config set unsafe-perm true`
-
-`sudo npm install penguins-eggs -g`
+```
+sudo npm config set unsafe-perm true
+sudo npm install penguins-eggs -g
+```
 
 Per aggiornare il pacchetto - una volta installato - alle successive versioni, basterà il comando
 
 ```
-sudo eggs update`
+sudo eggs update
 ```
 
 ### Utilizzo di eggs da codice sorgente
@@ -73,19 +74,21 @@ Utilizzare eggs a partire dai sorgenti può essere estremamente utile sia per de
 git clone https://github.com/pieroproietti/penguins-eggs
 ```
 
-entrare. quindi, nella directory penguins-eggs e dare il comando
+entrare, quindi, nella directory penguins-eggs e dare il comando
 
 ```
-npm install`
+npm install
 ```
 
-A questo punto, dalla directory penguins-eggs stessa, si potrà utilizzare il sorgente direttamente. Ad esempio
+A questo punto, dalla directory penguins-eggs stessa, si potrà utilizzare il sorgente direttamente. Ad esempio:
 
 ```
-sudo ./eggs produce -f -v
+sudo ./eggs produce -fv
 ```
 
 Per gli sviluppatori od i curiosi, sarà possibile vedere, segnalare o correggere il codice. 
+
+
 ---
 
 # Prerequisiti e configurazione
@@ -94,7 +97,7 @@ Una volta installato il pacchetto come nella pagina precedente, disporremo sul n
 
 `eggs`
 
-Avviano eggs senza alcun comando otterremo la lista dei comandi disponibili:
+Avviamo eggs senza alcun comando ed otterremo la lista dei comandi disponibili:
 
 ![eggs-senza-parametri](/images/eggs-senza-parametri.png)
 
@@ -109,17 +112,17 @@ sudo eggs prerequisites
 
 Selezionando Yes verrà accettata l'installazione dei pacchetti necessari al funzionamento di eggs ed alla produzione delle immagini iso. Essenzialmente possiamo divide in tre i pacchetti installti:
 
-1. Pacchetti per avvio su macchine UEFI
-2. Pacchetti per la creazione dell'immagine iso
-3. Pacchetti per l'installer grafico calamares
+* Pacchetti per avvio su macchine UEFI
+* Pacchetti per la creazione dell'immagine iso
+* Pacchetti per l'installer grafico calamares
 
-Tutti i pacchetti per il funzionamento di eggs e la produzione di iso sono installati dal comando 
+Tutti i pacchetti per il funzionamento di eggs e la produzione di iso sono installati dal comando:
 
 ```
-eggs prerequisites
+sudo eggs prerequisites
 ```
 
-Installerà, quindi, i seguenti pacchetti;
+che installerà, quindi, i seguenti pacchetti:
 
 `isolinux, live-boot, live-boot-initramfs-tools, lvm2, squashfs-tools, xorriso, xterm, whois`
 
@@ -135,10 +138,10 @@ che installerà calamares ed i moduli `qml-module-qtquick2, qml-module-qtquick-c
 
 ### Realizzazione di immagini iso compatibili UEFI
 
-se vogliamo che le nostre iso vengano create compatibili UEFI \(Attenzione questo è stato testato solamente con Debian Buster, probabilmente in Ubuntu ancora non va\) dobbiamo installare il pacchetto grub-efi-amd64, con il comando.
+Se vogliamo che le nostre iso vengano create compatibili UEFI - _attenzione: questo è stato testato solamente con Debian Buster, probabilmente in Ubuntu ancora non va_ - dobbiamo installare il pacchetto grub-efi-amd64, con il comando:
 
 ```
-apt install grub-efi-amd64
+sudo apt install grub-efi-amd64
 ```
 
 vedi **Nota**
@@ -161,7 +164,7 @@ sudo eggs prerequisites -c
 
 Bene, adesso siamo finalmente pronti ad utilizzare eggs per la riproduzione del nostro pinguino.
 
-_**Nota**: nel caso desideriamo creare una immagine avviabile in modalità UEFI ed abbiamo installato grub-efi-amd64 dopo aver installato i prerequisiti , occorre andare ad editare il file /etc/penguins-eggs.conf ed impostare make\_efi=yes._
+_**Nota**: nel caso desideriamo creare una immagine avviabile in modalità UEFI ed abbiamo installato grub-efi-amd64 dopo aver installato i prerequisiti, occorre andare ad editare il file /etc/penguins-eggs.conf ed impostare make\_efi=yes._
 
 ---
 
@@ -244,7 +247,7 @@ e, nel caso si sia scelto di installare calamares
 
 Oltre a questo vengono creati i file di configurazione.
 
-### eggs produce
+### sudo eggs produce
 
 E' questo il comando che più utilizzerete, di fatto sostanzialmente l'unico insieme a kill che serve invece a sbarazzarsi delle immagini iso create.
 
@@ -265,7 +268,7 @@ Presenta alcuni flag utilizzabili:
 Di gran lunga la modalità d'uso che preferisco, personalmente è
 
 ```
-eggs produce -fv
+sudo eggs produce -fv
 ```
 
 che mi consente si avere una veloce rimasterizzazione ed osservare a video i vari comandi lanciati.
@@ -295,7 +298,7 @@ Installiamo la nostra distribuzione preferita Debian Buster o derivata ed andiam
 Installiamo eggs ed assicuriamoci di caricare i prerequisiti e creare i file di configurazione dando il comando
 
 ```
-eggs prerequisites
+sudo eggs prerequisites
 ```
 
 Oltre all'installazione dei vari pacchetti Debian necessari, verrà creato il file di configurazione con le impostazioni di default.  Trovate il file di configurazione in /etc/penguins-eggs.conf e potete eventualmente editarlo per modificare le impostazioni. Trovate la documentazione delle opzioni utilizzate direttamente nei commenti del file stesso.
@@ -309,7 +312,7 @@ Nel caso si desideri utilizzare calamares come installer grafico, conviene insta
 Basterà procedere con il comando:
 
 ```
-eggs calamares
+sudo eggs calamares
 ```
 
 In alternativa, se non volte calamares,   editate il file di installazione `/etc/penguins-eggs.conf` ed impostare `force_installer=No` altrimenti eggs lo installerà per suo conto.
@@ -319,7 +322,7 @@ Successivamente questa immagine dovrà essere posta su una chiavetta o un disco 
 Consiglio, inoltre di installare bleachbit perchè ci consentirà di pulire facilmente le nostre remix senza masterizzare dati inutili. Potete falrlo anche da terminale con il comando:
 
 ```
-apt install bleachbit
+sudo apt install bleachbit
 ```
 
 ### Ripuliamo il nostro sistema
