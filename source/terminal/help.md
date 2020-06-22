@@ -74,5 +74,5 @@ EXAMPLE
   the penguin produce an egg called egg-i386-2020-04-13_1815.iso
 ```
 
-![help](/images/help.gif)
+![help](/images/terminal/help.gif)
 
