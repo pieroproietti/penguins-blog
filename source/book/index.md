@@ -1,5 +1,5 @@
 ---
-title: guide eggs
+title: Guide eggs
 layout: page
 date: 2020-06-20 07:38:32
 ---
