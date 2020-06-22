@@ -1,3 +1,8 @@
+text='just a little edit'
+if [ "$1" != "" ]; then
+   text = $1
+fi
+
 git add -A 
-git commit -m nada
+git commit -m "$text"
 git push
