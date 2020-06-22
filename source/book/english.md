@@ -2,7 +2,7 @@
 title: Guide eggs enghish
 layout: page
 date: 2020-06-20 07:38:32
-lang: it_IT
+lang: en_US
 ---
 # Indice
 * [Introduction](#introduzione)
@@ -360,44 +360,44 @@ As was initially reported in the code, the suggestion is to have a coffee in the
 One recommendation. Normally this command is given on the machine where you are working and perhaps a previous version has already been produced. I recommend deleting previous images with the `sudo eggs kill` command which removes the entire directory tree under /home/eggs).
 
 
-**Nota**: _Non tutto il male vien per nuocere però. Se consideriamo che attualmente i DVD  si usano relativamente poco e le chiavette stanno diventando sempre più veloci, vi sono  casi la nostra remix potrebbe essere risultare più ottimizzata con un filesystem più grande ma meno compresso! Difatti, tenuto conto che durante l'uso - nascosto ai nostri occhi - ci sarà un continuo processo di lettura e decompressione del filesystem,  la decompressioone xz risulta comunque più lenta di quella lz4._ 
+** Note **: _Not all evil comes to harm though. If we consider that DVDs are currently used relatively little and the sticks are getting faster and faster, there are cases our remix could be more optimized with a larger but less compressed filesystem! In fact, considering that during use - hidden from our eyes - there will be a continuous process of reading and decompressing the filesystem, the decompressioone xz is still slower than the lz4._
 
-_Tenendo pure presente che non esiste più il limite delle dimensioni delle immagini iso a 4 GB, la soluzione di utilizzare sempre lz4 potrebbe rivelarsi doppiamente vantaggiosa, soprattutto in caso  di utilizzo con le macchine virtuali che  - quasi sempre - leggono direttamente  il file immagine su disco fisso invece di un reale DVD.  Inoltre, tutti i principali programmi per la creazione di chiavette avviabili  leggono i file iso._ 
+_Keeping in mind that there is no longer the limit of the size of ISO images at 4 GB, the solution to always use lz4 could prove doubly advantageous, especially if used with virtual machines that - almost always - read the image file directly on disk fixed instead of a real DVD. In addition, all major programs for creating bootable sticks read the iso._ files
 
-_Perchè produrre , quindi, formati diversi ?_
+_Why produce different formats? _
 
-_Eventualmente, si potrebbe creare la iso con lz4 e, successivamente, comprimere  la stessa con xz per alleggerire gli upload  ed i download su internet_.
+_Eventually, you could create the iso with lz4 and, subsequently, compress it with xz to lighten the uploads and downloads on the internet_.
 
 ---
-# Scarica le immagini ISO
-Immagini delle remix realizzate dall'autore.
+# Download the ISO images
+Images of the remixes made by the author.
 
-## Premessa
+## Premise
 
-Sono qui riportate una serie di remix realizzate da me stesso e create con Penguin's eggs. Non è mio scopo quello di realizzare una nuova remix, preferisco piuttosto costruire e mantenere il pacchetto. Però anche in questo vale il detto: nasce prima l'uovo o la gallina? Ed alcune remix le faccio e continuo a proporle.
+Here are a series of remixes made by myself and created with Penguin's eggs. It is not my purpose to create a new remix, rather I prefer to build and maintain the package. But the saying goes: the egg or the hen first? And I do some remixes and continue to offer them.
 
-Si tratta essenzialmente di versioni di Debian Buster, anche se rilascerò una versione minima di ubuntu con gli strumenti per lo sviluppo Typescript. 
+These are essentially versions of Debian Buster, although I will release a minimal version of ubuntu with the Typescript development tools.
 
-Attualmente sono on line delle derivate di Debian Buster, less è una versione leggera - solo il necessario per lo sviluppo, che normalmente uso. Debu, più comoda e rifinita, sempre con gli strumenti di sviluppo e tutto il necessario per office, disegno, sviluppo etc. Debu ha il solo torto - rispetto a less - che essendo relativamente grande, 1,9 GB a fronte dei 900KB di less impiega più tempo per la "riproduzione".
+Currently derivatives of Debian Buster are online, less is a light version - only the necessary for development, which I normally use. Debu, more comfortable and refined, always with development tools and everything you need for office, design, development etc. Debu is only wrong - compared to less - that being relatively large, 1.9 GB compared to 900KB of less takes more time for "reproduction".
 
-E' presente anche una versione ancora più leggera, denominata naked senza nessuna interfaccia grafica ma utile come base.
+There is also an even lighter version, called naked without any graphical interface but useful as a base.
 
-In sostanza consiglio debu o less per chi voglia partecipare allo sviluppo, naked per chi vuole partire da una base per poi procedere alla creazione propria remix. Infine, ma non sono esperto della materia, ho realizzato una versione denominata blockchain per lo studio della stessa. Potrebbe essere insteressante per gli esperti del settore, non tanto per l'uso personale ma per relizzare demo e chiavette eventualmente installabili per divulgazione.
+Basically I recommend debu or less for those who want to participate in development, naked for those who want to start from a base and then proceed to creating their own remix. Finally, but I'm not an expert in the subject, I made a version called blockchain for the study of the same. It could be interesting for experts in the sector, not so much for personal use but for creating demos and keys that can be installed for dissemination.
 
-### Dove posso scaricare le iso
+### Where can I download the ISO
 
-Tutte le versioni sono scaricabili da **sourgeforge.net** cercando il progetto [penguins-eggs](https://sourceforge.net/projects/penguins-eggs/files/).
+All versions are downloadable from ** sourgeforge.net ** by looking for the [penguins-eggs] project (https://sourceforge.net/projects/penguins-eggs/files/).
 
-#### User e password
+#### User and password
 
-Tutte le distribuzioni qui riportate sono impostate con user live ed user di root.
+All the distributions shown here are set up with live user and root user.
 
 * live/evolution
 * root/evolution
 
 ### Video
 
-Questo è un vecchio video, vorrei farne altri, magari prossimamente.
+This is an old video, I would like to make others, maybe soon.
 
 ![debu](/images/debu.png)
 
