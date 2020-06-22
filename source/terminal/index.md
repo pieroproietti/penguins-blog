@@ -12,4 +12,5 @@ A series of easy video terminal expamples, about:
 * [Installing prerequisites](./eggs-prerequisites.html)
 * [Producing a new ISO](./eggs-produce.html)
 
+![eggs-produce](./videos/eggs-produce.gif)
 
