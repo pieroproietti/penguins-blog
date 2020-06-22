@@ -1,6 +1,7 @@
 ---
-title: Português
+title: Guia eggs português
 layout: page
+lang: pt_BR
 date: 2020-06-20 07:38:32
 ---
 # índice
