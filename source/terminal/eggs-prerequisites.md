@@ -32,5 +32,6 @@ finally, if you are building an UEFI image, you need too:
 
 ## Well, let's start!
 
-![prerequisites](/images/terminal/prerequisites.gif)
+![prerequisites](./videos/eggs-prerequisites.gif)
+
 

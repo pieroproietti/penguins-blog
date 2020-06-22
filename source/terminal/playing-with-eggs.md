@@ -1,11 +1,10 @@
 ---
-title: help
+title: playing with help
 layout: page
 date: 2020-06-22 07:38:32
 ---
 
 _A command line tools, can be easy to use!_
-# Play with help
 
 We will see how get help from eggs. 
 
@@ -74,5 +73,5 @@ EXAMPLE
   the penguin produce an egg called egg-i386-2020-04-13_1815.iso
 ```
 
-![help](/images/terminal/help.gif)
+![help](./videos/help.gif)
 
