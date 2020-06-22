@@ -1,11 +1,10 @@
 #!/bin/bash
-echo $1
-if [ '$1' != '']; then
-   message = '$1'
-else
+if [ -z "$1" ]; then
    message='just a little edit'
+else
+   message='$1'
 fi
 
 git add -A 
-git commit -m '$message'
+git commit -m ${message}
 git push
