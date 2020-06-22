@@ -141,7 +141,7 @@ which will install calamares and the `qml-module-qtquick2, qml-module-qtquick-co
 
 ### Realizzazione di immagini iso compatibili UEFI
 
-Se vogliamo che le nostre iso vengano create compatibili UEFI - _attenzione: questo è stato testato solamente con Debian Buster, probabilmente in Ubuntu ancora non va_ - dobbiamo installare il pacchetto grub-efi-amd64, con il comando:
+If we want our ISOs to be created UEFI compatible - _attention: this has only been tested with Debian Buster, probably in Ubuntu it still doesn't go_ - we need to install the grub-efi-amd64 package, with the command:
 
 ```
 sudo apt install grub-efi-amd64
@@ -149,33 +149,31 @@ sudo apt install grub-efi-amd64
 
 vedi **Nota**
 
-### File di configurazione penguins-eggs.conf
+### penguins-eggs.conf configuration file
 
-Normalmente non è necessario intervenire su /etc/penguins-eggs.conf,  eggs si autoconfigura e adattandosi alle bisogna della distro presente. Ad ogni modo per la documentazione si rimanda ai commenti presenti sullo stesso file.
+Normally it is not necessary to intervene on /etc/penguins-eggs.conf, eggs is self-configured and adapting to the needs of the present distro. In any case, for the documentation, see the comments on the same file.
 
-Mi preme solo segnalare che editando questo file si può modificare sia nome dell'utente della live, che la sua password e quella di amministrazione.
+I just want to point out that by editing this file you can edit both the name of the live user, his password and the administration password.
 
-Se avete scelto di non toccare per il momento /etc/penguins-eggs.conf, si ricorda che per default eggs è configurato con user **live** e password **evolution**, la stessa password è impostata per il login di root.
+If you have chosen not to touch /etc/penguins-eggs.conf for the moment, remember that by default eggs is configured with user ** live ** and password ** evolution **, the same password is set for the login of root.
 
-Se invece avete modificato o cancellato il file di configurazione, potete sempre ripristinarlo con il comando:
+If instead you have modified or deleted the configuration file, you can always restore it with the command:
 
 ```
 sudo eggs prerequisites -c
 ```
 
-### eggs è pronto!
+### eggs is ready!
 
-Bene, adesso siamo finalmente pronti ad utilizzare eggs per la riproduzione del nostro pinguino.
+Well, now we are finally ready to use eggs for the reproduction of our penguin.
 
-_**Nota**: nel caso desideriamo creare una immagine avviabile in modalità UEFI ed abbiamo installato grub-efi-amd64 dopo aver installato i prerequisiti, occorre andare ad editare il file /etc/penguins-eggs.conf ed impostare make\_efi=yes._
+_ ** Note **: if we want to create a bootable image in UEFI mode and we have installed grub-efi-amd64 after installing the prerequisites, we need to go to edit the file /etc/penguins-eggs.conf and set make _efi = yes._---
 
----
+# The commands
 
-# I comandi
+## Commands and Options
 
-### Comandi ed opzioni 
-
-Eggs necessita dei diritti di root, quindi - tranne per eggs info - DEVE essere chiamato preceduto da`sudo`
+Eggs needs root rights, so - except for eggs info - it MUST be called preceded by `sudo`
 
 * adjust
 * calamares
@@ -190,73 +188,73 @@ Eggs necessita dei diritti di root, quindi - tranne per eggs info - DEVE essere 
 * sterilize
 * update
 
-Non vi fate spaventare da questi pochi comandi, quelli che utilizzerete sono essenzialmente due: produce per creare la iso e kill per cancellarla.
+Don't be frightened by these few commands, the ones you will use are essentially two: produce to create the ISO and kill to delete it.
 
-Ogni comando può avere alcuni flag,di questi, il più importante, è il flag -f o --fast del comando produce che consentirà ad eggs di utilizzare come algoritmo di compressione lz4 invece del default xz permettendovi così di risparmiare non poco tempo durante le fasi di sviluppo della vostra remix. 
+Each command can have some flags, the most important of which is the -fo --fast flag of the produce command which will allow eggs to use lz4 as a compression algorithm instead of the default xz, thus allowing you to save a lot of time during the phases development of your remix.
 
-Altro flag importante e presente nella quasi totalità dei casi è il flag -v o --verbose che vi mostrerà a video il susseguirsi delle vari comandi.
+Another important and present flag in almost all cases is the -v or --verbose flag which will show you on the screen the succession of the various commands.
 
-Andiamo ad illustrare i comandi in rigoroso ordine alfabetico, per comodità dello scrivente. Tenete a mente che i comandi che utilizzerete normalmente sono kill e produce.
+Let's illustrate the commands in strict alphabetical order, for the convenience of the writer. Keep in mind that the commands you will normally use are kill and produce.
 
 ### eggs adjust
 
-Adatta il video alle capacità del monitor o alla grandezza della finestra in caso di macchina virtuale. Lo trovo molto comodo per ridimensionare le macchine virtuali con interfacce grafiche diverse da cinnamon gnome3 e kde per la quale non è necessario. In pratica eggs richiama xrandr per adattare lo schermo alla risoluzione corrente.
+Adapts the video to the capabilities of the monitor or to the size of the window in the case of a virtual machine. I find it very convenient to resize virtual machines with graphical interfaces other than cinnamon, gnome3 and kde for which it is not necessary. Basically eggs calls xrandr to adapt the screen to the current resolution.
 
 ### sudo eggs calamares
 
-Installa e configura l'installatore grafico universale calamares. Può essere utilizzato anche in caso di una iso realizzata senza calamares e che, in sede di installazione si voglia installare con esso.
+Install and configure the calamares universal graphic installer. It can also be used in the case of an ISO made without calamares and which, during installation, you want to install with it.
 
 ### eggs help
 
-Come dice il comando stesso genera la lista dei comandi disponibili. A sua volta ogni comando con il flag -h o --help emette usa sua descrizione.
+As the command itself says, it generates the list of available commands. In turn, each command with the -h or --help flag issues uses its description.
 
 ### eggs howto
 
-Mostra a video dei brevissimi suggerimenti. Al momento boot da grub rescue e come configurare eggs.
+Show video some very short tips. At the moment boot from grub rescue and how to configure eggs.
 
 #### eggs howto:grub
 
-Come avviare da grub rescue.
+How to boot from grub rescue.
 
 #### eggs howto:configure
 
-Come configurare eggs.
+How to configure  eggs.
 
 ### eggs info
 
-Mostra a video la configurazione di eggs e del sistema. E' l'unico comando che può essere usato senza sudo.
+Show the configuration of eggs and the system on the screen. It is the only command that can be used without sudo.
 
 ### sudo eggs install
 
-Lancia l'installaler cli di eggs. 
+Launch the eggs installer cli.
 
-In alternativa con l'opzione -g o --gui lancia invece calamares.
+Alternatively, with the -g or --gui option, launch calamares instead.
 
-Attenzione, l'installatore cli è più veloce di calamares, però è MOLTO rudimentale e non raccomandato per i non esperti. Cancellerà compleamente il disco rigido di destinazione! Utilizzatelo solo su macchine virtuali o computer puliti o da pulire.
+Warning, the cli installer is faster than calamares, but it is VERY rudimentary and not recommended for non-experts. Will completely erase the target hard drive! Use it only on clean or clean virtual machines or computers.
 
 ### sudo eggs kill
 
-Cancella le immagini realizzate e la directory di lavoro di eggs \(il nido\). Esegue rm /home/eggs -rf per cancellare tutte le iso create. Presenta anche un utile flag -u che, prima di procedere alla rimozione tenta smonta i filesystem eventualmente presenti in essa.
+Delete the images created and the working directory of eggs (the nest). Run rm /home/eggs -rf to delete all the iso created. It also has a useful flag -u which, before proceeding with the removal, attempts to unmount any file systems present in it.
 
 ### sudo eggs prerequisites
 
-Installa i pacchetti deb necessari al funzionamento di eggs. In particolare, vengono installati:
+Install the deb packages needed for eggs to work. In particular, the following are installed:
 
 `isolinux, live-boot, live-boot-initramfs-tools, live-config-systemd, squashfs-tools, xorriso, xterm, whois`
 
-e, nel caso si sia scelto di installare calamares
+and, if you have chosen to install calamares:
 
 `calamares, qml-module-qtquick2, qml-module-qtquick-controls`
 
-Oltre a questo vengono creati i file di configurazione.
+In addition to this, configuration files are created.
 
 ### sudo eggs produce
 
-E' questo il comando che più utilizzerete, di fatto sostanzialmente l'unico insieme a kill che serve invece a sbarazzarsi delle immagini iso create.
+This is the command you will use the most, in fact basically the only one together with kill which is used to get rid of the ISO images created.
 
-Usato senza parametri produce la iso con compressione di tipo xz. Controlla pure se sono o non sono installati i prerequisiti e creati i file di configurazione e, di fatto, produce la iso.
+Used without parameters, it produces the ISO with type xz compression. Also check if the prerequisites are installed or not and the configuration files are created and, in fact, it produces the iso.
 
-Presenta alcuni flag utilizzabili:
+It has some usable flags:
 
 `-b, --basename=basename basename egg`
 
@@ -268,99 +266,99 @@ Presenta alcuni flag utilizzabili:
 
 `-v, --verbose verbose`
 
-Di gran lunga la modalità d'uso che preferisco, personalmente è
+By far the mode of use that I prefer, personally it is:
 
 ```
 sudo eggs produce -fv
 ```
 
-che mi consente si avere una veloce rimasterizzazione ed osservare a video i vari comandi lanciati.
+which allows me to have a quick remaster and observe the various commands launched on the screen.
 
 ### sudo eggs skel
 
-Con questo comando si ricrea la directory /etc/skel della nostra remix. E' utile per dare una veste coerente e personalizzata all'utente live ed ai futuri utenti che creeremo una volta che il nostro sistema sarà installato. Essenzialmente copia le configurazioni dell'utente primario o di quello passato con il flag -u nella cartella /etc/skel che verrà quindi utilizzata per generare lo scheletro della home degli utenti creati.
+With this command we recreate the /etc/skel directory of our remix. It is useful to give a coherent and personalized look to the live user and future users that we will create once our system is installed. It essentially copies the configurations of the primary user or the one passed with the -u flag in the /etc/skel folder which will then be used to generate the skeleton of the home of the users created.
 
-Considerando che esistono diversi desktop manager, gnome2, gnome3, cinnamon, mate, kde, lxqt, lxde, etc e che viene fatta una operazione di pulizia dei possibili dati sensibili, è un comando sempre in evoluzione. Attualmente è abbastanza affidabile per cinnamon e, per le prove che ho fatto anche con gli altri Desktop Manager.
+Considering that there are several desktop managers, gnome2, gnome3, cinnamon, mate, kde, lxqt, lxde, etc and that an operation is performed to clean up possible sensitive data, it is a command that is always evolving. It is currently quite reliable for cinnamon and for the tests I have done with the other Desktop Managers.
 
 ### sudo eggs sterilize
 
-E' il comando inverso di prerequisites, sostanzialmente rimuove i pacchetti sopra elencati rendendo il nostro sistema non più in grado di riprodursi.
+It is the inverse command of prerequisites, it basically removes the packages listed above making our system no longer able to reproduce.
 
 ### sudo eggs update
 
-Aggiorna il pacchetto eggs alla versione corrente. Attenzione, eggs update funziona solo con la versione pacchettizata npm, per la versione rilasciata come pacchetto deb avremmo bisogno di un repository al momento non disponibile.
+Update the eggs package to the current version. Warning, eggs update only works with the packaged version npm, for the version released as a deb package we would need a repository that is not currently available.
 
 ---
-# Creiamo una nostra remix
-La creazione di una iso nostra remix è un processo che richiede pazienza e passione ma può darci grandi soddisfazioni ed in molti casi, in ultima analisi, farci risparmiare tempo e fatica.
+# Let's create our own remix
+The creation of our remix iso is a process that requires patience and passion but can give us great satisfaction and in many cases, in the final analysis, it will save us time and effort.
 
-## Prerequisiti
+## Prerequisites
 
-Installiamo la nostra distribuzione preferita Debian Buster o derivata ed andiamo ad installare eggs con uno dei metodi descritti in precedenza. 
+We install our favorite Debian Buster or derivative distribution and we go to install eggs with one of the methods described above.
 
-Installiamo eggs ed assicuriamoci di caricare i prerequisiti e creare i file di configurazione dando il comando
-
+We install eggs and make sure to load the prerequisites and create the configuration files by giving the command
 ```
 sudo eggs prerequisites
 ```
 
-Oltre all'installazione dei vari pacchetti Debian necessari, verrà creato il file di configurazione con le impostazioni di default.  Trovate il file di configurazione in /etc/penguins-eggs.conf e potete eventualmente editarlo per modificare le impostazioni. Trovate la documentazione delle opzioni utilizzate direttamente nei commenti del file stesso.
+In addition to installing the various necessary Debian packages, the configuration file with the default settings will be created. Find the configuration file in /etc/penguins-eggs.conf and you can possibly edit it to modify the settings. Find the documentation of the options used directly in the comments of the file itself.
 
-A questo punto eggs è pronto a funzionare e creare l'immagine iso del nostro sistema. 
+At this point eggs is ready to work and create the iso image of our system.
 
-### Aggiunta dell'installer grafico Calamares
+### Added Calamares graphic installer
 
-Nel caso si desideri utilizzare calamares come installer grafico, conviene installarlo adesso. 
+If you want to use calamares as a graphic installer, it is better to install it now.
 
-Basterà procedere con il comando:
+Just proceed with the command:
 
 ```
 sudo eggs calamares
 ```
 
-In alternativa, se non volte calamares,   editate il file di installazione `/etc/penguins-eggs.conf` ed impostare `force_installer=No` altrimenti eggs lo installerà per suo conto.
+Alternatively, if not times calamares, edit the installation file `/etc/penguins-eggs.conf` and set` force_installer = No` otherwise eggs will install it on his behalf.Subsequently this image must be placed on a stick or a DVD disc and can be reinstalled either with the calamares graphic installer or - in a more spartan way - with your own cli installer. 
 
-Successivamente questa immagine dovrà essere posta su una chiavetta o un disco DVD e potrà essere reinstallarla o con l'installer grafico calamares oppure - in maniera più spartana - con il proprio installer cli. Per l'installer grafico calamares basterà lasciare il file di configurazione così come è, mentre se si decide di non usare calamares occore editare il file di configurazione  /etc/penguins-eggs.com e porre force-installer=no-
+For the graphic installer calamares just leave the configuration file as it is, while if you decide not to use calamares you need to edit the configuration file /etc/penguins-eggs.com and put force-installer = no.
 
-Consiglio, inoltre di installare bleachbit perchè ci consentirà di pulire facilmente le nostre remix senza masterizzare dati inutili. Potete falrlo anche da terminale con il comando:
+I also recommend installing bleachbit because it will allow us to easily clean our remixes without burning useless data. You can also do this from the terminal with the command:
 
 ```
 sudo apt install bleachbit
 ```
 
-### Ripuliamo il nostro sistema
+### Let's clean up our system
 
-Per prima cosa - per questo abbiamo installato bleachbit - vi suggerisco di pulire il vostro sistema. 
+First - for this we have installed bleachbit - I suggest you to clean your system.
 
-Normalmente faccio pulire tutto a bleachbit tranne le localizzazione - altrimenti non funzionano le lingue estere - libera spazio su disco e Memoria. 
+Normally I have bleachbit clean everything except localizations - otherwise foreign languages don't work - free disk space and memory.
 
 ![bleachbit-selezione](/images/bleachbit-selezione.png)
 
-Si risparmiano almeno 200 MB che non sono pochi e sarebbero solamente zavorra.
+You save at least 200 MB which is not a small amount and would only be ballast.
 
-### Produzione della iso
+### ISO production
 
-Una volta installato eggs ed i suoi prerequisiti, siamo pronti al grande salto.
+Once eggs and its prerequisites are installed, we are ready for the big leap.
 
 ```
 sudo eggs produce
 ```
 
-Con questo comando si avvia la costruzione dell'_uovo di pinguino_ che consiste sostanzialmente in tre fasi:
+This command starts the construction of the penguin egg which basically consists of three phases:
 
-* creazione di una immagine del fs montata con overlayfs - che è istantanea e senza alcuna copia dei dati - per permettere le modifiche per la realizzazione del filesystem per l'immagine;
-* compressione dell'intero filesystem in /home/eggs/work/iso/live/filesystem.squashfs;
-* generazione dell'immagine iso dalla struttura precedente in /home/eggs/basename-X64\_AAAA-MM-GG-HHMM.iso
+* creation of an image of the fs mounted with overlayfs - which is instantaneous and without any copy of the data - to allow modifications for the creation of the filesystem for the image;
+* compression of the entire filesystem in /home/eggs/work/iso/live/filesystem.squashfs;
+* generation of the iso image from the previous structure in /home/eggs/basename-X64\_AAAA-MM-DD-HHMM.iso
 
-Il processo ha una certa pesantezza - inutile nasconderlo - non ve la prendete ne' con la copia del filesystem che non si effettua proprio e neppure con l'interfaccia grafica - visto che non ne facciamo uso. 
+The process has a certain heaviness - it is useless to hide it - you don't take it neither with the copy of the filesystem that is not done at all and not even with the graphical interface - since we don't use it.
 
-La pesantezza è data dal fatto che dobbiamo comprimere l'intero filesystem. 
+The heaviness is given by the fact that we have to compress the entire filesystem.
 
-Durante le prove però o comunque quando lo riteniate opportuno, vi consiglio di usare produce con l'opzione -f  o --fast. Facendo così si utilizzerà l'algoitmo di compressione lz4 invece di del più "pesante" xz e si dimezzerà il tempo di esecuzione. Per la versione finale, una volta controllato che sia tutto a posto potremo invece utilizzare la compressione di default per ottenere una iso più snella, oppure l'opzione -c  --compress che comprime ancora un po' di più, al prezzo di una ulteriore lentezza.
+During the tests, however, or in any case when you deem it appropriate, I recommend that you use produce with the -f or --fast option. Doing so will use the compression algorithm lz4 instead of the "heavier" xz and will halve the execution time. For the final version, once checked that everything is in place, we can instead use the default compression to obtain a leaner ISO, or the option -c --compress which compresses a little more, at the price of a further slowness.
 
-Come era inizialmente riportato anche nel codice, il suggerimento è prendersi un caffè nel frattempo e cercare di riservare abbastanza potenza di elaborazione alla macchina. Nel mio caso - utilizzo una macchina virtuale con 4 core e 4 GB di memoria - per un filesystem di 7/8 GB occorrono circa _dieci minuti_ con la compressione xz, mentre utilizzando la compressione lz4 si riduce moltissimo l'attesa solo un _minuto e mezzo_.  Per il caffè non facciamo più in tempo, una sigaretta fa male e l'immagine ottenuta passa a _3,0 GB_ a fronte dei _2.00_ GB della compressione xz \(Vedi **nota**\).
+As was initially reported in the code, the suggestion is to have a coffee in the meantime and try to reserve enough processing power for the machine. In my case - I use a virtual machine with 4 cores and 4 GB of memory - for a 7/8 GB filesystem it takes about _ ten minutes_ with the xz compression, while using the lz4 compression the wait is reduced a lot only a _minute and a half_ . We don't have time for coffee anymore, a cigarette hurts and the image obtained goes to _3.0 GB_ compared to _2.00_ GB of the xz compression (See **note**).
 
-Una sola raccomandazione. Normalmente si da questo comando sulla macchina dove si lavora e magari si è già prodotta una versione precedente. Raccomando di cancellare le immagini precedenti con il comando `sudo eggs kill` che rimuove l'intero albero di directory sotto /home/eggs\).
+One recommendation. Normally this command is given on the machine where you are working and perhaps a previous version has already been produced. I recommend deleting previous images with the `sudo eggs kill` command which removes the entire directory tree under /home/eggs).
+
 
 **Nota**: _Non tutto il male vien per nuocere però. Se consideriamo che attualmente i DVD  si usano relativamente poco e le chiavette stanno diventando sempre più veloci, vi sono  casi la nostra remix potrebbe essere risultare più ottimizzata con un filesystem più grande ma meno compresso! Difatti, tenuto conto che durante l'uso - nascosto ai nostri occhi - ci sarà un continuo processo di lettura e decompressione del filesystem,  la decompressioone xz risulta comunque più lenta di quella lz4._ 
 
