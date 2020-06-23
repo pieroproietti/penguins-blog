@@ -15,3 +15,5 @@ But not only!
 Now the various READMEs, links, etc point to our new site https://penguins-eggs.net.
 
 Come in here for more informations.
+
+![eggs-produce](./videos/eggs-produce.gif)
