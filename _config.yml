@@ -124,9 +124,9 @@ sitemap:
   path: sitemap.xml
 
 # theme 
-## theme override
 # favicon: /favicon.ico
-# google_analytics: UA-170278688-1
+# google_analytics: UA-170278688-1 // non funge con override, l'ho messo nel tema
+## theme override
 menu:
   Home: /
   Book: /book
