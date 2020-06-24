@@ -1,5 +1,7 @@
 ---
 title: Hello World
+layout: post
+categoy: linuxmint
 ---
 
 It’s my first day on line!
@@ -16,3 +18,5 @@ You can find the iso images ulyana aka Linux Mint 20 Beta in sourceforge.
 It is installable just with eggs install, not calamares GUI installer at the moment. So, please take it just as an example, or possibly, a stimoulus to help the project.
 
 I just forgot to tell who I made another version of eggs, to include ulyana and just upload the deb package it in sourceforge too.
+
+[#linuxmint](/categories/linuxmint/)

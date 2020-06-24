@@ -1,6 +1,7 @@
 ---
 title: eggs-7.5.122-1 version for i386 and amd64
 layout: post
+category: ['i386', 'update']
 date: 2020-06-23 16:37:41
 ---
 
@@ -17,3 +18,5 @@ Now the various READMEs, links, etc point to our new site https://penguins-eggs.
 Come in here for more informations.
 
 ![eggs-produce](/terminal/videos/eggs-produce.gif)
+
+[#update](/categories/update/) [#i386](/categories/i386/)

@@ -2,6 +2,7 @@
 title: Update - Penguin's eggs book in different languages
 layout: post
 date: 2020-06-22 16:20:49
+category: documentation
 ---
 ![install-deb](/images/flags.webp)
 
@@ -18,3 +19,6 @@ date: 2020-06-22 16:20:49
 * third [terminal examples videos](/terminal/)
 
 ![install-deb](/terminal/videos/install-eggs-deb.gif)
+
+[#documentation](/categories/documentation/)
+
