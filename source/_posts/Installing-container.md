@@ -1,19 +1,50 @@
 ---
-layout: layout=post
+layout: post
 title: Installing container
 date: 2020-06-24 13:30:38
-tags:
+tags: 
 ---
-[download](https://download.docker.com/linux/ubuntu/dists/focal/pool/stable/amd64/)
 
-* containerd.io_1.2.13-2_amd64.deb
-* docker-ce-cli_19.03.9~3-0~ubuntu-focal_amd64.deb
-* docker-ce_19.03.12~3-0~ubuntu-focal_amd64.deb
+# Working in progress 
 
-dpkg -i *.deb
+### How to add something like a forum or similar to our site
+At the moment, just my write... I thought about Discourse a nice platform in ruby or nodeBB in nodejs.
+
+The first need container, can be nice to see, the second will run directy on the site.
+
+I don't know that to choose, so I decided to install both.
+
+
+```
+sudo apt-get remove docker docker-engine docker.io containerd runc
+
+sudo apt-get update
+
+$ sudo apt-get install \
+    apt-transport-https \
+    ca-certificates \
+    curl \
+    gnupg-agent \
+    software-properties-common
+
+curl -fsSL https://download.docker.com/linux/debian/gpg | sudo apt-key add -
+
+sudo apt-key fingerprint 0EBFCD88
+
+sudo add-apt-repository \
+   "deb [arch=amd64] https://download.docker.com/linux/debian \
+   $(lsb_release -cs) \
+   stable"
+
+
+ sudo apt-get update
+ $ sudo apt-get install docker-ce docker-ce-cli containerd.io
+
+```
 
 # install mongodb
 
+``` 
 apt-get install gnupg -y
 
 sudo su
@@ -31,27 +62,28 @@ systemctl enable mongod
 
 mongod --version
 
-```
 use admin
 db.createUser( { user: "admin", pwd: "evolution", roles: [ { role: "root", db: "admin" } ] } )
 use nodebb
 db.createUser( { user: "nodebb", pwd: "evolution", roles: [ { role: "readWrite", db: "nodebb" }, { role: "clusterMonitor", db: "admin" } ] } )
 exit
+
 ```
+
 edit /etc/mongod.conf 
 
+```
 sudo nano /etc/mongodb.conf 
+```
 
 append:
 ```
 security:
   authorization: enabled
 ```
-
 Restart database
+
 ```
 sudo systemctl restart mongodb
 mongo -u admin -p evolution --authenticationDatabase=admin
 ```
-
-
