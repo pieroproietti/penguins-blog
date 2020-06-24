@@ -125,6 +125,8 @@ sitemap:
 
 # theme 
 ## theme override
+# favicon: /favicon.ico
+# google_analytics: UA-170278688-1
 menu:
   Home: /
   Book: /book
@@ -138,7 +140,3 @@ menu:
 fb_admins: 
 fb_app_id:
 #
-################# UA-122841350-2
-google_analytics: UA-170278688-1
-################# UA-122841350-2
-
