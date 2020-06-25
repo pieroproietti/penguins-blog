@@ -1,0 +1,1 @@
+db.createUser( { user: "admin", pwd: "evolution", roles: [ { role: "root", db: "admin" } ] } )

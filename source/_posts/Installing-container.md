@@ -73,7 +73,7 @@ exit
 edit /etc/mongod.conf 
 
 ```
-sudo nano /etc/mongodb.conf 
+sudo nano /etc/mongod.conf 
 ```
 
 append:
@@ -84,6 +84,15 @@ security:
 Restart database
 
 ```
-sudo systemctl restart mongodb
+sudo systemctl restart mongod
 mongo -u admin -p evolution --authenticationDatabase=admin
 ```
+
+
+
+```
+git clone -b v1.13.x https://github.com/NodeBB/NodeBB.git nodebb
+```
+
+cd nodebb
+ ./nodebb setup
