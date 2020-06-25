@@ -51,7 +51,7 @@ sudo su
 
 wget -qO - https://www.mongodb.org/static/pgp/server-4.2.asc | apt-key add -
 
-echo "deb [ arch=amd64,arm64 ] https://repo.mongodb.org/apt/ubuntu bionic/mongodb-org/4.2 multiverse" | tee /etc/apt/sources.list.d/mongodb-org-4.2.list
+echo "deb http://repo.mongodb.org/apt/debian buster/mongodb-org/4.2 main" | sudo tee /etc/apt/sources.list.d/mongodb-org-4.2.list
 
 apt-get update -y
 apt-get install mongodb-org -y
@@ -96,3 +96,22 @@ git clone -b v1.13.x https://github.com/NodeBB/NodeBB.git nodebb
 
 cd nodebb
  ./nodebb setup
+
+ nodebb secret: 3bb4112e-529f-48f3-803e-d0b4ec3dfe86
+
+db.changeUserPassword("admin", passwordPrompt())
+
+
+ {
+    "url": "https://penguins-eggs.net/forum/",
+    "secret": "3bb4112e-529f-48f3-803e-d0b4ec3dfe86",
+    "database": "mongo",
+    "port": 443,
+    "mongo": {
+        "host": "127.0.0.1",
+        "port": "27017",
+        "username": "nodebb",
+        "password": "evolution",
+        "database": "nodebb",
+        "uri": ""
+    }

@@ -131,8 +131,9 @@ menu:
   Home: /
   Book: /book
   Terminal: /terminal
-  About me: /about-me.html
   Archives: /archives
+  Forum: /forum
+  About me: /about-me.html
   github: https://github.com/pieroproietti/penguins-eggs
   sourceforge: https://sourceforge.net/projects/penguins-eggs/
   npm: https://www.npmjs.com/package/penguins-eggs
