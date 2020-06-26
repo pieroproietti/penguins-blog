@@ -1,6 +1,7 @@
 ---
 title: Hello World
 layout: post
+date: 2020-06-19 13:30:38
 categoy: linuxmint
 ---
 
