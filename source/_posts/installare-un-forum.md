@@ -49,17 +49,22 @@ modifichiamo quindi /etc/mongod.conf, ed aggiungiamo le seguenti righe:
 security:
   authorization: enabled
 ```
-
 Riavviamo il database
 
 ```
 sudo systemctl restart mongod
 ```
+
 e loggiamoci con la nostra password
+
+```
 mongo -u admin -p password --authenticationDatabase=admin
 ```
 
+A questo punfo abbiamo mongo funzionante, possiamo passare all'installazione del forum.
+
 # nodebb
+
 Per prima cosa scarichiamo da git la repository:
 
 ```
@@ -72,16 +77,18 @@ cd nodebb
 ./nodebb setup
 ```
 
-ci verranno chieste una serie di informazioni, io ho scelto per la url:
+ci verranno chieste una serie di informazioni, io ho scelto come url:
 
-http:/127.0.0.1:4567/forum/
 
-così da poterlo redirigere su:
+``` http:/127.0.0.1:4567/forum/ ```
 
-https://penguins-eggs.net/forum/
+così da poter redirigere il traffico su:
+
+``` https://penguins-eggs.net/forum/ ```
 
 # apache2
 Come proxy per i due prodotti nodejs ho utilizzato apache2, con questa configurazione:
+
 
 ```
 <VirtualHost *:80>
