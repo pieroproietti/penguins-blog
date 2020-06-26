@@ -166,4 +166,6 @@ Come proxy per i due prodotti nodejs ho utilizzato apache2, con questa configura
 </VirtualHost>
 ```
 
-Il risultato si può vedere in https://penguins-eggs.net/forum/
+Il risultato si può vedere in https://penguins-eggs.net/forum/ .
+
+Se volete potete registrarvi [qui](https://penguins-eggs.net/forum/register), vediamo insieme che si può fare!
