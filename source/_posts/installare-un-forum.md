@@ -10,10 +10,11 @@ tags: nodebb
 
 Ho scelto di installare nodebb come motore per il forum del sito. La ragione della scelta è stata soprattutto l'eventuale possibilità di integrazione con il blog che è sempre basato su nodejs.
 
-# install mongodb
+I prequisiti sono ovviamente nodejs, mongo come database ed un proxy nginx o apache2.
 
-Per prima cosa ho dovuto installare mongodb, il database che sta dietro nodejs un po' come mysql è dietro lampp,
+# mongodb
 
+Per prima cosa ho dovuto installare mongodb, il database che sta dietro la maggioranza dei siti realizzati con nodejs, un po' come mysql è dietro lampp. Magari sarebbe il caso di creare qualche altro acronimo!
 
 ``` 
 apt-get install gnupg -y
@@ -23,17 +24,21 @@ echo "deb http://repo.mongodb.org/apt/debian buster/mongodb-org/4.2 main" | sudo
 apt-get update -y
 apt-get install mongodb-org -y
 ```
+
 Andiamo ad avviare mongod
+
 ```
 systemctl start mongod
 systemctl enable mongod
 ```
-Ok, vediamo la versione
+Ok, controlliamo la versione
+
 ```
 mongod --version
 ```
 
 Siamo pronti per configurare il nostro database:
+
 ```
 $ mongo
 > use admin
@@ -43,7 +48,8 @@ $ mongo
 > exit
 
 ```
-modifichiamo quindi /etc/mongod.conf, ed aggiungiamo le seguenti righe:
+
+A questo punto abilitiamo la sicurezza, andando a modificare il file di configurazione /etc/mongod.conf, al quale aggiungiamo le seguenti righe:
 
 ```
 security:
@@ -55,13 +61,13 @@ Riavviamo il database
 sudo systemctl restart mongod
 ```
 
-e loggiamoci con la nostra password
+Adesso, ci possiamo connettere a mongo con la nostra password:
 
 ```
 mongo -u admin -p password --authenticationDatabase=admin
 ```
 
-A questo punfo abbiamo mongo funzionante, possiamo passare all'installazione del forum.
+A questo punfo abbiamo mongo funzionante possiamo, quindi, passare all'installazione del forum.
 
 # nodebb
 
@@ -80,11 +86,15 @@ cd nodebb
 ci verranno chieste una serie di informazioni, io ho scelto come url:
 
 
-``` http:/127.0.0.1:4567/forum/ ```
+```
+http:/127.0.0.1:4567/forum/
+```
 
 così da poter redirigere il traffico su:
 
-``` https://penguins-eggs.net/forum/ ```
+```
+https://penguins-eggs.net/forum/
+```
 
 # apache2
 Come proxy per i due prodotti nodejs ho utilizzato apache2, con questa configurazione:
