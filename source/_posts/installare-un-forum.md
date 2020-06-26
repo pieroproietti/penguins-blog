@@ -1,8 +1,9 @@
 ---
 layout: post
-title: Installing container
+title: installare un forum
 date: 2020-06-24 13:30:38
-tags: 
+lang: it
+tags: nodebb
 ---
 
 # nodebb
