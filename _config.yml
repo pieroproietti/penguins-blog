@@ -129,8 +129,7 @@ sitemap:
 ## theme override
 menu:
   Home: /
-  Book: /book
-  Terminal: /terminal
+  Documentation: /book
   Archives: /archives
   Forum: /forum
   About me: /about-me.html
