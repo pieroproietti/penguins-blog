@@ -4,12 +4,9 @@ layout: page
 date: 2020-06-20 07:38:32
 ---
 
-* [Guide eggs english](./english.html)
-* [Guia eggs español](./espanol.html)
-* [Guida eggs italiano](./italiano.html)
-* [Guia eggs português](./portugues.html)
+* [english](./english.html), [español](./espanol.html), [italiano](./italiano.html), [português](./portugues.html)
 
-* [Terminal examples](/terminal)
+* [Terminal examples english](/terminal)
 
 ![book](/images/book.jpg)
 
