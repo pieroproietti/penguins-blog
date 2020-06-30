@@ -1,5 +1,5 @@
 ---
-title: Guia eggs español
+title: Guía del usuario
 layout: page
 date: 2020-06-20 07:38:32
 lang: es_ES

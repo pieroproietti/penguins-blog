@@ -1,10 +1,10 @@
 ---
-title: Guide eggs enghish
+title: User guide
 layout: page
 date: 2020-06-20 07:38:32
 lang: en_US
 ---
-# Indice
+# Index
 * [Introduction](#introduzione)
 * [Installation](#installazione)
 * [Prerequisites e configurazione](#prerequisiti-e-configurazione)
