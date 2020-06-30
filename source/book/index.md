@@ -18,6 +18,9 @@ date: 2020-06-20 07:38:32
 * [Changelog](https://github.com/pieroproietti/penguins-eggs/blob/master/changelog.md)
 * [i386](https://github.com/pieroproietti/penguins-eggs/blob/master/documents/i386-nodejs.md)
 
+## forum
+Feel free to ask in the new [forum](/forum), you need to register. 
+
 
 ![book](/images/book.jpg)
 
