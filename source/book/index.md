@@ -4,8 +4,8 @@ layout: page
 date: 2020-06-20 07:38:32
 ---
 
-![book](/images/book.svg)
 ## Guide eggs
+![book](/images/book.svg)
 
 I'm italian, so the official guide is of course the [italian version](./italiano.html), in the world of IT most people speak English, so we can say the [english version]((./english.html)) is official too and - as you can see - the blog is made in english.
 
@@ -15,18 +15,18 @@ So at the moment we have the users guide in five different languages:
 
 ## [english](./english.html), [italiano](./italiano.html), [español](./espanol.html), [português](./portugues.html), [български](./bulgarian.html)
 
-![videos](/terminal/videos/playing-with-eggs.gif)
 # [video terminal examples](/terminal)
+![videos](/terminal/videos/playing-with-eggs.gif)
 Are little videos, very lite - made with simple gif images - of terminal sessions. 
 
-![source-code](/images/source-code.png)
 # README and others documents from sources in github
+![source-code](/images/source-code.png)
 ## [README](https://github.com/pieroproietti/penguins-eggs/blob/master/README.md)
 ## [Changelog](https://github.com/pieroproietti/penguins-eggs/blob/master/changelog.md)
 ## [i386 architecture](https://github.com/pieroproietti/penguins-eggs/blob/master/documents/i386-nodejs.md)
 
-![forum](/images/forum.png)
 # [forum](/forum)
+![forum](/images/forum.png)
 
 <img src="/images/flags/english.png" width="30" height="12" title="English">
 
