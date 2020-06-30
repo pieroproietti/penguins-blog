@@ -8,6 +8,11 @@ date: 2020-06-20 07:38:32
 
 * [Terminal examples english](/terminal)
 
+* [README](https://github.com/pieroproietti/penguins-eggs/blob/master/README.md)
+* [Changelog](https://github.com/pieroproietti/penguins-eggs/blob/master/changelog.md)
+* [i386](https://github.com/pieroproietti/penguins-eggs/blob/master/documents/i386-nodejs.md)
+
+
 ![book](/images/book.jpg)
 
 
