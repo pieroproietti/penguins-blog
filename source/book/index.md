@@ -13,7 +13,7 @@ But thanx to Google translate service, and passion, was possible to translate th
 
 So at the moment we have the users guide in five different languages:
 
-## [italiano](./italiano.html), [english](./english.html), [español](./espanol.html), [português](./portugues.html),  [български](./bulgarian.html)
+## [english](./english.html), [italiano](./italiano.html), [español](./espanol.html), [português](./portugues.html), [български](./bulgarian.html)
 
 ![videos](/terminal/videos/playing-with-eggs.gif)
 # [video terminal examples](/terminal)
@@ -28,21 +28,25 @@ Are little videos, very lite - made with simple gif images - of terminal session
 ![forum](/images/forum.png)
 # [forum](/forum)
 
-Feel free to ask for information on the new [forum](/forum), you must first [register](/forum/register). At the moment we don't have so many people, but I will answer you personally, with the hope of growing a small community.
+<img src="/images/flags/english.png" width="30" height="12" title="English">
 
-Sentitevi pure liberi di chiedere informazioni sul nuovo [forum](/forum), devi prima [registrarti](/forum/register). Al momento non abbiamo così tante persone, ma ti risponderò personalmente, con la speranza di crescere una piccola comunità.
+Feel free to ask for information on the new [forum](/forum), you must first [register](/forum/register). At the moment we don't have so many people, but I will answer you personally, with the hope of growing a small community. 
+
+<img src="/images/flags/italian.webp" width="30" height="12" title="Italiano"> 
+
+Sentitevi pure liberi di chiedere informazioni sul nuovo [forum](/forum), devi prima [registrarti](/forum/register). Al momento non abbiamo così tante persone, ma ti risponderò personalmente, con la speranza di crescere una piccola comunità. 
+
+<img src="/images/flags/espanol.png" width="30" height="12" title="espanol">
 
 No dude en solicitar información sobre el nuevo [forum](/forum), primero debe [registrarse](/forum/register). Por el momento no tenemos tanta gente, pero te responderé personalmente, con la esperanza de hacer crecer una pequeña comunidad.
 
+<img src="/images/flags/portugues.png" width="30" height="12" title="português">
+
 Sinta-se à vontade para solicitar informações sobre o novo [fórum](/forum), você deve primeiro [registrar-se] (/forum/register). No momento, não temos tantas pessoas, mas eu responderei pessoalmente, com a esperança de criar uma pequena comunidade.
+
+<img src="/images/flags/bulgarian.webp" width="30" height="12" title="български">
+
+Чувствайте се свободни да поискате информация за новия [форум](/forum), първо трябва да се [регистрирате](/forum/register). В момента нямаме толкова много хора, но аз ще ви отговоря лично с надеждата да нарасне малка общност.
 
 ![book](/images/book.jpg)
 
-
-|   |  |
-| :--- | ---: |
-| ![](/images/flags/italian.webp) | [italiano](./italiano.html)|
-| ![](/images/flags/english.png) | [english](./english.html)|
-| ![](/images/flags/espanol.png) | [español](./espanol.html)|
-| ![](/images/flags/portugues.png) | [português](./portugues.html)|
-| ![](/images/flags/bulgarian.webp) | [български](./bulgarian.html)|
