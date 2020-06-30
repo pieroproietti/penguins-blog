@@ -4,6 +4,7 @@ layout: page
 date: 2020-06-20 07:38:32
 ---
 
+![book](/images/book.svg)
 ## Guide eggs
 
 I'm italian, so the official guide is of course the [italian version](./italiano.html), in the world of IT most people speak English, so we can say the [english version]((./english.html)) is official too and - as you can see - the blog is made in english.
@@ -12,11 +13,13 @@ But thanx to Google translate service, and passion, was possible to translate th
 
 So at the moment we have the users guide in five different languages:
 
-### [english](./english.html), [italiano](./italiano.html), [español](./espanol.html), [português](./portugues.html),  [български](./bulgarian.html)
+## [italiano](./italiano.html), [english](./english.html), [español](./espanol.html), [português](./portugues.html),  [български](./bulgarian.html)
 
+![videos](/terminal/videos/playing-with-eggs.gif)
 # [video terminal examples](/terminal)
 Are little videos, very lite - made with simple gif images - of terminal sessions. 
 
+![source-code](/images/source-code.png)
 # README and others documents from sources in github
 ## [README](https://github.com/pieroproietti/penguins-eggs/blob/master/README.md)
 ## [Changelog](https://github.com/pieroproietti/penguins-eggs/blob/master/changelog.md)
@@ -36,3 +39,10 @@ Sinta-se à vontade para solicitar informações sobre o novo [fórum](/forum), 
 ![book](/images/book.jpg)
 
 
+|   |  |
+| :--- | ---: |
+| ![](/images/flags/italian.webp) | [italiano](./italiano.html)|
+| ![](/images/flags/english.png) | [english](./english.html)|
+| ![](/images/flags/espanol.png) | [español](./espanol.html)|
+| ![](/images/flags/portugues.png) | [português](./portugues.html)|
+| ![](/images/flags/bulgarian.webp) | [български](./bulgarian.html)|
