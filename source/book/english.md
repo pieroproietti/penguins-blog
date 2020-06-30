@@ -8,9 +8,9 @@ lang: en_US
 * [Introduction](#introduzione)
 * [Installation](#installazione)
 * [Prerequisites e configurazione](#prerequisiti-e-configurazione)
-* [I comando](#i-comandi)
-* [Creiamo una nostra remix](#creiamo-una-nostra-remix)
-* [Scarica le immagini ISO](#scarica-le-immagini-iso)
+* [Commands](#commands)
+* [Let's create our own remix](#Lets-create-our-own-remix)
+* [Download the ISO images](#download-the-iso-images)
 
 
 # Introduction
