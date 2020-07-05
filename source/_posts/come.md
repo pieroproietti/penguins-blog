@@ -17,4 +17,4 @@ date: 2020-07-05 21:43:02
 
 Read more on our [forum](https://penguins-eggs.net/forum/topic/10/eggs-compatible-with-debian-10-ubuntu-20-20-ubuntu-18-04-linux-mint-20-and-linux-mint-19-3)
 
-[incubator](https://penguins-eggs.net/images/forum/incubated-eggs-photo.jpg)
+![incubator](/images/forum/incubated-eggs-photo.jpg)
