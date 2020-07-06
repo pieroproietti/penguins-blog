@@ -15,6 +15,6 @@ date: 2020-07-05 21:43:02
 * Linuxmint 19.3 tricia (i386/amd64 bios only)
 * Ubuntu 18.4 bionic (i386/amd64 bios only)
 
-## Read more on our [forum](https://penguins-eggs.net/forum/), [English](https://penguins-eggs.net/forum/topic/13/eggs-compatibles-con-debian-10-ubuntu-20-20-ubuntu-18-04-linux-mint-20-y-linux-mint-19-3), [Italiano](https://penguins-eggs.net/forum/topic/11/eggs-compatibile-con-debian-10-ubuntu-20-20-ubuntu-18-04-linux-mint-20-e-linux-mint-19-3), [Português](https://penguins-eggs.net/forum/topic/12/eggs-compat%C3%ADveis-com-a-debian-10-ubuntu-20-20-ubuntu-18-04-linux-mint-20-e-linux-mint-19-3), [Español](https://penguins-eggs.net/forum/topic/13/eggs-compatibles-con-debian-10-ubuntu-20-20-ubuntu-18-04-linux-mint-20-y-linux-mint-19-3)...
+## Read more on our [forum](https://penguins-eggs.net/forum/): [English](https://penguins-eggs.net/forum/topic/13/eggs-compatibles-con-debian-10-ubuntu-20-20-ubuntu-18-04-linux-mint-20-y-linux-mint-19-3), [Italiano](https://penguins-eggs.net/forum/topic/11/eggs-compatibile-con-debian-10-ubuntu-20-20-ubuntu-18-04-linux-mint-20-e-linux-mint-19-3), [Português](https://penguins-eggs.net/forum/topic/12/eggs-compat%C3%ADveis-com-a-debian-10-ubuntu-20-20-ubuntu-18-04-linux-mint-20-e-linux-mint-19-3), [Español](https://penguins-eggs.net/forum/topic/13/eggs-compatibles-con-debian-10-ubuntu-20-20-ubuntu-18-04-linux-mint-20-y-linux-mint-19-3)...
 
 ![incubator](/images/forum/incubated-eggs-photo.jpg)
