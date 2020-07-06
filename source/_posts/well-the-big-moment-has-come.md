@@ -5,7 +5,7 @@ lang: us_US
 date: 2020-07-05 21:43:02
 ---
 
-# Well, the big moment has come!
+# Eggs compatible with Debian 10, Ubuntu 20.20, Ubuntu 18.04, Linux Mint 20 and Linux Mint 19.3
 
 ### After at least a month of work, frightened by the [alwaysUpdate](https://sempreupdate.com.br/penguins-eggs-utilitario-para-criar-sua-propria-distribuicao-linux/) article that suggested using **eggs** to make your own version of Linux both to run old PCs (i386) and on modern systems, well now **eggs** allows you to remaster your system to **32** or **64** bits and, not only, you can use the graphical installer **calamares** both for Debian Buster and on **all** the following distributions and derivatives:
 
