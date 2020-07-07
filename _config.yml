@@ -14,7 +14,7 @@ timezone: 'Europe/Rome'
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
 #url: http://51.178.143.168/blog/
-url: https://127.0.0.1/
+url: 
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
