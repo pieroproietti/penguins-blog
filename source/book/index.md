@@ -48,5 +48,9 @@ Sinta-se à vontade para solicitar informações sobre o novo [fórum](/forum), 
 
 Чувствайте се свободни да поискате информация за новия [форум](/forum), първо трябва да се [регистрирате](/forum/register). В момента нямаме толкова много хора, но аз ще ви отговоря лично с надеждата да нарасне малка общност.
 
+# Video
+
+[Youtube channel](https://www.youtube.com/channel/UCWUYEEaaWJYnKF1OQTah5IA) Same videos.
+
 ![book](/images/book.jpg)
 
