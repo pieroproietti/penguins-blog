@@ -2,6 +2,18 @@
 ## Docs: https://hexo.io/docs/configuration.html
 ## Source: https://github.com/hexojs/hexo/
 
+menu:
+  Home: /
+  Documentation: /book
+  Archives: /archives
+  About me: /about-me.html
+  github: https://github.com/pieroproietti/penguins-eggs
+  sourceforge: https://sourceforge.net/projects/penguins-eggs/
+  npm: https://www.npmjs.com/package/penguins-eggs
+  forum: /forum
+  facebook: https://www.facebook.com/penguinseggs
+  cloud: https://www.npmjs.com/package/penguins-eggs/cloud
+
 # Site
 title: penguin's eggs
 subtitle: don't remaster it, let him to reproduce!
@@ -13,7 +25,6 @@ timezone: 'Europe/Rome'
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-#url: http://51.178.143.168/blog/
 url: https://penguins-eggs.net/
 root: /
 permalink: :year/:month/:day/:title/
@@ -127,15 +138,4 @@ sitemap:
 # favicon: /favicon.ico
 # google_analytics: UA-170278688-1 // non funge con override, l'ho messo nel tema
 ## theme override
-menu:
-  Home: /
-  Documentation: /book
-  Archives: /archives
-  About me: /about-me.html
-  github: https://github.com/pieroproietti/penguins-eggs
-  sourceforge: https://sourceforge.net/projects/penguins-eggs/
-  npm: https://www.npmjs.com/package/penguins-eggs
-  forum: /forum
-  facebook: https://www.facebook.com/penguinseggs
-  cloud: https://www.npmjs.com/package/penguins-eggs/cloud
 #
