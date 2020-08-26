@@ -42,14 +42,14 @@ Cose da fare prima di cominciare la produzione delle "uova".
 L'installazione da pacchetto Debian è senz'altro la più semplice. Basta scaricare l'ultima versione di eggs dal sito di [sourceforge](https://sourceforge.net/projects/penguins-eggs/files/DEBS/) ed installarla con il comando:
 
 ```
-sudo dpkg -i eggs-7.5.81-1.deb
+sudo dpkg -i eggs-7.6.12-1.deb
 ```
 
 La versione .deb  comprende al suo interno nodejs per cui non è necessario disporre di questo pacchetto. 
 
 ### Pacchetto npm \(nodejs\)
 
-Essendo eggs un software sviluppato con nodejs, la versione originale e quella preferibile,  e sempre la più aggiornata. Inoltre, una volta installata, questa versione è sempre aggiornabile semplicemente con il comando `sudo eggs update`.
+Essendo eggs un software sviluppato con nodejs, la versione originale può essere quella preferibile, è sempre la più aggiornata. Inoltre, una volta installata, è aggiornabile alle versioni successive con il comando `sudo eggs update`.
 
 Per poter installare questa versione è necessario quindi installare prima il pacchetto nodejs. La descrizione di quale nodejs utilizzare e le modalità di installazione di nodejs sono riportare nel file README,md compreso nella [repository di eggs](https://github.com/pieroproietti/penguins-eggs).
 
@@ -101,8 +101,29 @@ Avviamo eggs senza alcun comando ed otterremo la lista dei comandi disponibili:
 
 ![eggs-senza-parametri](/images/eggs-senza-parametri.png)
 
+### Realizzazione di immagini iso compatibili UEFI
 
-La prima cosa che dobbiamo fare a questo punto è permettere ad eggs di scaricare i pacchetti Debian necessari al suo funzionamento. Per far questo basterà avviare il comando
+Se vogliamo che le nostre iso vengano create compatibili UEFI - _attenzione: questo è stato testato solamente con Debian Buster, probabilmente in Ubuntu ancora non va_ - dobbiamo installare il pacchetto grub-efi-amd64, con il comando:
+
+```
+sudo apt install grub-efi-amd64
+
+vedi **Nota**
+
+
+### sudo eggs calamares
+
+A questo punto, se ne abbiamo la necessità converrà installare anche l'installer grafico calamares, con il comando 
+
+```
+sudo eggs calamares
+```
+
+che installerà calamares ed i moduli `qml-module-qtquick2, qml-module-qtquick-controls` necessari per la visualizzazione delle slide durante l'installazione del sistema.
+
+### sudo eggs prerequisites
+
+Per funzionare eggs ha bisogno di alcuni tool installati, i prerequisito. Per scaricare i pacchetti Debian necessari al suo funzionamento, basterà avviare il comando
 
 ```
 sudo eggs prerequisites
@@ -126,25 +147,8 @@ che installerà, quindi, i seguenti pacchetti:
 
 `isolinux, live-boot, live-boot-initramfs-tools, lvm2, squashfs-tools, xorriso, xterm, whois`
 
-### sudo eggs calamares
-
-A questo punto, se ne abbiamo la necessità converrà installare anche l'installer grafico calamares, con il comando 
-
-```
-sudo eggs calamares
 ```
 
-che installerà calamares ed i moduli `qml-module-qtquick2, qml-module-qtquick-controls` necessari per la visualizzazione delle slide durante l'installazione del sistema.
-
-### Realizzazione di immagini iso compatibili UEFI
-
-Se vogliamo che le nostre iso vengano create compatibili UEFI - _attenzione: questo è stato testato solamente con Debian Buster, probabilmente in Ubuntu ancora non va_ - dobbiamo installare il pacchetto grub-efi-amd64, con il comando:
-
-```
-sudo apt install grub-efi-amd64
-```
-
-vedi **Nota**
 
 ### File di configurazione penguins-eggs.conf
 
@@ -174,7 +178,7 @@ _**Nota**: nel caso desideriamo creare una immagine avviabile in modalità UEFI 
 
 Eggs necessita dei diritti di root, quindi - tranne per eggs info - DEVE essere chiamato preceduto da`sudo`
 
-* adjust
+* adapt
 * calamares
 * help
 * howto
@@ -195,13 +199,13 @@ Altro flag importante e presente nella quasi totalità dei casi è il flag -v o 
 
 Andiamo ad illustrare i comandi in rigoroso ordine alfabetico, per comodità dello scrivente. Tenete a mente che i comandi che utilizzerete normalmente sono kill e produce.
 
-### eggs adjust
+### eggs adapt
 
-Adatta il video alle capacità del monitor o alla grandezza della finestra in caso di macchina virtuale. Lo trovo molto comodo per ridimensionare le macchine virtuali con interfacce grafiche diverse da cinnamon gnome3 e kde per la quale non è necessario. In pratica eggs richiama xrandr per adattare lo schermo alla risoluzione corrente.
+Adatta il video alle capacità del monitor o alla grandezza della finestra in caso di macchina virtuale. Lo trovo molto comodo per ridimensionare le macchine virtuali con interfacce grafiche diverse da cinnamon, gnome3, e kde per la quali non è necessario. In pratica eggs richiama xrandr per adattare lo schermo alla risoluzione corrente.
 
 ### sudo eggs calamares
 
-Installa e configura l'installatore grafico universale calamares. Può essere utilizzato anche in caso di una iso realizzata senza calamares e che, in sede di installazione si voglia installare con esso.
+Installa e configura l'installatore grafico universale calamares. Può essere utilizzato anche in caso di una iso realizzata senza calamares e che, in sede di installazione si voglia, però, installare con esso.
 
 ### eggs help
 
@@ -255,15 +259,63 @@ Usato senza parametri produce la iso con compressione di tipo xz. Controlla pure
 
 Presenta alcuni flag utilizzabili:
 
-`-b, --basename=basename basename egg`
+USAGE
+  $ eggs produce
 
- `-c, --compress max compression` 
+OPTIONS
+  -b, --basename=basename  basename egg
+  -c, --compress           max compression
+  -f, --fast               fast compression
+  -h, --help               show CLI help
+  -s, --script             script mode. Generate scripts to manage iso build
+  -v, --verbose            verbose
+  --adapt                  adapt video resolution in VM
 
-`-f, --fast compression fast` 
+  --ichoice                allows the user to choose the installation type 
+                           cli/gui
 
-`-h, --info show CLI help` 
+  --pve                    administration of virtual machines (Proxmox-VE)
 
-`-v, --verbose verbose`
+  --rsupport               remote support via dwagent
+
+  --theme=theme            theme/branding for eggs and calamares
+
+ALIASES
+  $ eggs spawn
+  $ eggs lay
+
+EXAMPLES
+  $ sudo eggs produce 
+  produce an ISO called [hostname]-[arch]-YYYY-MM-DD_HHMM.iso, compressed xz 
+  (standard compression).
+  If hostname=myremix and arch=i386 you have myremix-x86--2020-08-25_1215.iso
+
+  $ sudo eggs produce -v
+  the same as the previuos, but with more explicative output
+
+  $ sudo eggs produce -vf
+  the same as the previuos, compression lz4 (fast compression, but about 30% 
+  less compared xz standard)
+
+  $ sudo eggs produce -vc
+  the same as the previuos, compression xz -Xbcj x86 (max compression, about 10% 
+  more compared xz standard)
+
+  $ sudo eggs produce -vf --basename leo --theme debian --adapt 
+  produce an ISO called leo-i386-2020-08-25_1215.iso compression lz4, using 
+  Debian theme and link to adapt
+
+  $ sudo eggs produce -v --basename leo --theme debian --adapt 
+  produce an ISO called leo-i386-2020-08-25_1215.iso compression xz, using 
+  Debian theme and link to adapt
+
+  $ sudo eggs produce -v --basename leo --rsupport 
+  produce an ISO called leo-i386-2020-08-25_1215.iso compression xz, using eggs 
+  theme and link to dwagent
+
+  $ sudo eggs produce -vs --basename leo --rsupport 
+  produce scripts to build an ISO as the previus example. Scripts can be found 
+  in /home/eggs/ovarium and you can customize all you need
 
 Di gran lunga la modalità d'uso che preferisco, personalmente è
 
@@ -272,6 +324,8 @@ sudo eggs produce -fv
 ```
 
 che mi consente si avere una veloce rimasterizzazione ed osservare a video i vari comandi lanciati.
+
+Tra i flag disponibili c'è theme che imposta un tema per eggs e calamares. Potete creare un tema personalizzato semplicemente copiandone uso esistente e cambiandone nome e contenuto. I themi di eggs sono in ./addons/${vendor}/theme.
 
 ### sudo eggs skel
 
@@ -315,7 +369,7 @@ Basterà procedere con il comando:
 sudo eggs calamares
 ```
 
-In alternativa, se non volte calamares,   editate il file di installazione `/etc/penguins-eggs.conf` ed impostare `force_installer=No` altrimenti eggs lo installerà per suo conto.
+In alternativa, se non volete calamares, editate il file di installazione `/etc/penguins-eggs.conf` ed impostare `force_installer=No` altrimenti eggs lo installerà per suo conto.
 
 Successivamente questa immagine dovrà essere posta su una chiavetta o un disco DVD e potrà essere reinstallarla o con l'installer grafico calamares oppure - in maniera più spartana - con il proprio installer cli. Per l'installer grafico calamares basterà lasciare il file di configurazione così come è, mentre se si decide di non usare calamares occore editare il file di configurazione  /etc/penguins-eggs.com e porre force-installer=no-
 
