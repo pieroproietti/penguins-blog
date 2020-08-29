@@ -1,4 +1,3 @@
----
 title: Guida utente
 layout: page
 date: 2020-06-20 07:38:32
