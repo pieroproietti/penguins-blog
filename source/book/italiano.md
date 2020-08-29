@@ -1,6 +1,6 @@
 title: Guida utente
 layout: page
-date: 2020-06-20 07:38:32
+date: 2020-08-29 20:00:00
 lang: it_IT
 ---
 # Indice
@@ -324,7 +324,7 @@ sudo eggs produce -fv
 
 che mi consente si avere una veloce rimasterizzazione ed osservare a video i vari comandi lanciati.
 
-Tra i flag disponibili c'è theme che imposta un tema per eggs e calamares. Potete creare un tema personalizzato semplicemente copiandone uso esistente e cambiandone nome e contenuto. I themi di eggs sono in ./addons/${vendor}/theme.
+Tra i flag disponibili c'è theme che imposta un tema per eggs e calamares. Potete creare un tema personalizzato semplicemente copiandone uso esistente e cambiandone nome e contenuto. I themi di eggs sono in ./addons/${vendor}/theme, a breve aggiungerò anche la possibilità di variare il tema per isolinux e grub per il boot della live.
 
 ### sudo eggs skel
 
@@ -452,8 +452,3 @@ Tutte le distribuzioni qui riportate sono impostate con user live ed user di roo
 Questo è un vecchio video, vorrei farne altri, magari prossimamente.
 
 ![debu](/images/debu.png)
-
-
-
-
-
