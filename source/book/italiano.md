@@ -7,10 +7,12 @@ lang: it_IT
 * [Introduzione](#introduzione)
 * [Installazione](#installazione)
 * [Prerequisiti e configurazione](#prerequisiti-e-configurazione)
-* [I comando](#i-comandi)
+* [I comandi](#i-comandi)
 * [Creiamo una nostra remix](#creiamo-una-nostra-remix)
 * [Scarica le immagini ISO](#scarica-le-immagini-iso)
 
+# Aggiornamento
+Questo manuale utente di penguin's eggs, è aggiornato al 30 agosto 2020, eggs-7.6.13-1.deb. 
 
 # Introduzione
 
@@ -203,6 +205,25 @@ Andiamo ad illustrare i comandi in rigoroso ordine alfabetico, per comodità del
 Adatta il video alle capacità del monitor o alla grandezza della finestra in caso di macchina virtuale. Lo trovo molto comodo per ridimensionare le macchine virtuali con interfacce grafiche diverse da cinnamon, gnome3, e kde per la quali non è necessario. In pratica eggs richiama xrandr per adattare lo schermo alla risoluzione corrente.
 
 ### sudo eggs calamares
+```
+command: calamares
+
+configure calamares or install and configure it
+
+USAGE
+
+   $ eggs calamares
+
+OPTIONS
+  -c, --configuration  creation of configuration files only
+  -h, --help           show CLI help
+  -v, --verbose
+  --theme=theme        theme/branding for eggs and calamares
+
+EXAMPLES
+  ~$ sudo eggs calamares 
+  install calamares and create configuration
+```
 
 Installa e configura l'installatore grafico universale calamares. Può essere utilizzato anche in caso di una iso realizzata senza calamares e che, in sede di installazione si voglia, però, installare con esso.
 
