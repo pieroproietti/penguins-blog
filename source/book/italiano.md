@@ -96,7 +96,7 @@ Per gli sviluppatori od i curiosi, sarà possibile vedere, segnalare o corregger
 
 Una volta installato il pacchetto come nella pagina precedente, disporremo sul nostro sistema di un nuovo comando: 
 
-`eggs`
+```eggs```
 
 Avviamo eggs senza alcun comando ed otterremo la lista dei comandi disponibili:
 
@@ -108,6 +108,7 @@ Se vogliamo che le nostre iso vengano create compatibili UEFI - _attenzione: que
 
 ```
 sudo apt install grub-efi-amd64
+```
 
 vedi **Nota**
 
@@ -148,8 +149,6 @@ che installerà, quindi, i seguenti pacchetti:
 
 `isolinux, live-boot, live-boot-initramfs-tools, lvm2, squashfs-tools, xorriso, xterm, whois`
 
-```
-
 
 ### Directory di configurazione penguins-eggs.d
 
@@ -177,7 +176,7 @@ _**Nota**: nel caso desideriamo creare una immagine avviabile in modalità UEFI 
 
 ### Comandi ed opzioni 
 
-Eggs necessita dei diritti di root, quindi - tranne per eggs info - DEVE essere chiamato preceduto da`sudo`
+Eggs necessita dei diritti di root, quindi - tranne per eggs info - DEVE essere chiamato preceduto da `sudo`
 
 * adapt
 * calamares
@@ -185,6 +184,7 @@ Eggs necessita dei diritti di root, quindi - tranne per eggs info - DEVE essere 
 * howto
 * info
 * install
+* locales 
 * kill
 * prerequisites
 * produce
@@ -194,7 +194,7 @@ Eggs necessita dei diritti di root, quindi - tranne per eggs info - DEVE essere 
 
 Non vi fate spaventare da questi pochi comandi, quelli che utilizzerete sono essenzialmente due: produce per creare la iso e kill per cancellarla.
 
-Ogni comando può avere alcuni flag,di questi, il più importante, è il flag -f o --fast del comando produce che consentirà ad eggs di utilizzare come algoritmo di compressione lz4 invece del default xz permettendovi così di risparmiare non poco tempo durante le fasi di sviluppo della vostra remix. 
+Ogni comando può avere alcuni flag, di questi, il più importante, è il flag -f o --fast del comando produce che consentirà ad eggs di utilizzare come algoritmo di compressione lz4 invece del default xz permettendovi così di risparmiare non poco tempo durante le fasi di sviluppo della vostra remix. 
 
 Altro flag importante e presente nella quasi totalità dei casi è il flag -v o --verbose che vi mostrerà a video il susseguirsi delle vari comandi.
 
@@ -243,6 +243,10 @@ Come avviare da grub rescue.
 
 Come configurare eggs.
 
+#### eggs howto:initrd
+
+Sperimentale, per la rimozione di resume e crypto da initrd del live.
+
 ### eggs info
 
 Mostra a video la configurazione di eggs e del sistema. E' l'unico comando che può essere usato senza sudo.
@@ -261,13 +265,12 @@ Cancella le immagini realizzate e la directory di lavoro di eggs \(il nido\). Es
 
 ### sudo eggs prerequisites
 
-Installa i pacchetti deb necessari al funzionamento di eggs. In particolare, vengono installati:
+Installa i pacchetti deb necessari al funzionamento di eggs. 
 
-`isolinux, live-boot, live-boot-initramfs-tools, live-config-systemd, squashfs-tools, xorriso, xterm, whois`
-
-e, nel caso si sia scelto di installare calamares
-
-`calamares, qml-module-qtquick2, qml-module-qtquick-controls`
+Possiamo suddividere i paccheti necessari in tre parti:
+* pacchetti necessari al funzionamento di eggs:   isolinux, syslinux, rsync, squashfs-tools, xorriso, xterm, whois, live-boot, live-boot-initramfs-tools;
+* pacchetti necessari al funzionamento dell'installer calamares: calamares, qml-module-qtquick2, qml-module-qtquick-controls
+* pacchetti per le localizzazioni (solo debian e devuan). Attualmente abbiamo due variabili nel file eggs.cfg che definiscono la lingua; locale e locales. Queste variabili, con il tempo di "maturazione" necessario, diverranno modificabili dell'utente. Al momento si consiglia di non toccarle, e comprendono i locales per italiano, inglese, spagnolo, portoghese, francese e tedesco. Verranno installati inoltre i seguenti pacchetti: task-italian, task-english, task-spanish, task-brazilian-portuguese, task-french, task-german e task-live-localisation.
 
 Oltre a questo vengono creati i file di configurazione.
 
@@ -279,6 +282,7 @@ Usato senza parametri produce la iso con compressione di tipo xz. Controlla pure
 
 Presenta alcuni flag utilizzabili:
 
+```
 USAGE
   $ eggs produce
 
@@ -336,6 +340,7 @@ EXAMPLES
   $ sudo eggs produce -vs --basename leo --rsupport 
   produce scripts to build an ISO as the previus example. Scripts can be found 
   in /home/eggs/ovarium and you can customize all you need
+```
 
 Di gran lunga la modalità d'uso che preferisco, personalmente è
 
@@ -468,8 +473,3 @@ Tutte le distribuzioni qui riportate sono impostate con user live ed user di roo
 * live/evolution
 * root/evolution
 
-### Video
-
-Questo è un vecchio video, vorrei farne altri, magari prossimamente.
-
-![debu](/images/debu.png)
