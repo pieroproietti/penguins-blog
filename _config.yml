@@ -7,12 +7,11 @@ menu:
   Documentation: /book
   Archives: /archives
   About me: /about-me.html
-  github: https://github.com/pieroproietti/penguins-eggs
-  sourceforge: https://sourceforge.net/projects/penguins-eggs/
+  sources: https://github.com/pieroproietti/penguins-eggs
   npm: https://www.npmjs.com/package/penguins-eggs
+  debs: https://sourceforge.net/projects/penguins-eggs/
   forum: /forum
   facebook: https://www.facebook.com/penguinseggs
-  cloud: https://www.npmjs.com/package/penguins-eggs/cloud
 
 # Site
 title: penguin's eggs
