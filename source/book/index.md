@@ -7,6 +7,8 @@ date: 2020-06-20 07:38:32
 ## Guide eggs
 ![book](/images/book.svg)
 
+# Documentazione ufficiale in [italiano](./italiano.html)
+
 I'm italian, so the official guide is of course the [italian version](./italiano.html), in the world of IT most people speak English, so we can say the [english version]((./english.html)) is official too and - as you can see - the blog is made in english.
 
 But thanx to Google translate service, and passion, was possible to translate the user guide in different languages, I started with portugues for brazilian friends, and espanol putting great attention to not translate command's names, etc.
