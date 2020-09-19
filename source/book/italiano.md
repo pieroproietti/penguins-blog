@@ -151,13 +151,13 @@ che installerà, quindi, i seguenti pacchetti:
 ```
 
 
-### File di configurazione penguins-eggs.conf
+### Directory di configurazione penguins-eggs.d
 
-Normalmente non è necessario intervenire su /etc/penguins-eggs.conf,  eggs si autoconfigura e adattandosi alle bisogna della distro presente. Ad ogni modo per la documentazione si rimanda ai commenti presenti sullo stesso file.
+Normalmente non è necessario intervenire su /etc/penguins-eggs.d,  eggs si autoconfigura e adattandosi alle bisogna della distro presente. Ad ogni modo per la documentazione si rimanda ai commenti presenti sullo stesso file.
 
-Mi preme solo segnalare che editando questo file si può modificare sia nome dell'utente della live, che la sua password e quella di amministrazione.
+Mi preme solo segnalare che editando /etc/penguins-eggs.d/eggs.conf si può modificare sia nome dell'utente della live, che la sua password e quella di amministrazione.
 
-Se avete scelto di non toccare per il momento /etc/penguins-eggs.conf, si ricorda che per default eggs è configurato con user **live** e password **evolution**, la stessa password è impostata per il login di root.
+Se avete scelto di non toccare per il momento /etc/penguins-eggs.d/eggs.conf, si ricorda che per default eggs è configurato con user **live** e password **evolution**, la stessa password è impostata per il login di root.
 
 Se invece avete modificato o cancellato il file di configurazione, potete sempre ripristinarlo con il comando:
 
@@ -169,7 +169,7 @@ sudo eggs prerequisites -c
 
 Bene, adesso siamo finalmente pronti ad utilizzare eggs per la riproduzione del nostro pinguino.
 
-_**Nota**: nel caso desideriamo creare una immagine avviabile in modalità UEFI ed abbiamo installato grub-efi-amd64 dopo aver installato i prerequisiti, occorre andare ad editare il file /etc/penguins-eggs.conf ed impostare make\_efi=yes._
+_**Nota**: nel caso desideriamo creare una immagine avviabile in modalità UEFI ed abbiamo installato grub-efi-amd64 dopo aver installato i prerequisiti, occorre andare ad editare il file /etc/penguins-eggs.d/eggs.conf ed impostare make\_efi=yes._
 
 ---
 
