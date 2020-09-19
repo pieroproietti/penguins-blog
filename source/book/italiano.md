@@ -96,7 +96,9 @@ Per gli sviluppatori od i curiosi, sarà possibile vedere, segnalare o corregger
 
 Una volta installato il pacchetto come nella pagina precedente, disporremo sul nostro sistema di un nuovo comando: 
 
-```eggs```
+```
+eggs
+```
 
 Avviamo eggs senza alcun comando ed otterremo la lista dei comandi disponibili:
 
