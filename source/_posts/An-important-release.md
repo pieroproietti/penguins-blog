@@ -16,4 +16,5 @@ Of course it follows that other derived distros can also be easily remastered: L
 I also tried Deepin 20, which works perfectly, but only on standard BIOS machines
 
 
-[Deepin](/images/deepin-brasileiro.png) 
+![Deepin](/images/deepin-brasileiro.png) 
+
