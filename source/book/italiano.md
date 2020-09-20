@@ -212,6 +212,8 @@ Andiamo ad illustrare i comandi in rigoroso ordine alfabetico, per comodità del
 Adatta il video alle capacità del monitor o alla grandezza della finestra in caso di macchina virtuale. Lo trovo molto comodo per ridimensionare le macchine virtuali con interfacce grafiche diverse da cinnamon, gnome3, e kde per la quali non è necessario. In pratica eggs richiama xrandr per adattare lo schermo alla risoluzione corrente.
 
 ### sudo eggs calamares
+Installa e configura l'installatore grafico calamares. Può essere utilizzato anche per configurare una iso che - prodotta senza calamares - la si voglia installare comunque con esso. Basterà dare il comando: sudo eggs calamares e si avrà sia l'installazione del pacchetto e le sue dipendenze, sia la configurazione.
+
 ```
 command: calamares
 
@@ -231,8 +233,6 @@ EXAMPLES
   ~$ sudo eggs calamares 
   install calamares and create configuration
 ```
-
-Installa e configura l'installatore grafico calamares. Può essere utilizzato anche per configurare una iso che - prodotta senza calamares - la si voglia installare comunque con esso. Basterà dare il comando: sudo eggs calamares e si avrà sia l'installazione del pacchetto e le sue dipendenze, sia la configurazione.
 
 ### eggs help
 
@@ -280,7 +280,7 @@ Possiamo suddividere i paccheti necessari in tre parti:
 * pacchetti necessari al funzionamento dell'installer calamares: calamares, qml-module-qtquick2, qml-module-qtquick-controls
 * pacchetti per le localizzazioni (solo debian e devuan). Attualmente abbiamo due variabili nel file eggs.cfg che definiscono la lingua; locale e locales. Queste variabili, con il tempo di "maturazione" necessario, diverranno modificabili dell'utente. Al momento si consiglia di non toccarle, e comprendono i locales per italiano, inglese, spagnolo, portoghese, francese e tedesco. Verranno installati inoltre i seguenti pacchetti: task-italian, task-english, task-spanish, task-brazilian-portuguese, task-french, task-german e task-live-localisation.
 
-Oltre a questo vengono creati i file di configurazione.
+Oltre a questo vengono creati la directory /etc/penguins-eggs.d, tutti i file di configurazione ed i collegamenti necessari.
 
 ### sudo eggs produce
 
@@ -372,9 +372,7 @@ E' il comando inverso di prerequisites, sostanzialmente rimuove i pacchetti sopr
 
 ### sudo eggs update
 
-Aggiorna 
-
-Presenta un diverso funzionamento a seconda se l'installazione di eggs sia avvenuta con il pacchetto npm di nodejs oppure con il pacchetto debian. Nel primo caso, aggiorna direttamente eggs alla versione corrente, altrimenti suggerisce i passi per l'aggiornamento tramite apt o dpkg.
+Aggiornamento di eggs. Presenta un diverso funzionamento a seconda se l'installazione di eggs sia avvenuta con il pacchetto npm di nodejs oppure con il pacchetto debian. Nel primo caso, aggiorna direttamente eggs alla versione corrente, altrimenti suggerisce i passi per l'aggiornamento tramite apt (se la repo per eggs è inclusa) o scaricando il pacchetto ed installandolo via dpkg.
 
 # Creiamo una nostra remix
 La creazione di una iso nostra remix è un processo che richiede pazienza e passione ma può darci grandi soddisfazioni ed in molti casi, in ultima analisi, farci risparmiare tempo e fatica.
