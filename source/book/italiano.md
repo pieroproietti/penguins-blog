@@ -155,7 +155,8 @@ che installerà, quindi, i seguenti pacchetti:
 * calamares, qml-module-qtquick2, qml-module-qtquick-controls
 * live-task-localisation, task-italian, task-english, task-spanish, task-brazilian-portuguese, task-french, task-german
 
-I file per la localizzazione saranno installati solamente per Debian/Devuan, inoltre, gli stessi verranno installati con l'opzione -no-install-recommanded, altrimenti verrebbero installate tutte le lingue.
+I file per la localizzazione saranno installati solamente per Debian/Devuan, inoltre, gli stessi verranno installati con l'opzione 
+`–no-install-recommends`, altrimenti verrebbero installate tutte le lingue.
 
 ### Directory di configurazione penguins-eggs.d
 
