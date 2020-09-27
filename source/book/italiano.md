@@ -588,8 +588,15 @@ Una comunità di utenti è importante per la crescita di un progetto, creare qua
 Potete facilitare la diffusione di eggs e contribuire alla sua crescita in diversi modi:
 
 * iscriversi al gruppo facebook [penguin's eggs](https://www.facebook.com/groups/128861437762355)
-* contrassegnare con una stella il progetto su (github.com)[https://github.com/pieroproietti/penguins-eggs], occorre la registrazione  su github.com.
+* contrassegnare con una stella il progetto su [github.com)[https://github.com/pieroproietti/penguins-eggs];
 * valutare questo progetto su [sourceforge](https://sourceforge.net/projects/penguins-eggs/) e/o creare una review sulla pagina stessa pagina.
+
+# Ringraziamenti
+Se siete giunti fino a questo passo, senza l'ausilio del tasto di scorrimento rapido, avete utilizzato parte del Vostro tempo - risorsa preziosa - per seguirmi su questo percorso e, quindi, è mio dovere e desiderio ringraziarvi per il vostro interesse. 
+
+Grazie a tutti e... happy hacking!
+
+Piero Proietti 
 
 
 
