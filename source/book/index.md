@@ -9,11 +9,11 @@ date: 2020-06-20 07:38:32
 
 # Documentazione ufficiale in [italiano](./italiano.html)
 
-I'm italian, so the official guide is of course the [italian version](./italiano.html), in the world of IT most people speak English, so we can say the [english version]((./english.html)) is official too and - as you can see - the blog is made in english.
+I'm italian, so the official guide is of course the [italian version](./italiano.html). This version is allways updated, and can be traslated in english by Google without many problems, due the fact who code is english too.
 
-But thanx to Google translate service, and passion, was possible to translate the user guide in different languages, I started with portugues for brazilian friends, and espanol putting great attention to not translate command's names, etc.
+But thanx to [DeepL](https://www.deepl.com/translator) translate service, and passion, was possible to translate the user's guide in different languages, I started with portugues for brazilian friends, and espanol putting great attention to not translate command's names, etc.
 
-So at the moment we have the users guide in five different languages:
+So at the moment - summer 2020 - we have the user's guide in five different languages:
 
 ## [english](./english.html), [italiano](./italiano.html), [español](./espanol.html), [português](./portugues.html), [български](./bulgarian.html)
 
