@@ -12,7 +12,7 @@ lang: it_IT
 * [Scarica le immagini ISO](#scarica-le-immagini-iso)
 
 # Aggiornamento
-Questo manuale utente di penguin's eggs, è aggiornato al 20 settembre 2020, eggs-7.6.39-1.deb. 
+Questo manuale utente di penguin's eggs, è aggiornato al 27 settembre 2020, eggs-7.6.46-1.deb. 
 
 # Introduzione
 
@@ -213,22 +213,23 @@ Andiamo ad illustrare i comandi in rigoroso ordine alfabetico, per comodità del
 Adatta il video alle capacità del monitor o alla grandezza della finestra in caso di macchina virtuale. Lo trovo molto comodo per ridimensionare le macchine virtuali con interfacce grafiche diverse da cinnamon, gnome3, e kde per la quali non è necessario. In pratica eggs richiama xrandr per adattare lo schermo alla risoluzione corrente.
 
 ### sudo eggs calamares
-Installa e configura l'installatore grafico calamares. Può essere utilizzato anche per configurare una iso che - prodotta senza calamares - la si voglia installare comunque con esso. Basterà dare il comando: sudo eggs calamares e si avrà sia l'installazione del pacchetto e le sue dipendenze, sia la configurazione.
+Installa e configura l'installatore grafico calamares. Può essere utilizzato anche per configurare una iso che - prodotta senza calamares - la si voglia installare con esso. Basterà dare il comando: sudo eggs calamares -i e si avrà sia l'installazione del pacchetto che la configurazione.
 
 ```
 command: calamares
 
-configure calamares or install and configure it
-
 USAGE
-
-   $ eggs calamares
+  $ eggs calamares
 
 OPTIONS
-  -c, --configuration  creation of configuration files only
-  -h, --help           show CLI help
+  -h, --help     show CLI help
+  -i, --install  install calamares and it's dependencies
   -v, --verbose
-  --theme=theme        theme/branding for eggs and calamares
+
+  --final        final: remove eggs prerequisites, calamares and all it's 
+                 dependencies
+
+  --theme=theme  theme/branding for eggs and calamares
 
 EXAMPLES
   ~$ sudo eggs calamares 
@@ -272,6 +273,23 @@ Attenzione, l'installatore cli è più veloce di calamares, però è MOLTO rudim
 Cancella le immagini realizzate e la directory di lavoro di eggs \(il nido\). Esegue rm /home/eggs -rf per cancellare tutte le iso create. 
 In caso per interruzione del comando produce, sarà impossibile cancellare le directory montate. La strada più breve è un riavvio ed il successivo lancio del comando.
 
+```
+command: kill
+
+kill the eggs/free the nest
+
+USAGE
+  $ eggs kill
+
+OPTIONS
+  -h, --help     show CLI help
+  -v, --verbose  verbose
+
+EXAMPLE
+  $ eggs kill
+  kill the eggs/free the nest
+```
+
 ### sudo eggs prerequisites
 
 Installa i pacchetti deb necessari al funzionamento di eggs. 
@@ -283,6 +301,23 @@ Possiamo suddividere i paccheti necessari in tre parti:
 
 Oltre a questo vengono creati la directory /etc/penguins-eggs.d, tutti i file di configurazione ed i collegamenti necessari.
 
+```
+command: prerequisites
+
+install packages prerequisites to run eggs
+
+USAGE
+  $ eggs prerequisites
+
+OPTIONS
+  -h, --help     show CLI help
+  -v, --verbose  verbose
+
+EXAMPLE
+  ~$ eggs prerequisites
+  install prerequisites and create configuration files
+```
+
 ### sudo eggs produce
 
 E' questo il comando che più utilizzerete, di fatto sostanzialmente l'unico usato quotidianamente, insieme a kill che serve invece a sbarazzarsi delle immagini iso create.
@@ -292,6 +327,10 @@ Usato senza parametri produce la iso con compressione di tipo xz. Al suo avvio, 
 Presenta alcuni flag utilizzabili:
 
 ```
+command: produce
+
+livecd creation. The system produce an egg
+
 USAGE
   $ eggs produce
 
@@ -303,6 +342,9 @@ OPTIONS
   -s, --script             script mode. Generate scripts to manage iso build
   -v, --verbose            verbose
   --adapt                  adapt video resolution in VM
+
+  --final                  final: remove eggs prerequisites, calamares and all 
+                           it's dependencies
 
   --ichoice                allows the user to choose the installation type 
                            cli/gui
@@ -321,34 +363,35 @@ EXAMPLES
   $ sudo eggs produce 
   produce an ISO called [hostname]-[arch]-YYYY-MM-DD_HHMM.iso, compressed xz 
   (standard compression).
-  If hostname=myremix and arch=i386 you have myremix-x86--2020-08-25_1215.iso
+  If hostname=ugo and arch=i386 ugo-x86-2020-08-25_1215.iso
 
   $ sudo eggs produce -v
   the same as the previuos, but with more explicative output
 
   $ sudo eggs produce -vf
-  the same as the previuos, compression lz4 (fast compression, but about 30% 
-  less compared xz standard)
+  the same as the previuos, compression lz4 (fast compression, but about 30%
+  less compressed compared xz standard)
 
   $ sudo eggs produce -vc
-  the same as the previuos, compression xz -Xbcj x86 (max compression, about 10% 
-  more compared xz standard)
+  the same as the previuos, compression xz -Xbcj x86 (max compression, about 10%
+  more compressed compared xz standard)
 
   $ sudo eggs produce -vf --basename leo --theme debian --adapt 
-  produce an ISO called leo-i386-2020-08-25_1215.iso compression lz4, using 
-  Debian theme and link to adapt
+  produce an ISO called leo-i386-2020-08-25_1215.iso compression lz4,
+  using Debian theme and link to adapt
 
   $ sudo eggs produce -v --basename leo --theme debian --adapt 
-  produce an ISO called leo-i386-2020-08-25_1215.iso compression xz, using 
-  Debian theme and link to adapt
+  produce an ISO called leo-i386-2020-08-25_1215.iso compression xz,
+  using Debian theme and link to adapt
 
   $ sudo eggs produce -v --basename leo --rsupport 
-  produce an ISO called leo-i386-2020-08-25_1215.iso compression xz, using eggs 
+  produce an ISO called leo-i386-2020-08-25_1215.iso compression xz, using eggs
   theme and link to dwagent
 
   $ sudo eggs produce -vs --basename leo --rsupport 
-  produce scripts to build an ISO as the previus example. Scripts can be found 
+  produce scripts to build an ISO as the previus example. Scripts can be found
   in /home/eggs/ovarium and you can customize all you need
+
 ```
 
 Di gran lunga la modalità d'uso che preferisco, personalmente è
@@ -361,19 +404,55 @@ che mi consente si avere una veloce rimasterizzazione, osservare a video i vari 
 
 Tra i flag disponibili c'è theme che imposta un tema per eggs e calamares. Potete creare un tema personalizzato semplicemente copiandone uso esistente e cambiandone nome e contenuto. I themi di eggs sono in ./addons/${vendor}/theme, a breve aggiungerò anche la possibilità di variare il tema per isolinux e grub per il boot della live.
 
+Un altro flag, introdotto è --final che predispone calamares alla rimozione dei programmi non necessari all'utente finale: esegue la stessa azione del comando eggs sterilize, ma attraverso calamares durante l'installazione del sistema.
+
+
 ### sudo eggs skel
 
 Con questo comando si ricrea la directory /etc/skel della nostra remix. E' utile per dare una veste coerente e personalizzata all'utente live ed ai futuri utenti che creeremo una volta che il nostro sistema sarà installato. Essenzialmente copia le configurazioni dell'utente primario o di quello passato con il flag -u nella cartella /etc/skel che verrà quindi utilizzata per generare lo scheletro della home degli utenti creati.
 
 Considerando che esistono diversi desktop manager, gnome2, gnome3, cinnamon, mate, kde, lxqt, lxde, etc e che viene fatta una operazione di pulizia dei possibili dati sensibili, è un comando sempre in evoluzione. Attualmente è abbastanza affidabile per cinnamon e, per le prove che ho fatto anche con gli altri Desktop Manager.
 
+```
+command: skel
+
+update skel from home configuration
+
+USAGE
+  $ eggs skel
+
+OPTIONS
+  -h, --help       show CLI help
+  -u, --user=user  user to be used
+  -v, --verbose
+
+EXAMPLE
+  $ eggs skel --user mauro
+  desktop configuration of user mauro will get used as default
+```
+
 ### sudo eggs sterilize
 
 E' il comando inverso di prerequisites, sostanzialmente rimuove i pacchetti sopra elencati rendendo il nostro sistema non più in grado di riprodursi.
 
+```
+command: sterilize
+
+remove all packages installed as prerequisites and calamares
+
+USAGE
+  $ eggs sterilize
+
+OPTIONS
+  -h, --help     show CLI help
+  -v, --verbose  verbose
+```
+
 ### sudo eggs update
 
 Aggiornamento di eggs. Presenta un diverso funzionamento a seconda se l'installazione di eggs sia avvenuta con il pacchetto npm di nodejs oppure con il pacchetto debian. Nel primo caso, aggiorna direttamente eggs alla versione corrente, altrimenti suggerisce i passi per l'aggiornamento tramite apt (se la repo per eggs è inclusa) o scaricando il pacchetto ed installandolo via dpkg.
+
+
 
 # Creiamo una nostra remix
 La creazione di una iso nostra remix è un processo che richiede pazienza e passione ma può darci grandi soddisfazioni ed in molti casi, in ultima analisi, farci risparmiare tempo e fatica.
@@ -382,7 +461,7 @@ La creazione di una iso nostra remix è un processo che richiede pazienza e pass
 
 Installiamo la nostra distribuzione preferita Debian Buster o derivata ed andiamo ad installare eggs con uno dei metodi descritti in precedenza. 
 
-### Installer grafico Calamares
+### Installer grafico 
 
 Nel caso ci si trovi su un sistema che disponga di interfaccia grafica e si desideri utilizzare calamares come installer grafico, conviene installarlo adesso. 
 
@@ -467,12 +546,14 @@ Si tratta essenzialmente di versioni di Debian Buster, Devuan beowulf, Linux Min
 
 Attualmente sono on line delle derivate di Debian Buster: 
 
-* less è una versione leggera - solo il necessario per lo sviluppo di eggs, che normalmente uso. 
+* less è una versione molto leggera, lxde-core --no-install-reccomends e solo il necessario per lo sviluppo di eggs, che normalmente uso. 
 * debu, più comoda e rifinita, cinnamon come desktop, sempre con gli strumenti di sviluppo e tutto il necessario per office, disegno, sviluppo etc. Questa distro più completa, ha il solo torto - rispetto a less - che essendo relativamente grande, 1,9 GB a fronte dei 900KB di less impiega più tempo per la "riproduzione".
 
-E' presente anche una versione ancora più leggera di Debian buster, denominata naked senza nessuna interfaccia grafica ma utile come base per farsi una propria remix.
+E' presente anche una versione ancora più leggera di Debian buster, denominata naked senza interfaccia grafica e, proprio per questo, adatta come base per farci una propria remix.
 
 In sostanza consiglio debu o less per chi voglia partecipare allo sviluppo, naked per chi vuole partire da una base per poi procedere alla creazione propria remix. Interessante anche incubator che è sostanzialmente una versione di buster con l'aggiunta dell'ambiente di virtualizzazione proxmox-ve, basato su kvm, virt-viewer e strumenti necessari.
+
+Una nota a parte per alcune remix i386, sempre realizzate con eggs. Potrebbe essere interessante patricia-i386, un rifacimento di linux mint 19.3 tricia xfce, sufficientemente snella ed allo stesso tempo elegante, per essere utilizzata su computer datati. Ancora più leggera è bionic-i386 creata a partire da lubuntu-18.04 bionic ma, ovviamente, anche più scarna.
 
 ### Dove posso scaricare le iso
 
@@ -484,4 +565,31 @@ Tutte le distribuzioni qui riportate sono impostate con user live ed user di roo
 
 * live/evolution
 * root/evolution
+
+# Supporto e segnalazioni
+
+eggs è un progetto che, al momento, consente di rimasterizzare diverse versioni di linux. 
+
+- debian buster/bullseyes/stretch
+- devuan beowulf
+- ubuntu bionic/focal
+
+è evidente, che lo sviluppatore non può materialmente testare ogni release su tutte le versioni considerate, aggiungendo perltro la necessità di test sia su macchine bios standard che uefi.
+
+E' perciò importante che la segnalazione dei problemi da parte degli utenti.
+
+Potete segnalare le varie problematiche sulla pagina [issue](https://github.com/pieroproietti/penguins-eggs/issues) del progetto penguins-eggs su github.com.
+
+Potete anche contattarmi via chat, su https://gitter.im/penguins-eggs.
+
+# Comunità
+Una comunità di utenti è importante per la crescita di un progetto, creare qualcosa di versatile e pratico in fondo serve relativamente a poco se la gente non conosce il prodotto e, d'altra parte, avere un buon numero di utenti, fornisce feedback e motivazione agli sviluppatori, migliorando quindi il progetto stesso.
+
+Potete facilitare la diffusione di eggs e contribuire alla sua crescita in diversi modi:
+
+* iscriversi al gruppo facebook [penguin's eggs](https://www.facebook.com/groups/128861437762355)
+* contrassegnare con una stella il progetto su (github.com)[https://github.com/pieroproietti/penguins-eggs], occorre la registrazione  su github.com.
+* valutare questo progetto su [sourceforge](https://sourceforge.net/projects/penguins-eggs/) e/o creare una review sulla pagina stessa pagina.
+
+
 
