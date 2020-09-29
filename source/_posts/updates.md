@@ -5,7 +5,7 @@ date: 2020-09-29 08:13:19
 ---
 Not always I have time to update this site, but the last versions, expecially 7.48.1 are well tested and working, so I think it's better to present them. 
 
-# EGGS-7.48.1_.DEB
+# EGGS-7.47.1_.DEB
 added a beutifull new theme for ufficiozero thanx to Julian Del Vecchio.
 
 # EGGS-7.46.1_.DEB
