@@ -171,8 +171,9 @@ Bene, adesso siamo finalmente pronti ad utilizzare eggs per la riproduzione del 
 
 ### Comandi ed opzioni 
 
-Eggs necessita dei diritti di root, quindi - tranne per eggs info - DEVE essere chiamato preceduto da `sudo`
+Eggs necessita dei diritti di root, quindi - tranne per eggs info ed i comandi di esportazione - DEVE essere chiamato preceduto da `sudo`
 
+* adapt
 * calamares
 * export
 * help
@@ -193,8 +194,12 @@ Un altro flag certamente da conoscere e presente nella quasi totalità dei casi 
 
 Andiamo ad illustrare i comandi in rigoroso ordine alfabetico, per comodità dello scrivente. Tenete a mente che i comandi che utilizzerete normalmente saranno soprattutto produce e kill.
 
+### eggs adapt
+
+Adatta il video alle capacità del monitor o alla grandezza della finestra in caso di macchina virtuale. Lo trovo molto comodo per ridimensionare le macchine virtuali con interfacce grafiche diverse da cinnamon, gnome3, e kde per la quali non è necessario. In pratica eggs richiama xrandr per adattare lo schermo alla risoluzione corrente. Non è strettamente relato alla produzione di ISO, lo trovo però indispensabile nello sviluppo.
+
 ### sudo eggs calamares
-Installa e configura l'installatore grafico calamares. Può essere utilizzato anche per configurare una iso che - prodotta senza calamares - la si voglia installare con esso. Basterà dare il comando: sudo eggs calamares -i e si avrà sia l'installazione del pacchetto che la configurazione.
+Configura l'installatore grafico calamares. Può essere utilizzato anche per configurare una iso che - prodotta senza calamares - la si voglia installare con esso. Basterà dare il comando: sudo eggs calamares -i e si avrà sia l'installazione del pacchetto che la configurazione.
 
 ```
 command: calamares
@@ -532,26 +537,21 @@ Aggiornamento di eggs. Presenta un diverso funzionamento a seconda se l'installa
 # Creiamo una nostra remix
 La creazione di una iso nostra remix è un processo che richiede pazienza e passione ma può darci grandi soddisfazioni ed in molti casi, in ultima analisi, farci risparmiare tempo e fatica.
 
-## Prerequisiti
+Scarichiamo la nostra distribuzione che intendiamo customizzare, scegliendo tra Debian buster, Debian bullseye, Devuan beowulf, ubuntu bionic, ubuntu focal e, da oggi, ubuntu groovy.
 
-Installiamo la nostra distribuzione preferita Debian Buster o derivata ed andiamo ad installare eggs con uno dei metodi descritti in precedenza. 
-
-### Installer grafico 
-
-Nel caso ci si trovi su un sistema che disponga di interfaccia grafica e si desideri utilizzare calamares come installer grafico, conviene installarlo adesso. 
-
-Basterà procedere con il comando:
-
-```
-sudo eggs calamares
-```
-
-Successivamente quando questa immagine sarà avviata, potrà essere reinstallarla con l'installer grafico calamares. Se non installate calamares, sarà possibile comunque utilizzare l'installer cli di eggs a riga di comando.
-
+Installiamola normalmente, magari aggiorniamola e facciamo le nostre prime modifiche prima di passare alla creazione delle ISO.
 
 ## Prerequisiti
 
-Assicuriamoci di caricare i prerequisiti e creare i file di configurazione dando il comando
+Installiamo eggs, scaricandolo da [sourceforge](https://sourceforge.net/projects/penguins-eggs/files/packages-deb/).
+
+Il comando per l'installazione è il semplice:
+
+```
+sudo dpkg -i eggs_7.6.57-1_amd64.deb
+```
+
+bene, a questo punto, assicuriamoci di caricare i prerequisiti e creare i file di configurazione dando il comando
 
 ```
 sudo eggs prerequisites
@@ -559,27 +559,9 @@ sudo eggs prerequisites
 
 Oltre all'installazione dei vari pacchetti Debian necessari, verrà creata la directory di configurazione /etc/penguins-eggs.d e configurato al suo interno il file eggs.conf con le impostazioni di default.  Trovate il file di configurazione in /etc/penguins-eggs.d/eggs.conf e potete eventualmente editarlo per modificare le impostazioni. Trovate la documentazione delle opzioni utilizzate direttamente nei commenti del file stesso.
 
-A questo punto eggs è pronto a funzionare e creare l'immagine iso del nostro sistema. 
+Ora eggs è pronto a funzionare e creare l'immagine iso del nostro sistema. 
 
-Consiglio, inoltre di installare bleachbit perchè ci consentirà di pulire facilmente le nostre remix senza masterizzare dati inutili. Potete falrlo anche da terminale con il comando:
-
-```
-sudo apt install bleachbit
-```
-
-### Ripuliamo il nostro sistema
-
-Per prima cosa - per questo abbiamo installato bleachbit - vi suggerisco di pulire il vostro sistema. 
-
-Normalmente faccio pulire tutto a bleachbit tranne le localizzazione - altrimenti non funzionano le lingue estere - libera spazio su disco e Memoria. 
-
-![bleachbit-selezione](/images/bleachbit-selezione.png)
-
-Si risparmiano almeno 200 MB che non sono pochi e sarebbero solamente zavorra.
-
-
-
-### Produzione della iso
+### Produzione della ISO
 
 Una volta installato eggs ed i suoi prerequisiti, siamo pronti al grande salto.
 
@@ -601,7 +583,7 @@ Durante le prove però o comunque quando lo riteniate opportuno, vi consiglio di
 
 Come era inizialmente riportato anche nel codice, il suggerimento è prendersi un caffè nel frattempo e cercare di riservare abbastanza potenza di elaborazione alla macchina. Nel mio caso - utilizzo una macchina virtuale con 4 core e 4 GB di memoria - per un filesystem di 7/8 GB occorrono circa _dieci minuti_ con la compressione xz, mentre utilizzando la compressione lz4 si riduce moltissimo l'attesa solo un _minuto e mezzo_.  Per il caffè non facciamo più in tempo, una sigaretta fa male e l'immagine ottenuta passa a _3,0 GB_ a fronte dei _2.00_ GB della compressione xz \(Vedi **nota**\).
 
-Una sola raccomandazione. Normalmente si da questo comando sulla macchina dove si lavora e magari si è già prodotta una versione precedente. Raccomando di cancellare le immagini precedenti con il comando `sudo eggs kill` che rimuove l'intero albero di directory sotto /home/eggs\).
+Una sola raccomandazione. Normalmente si da questo comando sulla macchina dove si lavora e magari si è già prodotta una versione precedente. Raccomando di cancellare le immagini precedenti con il comando `sudo eggs kill` che rimuove l'intero albero di directory sotto /home/eggs.
 
 **Nota**: _Non tutto il male vien per nuocere però. Se consideriamo che attualmente i DVD  si usano relativamente poco e le chiavette stanno diventando sempre più veloci, vi sono  casi la nostra remix potrebbe essere risultare più ottimizzata con un filesystem più grande ma meno compresso! Difatti, tenuto conto che durante l'uso - nascosto ai nostri occhi - ci sarà un continuo processo di lettura e decompressione del filesystem,  la decompressioone xz risulta comunque più lenta di quella lz4._ 
 
@@ -611,12 +593,9 @@ _Perchè produrre , quindi, formati diversi ?_
 
 _Eventualmente, si potrebbe creare la iso con lz4 e, successivamente, comprimere  la stessa con xz per alleggerire gli upload  ed i download su internet_.
 
-### eggs adapt
-
-Adatta il video alle capacità del monitor o alla grandezza della finestra in caso di macchina virtuale. Lo trovo molto comodo per ridimensionare le macchine virtuali con interfacce grafiche diverse da cinnamon, gnome3, e kde per la quali non è necessario. In pratica eggs richiama xrandr per adattare lo schermo alla risoluzione corrente.
 
 ---
-# Scarica le immagini ISO
+# Scarica immagini ISO realizzate con eggs
 Immagini delle remix realizzate dall'autore.
 
 ## Premessa
@@ -628,6 +607,7 @@ Si tratta essenzialmente di versioni di Debian Buster, Devuan beowulf, Linux Min
 Attualmente sono on line delle derivate di Debian Buster: 
 
 * less è una versione molto leggera, lxde-core --no-install-reccomends e solo il necessario per lo sviluppo di eggs, che normalmente uso. 
+
 * debu, più comoda e rifinita, cinnamon come desktop, sempre con gli strumenti di sviluppo e tutto il necessario per office, disegno, sviluppo etc. Questa distro più completa, ha il solo torto - rispetto a less - che essendo relativamente grande, 1,9 GB a fronte dei 900KB di less impiega più tempo per la "riproduzione".
 
 E' presente anche una versione ancora più leggera di Debian buster, denominata naked senza interfaccia grafica e, proprio per questo, adatta come base per farci una propria remix.
@@ -653,9 +633,9 @@ eggs è un progetto che, al momento, consente di rimasterizzare diverse versioni
 
 - debian buster/bullseyes/stretch
 - devuan beowulf
-- ubuntu bionic/focal
+- ubuntu bionic/focal/groovy
 
-è evidente, che lo sviluppatore non può materialmente testare ogni release su tutte le versioni considerate, aggiungendo perltro la necessità di test sia su macchine bios standard che uefi.
+è evidente, che lo sviluppatore non può materialmente testare ogni release su tutte le versioni considerate, aggiungendo perltro la necessità di test sia su macchine uefi che bios standard.
 
 E' perciò importante che la segnalazione dei problemi da parte degli utenti.
 
@@ -664,16 +644,18 @@ Potete segnalare le varie problematiche sulla pagina [issue](https://github.com/
 Potete anche contattarmi via chat, su https://gitter.im/penguins-eggs.
 
 # Comunità
-Una comunità di utenti è importante per la crescita di un progetto, creare qualcosa di versatile e pratico in fondo serve relativamente a poco se la gente non conosce il prodotto e, d'altra parte, avere un buon numero di utenti, fornisce feedback e motivazione agli sviluppatori, migliorando quindi il progetto stesso.
+Una comunità di utenti è fondamentale per la crescita di un progetto, creare qualcosa di versatile e pratico in fondo serve relativamente a poco se la gente non conosce il prodotto e, d'altra parte, avere un buon numero di utenti, fornisce feedback e motivazioni agli sviluppatori, migliorando quindi la qualità il progetto stesso.
 
 Potete facilitare la diffusione di eggs e contribuire alla sua crescita in diversi modi:
 
 * iscriversi al gruppo facebook [penguin's eggs](https://www.facebook.com/groups/128861437762355)
+
 * contrassegnare con una stella il progetto su [github.com](https://github.com/pieroproietti/penguins-eggs);
+
 * valutare questo progetto su [sourceforge](https://sourceforge.net/projects/penguins-eggs/) e/o creare una review sulla pagina stessa pagina.
 
 # Ringraziamenti
-Se siete giunti fino a questo passo, senza l'ausilio del tasto di scorrimento rapido, avete utilizzato parte del Vostro tempo - risorsa preziosa - per seguirmi su questo percorso e, quindi, è mio dovere e desiderio ringraziarvi per il vostro interesse. 
+Se siete giunti fino a questo passo, senza l'ausilio del tasto di scorrimento rapido, avete utilizzato parte del Vostro tempo - risorsa preziosa - per seguirmi su questo percorso e, quindi, è mio dovere e - ancor di più desiderio - ringraziarvi per il vostro interesse. 
 
 Grazie a tutti e... happy hacking!
 
