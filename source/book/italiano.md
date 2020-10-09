@@ -484,7 +484,7 @@ Al momento sperimentale) Rimuove cryptosetup e resume da initrd.img destinata al
 
 * toos:locales 
 
-``
+```
 install/clean locales
 
 USAGE
