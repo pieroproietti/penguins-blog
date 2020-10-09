@@ -106,12 +106,24 @@ Avviamo eggs senza alcun comando ed otterremo la lista dei comandi disponibili:
 
 ### Realizzazione di immagini iso compatibili UEFI
 
-Pur se nelle versioni precedenti, l'intallazione dei prerequisiti era necessaria prima di poter produrre una iso, attualmente è possibile anche avviare direttamente con:
+Se vogliamo che le nostre iso vengano create compatibili UEFI dobbiamo installare il pacchetto grub-efi-amd64, con il comando:
+
 ```
-sudo eggs produce 
+sudo apt install grub-efi-amd64
 ```
 
-eggs, rilevata l'assenza dei prerequisiti necessari procederà all'installazione. Durante questa fase, verrà inoltre richiesto, se stiamo in una ambiente grafico, se si vuole installare calamare. Consiglio fortemente di rispondere "yes" e verranno caricati i prerequisiti, eventualmente i pacchetti per EFI, calamares ed i collegamenti necessari. 
+vedi **Nota**
+
+
+### sudo eggs calamares
+
+A questo punto, se ne abbiamo la necessità converrà installare anche l'installer grafico calamares, con il comando 
+
+```
+sudo eggs calamares
+```
+
+che installerà calamares ed i moduli `qml-module-qtquick2, qml-module-qtquick-controls` necessari per la visualizzazione delle slide durante l'installazione del sistema.
 
 ### sudo eggs prerequisites
 
@@ -174,16 +186,18 @@ Bene, adesso siamo finalmente pronti ad utilizzare eggs per la riproduzione del 
 
 Eggs necessita dei diritti di root, quindi - tranne per eggs info - DEVE essere chiamato preceduto da `sudo`
 
+* adapt
 * calamares
-* export
 * help
+* howto
 * info
 * install
+* locales 
 * kill
 * prerequisites
 * produce
+* skel
 * sterilize
-* tools
 * update
 
 Non vi fate spaventare da questi pochi comandi, quelli che utilizzerete sono essenzialmente due: produce per creare la iso e kill per cancellarla.
@@ -193,6 +207,10 @@ Ogni comando può avere alcuni flag, di questi il più importante, è il flag -f
 Un altro flag certamente da conoscere e presente nella quasi totalità dei casi è il flag -v o --verbose che vi mostrerà a video il susseguirsi delle vari comandi. Per i restanti flag basterà digitare eggs comando -h per avere la lista e la descrizione.
 
 Andiamo ad illustrare i comandi in rigoroso ordine alfabetico, per comodità dello scrivente. Tenete a mente che i comandi che utilizzerete normalmente saranno soprattutto produce e kill.
+
+### eggs adapt
+
+Adatta il video alle capacità del monitor o alla grandezza della finestra in caso di macchina virtuale. Lo trovo molto comodo per ridimensionare le macchine virtuali con interfacce grafiche diverse da cinnamon, gnome3, e kde per la quali non è necessario. In pratica eggs richiama xrandr per adattare lo schermo alla risoluzione corrente.
 
 ### sudo eggs calamares
 Installa e configura l'installatore grafico calamares. Può essere utilizzato anche per configurare una iso che - prodotta senza calamares - la si voglia installare con esso. Basterà dare il comando: sudo eggs calamares -i e si avrà sia l'installazione del pacchetto che la configurazione.
@@ -218,26 +236,25 @@ EXAMPLES
   install calamares and create configuration
 ```
 
-### eggs export
-```
-export package eggs-v7-6-x-1.deb in the destination host
-
-USAGE
-  $ eggs export:COMMAND
-
-COMMANDS
-  export:deb   export package eggs-v7-6-x-1.deb in the destination host
-  export:docs  export docType documentation of the sources in the destination host
-  export:iso   export iso in the destination host
-```
-
-esporta rispettivamente i pacchetti deb, la documentazione o l'immagine iso nell'host riportato in /etc/penguins-eggs.d/tools.conf
-
-Potete modificare a piacere sia l'host di esportazione che il path associato, notate che questo comando è conveniente soprattutto per sviluppatori.
-
 ### eggs help
 
 Come dice il comando stesso genera la lista dei comandi disponibili. A sua volta ogni comando con il flag -h o --help emette usa sua descrizione.
+
+### eggs howto
+
+Mostra a video dei brevissimi suggerimenti. Al momento boot da grub rescue e come configurare eggs.
+
+#### eggs howto:grub
+
+Come avviare da grub rescue.
+
+#### eggs howto:configure
+
+Come configurare eggs.
+
+#### eggs howto:initrd
+
+Sperimentale, per la rimozione di resume e crypto da initrd del live.
 
 ### eggs info
 
@@ -389,80 +406,16 @@ Tra i flag disponibili c'è theme che imposta un tema per eggs e calamares. Pote
 
 Un altro flag, introdotto è --final che predispone calamares alla rimozione dei programmi non necessari all'utente finale: esegue la stessa azione del comando eggs sterilize, ma attraverso calamares durante l'installazione del sistema.
 
-### eggs tools
 
-```
-clean system log, apt, etc
+### sudo eggs skel
 
-USAGE
-  $ eggs tools:COMMAND
-
-COMMANDS
-  tools:clean     clean system log, apt, etc
-  tools:initrd    Test initrd
-  tools:locales   install/clean locales
-  tools:sanitize  sanitize
-  tools:skel      update skel from home configuration
-  tools:yolk      configure eggs to install without internet
-```
-tools è un raccoglitore di comandi contenente alcuni strumenti utili durante la lavorazione. Alcuni di questi, se non la maggior parte vendono direttamente chiamati da produce durante la creazione della ISO, in particolare: clean, locales, yolk.
-
-* sudo tools:clean 
-```
-clean system log, apt, etc
-
-USAGE
-  $ eggs tools:clean
-
-OPTIONS
-  -h, --help     show CLI help
-  -v, --verbose  verbose
-```
-Esegue la pulizia dei file di log, della cache apt, etc. Si salva spazio nella ISO che si viene a creare e si riducono i tempi di attesa per la creazione;
-
-* tools:initrd 
-
-```
-Test initrd
-
-USAGE
-  $ eggs tools:initrd
-
-OPTIONS
-  -h, --help     show CLI help
-  -v, --verbose
-  --check=check  check if necessary to clean initrd.img
-  --clean=clean  clean the initrd.img
-```
-Al momento sperimentale) Rimuove cryptosetup e resume da initrd.img destinata al liveCd;
-
-* toos:locales 
-
-``
-install/clean locales
-
-USAGE
-  $ eggs tools:locales
-
-OPTIONS
-  -h, --help       show CLI help
-  -r, --reinstall  reinstall locales
-  -v, --verbose    verbose
-
-```
-
-Al momento sperimentale) Configura solo su Debian/Devuan una serie di lingue specificate in /etc/penguins-eggs-d/eggs.conf che si vogliono supportare;
-
-* tools:sanitize 
-
-rimuove da un progetto esistente e file generati da versioni precedenti di eggs che possono nascondere bug o crearli (consigliato al cambio di versione);
-
-* tools:skel
 Con questo comando si ricrea la directory /etc/skel della nostra remix. E' utile per dare una veste coerente e personalizzata all'utente live ed ai futuri utenti che creeremo una volta che il nostro sistema sarà installato. Essenzialmente copia le configurazioni dell'utente primario o di quello passato con il flag -u nella cartella /etc/skel che verrà quindi utilizzata per generare lo scheletro della home degli utenti creati.
 
 Considerando che esistono diversi desktop manager, gnome2, gnome3, cinnamon, mate, kde, lxqt, lxde, etc e che viene fatta una operazione di pulizia dei possibili dati sensibili, è un comando sempre in evoluzione. Attualmente è abbastanza affidabile per cinnamon e, per le prove che ho fatto anche con gli altri Desktop Manager.
 
 ```
+command: skel
+
 update skel from home configuration
 
 USAGE
@@ -477,26 +430,6 @@ EXAMPLE
   $ eggs skel --user mauro
   desktop configuration of user mauro will get used as default
 ```
-
-* sudo tools:yolk
-
-```
-configure eggs to install without internet
-
-USAGE
-  $ eggs tools:yolk
-
-OPTIONS
-  -h, --help     show CLI help
-  -v, --verbose
-
-EXAMPLE
-  $ eggs yolk -v
-
-```
-Il comando yolk crea una piccola repository locale in /usr/local/yolk con i pacchetti strettamente necessari ad assicurare l'installazione del sistema anche in assenza di connessione internet. Viene SEMPRE richiamata da produce, per cui il suo uso non è necessario se non per i più curiosi.
-
-
 
 ### sudo eggs sterilize
 
@@ -600,10 +533,6 @@ _Tenendo pure presente che non esiste più il limite delle dimensioni delle imma
 _Perchè produrre , quindi, formati diversi ?_
 
 _Eventualmente, si potrebbe creare la iso con lz4 e, successivamente, comprimere  la stessa con xz per alleggerire gli upload  ed i download su internet_.
-
-### eggs adapt
-
-Adatta il video alle capacità del monitor o alla grandezza della finestra in caso di macchina virtuale. Lo trovo molto comodo per ridimensionare le macchine virtuali con interfacce grafiche diverse da cinnamon, gnome3, e kde per la quali non è necessario. In pratica eggs richiama xrandr per adattare lo schermo alla risoluzione corrente.
 
 ---
 # Scarica le immagini ISO
