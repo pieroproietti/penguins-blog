@@ -229,8 +229,15 @@ COMMANDS
   export:docs  export docType documentation of the sources in the destination host
   export:iso   export iso in the destination host
 ```
+#### eggs export:deb
+esporta i pacchetti deb;
 
-esporta rispettivamente i pacchetti deb, la documentazione o l'immagine iso nell'host riportato in /etc/penguins-eggs.d/tools.conf
+#### eggs export:docs
+esporta la documentazione;
+
+#### eggs export:iso
+esporta l'immagine iso
+
 
 Potete modificare a piacere sia l'host di esportazione che il path associato, notate che questo comando è conveniente soprattutto per sviluppatori.
 
@@ -408,7 +415,7 @@ COMMANDS
 ```
 tools è un raccoglitore di comandi contenente alcuni strumenti utili durante la lavorazione. Alcuni di questi, se non la maggior parte vendono direttamente chiamati da produce durante la creazione della ISO, in particolare: clean, locales, yolk.
 
-* sudo tools:clean 
+#### sudo eggs tools:clean 
 ```
 clean system log, apt, etc
 
@@ -421,7 +428,7 @@ OPTIONS
 ```
 Esegue la pulizia dei file di log, della cache apt, etc. Si salva spazio nella ISO che si viene a creare e si riducono i tempi di attesa per la creazione;
 
-* tools:initrd 
+#### sudo eggs tools:initrd 
 
 ```
 Test initrd
@@ -437,7 +444,7 @@ OPTIONS
 ```
 Al momento sperimentale) Rimuove cryptosetup e resume da initrd.img destinata al liveCd;
 
-* toos:locales 
+#### sudo eggs toos:locales 
 
 ```
 install/clean locales
@@ -454,11 +461,11 @@ OPTIONS
 
 Al momento sperimentale) Configura solo su Debian/Devuan una serie di lingue specificate in /etc/penguins-eggs-d/eggs.conf che si vogliono supportare;
 
-* tools:sanitize 
+#### sudo eggs tools:sanitize 
 
 rimuove da un progetto esistente e file generati da versioni precedenti di eggs che possono nascondere bug o crearli (consigliato al cambio di versione);
 
-* tools:skel
+#### sudo eggs tools:skel
 Con questo comando si ricrea la directory /etc/skel della nostra remix. E' utile per dare una veste coerente e personalizzata all'utente live ed ai futuri utenti che creeremo una volta che il nostro sistema sarà installato. Essenzialmente copia le configurazioni dell'utente primario o di quello passato con il flag -u nella cartella /etc/skel che verrà quindi utilizzata per generare lo scheletro della home degli utenti creati.
 
 Considerando che esistono diversi desktop manager, gnome2, gnome3, cinnamon, mate, kde, lxqt, lxde, etc e che viene fatta una operazione di pulizia dei possibili dati sensibili, è un comando sempre in evoluzione. Attualmente è abbastanza affidabile per cinnamon e, per le prove che ho fatto anche con gli altri Desktop Manager.
@@ -479,7 +486,7 @@ EXAMPLE
   desktop configuration of user mauro will get used as default
 ```
 
-* sudo tools:yolk
+#### sudo eggs tools:yolk
 
 ```
 configure eggs to install without internet
@@ -569,6 +576,8 @@ Normalmente faccio pulire tutto a bleachbit tranne le localizzazione - altriment
 ![bleachbit-selezione](/images/bleachbit-selezione.png)
 
 Si risparmiano almeno 200 MB che non sono pochi e sarebbero solamente zavorra.
+
+
 
 ### Produzione della iso
 
