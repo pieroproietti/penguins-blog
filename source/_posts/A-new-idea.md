@@ -1,0 +1,23 @@
+---
+title: A new idea
+layout: post
+date: 2020-10-09 17:21:57
+---
+
+I have a new idea for eggs.
+
+Eggs of course is not a package that is part of a distribution, moreover it is still relatively young. Waiting for it to end up in a repository would be long - not so much in truth - is present in the repository of ufficiozero.org, why not think about an autoupdate through this site?
+
+It would be enough to provide the package with the list of versions, the text of the changelog to allow the user to decide and the download url.
+
+It shouldn't be too difficult, nodejs is used for this purpose.
+
+The idea, therefore, is to create a microservice that queries, provides:
+
+- version
+- changelog
+- url
+
+Does anyone want to cooperate? Any suggestions?
+
+
