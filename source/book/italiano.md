@@ -102,7 +102,7 @@ eggs
 
 Avviamo eggs senza alcun comando ed otterremo la lista dei comandi disponibili:
 
-![eggs-senza-parametri](/images/eggs-senza-parametri.png)
+![eggs-commands](/images/eggs-commands.png)
 
 ### Realizzazione di immagini iso compatibili UEFI
 
