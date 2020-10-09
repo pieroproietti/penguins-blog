@@ -9,4 +9,4 @@ I updated the manual today - only in Italian - and tried for the first time eggs
 I tested the day realease on a UEFI machine, both iso production and install the system.
 
 
-![groovy-gorilla](/images/groovy-gorilla.png)
+![groovy-gorilla-install](/images/groovy-gorilla-install.png)
