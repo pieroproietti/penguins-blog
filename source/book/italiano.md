@@ -243,6 +243,52 @@ Come dice il comando stesso genera la lista dei comandi disponibili. A sua volta
 
 Mostra a video la configurazione di eggs e del sistema. E' l'unico comando che può essere usato senza sudo.
 
+```
+  / _ \/ _` |/ _` / __|
+ |  __/ (_| | (_| \__ \
+  \___|\__, |\__, |___/
+       |___/ |___/     
+   penguins-eggs    Perri's Brewery edition     ver. 7.6.57   
+command: info
+
+-----------------------------------------------------------------
+application_name:  penguins-eggs 7.6.57
+config_file:       /etc/penguins-eggs.d/eggs.conf
+snapshot_dir:      /home/eggs/
+snapshot_basename: less
+snapshot_exclude:  /usr/local/share/penguins-eggs/exclude.list
+kernel_image:      /vmlinuz
+initrd_image:      /initrd.img
+work_dir:          /home/eggs/ovarium/
+efi_work:          /home/eggs/ovarium/efi/
+make_efi:          true
+make_md5sum:       true
+make_isohybrid:    true
+compression:       xz
+force_installer:   true
+user_opt:          live
+netconfig_opt:     
+ifnames_opt:       
+edit_boot_menu:    false
+gui_editor:        /usr/bin/nano
+locale:            it_IT.UTF-8
+locales:           it_IT.UTF-8, en_US.UTF-8, es_PE.UTF-8, pt_BR.UTF-8, fr_FR.UTF-8, de_DE.UTF-8
+ssh_pass:          true
+-----------------------------------------------------------------
+No LSB modules are available.
+Distributor ID:	Debian
+Description:	Debian GNU/Linux 10 (buster)
+Release:	10
+Codename:	buster
+-----------------------------------------------------------------
+Eggs prerequisites:  ok
+Configuration file:  ok
+GUI Installer:       ok
+-----------------------------------------------------------------
+System: INSTALLED
+
+```
+
 ### sudo eggs install
 
 Lancia l'installaler cli di eggs. 
