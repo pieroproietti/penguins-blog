@@ -86,7 +86,7 @@ npm install
 At this point, from the penguins-eggs directory itself, you can use the source directly. For example:
 
 ```
-sudo ./eggs produces -fv
+sudo ./eggs produce -fv
 ```
 
 For developers or curious people, it will be possible to see, report or correct the code. 
@@ -110,7 +110,7 @@ We start eggs without any command and get the list of available commands:
 
 Although in previous versions, prerequisites were required before you could produce an iso, you can now also start it directly with:
 ```
-sudo eggs produces 
+sudo eggs produce 
 ```
 
 eggs, detected the absence of the necessary prerequisites will proceed with the installation. During this phase, you will also be asked, if we are in a graphical environment, if you want to install calamares. I strongly recommend to answer "yes" and the prerequisites will be loaded, possibly the packages for EFI, calamares and the necessary links. 
@@ -183,7 +183,7 @@ Eggs needs root rights, so - except for eggs info and export commands - it MUST 
 * install
 * kill
 * prerequisites
-* produces
+* produce
 * sterilize
 * tools
 * update
@@ -272,7 +272,7 @@ Attention, the installer cli is faster than calamares, but it is VERY rudimentar
 ### sudo eggs kill
 
 Delete the images made and the working directory of eggs \(the nest\). Run rm /home/eggs -rf to delete all created isos. 
-In case of interruption of the command produces, it will be impossible to delete the mounted directories. The shortest way is a reboot and the next launch of the command.
+In case of interruption of the command produce, it will be impossible to delete the mounted directories. The shortest way is a reboot and the next launch of the command.
 
 ```
 command: kill
@@ -319,21 +319,21 @@ EXAMPLE
   install prerequisites and create configuration files
 ```
 
-### sudo eggs produces
+### sudo eggs produce
 
 This is the command that you will use the most, in fact the only one used daily, together with kill that serves instead to get rid of the created iso images.
 
-Used without parameters it produces the iso with xz type compression. When it starts, it checks the installation of the prerequisites, not of calamares, and produces the iso.
+Used without parameters it produce the iso with xz type compression. When it starts, it checks the installation of the prerequisites, not of calamares, and produce the iso.
 
 It has some usable flags:
 
 ```
-command: produces
+command: produce
 
-livecd creation. The system produces an egg
+livecd creation. The system produce an egg
 
 USAGE
-  $ eggs produces
+  $ eggs produce
 
 OPTIONS
   -b, --basename=basename basename egg
@@ -361,36 +361,36 @@ ALIASES
   $ eggs lay
 
 EXAMPLES
-  $ sweat eggs produces 
-  produces an ISO called [hostname]-[arch]-YYYYY-MM-DD_HHHMM.iso, compressed xz 
+  $ sweat eggs produce 
+  produce an ISO called [hostname]-[arch]-YYYYY-MM-DD_HHHMM.iso, compressed xz 
   (standard compression).
   If hostname=ugo and arch=i386 ugo-x86-2020-08-25_1215.iso
 
-  $ sudo eggs produces -v
+  $ sudo eggs produce -v
   the same as the previuos, but with more explicative output
 
-  $ sudo eggs produces -vf
+  $ sudo eggs produce -vf
   the same as the previuos, lz4 compression (fast compression, but about 30%)
   less compressed compared xz standard)
 
-  $ sudo eggs produces -vc
+  $ sudo eggs produce -vc
   the same as the previuos, compression xz -Xbcj x86 (max compression, about 10%)
   more compressed compared xz standard)
 
   $ sudo eggs produce -vf --basename leo --theme debian --adapt 
-  produces an ISO called leo-i386-2020-08-25_1215.iso compression lz4,
+  produce an ISO called leo-i386-2020-08-25_1215.iso compression lz4,
   using Debian theme and link to adapt
 
   $ sudo eggs produce -v --basename leo --theme debian --adapt 
-  produces an ISO called leo-i386-2020-08-25_1215.iso compression xz,
+  produce an ISO called leo-i386-2020-08-25_1215.iso compression xz,
   using Debian theme and link to adapt
 
   $ sudo eggs produce -v-basename leo --rsupport 
-  produces an ISO called leo-i386-2020-08-25_1215.iso compression xz, using eggs
+  produce an ISO called leo-i386-2020-08-25_1215.iso compression xz, using eggs
   theme and link to dwagent
 
   $ sudo eggs produce -vs --basename leo --rsupport 
-  produces scripts to build an ISO as the previus example. Scripts can be found
+  produce scripts to build an ISO as the previus example. Scripts can be found
   in /home/eggs/ovarium and you can customize all you need
 
 ```
@@ -398,7 +398,7 @@ EXAMPLES
 By far the mode of use that I prefer, personally is
 
 ```
-sudo eggs produces -fv --adapt
+sudo eggs produce -fv --adapt
 ```
 
 It allows me to have a quick remastering, see on screen the various commands launched and have on the desktop the link to resize the video.
@@ -423,7 +423,7 @@ COMMANDS
   tools:skel update skel from home configuration
   tools:yolk configure eggs to install without internet
 ```
-tools is a command collector containing some useful tools during machining. Some of them, if not most of them sell directly called by produces during the creation of the ISO, in particular: clean, locales, yolk.
+tools is a command collector containing some useful tools during machining. Some of them, if not most of them sell directly called by produce during the creation of the ISO, in particular: clean, locales, yolk.
 
 #### sudo eggs tools:clean 
 ```
@@ -512,7 +512,7 @@ EXAMPLE
   $ eggs yolk -v
 
 ```
-The yolk command creates a small local repository in /usr/local/yolk with the packages strictly necessary to ensure the installation of the system even without an internet connection. It is ALWAYS called from produces, so its use is not necessary except for the most curious.
+The yolk command creates a small local repository in /usr/local/yolk with the packages strictly necessary to ensure the installation of the system even without an internet connection. It is ALWAYS called from produce, so its use is not necessary except for the most curious.
 
 
 
@@ -572,7 +572,7 @@ Now eggs is ready to run and create the iso image of our system.
 Once eggs and its prerequisites are installed, we are ready for the big jump.
 
 ```
-sudo eggs produces -v
+sudo eggs produce -v
 ```
 
 With this command you start the construction of the _penguin_ egg, which basically consists of three steps:
