@@ -28,7 +28,7 @@ Actually, for a while there was no problem at all, but when the "first pains" be
 
 I wanted a new tool, written in a modern language common to several distributions, with its own packaging system. The choice fell on nodejs, with javascript, then I switched to typescript as development language.
 
-I imagined an egg production process, called produce, the hatching operation - or installation - originally called hatch. The other commands came by themselves with kill preferred to abort to get rid of the produced iso, update for updates, prerequisites to install the .deb packages needed for the process, calamari for the installation and configuration of the graphical installer.
+I imagined an egg production process, called produce, the hatching operation - or installation - originally called hatch. The other commands came by themselves with kill preferred to abort to get rid of the produced iso, update for updates, prerequisites to install the .deb packages needed for the process, calamares for the installation and configuration of the graphical installer.
 
 Sooner or later, since it is an egg, I will also find a way to implement a PXE server that distributes it through the local network, at the moment besides the intention there is the name and could only be cuckoo \(cuckoo\), from the behavior of the cuckoo that makes others hatching their eggs.
 
@@ -113,7 +113,7 @@ Although in previous versions, prerequisites were required before you could prod
 sudo eggs produces 
 ```
 
-eggs, detected the absence of the necessary prerequisites will proceed with the installation. During this phase, you will also be asked, if we are in a graphical environment, if you want to install squid. I strongly recommend to answer "yes" and the prerequisites will be loaded, possibly the packages for EFI, squid and the necessary links. 
+eggs, detected the absence of the necessary prerequisites will proceed with the installation. During this phase, you will also be asked, if we are in a graphical environment, if you want to install calamares. I strongly recommend to answer "yes" and the prerequisites will be loaded, possibly the packages for EFI, calamares and the necessary links. 
 
 ### sudo eggs prerequisites
 
@@ -129,7 +129,7 @@ Selecting Yes will accept the installation of the packages necessary for the ope
 * packages to boot on UEFI machines
 * iso image creation packages
 * packages for the graphic installer calamares
-- localization packages
+* localization packages
 
 All packages for eggs operation and iso production are installed by the control:
 
@@ -141,7 +141,7 @@ which will then install the following packages:
 
 * grub-efi-amd64
 * isolinux, syslinux, rsync, squashfs-tools, xorriso, xterm, whois, live-boot, live-boot-initramfs-tools
-* calamari, qml-module-qtquick2, qml-module-qtquick-controls
+* calamares, qml-module-qtquick2, qml-module-qtquick-controls
 * live-task-localisation, task-italian, task-english, task-spanish, task-brazilian-portuguese, task-french, task-german
 
 Localization files will be installed for Debian/Devuan only, moreover, they will be installed with the option 
@@ -176,7 +176,7 @@ Well, now we are finally ready to use eggs for the reproduction of our penguin.
 Eggs needs root rights, so - except for eggs info and export commands - it MUST be called preceded by `sudo`.
 
 * adapt
-* calamari
+* calamares
 * export
 * help
 * info
@@ -200,28 +200,28 @@ Let's illustrate the commands in strict alphabetical order, for your convenience
 
 Adapt the video to the monitor capabilities or window size in the case of a virtual machine. I find it very convenient to resize virtual machines with graphical user interfaces other than cinnamon, gnome3, and kde for which it is not necessary. In practice eggs recalls xrandr to adapt the screen to the current resolution. It is not strictly related to the production of ISO, but I find it indispensable in development.
 
-### sudo eggs calamari
-Configure the graphic calamari installer. It can also be used to configure an iso that - produced without squids - you want to install with it. Just give the command: sudo eggs calamares -i and you will have both the package installation and the configuration.
+### sudo eggs calamares
+Configure the graphic calamares installer. It can also be used to configure an iso that - produced without calamares - you want to install with it. Just give the command: sudo eggs calamares -i and you will have both the package installation and the configuration.
 
 ```
-command: squids
+command: calamares
 
 USAGE
-  $ eggs squids
+  $ eggs calamares
 
 OPTIONS
   -h, --help show CLI help
   -i, --install install calamares and it's dependencies
   -v, --verbose
 
-  --final final: remove eggs prerequisites, calamari and all'it's 
+  --final final: remove eggs prerequisites, calamres and all'it's 
                  dependencies
 
-  -theme=theme theme/branding for eggs and squids
+  -theme=theme theme/branding for eggs and calamares
 
 EXAMPLES
-  ~$ sudo eggs calamari 
-  install calamari and create configuration
+  ~$ sudo eggs calamares 
+  install calamares and create configuration
 ```
 
 ### eggs export
@@ -265,9 +265,9 @@ Show on screen the configuration of eggs and the system. It is the only command 
 
 Launch the eggs installer cli. 
 
-Alternatively with the option -g or --gui launches squid instead.
+Alternatively with the option -g or --gui launches calamares instead.
 
-Attention, the installer cli is faster than squid, but it is VERY rudimentary and not recommended for non-experts. It will completely erase the target hard drive! Use it only on clean or clean virtual machines or computers.
+Attention, the installer cli is faster than calamares, but it is VERY rudimentary and not recommended for non-experts. It will completely erase the target hard drive! Use it only on clean or clean virtual machines or computers.
 
 ### sudo eggs kill
 
@@ -297,7 +297,7 @@ Install the deb packages necessary for the operation of eggs.
 
 We can divide the necessary packages into three parts:
 * packages needed to run eggs: isolinux, syslinux, rsync, squashfs-tools, xorriso, xterm, whois, live-boot, live-boot-initramfs-tools;
-* packages needed to run the squid installer: squid, qml-module-qtquick2, qml-module-qtquick-controls
+* packages needed to run the calamares installer: calamares, qml-module-qtquick2, qml-module-qtquick-controls
 * location packages (debian and devuan only). Currently we have two variables in the eggs.cfg file that define the language; locale and locales. These variables, with the necessary "ripening" time, will become user editable. At the moment it is recommended not to touch them, and they include locales for Italian, English, Spanish, Portuguese, French and German. The following packages will also be installed: task-italian, task-english, task-spanish, task-brazilian-portuguese, task-french, task-german and task-live-localisation.
 
 In addition to this, the /etc/penguins-eggs.d directory, all necessary configuration files and links are created.
@@ -323,7 +323,7 @@ EXAMPLE
 
 This is the command that you will use the most, in fact the only one used daily, together with kill that serves instead to get rid of the created iso images.
 
-Used without parameters it produces the iso with xz type compression. When it starts, it checks the installation of the prerequisites, not of calamari, and produces the iso.
+Used without parameters it produces the iso with xz type compression. When it starts, it checks the installation of the prerequisites, not of calamares, and produces the iso.
 
 It has some usable flags:
 
@@ -344,7 +344,7 @@ OPTIONS
   -v, --verbose verbose
   --adapt adapt video resolution in VM
 
-  --final final: remove eggs prerequisites, calamari and all the 
+  --final final: remove eggs prerequisites, calamares and all the 
                            it's dependencies
 
   --ichoice allows the user to choose the installation type 
@@ -354,7 +354,7 @@ OPTIONS
 
   --rsupport remote support via dwagent
 
-  -theme=theme theme/branding for eggs and squids
+  -theme=theme theme/branding for eggs and calamares
 
 ALIASES
   $ eggs spawn
@@ -403,9 +403,9 @@ sudo eggs produces -fv --adapt
 
 It allows me to have a quick remastering, see on screen the various commands launched and have on the desktop the link to resize the video.
 
-Among the available flags there is a theme that sets a theme for eggs and calamari. You can create a custom theme by simply copying its existing use and changing its name and content. Eggs themes are in ./addons/${vendor}/theme, soon I will add the possibility to change the theme for isolinux and grub for the live boot.
+Among the available flags there is a theme that sets a theme for eggs and calamares. You can create a custom theme by simply copying its existing use and changing its name and content. Eggs themes are in ./addons/${vendor}/theme, soon I will add the possibility to change the theme for isolinux and grub for the live boot.
 
-Another flag, introduced is --final which prepares squids to remove programs not needed by the end user: it performs the same action as the eggs sterilize command, but through squids during system installation.
+Another flag, introduced is --final which prepares calamares to remove programs not needed by the end user: it performs the same action as the eggs sterilize command, but through calamares during system installation.
 
 ### eggs tools
 
