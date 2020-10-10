@@ -9,13 +9,21 @@ date: 2020-06-20 07:38:32
 
 # Documentazione ufficiale in [italiano](./italiano.html)
 
-I'm italian, so the official guide is of course the [italian version](./italiano.html). This version is allways updated, and can be traslated in english by Google without many problems, due the fact who code is english too.
+I'm italian, so the official guide is of course the [italian version](./italiano.html). This version is the most updated, and can be traslated in english by [Google](https://translate.google.com/) or [DeepL](https://www.deepl.com/translator) without many problems, due the fact who code is english too.
 
-But thanx to [DeepL](https://www.deepl.com/translator) translate service, and passion, was possible to translate the user's guide in different languages, I started with portugues for brazilian friends, and espanol putting great attention to not translate command's names, etc.
+Using mostly [DeepL](https://www.deepl.com/translator) translate service, I'm trying to support more languages, I started with portugues for brazilian friends, and espanol putting great attention to not translate command's names, etc.
 
-So at the moment - summer 2020 - we have the user's guide in five different languages:
+So at the moment - october 2020 - we have the user's guide in five different languages:
 
-## [english](./english.html), [italiano](./italiano.html), [español](./espanol.html), [português](./portugues.html), [български](./bulgarian.html)
+* [english](./english.html) eggs v. 7.6.57 updated october 2020
+
+* [italiano](./italiano.html) eggs v. 7.6.57 updated october 2020
+
+* [español](./espanol.html) eggs v. 7.5.81 updated summer 2020
+
+* [português](./portugues.html) eggs v. 7.5.81 updated summer 2020
+ 
+* [български](./bulgarian.html) eggs v. 7.5.81 updated summer 2020
 
 # [video terminal examples](/terminal)
 ![videos](/terminal/videos/playing-with-eggs.gif)
