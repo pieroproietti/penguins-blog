@@ -13,112 +13,125 @@ lang: en_US
 * [Download the ISO images](#download-the-iso-images)
 
 
+# Upgrade
+This penguin's eggs user manual is updated to October 9, 2020, eggs-7.6.57-1.deb. 
+
 # Introduction
 
-A reproductive system for penguins!
+A breeding system for penguins!
 
-Penguin's eggs was born with the idea of ​​"reproduction" and "selection of populations" applied to operating systems.
+Penguin's eggs was born with the idea of "reproduction" and "population selection" applied to operating systems. 
 
-It was the time of Remastersys and Systemback, two of the most popular programs to remaster an operating system - at some point - both Remastersys, which had always suffered from maintenance problems by its author, and Systemback were somehow discontinued. _See note**_
+It was the time of Remastersys and Systemback, two of the most popular programs to remaster an operating system - at one point - both Remastersys, which had always suffered from maintenance problems by its author, and Systemback were somehow discontinued. _see **notes**_
 
-Actually, for a while there was no problem, but when the "first pains" began to not be able to remaster the latest versions of my favorite distros, essentially Debian and derivatives, what was an idea, began to take shape.
+Actually, for a while there was no problem at all, but when the "first pains" began to come, so that I could no longer remaster the latest versions of my favorite distros, essentially Debian and derivative, what was an idea, began to take shape.
 
-I wanted a new tool, written in a modern language common to multiple distributions, with its own packaging system. The choice fell on nodejs, with javascript, then I switched to typescript as a development language.
+I wanted a new tool, written in a modern language common to several distributions, with its own packaging system. The choice fell on nodejs, with javascript, then I switched to typescript as development language.
 
-I imagined an egg production process, called **produce**, the hatching operation - that is, the **installation** - originally called hatch. The other commands came by themselves with preferred **kill** to abort to get the ISOs out of the way, **updates** for updates, **prerequisites** to install the .deb packages necessary for the process, **calamares** for the installation and configuration of the graphic installer.
+I imagined an egg production process, called produce, the hatching operation - or installation - originally called hatch. The other commands came by themselves with kill preferred to abort to get rid of the produced iso, update for updates, prerequisites to install the .deb packages needed for the process, calamari for the installation and configuration of the graphical installer.
 
-Sooner or later, since it is an egg, I will also find a way to implement a PXE server that distributes it through the local network, at the moment besides the intention there is the name and it could only be **cuckoo** (cuckoo), from the behavior of the cuckoo who has his eggs hatched by others.
+Sooner or later, since it is an egg, I will also find a way to implement a PXE server that distributes it through the local network, at the moment besides the intention there is the name and could only be cuckoo \(cuckoo\), from the behavior of the cuckoo that makes others hatching their eggs.
 
 
 
-** Note **: _The situation of Systemback is in fact no longer that of the beginnings of eggs. I recently met the good Franco Conidi \ (Edmond \) who still takes care of the updates._
+**Note**: _the situation of Systemback in fact is no longer that of the beginnings of eggs,. I recently met the good Franco Conidi \(Edmond \) who still takes care of the updates._
 
 # Installation
 
-Things to do before starting "egg" production.
+Things to do before starting the production of "eggs".
 
-### Debian package
+### Debian Package
 
-Installation from the Debian package is undoubtedly the simplest. Just download the latest version of eggs from the [sourceforge] website (https://sourceforge.net/projects/penguins-eggs/files/packages-deb/) and install it with the command:
+Installation as a Debian package is certainly the easiest. Just download the latest version of eggs from [sourceforge](https://sourceforge.net/projects/penguins-eggs/files/DEBS/) and install it with the command:
 
 ```
-sudo dpkg -i eggs-7.5.81-1.deb
+sudo dpkg -i eggs-7.6.39-1.deb
 ```
 
-The .deb version includes nodejs inside, so it is not necessary to have this package.
+The .deb version includes nodejs so it is not necessary to have this package. 
 
-### Package npm (nodejs)
+### Package npm \(nodejs\)
 
-Being eggs a software developed with nodejs, the original and preferable version, and always the most updated. Furthermore, once installed, this version can always be updated simply with the `sudo eggs update` command.
+Being eggs a software developed with nodejs, the original version may be the preferred one, it is always the most updated. Moreover, once installed, it can be updated to the following versions with the command `sudo eggs update`.
 
-In order to install this version, you must first install the nodejs package. The description of which nodejs to use and how to install nodejs are reported in the README file, md included in the [eggs repository](https://github.com/pieroproietti/penguins-eggs).
+In order to install this version it is necessary to install the nodejs package first. The description of which nodejs to use and how to install nodejs are described in the README,md file included in the [eggs repository](https://github.com/pieroproietti/penguins-eggs).
 
-The installation of eggs from the npm package is simple and safe, only these commands:
+Installing eggs from npm package is simple and safe, only these commands:
+
 ```
 sudo npm config set unsafe-perm true
 sudo npm install penguins-eggs -g
 ```
 
-To update the package - once installed - to subsequent versions, just the command:
-
+To update the package - once installed - to the following versions, just use the command
 
 ```
 sudo eggs update
 ```
 
-### Use of eggs from source code
+### Using eggs from source code
 
-Using eggs from sources can be extremely useful for both debugging and collaborating in development. Once downloaded the source with the command:
+Using eggs from sources can be extremely useful both for debugging and collaborating on development. Once you have downloaded the source with the
 
 ```
 git clone https://github.com/pieroproietti/penguins-eggs
 ```
 
-then enter the penguins-eggs directory and give the command:
-
+then enter the penguins-eggs directory and give the command
 
 ```
 npm install
 ```
 
-At this point, from the penguins-eggs directory itself, you can use the source directly. Eg:
+At this point, from the penguins-eggs directory itself, you can use the source directly. For example:
 
 ```
-sudo ./eggs produce -fv
+sudo ./eggs produces -fv
 ```
 
-For developers or the curious, it will be possible to view, report or correct the code.
+For developers or curious people, it will be possible to see, report or correct the code. 
 
 
 ---
 
 # Prerequisites and configuration
 
-Once the package is installed as on the previous page, we will have a new command on our system:
+Once the package is installed as in the previous page, we will have a new command on our system: 
 
-`eggs`
+```
+eggs
+```
 
-We start eggs without any command and we will get the list of available commands:
+We start eggs without any command and get the list of available commands:
 
+![eggs-commands](/images/eggs-commands.png)
 
-![eggs-senza-parametri](/images/eggs-senza-parametri.png)
+### Making UEFI compatible iso images
 
+Although in previous versions, prerequisites were required before you could produce an iso, you can now also start it directly with:
+```
+sudo eggs produces 
+```
 
-The first thing we need to do at this point is to allow eggs to download the Debian packages needed for it to work. To do this, just run the command:
+eggs, detected the absence of the necessary prerequisites will proceed with the installation. During this phase, you will also be asked, if we are in a graphical environment, if you want to install squid. I strongly recommend to answer "yes" and the prerequisites will be loaded, possibly the packages for EFI, squid and the necessary links. 
+
+### sudo eggs prerequisites
+
+To run eggs needs some tools installed, the prerequisites. To download the Debian packages needed for it to work, just run the command
 
 ```
 sudo eggs prerequisites
 ```
+![eggs-prerequisites](/images/eggs-prerequisites.png)
 
-![eggs-prerequisites](/images/eggs-prerequisites-yes-no.png)
+Selecting Yes will accept the installation of the packages necessary for the operation of eggs and the production of iso images. Basically we can divide the installed packages into four:
 
-Selecting Yes will accept the installation of the packages necessary for the functioning of eggs and the production of iso images. Essentially we can divide the installed packages into three:
+* packages to boot on UEFI machines
+* iso image creation packages
+* packages for the graphic installer calamares
+- localization packages
 
-* Packages to boot on UEFI machines
-* Packages for creating the ISO image
-* Packages for the calamares graphic installer
-
-All the packages for the functioning of eggs and the production of ISO are installed by the command:
+All packages for eggs operation and iso production are installed by the control:
 
 ```
 sudo eggs prerequisites
@@ -126,38 +139,25 @@ sudo eggs prerequisites
 
 which will then install the following packages:
 
-`isolinux, live-boot, live-boot-initramfs-tools, lvm2, squashfs-tools, xorriso, xterm, whois`
+* grub-efi-amd64
+* isolinux, syslinux, rsync, squashfs-tools, xorriso, xterm, whois, live-boot, live-boot-initramfs-tools
+* calamari, qml-module-qtquick2, qml-module-qtquick-controls
+* live-task-localisation, task-italian, task-english, task-spanish, task-brazilian-portuguese, task-french, task-german
 
-### sudo eggs calamares
+Localization files will be installed for Debian/Devuan only, moreover, they will be installed with the option 
+no-install-recommends, otherwise all languages would be installed.
 
-At this point, if we need it, it will be better to install the calamares graphic installer, with the command:
+### Penguins-eggs.d configuration directory
 
+Normally you don't need to work on /etc/penguins-eggs.d/eggs.conf. eggs self-configure to suit the needs of the present distro. Anyway for the documentation please refer to the comments on the same file and the README.md in the directory.
 
-```
-sudo eggs calamares
-```
+I just want to point out that by editing /etc/penguins-eggs.d/eggs.conf you can change both the live user name, its password and the administration password.
 
-which will install calamares and the `qml-module-qtquick2, qml-module-qtquick-controls` modules needed to view the slides during system installation.
+At the moment it is not possible to modify the locales and locales variables, adding or removing new languages to install in the live version. However, it will always be possible to get the installed system in every available language.
 
-### Realizzazione di immagini iso compatibili UEFI
+If you have chosen not to touch for the moment /etc/penguins-eggs.d/eggs.conf, remember that by default eggs is configured with user **live** and password **evolution**, the same password is set for root login.
 
-If we want our ISOs to be created UEFI compatible - _attention: this has only been tested with Debian Buster, probably in Ubuntu it still doesn't go_ - we need to install the grub-efi-amd64 package, with the command:
-
-```
-sudo apt install grub-efi-amd64
-```
-
-vedi **Nota**
-
-### penguins-eggs.conf configuration file
-
-Normally it is not necessary to intervene on /etc/penguins-eggs.conf, eggs is self-configured and adapting to the needs of the present distro. In any case, for the documentation, see the comments on the same file.
-
-I just want to point out that by editing this file you can edit both the name of the live user, his password and the administration password.
-
-If you have chosen not to touch /etc/penguins-eggs.conf for the moment, remember that by default eggs is configured with user ** live ** and password ** evolution **, the same password is set for the login of root.
-
-If instead you have modified or deleted the configuration file, you can always restore it with the command:
+If you have modified, ruined or deleted the configuration file, you can always restore it with the command:
 
 ```
 sudo eggs prerequisites -c
@@ -167,241 +167,504 @@ sudo eggs prerequisites -c
 
 Well, now we are finally ready to use eggs for the reproduction of our penguin.
 
-_ ** Note **: if we want to create a bootable image in UEFI mode and we have installed grub-efi-amd64 after installing the prerequisites, we need to go to edit the file /etc/penguins-eggs.conf and set make _efi = yes._---
+---
 
 # The commands
 
-## Commands and Options
+### Commands and options 
 
-Eggs needs root rights, so - except for eggs info - it MUST be called preceded by `sudo`
+Eggs needs root rights, so - except for eggs info and export commands - it MUST be called preceded by `sudo`.
 
-* adjust
-* calamares
+* adapt
+* calamari
+* export
 * help
-* howto
 * info
 * install
 * kill
 * prerequisites
-* produce
-* skel
+* produces
 * sterilize
+* tools
 * update
 
-Don't be frightened by these few commands, the ones you will use are essentially two: produce to create the ISO and kill to delete it.
+Don't be frightened by these few commands, there are essentially two that you will use: produce to create the iso and kill to delete it.
 
-Each command can have some flags, the most important of which is the -fo --fast flag of the produce command which will allow eggs to use lz4 as a compression algorithm instead of the default xz, thus allowing you to save a lot of time during the phases development of your remix.
+Each command can have a few flags, the most important of which is the -f or --fast flag of the produce command, which will allow eggs to use lz4 as a compression algorithm instead of the default xz, saving you a lot of time during the development of your remix. 
 
-Another important and present flag in almost all cases is the -v or --verbose flag which will show you on the screen the succession of the various commands.
+Another flag certainly to know and present in almost all cases is the -v or --verbose flag that will show you on screen the succession of the various commands. For the remaining flags just type eggs command -h to get the list and description.
 
-Let's illustrate the commands in strict alphabetical order, for the convenience of the writer. Keep in mind that the commands you will normally use are kill and produce.
+Let's illustrate the commands in strict alphabetical order, for your convenience. Keep in mind that the commands you will normally use are mainly produce and kill.
 
-### eggs adjust
+### eggs adapt
 
-Adapts the video to the capabilities of the monitor or to the size of the window in the case of a virtual machine. I find it very convenient to resize virtual machines with graphical interfaces other than cinnamon, gnome3 and kde for which it is not necessary. Basically eggs calls xrandr to adapt the screen to the current resolution.
+Adapt the video to the monitor capabilities or window size in the case of a virtual machine. I find it very convenient to resize virtual machines with graphical user interfaces other than cinnamon, gnome3, and kde for which it is not necessary. In practice eggs recalls xrandr to adapt the screen to the current resolution. It is not strictly related to the production of ISO, but I find it indispensable in development.
 
-### sudo eggs calamares
+### sudo eggs calamari
+Configure the graphic calamari installer. It can also be used to configure an iso that - produced without squids - you want to install with it. Just give the command: sudo eggs calamares -i and you will have both the package installation and the configuration.
 
-Install and configure the calamares universal graphic installer. It can also be used in the case of an ISO made without calamares and which, during installation, you want to install with it.
+```
+command: squids
+
+USAGE
+  $ eggs squids
+
+OPTIONS
+  -h, --help show CLI help
+  -i, --install install calamares and it's dependencies
+  -v, --verbose
+
+  --final final: remove eggs prerequisites, calamari and all'it's 
+                 dependencies
+
+  -theme=theme theme/branding for eggs and squids
+
+EXAMPLES
+  ~$ sudo eggs calamari 
+  install calamari and create configuration
+```
+
+### eggs export
+```
+export package eggs-v7-6-x-1.deb in the destination host
+
+USAGE
+  $ eggs export:COMMAND
+
+COMMANDS
+  export:deb export package eggs-v7-6-x-1.deb in the destination host
+  export:docs export docType documentation of the sources in the destination host
+  export:iso export iso in the destination host
+```
+#### eggs export:deb
+export deb packages;
+
+#### eggs export:docs
+export the documentation;
+
+#### eggs export:iso
+export iso image
+
+
+You can modify both the export host and the associated path at will, note that this command is convenient especially for developers.
+
+
+You can modify both the export host and the associated path at will, note that this command is convenient especially for developers.
 
 ### eggs help
 
-As the command itself says, it generates the list of available commands. In turn, each command with the -h or --help flag issues uses its description.
-
-### eggs howto
-
-Show video some very short tips. At the moment boot from grub rescue and how to configure eggs.
-
-#### eggs howto:grub
-
-How to boot from grub rescue.
-
-#### eggs howto:configure
-
-How to configure  eggs.
+As the command itself says, it generates the list of available commands. In turn, each command with the -h or --help flag outputs uses its description.
 
 ### eggs info
 
-Show the configuration of eggs and the system on the screen. It is the only command that can be used without sudo.
+Show on screen the configuration of eggs and the system. It is the only command that can be used without sweating.
+
+![eggs-info](/images/eggs-info.png)
 
 ### sudo eggs install
 
-Launch the eggs installer cli.
+Launch the eggs installer cli. 
 
-Alternatively, with the -g or --gui option, launch calamares instead.
+Alternatively with the option -g or --gui launches squid instead.
 
-Warning, the cli installer is faster than calamares, but it is VERY rudimentary and not recommended for non-experts. Will completely erase the target hard drive! Use it only on clean or clean virtual machines or computers.
+Attention, the installer cli is faster than squid, but it is VERY rudimentary and not recommended for non-experts. It will completely erase the target hard drive! Use it only on clean or clean virtual machines or computers.
 
 ### sudo eggs kill
 
-Delete the images created and the working directory of eggs (the nest). Run rm /home/eggs -rf to delete all the iso created. It also has a useful flag -u which, before proceeding with the removal, attempts to unmount any file systems present in it.
+Delete the images made and the working directory of eggs \(the nest\). Run rm /home/eggs -rf to delete all created isos. 
+In case of interruption of the command produces, it will be impossible to delete the mounted directories. The shortest way is a reboot and the next launch of the command.
+
+```
+command: kill
+
+kill the eggs/free the nest
+
+USAGE
+  $ eggs kill
+
+OPTIONS
+  -h, --help show CLI help
+  -v, --verbose verbose
+
+EXAMPLE
+  $ eggs kill
+  kill the eggs/free the nest
+```
 
 ### sudo eggs prerequisites
 
-Install the deb packages needed for eggs to work. In particular, the following are installed:
+Install the deb packages necessary for the operation of eggs. 
 
-`isolinux, live-boot, live-boot-initramfs-tools, live-config-systemd, squashfs-tools, xorriso, xterm, whois`
+We can divide the necessary packages into three parts:
+* packages needed to run eggs: isolinux, syslinux, rsync, squashfs-tools, xorriso, xterm, whois, live-boot, live-boot-initramfs-tools;
+* packages needed to run the squid installer: squid, qml-module-qtquick2, qml-module-qtquick-controls
+* location packages (debian and devuan only). Currently we have two variables in the eggs.cfg file that define the language; locale and locales. These variables, with the necessary "ripening" time, will become user editable. At the moment it is recommended not to touch them, and they include locales for Italian, English, Spanish, Portuguese, French and German. The following packages will also be installed: task-italian, task-english, task-spanish, task-brazilian-portuguese, task-french, task-german and task-live-localisation.
 
-and, if you have chosen to install calamares:
+In addition to this, the /etc/penguins-eggs.d directory, all necessary configuration files and links are created.
 
-`calamares, qml-module-qtquick2, qml-module-qtquick-controls`
+```
+command: prerequisites
 
-In addition to this, configuration files are created.
+install packages prerequisites to run eggs
 
-### sudo eggs produce
+USAGE
+  $ eggs prerequisites
 
-This is the command you will use the most, in fact basically the only one together with kill which is used to get rid of the ISO images created.
+OPTIONS
+  -h, --help show CLI help
+  -v, --verbose verbose
 
-Used without parameters, it produces the ISO with type xz compression. Also check if the prerequisites are installed or not and the configuration files are created and, in fact, it produces the iso.
+EXAMPLE
+  ~$ eggs prerequisites
+  install prerequisites and create configuration files
+```
+
+### sudo eggs produces
+
+This is the command that you will use the most, in fact the only one used daily, together with kill that serves instead to get rid of the created iso images.
+
+Used without parameters it produces the iso with xz type compression. When it starts, it checks the installation of the prerequisites, not of calamari, and produces the iso.
 
 It has some usable flags:
 
-`-b, --basename=basename basename egg`
+```
+command: produces
 
- `-c, --compress max compression` 
+livecd creation. The system produces an egg
 
-`-f, --fast compression fast` 
+USAGE
+  $ eggs produces
 
-`-h, --info show CLI help` 
+OPTIONS
+  -b, --basename=basename basename egg
+  -c, --compress max compression
+  -f, --fast fast compression
+  -h, --help show CLI help
+  -s, --script script mode. Generate scripts to manage iso build
+  -v, --verbose verbose
+  --adapt adapt video resolution in VM
 
-`-v, --verbose verbose`
+  --final final: remove eggs prerequisites, calamari and all the 
+                           it's dependencies
 
-By far the mode of use that I prefer, personally it is:
+  --ichoice allows the user to choose the installation type 
+                           cli/gui
+
+  --pve administration of virtual machines (Proxmox-VE)
+
+  --rsupport remote support via dwagent
+
+  -theme=theme theme/branding for eggs and squids
+
+ALIASES
+  $ eggs spawn
+  $ eggs lay
+
+EXAMPLES
+  $ sweat eggs produces 
+  produces an ISO called [hostname]-[arch]-YYYYY-MM-DD_HHHMM.iso, compressed xz 
+  (standard compression).
+  If hostname=ugo and arch=i386 ugo-x86-2020-08-25_1215.iso
+
+  $ sudo eggs produces -v
+  the same as the previuos, but with more explicative output
+
+  $ sudo eggs produces -vf
+  the same as the previuos, lz4 compression (fast compression, but about 30%)
+  less compressed compared xz standard)
+
+  $ sudo eggs produces -vc
+  the same as the previuos, compression xz -Xbcj x86 (max compression, about 10%)
+  more compressed compared xz standard)
+
+  $ sudo eggs produce -vf --basename leo --theme debian --adapt 
+  produces an ISO called leo-i386-2020-08-25_1215.iso compression lz4,
+  using Debian theme and link to adapt
+
+  $ sudo eggs produce -v --basename leo --theme debian --adapt 
+  produces an ISO called leo-i386-2020-08-25_1215.iso compression xz,
+  using Debian theme and link to adapt
+
+  $ sudo eggs produce -v-basename leo --rsupport 
+  produces an ISO called leo-i386-2020-08-25_1215.iso compression xz, using eggs
+  theme and link to dwagent
+
+  $ sudo eggs produce -vs --basename leo --rsupport 
+  produces scripts to build an ISO as the previus example. Scripts can be found
+  in /home/eggs/ovarium and you can customize all you need
 
 ```
-sudo eggs produce -fv
+
+By far the mode of use that I prefer, personally is
+
+```
+sudo eggs produces -fv --adapt
 ```
 
-which allows me to have a quick remaster and observe the various commands launched on the screen.
+It allows me to have a quick remastering, see on screen the various commands launched and have on the desktop the link to resize the video.
 
-### sudo eggs skel
+Among the available flags there is a theme that sets a theme for eggs and calamari. You can create a custom theme by simply copying its existing use and changing its name and content. Eggs themes are in ./addons/${vendor}/theme, soon I will add the possibility to change the theme for isolinux and grub for the live boot.
 
-With this command we recreate the /etc/skel directory of our remix. It is useful to give a coherent and personalized look to the live user and future users that we will create once our system is installed. It essentially copies the configurations of the primary user or the one passed with the -u flag in the /etc/skel folder which will then be used to generate the skeleton of the home of the users created.
+Another flag, introduced is --final which prepares squids to remove programs not needed by the end user: it performs the same action as the eggs sterilize command, but through squids during system installation.
 
-Considering that there are several desktop managers, gnome2, gnome3, cinnamon, mate, kde, lxqt, lxde, etc and that an operation is performed to clean up possible sensitive data, it is a command that is always evolving. It is currently quite reliable for cinnamon and for the tests I have done with the other Desktop Managers.
+### eggs tools
+
+```
+clean system log, apt, etc
+
+USAGE
+  $ eggs tools:COMMAND
+
+COMMANDS
+  tools:clean clean system log, apt, etc.
+  tools:initrd Test initrd
+  tools:locales install/clean locales
+  tools:sanitize sanitize
+  tools:skel update skel from home configuration
+  tools:yolk configure eggs to install without internet
+```
+tools is a command collector containing some useful tools during machining. Some of them, if not most of them sell directly called by produces during the creation of the ISO, in particular: clean, locales, yolk.
+
+#### sudo eggs tools:clean 
+```
+clean system log, apt, etc
+
+USAGE
+  $ eggs tools:clean
+
+OPTIONS
+  -h, --help show CLI help
+  -v, --verbose verbose
+```
+Cleans log files, apt cache, etc. It saves space in the ISO you create and reduces the waiting time for creation;
+
+#### sudo eggs tools:initrd 
+
+```
+Initrd test
+
+USAGE
+  $ eggs tools:initrd
+
+OPTIONS
+  -h, --help show CLI help
+  -v, --verbose
+  --check=check check if necessary to clean initrd.img
+  --clean=clean the initrd.img
+```
+Currently experimental) Removes cryptosetup and resume from initrd.img for liveCd;
+
+#### sudo eggs toos:locales 
+
+```
+install/clean locales
+
+USAGE
+  $ eggs tools:locales
+
+OPTIONS
+  -h, --help show CLI help
+  -r, --reinstall reinstall locales
+  -v, --verbose verbose
+
+```
+
+Currently experimental) Configure only on Debian/Devuan a set of languages specified in /etc/penguins-eggs-d/eggs.conf that you want to support;
+
+#### sudo eggs tools:sanitize 
+
+removes from an existing project and files generated from previous versions of eggs that may hide bugs or create them (recommended at version change);
+
+#### sudo eggs tools:skel
+This command recreates the /etc/skel directory of our remix. It is useful to give a coherent and personalized look to the live user and future users we will create once our system is installed. Essentially it copies the configurations of the primary user or the past one with the -u flag in the /etc/skel directory that will then be used to generate the home skeleton of the users created.
+
+Considering that there are several desktop managers, gnome2, gnome3, cinnamon, mate, kde, lxqt, lxde, etc. and that a cleaning operation of possible sensitive data is done, it is a command always evolving. Currently it is quite reliable for cinnamon and, for the tests I have done with the other Desktop Managers.
+
+```
+update skel from home configuration
+
+USAGE
+  $ eggs skel
+
+OPTIONS
+  -h, --help show CLI help
+  -u, --user=user user to be used
+  -v, --verbose
+
+EXAMPLE
+  $ eggs skel --user mauro
+  desktop configuration of user mauro will get used as default
+```
+
+#### sudo eggs tools:yolk
+
+```
+configure eggs to install without internet
+
+USAGE
+  $ eggs tools:yolk
+
+OPTIONS
+  -h, --help show CLI help
+  -v, --verbose
+
+EXAMPLE
+  $ eggs yolk -v
+
+```
+The yolk command creates a small local repository in /usr/local/yolk with the packages strictly necessary to ensure the installation of the system even without an internet connection. It is ALWAYS called from produces, so its use is not necessary except for the most curious.
+
+
+
 
 ### sudo eggs sterilize
 
-It is the inverse command of prerequisites, it basically removes the packages listed above making our system no longer able to reproduce.
+It is the reverse command of prerequisites, basically removes the packages listed above, making our system no longer able to reproduce.
+
+```
+command: sterilize
+
+remove all packages installed as prerequisites and calamares
+
+USAGE
+  $ eggs sterilize
+
+OPTIONS
+  -h, --help show CLI help
+  -v, --verbose verbose
+```
 
 ### sudo eggs update
 
-Update the eggs package to the current version. Warning, eggs update only works with the packaged version npm, for the version released as a deb package we would need a repository that is not currently available.
+Eggs update. It works differently depending on whether the installation of eggs was done with the npm package from nodejs or the debian package. In the first case, it directly updates eggs to the current version, otherwise it suggests the steps to update via apt (if repo for eggs is included) or by downloading the package and installing it via dpkg.
 
----
+
+
 # Let's create our own remix
-The creation of our remix iso is a process that requires patience and passion but can give us great satisfaction and in many cases, in the final analysis, it will save us time and effort.
+The creation of an iso our remix is a process that requires patience and passion but can give us great satisfaction and in many cases ultimately save us time and effort.
+
+We download our distribution that we intend to customize, choosing between Debian buster, Debian bullseye, Devuan beowulf, ubuntu bionic, ubuntu focal and, from today, ubuntu groovy.
+
+Let's install it normally, maybe update it and make our first changes before moving on to ISO creation.
 
 ## Prerequisites
 
-We install our favorite Debian Buster or derivative distribution and we go to install eggs with one of the methods described above.
+We install eggs by downloading it from [sourceforge](https://sourceforge.net/projects/penguins-eggs/files/packages-deb/).
 
-We install eggs and make sure to load the prerequisites and create the configuration files by giving the command
+The command for the installation is the simple one:
+
+```
+sudo dpkg -i eggs_7.6.57-1_amd64.deb
+```
+
+Well, at this point, make sure to load the prerequisites and create the configuration files by giving the command
+
 ```
 sudo eggs prerequisites
 ```
 
-In addition to installing the various necessary Debian packages, the configuration file with the default settings will be created. Find the configuration file in /etc/penguins-eggs.conf and you can possibly edit it to modify the settings. Find the documentation of the options used directly in the comments of the file itself.
+In addition to installing the necessary Debian packages, the configuration directory /etc/penguins-eggs.d will be created and the file eggs.conf will be configured with the default settings.  Find the configuration file in /etc/penguins-eggs.d/eggs.conf and you can edit it to change the settings. Find the documentation of the options used directly in the comments of the file itself.
 
-At this point eggs is ready to work and create the iso image of our system.
-
-### Added Calamares graphic installer
-
-If you want to use calamares as a graphic installer, it is better to install it now.
-
-Just proceed with the command:
-
-```
-sudo eggs calamares
-```
-
-Alternatively, if not times calamares, edit the installation file `/etc/penguins-eggs.conf` and set` force_installer = No` otherwise eggs will install it on his behalf.Subsequently this image must be placed on a stick or a DVD disc and can be reinstalled either with the calamares graphic installer or - in a more spartan way - with your own cli installer. 
-
-For the graphic installer calamares just leave the configuration file as it is, while if you decide not to use calamares you need to edit the configuration file /etc/penguins-eggs.com and put force-installer = no.
-
-I also recommend installing bleachbit because it will allow us to easily clean our remixes without burning useless data. You can also do this from the terminal with the command:
-
-```
-sudo apt install bleachbit
-```
-
-### Let's clean up our system
-
-First - for this we have installed bleachbit - I suggest you to clean your system.
-
-Normally I have bleachbit clean everything except localizations - otherwise foreign languages don't work - free disk space and memory.
-
-![bleachbit-selezione](/images/bleachbit-selezione.png)
-
-You save at least 200 MB which is not a small amount and would only be ballast.
+Now eggs is ready to run and create the iso image of our system. 
 
 ### ISO production
 
-Once eggs and its prerequisites are installed, we are ready for the big leap.
+Once eggs and its prerequisites are installed, we are ready for the big jump.
 
 ```
-sudo eggs produce
+sudo eggs produces -v
 ```
 
-This command starts the construction of the penguin egg which basically consists of three phases:
+With this command you start the construction of the _penguin_ egg, which basically consists of three steps:
 
-* creation of an image of the fs mounted with overlayfs - which is instantaneous and without any copy of the data - to allow modifications for the creation of the filesystem for the image;
-* compression of the entire filesystem in /home/eggs/work/iso/live/filesystem.squashfs;
-* generation of the iso image from the previous structure in /home/eggs/basename-X64\_AAAA-MM-DD-HHMM.iso
+* creation of an overlayfs mounted fs image - which is instantaneous and without any copy of the data - to allow modifications for the image filesystem;
+* compression of the entire filesystem to /home/eggs/ovarium/iso/live/filesystem.squashfs;
+* generation of the iso image from the previous structure in /home/eggs/basename-X64\_YYYYY-MM-GG-HHMM.iso
 
-The process has a certain heaviness - it is useless to hide it - you don't take it neither with the copy of the filesystem that is not done at all and not even with the graphical interface - since we don't use it.
+The process has a certain heaviness - it's useless to hide it - don't be angry neither with the copy of the filesystem that you don't make at all nor with the graphical interface - since you don't use it. 
 
-The heaviness is given by the fact that we have to compress the entire filesystem.
+The heaviness is given by the fact that we have to compress the entire filesystem. 
 
-During the tests, however, or in any case when you deem it appropriate, I recommend that you use produce with the -f or --fast option. Doing so will use the compression algorithm lz4 instead of the "heavier" xz and will halve the execution time. For the final version, once checked that everything is in place, we can instead use the default compression to obtain a leaner ISO, or the option -c --compress which compresses a little more, at the price of a further slowness.
+During the tests, however, or whenever you think it is appropriate, I recommend using produce with the -f or --fast option. Doing so will use the compression algorithm `lz4` instead of the heavier `xz` and will halve the execution time. For the final version, once we check that everything is ok we can use the default compression to get a leaner iso, or the -c --compress option that compresses a bit more, at the price of a slower one.
 
-As was initially reported in the code, the suggestion is to have a coffee in the meantime and try to reserve enough processing power for the machine. In my case - I use a virtual machine with 4 cores and 4 GB of memory - for a 7/8 GB filesystem it takes about _ ten minutes_ with the xz compression, while using the lz4 compression the wait is reduced a lot only a _minute and a half_ . We don't have time for coffee anymore, a cigarette hurts and the image obtained goes to _3.0 GB_ compared to _2.00_ GB of the xz compression (See **note**).
+As was also initially mentioned in the code, the suggestion is to have a coffee in the meantime and try to reserve enough processing power to the machine. In my case - I use a virtual machine with 4 cores and 4 GB of memory - for a 7/8 GB filesystem it takes about _ten minutes_ with xz compression, while using lz4 compression reduces the wait only a _minute and a half_.  For coffee we don't do it in time anymore, a cigarette hurts and the obtained image changes to _3.0 GB_ compared to _2.00_ GB of xz compression \(See **notes**\).
 
-One recommendation. Normally this command is given on the machine where you are working and perhaps a previous version has already been produced. I recommend deleting previous images with the `sudo eggs kill` command which removes the entire directory tree under /home/eggs).
+Only one recommendation. Normally you give this command on the machine where you work and maybe you have already produced a previous version. I recommend deleting previous images with the command `sudo eggs kill` which removes the entire directory tree under /home/eggs.
+
+**Note**: _Not all bad comes to harm though. If we consider that currently DVDs are used relatively little and flash drives are getting faster and faster, there are cases where our remix might be more optimized with a bigger but less compressed filesystem! In fact, considering that during use - hidden from our eyes - there will be a continuous process of reading and decompression of the filesystem, decompression xz is slower than lz4._. 
 
 
-** Note **: _Not all evil comes to harm though. If we consider that DVDs are currently used relatively little and the sticks are getting faster and faster, there are cases our remix could be more optimized with a larger but less compressed filesystem! In fact, considering that during use - hidden from our eyes - there will be a continuous process of reading and decompressing the filesystem, the decompressioone xz is still slower than the lz4._
 
-_Keeping in mind that there is no longer the limit of the size of ISO images at 4 GB, the solution to always use lz4 could prove doubly advantageous, especially if used with virtual machines that - almost always - read the image file directly on disk fixed instead of a real DVD. In addition, all major programs for creating bootable sticks read the iso._ files
+_Keeping in mind that there is no longer the limit of iso image size at 4 GB, the solution of always using lz4 could be doubly advantageous, especially when used with virtual machines that - almost always - directly read the image file on the hard disk instead of a real DVD.  In addition, all major programs for creating bootable flash drives read iso._ files. 
 
-_Why produce different formats? _
+_Why then produce different formats?
 
-_Eventually, you could create the iso with lz4 and, subsequently, compress it with xz to lighten the uploads and downloads on the internet_.
+_Ventually, you could create the iso with lz4 and then compress it with xz to lighten the uploads and downloads on the internet_.
+
 
 ---
-# Download the ISO images
+# Download ISO images made with eggs
 Images of the remixes made by the author.
 
-## Premise
+## Foreword
 
-Here are a series of remixes made by myself and created with Penguin's eggs. It is not my purpose to create a new remix, rather I prefer to build and maintain the package. But the saying goes: the egg or the hen first? And I do some remixes and continue to offer them.
+Here are a series of remixes made by myself and created with Penguin's eggs. It is not my goal to make a new remix, I prefer to build and maintain the package. But even in this the saying goes: is the egg or the chicken born first? And some remixes I do and continue to propose them.
 
-These are essentially versions of Debian Buster, although I will release a minimal version of ubuntu with the Typescript development tools.
+They are essentially versions of Debian Buster, Devuan beowulf, Linux Mint, etc. 
 
-Currently derivatives of Debian Buster are online, less is a light version - only the necessary for development, which I normally use. Debu, more comfortable and refined, always with development tools and everything you need for office, design, development etc. Debu is only wrong - compared to less - that being relatively large, 1.9 GB compared to 900KB of less takes more time for "reproduction".
+Currently they are online derivatives of Debian Buster: 
 
-There is also an even lighter version, called naked without any graphical interface but useful as a base.
+* less is a very light version, lxde-core --no-install-reccomends and only what is needed for the development of eggs, which I normally use. 
 
-Basically I recommend debu or less for those who want to participate in development, naked for those who want to start from a base and then proceed to creating their own remix. Finally, but I'm not an expert in the subject, I made a version called blockchain for the study of the same. It could be interesting for experts in the sector, not so much for personal use but for creating demos and keys that can be installed for dissemination.
+* debu, more comfortable and refined, cinnamon as desktop, always with development tools and everything you need for office, design, development etc. This more complete distro is only wrong - compared to less - that being relatively large, 1.9GB compared to 900KB of less takes longer to "play".
 
-### Where can I download the ISO
+There is also an even lighter version of Debian buster, called naked without graphical interface and, for this very reason, suitable as a base to make its own remix.
 
-All versions are downloadable from ** sourgeforge.net ** by looking for the [penguins-eggs] project (https://sourceforge.net/projects/penguins-eggs/files/).
+Basically I recommend debu or less for those who want to participate in the development, naked for those who want to start from a base and then proceed to create their own remix. Interesting also incubator which is basically a version of buster with the addition of the virtualization environment proxmox-ve, based on kvm, virt-viewer and necessary tools.
+
+A separate note for some i386 remixes, always made with eggs. It could be interesting patricia-i386, a remake of linux mint 19.3 tricia xfce, slim enough and elegant enough to be used on older computers. Even lighter is bionic-i386 created from lubuntu-18.04 bionic but, of course, even more skinny.
+
+### Where can I download the iso
+
+All versions can be downloaded from **sourgeforge.net** looking for the project [penguins-eggs](https://sourceforge.net/projects/penguins-eggs/files/).
 
 #### User and password
 
-All the distributions shown here are set up with live user and root user.
+All distributions shown here are set with live user and root user.
 
 * live/evolution
 * root/evolution
 
-### Video
+# Support and reporting
 
-This is an old video, I would like to make others, maybe soon.
+eggs is a project that, at the moment, allows you to remaster different versions of linux. 
 
-![debu](/images/debu.png)
+- debian buster/bullseyes/stretch
+- devuan beowulf
+- ubuntu bionic/focal/groovy
 
+It is evident that the developer cannot test every release on all the versions considered, adding the need for testing on both uefi and standard bios machines.
 
+It is therefore important that users report problems.
 
+You can report the various problems on the [issue](https://github.com/pieroproietti/penguins-eggs/issues) page of the penguins-eggs project on github.com.
 
+You can also contact me via chat, on https://gitter.im/penguins-eggs.
 
+# Community
+A community of users is essential for the growth of a project, creating something versatile and practical basically serves relatively little if people do not know the product and, on the other hand, having a good number of users, provides feedback and motivation to developers, thus improving the quality of the project itself.
+
+You can facilitate the spread of eggs and contribute to its growth in several ways:
+
+* join the facebook group [penguin's eggs](https://www.facebook.com/groups/128861437762355)
+
+* mark the project on [github.com](https://github.com/pieroproietti/penguins-eggs) with a star;
+
+* evaluate this project on [sourceforge](https://sourceforge.net/projects/penguins-eggs/) and/or create a review on the same page.
+
+# Thanksgiving
+If you have come this far, without the help of the quick scroll button, you have used part of your time - a valuable resource - to follow me on this path and, therefore, it is my duty and - even more desire - to thank you for your interest. 
+
+Thank you all and... happy hacking!
+
+Piero Proietti 
