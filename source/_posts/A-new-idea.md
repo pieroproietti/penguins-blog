@@ -20,4 +20,6 @@ The idea, therefore, is to create a microservice that queries, provides:
 
 Does anyone want to cooperate? Any suggestions?
 
+[contact me](https://gitter.im/penguins-eggs-1/community)
+
 
