@@ -10,3 +10,6 @@ I tested the day realease on a UEFI machine, both iso production and install the
 
 
 ![groovy-gorilla-install](/images/groovy-gorilla-install.png)
+
+Does anyone want to cooperate? Any suggestions? 
+[contact me](https://gitter.im/penguins-eggs-1/community)
