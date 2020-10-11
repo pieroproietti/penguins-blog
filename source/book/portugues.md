@@ -172,7 +172,7 @@ Bem, agora estamos finalmente prontos para usar eggs para criar nosso pinguim.
 
 ### Comandos e opções 
 
-Os eggs precisam de direitos de raiz, portanto - exceto para informações sobre eggs e comandos de exportação - devem ser chamados precedidos de `sudo`.
+Os eggs precisam de direitos de root, portanto - exceto para informações sobre eggs e comandos de exportação - devem ser chamados precedidos de `sudo`.
 
 * adapt
 * calamares
@@ -197,7 +197,7 @@ Vamos ilustrar os comandos em ordem alfabética rigorosa, para a conveniência d
 
 #### eggs adapt
 
-Adaptar o vídeo às capacidades do monitor ou ao tamanho da janela, no caso de uma máquina virtual. Acho muito conveniente para redimensionar máquinas virtuais com interfaces gráficas de usuário que não sejam canela, gnome3 e kde, para as quais não é necessário. Na prática, os eggs lembram o xrandr para adaptar a tela à resolução atual. Não está estritamente relacionado com a produção de ISO, mas eu o considero indispensável no desenvolvimento.
+Adaptar o vídeo às capacidades do monitor ou ao tamanho da janela, no caso de uma máquina virtual. Acho muito conveniente para redimensionar máquinas virtuais com interfaces gráficas de usuário que não sejam cinnamon, gnome3 e kde, para as quais não é necessário. Na prática, os eggs lembram o xrandr para adaptar a tela à resolução atual. Não está estritamente relacionado com a produção de ISO, mas eu o considero indispensável no desenvolvimento.
 
 ### sudo eggs calamares
 Configurar o instalador gráfico calamares. Também pode ser usado para configurar uma iso que - produzida sem calamares - você deseja instalar com ela. Basta dar o comando: sudo eggs calamares -i e você terá tanto a instalação quanto a configuração do pacote.
@@ -260,13 +260,13 @@ Mostrar na tela a configuração dos eggs e do sistema. É o único comando que 
 
 Lançar o instalador de eggs Cli Cli. 
 
-Alternativamente com a opção -g ou --gui lança a lula em seu lugar.
+Alternativamente com a opção -g ou --gui lança a calamares em seu lugar.
 
-Atenção, o cliente instalador é mais rápido que a lula, mas é MUITO rudimentar e não é recomendado para não especialistas. Ele irá apagar completamente o disco rígido alvo! Use-o somente em máquinas ou computadores virtuais limpos ou limpos.
+Atenção, o cliente instalador é mais rápido que calamares, mas é MUITO rudimentar e não é recomendado para não especialistas. Ele irá apagar completamente o disco rígido alvo! Use-o somente em máquinas ou computadores virtuais limpos ou limpos.
 
 ### sudo eggs kill
 
-Ele elimina as imagens feitas e o diretório de trabalho dos eggs (o ninho). Executar rm /home/eggs -rf para excluir todos os isos criados. 
+Ele elimina as imagens feitas e o diretório de trabalho do eggs (o ninho). Executar rm /home/eggs -rf para excluir todos os isos criados. 
 Em caso de interrupção da produção do comando, será impossível apagar os diretórios montados. O caminho mais curto é uma reinicialização e o próximo lançamento do comando.
 
 ```
@@ -288,7 +288,7 @@ EXAMPLE
 
 ### sudo eggs prerequisites
 
-Instalar as embalagens deb necessárias para a operação de eggs. 
+Instalar as pacotes deb necessárias para a operação de eggs. 
 
 Podemos dividir os pacotes necessários em três partes:
 * embalagens necessárias para executar eggs: isolinux, syslinux, rsync, squashfs-tools, xorriso, xterm, whois, live-boot, live-boot-initramfs-tools;
