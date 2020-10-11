@@ -90,7 +90,6 @@ sudo ./eggs produz -fv
 
 Para os desenvolvedores ou curiosos, será possível ver, relatar ou corrigir o código. 
 
-
 ---
 
 # Pré-requisitos e configuração
@@ -121,6 +120,7 @@ Para fazer funcionar os eggs são necessárias algumas ferramentas instaladas, o
 ```
 eggs prerequisites
 ```
+
 ![eggs-prerequisites](/images/eggs-prerequisites.png)
 
 A seleção de Sim aceita a instalação das embalagens necessárias para a operação dos eggs e a produção de imagens iso. Basicamente, podemos dividir os pacotes instalados em quatro:
