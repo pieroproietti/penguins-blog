@@ -19,9 +19,11 @@ So at the moment - october 2020 - we have the user's guide in five different lan
 
 * [italiano](./italiano.html) eggs v. 7.6.57 updated october 2020
 
-* [español](./espanol.html) eggs v. 7.5.81 updated summer 2020
+* [português](./portugues.html) eggs v. 7.6.57 updated october 2020
 
-* [português](./portugues.html) eggs v. 7.5.81 updated summer 2020
+Others previus versions:
+
+* [español](./espanol.html) eggs v. 7.5.81 updated summer 2020
  
 * [български](./bulgarian.html) eggs v. 7.5.81 updated summer 2020
 
