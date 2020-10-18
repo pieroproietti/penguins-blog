@@ -20,6 +20,7 @@ sudo eggs update -i
 
 Probably there will still be some changes, I would like to create two channels one stable and one experimental. 
 
+Note: _To use this function, You must have wget installed._ ```apt install wget```
 
 ![Update](/images/update.png) 
 
