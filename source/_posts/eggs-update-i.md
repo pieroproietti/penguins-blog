@@ -4,8 +4,6 @@ layout: post
 date: 2020-10-18 07:46:33
 ---
 
-```sudo eggs update -i ```
-
 A few days ago, I was thinking about a way to solve the problem of updating eggs in case it is installed as a deb package, the mode that seems to be the most used.
 
 For this purpose I created a small microservice on the site https://penguins-eggs.net/versions
@@ -16,7 +14,7 @@ Although with some difficulties, these days I haven't had much time to dedicate 
 
 Just give the command:
 
-sudo eggs update -i
+```sudo eggs update -i ```
 
 Probably there will still be some changes, I would like to create two channels one stable and one experimental. 
 
