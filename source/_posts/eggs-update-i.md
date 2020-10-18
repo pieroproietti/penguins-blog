@@ -4,7 +4,7 @@ layout: post
 date: 2020-10-18 07:46:33
 ---
 
-```sudo eggs update -i 
+```sudo eggs update -i ```
 
 A few days ago, I was thinking about a way to solve the problem of updating eggs in case it is installed as a deb package, the mode that seems to be the most used.
 
