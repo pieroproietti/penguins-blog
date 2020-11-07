@@ -1,9 +1,8 @@
 ---
-title: penguins-eggs-presentation
+title: penguins-eggs presentation
 layout: post
 date: 2020-11-07 15:13:49
 ---
-# penguins-eggs
 
 For some time now, we have been missing a valid Linux remastering program.
 
@@ -41,6 +40,6 @@ It doesn't come from nothing, the first commit is in 2017, now three years ago.
 You can find the user manual in differnt languages [english](./english.html), [italiano](./italiano.html), [português](./portugues.html)
 and informations, curiosities, [forum](https://penguins-eggs.net).
 
-There is a series of easy [video terminal](https://penguins-eggs.net/terminal/) expamples too.
+There is a series of easy [video terminal](https://penguins-eggs.net/terminal/) examples too.
 
 ![presentation](/images/presentation.png)
