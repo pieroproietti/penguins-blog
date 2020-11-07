@@ -4,6 +4,8 @@ layout: post
 date: 2020-11-07 15:13:49
 ---
 
+![presentation](/images/presentation.png)
+
 For some time now, we have been missing a valid Linux remastering program.
 
 I have used remastersys, systemback, refracta, uck, etc. over the years, but for some years there was a lack of a practical software suitable for the purpose of building remixes - personal or not - to be distributed to friends or to make specialized vertical versions. I'm thinking of the various specialized distros, musical and other.
@@ -42,4 +44,4 @@ and informations, curiosities, [forum](https://penguins-eggs.net).
 
 There is a series of easy [video terminal](https://penguins-eggs.net/terminal/) examples too.
 
-![presentation](/images/presentation.png)
+![presentation-1](/images/presentation-1.png)
