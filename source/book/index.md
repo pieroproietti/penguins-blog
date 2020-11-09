@@ -64,5 +64,5 @@ Sinta-se à vontade para solicitar informações sobre o novo [fórum](/forum), 
 
 [Youtube channel](https://www.youtube.com/channel/UCWUYEEaaWJYnKF1OQTah5IA) Same videos.
 
-![book](/images/book.jpg)
+![eggs-help](https://github.com/pieroproietti/penguins-eggs/blob/master/documents/terminal-lessons/eggs_help.gif?raw=true)
 
