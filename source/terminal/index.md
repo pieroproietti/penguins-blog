@@ -6,11 +6,9 @@ date: 2020-06-22 07:38:32
 
 A series of easy video terminal expamples, about:
 
-* [install eggs (package deb)](./eggs_install-deb.html)
-* [install eggs (package npm)](./eggs_install-npm.html)
-* [Installing prerequisites](./eggs-prerequisites.html)
-* [Producing a new ISO](./eggs-produce.html)
-
+* [installing package eggs [(deb)](./eggs_install-deb.html) [npm](./eggs_install-npm.html)
+* [Install eggs prerequisites](./eggs_prerequisites.html)
+* [Producing a new ISO](./eggs_produce.html)
 ![eggs-help](https://github.com/pieroproietti/penguins-eggs/blob/master/documents/terminal-lessons/eggs_help.gif?raw=true)
 
 
