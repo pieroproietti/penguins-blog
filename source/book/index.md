@@ -15,11 +15,11 @@ Using mostly [DeepL](https://www.deepl.com/translator) translate service, I'm tr
 
 So at the moment - october 2020 - we have the user's guide in five different languages:
 
-* [english](./english.html) eggs v. 7.6.57 updated october 2020
+* [english](./english.html) eggs v. 7.6.70 updated october 2020
 
-* [italiano](./italiano.html) eggs v. 7.6.57 updated october 2020
+* [italiano](./italiano.html) eggs v. 7.6.70 updated october 2020
 
-* [português](./portugues.html) eggs v. 7.6.57 updated october 2020
+* [português](./portugues.html) eggs v. 7.6.70 updated october 2020
 
 Others previus versions:
 
@@ -32,8 +32,9 @@ Others previus versions:
 Are little videos, very lite - made with simple gif images - of terminal sessions. 
 
 # README and others documents from sources in github
-![source-code](/images/source-code.png)
-## [README](https://github.com/pieroproietti/penguins-eggs/blob/master/README.md)
+![source-code](/images/git.svg)
+## [project README](https://github.com/pieroproietti/penguins-eggs/blob/master/README.md)
+## [documents](https://github.com/pieroproietti/penguins-eggs/blob/master/documents)
 ## [Changelog](https://github.com/pieroproietti/penguins-eggs/blob/master/changelog.md)
 ## [i386 architecture](https://github.com/pieroproietti/penguins-eggs/blob/master/documents/i386-nodejs.md)
 
