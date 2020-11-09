@@ -22,6 +22,3 @@ Install eggs with npm is a simple task, you need two command:
 sudo npm config set unsafe-perm true
 sudo npm -i penguins-eggs -g
 ```
-
-![](./videos/install-eggs-npm.gif)
-

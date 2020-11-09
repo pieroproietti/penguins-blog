@@ -8,7 +8,7 @@ _A command line tools, can be easy to use!_
 
 ## First: download it
 
-* open Your browser and go to [sourceforge](https://sourceforge.net/projects/penguins-eggs/files/deb)
+* open Your browser and go to [sourceforge](https://sourceforge.net/projects/penguins-eggs/files/debgi)
 * choose files then files, then deb. You will reach this [link](https://sourceforge.net/projects/penguins-eggs/files/packages-deb/)
 * choose the rigth version and download it.
 
