@@ -1,11 +1,9 @@
 ---
-title: Documentation
+title: Guide to penguins-eggs
 layout: page
 date: 2020-06-20 07:38:32
 ---
-
-## Guide to penguins-eggs
-!(/images/book.svg)
+![](/images/book.svg)
 
 I'm italian, so the official guide is of course the [italian version](./italiano.html). This version is the most updated, and can be traslated in english by [Google](https://translate.google.com/) or [DeepL](https://www.deepl.com/translator) without many problems, due the fact who code is english too.
 
