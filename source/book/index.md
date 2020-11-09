@@ -27,11 +27,12 @@ Others previus versions:
  
 * [български](./bulgarian.html) eggs v. 7.5.81 updated summer 2020
 
-# [video terminal examples](/terminal)
-Are little videos, very lite - made with simple gif images - of terminal sessions. 
+# Terminal sessions samples
+Are little videos, very lite - made with simple gif images - of [terminal samples](/terminal). 
+
 ![eggs-help](https://github.com/pieroproietti/penguins-eggs/blob/master/documents/terminal-lessons/eggs_help.gif?raw=true)
 
-# README and others documentation on github
+# Documentation pages on github
 ![](/images/git.svg)
 
 * [README](https://github.com/pieroproietti/penguins-eggs/blob/master/README.md)
