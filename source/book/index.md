@@ -62,6 +62,6 @@ Sinta-se à vontade para solicitar informações sobre o novo [fórum](/forum), 
 
 # Videos
 I'm not so great in making videos, if you make same videos to propose them contaction me.
-[](/images/youtube.svg)
+![](/images/youtube.svg)
 
 Same videos in our [channel](https://www.youtube.com/channel/UCWUYEEaaWJYnKF1OQTah5IA)
