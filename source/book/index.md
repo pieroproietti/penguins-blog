@@ -28,11 +28,13 @@ Others previus versions:
 * [български](./bulgarian.html) eggs v. 7.5.81 updated summer 2020
 
 # [video terminal examples](/terminal)
-![videos](/terminal/videos/playing-with-eggs.gif)
 Are little videos, very lite - made with simple gif images - of terminal sessions. 
+![eggs-help](https://github.com/pieroproietti/penguins-eggs/blob/master/documents/terminal-lessons/eggs_help.gif?raw=true)
 
-# README and others documents from sources in github
-![source-code](/images/git.svg)
+# README and others documentation on github
+
+![github-icon](/images/git.svg)
+
 ## [project README](https://github.com/pieroproietti/penguins-eggs/blob/master/README.md)
 ## [documents](https://github.com/pieroproietti/penguins-eggs/blob/master/documents)
 ## [Changelog](https://github.com/pieroproietti/penguins-eggs/blob/master/changelog.md)
@@ -65,5 +67,4 @@ Sinta-se à vontade para solicitar informações sobre o novo [fórum](/forum), 
 
 [Youtube channel](https://www.youtube.com/channel/UCWUYEEaaWJYnKF1OQTah5IA) Same videos.
 
-![eggs-help](https://github.com/pieroproietti/penguins-eggs/blob/master/documents/terminal-lessons/eggs_help.gif?raw=true)
 
