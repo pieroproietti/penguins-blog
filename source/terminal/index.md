@@ -12,5 +12,5 @@ A series of easy video terminal expamples, about:
 * [Installing prerequisites](./eggs-prerequisites.html)
 * [Producing a new ISO](./eggs-produce.html)
 
-![eggs-produce](./videos/eggs-produce.gif)
+![eggs-help]https://github.com/pieroproietti/penguins-eggs/blob/master/documents/terminal-lessons/eggs_help.gif)
 
