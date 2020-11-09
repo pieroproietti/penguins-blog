@@ -32,6 +32,6 @@ finally, if you are building an UEFI image, you need too:
 
 ## Well, let's start!
 
-![prerequisites](./videos/eggs-prerequisites.gif)
+![prerequisites](https://github.com/pieroproietti/penguins-eggs/raw/master/documents/terminal-lessons/eggs_prerequisites.gif)
 
 

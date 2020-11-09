@@ -27,7 +27,7 @@ $ sudo dpkg -i eggs-7.5.112-1.deb
 ```
 Eggs is a nodejs project, if You already have nodejs it's better to choose the npm package.
 
-![install-deb](./videos/install-eggs-deb.gif)
+![install-deb](https://github.com/pieroproietti/penguins-eggs/raw/master/documents/terminal-lessons/eggs_install-deb.gif)
 
 
 
