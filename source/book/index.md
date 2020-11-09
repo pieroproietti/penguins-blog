@@ -32,13 +32,11 @@ Are little videos, very lite - made with simple gif images - of terminal session
 ![eggs-help](https://github.com/pieroproietti/penguins-eggs/blob/master/documents/terminal-lessons/eggs_help.gif?raw=true)
 
 # README and others documentation on github
+![](/images/git.svg)
 
-![github-icon](/images/git.svg)
-
-## [project README](https://github.com/pieroproietti/penguins-eggs/blob/master/README.md)
-## [documents](https://github.com/pieroproietti/penguins-eggs/blob/master/documents)
-## [Changelog](https://github.com/pieroproietti/penguins-eggs/blob/master/changelog.md)
-## [i386 architecture](https://github.com/pieroproietti/penguins-eggs/blob/master/documents/i386-nodejs.md)
+* [README](https://github.com/pieroproietti/penguins-eggs/blob/master/README.md)
+* [Changelog](https://github.com/pieroproietti/penguins-eggs/blob/master/changelog.md)
+* [others documents](https://github.com/pieroproietti/penguins-eggs/blob/master/documents)
 
 # [forum](/forum)
 ![forum](/images/forum.png)
