@@ -59,8 +59,24 @@ Sinta-se à vontade para solicitar informações sobre o novo [fórum](/forum), 
 Чувствайте се свободни да поискате информация за новия [форум](/forum), първо трябва да се [регистрирате](/forum/register). В момента нямаме толкова много хора, но аз ще ви отговоря лично с надеждата да нарасне малка общност.
 
 # Videos
-I'm not so great in making videos, if you make same videos to propose them contaction me.
-
 ![](/images/youtube.svg)
 
 Same videos in our [channel](https://www.youtube.com/channel/UCWUYEEaaWJYnKF1OQTah5IA)
+
+I'm not so great in making videos, if you make same videos to propose them contaction me.
+
+* site: [penguins-eggs.net](https://penguins-eggs.net)
+* gitter: [Penghuin's eggs](https://gitter.im/penguins-eggs-1/community?source=orgpage)
+* issues: [github](https://github.com/pieroproietti/penguins-eggs/issues)
+* facebook:  
+   * [Penuin's Eggs group](https://www.facebook.com/groups/128861437762355/)
+   * [Penguin's Eggs page](https://www.facebook.com/penguinseggs)
+   * mail: piero.proietti@gmail.com
+
+## Copyright and licenses
+Copyright (c) 2017, 2020 [Piero Proietti](https://github.com/pieroproietti), dual licensed under the MIT or GPL Version 2 licenses.
+
+
+
+
+
