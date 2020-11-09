@@ -4,10 +4,8 @@ layout: page
 date: 2020-06-20 07:38:32
 ---
 
-## Guide eggs
-![book](/images/book.svg)
-
-# Documentazione ufficiale in [italiano](./italiano.html)
+## Guide to penguins-eggs
+!(/images/book.svg)
 
 I'm italian, so the official guide is of course the [italian version](./italiano.html). This version is the most updated, and can be traslated in english by [Google](https://translate.google.com/) or [DeepL](https://www.deepl.com/translator) without many problems, due the fact who code is english too.
 
@@ -30,7 +28,7 @@ Others previus versions:
 # Terminal sessions samples
 Are little videos, very lite - made with simple gif images - of [terminal samples](/terminal). 
 
-![eggs-help](https://github.com/pieroproietti/penguins-eggs/blob/master/documents/terminal-lessons/eggs_help.gif?raw=true)
+![](https://github.com/pieroproietti/penguins-eggs/blob/master/documents/terminal-lessons/eggs_help.gif?raw=true)
 
 # Documentation pages on github
 ![](/images/git.svg)
@@ -39,8 +37,8 @@ Are little videos, very lite - made with simple gif images - of [terminal sample
 * [Changelog](https://github.com/pieroproietti/penguins-eggs/blob/master/changelog.md)
 * [others documents](https://github.com/pieroproietti/penguins-eggs/blob/master/documents)
 
-# [forum](/forum)
-![forum](/images/forum.png)
+# Forum
+![](/images/forum.png)
 
 <img src="/images/flags/english.png" width="30" height="12" title="English">
 
@@ -62,8 +60,7 @@ Sinta-se à vontade para solicitar informações sobre o novo [fórum](/forum), 
 
 Чувствайте се свободни да поискате информация за новия [форум](/forum), първо трябва да се [регистрирате](/forum/register). В момента нямаме толкова много хора, но аз ще ви отговоря лично с надеждата да нарасне малка общност.
 
-# Video
+# Videos
+I'm not so great in making videos, if you make same videos to propose them contaction me.
 
 [Youtube channel](https://www.youtube.com/channel/UCWUYEEaaWJYnKF1OQTah5IA) Same videos.
-
-
