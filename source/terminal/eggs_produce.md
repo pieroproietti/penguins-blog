@@ -1,10 +1,12 @@
 ---
-title: installing prerequisites
+title: producing new ISO
 layout: page
 date: 2020-06-22 07:38:32
 ---
 
 _A command line tools, can be easy to use!_
+
+# eggs produce
 
 There is not so much to write, just remember who can choose different flags. In this case we choose --fast fpr lz4 compression.
 

@@ -6,6 +6,7 @@ date: 2020-11-08 07:38:32
 
 _A command line tools, can be easy to use!_
 
+# eggs update -i
 
 Most of the softwares you use are on the repository of your distro. eggs, at moment don't have a repository but just a page on sourceforge.com where you can download update.
 
