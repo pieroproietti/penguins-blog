@@ -13,6 +13,7 @@ A series of easy video terminal expamples, about:
 * [Producing a new ISO](./eggs_produce.html)
 * [Updating eggs](./eggs_update.html)
 
+```eggs```
 ![eggs-help](https://github.com/pieroproietti/penguins-eggs/blob/master/documents/terminal-lessons/eggs_help.gif?raw=true)
 
 # That's all Folks!
@@ -31,3 +32,5 @@ Contact me via [gitter](https://gitter.im/penguins-eggs-1/community), or open an
 
 
 ## Copyright and licenses
+Copyright (c) 2017, 2020 [Piero Proietti](https://penguins-eggs.net/about-me.html), dual licensed under the MIT or GPL Version 2 licenses.
+
