@@ -29,4 +29,4 @@ $ sudo dpkg -i eggs-7.6.70-1.deb
 ![install-deb](https://github.com/pieroproietti/penguins-eggs/raw/master/documents/terminal-lessons/eggs_install-deb.gif)
 
 
-
+[index](/terminal)

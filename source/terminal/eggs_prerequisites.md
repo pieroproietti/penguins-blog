@@ -35,3 +35,4 @@ finally, if you are building an UEFI image, you need too:
 ![prerequisites](https://github.com/pieroproietti/penguins-eggs/raw/master/documents/terminal-lessons/eggs_prerequisites.gif)
 
 
+[index](/terminal)
