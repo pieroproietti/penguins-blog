@@ -4,7 +4,9 @@ layout: post
 date: 2020-11-12 17:21:26
 ---
 
-Where are you going to get the eggs?
+# Where are you going to get the eggs?
+
+![basket](/images/basket.jpg)
 
 Most of the programs of a distribution resides in the repositories of the same.
 
@@ -22,7 +24,9 @@ The final result is that by entering the command:
 
 and selecting **basket** as the upgrade method, we will be offered the various versions that, if selected, will provide the download address, download the package and install it automatically.
 
-A clean and effective system to stay up to date. In Rome we can say "proprio da figli de puttana!"
+A clean and effective system to stay up to date. 
+
+In Rome we can say "__proprio da figli de puttana!__"
 
 ![update](https://github.com/pieroproietti/penguins-eggs/raw/master/documents/terminal-lessons/eggs_update.gif)
 
