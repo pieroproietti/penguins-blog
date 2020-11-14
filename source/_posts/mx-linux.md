@@ -20,7 +20,7 @@ A first reason could be to get familiar with their installer and make it availab
 
 A second reason is that this distribution is based on the antiX scripts which are the most versatile as regards the possibility of installing linux on USB sticks with the possibility of having a system that can always be updated at hand.
 
-At the moment I can only ensure that the snapshot creation with eggs and its installation with calamares will work.
+At the moment I can only ensure that the snapshot creation with eggs and its installation with calamares will work with minor problems who I hope to solve soon.
 
 We still have a long way to go ...
 
