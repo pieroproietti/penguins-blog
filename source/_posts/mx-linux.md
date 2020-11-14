@@ -8,6 +8,8 @@ date: 2020-11-14 18:42:10
 
 I am trying to port eggs to mx-linux.
 
+__Please note what this project is in no way connected to MX Linux in any official way, it's just my personal experiment__
+
 At the moment I have managed to remaster mx-linux with eggs and reinstall it with calamares.
 
 mx-linux has an excellent program for creating system snapshots. Furthermore, mx-linux has an excellent mx-installer installation program, with a graphical interface and a cli installer.
@@ -25,3 +27,14 @@ At the moment I can only ensure that the snapshot creation with eggs and its ins
 We still have a long way to go ...
 
 ![mx-linux](/images/mx-linux.png)
+
+Here You can find a short [eggs presentation](./penguins-eggs-presentation). 
+
+## More informations
+* site: [penguins-eggs.net](https://penguins-eggs.net)
+* gitter: [Penghuin's eggs](https://gitter.im/penguins-eggs-1/community?source=orgpage)
+* issues: [github](https://github.com/pieroproietti/penguins-eggs/issues).
+* facebook:  
+   * [Penguin's Eggs group](https://www.facebook.com/groups/128861437762355/)
+   * [Penguin's Eggs page](https://www.facebook.com/penguinseggs)
+   * mail: piero.proietti@gmail.com
