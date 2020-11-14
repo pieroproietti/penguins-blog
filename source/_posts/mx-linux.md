@@ -29,7 +29,7 @@ We still have a long way to go ...
 
 ![mx-linux](/images/mx-linux.png)
 
-Here You can find a short [eggs presentation](./penguins-eggs-presentation). 
+Here You can find a short [eggs presentation](/penguins-eggs-presentation). 
 
 ## More informations
 * site: [penguins-eggs.net](https://penguins-eggs.net)
