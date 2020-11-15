@@ -4,7 +4,7 @@ layout: post
 date: 2020-11-14 18:42:10
 ---
 
-## eggs-7-6-78
+## eggs-7.6.78
 
 __Please note what this project is in no way connected to MX Linux in any official way, it's just my personal experiment__.
 
