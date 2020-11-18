@@ -28,7 +28,9 @@ All'interno di queste cartelle (vendor) ci sono gli addons veri e propri.
 
 Ad esempio:
 
-```ls /etc/penguins-eggs.d/addons/eggs```
+```
+ls /etc/penguins-eggs.d/addons/eggs
+```
 
 * dwagent 
 * installer-choice  
