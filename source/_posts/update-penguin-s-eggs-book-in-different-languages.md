@@ -1,7 +1,7 @@
 ---
 title: Penguin's eggs guide in different languages
 layout: post
-# date: 2020-06-26 16:20:49
+date: 2020-06-26 16:20:49
 category: documentation
 ---
 ![install-deb](/images/flags.webp)
