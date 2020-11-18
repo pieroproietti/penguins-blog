@@ -11,7 +11,7 @@ date: 2020-11-18 07:13:19
 [Portuguese (BR)](#Portuguese-BR)
 
 # Italiano
-
+![italiano](/images/flags/italian.png)
 ## Dove risiedono i temi
 
 I temi sono un addon di eggs. 
@@ -123,7 +123,7 @@ sudo eggs produce -vf --theme tico
 
 # Portuguese (BR)
 
-[portugues](/images/flags/portugues.png)
+![portugues](/images/flags/portugues.png)
 
 # Onde residem os temas
 
