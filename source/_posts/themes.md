@@ -45,7 +45,9 @@ Supponiamo che il nostro vendor sia l'utente tico. Creiamo, quindi, una cartella
 
 Copiamo in questa il contenuto di /etc/penguins-eggs.d/eggs/theme.
 
-```cp /etc/penguins-eggs.d/eggs/theme/ ~/tico -R```
+```
+cp /etc/penguins-eggs.d/eggs/theme/ ~/tico -R
+```
 
 A questo punto dobbiamo creare un collegamento simbolico in /etc/penguins-eggs.d/ per poter utilizzare il nostro nuovo tema.
 
@@ -53,7 +55,9 @@ Per prima cosa vediamo dove risiede effettivamente la cartella /etc/penguins-egg
 
 Per scoprirlo daremo semplicemente il comando:
 
-```ls /etc/penguins-eggs.d/addons -l```
+```
+ls /etc/penguins-eggs.d/addons -l
+```
 
 scoprendo che, con installazione deb ed architettura amd64, questo è un link alla cartella:
 
@@ -61,7 +65,9 @@ __/usr/lib/penguins-eggs/addons__
 
 Quindi, a questo punto possiamo creare un link al nostro progetto di tema:
 
-```sudo ln -s ~/tico /usr/lib/penguins-eggs/addons/tico```
+```
+sudo ln -s ~/tico /usr/lib/penguins-eggs/addons/tico
+```
 
 Bene, abbiamo raggiunto il nostro scopo. 
 
@@ -105,7 +111,9 @@ __NB: Per informazioni, consultate la documentazione di calamares__.
 
 Per usare il nostro tema tico, dovremo semplicemente specificare il flag --theme vendor in produce.
 
-```sudo eggs produce -vf --theme tico```
+```
+sudo eggs produce -vf --theme tico
+```
 
 
 
@@ -133,7 +141,9 @@ Dentro destas pastas (vendors) estão os próprios addons.
 
 Por exemplo:
 
-```ls /etc/penguins-eggs.d/addons/eggs````
+```
+ls /etc/penguins-eggs.d/addons/eggs
+````
 
 * dwagent 
 * escolha do instalador  
@@ -148,7 +158,9 @@ Vamos assumir que nosso fornecedor é o usuário ```tico```. Vamos criar uma pas
 
 Copiamos o conteúdo de ```/etc/penguins-eggs.d/eggs/theme``` para este aqui.
 
-```cp /etc/penguins-eggs.d/eggs/theme/ ~/tico -R```.
+```
+cp /etc/penguins-eggs.d/eggs/theme/ ~/tico -R
+```
 
 Neste ponto, temos que criar um link simbólico em ```/etc/penguins-eggs.d/``` para usar nosso novo tema.
 
@@ -156,7 +168,9 @@ Primeiro vamos ver onde realmente reside a pasta ```/etc/penguins-eggs/addons```
 
 Para saber, basta dar o comando:
 
-```ls /etc/penguins-eggs.d/addons -l```
+```
+ls /etc/penguins-eggs.d/addons -l
+```
 
 descobrindo que, com a instalação da deb e a arquitetura amd64, este é um link para a pasta:
 
@@ -164,7 +178,9 @@ __/usr/lib/penguins-eggs/addons__
 
 Assim, neste momento, podemos criar um link para nosso projeto temático:
 
-```sudo ln -s ~/tico /usr/lib/penguins-eggs/addons/tico```.
+```
+sudo ln -s ~/tico /usr/lib/penguins-eggs/addons/tico
+```
 
 Bem, nós atingimos nosso objetivo. 
 
@@ -208,4 +224,6 @@ __NB: Para informações, consulte a documentação de calamari__.
 
 Para utilizar nosso tema tico, teremos simplesmente que especificar a bandeira - o fornecedor temático na produção.
 
-```sudo eggs produce -vf --theme tico```
+```
+sudo eggs produce -vf --theme tico
+```
