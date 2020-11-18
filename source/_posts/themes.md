@@ -11,7 +11,7 @@ date: 2020-11-18 07:13:19
 [Portuguese (BR)](#Portuguese-BR)
 
 # Italiano
-![italiano](/images/flags/italian.png)
+![italiano](/images/flags/italian.webp)
 ## Dove risiedono i temi
 
 I temi sono un addon di eggs. 
