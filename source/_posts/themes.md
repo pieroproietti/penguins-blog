@@ -218,7 +218,7 @@ branding.desc is just a placeholder, it will be built from scratch directly from
 
 show.qml, instead, is our presentation. 
 
-the various images: ```welcome.png`` and ``slide1.png``, etc are the various figures that will scroll during the installation. 
+the various images: ```welcome.png``` and ```slide1.png```, etc are the various figures that will scroll during the installation. 
 
 You can change everything to your liking. 
 
