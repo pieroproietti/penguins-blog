@@ -39,7 +39,7 @@ It works and you can find numerous examples of distros remastered with eggs dire
 It doesn't come from nothing, the first commit is in 2017, now three years ago.
 
 ## USER MANUAL AND INSTRUCTIONS
-You can find the user manual in differnt languages [english](./book/english.html), [italiano](./book/italiano.html), [português](./book/portugues.html)
+You can find the user manual in differnt languages [english](/book/english.html), [italiano](/book/italiano.html), [português](/book/portugues.html)
 and informations, curiosities, [forum](https://penguins-eggs.net).
 
 There is a series of easy [video terminal](https://penguins-eggs.net/terminal/) examples too.
