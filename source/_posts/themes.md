@@ -186,7 +186,7 @@ sudo ln -s ~/tico /usr/lib/penguins-eggs/addons/tico
 
 Bem, nós atingimos nosso objetivo. 
 
-__NB: Após a atualização dos eggs podemos perder o elo, que precisará ser reconstruído, mas não nossa customização.
+__NB: Após a atualização dos eggs podemos perder o elo, que precisará ser reconstruído, mas não nossa customização__.
 
 ## Mude o tema
 
