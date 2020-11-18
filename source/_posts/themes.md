@@ -4,7 +4,7 @@ layout: post
 date: 2020-11-18 07:13:19
 ---
 
-[Portuguese (BR)](# Portuguese (BR))
+[Portuguese (BR)](#Portuguese (BR))
 
 # Italiano
 
