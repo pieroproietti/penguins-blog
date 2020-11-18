@@ -123,9 +123,9 @@ sudo eggs produce -vf --theme tico
 
 # Onde residem os temas
 
-Os temas são um suplemento de ovos. 
+Os temas são um suplemento de eggs. 
 
-Eles são vistos por ovos em /etc/penguins-eggs.d/addons enquanto residem em locais diferentes, dependendo do tipo de instalação e da arquitetura em uso.
+Eles são vistos por eggs em /etc/penguins-eggs.d/addons enquanto residem em locais diferentes, dependendo do tipo de instalação e da arquitetura em uso.
 
 A partir deste link, eles são compilados e copiados para os diretórios relevantes. Para calamares /etc/calamares/branding.
 
@@ -136,7 +136,7 @@ Portanto, você não deve alterar diretamente a marca das lulas em /etc/calamare
 Neste diretório você pode encontrar, de fato, os suplementos de eggs. No momento:
 * debian
 * deblinux
-* ovos
+* eggs
 * ufficiozero
 
 Dentro destas pastas (vendors) estão os próprios addons. 
@@ -190,7 +190,7 @@ __NB: Após a atualização dos eggs podemos perder o elo, que precisará ser re
 
 ## Mude o tema
 
-Podemos modificar e manter em nossa casa nosso projeto temático que será visto pelos ovos como /etc/penguins-eggs.d/addons/tico.
+Podemos modificar e manter em nossa casa nosso projeto temático que será visto pelo eggs como /etc/penguins-eggs.d/addons/tico.
 
 Agora podemos começar a modificar o conteúdo de ```~/tico/tema```.
 
