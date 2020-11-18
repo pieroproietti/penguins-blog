@@ -238,7 +238,7 @@ Translated with the free version of the translator - www.DeepL.com/Translator
 
 If you want to contribute to the translation to your language, you can download the content of this site with [git](https://github.com/pieroproietti/penguins-blog). Correct it and send it to the author [piero.proietti](mailto://piero.proietti@gmail.com).
 
-Thanx.qml
+Thanks.
 
 
 # Portuguese (BR)
@@ -358,5 +358,4 @@ Traduzido com a versão gratuita do tradutor - www.DeepL.com/Translator
 
 Se você quiser contribuir para a tradução para seu idioma, você pode baixar o conteúdo deste site com [git](https://github.com/pieroproietti/penguins-blog). Corrigi-lo e enviá-lo ao autor [piero.proietti](mailto://piero.proietti@gmail.com).
 
-Gracias
-
+Obrigado.
