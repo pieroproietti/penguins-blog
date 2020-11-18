@@ -4,6 +4,8 @@ layout: post
 date: 2020-11-18 07:13:19
 ---
 
+![roma](/images/roma.png)
+
 # Index
 [Italiano](#Italiano)
 [Portuguese (BR)](#Portuguese-BR)
@@ -246,4 +248,4 @@ corrigi-lo e enviá-lo ao autor: piero.proietti@gmail.com
 
 Gracias
 
-![roma](/images/roma.png)
+
