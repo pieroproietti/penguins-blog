@@ -244,3 +244,4 @@ corrigi-lo e enviá-lo ao autor: piero.proietti@gmail.com
 
 Gracias
 
+!(roma)[/images/roma.png]
