@@ -87,7 +87,7 @@ Nella cartella theme ci sono tre cartelle:
 * artwork
 * branding
 
-In applications troviamo semplicemente il link debian-install.desktop, in artwork l'incona per lo stesso debian-install.png mentre in branding troviamo il template per calamares. 
+In applications troviamo semplicemente il link debian-install.desktop, in artwork l'icona debian-install.png mentre in branding troviamo il template per calamares. 
 
 Non mi dilungo su applications ed artwork, chi si occupa di rimasterizzazione se la caverà egregiamente. Parleremo invece di branding.
 
@@ -200,7 +200,7 @@ Há três pastas na pasta temática:
 * artwork
 * branding
 
-Em applications nós simplesmente encontramos o link ```debian-install.desktop```, em artwork encontramos o link para ```debian-install.png``` e em ```branding``` encontramos o modelo para lula. 
+Em applications nós simplesmente encontramos o link ```debian-install.desktop```, em artwork encontramos o icon ```debian-install.png``` e em ```branding``` encontramos o modelo para lula. 
 
 Não me detenho em applications e artwork, aqueles que lidam com remasterização se sairão muito bem. Em vez disso, falaremos sobre branding.
 
@@ -209,7 +209,7 @@ Em branding há dois arquivos de texto e algumas imagens.
 * branding.desc 
 * show.qml
 
-O branding.desc é apenas um suporte de local, ele será construído a partir do zero diretamente dos ovos. 
+O branding.desc é apenas um suporte de local, ele será construído a partir do zero diretamente do eggs. 
 
 show.qml, ao invés disso, é nossa apresentação. 
 
@@ -217,12 +217,12 @@ as várias imagens: ```welcome.png``` e ```slide1.png```, etc. são as várias f
 
 Você pode mudar tudo à sua vontade. 
 
-__NB: Para informações, consulte a documentação de calamari__.
+__NB: Para informações, consulte a documentação de calamares__.
 
 # Usando nosso tema
 
 
-Para utilizar nosso tema tico, teremos simplesmente que especificar a bandeira - o fornecedor temático na produção.
+Para utilizar nosso tema tico, teremos simplesmente que especificar a bandeira --theme tico.
 
 ```
 sudo eggs produce -vf --theme tico
