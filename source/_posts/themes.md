@@ -7,8 +7,9 @@ date: 2020-11-18 07:13:19
 ![roma](/images/roma.png)
 
 # Index
-[Italiano](#Italiano)
-[Portuguese (BR)](#Portuguese-BR)
+* [Italiano](#Italiano)
+* [English](#English)
+* [Portuguese (BR)](#Portuguese-BR)
 
 # Italiano
 ![italiano](/images/flags/italian.webp)
@@ -120,6 +121,121 @@ Per usare il nostro tema tico, dovremo semplicemente specificare il flag --theme
 ```
 sudo eggs produce -vf --theme tico
 ```
+
+# English
+![english](/images/flags/english.png)
+
+## Where do the themes reside
+
+The themes are an addon of eggs. 
+
+They are seen by eggs in ```/etc/penguins-eggs.d/addons`` even though they reside in different positions depending on the type of installation and architecture in use.
+
+From this link, they are compiled and copied into the relevant directories. For calamares ```/etc/calamares/branding``.
+
+You should not, therefore, directly change the branding of calamares in /etc/calamares, but create an addon in ````/etc/penguins-eggs.d/addons``.
+
+# link /etc/penguins-eggs.d/addons
+
+In this directory you can find the addons of eggs. At the moment:
+* debian
+* deblinux
+* eggs
+* ufficiozero
+
+Inside these folders (vendors) there are the actual addons. 
+
+For example:
+
+```
+ls /etc/penguins-eggs.d/addons/eggs
+```
+
+* dwagent 
+* installer-choice  
+* proxmox-ve  
+* theme
+
+## Themes 
+
+Nowadays we only talk about themes, but the same goes for the other types of addons.
+
+Let's assume that our vendor is the tico user. Let's create a folder ````~/tico`` in our home.
+
+We copy the content of /etc/penguins-eggs.d/eggs/theme into this one.
+
+```
+cp /etc/penguins-eggs.d/eggs/theme/ ~/tico -R
+```
+
+At this point we have to create a symbolic link in /etc/penguins-eggs.d/ to use our new theme.
+
+First let's see where the /etc/penguins-eggs/addons folder actually resides. 
+
+To find out simply give the command:
+
+```
+ls /etc/penguins-eggs.d/addons -l
+```
+
+discovering that, with deb installation and amd64 architecture, this is a link to the folder:
+
+__/usr/lib/penguins-eggs/addons__
+
+So, at this point we can create a link to our theme project:
+
+```
+sudo ln -s ~/tico /usr/lib/penguins-eggs/addons/tico
+```
+
+Well, we have achieved our goal. 
+
+__NB: Following the update of eggs we may lose the link, which will have to be rebuilt, but not our customization__.
+
+## Change the theme
+
+We can modify and keep in our home our theme project that will be seen by eggs as /etc/penguins-eggs.d/addons/tico.
+
+Now we can start modifying the content of ````~/tico/theme``.
+
+### The structure of the theme
+
+In the theme folder there are three folders:
+
+* applications
+* artwork
+* branding
+
+In applications we simply find the link debian-install.desktop, in artwork the icon debian-install.png and in branding we find the template for squid. 
+
+I don't dwell on applications and artwork, those who do remastering will do very well. We will talk about branding instead.
+
+In branding there are two text files and some images. 
+
+* branding.desc 
+* show.qml
+
+branding.desc is just a placeholder, it will be built from scratch directly from eggs. 
+
+show.qml, instead, is our presentation. 
+
+the various images: ```welcome.png`` and ``slide1.png``, etc are the various figures that will scroll during the installation. 
+
+You can change everything to your liking. 
+
+__NB: For information, see the documentation of calamari__.
+
+# Using our theme
+
+
+To use our tico theme, we will simply have to specify the flag --theme vendor in produce.
+
+```
+sudo eggs produce -vf --theme tico
+```
+
+
+
 
 # Portuguese (BR)
 
