@@ -196,13 +196,13 @@ Agora podemos começar a modificar o conteúdo de ```~/tico/tema```.
 
 Há três pastas na pasta temática:
 
-* aplicações
-* obras de arte
-* marca
+* applications
+* artwork
+* branding
 
-Em aplicações nós simplesmente encontramos o link ```debian-install.desktop```, em obras de arte encontramos o link para ```debian-install.png``` e em ```branding``` encontramos o modelo para lula. 
+Em applications nós simplesmente encontramos o link ```debian-install.desktop```, em artwork encontramos o link para ```debian-install.png``` e em ```branding``` encontramos o modelo para lula. 
 
-Não me detenho em aplicações e obras de arte, aqueles que lidam com remasterização se sairão muito bem. Em vez disso, falaremos sobre branding.
+Não me detenho em applications e artwork, aqueles que lidam com remasterização se sairão muito bem. Em vez disso, falaremos sobre branding.
 
 Em branding há dois arquivos de texto e algumas imagens. 
 
@@ -227,3 +227,4 @@ Para utilizar nosso tema tico, teremos simplesmente que especificar a bandeira -
 ```
 sudo eggs produce -vf --theme tico
 ```
+
