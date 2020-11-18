@@ -148,9 +148,9 @@ ls /etc/penguins-eggs.d/addons/eggs
 ````
 
 * dwagent 
-* escolha do instalador  
+* installer-choice
 * proxmox-ve  
-* tema
+* theme
 
 ## Temas 
 
