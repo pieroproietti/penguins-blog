@@ -1,7 +1,16 @@
 # Header
 menu:
   Home: /
+  Documentation: /book
   Archives: /archives
+  Forum: /forum
+  About me: /about-me.html
+  sources: https://github.com/pieroproietti/penguins-eggs
+  npm: https://www.npmjs.com/package/penguins-eggs
+  debs: https://sourceforge.net/projects/penguins-eggs/files/packages-deb/
+  ISOs: https://sourceforge.net/projects/penguins-eggs/files/iso/
+  facebook: https://www.facebook.com/penguinseggs
+
 rss: /atom.xml
 
 # Content

@@ -2,7 +2,9 @@
 ## Docs: https://hexo.io/docs/configuration.html
 ## Source: https://github.com/hexojs/hexo/
 
-menu:
+#menu:
+theme: landscape
+theme_config:
   Home: /
   Documentation: /book
   Archives: /archives
@@ -105,7 +107,7 @@ ignore:
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: landscape
+#theme: landscape
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
