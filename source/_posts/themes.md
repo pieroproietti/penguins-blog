@@ -349,10 +349,10 @@ Para utilizar nosso tema tico, teremos simplesmente que especificar a bandeira -
 ```
 sudo eggs produce -vf --theme tico
 ```
-
+<font size="1"> 
 # Tradução
 
-Traduzido com a versão gratuita do tradutor - www.DeepL.com/Translator
+Traduzido com a versão gratuita do tradutor - www.DeepL.com/Translator 
 
 Se você quiser contribuir para a tradução para seu idioma, você pode baixar o conteúdo deste site com git.
 
@@ -364,4 +364,4 @@ corrigi-lo e enviá-lo ao autor: piero.proietti@gmail.com
 
 Gracias
 
-
+</font>
