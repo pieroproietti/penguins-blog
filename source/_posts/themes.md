@@ -131,9 +131,8 @@ The themes are an addon of eggs.
 
 They are seen by eggs in ```/etc/penguins-eggs.d/addons`` even though they reside in different positions depending on the type of installation and architecture in use.
 
-From this link, they are compiled and copied into the relevant directories. For calamares ```/etc/calamares/branding``.
-
-You should not, therefore, directly change the branding of calamares in /etc/calamares, but create an addon in ````/etc/penguins-eggs.d/addons``.
+From this link, they are compiled and copied into the relevant directories. For calamares ```/etc/calamares/branding```.
+You should not, therefore, directly change the branding of calamares in /etc/calamares, but create an addon in ```/etc/penguins-eggs.d/addons```.
 
 # link /etc/penguins-eggs.d/addons
 
@@ -160,7 +159,7 @@ ls /etc/penguins-eggs.d/addons/eggs
 
 Nowadays we only talk about themes, but the same goes for the other types of addons.
 
-Let's assume that our vendor is the tico user. Let's create a folder ````~/tico`` in our home.
+Let's assume that our vendor is the tico user. Let's create a folder ```~/tico``` in our home.
 
 We copy the content of /etc/penguins-eggs.d/eggs/theme into this one.
 
@@ -196,7 +195,7 @@ __NB: Following the update of eggs we may lose the link, which will have to be r
 
 We can modify and keep in our home our theme project that will be seen by eggs as /etc/penguins-eggs.d/addons/tico.
 
-Now we can start modifying the content of ````~/tico/theme``.
+Now we can start modifying the content of ```~/tico/theme```.
 
 ### The structure of the theme
 
@@ -265,7 +264,7 @@ Por exemplo:
 
 ```
 ls /etc/penguins-eggs.d/addons/eggs
-````
+```
 
 * dwagent 
 * installer-choice
