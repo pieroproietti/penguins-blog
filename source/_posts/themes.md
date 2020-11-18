@@ -208,7 +208,7 @@ In the theme folder there are three folders:
 
 In applications we simply find the link debian-install.desktop, in artwork the icon debian-install.png and in branding we find the template for squid. 
 
-I don't dwell on applications and artwork, those who do remastering will do very well. We will talk about branding instead.
+I don't write long on applications and artwork, those who do remastering will do very well. We will talk about branding instead.
 
 In branding there are two text files and some images. 
 
