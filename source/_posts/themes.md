@@ -233,7 +233,12 @@ To use our tico theme, we will simply have to specify the flag --theme vendor in
 sudo eggs produce -vf --theme tico
 ```
 
+# Translation
+Translated with the free version of the translator - www.DeepL.com/Translator 
 
+If you want to contribute to the translation to your language, you can download the content of this site with [git](https://github.com/pieroproietti/penguins-blog). Correct it and send it to the author [piero.proietti](mailto://piero.proietti@gmail.com).
+
+Thanx.qml
 
 
 # Portuguese (BR)
