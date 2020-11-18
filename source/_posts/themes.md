@@ -46,7 +46,7 @@ ls /etc/penguins-eggs.d/addons/eggs
 
 ## I temi 
 
-Oggi adesso parliamo solo di temi, ma lo stesso vale anche per gli altri tipi di addon.
+Oggi parliamo solo di temi, ma lo stesso vale anche per gli altri tipi di addon.
 
 Supponiamo che il nostro vendor sia l'utente tico. Creiamo, quindi, una cartella ```~/tico``` nella nostra home.
 
@@ -354,6 +354,8 @@ Traduzido com a versão gratuita do tradutor - www.DeepL.com/Translator
 
 <font size="1"> 
 Se você quiser contribuir para a tradução para seu idioma, você pode baixar o conteúdo deste site com git.
+
 Corrigi-lo e enviá-lo ao autor: piero.proietti@gmail.com
+
 Gracias
 </font>
