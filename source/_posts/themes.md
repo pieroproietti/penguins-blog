@@ -121,9 +121,9 @@ Per usare il nostro tema tico, dovremo semplicemente specificare il flag --theme
 sudo eggs produce -vf --theme tico
 ```
 
-
-
 # Portuguese (BR)
+
+[portugues](/images/flags/portugues.png)
 
 # Onde residem os temas
 
@@ -234,7 +234,7 @@ Para utilizar nosso tema tico, teremos simplesmente que especificar a bandeira -
 sudo eggs produce -vf --theme tico
 ```
 
-# tradução
+# Tradução
 
 Traduzido com a versão gratuita do tradutor - www.DeepL.com/Translator
 
