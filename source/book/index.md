@@ -63,6 +63,11 @@ Sinta-se à vontade para solicitar informações sobre o novo [fórum](/forum), 
 
 Same videos in our [channel](https://www.youtube.com/channel/UCWUYEEaaWJYnKF1OQTah5IA)
 
+# That's all Folks!
+No need other configurations, penguins-eggs are battery included or better, as in the real, live is inside!
+
+## More informations
+
 I'm not so great in making videos, if you make same videos to propose them contaction me.
 
 * site: [penguins-eggs.net](https://penguins-eggs.net)
