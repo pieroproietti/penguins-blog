@@ -65,6 +65,12 @@ You can also leave it without graphical interface and maybe include apache2, mys
 
 Whichever way is open, you will not have spurious libraries of previous installations and your system will always be able to reproduce and be reinstalled.
 
+# Translation
+Translated with the free version of the translator - www.DeepL.com/Translator 
+
+If you want to contribute to the translation to your language, you can download the content of this site with [git](https://github.com/pieroproietti/penguins-blog). Correct it and send it to the author [piero.proietti](mailto://piero.proietti@gmail.com).
+
+Thanks.
 
 # Portuguese (BR)
 
@@ -94,6 +100,13 @@ Portanto, depende de você: você pode decidir ter um remix leve e moderno com x
 Você também pode deixá-lo sem interface gráfica e talvez incluir apache2, mysql e php para ter um servidor xampp.
 
 Seja qual for o caminho aberto, você não terá bibliotecas espúrias de instalações anteriores e seu sistema sempre será capaz de reproduzir e ser reinstalado.
+
+# Tradução
+Traduzido com a versão gratuita do tradutor - www.DeepL.com/Translator 
+
+Se você quiser contribuir para a tradução para seu idioma, você pode baixar o conteúdo deste site com [git](https://github.com/pieroproietti/penguins-blog). Corrigi-lo e enviá-lo ao autor [piero.proietti](mailto://piero.proietti@gmail.com).
+
+Obrigado.
 
 
 ![install-deb](https://github.com/pieroproietti/penguins-eggs/blob/master/documents/terminal-lessons/eggs_install.gif?raw=truehttps://)

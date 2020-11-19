@@ -20,7 +20,5 @@ Probably there will still be some changes, I would like to create two channels o
 
 Note: _To use this function, You must have wget installed._ 
 
-![Update](/images/update.png) 
+![Update](https://github.com/pieroproietti/penguins-eggs/raw/master/documents/terminal-lessons/eggs_update-i.gif) 
 
-Stay tuned
-[contact me](https://gitter.im/penguins-eggs-1/community)
