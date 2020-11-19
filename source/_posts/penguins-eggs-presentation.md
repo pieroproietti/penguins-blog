@@ -92,9 +92,60 @@ and informations, curiosities, [forum](https://penguins-eggs.net).
 
 There is a series of easy [video terminal](https://penguins-eggs.net/terminal/) examples too.
 
+# Translation
+Translated with the free version of the translator - www.DeepL.com/Translator 
+
+If you want to contribute to the translation to your language, you can download the content of this site with [git](https://github.com/pieroproietti/penguins-blog). Correct it and send it to the author [piero.proietti](mailto://piero.proietti@gmail.com).
+
+Thanks.
+
+
+
 # Portuguese (BR)
 
 ![portugues](/images/flags/portugues.png)
 
 
-![presentation-1](/images/presentation-1.png)
+Há algum tempo todos nós sentimos a necessidade de um bom software de remasterização para Linux.
+
+Pessoalmente tenho usado remastersys, systemback, refracta, uck, etc. por anos, mas há alguns anos tem havido uma falta de software prático para construir o próprio remix - tanto pessoal quanto público - para distribuir a amigos ou fazer uma versão especializada. Estou pensando em distros especializados para música e muito mais.
+
+Bem, desta vez acabou e uma nova ferramenta de remasterização chegou e é madura e estável **penguins-eggs***. O
+
+penguins-eggs é um software de remasterização que permite a você criar sua própria versão do Linux e é compatível com ele:
+
+* Debian 10 (buster)
+* Debian 11 (bullseye)
+* Devuan beowulf
+* Deepin 20
+* Linux Mint 19.3 (tricia)
+* Linux Mint 20.0 (ulyana)
+* Ubunti 18.4 (bionic) LTS
+* Ubuntu 20.4 (focal) LTS
+* Ubuntu 20.10 (groovy)
+
+## As características dos penguins-eggs
+
+penguins-eggs permite a instalação do livecd criado com um instalador gráfico (calamares), do qual se cria automaticamente a configuração. Também é possível personalizar sua aparência, criando seus próprios temas.
+
+Graças a um pequeno repositório local no livecd, você pode instalar seu sistema mesmo sem conexão à Internet. 
+
+Inclui uma ferramenta para a limpeza do cache apt e dos arquivos de log. 
+
+Para Debian buster, Debian bullseye, Ubuntu focal, há remixes chamados naked (nua) nos quais não há interface gráfica instalada. Estes são excelentes pontos de partida para sua personalização.
+
+Funciona e você pode encontrar inúmeros exemplos de distros remasterizados com eggs diretamente da página de penguins-eggs de sourgeforge. 
+
+Não vem do nada, o primeiro commit é de 2017, faz agora três anos,
+
+## Manual do usuário e instruções
+Você pode encontrar o manual do usuário em diferentes idiomas [english](/book/english.html), [italiano](/book/italian.html), [português](/book/portugues.html) e informações, curiosidades. [fórum](https://penguins-eggs.net).
+
+Há também vários exemplos fáceis de sessões em [terminal](https://penguins-eggs.net/terminal/).
+
+# Tradução
+Traduzido com a versão gratuita do tradutor - www.DeepL.com/Translator 
+
+Se você quiser contribuir para a tradução para seu idioma, você pode baixar o conteúdo deste site com [git](https://github.com/pieroproietti/penguins-blog). Corrigi-lo e enviá-lo ao autor [piero.proietti](mailto://piero.proietti@gmail.com).
+
+Obrigado.
