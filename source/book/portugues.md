@@ -12,6 +12,12 @@ date: 2020-06-20 07:38:32
 * Vamos fazer nossa própria remixagem * (*cream-our own-remix)
 * [Baixar imagens ISO](#download-images-iso)
 
+## Artigos no blog
+* [apresentação](https://penguins-eggs.net/2020/11/07/penguins-eggs-presentation/#Portuguese-BR)
+* [temas](https://penguins-eggs.net/2020/11/18/themes/#Portuguese-BR)
+* [basket](https://penguins-eggs.net/2020/11/12/basket/#Portuguese-BR)
+* [naked](https://penguins-eggs.net/2020/11/03/naked/#Portuguese-BR)
+
 # Atualização
 Este manual do usuário de eggs de pingüim é atualizado para 9 de outubro de 2020, eggs-7.6.57-1.deb. 
 

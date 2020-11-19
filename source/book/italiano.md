@@ -10,11 +10,12 @@ lang: it_IT
 * [I comandi](#i-comandi)
 * [Creiamo una nostra remix](#creiamo-una-nostra-remix)
 * [Scarica le immagini ISO](#scarica-le-immagini-iso)
+
 ## articoli dal blog
-* [presentazione](https://penguins-eggs.net/2020/11/07/penguins-eggs-presentation/#italiano)
-* [temi](https://penguins-eggs.net/2020/11/18/themes/#italiano)
-* [basket](https://penguins-eggs.net/2020/11/12/basket/#italiano)
-* [naked](https://penguins-eggs.net/2020/11/03/naked/#italiano)
+* [presentazione](https://penguins-eggs.net/2020/11/07/penguins-eggs-presentation/#Italiano)
+* [temi](https://penguins-eggs.net/2020/11/18/themes/#Italiano)
+* [basket](https://penguins-eggs.net/2020/11/12/basket/#Italiano)
+* [naked](https://penguins-eggs.net/2020/11/03/naked/#Italiano)
 
 
 # Aggiornamento

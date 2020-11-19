@@ -12,6 +12,12 @@ lang: en_US
 * [Let's create our own remix](#Lets-create-our-own-remix)
 * [Download the ISO images](#download-the-iso-images)
 
+## Articles from the blog
+* [presentation](https://penguins-eggs.net/2020/11/07/penguins-eggs-presentation/#English)
+* [themes](https://penguins-eggs.net/2020/11/18/themes/#English)
+* [basket](https://penguins-eggs.net/2020/11/12/basket/#English)
+* [naked](https://penguins-eggs.net/2020/11/03/naked/#English)
+
 
 # Upgrade
 This penguin's eggs user manual is updated to October 9, 2020, eggs-7.6.57-1.deb. 
