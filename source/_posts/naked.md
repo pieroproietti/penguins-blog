@@ -4,10 +4,110 @@ layout: post
 date: 2020-11-03 17:21:44
 ---
 
-naked is the minimum version of linux reproducible with eggs. What does it do? Essentially it reproduces, but before playback it can be integrated by a graphical interface, server software and so on, leaving you free to experiment on a clean system.
+# Index
+* [Italiano](#Italiano)
+* [English](#English)
+* [Portuguese (BR)](#Portuguese-BR)
 
-After a long time, I recreated the naked versions of Debian buster and Debian bullseye, in 32 bit and 64 bit versions.
+# Italiano
+![italiano](/images/flags/italian.webp)
 
-Next, a naked version of Ubuntu focal will be released.
+# naked
 
-[bullseye](https://sourceforge.net/projects/penguins-eggs/files/iso/debian/bullseye/)
+La versione **naked** di una distro è una installazione minimale (nuda), tuttavia riproducibile con eggs. 
+
+Può essere creata velocemente da zero con una installazione minimale di Debian/Devuan/Ubuntu senza interfaccia grafica. 
+
+A questa installazione minimale va aggiunto eggs per permettere la riproducibilità dell'installazione stessa.
+
+## A che serve questa versione?
+
+Oltre alle caratteristiche di una installazione cli minimale, le remix naked sono capaci di riprodursi. 
+
+E' possibile creare una iso dell'installazione ed installarla su una nuova macchina. 
+
+Trattandosi di una versione cli, naturalmente non sarà possibile utilizzare l'installer grafico calamares, ma dovremo optare per l'installer cli incluso in eggs.
+
+Però, prima di riprodurla possiamo integrarla con il software che ci interessa. 
+
+E quindi, sta a voi: potete decidere di avere una remix leggera e moderna con xfce su una architettura i386. oppure preferire cinnamon o kde, gnome, etc.
+
+Potete pure lasciarla senza interfaccia grafica e magari includere apache2, mysql e php per avere un server xampp.
+
+Qualsiasi strada è aperta, non avrete librerie spurie di installazioni precedenti ed il vostro sistema sarà sempre in grado di riprodursi e di essere reinstallato.
+
+# English
+![english](/images/flags/english.png)
+
+The **naked** version of a distro is a minimal (cli) installation, however, reproducible with eggs. 
+
+You can create an iso of the installation and install it on a new machine. 
+
+Since it is a cli version, of course you won't be able to use the graphical installer calamares, but you will have to opt for the installer cli included in eggs.
+
+## What is this version for?
+
+
+
+What does it do? 
+
+In addition to the characteristics of a minimal cli installation, naked remixes are capable of reproduction. 
+
+It is possible to create an iso of the installation and install it on a new machine. 
+
+Since it is a cli version, of course you won't be able to use the graphical installer calamares, but you will have to opt for the installer cli included in eggs.
+
+However, before reproducing it we can integrate it with the software we are interested in. 
+
+And so, it's up to you: you can decide to have a light and modern remix with xfce on an i386 architecture. or you can prefer cinnamon or kde, gnome, etc.
+
+You can also leave it without graphical interface and maybe include apache2, mysql and php to have an xampp server.
+
+Whichever way is open, you will not have spurious libraries of previous installations and your system will always be able to reproduce and be reinstalled.
+
+
+# Portuguese (BR)
+
+![portugues](/images/flags/portugues.png)
+
+# naked
+
+A versão **naked*** de uma distro é uma instalação mínima (nua), porém, reproduzível com eggs. 
+
+Ele pode ser criado rapidamente do zero com uma instalação mínima de Debian/Devuan/Ubuntu sem interface gráfica. 
+
+O eggs devem ser adicionados a esta instalação mínima para permitir que a instalação seja reprodutível.
+
+
+## Para que serve esta versão?
+
+Além das características de uma instalação mínima (cli), os remixes naked são capazes de se reproduzir. 
+
+É possível criar uma iso da instalação e instalá-la em uma nova máquina. 
+
+Como esta é uma versão cli, é claro que você não poderá usar o instalador gráfico calamares, mas teremos que optar pelo instalador cli incluído nos ovos.
+
+Entretanto, antes de reproduzi-lo, podemos integrá-lo com o software que nos interessa. 
+
+Portanto, depende de você: você pode decidir ter um remix leve e moderno com xfce em uma arquitetura i386. ou você pode preferir canela ou kde, gnome, etc.
+
+Você também pode deixá-lo sem interface gráfica e talvez incluir apache2, mysql e php para ter um servidor xampp.
+
+Seja qual for o caminho aberto, você não terá bibliotecas espúrias de instalações anteriores e seu sistema sempre será capaz de reproduzir e ser reinstalado.
+
+
+![install-deb](https://github.com/pieroproietti/penguins-eggs/raw/master/documents/terminal-lessons/eggs_install-deb.gif)
+
+
+## Ask for help
+* site: [penguins-eggs.net](https://penguins-eggs.net)
+* gitter: [penguin's eggs chat](https://gitter.im/penguins-eggs-1/community?source=orgpage)
+* issues: [github](https://github.com/pieroproietti/penguins-eggs/issues).
+* facebook:  
+   * [penguin's eggs Group](https://www.facebook.com/groups/128861437762355/)
+   * [penguin's eggs Page](https://www.facebook.com/penguinseggs)
+   * mail: piero.proietti@gmail.com
+
+## Copyright and licenses
+Copyright (c) 2017, 2020 [Piero Proietti](https://github.com/pieroproietti), dual licensed under the MIT or GPL Version 2 licenses.
+

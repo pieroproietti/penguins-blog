@@ -19,7 +19,7 @@ Da qualche tempo abbiamo tutti sentito l'esigenza di un valido software di rimas
 
 Personalmente ho usato remastersys, systemback, refracta, uck, etc per anni, ma da qualche anno c'è stata una mancanza di un software pratico per la costruzione di una propria remix - sia personale che pubblica - da distribuire ad amici o farci una versione specializzata. Penso a distro specializzate ad esempio per la musica ed altro.
 
-Bene, questo tempo è finito ed un nuovo strumento di rimasterizzazione è giunto ed è maturo e stabile **penguins-eggs**. Il
+Bene, questo tempo è finito ed un nuovo strumento di rimasterizzazione è giunto ed è maturo e stabile **penguins-eggs**. 
 
 penguins-eggs è un software di rimasterizzazione che ti permette di creare la tua propria versione di Linux ed è compatibile con:
 
