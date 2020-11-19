@@ -96,7 +96,7 @@ Você também pode deixá-lo sem interface gráfica e talvez incluir apache2, my
 Seja qual for o caminho aberto, você não terá bibliotecas espúrias de instalações anteriores e seu sistema sempre será capaz de reproduzir e ser reinstalado.
 
 
-![install-deb](https://github.com/pieroproietti/penguins-eggs/raw/master/documents/terminal-lessons/eggs_install-deb.gif)
+![install-deb](https://github.com/pieroproietti/penguins-eggs/blob/master/documents/terminal-lessons/eggs_install.gif?raw=truehttps://)
 
 
 ## Ask for help
