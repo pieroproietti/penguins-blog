@@ -10,6 +10,12 @@ lang: it_IT
 * [I comandi](#i-comandi)
 * [Creiamo una nostra remix](#creiamo-una-nostra-remix)
 * [Scarica le immagini ISO](#scarica-le-immagini-iso)
+## articoli dal blog
+* [presentazione](https://penguins-eggs.net/2020/11/07/penguins-eggs-presentation/#italiano)
+* [temi](https://penguins-eggs.net/2020/11/18/themes/#italiano)
+* [basket](https://penguins-eggs.net/2020/11/12/basket/#italiano)
+* [naked](https://penguins-eggs.net/2020/11/03/naked/#italiano)
+
 
 # Aggiornamento
 Questo manuale utente di penguin's eggs, è aggiornato al 9 ottobre 2020, eggs-7.6.57-1.deb. 
