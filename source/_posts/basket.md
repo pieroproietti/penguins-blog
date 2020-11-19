@@ -4,9 +4,46 @@ layout: post
 date: 2020-11-12 17:21:26
 ---
 
-# Where are you going to get the eggs?
+# Introducing basket
 
 ![basket](/images/basket.jpg)
+
+# Index
+* [Italiano](#Italiano)
+* [English](#English)
+* [Portuguese (BR)](#Portuguese-BR)
+
+# Italiano
+![italiano](/images/flags/italian.webp)
+
+# Dove andate a prendere le uova?
+
+La maggior parte dei programmi utilizzati da una distribuzione risiede nelle repository della stessa.
+
+eggs è differente, sia perchè p un software relativamente giovane - le uniche repository attiva al momento sono quelle del progetto ufficiozero.org - e perchè, proprio per essere stato concepito per essere compatibile con più distribuzioni Linux, è nato - per così dire - figlio di una madre ignota!
+
+Aspettare di avere eggs direttamente nella repository della propria distribuzione o creare una repository per eggs stesso, dove andare a scaricarlo? 
+
+Dove andate normalmente a cercare le uova più fresche?
+
+E così, come sempre, andrete a cercare le uova nel basket (cestino).
+
+Il basker per gli aggiornamenti di eggs è attualmente composto di due server, in uno sono allocati i file *.deb di eggs nelle varie versioni, mentre sul secondo è attivo un servizio che fornisce ad eggs le informazione su dove aggiornare e da dove scaricare l'aggiornamento.
+
+Il risultato finale è che, dato il comando: 
+
+```sudo eggs update```.
+
+e selezionando **basket** come metodo di aggiornamento, vi verranno proposte le varie versioni che, se selezionate, forniranno il link per il download del pacchetto e lo installeranno automaticamente.
+
+Un metodo semplice e pulito per stare aggiornati. También
+
+A Roma potremmo dire: "__proprio da figli de puttana!__"
+
+# English
+![english](/images/flags/english.png)
+
+# Where are you going to get the eggs?
 
 Most of the programs of a distribution resides in the repositories of the same.
 
@@ -28,7 +65,49 @@ A clean and effective system to stay up to date.
 
 In Rome we can say "__proprio da figli de puttana!__"
 
+# Translation
+Translated with the free version of the translator - www.DeepL.com/Translator 
+
+If you want to contribute to the translation to your language, you can download the content of this site with [git](https://github.com/pieroproietti/penguins-blog). Correct it and send it to the author [piero.proietti](mailto://piero.proietti@gmail.com).
+
+Thanks.
+
+
+
+# Portuguese (BR)
+
+![portugues](/images/flags/portugues.png)
+
+# Onde você vai conseguir os ovos?
+
+A maioria dos programas utilizados por uma distribuição reside em seus repositórios.
+
+eggs é diferente, tanto porque es um software relativamente jovem - os únicos repositórios ativos no momento são os do projeto ufficiozero.org - como porque, só porque foi projetado para ser compatível com várias distribuições Linux, nasceu - por assim dizer - o filho de uma mãe desconhecida!
+
+Esperando para ter ovos diretamente no repositório de sua distribuição ou criar um repositório para os próprios ovos, onde fazer o download? 
+
+Aonde você normalmente vai para procurar os ovos mais frescos?
+
+E assim, como sempre, você irá à procura de ovos na cesta (cesta).
+
+O basker para atualizações de ovos é atualmente composto de dois servidores, em um estão alocados os arquivos *.deb de ovos nas várias versões, enquanto no segundo está ativo um serviço que fornece aos ovos informações sobre onde atualizar e onde baixar a atualização.
+
+O resultado final é que, dado o comando: 
+
+```sudo eggs update```
+
+e selecionando **basket** como método de atualização, serão oferecidas as várias versões que, se selecionadas, fornecerão o link para baixar o pacote e instalá-lo automaticamente.
+
+Um método simples e limpo para se manter atualizado. También
+
+Em Roma, poderíamos dizer: "__proprio da figli de puttana!__"
+
+# Tradução
+Traduzido com a versão gratuita do tradutor - www.DeepL.com/Translator 
+
+Se você quiser contribuir para a tradução para seu idioma, você pode baixar o conteúdo deste site com [git](https://github.com/pieroproietti/penguins-blog). Corrigi-lo e enviá-lo ao autor [piero.proietti](mailto://piero.proietti@gmail.com).
+
+Obrigado.
+
+
 ![update](https://github.com/pieroproietti/penguins-eggs/raw/master/documents/terminal-lessons/eggs_update.gif)
-
-
-Soon, I will also introduce an alert to warn about eggs updates.
