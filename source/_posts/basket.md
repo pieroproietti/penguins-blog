@@ -84,13 +84,13 @@ A maioria dos programas utilizados por uma distribuição reside em seus reposit
 
 eggs é diferente, tanto porque es um software relativamente jovem - os únicos repositórios ativos no momento são os do projeto ufficiozero.org - como porque, só porque foi projetado para ser compatível com várias distribuições Linux, nasceu - por assim dizer - o filho de uma mãe desconhecida!
 
-Esperando para ter ovos diretamente no repositório de sua distribuição ou criar um repositório para os próprios ovos, onde fazer o download? 
+Esperando para ter ovos diretamente no repositório de sua distribuição ou criar um repositório para os próprios eggs, onde fazer o download? 
 
 Aonde você normalmente vai para procurar os ovos mais frescos?
 
-E assim, como sempre, você irá à procura de ovos na cesta (cesta).
+E assim, como sempre, você irá à procura de ovos na basket (cesta).
 
-O basker para atualizações de ovos é atualmente composto de dois servidores, em um estão alocados os arquivos *.deb de ovos nas várias versões, enquanto no segundo está ativo um serviço que fornece aos ovos informações sobre onde atualizar e onde baixar a atualização.
+O basket para atualizações de eggs é atualmente composto de dois servidores, em um estão alocados os arquivos *.deb de eggs nas várias versões, enquanto no segundo está ativo um serviço que fornece aos eggs informações sobre onde atualizar e onde baixar a atualização.
 
 O resultado final é que, dado o comando: 
 
