@@ -8,8 +8,8 @@ I updated the [manual](/book/) today - only in [italian](/book/italiano.html) an
 
 I tested the day realease on a UEFI machine, both iso production and install the system.
 
-
 ![groovy-gorilla-install](/images/groovy-gorilla-install.png)
 
 Is there anybody out there?
+
 [contact me](https://gitter.im/penguins-eggs-1/community)
