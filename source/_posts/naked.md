@@ -5,36 +5,9 @@ date: 2020-11-03 17:21:44
 ---
 
 # Index
-* [Italiano](#Italiano)
 * [English](#English)
+* [Italiano](#Italiano)
 * [Portuguese (BR)](#Portuguese-BR)
-
-# Italiano
-![italiano](/images/flags/italian.webp)
-
-# naked
-
-La versione **naked** di una distro è una installazione minimale (nuda), tuttavia riproducibile con eggs. 
-
-Può essere creata velocemente da zero con una installazione minimale di Debian/Devuan/Ubuntu senza interfaccia grafica. 
-
-A questa installazione minimale va aggiunto eggs per permettere la riproducibilità dell'installazione stessa.
-
-## A che serve questa versione?
-
-Oltre alle caratteristiche di una installazione cli minimale, le remix naked sono capaci di riprodursi. 
-
-E' possibile creare una iso dell'installazione ed installarla su una nuova macchina. 
-
-Trattandosi di una versione cli, naturalmente non sarà possibile utilizzare l'installer grafico calamares, ma dovremo optare per l'installer cli incluso in eggs.
-
-Però, prima di riprodurla possiamo integrarla con il software che ci interessa. 
-
-E quindi, sta a voi: potete decidere di avere una remix leggera e moderna con xfce su una architettura i386. oppure preferire cinnamon o kde, gnome, etc.
-
-Potete pure lasciarla senza interfaccia grafica e magari includere apache2, mysql e php per avere un server xampp.
-
-Qualsiasi strada è aperta, non avrete librerie spurie di installazioni precedenti ed il vostro sistema sarà sempre in grado di riprodursi e di essere reinstallato.
 
 # English
 ![english](/images/flags/english.png)
@@ -71,6 +44,33 @@ Translated with the free version of the translator - www.DeepL.com/Translator
 If you want to contribute to the translation to your language, you can download the content of this site with [git](https://github.com/pieroproietti/penguins-blog). Correct it and send it to the author [piero.proietti](mailto://piero.proietti@gmail.com).
 
 Thanks.
+
+# Italiano
+![italiano](/images/flags/italian.webp)
+
+# naked
+
+La versione **naked** di una distro è una installazione minimale (nuda), tuttavia riproducibile con eggs. 
+
+Può essere creata velocemente da zero con una installazione minimale di Debian/Devuan/Ubuntu senza interfaccia grafica. 
+
+A questa installazione minimale va aggiunto eggs per permettere la riproducibilità dell'installazione stessa.
+
+## A che serve questa versione?
+
+Oltre alle caratteristiche di una installazione cli minimale, le remix naked sono capaci di riprodursi. 
+
+E' possibile creare una iso dell'installazione ed installarla su una nuova macchina. 
+
+Trattandosi di una versione cli, naturalmente non sarà possibile utilizzare l'installer grafico calamares, ma dovremo optare per l'installer cli incluso in eggs.
+
+Però, prima di riprodurla possiamo integrarla con il software che ci interessa. 
+
+E quindi, sta a voi: potete decidere di avere una remix leggera e moderna con xfce su una architettura i386. oppure preferire cinnamon o kde, gnome, etc.
+
+Potete pure lasciarla senza interfaccia grafica e magari includere apache2, mysql e php per avere un server xampp.
+
+Qualsiasi strada è aperta, non avrete librerie spurie di installazioni precedenti ed il vostro sistema sarà sempre in grado di riprodursi e di essere reinstallato.
 
 # Portuguese (BR)
 

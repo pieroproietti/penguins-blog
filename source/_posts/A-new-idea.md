@@ -19,6 +19,11 @@ The idea, therefore, is to create a microservice that queries, provides:
 - url
 
 Does anyone want to cooperate? Any suggestions? 
-[contact me](https://gitter.im/penguins-eggs-1/community)
 
+Yes, it is born, and called basket!
+
+Contact me on [gitter](https://gitter.im/penguins-eggs-1/community)
+
+
+![update](https://github.com/pieroproietti/penguins-eggs/raw/master/documents/terminal-lessons/eggs_update.gif)
 
