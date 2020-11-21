@@ -63,7 +63,6 @@ Sinta-se à vontade para solicitar informações sobre o novo [fórum](/forum), 
 
 Same videos in our [channel](https://www.youtube.com/channel/UCWUYEEaaWJYnKF1OQTah5IA)
 
-
 I'm not so great in making videos, if you make same videos to propose them contaction me.
 
 # That's all Folks!
@@ -81,3 +80,4 @@ No need other configurations, penguins-eggs are battery included or better, as i
 
 ## Copyright and licenses
 Copyright (c) 2017, 2020 [Piero Proietti](https://github.com/pieroproietti), dual licensed under the MIT or GPL Version 2 licenses.
+
