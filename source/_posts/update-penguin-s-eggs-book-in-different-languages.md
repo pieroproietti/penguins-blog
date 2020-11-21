@@ -9,7 +9,6 @@ category: documentation
 # Index
 * [English](#English)
 * [Italiano](#Italiano)
-* [Portuguese (BR)](#Portuguese-BR)
 
 
 # English
@@ -43,4 +42,4 @@ Certo, ma c'è una ragione o meglio tre:
 * terzo gli [esempi d'uso da terminale](/terminal/).html
 
 
-![install-deb](https://github.com/pieroproietti/penguins-eggs/raw/master/documents/terminal-lessons/eggs_install-deb.gif)
+![install-deb](https://github.com/pieroproietti/penguins-eggs/raw/master/documents/terminal-lessons/eggs_update-i.gif)
