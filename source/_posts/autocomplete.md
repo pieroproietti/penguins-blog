@@ -56,6 +56,16 @@ artisan@demo:~$ eggs priduce
 Did you mean produce? [y/n]: 
 ```
 
+E' anche possibile visualizzare tutti i flags disponibili per un comando dato:
+
+```
+artisan@demo:~$ eggs  produce --
+--adapt     --fast      --ichoice   --script    --yolk      
+--basename  --final     --pve       --theme     
+--compress  --help      --rsupport  --verbose   
+artisan@demo:~$ eggs  produce --
+```
+
 ## Installazione di autocomplete per l'utente corrente
 
 Per beneficiare della funzione autocomplete, tutto quello che dobbiamo fare è generare i file di configurazione, comando 
@@ -138,6 +148,18 @@ artisan@demo:~$ eggs priduce
  ›   Warning: priduce is not a eggs command.
 Did you mean produce? [y/n]: 
 ```
+
+It is also possible to display all available flags for a given command:
+
+
+```
+artisan@demo:~$ eggs  produce --
+--adapt     --fast      --ichoice   --script    --yolk      
+--basename  --final     --pve       --theme     
+--compress  --help      --rsupport  --verbose   
+artisan@demo:~$ eggs  produce --
+```
+
 
 ## Installation of autocomplete for the current user
 
@@ -225,6 +247,16 @@ Por outro lado, se o comando não encontrado detecta um comando desconhecido, el
 artisan@demo:~$ eggs priduce
  ›   Warning: priduce is not a eggs command.
 Did you mean produce? [y/n]: 
+```
+
+Também é possível exibir todas as bandeiras disponíveis para um determinado comando:
+
+```
+artisan@demo:~$ eggs  produce --
+--adapt     --fast      --ichoice   --script    --yolk      
+--basename  --final     --pve       --theme     
+--compress  --help      --rsupport  --verbose   
+artisan@demo:~$ eggs  produce --
 ```
 
 ## Instalando o autocompletar para o usuário atual
