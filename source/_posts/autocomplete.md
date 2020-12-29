@@ -13,7 +13,7 @@ Una moderna applicazione cli contiene due utili funzioni, l'autocomplete e l'avv
 
 eggs a partire dalla versione 7.7.0 contiene entrambe le casatteristiche, grazie ai plugin di oclif-dev con il quale è sviluppato.
 
-Il risultato di autocomplete è che digitango eggs seguito da due tab, vi verranno esposte le opzioni disponibili. 
+Il risultato di autocomplete è che digitando eggs seguito da due tab, vi verranno esposte le opzioni disponibili. 
 
 ```
 artisan@demo:~$ eggs 
@@ -25,7 +25,18 @@ export:docs     prerequisites   tools:pve
 export:iso      produce         tools:sanitize  
 ```
 
-digitando eggs pr seguito da tab, verranno mostrate le possibili opzioni produce e prerequisites e così via per tutti i comandi.
+mentre, digitando 
+```eggs pr```
+
+seguito da tab, verranno mostrate le possibili opzioni:
+
+```
+artisan@demo:~$ eggs  pr
+prerequisites  produce        
+artisan@demo:~$ eggs  pr
+```
+ 
+ e così via per tutti i comandi.
 
 D'altra parte la funziona command not found se rileva in ingresso un comando sconosciuto, ci suggerirà il comando più vicino.
 
