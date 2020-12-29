@@ -187,11 +187,11 @@ At this point type eggs followed by two tabs and you're done.
 
 ## Autocompletar e comando não encontrado
 
-Uma aplicação cliente moderna contém duas características úteis, o autocompletar e o comando não encontrado aviso, seguido pela sugestão do comando mais próximo.
+Uma aplicação de linha de comando moderna contém duas características úteis, o autocompletar e o comando não encontrado aviso, seguido pela sugestão do comando mais próximo.
 
 Eggs desde a versão 7.7.0 contém ambas as características, graças aos plugins oclif-dev com os quais é desenvolvido.
 
-O resultado do autocompletar é que a digitação de ovos seguida por duas abas mostrará as opções disponíveis. 
+O resultado do autocompletar é que a digitação eggs seguida por duas abas mostrará as opções disponíveis. 
 
 
 ```
