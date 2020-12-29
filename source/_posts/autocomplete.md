@@ -84,3 +84,5 @@ printf "$(eggs autocomplete:script bash)" >> ~/.bashrc; source ~/.bashrc
 e lanciarla da terminale.
 
 A questo punto digitate eggs seguito da due tab ed il gioco è fatto.
+
+![autocomplete](/images/autocomplete.png)
