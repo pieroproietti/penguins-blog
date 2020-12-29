@@ -184,3 +184,85 @@ At this point type eggs followed by two tabs and you're done.
 # Portuguese (BR)
 
 ![portugues](/images/flags/portugues.png)
+
+## Autocompletar e comando não encontrado
+
+Uma aplicação cliente moderna contém duas características úteis, o autocompletar e o comando não encontrado aviso, seguido pela sugestão do comando mais próximo.
+
+Eggs desde a versão 7.7.0 contém ambas as características, graças aos plugins oclif-dev com os quais é desenvolvido.
+
+O resultado do autocompletar é que a digitação de ovos seguida por duas abas mostrará as opções disponíveis. 
+
+
+```
+artisan@demo:~$ eggs 
+adapt           help            remove          tools:skel
+autocomplete    info            tools:clean     tools:yolk
+calamares       install         tools:initrd    update
+export:deb      kill            tools:locales   
+export:docs     prerequisites   tools:pve       
+export:iso      produce         tools:sanitize  
+```
+durante a digitação 
+
+```
+eggs pr
+```
+
+seguido de tabulação, as opções possíveis serão mostradas:
+
+```
+artisan@demo:~$ eggs  pr
+prerequisites  produce        
+artisan@demo:~$ eggs  pr
+```
+E assim por diante para todos os comandos.
+
+
+Por outro lado, se o comando não encontrado detecta um comando desconhecido, ele sugerirá o comando mais próximo.
+
+```
+artisan@demo:~$ eggs priduce
+ ›   Warning: priduce is not a eggs command.
+Did you mean produce? [y/n]: 
+```
+
+## Instalando o autocompletar para o usuário atual
+
+Para aproveitar o recurso de autocompletar, tudo o que precisamos fazer é gerar os arquivos de configuração, comandar 
+
+```
+eggs autocomplete bash
+```
+
+Que mostrará a seguinte tela:
+
+```
+artisan@demo:~$ eggs autocomplete
+Building the autocomplete cache... done
+
+Setup Instructions for EGGS CLI Autocomplete ---
+
+1) Add the autocomplete env var to your bash profile and source it
+$ printf "$(eggs autocomplete:script bash)" >> ~/.bashrc; source ~/.bashrc
+
+NOTE: If your terminal starts as a login shell you may need to print the init script into ~/.bash_profile or ~/.profile.
+
+2) Test it out, e.g.:
+$ eggs <TAB><TAB>                 # Command completion
+$ eggs command --<TAB><TAB>       # Flag completion
+
+Enjoy!
+
+```
+
+copie o código para adicionar o autocompletar ao seu perfil .bashrc
+
+
+```
+printf "$(eggs autocomplete:script bash)" >> ~/.bashrc; source ~/.bashrc
+```
+
+e o execute a partir do terminal.
+
+Agora digite eggs seguidos de duas abas e está pronto!
