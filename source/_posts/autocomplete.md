@@ -39,9 +39,11 @@ Did you mean produce? [y/n]:
 
 Per beneficiare della funzione autocomplete, tutto quello che dobbiamo fare è generare i file di configurazione, comando 
 
-```eggs autocomplate```
+```
+eggs autocomplate bash
+```
 
-Che mostrerà:configure
+Che mostrerà la seguente schermata:
 
 ```
 artisan@demo:~$ eggs autocomplete
@@ -64,6 +66,10 @@ Enjoy!
 
 copiare il codice per aggiungere autocomplete al vostro profilo .bashrc
 
-```printf "$(eggs autocomplete:script bash)" >> ~/.bashrc; source ~/.bashrc```
+```
+printf "$(eggs autocomplete:script bash)" >> ~/.bashrc; source ~/.bashrc
+```
 
 e lanciarla da terminale.
+
+A questo punto digitate eggs seguito da due tab ed il gioco è fatto.
