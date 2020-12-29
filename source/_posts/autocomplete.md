@@ -4,6 +4,14 @@ layout: post
 date: 2020-12-29 09:08:21
 ---
 
+![autocomplete](/images/autocomplete.png)
+
+# Index
+* [Italiano](#Italiano)
+* [English](#English)
+* [Portuguese (BR)](#Portuguese-BR)
+
+
 # Italiano
 ![italiano](/images/flags/italian.webp)
 
@@ -11,7 +19,7 @@ date: 2020-12-29 09:08:21
 
 Una moderna applicazione cli contiene due utili funzioni, l'autocomplete e l'avvertimeno di comand not found, seguito dal suggerimento del comando più vicino.
 
-eggs a partire dalla versione 7.7.0 contiene entrambe le casatteristiche, grazie ai plugin di oclif-dev con il quale è sviluppato.
+eggs a partire dalla versione 7.7.0 contiene entrambe le caratteristiche, grazie ai plugin di oclif-dev con il quale è sviluppato.
 
 Il risultato di autocomplete è che digitando eggs seguito da due tab, vi verranno esposte le opzioni disponibili. 
 
@@ -85,4 +93,12 @@ e lanciarla da terminale.
 
 A questo punto digitate eggs seguito da due tab ed il gioco è fatto.
 
-![autocomplete](/images/autocomplete.png)
+# English
+![english](/images/flags/english.png)
+
+# Where are you going to get the eggs?
+
+
+# Portuguese (BR)
+
+![portugues](/images/flags/portugues.png)
