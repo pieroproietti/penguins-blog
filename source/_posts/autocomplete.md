@@ -105,6 +105,15 @@ e lanciarla da terminale.
 
 A questo punto digitate eggs seguito da due tab ed il gioco è fatto.
 
+## Installazione di autocomplete per tutti gli utenti
+
+Per utilizzare l'autocomplete di eggs per tutti gli utenti e, quindi, anche per l'utente live del liveCD, occorre copiare il file ~/.cache/penguins-eggs/autocomplete/functions/bash/eggs.bash in /etc/bash_complete.d:
+```
+sudo cp ~/.cache/penguins-eggs/autocomplete/functions/bash/eggs.bash /etc/bash_complete.d
+```
+
+A questo punto eggs autocomplete sarà disponibile per tutti gli utenti.
+
 # English
 ![english](/images/flags/english.png)
 
@@ -199,8 +208,14 @@ and launch it from the terminal.
 
 At this point type eggs followed by two tabs and you're done.
 
+## Installing eggs autocomplete for all users
 
+To use the eggs autocomplete for all users and, therefore, also for the live user of the liveCD, you need to copy the file ~/.cache/penguins-eggs/autocomplete/functions/bash/eggs.bash in /etc/bash_complete.d:
+```
+sudo cp ~/.cache/penguins-eggs/autocomplete/functions/bash/eggs.bash /etc/bash_complete.d
+```
 
+At this point eggs autocomplete will be available for all users.
 
 
 # Portuguese (BR)
@@ -298,3 +313,16 @@ printf "$(eggs autocomplete:script bash)" >> ~/.bashrc; source ~/.bashrc
 e o execute a partir do terminal.
 
 Agora digite eggs seguidos de duas abas e está pronto!
+
+
+## Instalação eggs autocomplete para todos os usuários
+
+Para utilizar os eggs autocomplete  para todos os usuários e, portanto, também para o usuário vivo do liveCD, é necessário copiar o arquivo 
+ ~/.cache/penguins-eggs/autocomplete/functions/bash/eggs.bash in /etc/bash_complete.d:
+
+```
+sudo cp ~/.cache/penguins-eggs/autocomplete/functions/bash/eggs.bash /etc/bash_complete.d
+```
+
+Neste momento, os eggs autocomple estarão disponíveis para todos os usuários.
+
