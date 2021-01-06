@@ -36,7 +36,7 @@ Are little videos, very lite - made with simple gif images - of [terminal sample
 * [others documents](https://github.com/pieroproietti/penguins-eggs/blob/master/documents)
 
 # Videos
-![](/images/youtube.svg)
+<a href='https://www.youtube.com/channel/UCWUYEEaaWJYnKF1OQTah5IA'>![](/images/youtube.svg)</a>
 
 Same videos in our [channel](https://www.youtube.com/channel/UCWUYEEaaWJYnKF1OQTah5IA)
 
