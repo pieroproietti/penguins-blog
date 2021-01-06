@@ -35,6 +35,13 @@ Are little videos, very lite - made with simple gif images - of [terminal sample
 * [Changelog](https://github.com/pieroproietti/penguins-eggs/blob/master/changelog.md)
 * [others documents](https://github.com/pieroproietti/penguins-eggs/blob/master/documents)
 
+# Videos
+![](/images/youtube.svg)
+
+Same videos in our [channel](https://www.youtube.com/channel/UCWUYEEaaWJYnKF1OQTah5IA)
+
+I'm not so great in making videos, if you make same videos to propose them contaction me.
+
 # Forum
 ![](/images/forum.png)
 
@@ -57,13 +64,6 @@ Sinta-se à vontade para solicitar informações sobre o novo [fórum](/forum), 
 <img src="/images/flags/bulgarian.webp" width="30" height="12" title="български">
 
 Чувствайте се свободни да поискате информация за новия [форум](/forum), първо трябва да се [регистрирате](/forum/register). В момента нямаме толкова много хора, но аз ще ви отговоря лично с надеждата да нарасне малка общност.
-
-# Videos
-![](/images/youtube.svg)
-
-Same videos in our [channel](https://www.youtube.com/channel/UCWUYEEaaWJYnKF1OQTah5IA)
-
-I'm not so great in making videos, if you make same videos to propose them contaction me.
 
 # That's all Folks!
 No need other configurations, penguins-eggs are battery included or better, as in the real, live is inside!
