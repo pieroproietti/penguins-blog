@@ -1,0 +1,76 @@
+---
+title: mom-and-dad
+layout: post
+date: 2021-01-15 11:02:00
+---
+
+![video](https://youtu.be/SahZOR9ZLmg)
+
+# Index
+* [Italiano](#Italiano)
+* [English](#English)
+* [Portuguese (BR)](#Portuguese-BR)
+
+
+# Italiano
+![italiano](/images/flags/italian.webp)
+
+## Due interfacce grafiche per eggs
+
+Nel tentativo di semplificare l'uso e l'apprendimento di eggs ho realizzato due utili interfacce che - trattandosi di pinguini - sono state denominate mom (mamma) e dad (papà).
+
+### mom
+mom è un semplice script bash che gira sia su sistemi con interfaccia grafica, sia su sistemi CLI. 
+
+Consente di avere una guida visiva ai vari comandi, la selezione degli stessi ed il loro avvio, consentendo - quindi - un più semplice approcio ad eggs.
+
+mom, non va mai chiamato con l'utente di root.
+
+### dad
+
+dad, invece, si utilizza sempre con sudo e ci conduce direttamente alla creazione della nostra iso.
+
+Lascio il compito di illustrare meglio le due interfacce al filmato in basso. (Sono disponibili i sottotitoli nelle lingue: italiano, inglese, portoghese e spagnolo).
+
+# English
+![english](/images/flags/english.png)
+
+# Two graphical interfaces for eggs
+
+In an attempt to simplify the use and learning of eggs I have created two useful interfaces that - being penguins - have been named mom and dad.
+
+### mom
+mom is a simple bash script that runs on both GUI and CLI systems. 
+
+It provides a visual guide to various commands, the selection of commands and their startup, thus allowing an easier approach to eggs.
+
+mom, it should never be called with the root user.
+
+### dad
+
+dad, instead, is always used with sudo and leads us directly to the creation of our iso.
+
+I leave the task of better illustrating the two interfaces to the movie below. (Subtitles are available in Italian, English, Portuguese and Spanish).
+
+
+# Portuguese (BR)
+
+![portugues](/images/flags/portugues.png)
+
+# Duas interfaces gráficas para eggs
+
+Numa tentativa de simplificar o uso e o aprendizado do eggs, percebi duas interfaces úteis que - sendo pingüins - foram nomeadas mom (mãe) e dad (pai).
+
+### mom
+mom é um simples roteiro de bash que roda em ambos os sistemas GUI e CLI. 
+
+Permite ter um guia visual dos vários comandos, a seleção dos mesmos e seu lançamento, permitindo - então - uma aproximação mais fácil dos ovos.
+
+mom, ela nunca deve ser chamada com o usuário root.
+
+#### dad
+
+O dad, ao invés disso, é sempre usado com sudo e nos leva diretamente à criação de nossa iso.
+
+Deixo a tarefa de ilustrar melhor as duas interfaces para o filme abaixo. (As legendas estão disponíveis em italiano, inglês, português e espanhol).
+
