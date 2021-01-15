@@ -4,7 +4,12 @@ layout: post
 date: 2021-01-15 11:02:00
 ---
 
-![video](https://youtu.be/SahZOR9ZLmg)
+![mom](/images/mom.png)
+
+![dad](/images/dad.png)
+
+video: 
+![](https://youtu.be/SahZOR9ZLmg)
 
 # Index
 * [Italiano](#Italiano)
@@ -13,7 +18,7 @@ date: 2021-01-15 11:02:00
 
 
 # Italiano
-![italiano](/images/flags/italian.webp)
+![](/images/flags/italian.webp)
 
 ## Due interfacce grafiche per eggs
 
@@ -22,7 +27,7 @@ Nel tentativo di semplificare l'uso e l'apprendimento di eggs ho realizzato due 
 ### mom
 mom è un semplice script bash che gira sia su sistemi con interfaccia grafica, sia su sistemi CLI. 
 
-Consente di avere una guida visiva ai vari comandi, la selezione degli stessi ed il loro avvio, consentendo - quindi - un più semplice approcio ad eggs.
+Consente di avere una guida visiva ai vari comandi, la selezione degli stessi ed il loro avvio, consentendo - quindi - un più semplice approccio ad eggs.
 
 mom, non va mai chiamato con l'utente di root.
 
@@ -74,3 +79,24 @@ O dad, ao invés disso, é sempre usado com sudo e nos leva diretamente à cria�
 
 Deixo a tarefa de ilustrar melhor as duas interfaces para o filme abaixo. (As legendas estão disponíveis em italiano, inglês, português e espanhol).
 
+# 
+
+![espanol](/images/flags/espanol.png)
+
+
+# Dos interfaces gráficas para los huevos
+
+En un intento de simplificar el uso y aprendizaje de los huevos me he dado cuenta de dos útiles interfaces que - siendo pingüinos - han sido nombrados mamá y papá.
+
+### mamá
+mamá es un simple script bash que se ejecuta tanto en sistemas GUI como CLI. 
+
+Permite tener una guía visual de los distintos comandos, la selección de los mismos y su lanzamiento, permitiendo - entonces - un acercamiento más fácil a los huevos.
+
+Mamá, nunca debe ser llamado con el usuario raíz.
+
+### Dad
+
+papá, en cambio, siempre se usa con el sudo y nos lleva directamente a la creación de nuestra iso.
+
+Dejo la tarea de ilustrar mejor las dos interfaces de la película a continuación. (Los subtítulos están disponibles en italiano, inglés, portugués y español).
