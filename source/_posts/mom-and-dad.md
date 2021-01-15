@@ -10,7 +10,7 @@ date: 2021-01-15 11:02:00
 
 Same videos in our [channel](https://www.youtube.com/channel/UCWUYEEaaWJYnKF1OQTah5IA)
 
-![video](https://youtu.be/SahZOR9ZLmg)
+[mom-and-dad](https://youtu.be/SahZOR9ZLmg)
 
 # Index
 * [Italiano](#Italiano)
