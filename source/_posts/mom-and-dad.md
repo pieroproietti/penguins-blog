@@ -8,9 +8,7 @@ date: 2021-01-15 11:02:00
 
 ![dad](/images/dad.png)
 
-Same videos in our [channel](https://www.youtube.com/channel/UCWUYEEaaWJYnKF1OQTah5IA)
-
-[mom-and-dad](https://youtu.be/SahZOR9ZLmg)
+Videos are in our [channel](https://www.youtube.com/channel/UCWUYEEaaWJYnKF1OQTah5IA)
 
 # Index
 * [Italiano](#Italiano)
@@ -39,6 +37,9 @@ dad, invece, si utilizza sempre con sudo e ci conduce direttamente alla creazion
 
 Lascio il compito di illustrare meglio le due interfacce al filmato in basso. (Sono disponibili i sottotitoli nelle lingue: italiano, inglese, portoghese e spagnolo).
 
+[Video mom and dad](https://youtu.be/SahZOR9ZLmg)
+
+
 # English
 ![english](/images/flags/english.png)
 
@@ -58,6 +59,8 @@ mom, it should never be called with the root user.
 dad, instead, is always used with sudo and leads us directly to the creation of our iso.
 
 I leave the task of better illustrating the two interfaces to the movie below. (Subtitles are available in Italian, English, Portuguese and Spanish).
+
+[Video mom and dad](https://youtu.be/SahZOR9ZLmg)
 
 
 # Portuguese (BR)
@@ -81,6 +84,8 @@ O dad, ao invés disso, é sempre usado com sudo e nos leva diretamente à cria�
 
 Deixo a tarefa de ilustrar melhor as duas interfaces para o filme abaixo. (As legendas estão disponíveis em italiano, inglês, português e espanhol).
 
+[Video mom and dad](https://youtu.be/SahZOR9ZLmg)
+
 # 
 
 ![espanol](/images/flags/espanol.png)
@@ -102,3 +107,5 @@ Mamá, nunca debe ser llamado con el usuario raíz.
 papá, en cambio, siempre se usa con el sudo y nos lleva directamente a la creación de nuestra iso.
 
 Dejo la tarea de ilustrar mejor las dos interfaces de la película a continuación. (Los subtítulos están disponibles en italiano, inglés, portugués y español).
+
+[Video mom and dad](https://youtu.be/SahZOR9ZLmg)
