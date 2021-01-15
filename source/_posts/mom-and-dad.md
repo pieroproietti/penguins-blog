@@ -8,12 +8,14 @@ date: 2021-01-15 11:02:00
 
 ![dad](/images/dad.png)
 
-video: 
-![](https://youtu.be/SahZOR9ZLmg)
+Same videos in our [channel](https://www.youtube.com/channel/UCWUYEEaaWJYnKF1OQTah5IA)
+
+![video](https://youtu.be/SahZOR9ZLmg)
 
 # Index
 * [Italiano](#Italiano)
 * [English](#English)
+* [Espanol](#espanol)
 * [Portuguese (BR)](#Portuguese-BR)
 
 
