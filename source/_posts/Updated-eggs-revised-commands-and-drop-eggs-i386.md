@@ -31,6 +31,9 @@ After long think, I renamed the command prerequisites to init (and we have alias
 This i did becouse I put in init all the tasks eggs need to do to be operative. So now create autocomplete and manual are included here and we reduced commands to learn.
 
 ## mom
+
+![mom](/images/eggs-mom.png)
+
 The script mom is continuing to improve and remain cli compatible. Don't use more zenity anymore but whitail only - it is more rational - and I found enought cases zenity is not installed (kde) and heavy enoght to install on them.
 
 ## So, You are welcome to eggs-7.7.27
