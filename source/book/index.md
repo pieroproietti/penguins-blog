@@ -9,11 +9,16 @@ I'm italian, so the official guide is of course the [italian version](./italiano
 
 Using mostly [DeepL](https://www.deepl.com/translator) translate service, I'm trying to support more languages, I started with portugues for brazilian friends, and espanol putting great attention to not translate command's names, etc.
 
-So at the moment - october 2020 - we have the user's guide in five different languages:
+# Manuale ufficiale in Italiano
+
+* [italiano](./italiano.html) eggs v. 7.7.27 updated 30 gennaio 2020
+
+
+# Traduzioni (old version)
+
+At the moment - october 2020 - we have the user's guide in five different languages:
 
 * [english](./english.html) eggs v. 7.6.70 updated october 2020
-
-* [italiano](./italiano.html) eggs v. 7.6.70 updated october 2020
 
 * [português](./portugues.html) eggs v. 7.6.70 updated october 2020
 
