@@ -13,16 +13,12 @@ lang: it_IT
 * [Creiamo una nostra remix](#creiamo-una-nostra-remix)
 * [Scarica le immagini ISO](#scarica-le-immagini-iso)
 
-## articoli dal blog
-* [presentazione](https://penguins-eggs.net/2020/11/07/penguins-eggs-presentation/#Italiano)
-* [temi](https://penguins-eggs.net/2020/11/18/themes/#Italiano)
-* [basket](https://penguins-eggs.net/2020/11/12/basket/#Italiano)
-* [naked](https://penguins-eggs.net/2020/11/03/naked/#Italiano)
-
-
 # Aggiornamento
 Questo manuale utente di penguin's eggs, è aggiornato al 30 gennaio 2021, eggs-7.7.27-1.deb. 
-[sintassi](https://sourceforge.net/p/hexo/wiki/markdown_syntax)
+
+Puoi contribuire all'aggiornamento di questo manuale che è realizzato con la [sintassi markdown](https://sourceforge.net/p/hexo/wiki/markdown_syntax) di [hexo](https://hexo.io/). 
+
+Se siete interessati potete contattarmi, sia per la versione originale che per eventuali traduzioni.
 
 # Introduzione
 
@@ -201,6 +197,7 @@ Adatta il video alle capacità del monitor o alla grandezza della finestra in ca
 ### sudo eggs calamares
 Configura l'installatore grafico calamares. Può essere utilizzato anche per configurare una iso che - prodotta senza calamares - la si voglia installare con esso. Basterà dare il comando: sudo eggs calamares -i e si avrà sia l'installazione del pacchetto che la configurazione.
 
+```
   command: calamares
 
   USAGE
@@ -219,13 +216,14 @@ Configura l'installatore grafico calamares. Può essere utilizzato anche per con
   EXAMPLES
   ~$ sudo eggs calamares 
   install calamares and create configuration
-
+```
 
 ### sudo eggs dad
 Chiedi a papà come generare la tua iso!
 
 Questo comando riassume in forma essenziale, i task necessari a produrre una iso del sistema con eggs. Analizza la presenza o meno della inizializzazione, i pacchetti installati, quindi vi pone la possibilità di configurare un prefisso alla vostra iso, il suo nome, il nome utente e la password da impostare sul liveCD, la password di root sempre per il liveCD, il tipo di compressione e l'eventuale tema da utilizzare. Questi dati vengono salvati e prelevati dal suddetto file di configurazione `eggs.yaml`, per cui una volta configurati ve li troverete come default sia in `dad` che in `produce` e `kill`.
 
+```
   ask help from daddy (gui interface)!
 
   USAGE
@@ -234,7 +232,7 @@ Questo comando riassume in forma essenziale, i task necessari a produrre una iso
   OPTIONS
     -h, --help     show CLI help
     -v, --verbose
-
+```
 
 ### eggs export
 L'esportazione delle iso generate avviene a seconda dei parametri inseriti in `/etc/penguins-eggs.d/tools.yaml`. Potete liberamente modificare questo file per adattarlo alle vostre esigenze.
@@ -246,6 +244,7 @@ Nel mio caso, utilizzo una stazione di lavoro con proxmox ve e macchine virtuali
 
 Naturalmente, nel caso siate facendo la riproduzione di un sistema e non di una macchina virtuale, avrete tutto nello stesso disco ed il problema non si pone. In questo caso i comandi di esportazione rimarranno inutilizzati, a meno di configurare come remoteHost 127.0.0.1 ed utilizzare a forza scp per la copia in locale.
 
+```
   export package eggs-v7-7-x-1.deb in the destination host
 
   USAGE
@@ -255,6 +254,7 @@ Naturalmente, nel caso siate facendo la riproduzione di un sistema e non di una 
     export:deb   export package eggs-v7-6-x-1.deb in the destination host
     export:docs  export docType documentation of the sources in the destination host
     export:iso   export iso in the destination host
+```
 
 #### eggs export:deb
 esporta i pacchetti deb;
@@ -292,6 +292,7 @@ disco e cancellerà completamente il disco rigido.
 
 Utilizzatelo solo dove necessario e, comunque, dopo aver salvato il contenuto del vostro disco. 
 
+```
   eggs installer - (the egg became penguin)
 
   USAGE
@@ -312,6 +313,7 @@ Utilizzatelo solo dove necessario e, comunque, dopo aver salvato il contenuto de
   EXAMPLE
     $ eggs install
     Install the system with eggs cli installer(default)
+```
 
 ### sudo eggs init
 Si occupa della inizializzazione di eggs, creazione delle pagine di manuale, creazione dell'autocomplete, creazione dei file di configurazione ed installazione dei pacchetti debian necessari. 
@@ -322,6 +324,7 @@ Successivamente, però, una volta che i pacchetti sono installati, diventa istan
 
 Questo può essere utile nel caso di file di configurazione danneggiati o vetusti rispetto alla versione corrente di eggs.
 
+```
   command: init 
 
   Initialize eggs and install packages prerequisites to run eggs
@@ -340,7 +343,7 @@ Questo può essere utile nel caso di file di configurazione danneggiati o vetust
   EXAMPLE
     ~$ eggs init
     init eggs, install prerequisites and create configuration files
-
+```
 
 ### sudo eggs kill
 
@@ -348,6 +351,7 @@ Cancella le immagini realizzate e la directory di lavoro di eggs \(il nido\).
 
 _Attenzione: in caso per interruzione del comando produce, sarà impossibile cancellare le directory montate. La strada più breve è dare un riavvio e successivamente `sudo eggs kill`_.
 
+```
 kill the eggs/free the nest
 
   USAGE
@@ -360,6 +364,7 @@ kill the eggs/free the nest
   EXAMPLE
     $ eggs kill
     kill the eggs/free the nest
+```
 
 ### eggs mom
 eggs mom è una interfaccia realizzata con [whiptail](https://en.wikibooks.org/wiki/Bash_Shell_Scripting/Whiptail), disponibile praticamente su ogni versione Linux anche solo cli che permette di avere una interfaccia simil grafica nella quale ho raggruppato tutti i comandi eggs.
@@ -415,6 +420,7 @@ Al suo avvio, esegue velocemente un controllo della inizializzazione di eggs, qu
 
 Presenta alcuni flag utilizzabili:
 
+```
   command: produce help
 
   the system produce an egg: livecd creation.
@@ -484,7 +490,7 @@ Presenta alcuni flag utilizzabili:
     $ sudo eggs produce -vs --basename leo --rsupport 
     produce scripts to build an ISO as the previus example. Scripts can be found
     in /home/eggs/ovarium and you can customize all you need
-
+```
 
 Di gran lunga la modalità d'uso che preferisco, personalmente è `sudo eggs produce -fv --adapt`
 
@@ -507,6 +513,7 @@ Abbiamo tools:clean che esegue la pulizia del sistema cancellando la cache apt e
 
 Ci sono anche dei tools contrassegnati come sperimentati: tools:initrd, tools:locales ed tools:pve che consiglio al momento di ignorare.
 
+```
 clean system log, apt, etc
 
   USAGE
@@ -520,8 +527,11 @@ clean system log, apt, etc
     tools:sanitize  sanitize
     tools:skel      update skel from home configuration
     tools:yolk      configure eggs to install
+```
 
 #### sudo eggs tools:clean
+
+```
 
   clean system log, apt, etc
 
@@ -531,10 +541,12 @@ clean system log, apt, etc
   OPTIONS
     -h, --help     show CLI help
     -v, --verbose  verbose
+```
 
 #### sudo eggs tools:initrd 
 Comando sperimentale che rimuove cryptosetup e resume dalla immagine initrd.img destinata al liveCd.
 
+```
   command: tools:initrd help
 
   Commands to boot in the grub shell
@@ -549,10 +561,12 @@ Comando sperimentale che rimuove cryptosetup e resume dalla immagine initrd.img 
     -v, --verbose
     --check=check  check if necessary to clean initrd.img
     --clean=clean  clean the initrd.img
+```
 
 #### sudo eggs toos:locales 
 Comando sperimentale che reinstalla le locales definite in `/etc/penguins-eggs.d/eggs.yaml`. E funzionante solo su Debian e Devuan.
 
+```
   command: tools:locales help
 
   install/clean locales
@@ -564,10 +578,11 @@ Comando sperimentale che reinstalla le locales definite in `/etc/penguins-eggs.d
     -h, --help       show CLI help
     -r, --reinstall  reinstall locales
     -v, --verbose    verbose
+```
 
 #### sudo eggs tools:sanitize 
 Rimuove da un progetto esistente i file generati da versioni precedenti di eggs che possono nascondere bug o crearli (consigliato al cambio di versione).
-
+```
   sanitize
 
   USAGE
@@ -575,7 +590,7 @@ Rimuove da un progetto esistente i file generati da versioni precedenti di eggs 
 
   OPTIONS
     -h, --help  show CLI help
-
+```
 
 #### sudo eggs tools:skel
 Con questo comando si ricrea la directory /etc/skel della nostra remix. 
@@ -584,6 +599,7 @@ E' utile per dare una veste coerente e personalizzata all'utente live ed ai futu
 
 Essenzialmente copia le configurazioni dell'utente primario o di quello passato con il flag `-u` nella cartella `/etc/skel` che verrà quindi utilizzata per generare lo scheletro della home dei nuovi utenti creati (anche dell'utente live del liveCd).
 
+```
   command: tools:skel help
 
   update skel from home configuration
@@ -599,14 +615,14 @@ Essenzialmente copia le configurazioni dell'utente primario o di quello passato 
   EXAMPLE
     $ eggs skel --user mauro
     desktop configuration of user mauro will get used as default
-
-
+```
 
 #### sudo eggs tools:yolk
 Il comando yolk crea una piccola repository locale in /usr/local/yolk con i pacchetti strettamente necessari ad assicurare l'installazione del sistema anche in assenza di connessione internet. 
 
 Viene comunque SEMPRE richiamata da produce, per cui il suo uso non è indispensabile se non in caso di aggiornamento del kernel della macchina madre.
 
+```
   command: tools:yolk help
 
   configure eggs to install without internet
@@ -620,12 +636,14 @@ Viene comunque SEMPRE richiamata da produce, per cui il suo uso non è indispens
 
   EXAMPLE
     $ eggs yolk -v
+```
 
 ### sudo eggs remove
 Sostituisce ed estende il vecchio comando `sterilize` rimasto coma alias.
 
 Rimuove i pacchetti debian utilizzati da eggs, rimuove eggs stesso e, nel caso di --purge, anche i file di configurazione.
 
+```
   command: remove help
 
   remove eggs, eggs configurations, prerequisites, calamares, calamares configurations
@@ -653,6 +671,7 @@ Rimuove i pacchetti debian utilizzati da eggs, rimuove eggs stesso e, nel caso d
     $ sudo eggs remove --all
     remove eggs, eggs configurations, prerequisites, calamares, calamares 
     configurations
+```
 
 ### sudo eggs update
 
@@ -665,7 +684,6 @@ Consente, inoltre, l'aggiornamento da rete locale per quanto riguarda i pacchett
 ![eggs-update-main](/images/eggs-update-main.png)
 
 Grazie al basket non è indispensabile avere penguins-eggs nella repository della vostra distro,
-
 
 
 # Creiamo una nostra remix
