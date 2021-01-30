@@ -33,6 +33,8 @@ I did this becouse I put in init all the tasks eggs need to do to become operati
 ## Updated original guide italian
 [Guida originale in italiano aggiornata al 30 gennaio 2021](/book/italiano)
 
+I need same help for translations, contact me to propose yourself.
+
 ## mom
 The script `mom` is continuing to improve and remain cli compatible. Don't use more zenity anymore but whitail only - it is more rational - and I found enought cases where zenity is not installed (kde) and a bit too heavy to install on them.
 
