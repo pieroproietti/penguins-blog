@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-echo "starting locale..."
+echo "starting locale, esegue: clean, generate, server..."
 npm run clean
 npm run generate
 npm run server
