@@ -5,14 +5,13 @@ date: 2020-06-20 07:38:32
 ---
 ![](/images/book.svg)
 
-I'm italian, so the official guide is of course the [italian version](./italiano.html). This version is the most updated, and can be traslated in english by [Google](https://translate.google.com/) or [DeepL](https://www.deepl.com/translator) without many problems, due the fact who code is english too.
-
-Using mostly [DeepL](https://www.deepl.com/translator) translate service, I'm trying to support more languages, I started with portugues for brazilian friends, and espanol putting great attention to not translate command's names, etc.
-
 # Manuale ufficiale in Italiano
 
-* [italiano](./italiano.html) eggs v. 7.7.27 updated 30 gennaio 2020
+I'm italian, so the official guide is of course the [italian version](./italiano.html). This version is the most updated, and can be traslated in english by [Google](https://translate.google.com/) or [DeepL](https://www.deepl.com/translator) without many problems, due the fact who code is english too.
 
+## [italiano](./italiano.html) eggs v. 7.7.27 aggiornato al 30 gennaio 2020 
+
+Using mostly [DeepL](https://www.deepl.com/translator) translate service, I'm trying to support more languages, I started with portugues for brazilian friends, and espanol putting great attention to not translate command's names, etc.
 
 # Traduzioni (old version)
 
