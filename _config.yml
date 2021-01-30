@@ -8,7 +8,7 @@ theme_config:
   Home: /
   Documentation: /book
   Archives: /archives
-  Forum: /forum
+  Forum: /forum/
   About me: /about-me.html
   sources: https://github.com/pieroproietti/penguins-eggs
   npm: https://www.npmjs.com/package/penguins-eggs
