@@ -148,6 +148,6 @@ toc:
   slugify: transliteration
   decodeEntities: false
   anchor:
-    position: before
-    symbol: '#'
+    position: after
+    symbol: ' #'
     style: header-anchor
