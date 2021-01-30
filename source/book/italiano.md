@@ -201,10 +201,6 @@ Adatta il video alle capacità del monitor o alla grandezza della finestra in ca
 ### sudo eggs calamares
 Configura l'installatore grafico calamares. Può essere utilizzato anche per configurare una iso che - prodotta senza calamares - la si voglia installare con esso. Basterà dare il comando: sudo eggs calamares -i e si avrà sia l'installazione del pacchetto che la configurazione.
 
-  :::python
-  import abc
-
-
   command: calamares
 
   USAGE
@@ -229,7 +225,6 @@ Configura l'installatore grafico calamares. Può essere utilizzato anche per con
 Chiedi a papà come generare la tua iso!
 
 Questo comando riassume in forma essenziale, i task necessari a produrre una iso del sistema con eggs. Analizza la presenza o meno della inizializzazione, i pacchetti installati, quindi vi pone la possibilità di configurare un prefisso alla vostra iso, il suo nome, il nome utente e la password da impostare sul liveCD, la password di root sempre per il liveCD, il tipo di compressione e l'eventuale tema da utilizzare. Questi dati vengono salvati e prelevati dal suddetto file di configurazione `eggs.yaml`, per cui una volta configurati ve li troverete come default sia in `dad` che in `produce` e `kill`.
-
 
   ask help from daddy (gui interface)!
 
@@ -282,8 +277,6 @@ Questo è l'esempio di `eggs help calamares`.
 
 ![eggs-help-calamares](/images/eggs-help-calamares.png)
 
-
-
 ### eggs info
 
 Mostra a video la configurazione di eggs e del sistema. 
@@ -292,279 +285,386 @@ Mostra a video la configurazione di eggs e del sistema.
 
 ### sudo eggs install
 
-Lancia l'installaler cli di eggs. 
+Lancia l'installaler cli di eggs. In alternativa con l'opzione -g o --gui lancia invece calamares.
 
-In alternativa con l'opzione -g o --gui lancia invece calamares.
+Lo scopo dell'installer cli di eggs è di permettere il suo utilizzo in ambito server, attenzione, l'installatore cli è si più veloce di calamares, però è MOLTO rudimentale e non raccomandato per i non esperti. Non permette la coesistenza di più sistemi operativi sullo stesso 
+disco e cancellerà completamente il disco rigido.
 
-Attenzione, l'installatore cli è più veloce di calamares, però è MOLTO rudimentale e non raccomandato per i non esperti. Cancellerà compleamente il disco rigido di destinazione! Utilizzatelo solo su macchine virtuali o computer puliti o da pulire.
+Utilizzatelo solo dove necessario e, comunque, dopo aver salvato il contenuto del vostro disco. 
+
+  eggs installer - (the egg became penguin)
+
+  USAGE
+    $ eggs install
+
+  OPTIONS
+    -c, --cli        try to use antiX installer (cli)
+    -g, --gui        use Calamares installer (gui)
+    -h, --info       show CLI help
+    -l, --lvmremove  remove lvm /dev/pve
+    -m, --mx         try to use MX installer (gui)
+    -u, --umount     umount devices
+    -v, --verbose    verbose
+
+  ALIASES
+    $ eggs hatch
+
+  EXAMPLE
+    $ eggs install
+    Install the system with eggs cli installer(default)
+
+### sudo eggs init
+Si occupa della inizializzazione di eggs, creazione delle pagine di manuale, creazione dell'autocomplete, creazione dei file di configurazione ed installazione dei pacchetti debian necessari. 
+
+Nel caso di prima installazione la procedura può essere relativamente lunga, essendo necessario aggiornare apt, scaricare i pacchetti necessari e, quindi, procedere con il resto. 
+
+Successivamente, però, una volta che i pacchetti sono installati, diventa istantaneo. Lo si utilizza, sovente, per ricreare i file di configurazione. Allo scopo si rimuove la directory di configurazione di eggs. `sudo rm /etc/penguins-eggs.d -rf` e, quindi si avvia `sudo eggs init`.
+
+Questo può essere utile nel caso di file di configurazione danneggiati o vetusti rispetto alla versione corrente di eggs.
+
+  command: init 
+
+  Initialize eggs and install packages prerequisites to run eggs
+
+  USAGE
+    $ eggs init
+
+  OPTIONS
+    -h, --help     show CLI help
+    -v, --verbose  verbose
+
+  ALIASES
+    $ eggs prerequisites
+    $ eggs config
+
+  EXAMPLE
+    ~$ eggs init
+    init eggs, install prerequisites and create configuration files
+
 
 ### sudo eggs kill
 
-Cancella le immagini realizzate e la directory di lavoro di eggs \(il nido\). Esegue rm /home/eggs -rf per cancellare tutte le iso create. 
-In caso per interruzione del comando produce, sarà impossibile cancellare le directory montate. La strada più breve è un riavvio ed il successivo lancio del comando.
+Cancella le immagini realizzate e la directory di lavoro di eggs \(il nido\). 
 
-```
-command: kill
+_Attenzione: in caso per interruzione del comando produce, sarà impossibile cancellare le directory montate. La strada più breve è dare un riavvio e successivamente `sudo eggs kill`_.
 
 kill the eggs/free the nest
 
-USAGE
-  $ eggs kill
+  USAGE
+    $ eggs kill
 
-OPTIONS
-  -h, --help     show CLI help
-  -v, --verbose  verbose
+  OPTIONS
+    -h, --help     show CLI help
+    -v, --verbose  verbose
 
-EXAMPLE
-  $ eggs kill
-  kill the eggs/free the nest
-```
+  EXAMPLE
+    $ eggs kill
+    kill the eggs/free the nest
 
-### sudo eggs prerequisites
+### eggs mom
+eggs mom è una interfaccia realizzata con [whiptail](https://en.wikibooks.org/wiki/Bash_Shell_Scripting/Whiptail), disponibile praticamente su ogni versione Linux anche solo cli che permette di avere una interfaccia simil grafica nella quale ho raggruppato tutti i comandi eggs.
 
-Installa i pacchetti deb necessari al funzionamento di eggs. 
+Ho aggiunto anche la documentazione, sia locale che in versione html disponibile su internet, tra cui questo manuale. 
 
-Possiamo suddividere i paccheti necessari in tre parti:
-* pacchetti necessari al funzionamento di eggs:   isolinux, syslinux, rsync, squashfs-tools, xorriso, xterm, whois, live-boot, live-boot-initramfs-tools;
-* pacchetti necessari al funzionamento dell'installer calamares: calamares, qml-module-qtquick2, qml-module-qtquick-controls
-* pacchetti per le localizzazioni (solo debian e devuan). Attualmente abbiamo due variabili nel file eggs.cfg che definiscono la lingua; locale e locales. Queste variabili, con il tempo di "maturazione" necessario, diverranno modificabili dell'utente. Al momento si consiglia di non toccarle, e comprendono i locales per italiano, inglese, spagnolo, portoghese, francese e tedesco. Verranno installati inoltre i seguenti pacchetti: task-italian, task-english, task-spanish, task-brazilian-portuguese, task-french, task-german e task-live-localisation.
+#### mom main
 
-Oltre a questo vengono creati la directory /etc/penguins-eggs.d, tutti i file di configurazione ed i collegamenti necessari.
+Una immagine vale più di mille parole, questa è la schermata iniziale di mom.png
 
-```
-command: prerequisites
+![mom-main](/images/eggs-mom-main.png)
 
-install packages prerequisites to run eggs
+Dal menu principale si accede a tutti i comandi eggs ed ai sottomenu Documentation, Export e Tools.
 
-USAGE
-  $ eggs prerequisites
+#### menù Documentation
+In questo menu potete consultare il sito ed i manuali, sia in formato html che man. 
 
-OPTIONS
-  -h, --help     show CLI help
-  -v, --verbose  verbose
+![mom-documentation](/images/eggs-mom-documentation.png)
 
-EXAMPLE
-  ~$ eggs prerequisites
-  install prerequisites and create configuration files
-```
+Ecco ad esempio come risulta la schermata del manuale, consultabile anche in assenza di connessione.
+
+![eggs-html-documentation](/images/eggs-html-documentation.png)
+
+Naturalmente se state operando su una stazione solo cli, avrete comunque disponibili le vostre informazioni in formato man.
+
+![eggs-man-documentation](/images/eggs-man-documentation.png)
+
+#### menù Export
+Da questo menu potete raggiungere o ricordare tutti i comandi di esportazione:
+
+* eggs export:deb
+* eggs export:docs
+* eggs export:iso
+
+![eggs-mom-export](/images/eggs-mom-export.png)
+
+#### menù Tools
+In Tools troverete, ovviamente tutti i gli strumenti di eggs, raccolti sotto eggs:tools.
+
+![eggs-mom-tools](/images/eggs-mom-tools.png)
+
+Potete tornare indietro da ogni menu selezionando quit (basta premere il tasto "q" seguito da invio).
+
+mom rappresenta una buona guida per l'apprendimento di eggs ed un sicuro riferimento. Naturalmente con il tempo ogni "pulcino" impara a camminare da solo e potrete immettere i comandi direttamente da terminale.
 
 ### sudo eggs produce
 
-E' questo il comando che più utilizzerete, di fatto sostanzialmente l'unico usato quotidianamente, insieme a kill che serve invece a sbarazzarsi delle immagini iso create.
+E' questo il comando che - dopo la prima fase di apprendimento - più utilizzerete. Sostanzialmente produce è l'unico usato quotidianamente, insieme a kill che si utilizza per sbarazzarsi delle immagini iso create.
 
-Usato senza parametri produce la iso con compressione di tipo xz. Al suo avvio, esegue un controllo della installazione dei prerequisiti, ,a non di calamares, e produce la iso.
+Usato senza parametri produce la iso con i parametri di default o quella specificata con `sudo eggs dad`. 
+
+Al suo avvio, esegue velocemente un controllo della inizializzazione di eggs, quindi, produce la iso.
 
 Presenta alcuni flag utilizzabili:
 
-```
-command: produce
+  command: produce help
 
-livecd creation. The system produce an egg
+  the system produce an egg: livecd creation.
 
-USAGE
-  $ eggs produce
+  USAGE
+    $ eggs produce
 
-OPTIONS
-  -b, --basename=basename  basename egg
-  -c, --compress           max compression
-  -f, --fast               fast compression
-  -h, --help               show CLI help
-  -s, --script             script mode. Generate scripts to manage iso build
-  -v, --verbose            verbose
-  --adapt                  adapt video resolution in VM
+  OPTIONS
+    -b, --basename=basename  basename egg
+    -f, --fast               fast compression
+    -h, --help               show CLI help
+    -m, --max                max compression
+    -n, --normal             max compression
+    -s, --script             script mode. Generate scripts to manage iso build
+    -v, --verbose            verbose
+    -y, --yolk               -y force yolk renew
+    --adapt                  adapt video resolution in VM
 
-  --final                  final: remove eggs prerequisites, calamares and all 
-                           it's dependencies
+    --final                  final: remove eggs prerequisites, calamares and all 
+                            it's dependencies
 
-  --ichoice                allows the user to choose the installation type 
-                           cli/gui
+    --ichoice                allows the user to choose the installation type 
+                            cli/gui
 
-  --pve                    administration of virtual machines (Proxmox-VE)
+    --pve                    administration of virtual machines (Proxmox-VE)
 
-  --rsupport               remote support via dwagent
+    --rsupport               remote support via dwagent
 
-  --theme=theme            theme/branding for eggs and calamares
+    --theme=theme            theme/branding for eggs and calamares
 
-ALIASES
-  $ eggs spawn
-  $ eggs lay
+  ALIASES
+    $ eggs spawn
+    $ eggs lay
 
-EXAMPLES
-  $ sudo eggs produce 
-  produce an ISO called [hostname]-[arch]-YYYY-MM-DD_HHMM.iso, compressed xz 
-  (standard compression).
-  If hostname=ugo and arch=i386 ugo-x86-2020-08-25_1215.iso
+  EXAMPLES
+    $ sudo eggs produce 
+    produce an ISO called [hostname]-[arch]-YYYY-MM-DD_HHMM.iso, compressed xz 
+    (standard compression).
+    If hostname=ugo and arch=i386 ugo-x86-2020-08-25_1215.iso
 
-  $ sudo eggs produce -v
-  the same as the previuos, but with more explicative output
+    $ sudo eggs produce -v
+    the same as the previuos, but with more explicative output
 
-  $ sudo eggs produce -vf
-  the same as the previuos, compression lz4 (fast compression, but about 30%
-  less compressed compared xz standard)
+    $ sudo eggs produce -vf
+    the same as the previuos, compression lz4 (fast compression, but about 30%
+    less compressed compared xz standard)
 
-  $ sudo eggs produce -vc
-  the same as the previuos, compression xz -Xbcj x86 (max compression, about 10%
-  more compressed compared xz standard)
+    $ sudo eggs produce -vm
+    the same as the previuos, compression xz (normal compression)
 
-  $ sudo eggs produce -vf --basename leo --theme debian --adapt 
-  produce an ISO called leo-i386-2020-08-25_1215.iso compression lz4,
-  using Debian theme and link to adapt
+    $ sudo eggs produce -vm
+    the same as the previuos, compression xz -Xbcj x86 (max compression, about 10%
+    more compressed compared xz standard)
 
-  $ sudo eggs produce -v --basename leo --theme debian --adapt 
-  produce an ISO called leo-i386-2020-08-25_1215.iso compression xz,
-  using Debian theme and link to adapt
+    $ sudo eggs produce -vf --basename leo --theme debian --adapt 
+    produce an ISO called leo-i386-2020-08-25_1215.iso compression lz4,
+    using Debian theme and link to adapt
 
-  $ sudo eggs produce -v --basename leo --rsupport 
-  produce an ISO called leo-i386-2020-08-25_1215.iso compression xz, using eggs
-  theme and link to dwagent
+    $ sudo eggs produce -v --basename leo --theme debian --adapt 
+    produce an ISO called leo-i386-2020-08-25_1215.iso compression xz,
+    using Debian theme and link to adapt
 
-  $ sudo eggs produce -vs --basename leo --rsupport 
-  produce scripts to build an ISO as the previus example. Scripts can be found
-  in /home/eggs/ovarium and you can customize all you need
+    $ sudo eggs produce -v --basename leo --rsupport 
+    produce an ISO called leo-i386-2020-08-25_1215.iso compression xz, using eggs
+    theme and link to dwagent
 
-```
+    $ sudo eggs produce -vs --basename leo --rsupport 
+    produce scripts to build an ISO as the previus example. Scripts can be found
+    in /home/eggs/ovarium and you can customize all you need
 
-Di gran lunga la modalità d'uso che preferisco, personalmente è
 
-```
-sudo eggs produce -fv --adapt
-```
+Di gran lunga la modalità d'uso che preferisco, personalmente è `sudo eggs produce -fv --adapt`
 
-che mi consente si avere una veloce rimasterizzazione, osservare a video i vari comandi lanciati ed avere sul desktop il link per ridimensionae la finesta video.
+che mi consente si avere una veloce rimasterizzazione, osservare a video i vari comandi lanciati ed avere sul desktop il link per ridimensionae la finesta video della mia macchina virtuale.
 
-Tra i flag disponibili c'è theme che imposta un tema per eggs e calamares. Potete creare un tema personalizzato semplicemente copiandone uso esistente e cambiandone nome e contenuto. I themi di eggs sono in ./addons/${vendor}/theme, a breve aggiungerò anche la possibilità di variare il tema per isolinux e grub per il boot della live.
+Tra i flag disponibili c'è theme che imposta il tema per eggs e calamares. 
 
-Un altro flag, introdotto è --final che predispone calamares alla rimozione dei programmi non necessari all'utente finale: esegue la stessa azione del comando eggs sterilize, ma attraverso calamares durante l'installazione del sistema.
+Potete creare un tema personalizzato semplicemente copiandone uso esistente e cambiandone nome e contenuto. 
+
+I temi di eggs sono in ./addons/${vendor}/theme. 
+
+I temi consentono una customizzazione di calamares e la possibilità di avere un proprio splashscreen durante l'avvio del liveCD sia per isolinux che per grub.
+
+Un altro flag,utilizzabile è --final che predispone calamares alla rimozione dei programmi non necessari all'utente finale: esegue la stessa azione del comando `eggs remove --sterilize`, ma avviene attraverso calamares durante l'installazione del sistema.
 
 ### eggs tools
+Sono raccolti sotto tools gli strumenti accessori di eggs, non sono fondamentali, ma fanno comodo.
 
-```
+Abbiamo tools:clean che esegue la pulizia del sistema cancellando la cache apt e rotando i log, tools:sanitize che cerca e rimuove file rimasti da precedenti versioni di eggs, tools:skel che permette di configurare l'aspetto del desktop live e del desktop di default dei nuvi utenti e tools:yolk che aggiorna la repository inclusa in /usr/local/yolk che viene utilizzata da eggs per caricare i pacchetti indispensabili all'installazione in assenza di connessione internet. Viene
+
+Ci sono anche dei tools contrassegnati come sperimentati: tools:initrd, tools:locales ed tools:pve che consiglio al momento di ignorare.
+
 clean system log, apt, etc
 
-USAGE
-  $ eggs tools:COMMAND
+  USAGE
+    $ eggs tools:COMMAND
 
-COMMANDS
-  tools:clean     clean system log, apt, etc
-  tools:initrd    Test initrd
-  tools:locales   install/clean locales
-  tools:sanitize  sanitize
-  tools:skel      update skel from home configuration
-  tools:yolk      configure eggs to install without internet
-```
-tools è un raccoglitore di comandi contenente alcuni strumenti utili durante la lavorazione. Alcuni di questi, se non la maggior parte vendono direttamente chiamati da produce durante la creazione della ISO, in particolare: clean, locales, yolk.
+  COMMANDS
+    tools:clean     clean system log, apt, etc
+    tools:initrd    Test initrd
+    tools:locales   install/clean locales
+    tools:pve       enable/start/stop pve-live
+    tools:sanitize  sanitize
+    tools:skel      update skel from home configuration
+    tools:yolk      configure eggs to install
 
-#### sudo eggs tools:clean 
-```
-clean system log, apt, etc
+#### sudo eggs tools:clean
 
-USAGE
-  $ eggs tools:clean
+  clean system log, apt, etc
 
-OPTIONS
-  -h, --help     show CLI help
-  -v, --verbose  verbose
-```
-Esegue la pulizia dei file di log, della cache apt, etc. Si salva spazio nella ISO che si viene a creare e si riducono i tempi di attesa per la creazione;
+  USAGE
+    $ eggs tools:clean
+
+  OPTIONS
+    -h, --help     show CLI help
+    -v, --verbose  verbose
 
 #### sudo eggs tools:initrd 
+Comando sperimentale che rimuove cryptosetup e resume dalla immagine initrd.img destinata al liveCd.
 
-```
-Test initrd
+  command: tools:initrd help
 
-USAGE
-  $ eggs tools:initrd
+  Commands to boot in the grub shell
 
-OPTIONS
-  -h, --help     show CLI help
-  -v, --verbose
-  --check=check  check if necessary to clean initrd.img
-  --clean=clean  clean the initrd.img
-```
-Al momento sperimentale) Rimuove cryptosetup e resume da initrd.img destinata al liveCd;
+  Test initrd
+
+  USAGE
+    $ eggs tools:initrd
+
+  OPTIONS
+    -h, --help     show CLI help
+    -v, --verbose
+    --check=check  check if necessary to clean initrd.img
+    --clean=clean  clean the initrd.img
 
 #### sudo eggs toos:locales 
+Comando sperimentale che reinstalla le locales definite in `/etc/penguins-eggs.d/eggs.yaml`. E funzionante solo su Debian e Devuan.
 
-```
-install/clean locales
+  command: tools:locales help
 
-USAGE
-  $ eggs tools:locales
+  install/clean locales
 
-OPTIONS
-  -h, --help       show CLI help
-  -r, --reinstall  reinstall locales
-  -v, --verbose    verbose
+  USAGE
+    $ eggs tools:locales
 
-```
-
-Al momento sperimentale) Configura solo su Debian/Devuan una serie di lingue specificate in /etc/penguins-eggs-d/eggs.conf che si vogliono supportare;
+  OPTIONS
+    -h, --help       show CLI help
+    -r, --reinstall  reinstall locales
+    -v, --verbose    verbose
 
 #### sudo eggs tools:sanitize 
+Rimuove da un progetto esistente i file generati da versioni precedenti di eggs che possono nascondere bug o crearli (consigliato al cambio di versione).
 
-rimuove da un progetto esistente e file generati da versioni precedenti di eggs che possono nascondere bug o crearli (consigliato al cambio di versione);
+  sanitize
+
+  USAGE
+    $ eggs tools:sanitize
+
+  OPTIONS
+    -h, --help  show CLI help
+
 
 #### sudo eggs tools:skel
-Con questo comando si ricrea la directory /etc/skel della nostra remix. E' utile per dare una veste coerente e personalizzata all'utente live ed ai futuri utenti che creeremo una volta che il nostro sistema sarà installato. Essenzialmente copia le configurazioni dell'utente primario o di quello passato con il flag -u nella cartella /etc/skel che verrà quindi utilizzata per generare lo scheletro della home degli utenti creati.
+Con questo comando si ricrea la directory /etc/skel della nostra remix. 
 
-Considerando che esistono diversi desktop manager, gnome2, gnome3, cinnamon, mate, kde, lxqt, lxde, etc e che viene fatta una operazione di pulizia dei possibili dati sensibili, è un comando sempre in evoluzione. Attualmente è abbastanza affidabile per cinnamon e, per le prove che ho fatto anche con gli altri Desktop Manager.
+E' utile per dare una veste coerente e personalizzata all'utente live ed ai futuri utenti che creeremo una volta che il nostro sistema sarà installato. 
 
-```
-update skel from home configuration
+Essenzialmente copia le configurazioni dell'utente primario o di quello passato con il flag `-u` nella cartella `/etc/skel` che verrà quindi utilizzata per generare lo scheletro della home dei nuovi utenti creati (anche dell'utente live del liveCd).
 
-USAGE
-  $ eggs skel
+  command: tools:skel help
 
-OPTIONS
-  -h, --help       show CLI help
-  -u, --user=user  user to be used
-  -v, --verbose
+  update skel from home configuration
 
-EXAMPLE
-  $ eggs skel --user mauro
-  desktop configuration of user mauro will get used as default
-```
+  USAGE
+    $ eggs tools:skel
+
+  OPTIONS
+    -h, --help       show CLI help
+    -u, --user=user  user to be used
+    -v, --verbose
+
+  EXAMPLE
+    $ eggs skel --user mauro
+    desktop configuration of user mauro will get used as default
+
+
 
 #### sudo eggs tools:yolk
+Il comando yolk crea una piccola repository locale in /usr/local/yolk con i pacchetti strettamente necessari ad assicurare l'installazione del sistema anche in assenza di connessione internet. 
 
-```
-configure eggs to install without internet
+Viene comunque SEMPRE richiamata da produce, per cui il suo uso non è indispensabile se non in caso di aggiornamento del kernel della macchina madre.
 
-USAGE
-  $ eggs tools:yolk
+  command: tools:yolk help
 
-OPTIONS
-  -h, --help     show CLI help
-  -v, --verbose
+  configure eggs to install without internet
 
-EXAMPLE
-  $ eggs yolk -v
+  USAGE
+    $ eggs tools:yolk
 
-```
-Il comando yolk crea una piccola repository locale in /usr/local/yolk con i pacchetti strettamente necessari ad assicurare l'installazione del sistema anche in assenza di connessione internet. Viene SEMPRE richiamata da produce, per cui il suo uso non è necessario se non per i più curiosi.
+  OPTIONS
+    -h, --help     show CLI help
+    -v, --verbose
 
+  EXAMPLE
+    $ eggs yolk -v
 
+### sudo eggs remove
+Sostituisce ed estende il vecchio comando `sterilize` rimasto coma alias.
 
-### sudo eggs sterilize
+Rimuove i pacchetti debian utilizzati da eggs, rimuove eggs stesso e, nel caso di --purge, anche i file di configurazione.
 
-E' il comando inverso di prerequisites, sostanzialmente rimuove i pacchetti sopra elencati rendendo il nostro sistema non più in grado di riprodursi.
+  command: remove help
 
-```
-command: sterilize
+  remove eggs, eggs configurations, prerequisites, calamares, calamares configurations
 
-remove all packages installed as prerequisites and calamares
+  USAGE
+    $ eggs remove
 
-USAGE
-  $ eggs sterilize
+  OPTIONS
+    -a, --all            remove all
+    -h, --help           show CLI help
+    -p, --prerequisites  remove eggs packages prerequisites
+    -v, --verbose        verbose
+    --purge              remove eggs, eggs configuration
 
-OPTIONS
-  -h, --help     show CLI help
-  -v, --verbose  verbose
-```
+  EXAMPLES
+    $ sudo eggs remove 
+    remove eggs
+
+    $ sudo eggs remove --purge 
+    remove eggs, eggs configurations
+
+    $ sudo eggs remove --prerequisites 
+    remove packages prerequisites, calamares, calamares configurations
+
+    $ sudo eggs remove --all
+    remove eggs, eggs configurations, prerequisites, calamares, calamares 
+    configurations
 
 ### sudo eggs update
 
-Aggiornamento di eggs. Presenta un diverso funzionamento a seconda se l'installazione di eggs sia avvenuta con il pacchetto npm di nodejs oppure con il pacchetto debian. Nel primo caso, aggiorna direttamente eggs alla versione corrente, altrimenti suggerisce i passi per l'aggiornamento tramite apt (se la repo per eggs è inclusa) o scaricando il pacchetto ed installandolo via dpkg.
+Esegue l'aggiornamento del pacchetto eggs. 
+
+Preleva le nuove versioni dal [basket](https://penguins-eggs.net/versions/)- nel caso di installazione con pacchetto debian -  o dal repository [npmjs.com](https://www.npmjs.com/package/penguins-eggs) nel caso di installazione tramite npm.
+
+Consente, inoltre, l'aggiornamento da rete locale per quanto riguarda i pacchetti debian.
+
+![eggs-update-main](/images/eggs-update-main.png)
+
+Grazie al basket non è indispensabile avere penguins-eggs nella repository della vostra distro,
 
 
 
@@ -575,21 +675,19 @@ Scarichiamo la nostra distribuzione che intendiamo customizzare, scegliendo tra 
 
 Installiamola normalmente, magari aggiorniamola e facciamo le nostre prime modifiche prima di passare alla creazione delle ISO.
 
-## Prerequisiti
+## Inizializzazione e prerequisiti
 
 Installiamo eggs, scaricandolo da [sourceforge](https://sourceforge.net/projects/penguins-eggs/files/packages-deb/).
 
 Il comando per l'installazione è il semplice:
 
 ```
-sudo dpkg -i eggs_7.6.57-1_amd64.deb
+sudo dpkg -i eggs_7.7.27-1_amd64.deb
 ```
 
 bene, a questo punto, assicuriamoci di caricare i prerequisiti e creare i file di configurazione dando il comando
 
-```
-sudo eggs prerequisites
-```
+`sudo eggs init`
 
 Oltre all'installazione dei vari pacchetti Debian necessari, verrà creata la directory di configurazione /etc/penguins-eggs.d e configurato al suo interno il file eggs.conf con le impostazioni di default.  Trovate il file di configurazione in /etc/penguins-eggs.d/eggs.conf e potete eventualmente editarlo per modificare le impostazioni. Trovate la documentazione delle opzioni utilizzate direttamente nei commenti del file stesso.
 
@@ -599,9 +697,10 @@ Ora eggs è pronto a funzionare e creare l'immagine iso del nostro sistema.
 
 Una volta installato eggs ed i suoi prerequisiti, siamo pronti al grande salto.
 
-```
-sudo eggs produce -v
-```
+Consiglio di utilizzare il comando `sudo eggs dad` al primo approccio che ci guida alla configurazione ed alla creazione della iso.
+
+Successivamente, si potrà utilizzare il più immediato `sudo eggs produce`
+
 
 Con questo comando si avvia la costruzione dell'_uovo di pinguino_ che consiste sostanzialmente in tre fasi:
 
@@ -640,13 +739,13 @@ Si tratta essenzialmente di versioni di Debian Buster, Devuan beowulf, Linux Min
 
 Attualmente sono on line delle derivate di Debian Buster: 
 
-* less è una versione molto leggera, lxde-core --no-install-reccomends e solo il necessario per lo sviluppo di eggs, che normalmente uso. 
+* naked senza interfaccia grafica e, proprio per questo, adatta come base per farci una propria remix.
+
+* lite è una versione molto leggera, lxde-core --no-install-reccomends e solo il necessario per lo sviluppo di eggs, che normalmente uso. 
 
 * debu, più comoda e rifinita, cinnamon come desktop, sempre con gli strumenti di sviluppo e tutto il necessario per office, disegno, sviluppo etc. Questa distro più completa, ha il solo torto - rispetto a less - che essendo relativamente grande, 1,9 GB a fronte dei 900KB di less impiega più tempo per la "riproduzione".
 
-E' presente anche una versione ancora più leggera di Debian buster, denominata naked senza interfaccia grafica e, proprio per questo, adatta come base per farci una propria remix.
-
-In sostanza consiglio debu o less per chi voglia partecipare allo sviluppo, naked per chi vuole partire da una base per poi procedere alla creazione propria remix. Interessante anche incubator che è sostanzialmente una versione di buster con l'aggiunta dell'ambiente di virtualizzazione proxmox-ve, basato su kvm, virt-viewer e strumenti necessari.
+In sostanza consiglio debu o lite per chi voglia partecipare allo sviluppo, naked per chi vuole partire da una base per poi procedere alla creazione propria remix. Interessante anche incubator che è sostanzialmente una versione di buster con l'aggiunta dell'ambiente di virtualizzazione proxmox-ve, basato su kvm, virt-viewer e strumenti necessari.
 
 Una nota a parte per alcune remix i386, sempre realizzate con eggs. Potrebbe essere interessante patricia-i386, un rifacimento di linux mint 19.3 tricia xfce, sufficientemente snella ed allo stesso tempo elegante, per essere utilizzata su computer datati. Ancora più leggera è bionic-i386 creata a partire da lubuntu-18.04 bionic ma, ovviamente, anche più scarna.
 
@@ -693,7 +792,4 @@ Se siete giunti fino a questo passo, senza l'ausilio del tasto di scorrimento ra
 
 Grazie a tutti e... happy hacking!
 
-Piero Proietti 
-
-
-
+Piero Proietti
