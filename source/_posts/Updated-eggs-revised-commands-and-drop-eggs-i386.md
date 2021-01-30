@@ -30,6 +30,9 @@ After long think, I renamed the command prerequisites to init (and we have alias
 
 This i did becouse I put in init all the tasks eggs need to do to be operative. So now create autocomplete and manual are included here and we reduced commands to learn.
 
+## [Update italian book](/book/italiano)
+
+
 ## mom
 
 ![mom](/images/eggs-mom.png)

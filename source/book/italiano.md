@@ -1,17 +1,8 @@
-title: Guida utente
+title: Guida utente italiano
 layout: page
 date: 2020-08-29 20:00:00
 lang: it_IT
 ---
-
-
-# Indice
-* [Introduzione](#introduzione)
-* [Installazione](#installazione)
-* [Prerequisiti e configurazione](#prerequisiti-e-configurazione)
-* [I comandi](#i-comandi)
-* [Creiamo una nostra remix](#creiamo-una-nostra-remix)
-* [Scarica le immagini ISO](#scarica-le-immagini-iso)
 
 # Aggiornamento
 Questo manuale utente di penguin's eggs, è aggiornato al 30 gennaio 2021, eggs-7.7.27-1.deb. 
@@ -19,6 +10,9 @@ Questo manuale utente di penguin's eggs, è aggiornato al 30 gennaio 2021, eggs-
 Puoi contribuire all'aggiornamento di questo manuale che è realizzato con la [sintassi markdown](https://sourceforge.net/p/hexo/wiki/markdown_syntax) di [hexo](https://hexo.io/). 
 
 Se siete interessati potete contattarmi, sia per la versione originale che per eventuali traduzioni.
+
+# Indice
+<!-- toc -->
 
 # Introduzione
 
@@ -36,15 +30,13 @@ Immaginai un processo di produzione dell'uovo, denominato produce, l'operazione 
 
 Prima o poi, trattandosi di un uovo, troverò anche il modo di implementare un server PXE che lo distribuisca attraverso la rete locale, al momento oltre all'intenzione c'è il nome e non poteva essere che cuckoo \(cuculo\), dal comportamento del cuculo che fa covare le proprie uova da altri.
 
-
-
 **Nota**: _la situazione  di Systemback  in effetti non è più quella degli inizi di eggs,. Ho conosciuto recentemente il buon Franco Conidi  \(Edmond \) che  ne cura tutt'ora gli aggiornamenti._
 
 # Installazione
 
 Cose da fare prima di cominciare la produzione delle "uova".
 
-### Pacchetto Debian
+## Pacchetto debian
 
 L'installazione da pacchetto Debian è senz'altro la più semplice. Basta scaricare l'ultima versione di eggs dal sito di [sourceforge](https://sourceforge.net/projects/penguins-eggs/files/DEBS/) ed installarla con il comando:
 
@@ -58,7 +50,7 @@ e selezionare l'ultima versione di eggs dal basket.
 
 La versione .deb  comprende al suo interno nodejs per cui non è necessario disporre di questo pacchetto. 
 
-### Pacchetto npm \(nodejs\)
+## Pacchetto npm \(nodejs\)
 
 Essendo eggs un software sviluppato con nodejs, la versione originale può essere quella preferibile, è sempre la più aggiornata. Inoltre, una volta installata, è aggiornabile alle versioni successive con il comando `sudo eggs update`.
 
@@ -80,7 +72,7 @@ sudo eggs update
 
 e selezionare npm come metodo di aggiornamento.
 
-### Utilizzo di eggs da codice sorgente
+## Utilizzo di eggs da codice sorgente
 
 Utilizzare eggs a partire dai sorgenti può essere estremamente utile sia per debug che per modificare eggs stesso. Una volta scaricato il sorgente con il comando:
 
@@ -95,7 +87,7 @@ A questo punto, dalla stessa directory, si potrà utilizzare eggs direttamente d
 
 `sudo ./eggs produce -fv`
 
-_Nota:_ Potete constatare che l'unica differenza d'uso rispetto ai pacchetti è che dovrete indicare il path per eggs `./eggs` e dovrete lanciarlo dalla directory `~/penguins-eggs`. Il funzionamento rimane esattamente lo stesso, ma si ha il vantaggio di poter agire in maniera interattiva con il codide. Per lo sviluppo, personalmente utilizzo [code](https://code.visualstudio.com/), ma potete scegliere altri editor [atom](https://atom.io/), [sublime](https://www.sublimetext.com/), etc).
+**Nota**: _Potete constatare che l'unica differenza d'uso rispetto ai pacchetti è che dovrete indicare il path per eggs `./eggs` e dovrete lanciarlo dalla directory `~/penguins-eggs`. Il funzionamento rimane esattamente lo stesso, ma si ha il vantaggio di poter agire in maniera interattiva con il codide. Per lo sviluppo, personalmente utilizzo [code](https://code.visualstudio.com/), ma potete scegliere altri editor [atom](https://atom.io/), [sublime](https://www.sublimetext.com/), etc)_.
 
 ---
 
@@ -112,7 +104,7 @@ Avviamo eggs senza alcun comando ed otterremo la lista dei comandi disponibili:
 Andiamo, quindi ad inizializzare eggs con `sudo eggs init`.
 
 
-### sudo eggs init ALIAS fertilize, prerequisites
+## sudo eggs init 
 
 Per funzionare eggs ha bisogno di alcuni tool installati, i cosidetti prerequisiti, inoltre necessita di creare ed installare le pagine di man di eggs e creare l'autocomplete di eggs stesso. 
 
@@ -129,19 +121,19 @@ Essenzialmente possiamo divide in quattro i pacchetti installti:
 * pacchetti per avvio su macchine UEFI
 * pacchetti per la creazione dell'immagine iso
 * pacchetti per l'installer grafico calamares
-- pacchetti per la localizzazione
+* pacchetti per la localizzazione
 
 Tutti i pacchetti per il funzionamento di eggs e la produzione di iso sono installati dal comando `sudo eggs init` che provvederà ad installare i seguenti pacchetti, se necessatio:
 
-* grub-efi-amd64
-* isolinux, syslinux, rsync, squashfs-tools, xorriso, xterm, whois, live-boot, live-boot-initramfs-tools
-* calamares, qml-module-qtquick2, qml-module-qtquick-controls
-* live-task-localisation ed i task-linguaggio per la lingua o le lingue prescelte.
+* `grub-efi-amd64`
+* `isolinux, syslinux, rsync, squashfs-tools, xorriso, xterm, whois, live-boot, live-boot-initramfs-tools`
+* `calamares, qml-module-qtquick2, qml-module-qtquick-controls`
+* `live-task-localisation` ed i `task-`linguaggio per la lingua o le lingue prescelte.
 
 I file per la localizzazione saranno installati solamente per Debian/Devuan, inoltre, gli stessi verranno installati con l'opzione 
 `–no-install-recommends`, altrimenti verrebbero installate tutte le lingue.
 
-### Directory di configurazione penguins-eggs.d
+## Directory di configurazione penguins-eggs.d
 
 Normalmente non è necessario intervenire su `/etc/penguins-eggs.d/eggs.conf`, eggs si autoconfigura adattandosi alle necessita del sistema presente. 
 
@@ -152,22 +144,24 @@ Se avete scelto di non toccare per il momento /etc/penguins-eggs.d/eggs.conf, si
 Se invece avete modificato, rovinato o cancellato il file di configurazione, potete sempre rimuovere la configurzione stessa `rm /etc/penguins-eggs -rf` e ripristinarla con il comando `sudo eggs init`
 
 
-### eggs è pronto!
+## eggs è pronto!
 
-Bene, adesso siamo finalmente pronti ad utilizzare eggs per la riproduzione del nostro pinguino.
+Bene, siamo finalmente pronti ad utilizzare eggs per la riproduzione del nostro pinguino.
 
-Potete lanciare la produzione dell'uovo sia con il comando produce di eggs che con il comando `sudo eggs dad`. dad vi permetterà anche di variare alcuni parametri importanti, risparmiandovi la configurazione del file `/etc/penguins-eggs.d/eggs.yaml`.
+Avete più alternative per cominciare: 
+
+* la prima è quella di utilizzare il comando `eggs mom` per avere un menu interattivo dei comandi di eggs;
+* la seconda è quella di lanciare `sudo eggs dad`  che vi permetterà anche di variare alcuni parametri importanti, risparmiandovi la configurazione del file `/etc/penguins-eggs.d/eggs.yaml`;
+* la terza è utilizzare direttamente la riga di comando come pinguini maturi lanciando `sudo eggs produce`.
+
+Consiglio il primo e secondo approccio per un utilizzo più immediato e saltuario. Il terzo verrà da sè dopo aver preso la necessaria confidenza con il tool.
 
 ---
 
-# I comandi
-
-### Comandi ed opzioni 
-
+# I comandi di eggs
 Eggs necessita dei diritti di root, quindi - tranne per eggs mom, eggs info ed i comandi di esportazione - DEVE essere chiamato preceduto da `sudo`
 
 * adapt
-* autocomplete
 * calamares
 * dad
 * export
@@ -190,11 +184,11 @@ Un altro flag certamente da conoscere e presente nella quasi totalità dei casi 
 
 Andiamo ad illustrare i comandi in rigoroso ordine alfabetico, per comodità dello scrivente. Tenete a mente che i comandi che utilizzerete normalmente saranno soprattutto produce e kill.
 
-### eggs adapt
+## eggs adapt
 
 Adatta il video alle capacità del monitor o alla grandezza della finestra in caso di macchina virtuale. Lo trovo molto comodo per ridimensionare le macchine virtuali con interfacce grafiche diverse da cinnamon, gnome3, e kde per la quali non è necessario. In pratica eggs richiama xrandr per adattare lo schermo alla risoluzione corrente. Non è strettamente relato alla produzione di ISO, lo trovo però indispensabile nello sviluppo.
 
-### sudo eggs calamares
+## sudo eggs calamares
 Configura l'installatore grafico calamares. Può essere utilizzato anche per configurare una iso che - prodotta senza calamares - la si voglia installare con esso. Basterà dare il comando: sudo eggs calamares -i e si avrà sia l'installazione del pacchetto che la configurazione.
 
 ```
@@ -218,7 +212,7 @@ Configura l'installatore grafico calamares. Può essere utilizzato anche per con
   install calamares and create configuration
 ```
 
-### sudo eggs dad
+## sudo eggs dad
 Chiedi a papà come generare la tua iso!
 
 Questo comando riassume in forma essenziale, i task necessari a produrre una iso del sistema con eggs. Analizza la presenza o meno della inizializzazione, i pacchetti installati, quindi vi pone la possibilità di configurare un prefisso alla vostra iso, il suo nome, il nome utente e la password da impostare sul liveCD, la password di root sempre per il liveCD, il tipo di compressione e l'eventuale tema da utilizzare. Questi dati vengono salvati e prelevati dal suddetto file di configurazione `eggs.yaml`, per cui una volta configurati ve li troverete come default sia in `dad` che in `produce` e `kill`.
@@ -234,7 +228,7 @@ Questo comando riassume in forma essenziale, i task necessari a produrre una iso
     -v, --verbose
 ```
 
-### eggs export
+## eggs export
 L'esportazione delle iso generate avviene a seconda dei parametri inseriti in `/etc/penguins-eggs.d/tools.yaml`. Potete liberamente modificare questo file per adattarlo alle vostre esigenze.
 
 Nel mio caso, utilizzo una stazione di lavoro con proxmox ve e macchine virtuali, ho dovuto definire un remoteHost, remoteUser, etc per ogni tipologia di esportazione, nel mio caso esporto di volta in volta:
@@ -256,18 +250,18 @@ Naturalmente, nel caso siate facendo la riproduzione di un sistema e non di una 
     export:iso   export iso in the destination host
 ```
 
-#### eggs export:deb
+### eggs export:deb
 esporta i pacchetti deb;
 
-#### eggs export:docs
+### eggs export:docs
 esporta la documentazione;
 
-#### eggs export:iso
+### eggs export:iso
 esporta l'immagine iso. Utilizza root come nome dell'utente remoto.
 
 Potete modificare a piacere sia l'host di esportazione che il path associato, notate che questo comando è conveniente soprattutto per sviluppatori.
 
-### eggs help
+## eggs help
 
 Come dice il comando stesso genera la lista dei comandi disponibili. A sua volta ogni comando con il flag -h o --help emette usa sua descrizione.
 
@@ -277,13 +271,13 @@ Questo è l'esempio di `eggs help calamares`.
 
 ![eggs-help-calamares](/images/eggs-help-calamares.png)
 
-### eggs info
+## eggs info
 
 Mostra a video la configurazione di eggs e del sistema. 
 
 ![eggs-info](/images/eggs-info.png)
 
-### sudo eggs install
+## sudo eggs install
 
 Lancia l'installaler cli di eggs. In alternativa con l'opzione -g o --gui lancia invece calamares.
 
@@ -315,7 +309,7 @@ Utilizzatelo solo dove necessario e, comunque, dopo aver salvato il contenuto de
     Install the system with eggs cli installer(default)
 ```
 
-### sudo eggs init
+## sudo eggs init
 Si occupa della inizializzazione di eggs, creazione delle pagine di manuale, creazione dell'autocomplete, creazione dei file di configurazione ed installazione dei pacchetti debian necessari. 
 
 Nel caso di prima installazione la procedura può essere relativamente lunga, essendo necessario aggiornare apt, scaricare i pacchetti necessari e, quindi, procedere con il resto. 
@@ -345,7 +339,7 @@ Questo può essere utile nel caso di file di configurazione danneggiati o vetust
     init eggs, install prerequisites and create configuration files
 ```
 
-### sudo eggs kill
+## sudo eggs kill
 
 Cancella le immagini realizzate e la directory di lavoro di eggs \(il nido\). 
 
@@ -366,12 +360,12 @@ kill the eggs/free the nest
     kill the eggs/free the nest
 ```
 
-### eggs mom
+## eggs mom
 eggs mom è una interfaccia realizzata con [whiptail](https://en.wikibooks.org/wiki/Bash_Shell_Scripting/Whiptail), disponibile praticamente su ogni versione Linux anche solo cli che permette di avere una interfaccia simil grafica nella quale ho raggruppato tutti i comandi eggs.
 
 Ho aggiunto anche la documentazione, sia locale che in versione html disponibile su internet, tra cui questo manuale. 
 
-#### mom main
+### mom menù main
 
 Una immagine vale più di mille parole, questa è la schermata iniziale di mom.png
 
@@ -379,7 +373,7 @@ Una immagine vale più di mille parole, questa è la schermata iniziale di mom.p
 
 Dal menu principale si accede a tutti i comandi eggs ed ai sottomenu Documentation, Export e Tools.
 
-#### menù Documentation
+### mom menù Documentation
 In questo menu potete consultare il sito ed i manuali, sia in formato html che man. 
 
 ![mom-documentation](/images/eggs-mom-documentation.png)
@@ -392,7 +386,7 @@ Naturalmente se state operando su una stazione solo cli, avrete comunque disponi
 
 ![eggs-man-documentation](/images/eggs-man-documentation.png)
 
-#### menù Export
+### mom menù Export
 Da questo menu potete raggiungere o ricordare tutti i comandi di esportazione:
 
 * eggs export:deb
@@ -401,7 +395,7 @@ Da questo menu potete raggiungere o ricordare tutti i comandi di esportazione:
 
 ![eggs-mom-export](/images/eggs-mom-export.png)
 
-#### menù Tools
+### mom menù Tools
 In Tools troverete, ovviamente tutti i gli strumenti di eggs, raccolti sotto eggs:tools.
 
 ![eggs-mom-tools](/images/eggs-mom-tools.png)
@@ -410,7 +404,7 @@ Potete tornare indietro da ogni menu selezionando quit (basta premere il tasto "
 
 mom rappresenta una buona guida per l'apprendimento di eggs ed un sicuro riferimento. Naturalmente con il tempo ogni "pulcino" impara a camminare da solo e potrete immettere i comandi direttamente da terminale.
 
-### sudo eggs produce
+## sudo eggs produce
 
 E' questo il comando che - dopo la prima fase di apprendimento - più utilizzerete. Sostanzialmente produce è l'unico usato quotidianamente, insieme a kill che si utilizza per sbarazzarsi delle immagini iso create.
 
@@ -506,7 +500,7 @@ I temi consentono una customizzazione di calamares e la possibilità di avere un
 
 Un altro flag,utilizzabile è --final che predispone calamares alla rimozione dei programmi non necessari all'utente finale: esegue la stessa azione del comando `eggs remove --sterilize`, ma avviene attraverso calamares durante l'installazione del sistema.
 
-### eggs tools
+## eggs tools
 Sono raccolti sotto tools gli strumenti accessori di eggs, non sono fondamentali, ma fanno comodo.
 
 Abbiamo tools:clean che esegue la pulizia del sistema cancellando la cache apt e rotando i log, tools:sanitize che cerca e rimuove file rimasti da precedenti versioni di eggs, tools:skel che permette di configurare l'aspetto del desktop live e del desktop di default dei nuvi utenti e tools:yolk che aggiorna la repository inclusa in /usr/local/yolk che viene utilizzata da eggs per caricare i pacchetti indispensabili all'installazione in assenza di connessione internet. Viene
@@ -529,10 +523,9 @@ clean system log, apt, etc
     tools:yolk      configure eggs to install
 ```
 
-#### sudo eggs tools:clean
+### sudo eggs tools:clean
 
 ```
-
   clean system log, apt, etc
 
   USAGE
@@ -543,7 +536,7 @@ clean system log, apt, etc
     -v, --verbose  verbose
 ```
 
-#### sudo eggs tools:initrd 
+### sudo eggs tools:initrd 
 Comando sperimentale che rimuove cryptosetup e resume dalla immagine initrd.img destinata al liveCd.
 
 ```
@@ -563,7 +556,7 @@ Comando sperimentale che rimuove cryptosetup e resume dalla immagine initrd.img 
     --clean=clean  clean the initrd.img
 ```
 
-#### sudo eggs toos:locales 
+### sudo eggs toos:locales 
 Comando sperimentale che reinstalla le locales definite in `/etc/penguins-eggs.d/eggs.yaml`. E funzionante solo su Debian e Devuan.
 
 ```
@@ -580,7 +573,7 @@ Comando sperimentale che reinstalla le locales definite in `/etc/penguins-eggs.d
     -v, --verbose    verbose
 ```
 
-#### sudo eggs tools:sanitize 
+### sudo eggs tools:sanitize 
 Rimuove da un progetto esistente i file generati da versioni precedenti di eggs che possono nascondere bug o crearli (consigliato al cambio di versione).
 ```
   sanitize
@@ -592,7 +585,7 @@ Rimuove da un progetto esistente i file generati da versioni precedenti di eggs 
     -h, --help  show CLI help
 ```
 
-#### sudo eggs tools:skel
+### sudo eggs tools:skel
 Con questo comando si ricrea la directory /etc/skel della nostra remix. 
 
 E' utile per dare una veste coerente e personalizzata all'utente live ed ai futuri utenti che creeremo una volta che il nostro sistema sarà installato. 
@@ -617,7 +610,7 @@ Essenzialmente copia le configurazioni dell'utente primario o di quello passato 
     desktop configuration of user mauro will get used as default
 ```
 
-#### sudo eggs tools:yolk
+### sudo eggs tools:yolk
 Il comando yolk crea una piccola repository locale in /usr/local/yolk con i pacchetti strettamente necessari ad assicurare l'installazione del sistema anche in assenza di connessione internet. 
 
 Viene comunque SEMPRE richiamata da produce, per cui il suo uso non è indispensabile se non in caso di aggiornamento del kernel della macchina madre.
@@ -638,7 +631,7 @@ Viene comunque SEMPRE richiamata da produce, per cui il suo uso non è indispens
     $ eggs yolk -v
 ```
 
-### sudo eggs remove
+## sudo eggs remove
 Sostituisce ed estende il vecchio comando `sterilize` rimasto coma alias.
 
 Rimuove i pacchetti debian utilizzati da eggs, rimuove eggs stesso e, nel caso di --purge, anche i file di configurazione.
@@ -673,7 +666,7 @@ Rimuove i pacchetti debian utilizzati da eggs, rimuove eggs stesso e, nel caso d
     configurations
 ```
 
-### sudo eggs update
+## sudo eggs update
 
 Esegue l'aggiornamento del pacchetto eggs. 
 
@@ -686,7 +679,7 @@ Consente, inoltre, l'aggiornamento da rete locale per quanto riguarda i pacchett
 Grazie al basket non è indispensabile avere penguins-eggs nella repository della vostra distro,
 
 
-# Creiamo una nostra remix
+# Creiazione di una nostra remix
 La creazione di una iso nostra remix è un processo che richiede pazienza e passione ma può darci grandi soddisfazioni ed in molti casi, in ultima analisi, farci risparmiare tempo e fatica.
 
 Scarichiamo la nostra distribuzione che intendiamo customizzare, scegliendo tra Debian buster, Debian bullseye, Devuan beowulf, ubuntu bionic, ubuntu focal e, da oggi, ubuntu groovy.
@@ -711,7 +704,7 @@ Oltre all'installazione dei vari pacchetti Debian necessari, verrà creata la di
 
 Ora eggs è pronto a funzionare e creare l'immagine iso del nostro sistema. 
 
-### Produzione della ISO
+## Produzione della ISO
 
 Una volta installato eggs ed i suoi prerequisiti, siamo pronti al grande salto.
 
@@ -767,11 +760,11 @@ In sostanza consiglio debu o lite per chi voglia partecipare allo sviluppo, nake
 
 Una nota a parte per alcune remix i386, sempre realizzate con eggs. Potrebbe essere interessante patricia-i386, un rifacimento di linux mint 19.3 tricia xfce, sufficientemente snella ed allo stesso tempo elegante, per essere utilizzata su computer datati. Ancora più leggera è bionic-i386 creata a partire da lubuntu-18.04 bionic ma, ovviamente, anche più scarna.
 
-### Dove posso scaricare le iso
+## Dove posso scaricare le iso
 
 Tutte le versioni sono scaricabili da **sourgeforge.net** cercando il progetto [penguins-eggs](https://sourceforge.net/projects/penguins-eggs/files/).
 
-#### User e password
+## User e password
 
 Tutte le distribuzioni qui riportate sono impostate con user live ed user di root.
 
@@ -785,10 +778,12 @@ eggs è un progetto che, al momento, consente di rimasterizzare diverse versioni
 - debian buster/bullseyes/stretch
 - devuan beowulf
 - ubuntu bionic/focal/groovy
+* derivate debian: deepin, linux mint lmde 4, netrunner-core, pop-os!, etc
+* derivate ubuntu: linux mint 19.x, 20.x, zorin, etc
 
-è evidente, che lo sviluppatore non può materialmente testare ogni release su tutte le versioni considerate, aggiungendo perltro la necessità di test sia su macchine uefi che bios standard.
+E' evidente, che lo sviluppatore non può materialmente testare ogni release su tutte le versioni considerate, aggiungendo peraltro la necessità di test sia su macchine uefi che su bios standard.
 
-E' perciò importante che la segnalazione dei problemi da parte degli utenti.
+E' perciò importante che la segnalazione dei problemi provengano da parte degli utenti. Ancora più importante è la necessità di trovare informatici o organizzazioni disposte a creare la propria remix basata su questo tool. 
 
 Potete segnalare le varie problematiche sulla pagina [issue](https://github.com/pieroproietti/penguins-eggs/issues) del progetto penguins-eggs su github.com.
 

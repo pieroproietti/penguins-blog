@@ -141,3 +141,13 @@ sitemap:
 # google_analytics: UA-170278688-1 // non funge con override, l'ho messo nel tema
 ## theme override
 #
+
+toc:
+  maxdepth: 2
+  class: toc
+  slugify: transliteration
+  decodeEntities: false
+  anchor:
+    position: before
+    symbol: '#'
+    style: header-anchor
