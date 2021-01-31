@@ -11,6 +11,7 @@ menu:
   debs: https://sourceforge.net/projects/penguins-eggs/files/packages-deb/
   ISOs: https://sourceforge.net/projects/penguins-eggs/files/iso/
   facebook: https://www.facebook.com/penguinseggs
+  lang: https://translate.google.com/translate?hl=en&sl=auto&tl=it&u=https%3A%2F%2Fpenguins-eggs.net%2F
 
 rss: /atom.xml
 
