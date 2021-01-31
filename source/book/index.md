@@ -21,7 +21,7 @@ Using mostly [DeepL](https://www.deepl.com/translator) translate service, I'm tr
 **[deutsche](https://translate.google.com/translate?hl=de&sl=it&tl=de&u=https%3A%2F%2Fpenguins-eggs.net%2Fbook%2Fitaliano)**
 **[russkiy](https://translate.google.com/translate?hl=ru&sl=en&tl=ru&u=https%3A%2F%2Fpenguins-eggs.net%2F)**
 **[polski](https://translate.google.com/translate?hl=pl&sl=it&tl=pl&u=https%3A%2F%2Fpenguins-eggs.net%2Fbook%2Fitaliano)**
-**[български]((https://translate.google.com/translate?hl=bg&sl=it&tl=pl&u=https%3A%2F%2Fpenguins-eggs.net%2Fbook%2Fitaliano)**)
+**[български](https://translate.google.com/translate?hl=bg&sl=it&tl=pl&u=https%3A%2F%2Fpenguins-eggs.net%2Fbook%2Fitaliano)**
 
 # Custom translation (old version)
 This translation are from previus version of the book:
