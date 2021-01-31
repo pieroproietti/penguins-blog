@@ -9,11 +9,20 @@ date: 2020-06-20 07:38:32
 
 I'm italian, so the official guide is of course the [italian version](./italiano.html). This version is the most updated, and can be traslated in english by [Google](https://translate.google.com/) or [DeepL](https://www.deepl.com/translator) without many problems, due the fact who code is english too.
 
-*** [italiano](./italiano.html) eggs v. 7.7.27 aggiornato al 30 gennaio 2020 ***
+** [italiano](./italiano.html) eggs v. 7.7.27 aggiornato al 30 gennaio 2020 **
 
 Using mostly [DeepL](https://www.deepl.com/translator) translate service, I'm trying to support more languages, I started with portugues for brazilian friends, and espanol putting great attention to not translate command's names, etc.
 
-# Traduzioni (old version)
+# Automatic translation (Thanx google translate)
+** [english](https://translate.google.com/translate?hl=en&sl=auto&tl=en&u=https%3A%2F%2Fpenguins-eggs.net%2Fbook%2Fitaliano)**
+** [español](https://translate.google.com/translate?hl=en&sl=it&tl=es&u=https%3A%2F%2Fpenguins-eggs.net%2Fbook%2Fitaliano)**
+** [português](https://translate.google.com/translate?hl=en&sl=it&tl=pt&u=https%3A%2F%2Fpenguins-eggs.net%2Fbook%2Fitaliano)**
+** [deutsche](https://translate.google.com/translate?hl=en&sl=it&tl=de&u=https%3A%2F%2Fpenguins-eggs.net%2Fbook%2Fitaliano)**
+** [polski](https://translate.google.com/translate?hl=en&sl=it&tl=pl&u=https%3A%2F%2Fpenguins-eggs.net%2Fbook%2Fitaliano)**
+** [russkiy](https://translate.google.com/translate?hl=en&sl=en&tl=ru&u=https%3A%2F%2Fpenguins-eggs.net%2F)**
+
+
+# Custom translation (old version)
 
 At the moment - october 2020 - we have the user's guide in five different languages:
 
