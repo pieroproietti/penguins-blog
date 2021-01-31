@@ -20,6 +20,13 @@ This is a great pity, becouse I know there are again users and distros intereste
 
 
 ## Good news!
+
+Today I found the way to compile eggs with node8 only for the pourpuse to get i386 version. 
+
+This is great, becouse peoples need again it! 
+
+I started a [mail list in sourceforge](https://sourceforge.net/p/penguins-eggs/mailman/penguins-eggs-developers/), and describe on the last mail that was the solution. If you are interested you can subscribe it.
+
 Now we have a [man page](/man) build automatically, so always updated and on line with the sources. 
 
 Not only, we "sell" it in double versions: man and html. You can find it always update in our [site](/man) too!
