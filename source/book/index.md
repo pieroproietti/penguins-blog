@@ -17,24 +17,18 @@ Using mostly [DeepL](https://www.deepl.com/translator) translate service, I'm tr
 **[english](https://translate.google.com/translate?hl=en&sl=auto&tl=en&u=https%3A%2F%2Fpenguins-eggs.net%2Fbook%2Fitaliano)**
 **[español](https://translate.google.com/translate?hl=en&sl=it&tl=es&u=https%3A%2F%2Fpenguins-eggs.net%2Fbook%2Fitaliano)**
 **[português](https://translate.google.com/translate?hl=pt&sl=it&tl=pt&u=https%3A%2F%2Fpenguins-eggs.net%2Fbook%2Fitaliano)**
-**[française](https://translate.google.com/translate?hl=fr&sl=auto&tl=fr&u=https%3A%2F%penguins-eggs.net%2Fbook%2Fitaliano)**
+**[française](https://translate.google.com/translate?hl=fr&sl=auto&tl=fr&u=https%3A%2F%2Fpenguins-eggs.net%2Fbook%2Fitaliano)**
 **[deutsche](https://translate.google.com/translate?hl=de&sl=it&tl=de&u=https%3A%2F%2Fpenguins-eggs.net%2Fbook%2Fitaliano)**
 **[russkiy](https://translate.google.com/translate?hl=ru&sl=en&tl=ru&u=https%3A%2F%2Fpenguins-eggs.net%2F)**
-**[polski](https://translate.google.com/translate?hl=en&pl=it&tl=pl&u=https%3A%2F%2Fpenguins-eggs.net%2Fbook%2Fitaliano)**
-
+**[polski](https://translate.google.com/translate?hl=pl&sl=it&tl=pl&u=https%3A%2F%2Fpenguins-eggs.net%2Fbook%2Fitaliano)**
+**[български]((https://translate.google.com/translate?hl=bg&sl=it&tl=pl&u=https%3A%2F%2Fpenguins-eggs.net%2Fbook%2Fitaliano)**)
 
 # Custom translation (old version)
-
-At the moment - october 2020 - we have the user's guide in five different languages:
+This translation are from previus version of the book:
 
 * [english](./english.html) eggs v. 7.6.70 updated october 2020
-
 * [português](./portugues.html) eggs v. 7.6.70 updated october 2020
-
-Others previus versions:
-
 * [español](./espanol.html) eggs v. 7.5.81 updated summer 2020
- 
 * [български](./bulgarian.html) eggs v. 7.5.81 updated summer 2020
 
 # Terminal sessions samples
