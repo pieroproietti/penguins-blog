@@ -4,7 +4,6 @@ layout: post
 date: 2021-02-06 12:57:00
 ---
 
-[Perri's Brewery](perrisbrewery.jpg)
 
 Per lo sviluppo di eggs ho utilizzato dal principio il linguaggio javascript, cercando di limitare il più possibile la scrittura di codice bash. Col il tempo sono poi passato a typescript che, a mio avviso, offre una migliore pulizia, maggior controllo sul sorgente e la possibilità di avere un ottimo aiuto durante la scrittura del codice con suggerimenti e quant'altro.
 
@@ -36,7 +35,7 @@ E mi costa pure poco e permette di rispettare una promessa, che quasi un anno fa
 
 Per cui, prima del rilascio di eggs, ogni volta passeremo nella Perri's brewery, e via, in volo!
 
-![Perri's Brewery](perrisbrewery2.jpg)
+![Perri's Brewery](/images/perrisbrewery2.jpg)
 
 
 
