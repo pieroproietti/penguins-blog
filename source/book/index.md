@@ -11,6 +11,9 @@ I'm italian, so the official guide is of course the [italian version](./italiano
 
 **[italiano](./italiano.html) eggs v. 7.7.27 aggiornato al 30 gennaio 2020**
 
+**[man page](/man/index)**
+
+
 Using mostly [DeepL](https://www.deepl.com/translator) translate service, I'm trying to support more languages, I started with portugues for brazilian friends, and espanol putting great attention to not translate command's names, etc.
 
 # Automatic translation (Thanx google translate)
@@ -24,6 +27,8 @@ Using mostly [DeepL](https://www.deepl.com/translator) translate service, I'm tr
 **[български](https://translate.google.com/translate?hl=bg&sl=it&tl=bg&u=https%3A%2F%2Fpenguins-eggs.net%2Fbook%2Fitaliano)**
 
 You can find others languages available in google translate. Just open **[english](https://translate.google.com/translate?hl=en&sl=auto&tl=en&u=https%3A%2F%2Fpenguins-eggs.net%2Fbook%2Fitaliano)** and select another language.
+
+**[man page](/man/index)**
 
 # Custom translation (old version)
 This translation are from previus version of the book:
