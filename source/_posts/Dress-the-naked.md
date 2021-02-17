@@ -13,4 +13,4 @@ I hope you'll enjoy it.
 
 {% youtube bxRlLZx_-eI %}
 
-If You are interest to publish similar demonstrations in your language, I will be happy to help you. If
+**If You are interest to publish similar demonstrations in your language, I will be happy to collaborate with you. If**
