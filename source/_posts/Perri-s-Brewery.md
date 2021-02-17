@@ -55,6 +55,11 @@ Però già adesso - dato il precipuo funzionamento di eggs - che analizza le var
 
 Per cui, prima di ogni rilascio di eggs, i pacchetti passeranno nella famosa birreria e tra un doppio malto ed una chiacchiera tra amici,  rinfrancati prenderanno il volo!
 
+## Cambio di versione 
+
+Con l'occasione passeremo dalla versione 7.7.33 direttamente alla versione 7.8.10.1
+
+
 ![Perri's Brewery](/images/perrisbrewery2.jpg)
 
 
