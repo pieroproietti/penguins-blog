@@ -11,5 +11,4 @@ Can be interesting not only for desktop remixes but for server remixes too. I
 
 I hope you'll enjoy it.
 
-[[embed url=https://youtu.be/bxRlLZx_-eI]]
-
+{% youtube bxRlLZx_-eI %}
