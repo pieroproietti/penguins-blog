@@ -13,4 +13,4 @@ I hope you'll enjoy it.
 
 {% youtube bxRlLZx_-eI %}
 
-**If You are interest to publish similar demonstrations in your language, I will be happy to collaborate with you.**
+**I can't make this videos in english, but if You are interest to publish similar demonstrations in english or your language, I will be happy to collaborate with you.** Please, contact me at: piero.proietti@gmail.com
