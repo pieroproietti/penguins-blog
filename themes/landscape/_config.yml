@@ -5,7 +5,7 @@ menu:
   Archives: /archives
   Forum: /forum/
   About me: /about-me.html
-  Translate: https://translate.google.com/translate?hl=en&sl=auto&tl=en&u=https%3A%2F%2Fpenguins-eggs.net%2F
+  translate: https://translate.google.com/translate?hl=en&sl=auto&tl=en&u=https%3A%2F%2Fpenguins-eggs.net%2F
   sources: https://github.com/pieroproietti/penguins-eggs
   npm: https://www.npmjs.com/package/penguins-eggs
   debs: https://sourceforge.net/projects/penguins-eggs/files/packages-deb/
