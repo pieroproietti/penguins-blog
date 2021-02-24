@@ -9,7 +9,7 @@ date: 2020-06-20 07:38:32
 
 I'm italian, so the official guide is of course the [italian version](./italiano.html). This version is the most updated, and can be traslated in english by [Google](https://translate.google.com/) or [DeepL](https://www.deepl.com/translator) without many problems, due the fact who code is english too.
 
-**[italiano](./italiano.html) eggs v. 7.7.27 aggiornato al 30 gennaio 2020**
+**[italiano](./italiano.html) eggs v. 7.8.15 aggiornato al 24 febbraio 2021**
 
 **[man page](/man/index)**
 
