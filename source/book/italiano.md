@@ -42,7 +42,11 @@ L'installazione da pacchetto Debian è senz'altro la più semplice. Basta scaric
 
 `sudo dpkg -i eggs-7.8.15-1.deb`
 
-Per aggiornare il pacchetto - una volta installato - alle successive versioni, basterà il comando
+Se si tratta della prima installazione, il pacchetto protesterà per la mancanza delle dipendenze che sono installabili con il comando:
+
+`sudo apt install -f`
+
+Successivamente, per aggiornare il pacchetto alle nuove versioni, basterà il comando
 
 `sudo eggs update`
 
@@ -50,9 +54,11 @@ e selezionare l'ultima versione di eggs dal basket.
 
 La versione .deb  comprende al suo interno nodejs per cui non è necessario disporre di questo pacchetto. 
 
+E' la forma di utilizzo consigliata ed è installabile facilmente su ogni distro (Debian/Devuan/Ubuntu e derivate), sia per l'architettura amd64 che su i386.
+
 ## Pacchetto npm \(nodejs\)
 
-Essendo eggs un software sviluppato con nodejs, la versione originale può essere quella preferibile, è sempre la più aggiornata. Inoltre, una volta installata, è aggiornabile alle versioni successive con il comando `sudo eggs update`.
+Essendo eggs un software sviluppato con nodejs, la versione originale potrebbbe essere quella preferibile, specie per chi abbia intenzione di collaborare allo sviluppo.
 
 Per poter installare questa versione è necessario quindi installare prima il pacchetto nodejs. La descrizione di quale nodejs utilizzare e le modalità di installazione di nodejs sono riportare nel file README,md compreso nella [repository di eggs](https://github.com/pieroproietti/penguins-eggs).
 
@@ -101,7 +107,7 @@ Avviamo eggs senza alcun comando ed otterremo la lista dei comandi disponibili:
 
 ![eggs-commands](/images/eggs-commands.png)
 
-Andiamo, quindi ad inizializzare eggs con `sudo eggs init`.
+Andiamo, quindi ad inizializzare eggs con `sudo eggs prerequisites`.
 
 
 ## sudo eggs prerequisites
@@ -376,11 +382,11 @@ Potete tornare indietro da ogni menu selezionando quit (basta premere il tasto "
 mom rappresenta una buona guida per l'apprendimento di eggs ed un sicuro riferimento. Naturalmente con il tempo ogni "pulcino" impara a camminare da solo e potrete immettere i comandi direttamente da terminale.
 
 ## sudo eggs prerequisites
-Si occupa della inizializzazione di eggs, creazione delle pagine di manuale, creazione dell'autocomplete, creazione dei file di configurazione ed installazione dei pacchetti debian necessari. Alcune funzionalità nel pacchetto in formato .deb di eggs sono state sostituite dalla dipendenze e dagli script di pre e post installazione, per cui quello che avviene è solamente la creazione della configurazione che è un processo istantaneo.
+Si occupa della inizializzazione di eggs, creazione delle pagine di manuale, creazione dell'autocomplete, creazione dei file di configurazione ed installazione dei pacchetti debian necessari. Alcune funzionalità nel pacchetto in formato .deb di eggs sono state sostituite dalla dipendenze e dagli script di pre e post installazione, per cui quello che avviene è solamente la creazione della configurazione che è un processo pressochè istantaneo.
 
-Nel caso, però, si stia installando eggs con il pacchetto npm la prima installazione la procedura può essere relativamente lunga, essendo necessario aggiornare apt, scaricare i pacchetti necessari e, quindi, procedere con il resto. 
+Nel caso però, si stia installando eggs con il pacchetto npm, la prima configurazione della procedura può essere relativamente lunga, essendo necessario aggiornare apt, scaricare i pacchetti necessari e, quindi, procedere con il resto. 
 
-Successivamente, però, una volta che i pacchetti sono installati, diventa istantaneo e lo si può utilizzare sovente, per ricreare i file di configurazione. Allo scopo si rimuove la directory di configurazione di eggs. `sudo rm /etc/penguins-eggs.d -rf` e, quindi si avvia `sudo eggs init`.
+Successivamente, però, una volta che i pacchetti sono installati, diventa istantanea - come nel caso del pacchetto deb - e lo si può utilizzare sovente, per ricreare i file di configurazione. Allo scopo si rimuove la directory di configurazione di eggs. `sudo rm /etc/penguins-eggs.d -rf` e, quindi si avvia `sudo eggs init`.
 
 Questo può essere utile nel caso di file di configurazione danneggiati o vetusti rispetto alla versione corrente di eggs.
 
