@@ -104,7 +104,7 @@ Avviamo eggs senza alcun comando ed otterremo la lista dei comandi disponibili:
 Andiamo, quindi ad inizializzare eggs con `sudo eggs init`.
 
 
-## sudo eggs init 
+## sudo eggs prerequisites
 
 Per funzionare eggs ha bisogno di alcuni tool installati, i cosidetti prerequisiti, inoltre necessita di creare ed installare le pagine di man di eggs e creare l'autocomplete di eggs stesso. 
 
@@ -166,11 +166,11 @@ Eggs necessita dei diritti di root, quindi - tranne per eggs mom, eggs info ed i
 * dad
 * export
 * help
-* init
 * info
 * install
 * kill
 * mom
+* prerequisites
 * produce
 * remove
 * tools
@@ -309,35 +309,6 @@ Utilizzatelo solo dove necessario e, comunque, dopo aver salvato il contenuto de
     Install the system with eggs cli installer(default)
 ```
 
-## sudo eggs init
-Si occupa della inizializzazione di eggs, creazione delle pagine di manuale, creazione dell'autocomplete, creazione dei file di configurazione ed installazione dei pacchetti debian necessari. 
-
-Nel caso di prima installazione la procedura può essere relativamente lunga, essendo necessario aggiornare apt, scaricare i pacchetti necessari e, quindi, procedere con il resto. 
-
-Successivamente, però, una volta che i pacchetti sono installati, diventa istantaneo. Lo si utilizza, sovente, per ricreare i file di configurazione. Allo scopo si rimuove la directory di configurazione di eggs. `sudo rm /etc/penguins-eggs.d -rf` e, quindi si avvia `sudo eggs init`.
-
-Questo può essere utile nel caso di file di configurazione danneggiati o vetusti rispetto alla versione corrente di eggs.
-
-```
-  command: init 
-
-  Initialize eggs and install packages prerequisites to run eggs
-
-  USAGE
-    $ eggs init
-
-  OPTIONS
-    -h, --help     show CLI help
-    -v, --verbose  verbose
-
-  ALIASES
-    $ eggs prerequisites
-    $ eggs config
-
-  EXAMPLE
-    ~$ eggs init
-    init eggs, install prerequisites and create configuration files
-```
 
 ## sudo eggs kill
 
@@ -403,6 +374,36 @@ In Tools troverete, ovviamente tutti i gli strumenti di eggs, raccolti sotto egg
 Potete tornare indietro da ogni menu selezionando quit (basta premere il tasto "q" seguito da invio).
 
 mom rappresenta una buona guida per l'apprendimento di eggs ed un sicuro riferimento. Naturalmente con il tempo ogni "pulcino" impara a camminare da solo e potrete immettere i comandi direttamente da terminale.
+
+## sudo eggs prerequisites
+Si occupa della inizializzazione di eggs, creazione delle pagine di manuale, creazione dell'autocomplete, creazione dei file di configurazione ed installazione dei pacchetti debian necessari. Alcune funzionalità nel pacchetto in formato .deb di eggs sono state sostituite dalla dipendenze e dagli script di pre e post installazione, per cui quello che avviene è solamente la creazione della configurazione che è un processo istantaneo.
+
+Nel caso, però, si stia installando eggs con il pacchetto npm la prima installazione la procedura può essere relativamente lunga, essendo necessario aggiornare apt, scaricare i pacchetti necessari e, quindi, procedere con il resto. 
+
+Successivamente, però, una volta che i pacchetti sono installati, diventa istantaneo e lo si può utilizzare sovente, per ricreare i file di configurazione. Allo scopo si rimuove la directory di configurazione di eggs. `sudo rm /etc/penguins-eggs.d -rf` e, quindi si avvia `sudo eggs init`.
+
+Questo può essere utile nel caso di file di configurazione danneggiati o vetusti rispetto alla versione corrente di eggs.
+
+```
+  command: init 
+
+  Initialize eggs and install packages prerequisites to run eggs
+
+  USAGE
+    $ eggs init
+
+  OPTIONS
+    -h, --help     show CLI help
+    -v, --verbose  verbose
+
+  ALIASES
+    $ eggs prerequisites
+    $ eggs config
+
+  EXAMPLE
+    ~$ eggs init
+    init eggs, install prerequisites and create configuration files
+```
 
 ## sudo eggs produce
 
@@ -770,6 +771,6 @@ Se siete giunti fino a questo passo, senza l'ausilio del tasto di scorrimento ra
 Grazie a tutti e... happy hacking!
 
 # Nota
-Avrei voglia di riscrivere eggs con python3 per vedere se riesco a creare un programma di rimasterizzazione ancora più versatile e conforme alle politiche Debian. Ovviamente, trattandosi di un rifacimento completo, beneficierebbe dell'esperienza fatta e potrebbe aprirsi a nuove funzionalità: gui/server di boot in rete, etc. Il nome del progetto - provvisiorio - è [penguins-eggs2](https://github.com/pieroproietti/penguins-eggs-2). Avrei però bisogno di qualche collaborazione nell'impresa. Per rimanere informati potete iscrivervi alla [mail list](https://sourceforge.net/p/penguins-eggs/mailman/penguins-eggs-developers/) del progetto.
+Avrei voglia di riscrivere eggs con python3 per vedere se riesco a creare un programma di rimasterizzazione ancora più versatile e conforme alle politiche Debian. Ovviamente, trattandosi di un rifacimento completo, beneficierebbe dell'esperienza fatta e potrebbe aprirsi a nuove funzionalità: gui/server di boot in rete, etc. Il nome del progetto - provvisiorio - è [penguins-eggs2](https://github.com/pieroproietti/penguins-eggs2). Avrei però bisogno di qualche collaborazione nell'impresa. Per rimanere informati potete iscrivervi alla [mail list](https://sourceforge.net/p/penguins-eggs/mailman/penguins-eggs-developers/) del progetto.
 
 Piero Proietti
