@@ -770,6 +770,6 @@ Se siete giunti fino a questo passo, senza l'ausilio del tasto di scorrimento ra
 Grazie a tutti e... happy hacking!
 
 # Nota
-Avrei voglia di riscrivere eggs con python3 per vedere se riesco a creare un programma di rimasterizzazione ancora più versatile e conforme alle politiche Debian. Ovviamente, trattandosi di un rifacimento completo, beneficierebbe dell'esperienza fatta e potrebbe aprirsi a nuove funzionalità: gui/server di boot in rete, etc. Il nome del progetto - provvisiorio - è [penguins-eggs2](https://github.com/pieroproietti/penguins-eggs-2). Avrei però bisogno di qualche collaborazione nell'impresa.
+Avrei voglia di riscrivere eggs con python3 per vedere se riesco a creare un programma di rimasterizzazione ancora più versatile e conforme alle politiche Debian. Ovviamente, trattandosi di un rifacimento completo, beneficierebbe dell'esperienza fatta e potrebbe aprirsi a nuove funzionalità: gui/server di boot in rete, etc. Il nome del progetto - provvisiorio - è [penguins-eggs2](https://github.com/pieroproietti/penguins-eggs-2). Avrei però bisogno di qualche collaborazione nell'impresa. Per rimanere informati potete iscrivervi alla [mail list](https://sourceforge.net/p/penguins-eggs/mailman/penguins-eggs-developers/) del progetto.
 
 Piero Proietti
