@@ -5,7 +5,7 @@ lang: it_IT
 ---
 
 # Aggiornamento
-Questo manuale utente di penguin's eggs, è aggiornato al 30 gennaio 2021, eggs-7.7.27-1.deb. 
+Questo manuale utente di penguin's eggs, è aggiornato al 24 febbraio 2021, eggs-7.8.15-1.deb. 
 
 Puoi contribuire all'aggiornamento di questo manuale che è realizzato con la [sintassi markdown](https://sourceforge.net/p/hexo/wiki/markdown_syntax) di [hexo](https://hexo.io/). 
 
@@ -40,7 +40,7 @@ Cose da fare prima di cominciare la produzione delle "uova".
 
 L'installazione da pacchetto Debian è senz'altro la più semplice. Basta scaricare l'ultima versione di eggs dal sito di [sourceforge](https://sourceforge.net/projects/penguins-eggs/files/DEBS/) ed installarla con il comando:
 
-`sudo dpkg -i eggs-7.7.27-1.deb`
+`sudo dpkg -i eggs-7.8.15-1.deb`
 
 Per aggiornare il pacchetto - una volta installato - alle successive versioni, basterà il comando
 
@@ -110,28 +110,28 @@ Per funzionare eggs ha bisogno di alcuni tool installati, i cosidetti prerequisi
 
 Per inizializzare eggs ed installare i pacchetti Debian necessari al suo funzionamento, basterà avviare il comando
 
-`sudo eggs init`
+`sudo eggs prerequisites`
 
-![eggs-init](/images/eggs-init.png)
+![eggs-prerequisites](/images/eggs-init.png)
 
-Selezionando Yes verrà accettata l'installazione dei pacchetti necessari al funzionamento di eggs ed alla produzione delle immagini iso. 
+Questo comando installa i pacchetti necessari per eggs - se non già installati dagli script di preinstallazione del pacchetto deb - e crea la configurazione di eggs nella directory /etc/penguins-eggs.d.
 
-Essenzialmente possiamo divide in quattro i pacchetti installti:
+Selezionando Yes verrà accettata l'installazione dei pacchetti e la creazione della directory di configurazione. 
+
+Essenzialmente possiamo dividere i pacchetti da cui eggs dipende, in:
 
 * pacchetti per avvio su macchine UEFI
 * pacchetti per la creazione dell'immagine iso
-* pacchetti per l'installer grafico calamares
-* pacchetti per la localizzazione
+* pacchetti dell'installer grafico calamares
 
-Tutti i pacchetti per il funzionamento di eggs e la produzione di iso sono installati dal comando `sudo eggs init` che provvederà ad installare i seguenti pacchetti, se necessatio:
+Tutti i pacchetti per il funzionamento di eggs e la produzione di iso sono installati dal comando `sudo eggs prerequisites` o dagli scripet di installazione. Sono installati, se necessario:
 
 * `grub-efi-amd64`
 * `isolinux, syslinux, rsync, squashfs-tools, xorriso, xterm, whois, live-boot, live-boot-initramfs-tools`
 * `calamares, qml-module-qtquick2, qml-module-qtquick-controls`
-* `live-task-localisation` ed i `task-`linguaggio per la lingua o le lingue prescelte.
 
-I file per la localizzazione saranno installati solamente per Debian/Devuan, inoltre, gli stessi verranno installati con l'opzione 
-`–no-install-recommends`, altrimenti verrebbero installate tutte le lingue.
+__Nota__: I pacchetti per l'installer grafico calamares, invece, non essendo indispensabili per la creazione della iso, non vengono installati automaticamente. Potete installare calamares con il comando:
+* `sudo eggs calamares --install`
 
 ## Directory di configurazione penguins-eggs.d
 
@@ -172,7 +172,7 @@ Eggs necessita dei diritti di root, quindi - tranne per eggs mom, eggs info ed i
 * kill
 * mom
 * produce
-* sterilize
+* remove
 * tools
 * update
 
@@ -503,9 +503,8 @@ Un altro flag,utilizzabile è --final che predispone calamares alla rimozione de
 ## eggs tools
 Sono raccolti sotto tools gli strumenti accessori di eggs, non sono fondamentali, ma fanno comodo.
 
-Abbiamo tools:clean che esegue la pulizia del sistema cancellando la cache apt e rotando i log, tools:sanitize che cerca e rimuove file rimasti da precedenti versioni di eggs, tools:skel che permette di configurare l'aspetto del desktop live e del desktop di default dei nuvi utenti e tools:yolk che aggiorna la repository inclusa in /usr/local/yolk che viene utilizzata da eggs per caricare i pacchetti indispensabili all'installazione in assenza di connessione internet. Viene
+Abbiamo tools:clean che esegue la pulizia del sistema cancellando la cache apt e rotando i log, tools:skel che permette di configurare l'aspetto del desktop live e del desktop di default dei nuvi utenti e tools:yolk che aggiorna la repository inclusa in /usr/local/yolk che viene utilizzata da eggs per caricare i pacchetti indispensabili all'installazione in assenza di connessione internet. 
 
-Ci sono anche dei tools contrassegnati come sperimentati: tools:initrd, tools:locales ed tools:pve che consiglio al momento di ignorare.
 
 ```
 clean system log, apt, etc
@@ -515,10 +514,7 @@ clean system log, apt, etc
 
   COMMANDS
     tools:clean     clean system log, apt, etc
-    tools:initrd    Test initrd
     tools:locales   install/clean locales
-    tools:pve       enable/start/stop pve-live
-    tools:sanitize  sanitize
     tools:skel      update skel from home configuration
     tools:yolk      configure eggs to install
 ```
@@ -536,28 +532,8 @@ clean system log, apt, etc
     -v, --verbose  verbose
 ```
 
-### sudo eggs tools:initrd 
-Comando sperimentale che rimuove cryptosetup e resume dalla immagine initrd.img destinata al liveCd.
-
-```
-  command: tools:initrd help
-
-  Commands to boot in the grub shell
-
-  Test initrd
-
-  USAGE
-    $ eggs tools:initrd
-
-  OPTIONS
-    -h, --help     show CLI help
-    -v, --verbose
-    --check=check  check if necessary to clean initrd.img
-    --clean=clean  clean the initrd.img
-```
-
 ### sudo eggs toos:locales 
-Comando sperimentale che reinstalla le locales definite in `/etc/penguins-eggs.d/eggs.yaml`. E funzionante solo su Debian e Devuan.
+Comando reinstalla le locales definite in `/etc/penguins-eggs.d/eggs.yaml`.
 
 ```
   command: tools:locales help
@@ -571,18 +547,6 @@ Comando sperimentale che reinstalla le locales definite in `/etc/penguins-eggs.d
     -h, --help       show CLI help
     -r, --reinstall  reinstall locales
     -v, --verbose    verbose
-```
-
-### sudo eggs tools:sanitize 
-Rimuove da un progetto esistente i file generati da versioni precedenti di eggs che possono nascondere bug o crearli (consigliato al cambio di versione).
-```
-  sanitize
-
-  USAGE
-    $ eggs tools:sanitize
-
-  OPTIONS
-    -h, --help  show CLI help
 ```
 
 ### sudo eggs tools:skel
@@ -632,7 +596,7 @@ Viene comunque SEMPRE richiamata da produce, per cui il suo uso non è indispens
 ```
 
 ## sudo eggs remove
-Sostituisce ed estende il vecchio comando `sterilize` rimasto coma alias.
+Sostituisce ed estende il vecchio comando `sterilize` rimasto coma alias. Se state utilizzando il pacchetto debian di eggs il metodo di rimozione consigliato è: sudo apt remove eggs.
 
 Rimuove i pacchetti debian utilizzati da eggs, rimuove eggs stesso e, nel caso di --purge, anche i file di configurazione.
 
@@ -693,7 +657,7 @@ Installiamo eggs, scaricandolo da [sourceforge](https://sourceforge.net/projects
 Il comando per l'installazione è il semplice:
 
 ```
-sudo dpkg -i eggs_7.7.27-1_amd64.deb
+sudo dpkg -i eggs_7.8.15-1_amd64.deb
 ```
 
 bene, a questo punto, assicuriamoci di caricare i prerequisiti e creare i file di configurazione dando il comando
@@ -804,5 +768,8 @@ Potete facilitare la diffusione di eggs e contribuire alla sua crescita in diver
 Se siete giunti fino a questo passo, senza l'ausilio del tasto di scorrimento rapido, avete utilizzato parte del Vostro tempo - risorsa preziosa - per seguirmi su questo percorso e, quindi, è mio dovere e - ancor di più desiderio - ringraziarvi per il vostro interesse. 
 
 Grazie a tutti e... happy hacking!
+
+# Nota
+Avrei voglia di riscrivere eggs con python3 per vedere se riesco a creare un programma di rimasterizzazione ancora più versatile e conforme alle politiche Debian. Il nome del progetto - provvisiorio - è [penguins-eggs2](https://github.com/pieroproietti/penguins-eggs-2). Avrei bisogno di qualche collaborazione nell'impresa.
 
 Piero Proietti
