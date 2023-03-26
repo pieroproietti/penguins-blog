@@ -1,4 +1,6 @@
-# Website
+# Penguins' eggs - site and blog
+
+I'm trying to find something even more practical than the already excellent hexo to manage penguins' eggs blog.
 
 This website is built using [Docusaurus 2](https://docusaurus.io/), a modern static website generator.
 
