@@ -4,32 +4,32 @@ import styles from './styles.module.css';
 
 const FeatureList = [
   {
-    title: 'Easy to Use',
+    title: 'Debian',
     Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        Penguins' eggs started with Debian buster back in 2017, many years have 
+        passed since then but it still supports buster in addition to bullseye 
+        and the future bookworm.
       </>
     ),
   },
   {
-    title: 'Focus on What Matters',
+    title: 'Ubuntu',
     Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        Ubuntu and Devuan are still part of the Debian family and are supported.
       </>
     ),
   },
   {
-    title: 'Powered by React',
+    title: 'Arch',
     Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        Adding Arch was laborious, but it was possible because the 
+        project started and evolved to be as universal as possible.
       </>
     ),
   },
