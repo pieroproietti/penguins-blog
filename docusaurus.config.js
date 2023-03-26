@@ -7,7 +7,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'penguins\' eggs',
-  tagline: 'penguins\' eggs are cool',
+  tagline: 'On the road of Remastersys, Refracta, Systemback and father Knoppix!',
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
@@ -64,9 +64,9 @@ const config = {
       // Replace with your project's social card
       image: 'img/docusaurus-social-card.jpg',
       navbar: {
-        title: 'penguin\s eggs',
+        title: 'penguins\' eggs',
         logo: {
-          alt: 'My Site Logo',
+          alt: 'Penguins Eggs Logo',
           src: 'img/logo.svg',
         },
         items: [
@@ -101,15 +101,15 @@ const config = {
             items: [
               {
                 label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+                href: 'https://stackoverflow.com/questions/tagged/penguins-eggs',
               },
               {
                 label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
+                href: 'https://discordapp.com/invite/penguins-eggs',
               },
               {
                 label: 'Twitter',
-                href: 'https://twitter.com/docusaurus',
+                href: 'https://twitter.com/pieroproietti',
               },
             ],
           },
@@ -127,7 +127,7 @@ const config = {
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} Penguins\' eggs. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} Penguins\' eggs, build with Docusaurus.`,
       },
       prism: {
         theme: lightCodeTheme,
