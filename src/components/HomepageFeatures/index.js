@@ -4,6 +4,16 @@ import styles from './styles.module.css';
 
 const FeatureList = [
   {
+    title: 'Arch',
+    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
+    description: (
+      <>
+        Adding Arch was laborious, but it was possible because the 
+        project started and evolved to be as universal as possible.
+      </>
+    ),
+  },
+  {
     title: 'Debian',
     Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
     description: (
@@ -11,6 +21,24 @@ const FeatureList = [
         Penguins' eggs started with Debian buster back in 2017, many years have 
         passed since then but it still supports buster in addition to bullseye 
         and the future bookworm.
+      </>
+    ),
+  },
+  {
+    title: 'Devuan',
+    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
+    description: (
+      <>
+        Eggs support Devuan beowulf, chimaera and daedalus.
+      </>
+    ),
+  },
+  {
+    title: 'Manjaro',
+    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
+    description: (
+      <>
+        Eggs is part of communty of Manjaro.
       </>
     ),
   },
@@ -24,13 +52,13 @@ const FeatureList = [
     ),
   },
   {
-    title: 'Arch',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
+    title: 'Others',
+    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
     description: (
       <>
-        Adding Arch was laborious, but it was possible because the 
-        project started and evolved to be as universal as possible.
-      </>
+        virtually every Debian, Devuan and Ubuntu derivative is supported, 
+        for Arch derivatives we are gearing up.
+.      </>
     ),
   },
 ];
