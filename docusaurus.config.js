@@ -67,7 +67,7 @@ const config = {
         title: 'penguins\' eggs',
         logo: {
           alt: 'Penguins Eggs Logo',
-          src: 'img/logo.svg',
+          src: 'img/logo.png',
         },
         items: [
           {
