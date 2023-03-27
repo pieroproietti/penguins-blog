@@ -14,7 +14,7 @@ const config = {
   url: 'https://penguins-eggs.net',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/',
+  baseUrl: '/docusauros-eggs/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
@@ -47,8 +47,7 @@ const config = {
           showReadingTime: true,
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/pieroproietti/docusaurus-eggs/tree/main/packages/create-docusaurus/templates/shared/',
+          // editUrl: 'https://github.com/pieroproietti/docusaurus-eggs/tree/main/packages/create-docusaurus/templates/shared/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
