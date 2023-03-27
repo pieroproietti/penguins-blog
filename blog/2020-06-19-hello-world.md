@@ -19,6 +19,3 @@ It is installable just with eggs install, not calamares GUI installer at the mom
 I just forgot to tell who I made another version of eggs, to include ulyana and just upload the deb package it in sourceforge too.
 
 [#linuxmint](/categories/linuxmint/)
-
-
-

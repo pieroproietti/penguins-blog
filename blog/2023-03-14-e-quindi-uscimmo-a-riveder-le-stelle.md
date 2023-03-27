@@ -7,15 +7,15 @@ title: E quindi uscimmo a riveder le stelle
 ![Dante Alighieri](/images/dantealighieri.webp)
 ...
 
-__Lo duca e io per quel cammino ascoso__
-__intrammo a ritornar nel chiaro mondo;__
-__e sanza cura aver d’alcun riposo,__
-
-__salimmo sù, el primo e io secondo,__
-__tanto ch’i’ vidi de le cose belle__
-__che porta ’l ciel, per un pertugio tondo.__
-
-__E quindi uscimmo a riveder le stelle.__
+> Lo duca e io per quel cammino ascoso<br/>
+> intrammo a ritornar nel chiaro mondo;<br/>
+> e sanza cura aver d’alcun riposo,<br/>
+> 
+> salimmo sù, el primo e io secondo,<br/>
+> tanto ch’i’ vidi de le cose belle<br/>
+> che porta ’l ciel, per un pertugio tondo.<br/>
+> 
+> E quindi uscimmo a riveder le stelle.<br/>
 
 
 [Divina Commedia - canto XXIV](https://divinacommedia.weebly.com/inferno-canto-xxxiv.html)
