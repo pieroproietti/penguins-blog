@@ -1,7 +1,7 @@
 ---
-slug: 2021-11-24-a-bit-more-universal
-title: a bit more universal
 authors: pieroproietti
+slug: 2021-11-24-a-bit-more-universal
+title: A bit more universal
 ---
 
 eggs in questo momento ha raggiunto praticamente la totalità delle distribuzioni basate su Debian e da queste derivate: Devuan, Ubuntu e le innumerevoli altre.
@@ -64,6 +64,7 @@ Non dovendo andare troppo per il sottile, necessitando giusto di qualcosa di man
 
 Da notare anche nella loro configurazione di calamares la presenza di un tasto per la visualizzazione della finestra di debug, utilissima a noi sviluppatori.
 
+![EndeavourOS](/images/EndeavourOS.png)
 
 # niente da dire... mi sto innamorando!
 Pulito, bella grafica, snello. Me lo immagino installato su computer leggeri e datati... 
