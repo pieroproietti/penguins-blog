@@ -56,10 +56,10 @@ sudo eggs dad -d
 che vi configura eggs in modalità default.
 
 # produzione della iso
-Per creare la iso, specie durante le prove, consiglio sempre l'opzione --fast, riservandoci di creare la iso con l'opzioni --max solo quando saremo sicuri del risultato finale. Questo ci darà un grosso guadagno di tempo.
+Per creare la iso, utilizziamo eggs produce senza alcun flag, riservandoci di creare la iso con l'opzione --max solo quando saremo sicuri del risultato finale. Questo ci darà un grosso guadagno di tempo.
 
 ```
-sudo eggs produce --fast --addons adapt
+sudo eggs produce --addons adapt
 ```
 
 Ho utilizzato qui anche ```--addons adapt```, questo addon crea semplicemente un link sul desktop per ridimensionare il monitor. E' utile e consigliato solo per iso che dovranno essere utilizzate su macchine virtuali.

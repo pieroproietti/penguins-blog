@@ -64,7 +64,7 @@ const config = {
       navbar: {
         title: 'penguins\' eggs',
         logo: {
-          alt: 'Penguins Eggs Logo',
+          alt: 'eggs',
           src: 'img/logo.png',
         },
         items: [

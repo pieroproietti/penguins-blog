@@ -28,17 +28,16 @@ The live is autologin, just look the instructions in console.
 
 ```sudo eggs install --unattended```
 
-{% youtube HfoZsqfIqAA %}
+<iframe width="560" height="315" src="https://www.youtube.com/embed/HfoZsqfIqAA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 # update 
 Actually I build the same image addind sddm and some others packages, so it's possible to use calamares for installation.
 
-{% youtube TqTRyu4b-Ug %}
+<iframe width="560" height="315" src="https://www.youtube.com/embed/TqTRyu4b-Ug" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 # how to use
 ```startplasma-wayland``` to get the GUI, click on waydroid to run it.
-
-{% youtube kMnCWhEqCGA %}
+<iframe width="560" height="315" src="https://www.youtube.com/embed/kMnCWhEqCGA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 # how to remaster
 This system can be easily remastered with eggs:
@@ -61,13 +60,11 @@ piero.proietti@gmail.com
 
 ## dressing a warbler
 This is how warbler is made, and how you can change it's definition on YAML.
-
-{% youtube ejZFgNpSs0s %}
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ejZFgNpSs0s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; yroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 ## dressing a colibri
 I'm using eggs with wardrobe to take tracks of my way and consolidate it. This is my workstation: colibri, we can do that also for warbler.
-
-{% youtube JbuxcfOTdCA %}
+<iframe width="560" height="315" src="https://www.youtube.com/embed/JbuxcfOTdCA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 ![warbler](/images/warbler.jpg)
 Photo by [Biillyboy](https://www.flickr.com/photos/billyboysfotocolection/4843548058/in/photostream/)

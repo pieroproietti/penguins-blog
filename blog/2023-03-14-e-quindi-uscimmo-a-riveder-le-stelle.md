@@ -36,7 +36,7 @@ Finito dal dentista praticamebte ogni cinque minuti aumentava il nuomero delle s
 
 La sera - verso le nove - erano già 100...
 
-Quindi mi scrive Nicklas e mi comunica che ha fatto un post in un forum su Reddit dal titolo [Penguins-eggs can turn your system into an installable ISO](https://www.reddit.com/r/linux/comments/11nlqlu/penguinseggs_can_turn_your_system_into_an/() e spera che non ne sia dispiaciuto. 
+Quindi mi scrive Nicklas e mi comunica che ha fatto un post in un forum su Reddit dal titolo [Penguins-eggs can turn your system into an installable ISO](https://www.reddit.com/r/linux/comments/11nlqlu/penguinseggs_can_turn_your_system_into_an/) e spera che non ne sia dispiaciuto. 
 
 Tutt'altro ed ecco svelato il mistero!
 

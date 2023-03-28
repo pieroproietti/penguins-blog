@@ -2,6 +2,7 @@
 authors: pieroproietti
 slug: customizzazione-del-desktop
 title: Customizzazione del desktop
+lang: en_EN
 ---
 
 
