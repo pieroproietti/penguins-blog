@@ -18,9 +18,8 @@ const FeatureList = [
     Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
     description: (
       <>
-        Penguins' eggs started with Debian buster back in 2017, many years have 
-        passed since then but it still supports buster in addition to bullseye 
-        and the future bookworm.
+        Penguins' eggs started with Debian buster back in 2017, it still supports 
+        buster in addition to bullseye and - still in develoment - bookworm.
       </>
     ),
   },
@@ -47,7 +46,7 @@ const FeatureList = [
     Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
     description: (
       <>
-        Ubuntu and Devuan are still part of the Debian family and are supported.
+        Ubuntu is full supported: bionic, focal and jammy.
       </>
     ),
   },
@@ -56,9 +55,8 @@ const FeatureList = [
     Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
     description: (
       <>
-        virtually every Debian, Devuan and Ubuntu derivative is supported, 
-        for Arch derivatives we are gearing up.
-.      </>
+        Virtually every Debian, Devuan and Ubuntu derivative is supported. 
+      </>
     ),
   },
 ];
