@@ -8,7 +8,7 @@ const FeatureList = [
     Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
     description: (
       <>
-        Adding Arch was laborious, but it was possible because the 
+        Adding Arch was laborious, but it was possible, because the 
         project started and evolved to be as universal as possible.
       </>
     ),
@@ -18,8 +18,8 @@ const FeatureList = [
     Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
     description: (
       <>
-        Penguins' eggs started with Debian buster back in 2017, it still supports 
-        buster in addition to bullseye and - still in develoment - bookworm.
+        Penguins' eggs started on Debian in 2017, it still supports buster
+        in addition to bullseye and - still in development - bookworm.
       </>
     ),
   },
