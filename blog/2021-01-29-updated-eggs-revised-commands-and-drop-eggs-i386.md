@@ -27,9 +27,9 @@ This is great, becouse peoples need again it!
 
 I started a [mail list in sourceforge](https://sourceforge.net/p/penguins-eggs/mailman/penguins-eggs-developers/), and describe on the last mail that was the solution. If you are interested you can subscribe it.
 
-Now we have a [man page](/man) build automatically, so always updated and on line with the sources. 
+Now we have a [man page](/docs/man) build automatically, so always updated and on line with the sources. 
 
-Not only, we "sell" it in double versions: man and html. You can find it always update in our [site](/man) too!
+Not only, we "sell" it in double versions: man and html. You can find it always update in our [site](//docs/man) too!
 
 All npm packages were updated, so the oclif-plugins autocomplete, command not-found and everything are in order and don't get you in panic, just for a mispell in a command or a flag: eggs will suggest the nearest command.
 

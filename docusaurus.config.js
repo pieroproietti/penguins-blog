@@ -98,12 +98,12 @@ const config = {
             title: 'Community',
             items: [
               {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/penguins-eggs',
+                label: 'Telegram channel',
+                href: 'https://t.me/penguins_eggs',
               },
               {
-                label: 'Discord',
-                href: 'https://discordapp.com/invite/penguins-eggs',
+                label: 'Facebook group',
+                href: 'https://www.facebook.com/groups/penguins.eggs',
               },
               {
                 label: 'Twitter',
