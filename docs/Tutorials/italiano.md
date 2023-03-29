@@ -1,18 +1,16 @@
 ---
-title: Guida utente eggs  
+title: Guida utente eggs
 authors: pieroproietti
 lang: it
 ---
 
-# Aggiornamento
-
-## eggs-v9.4.3
+Aggiornamento eggs v9.4.x
 
 # Introduzione
 
 ![Un sistema riproduttivo per pinguini!](/images/manjaro-uefi-booting.png)
 
-Penguin's eggs nasce con l'idea della "riproduzione" e "selezione delle popolazioni" applicata ai sistemi operativi. 
+Penguins' eggs nasce con l'idea della "riproduzione" e "selezione delle popolazioni" applicata ai sistemi operativi. 
 
 Erano i tempi di Remastersys e Systemback, due dei più diffusi programmi per rimasterizzare un sistema operativo - ad un certo punto - sia Remastersys, che aveva sempre sofferto di problemi di manutenzione da parte del suo autore, che Systemback furono in qualche modo dismessi. _Vedi **nota**_
 
@@ -31,7 +29,7 @@ Prima di cominciare a produrre le "uova" occorre fornirsi di un sistema riprodut
 Abbiamo diverse possibilità per l'installazione di eggs: 
 * pacchetto precompilati
   * formato .deb per Debian/Devuan/Ubuntu
-  * formato pkgbuild per Arch e manjaro
+  * formato PKGBUILD per Arch e manjaro
 * pacchetti npm: non più utilizzati
 * codice sorgente
 
@@ -42,7 +40,7 @@ Per la maggior parte degli utenti l'installazione del pacchetto precompilato è 
 Se non desiderate includere penguins-eggs-ppa fra le repository del vostro sistema, potete semplicemente scaricare l'ultima versione di eggs dal sito di [sourceforge](https://sourceforge.net/projects/penguins-eggs/files/DEBS/) ed installarla con il comando:
 
 ```
-sudo dpkg -i eggs-9.3.x.deb
+sudo dpkg -i eggs-9.4.x.deb
 ```
 
 Se si tratta della prima installazione, il pacchetto non verrà installato per la mancanza delle dipendenze. Vi basterà dare il comando:
@@ -59,59 +57,49 @@ Una volta installato il pacchetto, si può utilizzare il comando **eggs tools pp
 sudo eggs tools ppa --add
 ```
 
-## Pacchetti PKGBUILD (Arch linux e manjaro)
-
-### Arch 
-Per Arch Linux abbiamo due possibilità, installare penguins-eggs dal repository AUR oppure installare penguins-eggs dal repository di sviluppo.
-
-#### Installazione di penguins-eggs dal repository AUR
-Seguire la seguente procedura:
-
-```git clone https://aur.archlinux.org/penguins-eggs.git penguins-eggs-aur```
-```cd penguins-eggs-aur```
-```pkgbuild -si```
-
-#### Installazione di penguins-eggs dal repository di sviluppo
-Seguire la seguente procedura:
-
-```git clone https://github.com/pieroproietti/penguins-eggs-arch```
-```cd penguins-eggs-arch```
-```pkgbuild -si```
-
-### Installazione di calamares in Arch
-In Arch non è presente - o semplicemente non sono riuscito a rintracciarla - una versione di calamares nelle repository di default e neppure su Chaotic-AUR.
-
-La soluzione è stata quella di adattare il PKGBUILD di calamares della distribuzione manjaro e riadattarlo ad Arch. Probabilmente per utenti Arch più esperti è possibile fare di meglio, in caso segnalatemelo.
-Scaricheremo, quindi il PKGBUILD di calamares per Arch dalla repository di sviluppo ed andremo a costruire il pacchetto:
-
-```git clone https://github.com/pieroproietti/penguins-calamares-pkgbuild```
-```cd penguins-calamares-pkgbuild```
-```pkgbuild -si```
-
-### manjaro Linux
-
-Attualmente penguins-eggs non è stato accettato tra i pacchetti community di manjaro, per cui non possiamo installarlo con i comandi:
-
+## Arch 
+Per Arch Linux possiamo installare penguins-eggs con yay:
 ```
-sudo pamac upgrade```
-sudo pamac install penguins-eggs
+yay penguins-eggs
+```
+oppure, più tradizionalmente:
+```
+git clone https://aur.archlinux.org/penguins-eggs.git penguins-eggs-aur
+cd penguins-eggs-aur
+pkgbuild -si
 ```
 
-E' però possibile testare le ultime novità costruendo il pacchetto dal repository di sviluppo. Esempio:
-
+### Installazione di Calamares in Arch
+E' possibile installare [calamares](https://aur.archlinux.org/packages/calamares-git) con yay, 
+tuttavia - al momento - c'è un problema sul pacchetto [ckbcomp](https://aur.archlinux.org/packages/ckbcomp), 
+così per installare Calamares, dovete fare questo piccolo workaround:
 ```
-sudo pacman -Syu
-sudo pamac -S base-devel pnpm
-git clone https://github.com/pieroproietti/penguins-eggs-manjaro
-cd penguins-eggs-manjaro
+git clone https://github.com/pieroproietti/penguins-eggs-pkgbuilds
+cd penguins-eggs-pkgbuilds/aur/cbkcomp
 makepkg -si
 ```
+Installato cbkcomp, potete tranquillamente installare calamares utilizzando yay:
+```
+yay calamares
+```
 
+### Manjaro 
+
+Manjaro dovrebbe essere già presente nella repository community di Manjaro, per cui non possiamo installarlo con i comandi:
+
+```
+sudo pamac upgrade
+sudo pamac install penguins-eggs
+```
 ## Pacchetti npm 
 
 Essendo eggs un software sviluppato con nodejs, esiste la possibilità di installare penguins-eggs direttamente come pacchetto npm.
 
-Però, poichè i pacchetti npm necessitano comunque dei pacchetti delle dipendenze, pur se inizialmente avevo puntato su questo formato - pressochè universale - ed avevo scritto degli appositi moduli per l'installazione dei pacchetti nativi, con l'utilizzo della pacchettizzazione .deb e nei vari PKGBUILD, si è venuta a creare una inutile duplicazione di codice all'interno di eggs ed all'interno dei pacchetti di installazione. Pertanto, attualmente i pacchetti npm non sono più consigliati. E' comunque possibile installarli, curando però separatamente l'installazione delle varie dipendenze.
+Però, poichè i pacchetti npm necessitano comunque dei pacchetti delle dipendenze, pur se inizialmente avevo puntato su questo formato - pressochè universale - ed avevo scritto degli appositi moduli per l'installazione dei pacchetti nativi, con l'utilizzo della pacchettizzazione .deb e nei vari PKGBUILD, si è venuta a creare una inutile duplicazione di codice.
+
+Pertanto, attualmente i pacchetti npm non sono più consigliati. 
+
+E' comunque possibile installarli, curando però separatamente l'installazione delle varie dipendenze.
 
 ## Utilizzo di eggs da codice sorgente
 
@@ -123,15 +111,13 @@ E' necessario installare a priori l pacchetti nodejs, npm ed pnpm. L'esempio seg
 sudo pamac install nodejs npm pnpm devel-base
 ```
 
-Su Debian/Devuan/Ubuntu si consiglia node16.x dalla repository https://github.com/nodesource/distributions, mentra per installare pnpm, una volta installati nodejs ed npm, sarà sufficiente:
+Su Debian/Devuan/Ubuntu si consiglia node16.x dalla repository https://github.com/nodesource/distributions, mentre per installare pnpm, una volta installati nodejs ed npm, sarà sufficiente:
 
 ```
 sudo npm i pnpm -g
 ```
 
-
 A questo punto andiamo a scaricare il sorgente di penguins-eggs con il comando:
-
 ```
 git clone https://github.com/pieroproietti/penguins-eggs
 ```
@@ -143,16 +129,15 @@ pnpm install
 ```
 (*) notare l'uso di **pnpm** invece del classico **npm**, ciò permette una più veloce compilazione.
 
+Fatto questo, dalla stessa directory, si potrà utilizzare eggs direttamente dai sorgenti. 
 
-A questo punto, dalla stessa directory, si potrà utilizzare eggs direttamente dai sorgenti. Ad esempio:
+Ad esempio:
 
 ```
-sudo ./eggs produce --fast --verbose
+sudo ./eggs produce --verbose
 ```
 
 **Nota**: _Potete constatare che l'unica differenza d'uso rispetto ai pacchetti precompilati è che dovrete indicare il path per eggs `./eggs` e dovrete lanciarlo dalla directory `~/penguins-eggs`. Il funzionamento rimane tuttavia esattamente lo stesso, ma si ha il vantaggio di poter agire in maniera interattiva con il codice. Per lo sviluppo, personalmente utilizzo [code](https://code.visualstudio.com/), ma potete scegliere altri editor [atom](https://atom.io/), [sublime](https://www.sublimetext.com/), etc)_.
-
----
 
 # eggs: autocomplete, pagina man ed aiuto
 
@@ -165,9 +150,8 @@ eggs
 si otterrà la seguente schermata:
 
 ```
-
 VERSION
-  penguins-eggs/9.3.25 linux-x64 node-v16.19.0
+  penguins-eggs/9.4.3 linux-x64 node-v16.19.1
 
 USAGE
   $ eggs [COMMAND]
@@ -193,94 +177,51 @@ COMMANDS
   status        informations about eggs status
   syncfrom      restore users and user data from a LUKS volumes
   syncto        saves users and user data in a LUKS volume inside the iso
-  update        update the penguin's eggs tool
+  update        update the Penguins' eggs tool
   version
 ```
 
 
-Se avete già chiuso e riaperto la finestra del terminale, potrete incominciare ad apprezzare anche l'autocomplete. Digitanto ```eggs``` e premento ```TAB```, vi appariranno i vari comandi disponibili:
+Se avete già chiuso e riaperto la finestra del terminale, potrete incominciare ad apprezzare anche l'autocomplete. 
+
+Digitanto ```eggs``` e premento ```TAB```, vi appariranno i vari comandi disponibili:
 
 ```
 $ eggs 
 adapt         config        help          produce       tools
 analyze       cuckoo        install       status        update
 autocomplete  dad           kill          syncfrom      version
-calamares     export        mom           syncto        wardrobe```
+calamares     export        mom           syncto        wardrobe
+```
 
 Se inserite un comando e date ```TAB``` appariranno invece i flags supportati dal comando stesso. 
 Ad esempio: comando ```eggs produce --```
 
 ```
 $ eggs produce --
---addons         --clone          --help           --nointeractive  --release        --standard       --verbose        
---basename       --cryptedclone   --max            --prefix         --script         --theme          --yolk           
+--addons         --help           --release        --verbose
+--basename       --max            --script         --yolk
+--clone          --nointeractive  --standard       
+--cryptedclone   --prefix         --theme          
 ```
+
 Inoltre, come per ogni applicazione CLI che si rispetti, eggs è fornito di una apposita pagina man sempre a vostra disposizione:
 
 ```
 man eggs
 ```
 
-```
-GGS(1)                                                                                                                                                                           EGGS(1)
-
-NAME
-       eggs - the reproductive system of penguins: eggs v9.3.25
-
-SYNOPSIS
-       Install Debian families (debian/devuan/ubuntu)
-
-         $ sudo dpkg -i eggs_9.3.25_amd64.deb
-
-       Install Arch families (Arch, manjaro Linux)
-
-       Arch from AUR
-
-         $ git clone https://aur.archlinux.org/penguins-eggs.git
-         $ cd penguins-eggs.git
-         $ makepkg -si
-
-       Arch from development repo
-
-         $ git clone https://github.com/pieroproietti/penguins-eggs-arch
-         $ cd penguins-eggs-arch
-         $ makepkg -si
-
-       Manjaro from development repo
-
-         $ git clone https://github.com/pieroproietti/penguins-eggs-manjaro
-         $ cd penguins-eggs-manjaro
-         $ makepkg -si
-
-USAGE
-         $ eggs (-v|--version|version)
-
-         penguins-eggs/9.3.25 linux-x64 node-v16.19.0
-         $ eggs --help [COMMAND]
-
-         USAGE
-         $ eggs COMMAND
-
-       Most of the commands of eggs need sudo, but there are exceptions for export, info and mom.
-
-       examples:
-
-         sudo eggs produce --fast
-         sudo eggs produce --fast --clone
-         sudo eggs produce --fast --backup
- Manual page eggs(1) line 1 (press h for help or q to quit)
-```
-
 Di più: una pagina di aiuto è disponibile per tutti i comandi CLI.
 
-Tuttavia non v'è pulcino che non abbia una propria mamma come guida! Ho pensato di aggiungere il comando:
+Tuttavia non v'è pulcino che non abbia una propria mamma come guida! Ed ho pensato di aggiungere il comando:
 
 ```
 eggs mom
+```
 
 ![eggs-mom](/images/book9.4/eggs-mom.png)
 
-E la "mamma" ci mette a disposizione una interfaccia interattiva per accompagnarci nei primi passi.
+La "mamma" ci mette a disposizione una interfaccia interattiva per accompagnarci nei primi passi.
 
 ---
 
@@ -290,7 +231,7 @@ Per funzionare eggs ha bisogno di vari pacchetti installati: i cosidetti prerequ
 
 Questo, tra l'altro, ha reso obsoleto il comando ```eggs config``` prima necessario che viene sostituito da ```eggs dad``` combinato, eventualmente, con il flag ```--default```
 
-Segnalo la presenza di eggs di tre differenti file di configurazione, tutti e tre risiedono nella directory /etc/penguins-eggs.d e vengono generati automaticamente durante l'installazione.
+Segnalo la presenza di eggs di tre differenti file di configurazione, tutti e tre risiedono nella directory ```/etc/penguins-eggs.d``` e vengono generati automaticamente durante l'installazione.
 
 * ```/penguins-eggs.d/eggs.yaml``` (configurazioni generali di eggs)
 * ```/penguins-eggs.d/krill.yaml``` (configurazioni per installazione unattended)
@@ -416,6 +357,7 @@ domain: ''
 dns: ''
 ```
 
+
 ## tools.yaml
 Lo scopo delle variabili di tools.yaml è quello di aiutare lo sviluppo di eggs, in sostanza mi sono molto utili per sviluppare, esportare pacchetti ed iso ed eseguire aggiornamenti di eggs direttamente dalla rete locale. Generalmente il contenuto di questo file non viene utilizzato durante il funzionamento di eggs.
 
@@ -512,31 +454,9 @@ Produce i file ```eggs.bash``` ed ```_eggs``` per il funzionamento dell'autocomp
 Installa e/o configura l'installatore grafico calamares. Può essere utilizzato anche per configurare una iso che - prodotta senza calamares - la si voglia installare con esso. Basterà dare il comando: **sudo eggs calamares --install** e si avrà sia l'installazione del pacchetto, la sua configurazione e la configurazione di calamares per l'utilizzo senza necessità di inserire la password.
 
 ```
-$ eggs calamares -h
-
-calamares or install or configure it
-
-USAGE
-  $ eggs calamares [-h] [-v] [-i] [-r] [--remove] [--theme <value>]
-
-FLAGS
-  -h, --help       Show CLI help.
-  -i, --install    install calamares and it's dependencies
-  -r, --release    release: remove calamares and all it's dependencies after the installation
-  -v, --verbose
-  --remove         remove calamares and it's dependencies
-  --theme=<value>  theme/branding for eggs and calamares
-
-DESCRIPTION
-  calamares or install or configure it
-
-EXAMPLES
-  ~$ sudo eggs calamares 
-  create/renew calamares configuration's files
-
-  ~$ sudo eggs calamares -i 
-  install calamares and create it's configuration's files
+eggs calamares -h
 ```
+
 
 ## sudo eggs cuckoo
 cuckoo offre una grande versatilità per le installazioni da eseguire su una rete locale. Il comando avvia un server PXE che permette a tutte le macchine della LAN di avviarsi dalla rete; questo ci risparmia la creazione di chiavette USB di avvio e, nella maggior parte dei casi, è anche più veloce e pratico.
@@ -601,31 +521,7 @@ Come dice il comando stesso genera la lista dei comandi disponibili. A sua volta
 Ad esempio:
 
 ```
-
-$ eggs calamares -h
-calamares or install or configure it
-
-USAGE
-  $ eggs calamares [-h] [-v] [-i] [-r] [--remove] [--theme <value>]
-
-FLAGS
-  -h, --help       Show CLI help.
-  -i, --install    install calamares and it's dependencies
-  -r, --release    release: remove calamares and all it's dependencies after the installation
-  -v, --verbose
-  --remove         remove calamares and it's dependencies
-  --theme=<value>  theme/branding for eggs and calamares
-
-DESCRIPTION
-  calamares or install or configure it
-
-EXAMPLES
-  ~$ sudo eggs calamares 
-  create/renew calamares configuration's files
-
-  ~$ sudo eggs calamares -i 
-  install calamares and create it's configuration's files
-
+calamares
 ```
 
 ## sudo eggs install
@@ -785,7 +681,7 @@ In questo menù potete consultare sia il sito che i manuali, sia in formato html
 Ecco ad esempio come risulta la schermata della pagina man di eggs in formato html, consultabile anche in assenza di connessione.
 
 ```
-![eggs-mom](/images/book9.4/eggs-mom-documentation-man.png)
+Aggiungere schermata eggs mom
 ```
 
 Attenzione: per gli utenti arch e manjaro: non sono riuscito a trovare un equivalente di sensible_browser che utilizzo in DEBIAN per individuare il browser di default installato. Se qualcuno ha un suggerimento, sarà gradito.
