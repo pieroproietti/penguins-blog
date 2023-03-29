@@ -1,14 +1,14 @@
 ---
 title: 5 minuti con eggs
 authors: pieroproietti
-lang: it_IT
+lang: it
 ---
 
-ma anche meno...
+o anche meno...
 
 # Debian
 
-Valido per Debian/Devuan/Ubuntu e [derivate](https://github.com/pieroproietti/penguins-eggs/blob/master/conf/derivatives.yaml).
+Debian, Devuan, Ubuntu e [derivate](https://github.com/pieroproietti/penguins-eggs/blob/master/conf/derivatives.yaml).
 
 Scaricate eggs da [sourceforge](https://sourceforge.net/projects/penguins-eggs/files/DEBS/), quindi installatela:
 

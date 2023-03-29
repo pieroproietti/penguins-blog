@@ -2,6 +2,7 @@
 title: Community choice badge
 slug: 2022-10-18-community-choice-badge
 authors: pieroproietti
+lang: en
 ---
 
 ```
