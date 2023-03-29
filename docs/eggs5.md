@@ -4,9 +4,11 @@ authors: pieroproietti
 lang: it_IT
 ---
 
-Ma anche meno...
+ma anche meno...
 
-## Debian/Devuan/Ubuntu e derivate
+# Debian
+
+Valido per Debian/Devuan/Ubuntu e [derivate](https://github.com/pieroproietti/penguins-eggs/blob/master/conf/derivatives.yaml).
 
 Scaricate eggs da [sourceforge](https://sourceforge.net/projects/penguins-eggs/files/DEBS/), quindi installatela:
 
@@ -48,13 +50,14 @@ Se volete la compressione massima e la rimozione di eggs e calamares installer a
 sudo eggs produce --max --release
 ```
 
-# Problemi?
+## Problemi?
 
 Chiedete a mamma!
 
 ```
 eggs mom
 ```
+![eggs-mom](/images/book9.4/eggs-mom.png)
 
 # Arch 
 

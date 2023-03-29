@@ -5,7 +5,7 @@ import styles from './styles.module.css';
 const FeatureList = [
   {
     title: 'Arch',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
+    Svg: require('@site/static/img/arch.svg').default,
     description: (
       <>
         Adding Arch was laborious, but it was possible, because the 
@@ -15,7 +15,7 @@ const FeatureList = [
   },
   {
     title: 'Debian',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
+    Svg: require('@site/static/img/debian.svg').default,
     description: (
       <>
         Penguins' eggs started on Debian in 2017, it still supports buster
@@ -25,7 +25,7 @@ const FeatureList = [
   },
   {
     title: 'Devuan',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
+    Svg: require('@site/static/img/devuan.svg').default,
     description: (
       <>
         Eggs support Devuan beowulf, chimaera and daedalus.
@@ -34,7 +34,7 @@ const FeatureList = [
   },
   {
     title: 'Manjaro',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
+    Svg: require('@site/static/img/manjaro.svg').default,
     description: (
       <>
         Eggs is part of communty of Manjaro.
@@ -43,7 +43,7 @@ const FeatureList = [
   },
   {
     title: 'Ubuntu',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
+    Svg: require('@site/static/img/ubuntu.svg').default,
     description: (
       <>
         Ubuntu is full supported: bionic, focal and jammy.
@@ -52,7 +52,7 @@ const FeatureList = [
   },
   {
     title: 'Others',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
+    Svg: require('@site/static/img/debian.svg').default,
     description: (
       <>
         Virtually every Debian, Devuan and Ubuntu derivative is supported. 
