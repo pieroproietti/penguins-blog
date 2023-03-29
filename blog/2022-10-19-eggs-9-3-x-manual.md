@@ -17,8 +17,8 @@ sudo eggs tools ppa --add
 
 Original edition of the eggs manual is released in Italian, of course other languages can be accessed using machine translation.
 
-* [Manuale in italiano 9.3.x](https://penguins-eggs.net/book/italiano9.3.html)
-* [English manual 9.3.x](https://penguins--eggs-net.translate.goog/book/italiano9.3?_x_tr_sl=auto&_x_tr_tl=en&_x_tr_hl=en)
+* [Manuale in italiano 9.3.x](https://penguins-eggs.net/docs/tutorial-eggs/italiano.html)
+* [English manual 9.3.x](https://penguins--eggs-net.translate.goog/docs/tutorial-eggs/italiano9.3?_x_tr_sl=auto&_x_tr_tl=en&_x_tr_hl=en)
 
 
 ![eggs-linuxfs-installed-via-pxe](/images/book9.3/linuxfs-installation-end.png)

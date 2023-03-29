@@ -24,4 +24,4 @@ sudo apt update
 sudo install eggs
 ```
 
-After that you can continue following the [eggs official book](https://penguins-eggs.net/book/). 
+After that you can continue following the [eggs official book](https://penguins-eggs.net/docs/tutorial-eggs/italiano.html). 

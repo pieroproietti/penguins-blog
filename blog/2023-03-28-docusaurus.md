@@ -1,7 +1,7 @@
 ---
 authors: pieroproietti
 slug: docusaurus
-title: Rocusaurus
+title: Docusaurus
 ---
 
 E' da qualche tempo che cercavo qualcosa di più strutturato per il blog, qualcosa di semplice ed allo stesso modo potente, in grado di crescere.
