@@ -6,7 +6,7 @@ lang: it
 
 o anche meno...
 
-# Debian
+## Debian
 
 Debian, Devuan, Ubuntu e [derivate](https://github.com/pieroproietti/penguins-eggs/blob/master/conf/derivatives.yaml).
 
@@ -50,7 +50,7 @@ Se volete la compressione massima e la rimozione di eggs e calamares installer a
 sudo eggs produce --max --release
 ```
 
-## Problemi?
+### Problemi?
 
 Chiedete a mamma!
 
@@ -59,7 +59,7 @@ eggs mom
 ```
 ![eggs-mom](/images/book9.4/eggs-mom.png)
 
-# Arch 
+## Arch 
 
 Su Arch potete usare yay per installare eggs:
 ```
@@ -100,7 +100,8 @@ sudo eggs produce
 
 Per le altre istruzioni fate riferimento a Debian e poi, che diavolo, usate Arch!
 
-# Manjaro
+## Manjaro
+
 Eggs è sulla community repository di Manjaro ormai da qualche giorno, in pacchetto dovrebbe essere cotto, quindi:
 ```
 sudo pamac install penguins-eggs
