@@ -52,7 +52,7 @@ const FeatureList = [
   },
   {
     title: 'Others',
-    Svg: require('@site/static/img/debian.svg').default,
+    Svg: require('@site/static/img/linuxmint.svg').default,
     description: (
       <>
         Virtually every Debian, Devuan and Ubuntu derivative is supported. 
