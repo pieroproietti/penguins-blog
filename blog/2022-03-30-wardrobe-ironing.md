@@ -2,6 +2,7 @@
 authors: pieroproietti
 slug: wardrobe-ironing
 title: 'wardrobe: ironing'
+lang: it
 ---
 
 Ho pensato di utilizzare un file yaml per definire i pacchetti e le modifiche da attuare per passare da una configurazione generica, senza interfaccia grafica ne' servizi, ad una customizzazione, anche spinta come andremo a vedere.

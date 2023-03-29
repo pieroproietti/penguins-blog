@@ -2,6 +2,7 @@
 authors: pieroproietti
 slug: alla-ricerca-dell-arca-perduta
 title: Alla ricerca dell'arca perduta
+lang: it
 ---
 
 Da un paio di giorni - ormai una settimana fa - sto cercando di far funzionare versioni "antiche" Debian con eggs.

@@ -1,6 +1,7 @@
 ---
 authors: pieroproietti
 title: Create a naked Arch
+lang: en
 ---
 # Arch Linux
 

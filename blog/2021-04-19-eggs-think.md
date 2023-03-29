@@ -2,6 +2,7 @@
 authors: pieroproietti
 slug: eggs-think
 title: eggs think
+lang: en
 ---
 
 New ideas are boiling in the pot, I'm trying to improve the eggs interface using react but always staying within the CLI.

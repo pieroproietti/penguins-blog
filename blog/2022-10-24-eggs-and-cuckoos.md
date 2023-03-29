@@ -2,6 +2,7 @@
 authors: pieroproietti
 slug: eggs-and-cuckoos
 title: eggs and cuckoos
+lang: it
 ---
 
 ![eggs-and-cuckoos](/images/eggs-and-cuckoos/cuckoo.jpg)

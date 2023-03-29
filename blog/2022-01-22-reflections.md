@@ -2,6 +2,7 @@
 authors: pieroproietti
 slug: reflections
 title: Reflections
+lang: en
 ---
 
 It's amazing how after so much effort to create a unique remastering tool, it turns out well.

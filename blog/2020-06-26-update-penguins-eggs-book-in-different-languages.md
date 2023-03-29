@@ -2,6 +2,7 @@
 authors: pieroproietti
 slug: update-penguins-eggs-book-in-different-languages.md
 title: Penguins' eggs guide in different 
+lang: en
 ---
 ![install-deb](/images/flags.webp)
 

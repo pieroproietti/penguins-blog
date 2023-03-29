@@ -2,6 +2,7 @@
 authors: pieroproietti
 slug: wardrobe-readme
 title: penguins wardrobe readme
+lang: it
 ---
 
 Ho scritto e terrò aggiornato un importante [README](https://github.com/pieroproietti/penguins-wardrobe/tree/main/DOCUMENTATION#penguins-wardrobe) su [penguins-wardrobe](https://github.com/pieroproietti/penguins-wardrobe) ed il suo utilizzo. 

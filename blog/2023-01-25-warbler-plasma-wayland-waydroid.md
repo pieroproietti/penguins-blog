@@ -2,6 +2,7 @@
 authors: pieroproietti
 slug: warbler-plasma-wayland-waydroid
 title: 'Warbler: plasma/wayland/waydroid'
+lang: en
 ---
 
 This is the second version of this experiment, the first - a year ago - was  just named waydroid. It's a temptative to create a slim ISO to be used for develpment.

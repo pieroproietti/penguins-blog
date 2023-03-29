@@ -2,6 +2,7 @@
 authors: pieroproietti
 slug: penguins-eggs-presentation
 title: Penguins' eggs presentation
+lang: en
 ---
 
 

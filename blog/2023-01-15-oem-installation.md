@@ -2,6 +2,7 @@
 authors: pieroproietti
 slug: oem-installation
 title: OEM installation
+lang: it
 ---
 
 Sto valutando la possibilità di inserire una installazione OEM all'interno di krill per semplificare il processo di distribuzione di versioni verticali di Linux.

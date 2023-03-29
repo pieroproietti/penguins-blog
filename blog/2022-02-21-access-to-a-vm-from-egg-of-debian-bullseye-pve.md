@@ -2,6 +2,7 @@
 authors: pieroproietti
 slug: access-to-a-vm-from-egg-of-debian-bullseyes-pve
 title: Access to a VM from egg-of-debian-bullseyes-pve
+lang: it
 ---
 
 

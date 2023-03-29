@@ -2,6 +2,7 @@
 authors: pieroproietti
 slug: penguins-wardrobe
 title: penguins' wardrobe
+lang: en
 ---
 
 First of all, if we don't have git, install git.

@@ -2,6 +2,7 @@
 authors: pieroproietti
 slug: eggs-8.0.0-krill-and-arm64-version
 title: eggs 8.0.0 krill and arm64 version
+lang: en
 ---
 
 After so long time we have a major version, why?

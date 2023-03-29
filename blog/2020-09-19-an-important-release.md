@@ -2,6 +2,7 @@
 authors: pieroproietti
 slug: an-important-release
 title: An important release
+lang: en
 ---
 
 Same days ago I released eggs-7.6.39_1.deb

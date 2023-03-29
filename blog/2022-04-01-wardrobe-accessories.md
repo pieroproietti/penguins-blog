@@ -2,6 +2,7 @@
 authors: pieroproietti
 slug: wardrobe-accessories
 title: 'wardrobe: accessories'
+lang: it
 ---
 
 Ieri ho creato un "vestitino" giusto per aggiungerlo ad una remix di Linuxmint elsie che, come noto, è di base estremamente completa.

@@ -1,7 +1,7 @@
 ---
 title: Guida utente eggs  
 authors: pieroproietti
-lang: it_IT
+lang: it
 ---
 
 # Aggiornamento

@@ -2,6 +2,7 @@
 authors: pieroproietti
 slug: hello-world
 title: Hello World
+lang: it
 ---
 
 It’s my first day on line!

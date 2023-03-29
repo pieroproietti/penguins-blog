@@ -2,6 +2,7 @@
 authors: pieroproietti
 slug: ubuntu-22-04-e-wardrobe
 title: Ubuntu 22.04 e wardrobe
+lang: it
 ---
 
 Da qualche giorno è uscito Ubuntu 22.04 l'ultima release LTS di Ubuntu.

@@ -2,6 +2,7 @@
 authors: pieroproietti
 slug: eggs-9-2-x-manual
 title: eggs 9.2.x manual
+lang: en
 ---
 
 I am rewriting the new edition of the manual aligned to eggs 9.2.x. Original edition of the eggs manual is released in Italian, of course other languages can be accessed using machine translation.

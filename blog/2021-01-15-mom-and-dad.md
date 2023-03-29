@@ -2,6 +2,7 @@
 authors: pieroproietti
 slug: mom-and-dad
 title: mom and dad
+lang: en
 ---
 
 ![mom](/images/mom.png)

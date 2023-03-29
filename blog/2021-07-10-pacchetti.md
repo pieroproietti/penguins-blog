@@ -2,6 +2,7 @@
 authors: pieroproietti
 slug: pacchetti
 title: Pacchetti
+lang: it
 ---
 
 Eggs viene rilasciato sia come pacchetto npm - versione originale - sia come pacchetto Debian di più semplice utilizzazione.

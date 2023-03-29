@@ -2,6 +2,7 @@
 authors: pieroproietti
 slug: perris-brewery
 title: Perri's Brewery
+lang: it
 ---
 
 

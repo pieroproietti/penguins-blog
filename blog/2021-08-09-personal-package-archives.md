@@ -2,6 +2,7 @@
 authors: pieroproietti
 slug: personal-package-archives
 title: Personal Package Archives PPA
+lang: en
 ---
 
 Today on the advice of the excellent Yannis I've created a PPA repository for eggs. 

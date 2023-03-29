@@ -2,6 +2,7 @@
 authors: pieroproietti
 slug: installare-un-forum
 title: Installare un forum
+lang: it
 ---
 
 # nodebb

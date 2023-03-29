@@ -2,6 +2,7 @@
 authors: pieroproietti
 slug: ubuntu-groovy-gorilla
 title: Ubuntu groovy gorilla
+lang: en
 ---
 
 I updated the manual today - only in [italian](/docs/tutorial-eggs/italiano) and [english](/docs/tutorial-eggs/english), _automatic and revised translation_ - and tried for the first time eggs with Ubuntu groovy gorilla. It seems to be going apart from a little problem with the calamares displaymanager module that at the moment I simply removed. (It only serves to manage the possible autologin). 

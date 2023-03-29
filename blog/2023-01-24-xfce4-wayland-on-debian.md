@@ -2,6 +2,7 @@
 authors: pieroproietti
 slug: xfce4-wayland-on-debian
 title: XFCE4 wayland on Debian
+lang: en
 ---
 Download the last "naked" version of bookworm from [sf](https://sourceforge.net/projects/penguins-eggs/files/ISOS/debian/bookworm/)
 

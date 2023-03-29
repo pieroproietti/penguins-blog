@@ -2,6 +2,7 @@
 authors: pieroproietti
 slug: updated-eggs-revised-commands-and-drop-eggs-i386
 title: Updated eggs, revised commands and drop eggs i386
+lang: en
 ---
 
 ![here we are](/images/here-we-are.jpg)

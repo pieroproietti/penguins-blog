@@ -2,6 +2,7 @@
 authors: pieroproietti
 slug: e-quindi-uscimmo-a-riveder-le-stelle
 title: E quindi uscimmo a riveder le stelle
+lang: it
 ---
 
 ![Dante Alighieri](/images/dantealighieri.webp)

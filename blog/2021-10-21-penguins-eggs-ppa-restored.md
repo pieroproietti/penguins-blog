@@ -2,6 +2,7 @@
 authors: pieroproietti
 slug: penguins-eggs-ppa-restored
 title: penguins-eggs-ppa
+lang: en
 ---
 
 After a bit of trial and error I finally managed to recreate the ppa [penguins-eggs-ppa](https://pieroproietti.github.io/penguins-eggs-ppa/) repository.

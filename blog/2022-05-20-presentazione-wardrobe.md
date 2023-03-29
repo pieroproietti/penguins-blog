@@ -2,6 +2,7 @@
 authors: pieroproietti
 slug: presentazione-wardrobe
 title: Presentazione wardrobe
+lang: it
 ---
 
 Dicono che a volte un video è meglio di mille parole.

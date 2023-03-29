@@ -2,6 +2,7 @@
 authors: pieroproietti
 slug: eggs-book-updated
 title: eggs book updated
+lang: it
 ---
 
 Ho appena finito di aggiornare il [manuale di eggs](https://penguins-eggs.net/docs/tutorial-eggs/italiano) allineandolo alla versione 9.x.

@@ -2,6 +2,7 @@
 authors: pieroproietti
 slug: removed-forum
 title: Removed forum and others stuffs
+lang: en
 ---
 
 Since October 20 I removed the penguins-eggs forum, unfortunately I didn't have time to consult it and I prefer so there is only one place for assistance and support, in this case facebook group [penguins-eggs](https://www.facebook.com/groups/128861437762355) where most users - technical or not - can easily sign up.

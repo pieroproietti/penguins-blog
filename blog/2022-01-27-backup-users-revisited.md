@@ -2,6 +2,7 @@
 authors: pieroproietti
 slug: 2022-01-27-backup-users-revisited
 title: Backup useres revisited
+lang: it
 ---
 
 

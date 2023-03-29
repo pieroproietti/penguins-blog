@@ -2,10 +2,10 @@
 authors: pieroproietti
 slug: disperato-erotico-stomp
 title: Disperato erotico stomp
+lang: it
 ---
 
-{% youtube jSQ_ovNRIec %}
-
+<iframe width="560" height="315" src="https://www.youtube.com/embed/jSQ_ovNRIec" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 Sono due giorni che sto combattendo con UEFI. Ho sempre cordialmente odiato UEFI, purtroppo mi ci tocca convivere!
 

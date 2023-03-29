@@ -2,6 +2,7 @@
 authors: pieroproietti
 slug: mx21-adventures
 title: MX21 adventures
+lang: en
 ---
 
 Few days ago, MX-Linux annunced his new beta release MX21. based on Debian.

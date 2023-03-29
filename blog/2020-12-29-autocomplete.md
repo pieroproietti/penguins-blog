@@ -2,6 +2,7 @@
 authors: pieroproietti
 slug: autocomplete
 title: autocomplete
+lang: en
 ---
 
 ![autocomplete](/images/autocomplete.png)

@@ -2,6 +2,7 @@
 authors: pieroproietti
 slug: ufficiozero-adopt-eggs
 title: UfficioZero adopt eggs
+lang: eng
 ---
 
 ## ![ZERO OFFICE](https://www.ufficiozero.org/template/logo2.png) 

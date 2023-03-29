@@ -2,6 +2,7 @@
 authors: pieroproietti
 slug: 2021-11-24-a-bit-more-universal
 title: A bit more universal
+lang: en
 ---
 
 eggs in questo momento ha raggiunto praticamente la totalità delle distribuzioni basate su Debian e da queste derivate: Devuan, Ubuntu e le innumerevoli altre.

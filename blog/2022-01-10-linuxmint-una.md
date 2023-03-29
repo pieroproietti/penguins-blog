@@ -2,6 +2,7 @@
 authors: pieroproietti
 slug: linuxmint-una
 title: Linuxmint una
+lang: en
 ---
 
 __You never forget your first love__

@@ -2,6 +2,7 @@
 authors: pieroproietti
 slug: le-specie-presenti
 title: Le specie presenti
+lang: it
 ---
 
 Continuando la nostra metafora abbiamo ormai quattro specie presenti:

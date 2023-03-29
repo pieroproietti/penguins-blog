@@ -2,6 +2,7 @@
 authors: pieroproietti
 slug: manjaro-linux-on-board
 title: manjaro linux on board
+lang: it
 ---
 
 ___[E quindi uscimmo a riveder le stelle](https://it.wikipedia.org/wiki/E_quindi_uscimmo_a_riveder_le_stelle)___

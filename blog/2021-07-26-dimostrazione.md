@@ -2,6 +2,7 @@
 authors: pieroproietti
 slug: dimostrazione-eggs
 title: Dimostrazione eggs
+lang: it
 ---
 
 In questo breve video viene presentato eggs

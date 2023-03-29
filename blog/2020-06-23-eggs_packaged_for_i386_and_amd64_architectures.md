@@ -2,6 +2,7 @@
 authors: pieroproietti
 slug: eggs_packaged_for_i386_and_amd64_architectures
 title: eggs packaged for for i386 and amd64 architectures
+lang: en
 ---
 
 Sometimes, to move forward, you need to step back first.

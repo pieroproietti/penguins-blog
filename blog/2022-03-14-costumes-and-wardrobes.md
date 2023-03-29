@@ -2,6 +2,7 @@
 authors: pieroproietti
 slug: costumes-and-wardrobes
 title: Costumes and wardrobes
+lang: en
 ---
 
 This is a costume, a simple way to code our customizations starting from a naked system to a minimun KDE installation.

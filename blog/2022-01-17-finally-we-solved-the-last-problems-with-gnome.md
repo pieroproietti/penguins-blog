@@ -2,6 +2,7 @@
 authors: pieroproietti
 slug: finally-we-solved-the-last-problems-with-gnome
 title: Finally we solved the last problems with gnome
+lang: en
 ---
 
 Actually, it was a long story. 

@@ -2,6 +2,7 @@
 authors: pieroproietti
 slug: macaroni-penguins-illustrating-eggs-on-manjaro
 title: 'Macaroni penguins: illustrating eggs on manjaro'
+lang: en
 ---
 
 You have to know that appetite comes with eating, so surprised by how quickly eggs was adopted by manjaro, I tried my hand at cinematography.
