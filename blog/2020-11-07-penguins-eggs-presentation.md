@@ -49,8 +49,7 @@ It works and you can find numerous examples of distros remastered with eggs dire
 It doesn't come from nothing, the first commit is in 2017, now three years ago.
 
 ## USER MANUAL AND INSTRUCTIONS
-You can find the user manual in differnt languages [english](/book/english.html), [italiano](/book/italiano.html), [português](/book/portugues.html)
-and informations, curiosities, [forum](https://penguins-eggs.net).
+You can find the user manual in differnt languages [english](/docs/tutorial-eggs/english), [italiano](/docs/tutorial-eggs/italiano), português and informations, curiosities, [forum](https://penguins-eggs.net).
 
 There is a series of easy [video terminal](https://penguins-eggs.net/terminal/) examples too.
 
@@ -95,7 +94,7 @@ Funziona e potete trovare numerosi esempi di distro rimasterizzate con eggs dire
 Non viene dal nulla, il primo commit è del 2017, ormai tre anni orsono,
 
 ## Manuale utente ed istruzioni
-Potete trovare il manuale utente in differenti lingue [english](/book/english.html), [italiano](/book/italiano.html), [português](/book/portugues.html) ed informazioni, curiosità. [forum](https://penguins-eggs.net).
+Potete trovare il manuale utente in differenti lingue [english](/docs/tutorial-eggs/english), [italiano](/docs/tutorial-eggs/italiano), português ed informazioni, curiosità.
 
 C'è pure una serie di facili esempi di sessioni al [terminale](https://penguins-eggs.net/terminal/).
 
@@ -139,7 +138,7 @@ Funciona e você pode encontrar inúmeros exemplos de distros remasterizados com
 Não vem do nada, o primeiro commit é de 2017, faz agora três anos,
 
 ## Manual do usuário e instruções
-Você pode encontrar o manual do usuário em diferentes idiomas [english](/book/english.html), [italiano](/book/italian.html), [português](/book/portugues.html) e informações, curiosidades. [fórum](https://penguins-eggs.net).
+Você pode encontrar o manual do usuário em diferentes idiomas [english](/docs/tutorial-eggs/english), [italiano](/docs/tutorial-eggs/italiano), [português](/docs/tutorial-eggs/italiano) e informações, curiosidades. [fórum](https://penguins-eggs.net).
 
 Há também vários exemplos fáceis de sessões em [terminal](https://penguins-eggs.net/terminal/).
 

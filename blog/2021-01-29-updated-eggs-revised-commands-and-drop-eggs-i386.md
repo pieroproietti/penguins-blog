@@ -38,7 +38,7 @@ After long think, I renamed the command `prerequisites` to `init`. In all the wa
 I did this becouse I put in init all the tasks eggs need to do to become operative. This reduce the commands list too, becouse now autocomplete and man are included in init and we reduce commands to learn.
 
 ## Updated original guide italian
-[Guida originale in italiano aggiornata al 30 gennaio 2021](/book/italiano)
+[Guida originale in italiano aggiornata al 30 gennaio 2021](/docs/tutorial-eggs/italiano)
 
 I need same help for translations, contact me to propose yourself.
 

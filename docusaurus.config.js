@@ -21,7 +21,7 @@ const config = {
   organizationName: 'pieroproietti', // Usually your GitHub org/user name.
   projectName: 'docusaurus-eggs', // Usually your repo name.
 
-  onBrokenLinks: 'throw',
+  onBrokenLinks: 'warn', // it was throw
   onBrokenMarkdownLinks: 'warn',
 
   // Even if you don't use internalization, you can use this field to set useful

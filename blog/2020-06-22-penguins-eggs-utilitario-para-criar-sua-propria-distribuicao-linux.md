@@ -13,6 +13,6 @@ _"Penguin’s eggs é um utilitário que permite a criação de distribuições 
 
 ![penguins eggs utilitario para criar sua propria distribuicao linux](/images/penguins-eggs-utilitario-para-criar-sua-propria-distribuicao-linux.png)
 
-[#reviews](/categories/reviews/)
+
 
 
