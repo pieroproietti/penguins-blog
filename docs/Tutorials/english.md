@@ -5,3 +5,5 @@ lang: en
 ---
 I cannot materially maintain two versions of the guide, so with regret, I refer you to the machine translation of the guide in Italian.
 
+
+* [english](https://penguins--eggs-net.translate.goog/docs/Tutorials/italiano?_x_tr_sl=auto&_x_tr_tl=it&_x_tr_hl=en&_x_tr_pto=wapp)
