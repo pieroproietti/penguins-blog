@@ -31,7 +31,7 @@ const config = {
     defaultLocale: 'en',
     locales: ['en'],
   },
-
+  // metadata: [{'og:type': 'remasters', 'og:title': 'testamento'}],
   presets: [
     [
       'classic',
