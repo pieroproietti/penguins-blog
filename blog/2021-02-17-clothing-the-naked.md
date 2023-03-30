@@ -12,6 +12,6 @@ Can be interesting not only for desktop remixes but for server remixes too.
 
 I hope you'll enjoy it.
 
-{% youtube bxRlLZx_-eI %}
+<iframe width="560" height="315" src="https://www.youtube.com/embed/bxRlLZx_-eI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 **I can't make this videos in english, but if You are interest to publish similar demonstrations in english or others languages, I will be happy to collaborate with you.** Please, contact me at: piero.proietti@gmail.com

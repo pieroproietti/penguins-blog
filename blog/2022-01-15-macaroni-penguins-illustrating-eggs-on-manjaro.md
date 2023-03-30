@@ -9,11 +9,11 @@ You have to know that appetite comes with eating, so surprised by how quickly eg
 
 I made two videos, in the first we'll see the ease of installation of eggs in manjaro, its configuration and the production of an iso image.
 
-{% youtube TdbuA_kcyd4 %}
+<iframe width="560" height="315" src="https://www.youtube.com/embed/TdbuA_kcyd4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 The second video will show how to install the image obtained in another computer.
 
-{% youtube QY0oQcgIsKY %}
+<iframe width="560" height="315" src="https://www.youtube.com/embed/QY0oQcgIsKY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 I hope I've managed, at least with sympathy!
 

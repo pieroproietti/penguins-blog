@@ -27,7 +27,8 @@ Il risultato della definizione di un costume è una cartella in costumes denomin
 
 Nel video vedrete il risultato finale della nostra configurazione, la possibilità di passare da un sistema naked ad uno configurato secondo le nostre esigenze
 
-{% youtube noWVQ7n2Az0 %}
+<iframe width="560" height="315" src="https://www.youtube.com/embed/noWVQ7n2Az0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
 
 ## 02 Installazione di calamares, configurazione e creazione dell'immagine live
 
@@ -35,7 +36,8 @@ Una volta che il nostro sistema è installato, dovremo installare calamares che 
 
 L'immagine una volta creata dovrà essere esportata e messa su una chiavetta USB per essere utilizzata per avviare un altro sistema con la nostra live.
 
-{% youtube BuqnDBMPvBs %}
+<iframe width="560" height="315" src="https://www.youtube.com/embed/BuqnDBMPvBs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
 
 ## 03 Installazione della nostra live su un nuovo sistema
 A questo punto non ci resta che vedere il risultato finale della nostra configurazione, ovvero un sistema creato da noi stessi, per le nostre necessità creato con cura professionale.

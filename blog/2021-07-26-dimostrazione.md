@@ -14,4 +14,5 @@ In questo breve video viene presentato eggs
 * installazione della nuova iso con calamares
 * saluti finali
 
-{% youtube cKSszLKUwxA %}
+<iframe width="560" height="315" src="https://www.youtube.com/embed/cKSszLKUwxA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
