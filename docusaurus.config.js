@@ -31,7 +31,6 @@ const config = {
     defaultLocale: 'en',
     locales: ['en'],
   },
-  // metadata: [{'og:type': 'remasters', 'og:title': 'testamento'}],
   presets: [
     [
       'classic',
@@ -125,7 +124,7 @@ const config = {
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} Penguins\' eggs, build with Docusaurus.`,
+        copyright: `Copyright © 2017-${new Date().getFullYear()} Piero Proietti - Officina informativa Via Pio Joris 13, Roma.`,
       },
       prism: {
         theme: lightCodeTheme,
