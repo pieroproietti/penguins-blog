@@ -89,6 +89,11 @@ const config = {
             label: 'DEBs',
             position: 'right',
           },
+          {
+            href: 'https://github.com/pieroproietti/penguins-eggs-pkgbuilds',
+            label: 'PKGBUILDs',
+            position: 'right',
+          },
         ],
       },
       footer: {
