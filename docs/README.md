@@ -1,5 +1,5 @@
 ---
-title: README
+title: Readme
 authors: pieroproietti
 lang: en
 ---

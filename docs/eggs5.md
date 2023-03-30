@@ -1,5 +1,5 @@
 ---
-title: 5 minuti con eggs
+title: eggs in 5 minuti!
 authors: pieroproietti
 lang: it
 ---
