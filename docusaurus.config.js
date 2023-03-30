@@ -75,8 +75,18 @@ const config = {
           },
           {to: '/blog', label: 'Blog', position: 'left'},
           {
-            href: 'https://github.com/pieroproietti/docusaurus-eggs',
+            href: 'https://github.com/pieroproietti/',
             label: 'GitHub',
+            position: 'left',
+          },
+          {
+            href: 'https://sourceforge.net/projects/penguins-eggs/files/ISOS/',
+            label: 'ISOs',
+            position: 'right',
+          },
+          {
+            href: 'https://sourceforge.net/projects/penguins-eggs/files/DEBS/',
+            label: 'DEBs',
             position: 'right',
           },
         ],
