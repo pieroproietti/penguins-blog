@@ -90,7 +90,7 @@ const config = {
             position: 'right',
           },
           {
-            href: 'https://github.com/pieroproietti/penguins-eggs-pkgbuilds',
+            href: 'https://github.com/pieroproietti/penguins-eggs-pkgbuilds#penguins-eggs-pkgbuilds',
             label: 'PKGBUILDs',
             position: 'right',
           },
