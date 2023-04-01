@@ -219,7 +219,7 @@ Tuttavia non v'è pulcino che non abbia una propria mamma come guida! Ed ho pens
 eggs mom
 ```
 
-![eggs-mom](/images/book9.4/eggs-mom.png)
+![eggs-mom](/img/book/eggs-mom.png)
 
 La "mamma" ci mette a disposizione una interfaccia interattiva per accompagnarci nei primi passi.
 
