@@ -3,7 +3,11 @@ title: Readme
 authors: pieroproietti
 lang: en
 ---
-Find links here to the README and changelog on the repository [penguins-eggs](https://github.com/pieroproietti/penguins-eggs), these documents that are part of the source are ALWAYS updated.
+
+
+In the left sidebar you will find Tutorials and documentation of penguins-eggs.
+
+Below you will find links to the README and changelog for the [penguins-eggs](https://github.com/pieroproietti/penguins-eggs) repository, these documents being part of the source code and ALWAYS the most up-to-date.
 
 * [README](https://github.com/pieroproietti/penguins-eggs#readme)
 * [changelog](https://github.com/pieroproietti/penguins-eggs/blob/master/changelog.md#changelog)
