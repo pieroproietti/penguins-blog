@@ -4,9 +4,7 @@ slug: customized-isos
 title: Customized ISOs
 lang: it
 ---
-
-[English](https://penguins--eggs-net.translate.goog//blog/customized-isos?_x_tr_sl=auto&_x_tr_tl=it&_x_tr_hl=en&_x_tr_pto=wapp&_x_tr_hist=true) (Machine translation from Italian)
-
+[English](https://penguins--eggs-net.translate.goog/blog/customized-isos?_x_tr_sl=auto&_x_tr_tl=it&_x_tr_hl=en&_x_tr_pto=wapp&_x_tr_hist=true) (Machine translation from Italian)
 
 A volte può essere pratico modificare la ISO prima di crearla, per varie ragioni.
 
