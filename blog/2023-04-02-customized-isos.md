@@ -5,6 +5,9 @@ title: Customized ISOs
 lang: it
 ---
 
+[English](https://penguins--eggs-net.translate.goog//blog/customized-isos?_x_tr_sl=auto&_x_tr_tl=it&_x_tr_hl=en&_x_tr_pto=wapp&_x_tr_hist=true) (Machine translation from Italian)
+
+
 A volte può essere pratico modificare la ISO prima di crearla, per varie ragioni.
 
 Nel tempo si è affermato un programma che prendendo una ISO precedentemente creata o una originale, permetteva di customizzarla.
@@ -25,7 +28,7 @@ Nella stessa directory sono presenti anche due importanti cartelle:
 * filesystem.squashfs
 * iso
 
-La prima ```filesysten.squashfs``` contiene il filesystem live, mentre la seconda ```iso```, tutta la ISO. In pratica, queste cartelle, secondo la denominazione di Cubic, corrispondono a ```custom-root``` e ```custom-disk```.
+La prima ```filesystem.squashfs``` contiene il filesystem live, mentre la seconda ```iso```, tutta la ISO. In pratica, queste cartelle, secondo la denominazione di Cubic, corrispondono a ```custom-root``` e ```custom-disk```.
 
 C'è però una differenza, mentre ```custom-root``` è una vera e propria copia del filesystem completo, la cartella ```filesystem.squashfs``` è semplicemente una immagine ottenuta montando binded il filesystem della macchina host sulla quale stiamo lavorando.
 
