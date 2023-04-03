@@ -4,7 +4,48 @@ slug: customized-isos
 title: Customized ISOs
 lang: it
 ---
-[English](https://penguins--eggs-net.translate.goog/blog/customized-isos?_x_tr_sl=auto&_x_tr_tl=en&_x_tr_hl=en&_x_tr_pto=wapp&_x_tr_hist=true) (Machine translation from Italian)
+export const Highlight = ({children, color}) => (
+  <span
+    style={{
+      backgroundColor: color,
+      borderRadius: '2px',
+      color: '#fff',
+      padding: '0.2rem',
+    }}>
+    {children}
+  </span>
+);
+
+export default function Translate(tl, hl) {
+   let link = `https://penguins--eggs-net.translate.goog/blog/customized-isos`
+   link += `?_x_tr_sl=auto&`
+   link += `_x_tr_tl=${tl}&`
+   link += `_x_tr_hl=${hl}&`
+   link += `_x_tr_pto=wapp&_x_tr_hist=true`
+   return (
+   <div>
+      <a href={link}>
+         Traslate
+      </a>
+   </div>
+   )
+};
+
+```
+link = https://penguins--eggs-net.translate.goog/blog/customized-isos
+tr_sl = auto // source-language
+tr_tl = tl   // to-language
+tr_hl = hl   // header-language
+tr_pto =wapp 
+tr_history=true
+```
+
+<Translate tl='en' hl='en'/>
+
+```
+[English]
+(https://penguins--eggs-net.translate.goog/blog/customized-isos?_x_tr_sl=auto&_x_tr_tl=en&_x_tr_hl=en&_x_tr_pto=wapp&_x_tr_hist=true) (Machine translation from Italian)
+```
 
 A volte può essere pratico modificare la ISO prima di crearla, per varie ragioni.
 
