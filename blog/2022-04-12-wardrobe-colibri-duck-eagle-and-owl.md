@@ -5,6 +5,9 @@ title: 'wardrobe: colibri, duck, eagle and owl'
 lang: it
 ---
 
+[English]
+(https://penguins--eggs-net.translate.goog/blog/wardrobe-colibri-duck-eagle-and-owl?_x_tr_sl=auto&_x_tr_tl=en&_x_tr_hl=en&_x_tr_pto=wapp&_x_tr_hist=true) (Machine translation from Italian)
+
 Dopo qualche settimana di esperienza dalla creazione di un sistema di scripting per creare - a partire da versione naked - delle customizzazioni complete, sono lieto di annunciare che tutte le mie attuali customizzazioni sono stare ri-create e vengono ad essere gestite con **eggs wardrobe**.
 
 # Perchè wardrobe è importante?
