@@ -5,7 +5,7 @@ title: Docusaurus
 lang: it
 ---
 
-[English](https://penguins--eggs-net.translate.goog/blog/docusauros?_x_tr_sl=auto&_x_tr_tl=en&_x_tr_hl=en&_x_tr_pto=wapp&_x_tr_hist=true) (Machine translation from Italian)
+[English](https://penguins--eggs-net.translate.goog/blog/docusaurus?_x_tr_sl=auto&_x_tr_tl=en&_x_tr_hl=en&_x_tr_pto=wapp&_x_tr_hist=true) (Machine translation from Italian)
 
 
 E' da qualche tempo che cercavo qualcosa di più strutturato per il blog, qualcosa di semplice ed allo stesso modo potente, in grado di crescere.
