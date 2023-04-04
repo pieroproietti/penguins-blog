@@ -5,6 +5,8 @@ title: Customizzazione del desktop
 lang: en
 ---
 
+[English](https://penguins--eggs-net.translate.goog/blog/customizzazione-del-desktop?_x_tr_sl=auto&_x_tr_tl=en&_x_tr_hl=en&_x_tr_pto=wapp&_x_tr_hist=true) (Machine translation from Italian)
+
 
 Partiamo dal desktop standard ed andiamo a modificare, in maniera arbitraria sia lo sfondo che la posizione del menu portando il basso.
 ![desktop-custom](/images/matteo-customizzazione.png)

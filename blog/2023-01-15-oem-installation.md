@@ -5,6 +5,8 @@ title: OEM installation
 lang: it
 ---
 
+[English](https://penguins--eggs-net.translate.goog/blog/oem-installation?_x_tr_sl=auto&_x_tr_tl=en&_x_tr_hl=en&_x_tr_pto=wapp&_x_tr_hist=true) (Machine translation from Italian)
+
 Sto valutando la possibilità di inserire una installazione OEM all'interno di krill per semplificare il processo di distribuzione di versioni verticali di Linux.
 
 krill, semplice installer CLI si presta bene allo scopo ed ho già provveduto nella ultima versione e rimuovere e ripulire il codice per espitare la nuova caratteristica.
