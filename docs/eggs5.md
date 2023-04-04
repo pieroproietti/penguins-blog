@@ -4,6 +4,8 @@ authors: pieroproietti
 lang: it
 ---
 
+[Google Translate](https://penguins--eggs-net.translate.goog/docs/eggs5?_x_tr_sl=auto&_x_tr_tl=en&_x_tr_hl=en&_x_tr_pto=wapp&_x_tr_hist=true) (Machine translation from Italian)
+
 o anche meno...
 
 ## Debian

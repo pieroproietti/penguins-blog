@@ -5,7 +5,7 @@ title: E quindi uscimmo a riveder le stelle
 lang: it
 ---
 
-[English](https://penguins--eggs-net.translate.goog/blog/e-quindi-uscimmo-a-riveder-le-stelle?_x_tr_sl=auto&_x_tr_tl=en&_x_tr_hl=en&_x_tr_pto=wapp&_x_tr_hist=true) (Machine translation from Italian)
+[Google Translate](https://penguins--eggs-net.translate.goog/blog/e-quindi-uscimmo-a-riveder-le-stelle?_x_tr_sl=auto&_x_tr_tl=en&_x_tr_hl=en&_x_tr_pto=wapp&_x_tr_hist=true) (Machine translation from Italian)
 
 ![Dante Alighieri](/images/dantealighieri.webp)
 ...

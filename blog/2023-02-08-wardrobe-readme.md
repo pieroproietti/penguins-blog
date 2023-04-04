@@ -5,6 +5,8 @@ title: penguins wardrobe readme
 lang: it
 ---
 
+[Google Translate](https://penguins--eggs-net.translate.goog/blog/wardrobe-readme?_x_tr_sl=auto&_x_tr_tl=en&_x_tr_hl=en&_x_tr_pto=wapp&_x_tr_hist=true) (Machine translation from Italian)
+
 Ho scritto e terrò aggiornato un importante [README](https://github.com/pieroproietti/penguins-wardrobe/tree/main/DOCUMENTATION#penguins-wardrobe) su [penguins-wardrobe](https://github.com/pieroproietti/penguins-wardrobe) ed il suo utilizzo. 
 
 Il documento è stato redatto in italiano e rimarrà unico, anche per questo lo riporto solo come link nel presente blog.
