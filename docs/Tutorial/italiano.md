@@ -1,5 +1,5 @@
 ---
-title: Guida utente eggs
+title: Guida utente `eggs`
 authors: pieroproietti
 slug: italiano
 lang: it
@@ -8,13 +8,13 @@ import Translactions from '@site/src/components/Translactions';
 
 <Translactions path="docs/Tutorial/italiano"/>
 
-Aggiornamento eggs v9.4.x
+Aggiornamento `eggs v9.4.x`
 
 # Introduzione
 
 ![Un sistema riproduttivo per pinguini!](/images/manjaro-uefi-booting.png)
 
-Penguins' eggs nasce con l'idea della "riproduzione" e "selezione delle popolazioni" applicata ai sistemi operativi. 
+`penguins' eggs` nasce con l'idea della "riproduzione" e "selezione delle popolazioni" applicata ai sistemi operativi. 
 
 Erano i tempi di Remastersys e Systemback, due dei più diffusi programmi per rimasterizzare un sistema operativo - ad un certo punto - sia Remastersys, che aveva sempre sofferto di problemi di manutenzione da parte del suo autore, che Systemback furono in qualche modo dismessi. _Vedi **nota**_
 
@@ -22,18 +22,18 @@ Per la verità per un po' non vi fu problema alcuno, ma quando cominciarono i "p
 
 Volevo uno strumento nuovo, scritto con un linguaggio moderno e comune a più distribuzioni, provvisto di un proprio sistema di pacchettizzazione. La scelta cadde su nodejs, con javascript, successivamente sono passato a typescript come linguaggio di sviluppo.
 
-Immaginai un processo di produzione dell'uovo, denominato produce, l'operazione di cova - ovvero l'installazione - originalmente denominata hatch. Gli altri comandi vennero da sè con kill preferito ad abort per togliere di mezzo le iso prodotte, update per gli aggiornamenti, prerequisites per installare i pacchetti .deb necessari al processo, [calamares](https://calamares.io/) per l'installazione e la configurazione dell'installer grafico.
+Immaginai un processo di produzione dell'uovo, denominato produce, l'operazione di cova - ovvero l'installazione - originalmente denominata `hatch`. Gli altri comandi vennero da sè con `kill` preferito ad `abort` per togliere di mezzo le iso prodotte, `update` per gli aggiornamenti, `prerequisites` per installare i pacchetti .deb necessari al processo, [`calamares`](https://calamares.io/) per l'installazione e la configurazione dell'installer grafico.
 
-Prima o poi, trattandosi di un uovo, troverò anche il modo di implementare un server PXE che lo distribuisca attraverso la rete locale, al momento oltre all'intenzione c'è il nome e non poteva essere che cuckoo \(cuculo\), dal comportamento del cuculo che fa covare le proprie uova da altri.
+Prima o poi, trattandosi di un uovo, troverò anche il modo di implementare un server PXE che lo distribuisca attraverso la rete locale, al momento oltre all'intenzione c'è il nome e non poteva essere che `cuckoo`, dal comportamento del cuculo che fa covare le proprie uova da altri.
 
 # Installazione
 
 Prima di cominciare a produrre le "uova" occorre fornirsi di un sistema riproduttivo. 
 
-Abbiamo diverse possibilità per l'installazione di eggs: 
+Abbiamo diverse possibilità per l'installazione di `penguins-eggs`: 
 * pacchetto precompilati
   * formato .deb per Debian/Devuan/Ubuntu
-  * formato PKGBUILD per Arch e manjaro
+  * formato PKGBUILD per `Arch Linux` e Manjaro
 * pacchetti npm: non più utilizzati
 * codice sorgente
 
