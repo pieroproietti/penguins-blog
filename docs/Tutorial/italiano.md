@@ -1046,11 +1046,11 @@ Esiste anche una versione Ubuntu con [Waydroid](https://waydro.id/) pre-installa
 
 `eggs` è un progetto che, al momento, consente di rimasterizzare diverse versioni di Linux:
 
-* Arch
-* Debian bullseyes/buster/stretch/jessie/bookworm
-+ Devuan beowulf/chimaera
-* manjaro
-* Ubuntu focal/groovy/hirsute/impish/bionic
+* `Arch`
+* `Debian buster/bullseyes/bookworm + stretch/jessie`
++ `Devuan beowulf/chimaera`
+* `manjaro`
+* `Ubuntu bionic/focal/jammy`
 
 e la maggior parte delle derivate, ne cito solo alcune: deepin, linux mint, lmde 4, KDE neon, pop-os!, zorin, etc.
 
@@ -1090,26 +1090,26 @@ Essenzialmente possiamo dividere i pacchetti da cui eggs dipende, in:
 
 ### pacchetti comuni
 Questi pacchetto sono i prerequisiti di eggs per tutte le versioni installate.
- * cryptsetup
- * dosfstools
- * dpkg-dev
- * isolinux
- * live-boot
- * live-boot-initramfs
- * lvm2
- * net-tools
- * parted
- * pxelinux
- * rsync
- * squashfs-tools
- * whois
- * xorriso
+ * `cryptsetup`
+ * `dosfstools`
+ * `dpkg-dev`
+ * `isolinux`
+ * `live-boot`
+ * `live-boot-initramfs`
+ * `lvm2`
+ * `net-tools`
+ * `parted`
+ * `pxelinux`
+ * `rsync`
+ * `squashfs-tools`
+ * `whois`
+ * `xorriso`
 
 ### pacchetti dipendenti dalla architettura
 A seconda della architettura sulla quale eggs è installato verranno selezionati differenti pacchetti. Le architetture possono essere: i386, amd64, armel ed arm64:
- * syslinux:  i386 / amd64;
- * syslinux-efi:  armel / amd64;
- * ipxe: armel / amd64;
+ * `syslinux`:  i386 / amd64;
+ * `syslinux-efi`:  armel / amd64;
+ * `ipxe`: armel / amd64;
 
 ### pacchetti dipendenti dalla versione
 Questi pacchetti sono specifici della versione in uso. si noti che mentre è relativamente semplice cambiare il nome della distribuzione, non è affatto lo stesso per quanto riguarda la versione che è univoca.
@@ -1118,15 +1118,15 @@ Le versioni gestite da eggs sono: jessie, stretch, buster, bullsyes, bionic, foc
 
 Per alcune distribuzioni come linuxmint, ufficiozero ed altre che pur essendo delle derivate utilizzano dei nomi di versione diversi, sono ricondotte alla versione originale, così ad esempio linuxmint uma viene configurato come Ubuntu focal, mentre linuxmint tricia viene configurato come Ubuntu bionic.
 
- * live-config: jessie, stretch, buster, bullseye, focal, groovy, hirsute
- * live-config-systemd: jessie, stretch, buster, bullseye, focal, groovy, hirsute
- * live-config-sysvinit: beowulf
- * open-infrastructure-system-config: bionic
+ * `live-config: jessie, stretch, buster, bullseye, focal, groovy, hirsute`
+ * `live-config-systemd: jessie, stretch, buster, bullseye, focal, groovy, hirsute`
+ * `live-config-sysvinit: beowulf`
+ * `open-infrastructure-system-config: bionic`
 
 ### pacchetti dipendenti dal tipo di init
 Abbiamo bisogno di questo tipo di pacchetti, perchè alcune derivate di Debian buster - principalmente MX Linux - utilizzano sysvinit come init al posto di systemd anche se sono contraddistinte dalla stessa versione: buster.
 
- * live-config-sysvinit sysvinit
+ * `live-config-sysvinit sysvinit`
 
 Mentre i pacchetti comuni e quelli dipendenti dalla architettura sono sempre installati automaticamente dagli script di preinstallazione, non è così per i pacchetti che dipendono dalla versione o dal tipo di inizializzazione. Per questi pacchetti è necessario il comando eggs config.
 
@@ -1136,57 +1136,57 @@ Potete comunque sempre installare calamares con il comando:
 
 * ```sudo eggs calamares --install```
 
-## Arch linux
+## `Arch linux`
 Le dipendenze di penguins-eggs per Arch possono essere rilevate dal [PKGBUILD](https://github.com/pieroproietti/penguins-eggs-arch/blob/master/PKGBUILD)
 
-* arch-install-scripts
-* dosfstools
-* erofs-utils
-* findutils
-* grub
-* libarchive
-* libisoburn
-* lsb-release
-* lvm2
-* mtools
-* mkinitcpio-archiso
-* mkinitcpio-nfs-utils
-* nbd
-* nodejs
-* pacman-contrib
-* parted
-* python
-* procps-ng
-* pv
-* rsync
-* syslinux
-* squashfs-tools
-* xdg-utils
+* `arch-install-scripts`
+* `dosfstools`
+* `erofs-utils`
+* `findutils`
+* `grub`
+* `libarchive`
+* `libisoburn`
+* `lsb-release`
+* `lvm2`
+* `mtools`
+* `mkinitcpio-archiso`
+* `mkinitcpio-nfs-utils`
+* `nbd`
+* `nodejs`
+* `pacman-contrib`
+* `parted`
+* `python`
+* `procps-ng`
+* `pv`
+* `rsync`
+* `syslinux`
+* `squashfs-tools`
+* `xdg-utils`
 
-## manjaro linux
+## `Manjaro linux`
 Le dipendenze di penguins-eggs per manjaro possono essere rilevate dal [PKGBUILD](https://github.com/pieroproietti/penguins-eggs-manjaro/blob/master/PKGBUILD)
 
-* arch-install-scripts
-* awk
-* dosfstools
-* e2fsprogs
-* erofs-utils
-* findutils
-* glibc-locales
-* gzip
-* libarchive
-* libisoburn
-* lvm2
-* manjaro-tools-iso
-* mtools
-* nodejs
-* openssl
-* pacman
-* parted
-* rsync
-* sed
-* syslinux
-* squashfs-tools
+* `arch-install-scripts`
+* `awk`
+* `dosfstools`
+* `e2fsprogs`
+* `erofs-utils`
+* `findutils`
+* `glibc-locales`
+* `gzip`
+* `libarchive`
+* `libisoburn`
+* `lvm2`
+* `manjaro-tools-iso`
+* `mtools`
+* `nodejs`
+* `openssl`
+* `pacman`
+* `parted`
+* `rsync`
+* `sed`
+* `syslinux`
+* `squashfs-tools`
 
 # Uso di eggs con kernel diversi
 
