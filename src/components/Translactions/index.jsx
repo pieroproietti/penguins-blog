@@ -10,7 +10,7 @@ export default function Translactions({path}) {
   let itLink = l1 + path + l2 + 'it' + l3 + 'it'
   let ptLink = l1 + path + l2 + 'pt' + l3 + 'pt'
   let spLink = l1 + path + l2 + 'es' + l3 + 'es'
-
+  let origin = "https://penguins-eggs.net"+path
   return (
     <span>
       Google translate:&nbsp;

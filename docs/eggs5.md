@@ -6,7 +6,7 @@ lang: it
 ---
 import Translactions from '@site/src/components/Translactions';
 
-<Translactions path="Tutorial/eggs5"/>
+<Translactions path="eggs5"/>
 
 o anche meno...
 
