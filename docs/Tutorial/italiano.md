@@ -229,9 +229,9 @@ La "mamma" ci mette a disposizione una interfaccia interattiva per accompagnarci
 
 ---
 
-# La configurazione di eggs
+# La configurazione di `eggs`
 
-Per funzionare eggs ha bisogno di vari pacchetti installati: i cosidetti prerequisiti, inoltre necessita di creare ed installare le pagine di man di eggs ed installare l'autocomplete di eggs stesso. Tutto questo viene curato dal processo di pacchettizzazione .deb o PKGBUILD che a sua volta sarà basato sul gestore di pacchetti della distribuzione in uso: apt o pacman.
+Per funzionare `eggs` ha bisogno di vari pacchetti installati: i cosidetti prerequisiti, inoltre necessita di creare ed installare le pagine di `man` di `eggs` ed installare l'autocomplete di `eggs` stesso. Tutto questo viene curato dal processo di pacchettizzazione .deb o PKGBUILD che a sua volta sarà basato sul gestore di pacchetti della distribuzione in uso: apt o pacman.
 
 Questo, tra l'altro, ha reso obsoleto il comando ```eggs config``` prima necessario che viene sostituito da ```eggs dad``` combinato, eventualmente, con il flag ```--default```
 
@@ -363,7 +363,7 @@ dns: ''
 
 
 ## tools.yaml
-Lo scopo delle variabili di tools.yaml è quello di aiutare lo sviluppo di eggs, in sostanza mi sono molto utili per sviluppare, esportare pacchetti ed iso ed eseguire aggiornamenti di eggs direttamente dalla rete locale. Generalmente il contenuto di questo file non viene utilizzato durante il funzionamento di eggs.
+Lo scopo delle variabili di tools.yaml è quello di aiutare lo sviluppo di `eggs`, in sostanza mi sono molto utili per sviluppare, esportare pacchetti ed iso ed eseguire aggiornamenti di `eggs` direttamente dalla rete locale. Generalmente il contenuto di questo file non viene utilizzato durante il funzionamento di `eggs`.
 
 ```
 # Penguin's eggs
@@ -394,7 +394,7 @@ filterDeb: eggs_9.*.*_
 
 
 
-## sudo dad --default
+## `sudo dad --default`
 Come ogni pulcino non ha un solo genitore, oltre alla mamma non poteva mancare il papà! Avete difficoltà ad editare i file di configurazione in yaml di eggs? Niente paura, papà ci accompagna e può dare una mano!
 
 ```
@@ -410,8 +410,8 @@ Questo comando crea o ricrea la configurazione di eggs nella directory ```/etc/p
 ![eggs-dad-d](/images/book9.2/eggs-status.png)
 
 
-# I comandi di eggs
-**eggs** necessita dei diritti di root, quindi - tranne per eggs mom, eggs info ed i comandi di esportazione - DEVE essere chiamato preceduto da `sudo`
+# I comandi di `eggs`
+`eggs` necessita dei diritti di root, quindi - tranne per `eggs mom`, `eggs info` ed i comandi di esportazione - DEVE essere chiamato preceduto da `sudo`
 
 ```
 TOPICS
@@ -439,42 +439,46 @@ COMMANDS
   version
 ```
 
-Non vi fate spaventare da questi pochi comandi, quelli che utilizzeremo sono essenzialmente due: **produce** per creare la iso, **kill** per cancellarla.
+Non vi fate spaventare da questi pochi comandi, quelli che utilizzeremo sono essenzialmente due: `eggs produce` per creare la iso ed `eggs kill` per cancellarla.
 
-Ogni comando può avere alcuni flag. Alcuni sono comuni a tutti i comandi: **--verbose** ed **--help**. Naturalmente **--verbose** mostrerà una descrizione delle operazioni più dettagliata delle operazioni in corso, mentre **--help** o **-h** visualizzerà una breve descrizione del comando stesso.
+Ogni comando può avere alcuni flag. Alcuni sono comuni a tutti i comandi: `--verbose` ed `--help`. Naturalmente `--verbose` mostrerà una descrizione delle operazioni più dettagliata delle operazioni in corso, mentre `--help` o `-h` visualizzerà una breve descrizione del comando stesso.
 
-Tra i vari comandi **produce** è quello che presenta il maggior numero di opzioni. Ad esempio uno dei flag più importanti ed utilizzati di **produce** è  **-f** o **--fast** che consentirà ad eggs di utilizzare come algoritmo di compressione **zsd** invece della compressione di default **xz** permettendovi così di risparmiare non poco tempo durante le fasi di sviluppo e test. Sempre in **produce** sono presenti i flag **--backup** e **--clone** che consentono di avere una copia completa del proprio sistema con i dati utente criptati o in chiaro.
+Tra i vari comandi `produce` è quello che presenta il maggior numero di opzioni. Utilizzato senza un flag di compressine: `--standar` o `--max` userà l'algoritmo di compressione `zstd-level-1`, permettendovi così di risparmiare non poco tempo durante le fasi di sviluppo e test. Sempre in `produce` sono presenti i flag `--clone` e **--cryptedclone` che consentono di avere una copia completa del proprio sistema con i dati utente in chiaro o criptati.
 
-Andiamo ad illustrare i comandi in rigoroso ordine alfabetico, per comodità dello scrivente. Tenete presente che i comandi che utilizzerete normalmente saranno soprattutto: **produce** e **kill**.
+Andiamo ad illustrare i comandi in rigoroso ordine alfabetico, per comodità dello scrivente. 
 
-## eggs adapt
+Tenete presente che i comandi che utilizzerete saranno soprattutto: `produce` e `kill`.
 
-Adatta il video alle alla grandezza della finestra di una macchina virtuale. Lo trovo molto comodo per ridimensionare le macchine virtuali con interfacce grafiche diverse da cinnamon, gnome3, e KDE per la quali non è necessario. In pratica eggs richiama xrandr per adattare lo schermo alla risoluzione corrente. Non è strettamente relato alla produzione di ISO, è però comodissimo lavorando con le macchine virtuali.
+## `eggs adapt`
 
-## eggs autocomplete
-Produce i file ```eggs.bash``` ed ```_eggs``` per il funzionamento dell'autocomplete di bash e zsh. Normalmente non è necessario utilizzarlo, perchè viene automaticamente configurato in fase di installazione. Se l'autocomplete non vi funziona, la ragione sarà probabilmente la mancanza del pacchetto ```bash-completion```.
+Adatta il video alle alla grandezza della finestra di una macchina virtuale. Lo trovo molto comodo per ridimensionare le macchine virtuali con interfacce grafiche diverse da cinnamon, gnome3, e KDE per la quali non è necessario. In pratica `eggs` richiama `xrandr` per adattare lo schermo alla risoluzione corrente. Non è strettamente relato alla produzione di ISO, è però comodissimo lavorando con le macchine virtuali.
 
-## sudo eggs calamares
-Installa e/o configura l'installatore grafico calamares. Può essere utilizzato anche per configurare una iso che - prodotta senza calamares - la si voglia installare con esso. Basterà dare il comando: **sudo eggs calamares --install** e si avrà sia l'installazione del pacchetto, la sua configurazione e la configurazione di calamares per l'utilizzo senza necessità di inserire la password.
+## `eggs autocomplete`
+Produce i file ```eggs.bash``` ed ```_eggs``` per il funzionamento dell'autocomplete di `bash` e `zsh`. Normalmente non è necessario utilizzarlo, perchè viene automaticamente configurato in fase di installazione. Se l'autocomplete non vi funziona, la ragione sarà probabilmente nella mancanza del pacchetto ```bash-completion``` o ```zsh-completions```.
+
+## `sudo eggs calamares`
+Installa e/o configura l'installatore grafico `calamares`. Può essere utilizzato anche per configurare una ISO che - prodotta senza `calamares` - la si voglia installare con esso. Basterà dare il comando: `sudo eggs calamares --install` e si avrà sia l'installazione del pacchetto, la sua configurazione e la configurazione di `calamares` per l'utilizzo senza necessità di inserire la password.
 
 ```
 eggs calamares -h
 ```
 
 
-## sudo eggs cuckoo
-cuckoo offre una grande versatilità per le installazioni da eseguire su una rete locale. Il comando avvia un server PXE che permette a tutte le macchine della LAN di avviarsi dalla rete; questo ci risparmia la creazione di chiavette USB di avvio e, nella maggior parte dei casi, è anche più veloce e pratico.
-Deve essere presente in rete un server dhcp reale che fornisca gli indirizzi ip, in comando eggs cuckoo aggiungerò un servizio proxy-dhcp per fornire i dati aggiuntivi necessari al funzionamto PXE.
+## `sudo eggs cuckoo`
+`cuckoo` offre una grande versatilità per le installazioni da eseguire su una rete locale. Il comando avvia un server PXE che permette a tutte le macchine della LAN di avviarsi dalla rete; questo ci risparmia la creazione di chiavette USB di avvio e, nella maggior parte dei casi, è anche più veloce e pratico.
+Deve essere presente in rete un server dhcp reale che fornisca gli indirizzi ip. Il comando `eggs cuckoo` aggiungerà un servizio `proxy-dhcp` per fornire i dati aggiuntivi necessari al funzionamto PXE.
 
 Tutto ciò che occorre fare è avviare un computer in rete - anche da live - ed eseguire il comando: 
 ```eggs sudo cuckoo```
 
 A questo punto sarà possibile avviare le varie macchine da installare direttamente tramite il boot da rete locale. Il metodo funziona sia su computer con BIOS standard che su macchine UEFI.
 
-## sudo eggs dad
-Chiedi a papà come generare la tua iso!
+## `sudo eggs dad`
+Chiedi a papà come configurare `eggs` e generare la tua ISO!
 
-Questo comando riassume in forma essenziale, i task necessari a produrre una iso del sistema con eggs. Analizza la presenza o meno della configurazione, i pacchetti installati e, quindi fornisce la possibilità di configurare un prefisso alla vostra iso, il suo nome, il nome utente live e la sua password, la password di root sempre per il liveCD, il tipo di compressione e l'eventuale tema da utilizzare. Questi dati vengono salvati e prelevati dal suddetto file di configurazione `eggs.yaml`, per cui una volta configurati saranno utilizzati come default per tutte le operazioni successive.
+Questo comando riassume in forma essenziale, i task necessari a produrre una ISO del sistema con `eggs`. 
+
+Analizza la presenza o meno della configurazione, i pacchetti installati e, quindi fornisce la possibilità di configurare un prefisso alla vostra ISO, il suo nome, il nome dell'utente live e la sua password, la password di root sempre per il sistema live, il tipo di compressione e l'eventuale tema da utilizzare. Questi dati vengono salvati e prelevati dal suddetto file di configurazione `eggs.yaml`, per cui una volta configurati saranno utilizzati come default per tutte le operazioni successive.
 
 ```
 E G G S: the reproductive system of penguins
@@ -487,15 +491,16 @@ Daddy, what else did you leave for me?
 - distro template install...
 ```
 
-## eggs export
-Questo è un comando che, alla stragrande maggioranza degli utenti, non serve! Non fa altro che generare a partire dai parametri di configurazione, quali iso cancellare ed esportare nell'host. Mi spiego, durante la scrittura di eggs, sono costretto a generare una moltitudine di immagini iso a partire da macchine virtuali, ed ad esportarle sulla mia stazione di lavoro. Per farlo utilizzo il comando scp, tuttavia digitare continuamente il comando e cancellare tutte le iso, della stessa versione precedenti, è - diciamo così - fastidioso. Allo scopo, ho ideato questo comando.
+## `eggs export`
+Questo è un comando che, alla stragrande maggioranza degli utenti, non serve! 
 
-L'esportazione delle iso generate avviene a seconda dei parametri inseriti in ```/etc/penguins-eggs.d/tools.yaml```. Potete liberamente modificare questo file per adattarlo alle vostre esigenze.
+Non fa altro che generare a partire dai parametri di configurazione, quali ISO cancellare ed esportare nell'host. Mi spiego, durante la scrittura di `eggs`, sono costretto a generare una moltitudine di immagini ISO a partire da macchine virtuali ed, ad esportarle sulla mia stazione di lavoro. Per farlo utilizzo il comando scp, tuttavia digitare continuamente il comando e cancellare tutte le precedenti versioni di ISO presenti, è - diciamo così - fastidioso. Allo scopo, ho ideato questo comando.
 
-Nel mio caso, utilizzo una stazione di lavoro con Proxmox VE e delle macchine virtuali, ho dovuto definire un remoteHost, remoteUser, etc per ogni tipologia di esportazione, nel mio caso esporto di volta in volta:
+L'esportazione delle ISO generate avviene a seconda dei parametri inseriti in ```/etc/penguins-eggs.d/tools.yaml```. Potete liberamente modificare questo file per adattarlo alle vostre esigenze.
+
+Nel mio caso, utilizzo una stazione di lavoro con Proxmox VE e delle macchine virtuali, ho dovuto definire un `remoteHost`, `remoteUser`, etc per ogni tipologia di esportazione, nel mio caso esporto di volta in volta:
 * pacchetti Debian
-* documentazione dei sorgenti (non più utilizzata)
-* immagini iso
+* immagini ISO
 
 Naturalmente, nel caso siate facendo la riproduzione direttamente sul sistema e non di una macchina virtuale, avrete tutto nello stesso disco ed il problema non si pone. In questo caso i comandi di esportazione rimarranno inutilizzati.
 
@@ -512,13 +517,13 @@ ssh root@192.168.1.2 rm -rf /home/artisan/sourceforge/iso/egg-of-debian-bullseye
 root@192.168.1.2's password: 
 ```
 
-### eggs export deb
+### `eggs export deb`
 Esporta i pacchetti deb. Notate che questo comando è utilizzato esclusivamente per lo sviluppo di eggs.
 
-### eggs export iso
+### `eggs export iso`
 Esporta l'immagine iso. Potete modificare a piacere sia l'host di esportazione che il path associato nel file **tools.yaml**. 
 
-## eggs help
+## `eggs help`
 
 Come dice il comando stesso genera la lista dei comandi disponibili. A sua volta ogni comando con il flag -h o --help emette usa sua descrizione.
 
@@ -528,9 +533,9 @@ Ad esempio:
 calamares
 ```
 
-## sudo eggs install
+## `sudo eggs install`
 
-Lancia l'installaler CLI del sistema operativo krill.
+Lancia l'installaler CLI del sistema operativo con krill.
 
 E' possibile eseguire una installazione unattended, semplicemente con il comando:
 
@@ -540,62 +545,62 @@ sudo eggs install --unattended
 ![eggs-krill-unattended-on-arch](/images/book9.2/eggs-install-u.png)
 
 
-### Presentazione dell'installer krill (eggs install)
+### Presentazione dell'installer `krill` (`eggs install`)
 
-Lo scopo di krill non è quello di entrare in concorrenza con un progetto molto più ampio come calamares, piuttosto quello di affiancarlo in ambiti dove la potenza e la sofisticazione di calamares non sono disponibili: ad esempio in ambito server. o in caso di sistemi desktop nei quali non sia possibile utilizzare calamares perchè non disponibile, come per le versioni di Debian jessie e stretch. 
+Lo scopo di `krill` non è quello di entrare in concorrenza con un progetto molto più ampio come `calamares`, piuttosto quello di affiancarlo in ambiti dove la potenza e la sofisticazione di calamares non sono disponibili: ad esempio in ambito server. o in caso di sistemi desktop nei quali non sia possibile utilizzare calamares perchè non disponibile, come per le versioni di Debian jessie e stretch. 
 
-Inoltre, krill permette una installazione unattended e, generalmente più veloce.
+Inoltre, `krill` permette una installazione unattended ed è, proprio perchè più parco, generalmente più veloce.
 
-Potete, infine, utilizzare krill su macchine desktop leggere con 2 GB di RAM o meno, nelle quali l'installazione con krill risulterà particolarmente più veloce.
+Potete, infine, utilizzare `krill` su macchine desktop leggere con 2 GB di RAM o meno, nelle quali l'installazione con `krill`, in questi casi, risulterà particolarmente più veloce.
 
-In tutti gli altri casi è consigliato utilizzare calamares che offre molte più possibilità: in particolare per ottenere l'installazione dual-boot.
+In tutti gli altri casi è consigliato utilizzare `calamares` che offre molte più possibilità: in particolare l'installazione dual-boot.
 
-Vi è però una eccezione a questo schema generale, ed è la necessità utilizzare krill per ripristinare i backup criptati fatti con eggs. In questo caso l'utilizzo di krill è - al momento - indispensabile.
+Vi è però una eccezione a questo schema generale, ed è la necessità utilizzare `krill` per ripristinare i backup criptati fatti con `eggs`. In questo caso l'utilizzo di `krill` è - al momento - indispensabile.
 
-Utilizzate quindi krill solo quando è necessario ed opportuno  e, sono comunque abbastanza casi: installazioni unattended, installazioni si sistemi solo CLI, sistemi basati su Debian jessie o Debian stretch, installazioni su macchine con meno di 2GB di RAM. Per tutti gli altri casi è generalmente preferibile utilizzare [calamares](https://calamares.io/). 
+Utilizzate quindi `krill` solo quando è necessario ed opportuno  e, sono comunque abbastanza casi: installazioni unattended, installazioni si sistemi solo CLI, sistemi basati su Debian jessie o Debian stretch, installazioni su macchine con meno di 2GB di RAM. Per tutti gli altri casi è generalmente preferibile utilizzare [calamares](https://calamares.io/). 
 
-### Interfaccia di krill
+### Interfaccia di `krill`
 
-krill è stato pensato per essere il più possibile simile ad un installer GUI anche se è un installer a riga di comando. La sua realizzazione è stata possibile grazie all'utilizzo di react in ambito CLI.
+`krill` è stato pensato per essere il più possibile simile ad un installer GUI anche se è un installer a riga di comando. La sua realizzazione è stata possibile grazie all'utilizzo di [ink](https://github.com/vadimdemedes/ink) una libreria che porta react in ambito CLI.
 
-Già dal nome che identifica dei piccoli crostacei diffusi ai poli, prende spunto dal ben più famoso installer grafico calamares e ne ricalca sostanzialmente lo stesso schema visuale.
+Già dal nome, che identifica dei piccoli crostacei diffusi ai poli, prende spunto dal ben più famoso installer grafico `calamares` e ne ricalca sostanzialmente lo stesso schema visuale.
 
-Abbiamo una finestra principale che è suddivisa sulla sinistra con i vari passi della procedura, mentre le varie tab: welcome, location, keyboard, partitions, users, network, summary ed installation aprono, ognuna, i propri form per la visualizzazione o l'immissione e modifica dei dati necessari.
+Abbiamo una finestra principale che è suddivisa sulla sinistra con i vari passi della procedura, mentre le varie tab: `welcome`, `location`, `keyboard`, `partitions`, `users`, `network`, `summary` ed `finish` aprono, ognuna, i propri form per la visualizzazione o l'immissione e modifica dei dati necessari.
 
-L'insieme è ordinato e cerca di ricordare calamares e ubiquity - ben più blasonati installer - e questo per un semplice installer TUI è già molto.
+L'insieme è ordinato e cerca di ricordare `calamares` ed `ubiquity` - ben più blasonati installer - e questo per un semplice installer TUI è già molto.
 
 Naturalmente siamo in ambiente CLI e, quindi, niente mouse ma esclusivamente tastiera, utilizzando però i tasti di direzione ed invio.
 
 Per l'introduzione dei dati verrà utilizzata la parte sottostante dove andremo ad immettere o selezionare i nostri dati ed avanzeremo accettando i valori immessi,
 
-Si procederà quindi da **welcome** sino a **summary** ed una volta accettate le scelte in **summary** partirà la nostra installazione.
+Si procederà quindi da `welcome` sino a `summary` ed una volta accettate le scelte in `summary` partirà la nostra installazione.
 
-**Nota**: _in attesa che scriva un apposito modulo per calamares per il restore dei dati creato da eggs, l'installazione con l'installer krill al momento è indispensabile per il restore automatico dei backup realizzati con eggs._
+**Nota**: _in attesa che scriva un apposito modulo per `calamares` per il restore dei dati creato da `eggs`, l'installazione con l'installer `krill` al momento è indispensabile per il restore automatico dei backup realizzati con `eggs`._
 
-### krill: i vari passi dell'installazione
-L'installazione con krill procede attraverso alcuni step, comuni  a calamares ed aventi la stessa denominazione, che conducono sino alla schermata finale ed alla richiesta di riavvio.
+### `krill`: i vari passi dell'installazione
+L'installazione con `krill` procede attraverso alcuni step, comuni  a calamares ed aventi la stessa denominazione, che conducono sino alla schermata finale ed alla richiesta di riavvio.
 
-#### krill: welcome
-**welcome** è la prima schermata di krill ed è il posto dove potremo cambiare la lingua. Disporremo solo delle lingue incluse nella nostra iso, per cui normalmente accetteremo il default.
+#### `krill: welcome`
+`welcome` è la prima schermata di krill ed è il posto dove potremo cambiare la lingua. Disporremo solo delle lingue incluse nella nostra iso, per cui normalmente accetteremo il default.
 
 ![eggs-krill-welcome](/images/book9.2/eggs-install-welcome.png)
 
-#### krill: location
+#### `krill: location`
 
-In **location** potremo selezionare e variare la nostra area geografica e la nostra zona per l'impostazione del fuso orario. Le aree e le zone sono complete, non è così per le lingue che non verranno neppure proposte (vengno preselezionate dall'impostazione della lingua in **welcome**).
+In `location` potremo selezionare e variare la nostra area geografica e la nostra zona per l'impostazione del fuso orario. Le aree e le zone sono complete, non è così per le lingue che non verranno neppure proposte (vengono preselezionate dall'impostazione della lingua in `welcome`).
 
 ![eggs-krill-location](/images/book9.2/eggs-install-location.png)
 
-#### krill: keyboard
-Stiamo trattando di un programma per l'installazione a misura per le nostre customizzazioni, quindi, se vogliamo avere altre lingue, dobbiamo ricordarci di aggiungerle attraverso dpkg-reconfigure locales. krill permetterà la selezione solo delle lingue già presenti ed, per il momento, non è un dramma per lo scopo di questo installer. Anche se non è escluso che in futuro faremo di meglio.
+#### `krill: keyboard`
+Stiamo trattando di un programma per l'installazione a misura per le nostre customizzazioni, quindi, se vogliamo avere altre lingue, dobbiamo ricordarci di aggiungerle attraverso `dpkg-reconfigure locales`. `krill` permetterà la selezione solo delle lingue già presenti ed, per il momento, non è un dramma per lo scopo di questo installer. Anche se non è escluso che in futuro faremo di meglio.
 
 ![eggs-krill-keyboard](/images/book9.2/eggs-install-keyboard.png)
 
-#### krill: partition
+#### `krill: partition`
 
-In **partitions** il discorso si fa più ampio. krill vuole un dispositivo sul quale installare il nostro sistema. L'installazione con krill cancellerà il dispositivo in questione, non è possibile partizionare manualmente il disco.
+In `partitions` il discorso si fa più ampio. krill vuole un dispositivo sul quale installare il nostro sistema. L'installazione con `krill` cancellerà il dispositivo in questione, non è possibile partizionare manualmente il disco.
 
-La prima cosa che krill riporta nella schermata è che cancellerà completamente il disco di destinazione, meglio essere chiari. Subito dopo ci mostra se siamo su un sistema con boot BIOS o UEFI.
+La prima cosa che `krill` riporta nella schermata è che cancellerà completamente il disco di destinazione, meglio essere chiari. Subito dopo ci mostra se siamo su un sistema con boot BIOS o UEFI.
 
 In questa schermata pure sono presenti quattro campi, tutti selezionabili: 
 * installation device: /dev/sda
