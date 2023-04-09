@@ -105,9 +105,9 @@ Pertanto, attualmente i pacchetti npm non sono più consigliati.
 
 E' comunque possibile installarli, curando però separatamente l'installazione delle varie dipendenze.
 
-## Utilizzo di eggs da codice sorgente
+## Utilizzo di `eggs` da codice sorgente
 
-Utilizzare eggs a partire dai sorgenti può essere estremamente utile sia per il debug che per modificare eggs stesso. Può anche garantire una maggiore sicurezza - in caso di dubbi - vedere il codice che sta girando sulla vostra macchina e, col tempo, sarete capaci di modivicarlo.
+Utilizzare `eggs` a partire dai sorgenti può essere estremamente utile sia per il debug che per modificare eggs stesso. Può anche garantire una maggiore sicurezza - in caso di dubbi - vedere il codice che sta girando sulla vostra macchina e, col tempo, sarete capaci di modivicarlo.
 
 E' necessario installare a priori l pacchetti nodejs, npm ed pnpm. L'esempio seguente è per manjaro.
 
@@ -143,7 +143,7 @@ sudo ./eggs produce --verbose
 
 **Nota**: _Potete constatare che l'unica differenza d'uso rispetto ai pacchetti precompilati è che dovrete indicare il path per eggs `./eggs` e dovrete lanciarlo dalla directory `~/penguins-eggs`. Il funzionamento rimane tuttavia esattamente lo stesso, ma si ha il vantaggio di poter agire in maniera interattiva con il codice. Per lo sviluppo, personalmente utilizzo [code](https://code.visualstudio.com/), ma potete scegliere altri editor [atom](https://atom.io/), [sublime](https://www.sublimetext.com/), etc)_.
 
-# eggs: autocomplete, pagina man ed aiuto
+# `eggs`: `autocomplete`, pagina `man` ed aiuto
 
 Una volta installato il pacchetto disporremo, sul nostro sistema, di un nuovo comando: 
 
