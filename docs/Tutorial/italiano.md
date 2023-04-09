@@ -614,39 +614,39 @@ Sarà però krill a decidere come partizionare il device a seconda del tipo di b
 
 ![eggs krill partitions](/images/book9.2/eggs-install-partitions.png)
 
-#### krill: users
+#### `krill: users`
 
-In questo form **users** andrà indicato l'utente principale del sistema, la sua password, la conferma della stessa e l'eventuale utilizzo dell'autologin; password e conferma per l'utente di root ed, infine, il nome dell'host.
+In questo form `users` andrà indicato l'utente principale del sistema, la sua password, la conferma della stessa e l'eventuale utilizzo dell'autologin; password e conferma per l'utente di root ed, infine, il nome dell'host.
 
 ![eggs krill users](/images/book9.2/eggs-install-users.png)
 
-#### krill: network
+#### `krill: network`
 
-In **network** è possibile scegliere l'interfaccia di rete tra quelle disponibili e selezionare per essa la modalità tra dhcp e static. Nel caso di static si potranno impostare indirizzo ip, la netmask, il gateway, domain e dns.
+In `network` è possibile scegliere l'interfaccia di rete tra quelle disponibili e selezionare per essa la modalità tra dhcp e static. Nel caso di static si potranno impostare indirizzo `ip`, la `netmask`, il `gateway`, `domain` e `dns`.
 
 ![network](/images/book9.2/eggs-install-network.png)
 
-#### krill: summary
+#### `krill: summary`
 
-**summary** è un semplice riepilogo delle varie scelte effettuate, permette un rapido controllo visivo ed attende per una conferma o una rinuncia.
+`summary` è un semplice riepilogo delle varie scelte effettuate, permette un rapido controllo visivo ed attende per una conferma o una rinuncia.
 
 ![eggs krill summary](/images/book9.2/eggs-install-summary.png)
 
-#### krill: installation
+#### `krill: installation`
 
-Dopo aver accettato la finestra summary, parte l'installazione del sistema. In **installation** avremo la possibiità di seguire passo - passo le varie fasi dell'installazione sino al passaggio alla fase finale.
+Dopo aver accettato la finestra `summary`, parte l'installazione del sistema. In `installation` avremo la possibiità di seguire passo - passo le varie fasi dell'installazione sino al passaggio alla fase finale.
 
 ![installation](/images/book9.2/eggs-install-unpackfs.png)
 
-#### krill finish
-**finish** è una semplice schermata che ci notifica la fine della installazione e la necessità di un riavvio.
+#### `krill finish`
+`finish` è una semplice schermata che ci notifica la fine della installazione e la necessità di un riavvio.
 
 ![eggs krill finished](/images/book9/eggs-krill-finished.png)
 
 
-## sudo eggs kill
+## `sudo eggs kill`
 
-Cancella le immagini realizzate e la directory di lavoro di eggs. 
+Cancella le immagini realizzate e la directory di lavoro di `eggs`. 
 
 ```
  E G G S: the reproductive system of penguins
@@ -668,13 +668,11 @@ compressed data from the system
 **Nota**: _in caso per interruzione del comando produce, sarà impossibile cancellare le directory montate. Il metodo più veloce è semplicemente eseguire un riavvio del sistema e lanciare nuovamente il comando `sudo eggs kill`_.
 
 
-## eggs mom
-eggs mom è una interfaccia realizzata con [whiptail](https://en.wikibooks.org/wiki/Bash_Shell_Scripting/Whiptail), disponibile praticamente su ogni versione Linux che permette di avere una interfaccia simil grafica nella quale ho cercato di raggruppare tutti i comandi eggs.
-
-Ho aggiunto anche della documentazione, sia locale, che remota in versione html e man, tra cui questo penguin's eggs book. 
+## `eggs mom`
+`eggs mom` è una interfaccia realizzata con [easybashgui](https://github.com/BashGui/easybashgui), che utilizza [whiptail](https://linux.die.net/man/1/whiptail= disponibile praticamente su ogni versione Linux anche CLI, oppure [xdialog](http://xdialog.free.fr/), [zenity](https://help.gnome.org/users/zenity/stable/) o [kdialog](https://github.com/KDE/kdialog) che permette di avere una interfaccia grafica o simil grafica, nella quale ho raggruppato tutti i comandi eggs e la documantazione.
 
 
-### eggs mom: Main
+### `eggs mom`
 
 Una immagine vale più di mille parole, questa è la schermata iniziale di ```eggs mom```
 
@@ -682,7 +680,7 @@ Una immagine vale più di mille parole, questa è la schermata iniziale di ```eg
 
 Dal menu principale si accede a tutti i comandi eggs ed ai sottomenu Documentation, Export e Tools.
 
-### mom: Documentation
+### `mom`: Documentation
 In questo menù potete consultare sia il sito che i manuali, sia in formato html che man. 
 
 ![eggs-mom](/images/book9.2/eggs-mom-documentation.png)
@@ -697,7 +695,7 @@ Attenzione: per gli utenti arch e manjaro: non sono riuscito a trovare un equiva
 
 Naturalmente se state operando su una stazione solo cli, avrete comunque disponibili le vostre informazioni in formato man.
 
-### mom export
+### `mom export`
 Da questo menu potete raggiungere tutti i comandi di esportazione:
 
 * eggs export:deb
@@ -712,7 +710,7 @@ In tools troverete, ovviamente, tutti i gli strumenti di eggs, raccolti sotto eg
 
 Potete tornare indietro da ogni menù selezionando **quit** (basta premere il tasto "q" seguito da invio).
 
-mom rappresenta una versatile guida per l'apprendimento di eggs ed un sicuro riferimento. 
+`mom` rappresenta una versatile guida per l'apprendimento di `eggs` ed un sicuro riferimento. 
 
 Naturalmente con il tempo ogni "pulcino" viene svezzato ed impara a camminare da solo e sarà più comodo immettere direttamente i comandi da terminale.
 
@@ -725,15 +723,15 @@ vi verranno mostrati solo i comandi che iniziano per i: info ed install;
 vi verranno mostrati tutti i possibili flag del comando.
 E così via discorrendo.
 
-## sudo eggs produce
+## `sudo eggs produce`
 
 E' questo il comando che più utilizzerete. 
 
-Sostanzialmente **produce** è l'unico comando usato quotidianamente, insieme a **kill** che ci consente di sbarazzarci delle immagini iso precedentemente create.
+Sostanzialmente `produce` è l'unico comando usato quotidianamente, insieme a `kill` che ci consente di sbarazzarci delle immagini iso precedentemente create.
 
 Usato senza parametri produce la iso con i parametri di default che sono quelli specificati con `sudo eggs dad` o impostati editanto il file /etc/penguins-eggs/eggs.yaml. 
 
-Al suo avvio **produce** esegue velocemente un controllo sulla corretta inizializzazione di eggs, quindi, produce la iso.
+Al suo avvio `produce` esegue velocemente un controllo sulla corretta inizializzazione di `eggs`, quindi, produce la ISO.
 
 Presenta diversi flag utilizzabili:
 
@@ -791,61 +789,61 @@ Tra i flag disponibili c'è --theme che imposta il tema per grub ed isolinux sul
 
 Potete creare un tema personalizzato semplicemente copiandone uno esistente e cambiandone nome e contenuto. Scaricate il wardrobe con: `eggs wardrobe get`, i temi si trovano in ```.wardrobe/themes/vendor```, dove vendor è il nome da passare al flag --theme. 
 
-I temi consentono una customizzazione di calamares e la possibilità di avere un proprio splashscreen durante l'avvio del liveCD.
+I temi consentono una customizzazione di calamares e la possibilità di avere un proprio splashscreen durante l'avvio del sistema live.
 
-Un altro flag, importante per gli utenti che vogliono realizzare una distro è --release che configura calamares e krill a disinstallare calamares e penguins-eggs a fine installazione.
+Un altro flag, importante per gli utenti che vogliono realizzare una distro è `--release` che configura calamares e krill a disinstallare calamares e penguins-eggs a fine installazione.
 
 Abbiamo poi due flag per la copia completa del sistema: ```--clone``` e ```--cryptedclone```, che sostanzialmente producono una iso nella quale sono presenti i dati utente. La differenza tra questi due flag è che mentre clone produce una iso nella quale i dati utente sono in chiaro ed utilizzabili anche dal sistema live, il flag ```--cryptedclone``` invece crea all'interno della iso un volume LUKS nel quale i dati saranno cryptati e, questi non disponibili immediatamente da live. Per reinstallare un clone criptato si utilizza krill.
 
 
-Uso spesso anche il flag **--addons** per inserire sul desktop il link per **adapt** o altri links nelle iso realizzate.
+Uso spesso anche il flag `--addons` per inserire sul desktop il link per `adapt` o altri links nelle iso realizzate.
 
-### eggs produce --cryptedclone / --clone
+### `eggs produce --cryptedclone / --clone`
 
 Per molto tempo ho esitato ad aggiungere una modalità per la copia completa del sistema, non perchè fosse complicato, ma perchè temevo il caso che un utente possa inserire nella iso dei propri dati sensibili. Tuttavia, in seguito ad una discussione con un utente, al quale avrebbe fatto comodo per poter trasferire in toto i propri server, mi sono deciso ad aggiungerla prima in modalità criptata con un volume LUKS interno alla iso stessa e successivamente anche in chiaro.
 
-Difatti eggs durante l'utilizzo normale esclude sempre dal filesystem della live l'intera cartella /home, inoltre, rimuove tutti gli account presenti sull'host, aggiungendo solo l'utente live.
+Difatti `eggs` durante l'utilizzo normale esclude sempre dal filesystem della live l'intera cartella /home, inoltre, rimuove tutti gli account presenti sull'host, aggiungendo solo l'utente live.
 
-Con l'opzione --cryptedclone però, pur continuando a funzonare esattamente nello stesso modo, eggs inserisce un nuovo passo all'interno della produzione della iso e prima della sua chiusura. In questa fase viene creato un volume cryptato denominato **luks-users-data** sul quale si andranno a copiare i dati di tutti gli utenti presenti ed i loro relativi account.
+Con l'opzione `--cryptedclone` però, pur continuando a funzonare esattamente nello stesso modo, eggs inserisce un nuovo passo all'interno della produzione della iso e prima della sua chiusura. In questa fase viene creato un volume cryptato denominato `luks-users-data` sul quale si andranno a copiare i dati di tutti gli utenti presenti ed i loro relativi account.
 
 Questo consente quindi di distribuire la propria iso con una ragionevole sicurezza.
 
 Sarà possibile accedere ai dati degli utenti solo se si è a conoscenza della chiave di accesso, che però **non viene mai salvata** ed è quindi non scopribile se non con attacchi brute force.
 
-La live che, per chiarezza, prende il suffisso **crypted** si avvia normalmente con il solo utente live e non carica in modalità live il volume criptato.
+La live che, per chiarezza, prende il suffisso ``crypted`` si avvia normalmente con il solo utente live e non carica in modalità live il volume criptato.
 
-Però, nel caso di nuova installazione, krill controlla la presenza del volume **luks-users-data** all'interno della immagine iso e, se viene rilevato, richiede la passphrase di accesso per montare tale volume e copiare i dati e gli account degli utenti nel sistema appena installato.
+Però, nel caso di nuova installazione, `krill` controlla la presenza del volume `luks-users-data*` all'interno della immagine iso e, se viene rilevato, richiede la passphrase di accesso per montare tale volume e copiare i dati e gli account degli utenti nel sistema appena installato.
 
 Riavviando il sistema, quindi, ci ritroveremo i nostri utenti ed i nostri dati presenti sulla nuova installazione.
 
-Tutto questo, è possibile attualmente solo con l'installer krill. Utilizzando calamares invece, non venendo effettuato il controllo sulla eventuale esistenza dei dati degli utenti e verrà installato solo il sistema, con account ed /home vergine, proprio come succede per una iso normale.
+Tutto questo, è possibile attualmente solo con l'installer `krill`. Utilizzando calamares invece, non venendo effettuato il controllo sulla eventuale esistenza dei dati degli utenti e verrà installato solo il sistema, con account ed /home vergine, proprio come succede per una iso normale.
 
-### eggs produce --clone
-La differenza tra l'opzione --cryptedclone e l'opzione --clone è che in quest'ultimo caso i dati utente non saranno salvati in un volume cryptato all'interno della immagine iso, ma verranno direttamente copiati all'interno del filesystem.squashfs. Questo comporta vantaggi e svantaggi: il principale vantaggio è che si hanno i propri dati e le proprie configurazioni direttamente disponibili su live, lo svantaggio è che se pubblicate la vostra immagine, tutti i dati utente saranno direttamente a disposizione di chi scarica la iso.
+### `eggs produce --clone`
+La differenza tra l'opzione `--cryptedclone` e l'opzione `--clone` è che in quest'ultimo caso i dati utente non saranno salvati in un volume cryptato all'interno della immagine ISO, ma verranno direttamente copiati all'interno del `filesystem.squashfs`. Questo comporta vantaggi e svantaggi: il principale vantaggio è che si hanno i propri dati e le proprie configurazioni direttamente disponibili su live, lo svantaggio è che se pubblicate la vostra immagine, tutti i dati utente saranno direttamente a disposizione di chi scarica la ISO.
 
-Anche se a prima vista, per me specialmente, questa soluzione che è poi la più semplice non appariva adatta, tuttavia grazie agli utenti mi sono reso conto che è invece estremamente versatile, in quanto molti customizzatori utilizzano spesso la propria home per le modifiche ed in questo modo non è necessario salvarle in /etc/skel.
+Anche se a prima vista, per me specialmente, questa soluzione - che è poi la più semplice - non appariva adatta, tuttavia grazie agli utenti mi sono reso conto che è invece estremamente versatile, in quanto molti customizzatori utilizzano spesso la propria home per le modifiche ed in questo modo non è necessario salvarle in `/etc/skel`.
 
-## eggs tools
+## `eggs tools`
 Sono raccolti sotto tools degli strumenti accessori di eggs, non sono fondamentali, ma possono far comodo.
 
 Abbiamo ```tools clean``` che esegue la pulizia del sistema cancellando la cache del gestore dei pacchetti (apt o pacman) ed esegue la rotazione dei log, ```tools skel``` che permette di configurare l'aspetto del desktop live e del desktop di default dei nuovi utenti, ```tools yolk``` - solo per Debian/Devuan/Ubuntu - che aggiorna la repository inclusa in /usr/local/yolk che viene utilizzata da eggs per caricare i pacchetti indispensabili all'installazione in assenza di connessione internet. 
 
 ![eggs tools](/images/book9.2/eggs-mom-tools.png)
 
-## eggs status  
+## `eggs status`
 
-Mostra a video la configurazione di eggs e del sistema. 
+Mostra a video la configurazione di `eggs` e del sistema. 
 
 ![eggs-info](/images/book9.2/eggs-status.png)
 
 Da notare sulla destra la presenza di bottoni rossi, che possono indicare problemi con le dipendenze, configurazione, etc.
 
-### sudo eggs tools clean
+### `sudo eggs tools clean`
 Rimuove la cache del gestore di pacchetti (apt o pacman), esegue il logrotate, etc.
 
 
-### sudo eggs tools ppa
-Aggiunge o rimuove la repository di eggs alla nostra configurazione apt.
+### `sudo eggs tools ppa`
+Aggiunge o rimuove la repository di `eggs` alla nostra configurazione apt.
 ```
 sudo eggs tool ppa --add
 ```
@@ -858,8 +856,8 @@ Rimuove la stessa.
 
 
 
-### sudo eggs tools skel
-Con questo comando si ricrea la directory /etc/skel della nostra live. 
+### `sudo eggs tools skel`
+Con questo comando si ricrea la directory `/etc/skel` della nostra live. 
 
 E' utile per dare una veste coerente e personalizzata all'utente della live ed ai futuri utenti che creeremo dopo che il nostro sistema sarà installato. 
 
@@ -886,10 +884,10 @@ EXAMPLES
 ```
 
 
-### sudo eggs tools yolk
-Il comando yolk - valido solo per Debian/Devuan/Ubuntu - crea una piccola repository locale in /usr/local/yolk con i pacchetti strettamente necessari ad assicurare l'installazione del sistema anche in assenza di connessione internet. 
+### `sudo eggs tools yolk`
+Il comando `yolk` - valido solo per Debian/Devuan/Ubuntu - crea una piccola repository locale in `/usr/local/yolk` con i pacchetti strettamente necessari ad assicurare l'installazione del sistema anche in assenza di connessione internet. 
 
-In assenza della repository locale che, ad esempio, viene cancellata da un aggiornamento di eggs, yolk viene automaticamente richiamato da **produce**. Inoltre, sempre in **produce** può con il flag **--yolk** se ne può forzare l'aggiornamento. La sua presenza di questo comando è quindi giustificata solo dalla comodità del suo utilizzo in sede di sviluppo.
+In assenza della repository locale che, ad esempio, viene cancellata da un aggiornamento di `eggs`, `yolk` viene automaticamente richiamato da `produce`. Inoltre, sempre in `produce`, con il flag `--yolk` se ne può forzare l'aggiornamento. La sua presenza di questo comando è quindi giustificata solo dalla comodità del suo utilizzo in sede di sviluppo.
 
 ```
 configure eggs to install without internet
@@ -908,9 +906,9 @@ EXAMPLES
   $ eggs yolk -v
 ```
 
-## sudo eggs update
+## `sudo eggs update`
 
-Esegue l'aggiornamento di eggs, è un comando che è rimasto poiche spesso, durante lo sviluppo devo aggiornare eggs dalla rete locale, per gli utenti finali è senz'altro opportuno utilizzare il gestore di pacchetti della propria distribuzione.
+Esegue l'aggiornamento di `eggs`, è un comando che è rimasto poichè spesso, durante lo sviluppo devo aggiornare eggs dalla rete locale, per gli utenti finali è senz'altro opportuno utilizzare il gestore di pacchetti della propria distribuzione.
 
 # Creazione di una nostra remix
 La creazione di una nostra remix è un processo che richiede pazienza e passione ma può darci grandi soddisfazioni ed in molti casi, farci risparmiare tempo e fatica.
