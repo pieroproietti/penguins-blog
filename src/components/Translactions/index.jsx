@@ -9,7 +9,7 @@ export default function Translactions({path}) {
   let frLink = l1 + path + l2 + 'fr' + l3 + 'fr'
   let itLink = l1 + path + l2 + 'it' + l3 + 'it'
   let ptLink = l1 + path + l2 + 'pt' + l3 + 'pt'
-  let spLink = l1 + path + l2 + 'sp' + l3 + 'sp'
+  let spLink = l1 + path + l2 + 'es' + l3 + 'es'
 
   return (
     <span>
