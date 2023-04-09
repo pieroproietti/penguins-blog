@@ -919,7 +919,7 @@ Installiamola normalmente, aggiorniamola e facciamo qualche forma di customizzaz
 
 ## Inizializzazione e prerequisiti
 
-Installiamo quindi eggs, con uno dei metodi descritti in precedenza a seconda della nostra versione di Linux.
+Installiamo quindi `eggs`, con uno dei metodi descritti in precedenza a seconda della nostra versione di Linux.
 
 A questo punto, siamo ad un solo passo dalla nostra prima immagine ISO.
 
@@ -931,7 +931,7 @@ L'aiuto di papà ci farò risparmiare tempo e fatica, impostando sui default la 
 
 Alla fine del processo, basterà dare il comando:
 
-```sudo produce --fast```
+```sudo produce```
 
 per ottenere la nostra prima rimasterizzazione.
 
@@ -939,26 +939,18 @@ Se vogliamo che la nostra iso sia installabile con l'installer grafico calamares
 
 ```sudo eggs calamares --install```
 
-Per manjaro, occorre installare calamares con pacman o pamac:
-
-```
-sudo pamac install calamares
-```
-
-mentre per Arch Linux dovremo costruire il pacchetto calamares come specificato in precedenza.
-
-Sia per manjaro che per Arch, per avere anche la possibilà che il nostro utente live possa utilizzare calamare senza specificare la password di accesso, è bene dare il comando:
+**Nota**: In Arch possiamo utilizzare ```yay penguins-eggs```, ma dovremo successivamente anche lanciare 
 ```
 sudo eggs calamares --install
 ```
-che, tra gli altri compiti fornisce pure la configurazione delle policy per calamares.
+per avere anche la possibilà che il nostro utente live possa utilizzare calamare senza specificare la password di accesso.
 
 
 ## Produzione della ISO
 
-Una volta installato eggs, siamo pronti al grande salto.
+Una volta installato `eggs`, siamo pronti al grande salto.
 
-Consiglio di utilizzare il comando `sudo eggs dad -d` al primo approccio che ci guida alla configurazione ed alla creazione della iso.
+Consiglio di utilizzare il comando `sudo eggs dad -d` che configura eggs con i parametri standard.
 
 Successivamente, si potrà utilizzare il più immediato `sudo eggs produce` con le varie opzioni.
 
@@ -972,7 +964,7 @@ Il processo ha una certa pesantezza, non ve la prendete ne' con la copia del fil
 
 La pesantezza è data dal fatto che dobbiamo comprimere l'intero filesystem e quindi, più è piccolo il nostro sistema, più veloce è la compressione, dipende pure molto dall'algoritmo usato.
 
-Durante le prove quindi o quando lo riteniate opportuno, vi consiglio di usare **produce** con l'opzione **-f**  o **--fast**. Facendo così si utilizzerà l'algoritmo di compressione `zsd` invece del più "pesante" `xz` e si ridurrà notevolmente il tempo necessario alla compressione. Per la versione finale, una volta controllato che sia tutto a posto potremo comunque utilizzare la compressione di default per ottenere una iso più snella, oppure l'opzione -m  --max che comprime ancora un po' di più, al prezzo di una ulteriore lentezza.
+Durante le prove quindi o quando lo riteniate opportuno, vi consiglio di usare `produce` senza alcuna opzione di compressione. Facendo così si utilizzerà l'algoritmo di compressione `zsd` invece del più "pesante" `xz` e si ridurrà notevolmente il tempo necessario alla compressione. Per la versione finale, una volta controllato che sia tutto a posto potremo comunque utilizzare la compressione `--standard`  per ottenere una ISO più snella, oppure l'opzione `--max` che comprime ancora un po' di più, al prezzo di una ulteriore lentezza.
 
 Inizialmente era riportato a video ma anche nel codice, il suggerimento è prendersi un caffè e cercare di riservare abbastanza potenza di elaborazione alla macchina. Nel mio caso - utilizzo normalmente delle macchine virtuali con 4 core e 4 GB di memoria - per un filesystem di 7/8 GB occorrono circa _dieci minuti_ con la compressione xz, mentre utilizzando la compressione zsd si riduce moltissimo l'attesa solo un _minuto e mezzo_.  
 
@@ -987,7 +979,7 @@ Una sola raccomandazione. Normalmente si utilizza più volte questo comando sull
 _Tenendo pure presente che non esiste più il limite delle dimensioni delle immagini iso a 4 GB, la soluzione di utilizzare sempre lz4 potrebbe rivelarsi doppiamente vantaggiosa, soprattutto in caso  di utilizzo con le macchine virtuali che  - quasi sempre - leggono direttamente  il file immagine su disco fisso invece di un reale DVD.  Inoltre, tutti i principali programmi per la creazione di chiavette avviabili  leggono i file iso._ 
 
 ---
-# Immagini ISO prodotte con eggs
+# Immagini ISO prodotte con `eggs`
 Non è mio scopo quello di realizzare una nuova distribuzione Linux, preferisco piuttosto costruire e mantenere il pacchetto e supportare chi - con passione - si occupa di tale attività.
 
 Però anche qua vale il detto: nasce prima l'uovo o la gallina? 
@@ -1036,9 +1028,9 @@ Tutte le remix create dal sottoscritto sono impostate con user live denominato *
 * live/evolution
 * root/evolution
 
-### Scaricare eggs e le iso
+### Scaricare `eggs` e le iso
 
-Tutte le versioni di eggs e le iso realizzate dall'autore sono scaricabili da **sourgeforge.net** cercando il progetto [penguins-eggs](https://sourceforge.net/projects/penguins-eggs/files/).
+Tutte le versioni di `eggs` e le ISO realizzate dall'autore sono scaricabili da `sourgeforge.net` cercando il progetto [penguins-eggs](https://sourceforge.net/projects/penguins-eggs/files/).
 
 ## Immagini iso realizzate da terzi
 
@@ -1052,7 +1044,7 @@ Esiste anche una versione Ubuntu con [Waydroid](https://waydro.id/) pre-installa
 
 # Supporto e segnalazioni
 
-eggs è un progetto che, al momento, consente di rimasterizzare diverse versioni di linux. 
+`eggs` è un progetto che, al momento, consente di rimasterizzare diverse versioni di Linux:
 
 * Arch
 * Debian bullseyes/buster/stretch/jessie/bookworm
