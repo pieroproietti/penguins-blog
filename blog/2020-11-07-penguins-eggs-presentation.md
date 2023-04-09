@@ -4,6 +4,9 @@ slug: penguins-eggs-presentation
 title: Penguins' eggs presentation
 lang: en
 ---
+import Translactions from '@site/src/components/Translactions';
+
+<Translactions path="blog/penguins-eggs-presentation"/>
 
 
 ![presentation](/images/presentation.png)

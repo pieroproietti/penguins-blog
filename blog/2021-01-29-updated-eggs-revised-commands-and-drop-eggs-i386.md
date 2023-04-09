@@ -4,6 +4,9 @@ slug: updated-eggs-revised-commands-and-drop-eggs-i386
 title: Updated eggs, revised commands and drop eggs i386
 lang: en
 ---
+import Translactions from '@site/src/components/Translactions';
+
+<Translactions path="blog/updated-eggs-revised-commands-and-drop-eggs-i386"/>
 
 ![here we are](/images/here-we-are.jpg)
 

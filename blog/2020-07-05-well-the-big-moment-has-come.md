@@ -4,6 +4,9 @@ slug: well-the-big-moment-has-come
 title: Well, the big moment has come!
 lang: en
 ---
+import Translactions from '@site/src/components/Translactions';
+
+<Translactions path="blog/well-the-big-moment-has-come"/>
 
 # Eggs compatible with Debian 10, Ubuntu 20.20, Ubuntu 18.04, Linux Mint 20 and Linux Mint 19.3
 

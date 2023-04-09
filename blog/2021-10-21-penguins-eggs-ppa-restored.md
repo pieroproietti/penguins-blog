@@ -4,6 +4,9 @@ slug: penguins-eggs-ppa-restored
 title: penguins-eggs-ppa
 lang: en
 ---
+import Translactions from '@site/src/components/Translactions';
+
+<Translactions path="blog/penguins-eggs-ppa-restored"/>
 
 After a bit of trial and error I finally managed to recreate the ppa [penguins-eggs-ppa](https://pieroproietti.github.io/penguins-eggs-ppa/) repository.
 

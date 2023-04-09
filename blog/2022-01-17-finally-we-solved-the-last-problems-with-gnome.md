@@ -4,6 +4,9 @@ slug: finally-we-solved-the-last-problems-with-gnome
 title: Finally we solved the last problems with gnome
 lang: en
 ---
+import Translactions from '@site/src/components/Translactions';
+
+<Translactions path="blog/finally-we-solved-the-last-problems-with-gnome"/>
 
 Actually, it was a long story. 
 

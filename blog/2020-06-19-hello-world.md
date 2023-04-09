@@ -4,6 +4,9 @@ slug: hello-world
 title: Hello World
 lang: it
 ---
+import Translactions from '@site/src/components/Translactions';
+
+<Translactions path="blog/hello-world"/>
 
 It’s my first day on line!
 

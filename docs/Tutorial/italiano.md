@@ -1,11 +1,12 @@
 ---
 title: Guida utente eggs
 authors: pieroproietti
+slug: italiano
 lang: it
 ---
+import Translactions from '@site/src/components/Translactions';
 
-[Google Translate](https://penguins--eggs-net.translate.goog/docs/Tutorial/italiano?_x_tr_sl=auto&_x_tr_tl=en&_x_tr_hl=en&_x_tr_pto=wapp&_x_tr_hist=true) (Machine translation from Italian)
-
+<Translactions path="Tutorial/italiano"/>
 
 Aggiornamento eggs v9.4.x
 

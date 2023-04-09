@@ -5,6 +5,10 @@ title: Reflections
 lang: en
 ---
 
+import Translactions from '@site/src/components/Translactions';
+
+<Translactions path="blog/reflections"/>
+
 It's amazing how after so much effort to create a unique remastering tool, it turns out well.
 
 I've just released the eggs 9.0.10 version, the first one running on Debian both in standard and UEFI BIOS mode.

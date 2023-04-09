@@ -4,6 +4,9 @@ slug: clothing-the-naked
 title: Clothing the naked
 lang: en
 ---
+import Translactions from '@site/src/components/Translactions';
+
+<Translactions path="blog/clothing-the-naked"/>
 
 
 In this video I will give a demonstration of creation a remix starting from almost nothing - my remixes called naked - who consists in the clean debian netinstall plus addiction of eggs. 

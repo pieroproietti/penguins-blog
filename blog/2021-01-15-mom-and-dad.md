@@ -4,6 +4,9 @@ slug: mom-and-dad
 title: mom and dad
 lang: en
 ---
+import Translactions from '@site/src/components/Translactions';
+
+<Translactions path="blog/mom-and-dad"/>
 
 ![mom](/images/mom.png)
 

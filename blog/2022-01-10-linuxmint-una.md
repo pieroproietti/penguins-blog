@@ -4,6 +4,9 @@ slug: linuxmint-una
 title: Linuxmint una
 lang: en
 ---
+import Translactions from '@site/src/components/Translactions';
+
+<Translactions path="blog/linuxmint-una"/>
 
 __You never forget your first love__
 

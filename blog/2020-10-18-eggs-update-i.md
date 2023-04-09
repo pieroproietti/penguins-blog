@@ -4,6 +4,9 @@ slug: eggs-update-i
 title: eggs update -i
 lang: en
 ---
+import Translactions from '@site/src/components/Translactions';
+
+<Translactions path="blog/eggs-update-i"/>
 
 A few days ago, I was thinking about a way to solve the problem of updating eggs in case it is installed as a deb package, the mode that seems to be the most used.
 

@@ -4,6 +4,9 @@ slug: ufficiozero-adopt-eggs
 title: UfficioZero adopt eggs
 lang: eng
 ---
+import Translactions from '@site/src/components/Translactions';
+
+<Translactions path="blog/ufficiozero-adopt-eggs"/>
 
 ## ![ZERO OFFICE](https://www.ufficiozero.org/template/logo2.png) 
 

@@ -4,6 +4,9 @@ slug: personal-package-archives
 title: Personal Package Archives PPA
 lang: en
 ---
+import Translactions from '@site/src/components/Translactions';
+
+<Translactions path="blog/personal-package-archives"/>
 
 Today on the advice of the excellent Yannis I've created a PPA repository for eggs. 
 

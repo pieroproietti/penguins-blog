@@ -4,6 +4,9 @@ slug: installare-un-forum
 title: Installare un forum
 lang: it
 ---
+import Translactions from '@site/src/components/Translactions';
+
+<Translactions path="blog/installare-un-forum"/>
 
 # nodebb
 

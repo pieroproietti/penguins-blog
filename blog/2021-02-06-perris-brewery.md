@@ -4,6 +4,9 @@ slug: perris-brewery
 title: Perri's Brewery
 lang: it
 ---
+import Translactions from '@site/src/components/Translactions';
+
+<Translactions path="blog/perris-brewery"/>
 
 
 Per lo sviluppo di eggs ho utilizzato dall'inizio il linguaggio javascript, cercando di limitare il più possibile la scrittura di codice bash. Nodejs, difatti, oltre ad essere versabile nell'ambito web, offre la possibilità di realizzare con uno sforzo relativo delle applicazioni a riga di comando. 

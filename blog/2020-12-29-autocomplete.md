@@ -4,6 +4,9 @@ slug: autocomplete
 title: autocomplete
 lang: en
 ---
+import Translactions from '@site/src/components/Translactions';
+
+<Translactions path="blog/autocomplete"/>
 
 ![autocomplete](/images/autocomplete.png)
 

@@ -4,6 +4,9 @@ slug: is-there-anybody-out-there
 title: Is There Anybody Out There?
 lang: en
 ---
+import Translactions from '@site/src/components/Translactions';
+
+<Translactions path="blog/is-there-anybody-out-there"/>
 
 These are currently the 10 most clicked distros on [distrowatch](https://distrowatch.com/), to date we can already remaster 
 most of them!

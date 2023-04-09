@@ -4,6 +4,9 @@ slug: that-will-be-the-future
 title: That will be the future
 lang: en
 ---
+import Translactions from '@site/src/components/Translactions';
+
+<Translactions path="blog/that-will-be-the-future"/>
 
 # Index
 * [English](#English)

@@ -4,6 +4,9 @@ slug: return-to-the-origins
 title: Return to the origins eggs 8.17.x
 lang: en
 ---
+import Translactions from '@site/src/components/Translactions';
+
+<Translactions path="blog/return-to-the-origins"/>
 
 Some time ago, after an incautious update, I found myself in the unpleasant situation of removing node8 from the compatibility list with eggs. Node8 is, however, the only version of node compatible with i386 architecture and therefore, for a remastering program, important.
 

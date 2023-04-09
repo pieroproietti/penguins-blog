@@ -4,6 +4,9 @@ slug: good-luks-eggs
 title: Good LUKS eggs!
 lang: en
 ---
+import Translactions from '@site/src/components/Translactions';
+
+<Translactions path="blog/good-luks-eggs"/>
 
 
 Per molto tempo, sino a qualche settimana fa, non ho aggiunto una opzione di backup ad eggs per un preciso motivo: non volevo che inavvertitamente un utente potesse mettere a rischio i suoi dati.

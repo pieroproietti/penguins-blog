@@ -4,6 +4,10 @@ slug: penguins-eggs-utilitario-para-criar-sua-propria-distribuicao-linux
 title: 'Penguin’s eggs: utilitário para criar sua própria distribuição Linux!'
 lang: en
 ---
+import Translactions from '@site/src/components/Translactions';
+
+<Translactions path="blog/penguins-eggs-utilitario-para-criar-sua-propria-distribuicao-linux"/>
+
 Tutorial en portuguese on the [SempreUpdate](https://sempreupdate.com.br/) a brasilian magazine specialized in technology. The main focus is Linux, Open Source, Android and other subjects.
 
 

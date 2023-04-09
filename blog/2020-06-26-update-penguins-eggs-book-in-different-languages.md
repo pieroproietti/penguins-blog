@@ -1,9 +1,13 @@
 ---
 authors: pieroproietti
-slug: update-penguins-eggs-book-in-different-languages.md
+slug: update-penguins-eggs-book-in-different-languages
 title: Penguins' eggs guide in different 
 lang: en
 ---
+import Translactions from '@site/src/components/Translactions';
+
+<Translactions path="blog/update-penguins-eggs-book-in-different-languages"/>
+
 ![install-deb](/images/flags.webp)
 
 # Index

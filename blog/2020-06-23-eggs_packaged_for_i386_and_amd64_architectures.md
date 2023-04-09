@@ -4,6 +4,10 @@ slug: eggs_packaged_for_i386_and_amd64_architectures
 title: eggs packaged for for i386 and amd64 architectures
 lang: en
 ---
+import Translactions from '@site/src/components/Translactions';
+
+<Translactions path="blog/eggs_packaged_for_i386_and_amd64_architectures"/>
+
 
 Sometimes, to move forward, you need to step back first.
 

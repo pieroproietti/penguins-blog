@@ -4,6 +4,9 @@ slug: pacchetti
 title: Pacchetti
 lang: it
 ---
+import Translactions from '@site/src/components/Translactions';
+
+<Translactions path="blog/pacchetti"/>
 
 Eggs viene rilasciato sia come pacchetto npm - versione originale - sia come pacchetto Debian di più semplice utilizzazione.
 
