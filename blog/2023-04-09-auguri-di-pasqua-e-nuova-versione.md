@@ -1,13 +1,13 @@
 ---
 authors: pieroproietti
-slug: le-uova-di-pasqua-nuova-versione
-title: Customized ISOs
+slug: auguri-di-pasqua-e-nuova-versione
+title: Auguri di Pasqua e nuova versione
 lang: it
 ---
 
 import Translactions from '@site/src/components/Translactions';
 
-<Translactions path="blog/le-uova-di-pasqua-nuova-versione"/>
+<Translactions path="blog/auguri-di-pasqua-e-nuova-versione"/>
 
 Auguro a tutti una felice Pasqua.
 
