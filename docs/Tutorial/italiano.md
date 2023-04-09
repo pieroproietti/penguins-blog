@@ -6,7 +6,7 @@ lang: it
 ---
 import Translactions from '@site/src/components/Translactions';
 
-<Translactions path="Tutorial/italiano"/>
+<Translactions path="docs/Tutorial/italiano"/>
 
 Aggiornamento eggs v9.4.x
 

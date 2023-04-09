@@ -6,7 +6,7 @@ lang: en
 ---
 import Translactions from '@site/src/components/Translactions';
 
-<Translactions path="Tutorial/arch-naked"/>
+<Translactions path="docs/Tutorial/arch-naked"/>
 
 # Arch Linux
 

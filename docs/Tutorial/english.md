@@ -6,7 +6,7 @@ lang: en
 ---
 import Translactions from '@site/src/components/Translactions';
 
-<Translactions path="docs/english"/>
+<Translactions path="docs/Tutorial/english"/>
 
 I cannot materially maintain two versions of the guide, so with regret, I refer you to the machine translation of the guide in Italian.
 
