@@ -1025,10 +1025,10 @@ Mi aspetto un feedback dal wardrobe ed un certo interesse, a mio avviso potrebbe
 
 Tutte le remix create dal sottoscritto sono impostate con user live denominato **live** e password **evolution** valido sia per live che per root. 
 
-* live/evolution
-* root/evolution
+* `live/evolution`
+* `root/evolution`
 
-### Scaricare `eggs` e le iso
+### Scaricare `eggs` e le ISO
 
 Tutte le versioni di `eggs` e le ISO realizzate dall'autore sono scaricabili da `sourgeforge.net` cercando il progetto [penguins-eggs](https://sourceforge.net/projects/penguins-eggs/files/).
 
