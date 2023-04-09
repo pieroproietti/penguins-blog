@@ -1,12 +1,12 @@
 ---
 authors: pieroproietti
-slug: docusaurus
-title: Docusaurus
+slug: docusauros
+title: Docusauros
 lang: it
 ---
+import Translactions from '@site/src/components/Translactions';
 
-[Google Translate](https://penguins--eggs-net.translate.goog/blog/docusaurus?_x_tr_sl=auto&_x_tr_tl=en&_x_tr_hl=en&_x_tr_pto=wapp&_x_tr_hist=true) (Machine translation from Italian)
-
+<Translactions path="blog/docusauros"/>
 
 E' da qualche tempo che cercavo qualcosa di più strutturato per il blog, qualcosa di semplice ed allo stesso modo potente, in grado di crescere.
 

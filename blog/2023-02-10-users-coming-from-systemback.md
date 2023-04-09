@@ -4,6 +4,10 @@ slug: users-coming-from-systemback
 title: Users coming from systemback
 lang: en
 ---
+import Translactions from '@site/src/components/Translactions';
+
+<Translactions path="blog/users-coming-from-systemback"/>
+
 ![systemback](/images/about-systemback.png)
 
 Systemback and, even earlier. remastersys were two great tools and probably eggs would never have existed without them. The same if not more applies to Knoppix, a small/big revolution that started modern live installations.
