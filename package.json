@@ -1,6 +1,6 @@
 {
-  "name": "docusauros-eggs",
-  "version": "0.0.0",
+  "name": "penguins-blog",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
     "docusaurus": "docusaurus",

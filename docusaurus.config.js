@@ -19,7 +19,7 @@ const config = {
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'pieroproietti', // Usually your GitHub org/user name.
-  projectName: 'docusaurus-eggs', // Usually your repo name.
+  projectName: 'penguins-blog', // Usually your repo name.
 
   onBrokenLinks: 'warn', // it was throw
   onBrokenMarkdownLinks: 'warn',
@@ -40,13 +40,13 @@ const config = {
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          // editUrl: 'https://github.com/piero-proietti/docusaurus-eggs/tree/main/packages/create-docusaurus/templates/shared/',
+          // editUrl: 'https://github.com/piero-proietti/penguins-blog/tree/main/packages/create-docusaurus/templates/shared/',
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          // editUrl: 'https://github.com/pieroproietti/docusaurus-eggs/tree/main/packages/create-docusaurus/templates/shared/',
+          // editUrl: 'https://github.com/pieroproietti/penguins-blog/tree/main/packages/create-docusaurus/templates/shared/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
@@ -134,7 +134,7 @@ const config = {
               },
               {
                 label: 'GitHub',
-                href: 'https://github.com/pieroproietti/docusaurus-eggs',
+                href: 'https://github.com/pieroproietti/penguins-blog',
               },
             ],
           },
