@@ -4,6 +4,9 @@ slug: eggs-and-cuckoos
 title: eggs and cuckoos
 lang: it
 ---
+import Translactions from '@site/src/components/Translactions';
+
+<Translactions path="blog/eggs-and-cuckoos"/>
 
 ![eggs-and-cuckoos](/images/eggs-and-cuckoos/cuckoo.jpg)
 

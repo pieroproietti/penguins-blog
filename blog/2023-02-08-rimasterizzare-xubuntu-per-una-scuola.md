@@ -4,8 +4,9 @@ slug: rimasterizzare-xubuntu-per-una-scuola
 title: Rimasterizzare xubuntu per una scuola
 lang: it
 ---
+import Translactions from '@site/src/components/Translactions';
 
-[Google Translate](https://penguins--eggs-net.translate.goog/blog/rimasterizzare-xubuntu-per-una-scuola?_x_tr_sl=auto&_x_tr_tl=en&_x_tr_hl=en&_x_tr_pto=wapp&_x_tr_hist=true) (Machine translation from Italian)
+<Translactions path="blog/rimasterizzare-xubuntu-per-una-scuola"/>
 
 xubuntu 22.04 è una LTS e ben si presta, per la sua leggerezza, ad essere rimasterizzata ed utilizzata per installazioni multiple, come ad esempio una scuola.
 

@@ -4,6 +4,10 @@ slug: xfce4-wayland-on-debian
 title: XFCE4 wayland on Debian
 lang: en
 ---
+import Translactions from '@site/src/components/Translactions';
+
+<Translactions path="blog/xfce4-wayland-on-debian"/>
+
 Download the last "naked" version of bookworm from [sf](https://sourceforge.net/projects/penguins-eggs/files/ISOS/debian/bookworm/)
 
 Start it, you will autologin in CLI.

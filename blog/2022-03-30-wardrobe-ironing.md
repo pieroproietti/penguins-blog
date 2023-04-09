@@ -4,6 +4,10 @@ slug: wardrobe-ironing
 title: 'wardrobe: ironing'
 lang: it
 ---
+import Translactions from '@site/src/components/Translactions';
+
+<Translactions path="blog/wardrobe-ironing"/>
+
 
 Ho pensato di utilizzare un file yaml per definire i pacchetti e le modifiche da attuare per passare da una configurazione generica, senza interfaccia grafica ne' servizi, ad una customizzazione, anche spinta come andremo a vedere.
 
@@ -79,6 +83,7 @@ Naturalmente è un lavoro in corso, praticamente sto decidendo che nomi e quali 
 * drivers_graphics_tablet
 * drivers_printer
 * drivers_network
+
 
 prendendo spunto dal tuo script https://github.com/quirinux-so/instalar-quirinux
 

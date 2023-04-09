@@ -1,9 +1,13 @@
 ---
 title: Community choice badge
-slug: 2022-10-18-community-choice-badge
+slug: community-choice-badge
 authors: pieroproietti
 lang: en
 ---
+import Translactions from '@site/src/components/Translactions';
+
+<Translactions path="blog/community-choice-badge"/>
+
 
 ```
 <!-- Begin SF Tag -->

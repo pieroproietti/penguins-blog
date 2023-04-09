@@ -4,6 +4,9 @@ slug: access-to-a-vm-from-egg-of-debian-bullseyes-pve
 title: Access to a VM from egg-of-debian-bullseyes-pve
 lang: it
 ---
+import Translactions from '@site/src/components/Translactions';
+
+<Translactions path="blog/access-to-a-vm-from-egg-of-debian-bullseyes-pve"/>
 
 
 # egg-of-debian-bullseye-pve

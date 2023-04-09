@@ -4,6 +4,9 @@ slug: le-specie-presenti
 title: Le specie presenti
 lang: it
 ---
+import Translactions from '@site/src/components/Translactions';
+
+<Translactions path="blog/le-specie-presenti"/>
 
 Continuando la nostra metafora abbiamo ormai quattro specie presenti:
 

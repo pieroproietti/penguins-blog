@@ -1,9 +1,13 @@
 ---
 authors: pieroproietti
-slug: 2022-01-27-backup-users-revisited
+slug: backup-users-revisited
 title: Backup useres revisited
 lang: it
 ---
+
+import Translactions from '@site/src/components/Translactions';
+
+<Translactions path="blog/backup-users-revisited"/>
 
 
 E' da qualche tempo che sto pensando di rendere eggs utile per effettuare backup,

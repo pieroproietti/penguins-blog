@@ -4,6 +4,9 @@ slug: ubuntu-22-04-e-wardrobe
 title: Ubuntu 22.04 e wardrobe
 lang: it
 ---
+import Translactions from '@site/src/components/Translactions';
+
+<Translactions path="blog/ubuntu-22-04-e-wardrobe"/>
 
 Da qualche giorno è uscito Ubuntu 22.04 l'ultima release LTS di Ubuntu.
 

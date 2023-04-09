@@ -4,6 +4,10 @@ slug: presentazione-wardrobe
 title: Presentazione wardrobe
 lang: it
 ---
+import Translactions from '@site/src/components/Translactions';
+
+<Translactions path="blog/presentazione-wardrobe"/>
+
 
 Dicono che a volte un video è meglio di mille parole.
 
