@@ -1044,13 +1044,19 @@ Tutte le versioni di `eggs` e le ISO realizzate dall'autore sono scaricabili da 
 
 ## Immagini ISO realizzate da terzi
 
-Per chi è interessato a realizzare film animati, non posso non consigliare [Quirinux](https://www.quirinux.org/) di Charlie Martinez.
+[BlissOS](https://blissos.org/) è stata la prima distribuzione nella quale il sistema live è stato creato utilizzando penguins-eggs.
 
-Per un uso d'ufficio posso raccomandare [UfficioZero](https://www.ufficiozero.org/), una serie di più distribuzioni derivate da Debian, Devuan, Ubuntu e Linuxmint tutte finalizzate ad un orientamento professionale. 
+Utilizza [Waydroid](https://waydro.id/) ed è molto interessante e veloce per avere Android sul proprio PC.
 
-Mentre per un utilizzo più ludico, una versione interessante e che posso raccomandare perchè la utilizzo tutti i giorni, anche per scrivere queste note, è senz'altro [TeLOS](https://sourceforge.net/projects/teloslinux/) una snella distribuzione proveniente dalla Grecia.
+Le versioni di sviluppo possono essere anche scaricate dalla pagina [sourceforge di penguins-eggs](https://sourceforge.net/projects/penguins-eggs/files/ISOS/waydroid/).
 
-Esiste anche una versione Ubuntu con [Waydroid](https://waydro.id/) pre-installato rilasciata da [BlissOS](https://blissos.org/) che è molto interessante e veloce per avere Android sul proprio PC.
+Per chi è interessato a realizzare film animati, non posso non consigliare [Quirinux](https://www.quirinux.org/) di Charlie Martinez con cui ho avuto il piacere di collaborare nella realizzazione della versione beta.
+
+La versione quirinux-general può essere anche scaricata dalla pagina [sourceforge di penguins-eggs](https://sourceforge.net/projects/penguins-eggs/files/ISOS/quirinux/).
+
+Per un uso d'ufficio posso raccomandare [UfficioZero](https://www.ufficiozero.org/), una serie di più distribuzioni derivate da Debian, Devuan, Ubuntu e Linuxmint tutte finalizzate ad un orientamento professionale. UfficioZero da un po' di tempo non utilizza più `penguins-eggs` ma conto di riportare il buon - si fa per dire - Adriamo sulla retta via. Uno spingitore di cavalieri unico!
+
+Mentre per un utilizzo più ludico, una versione interessante e che posso raccomandare perchè l'ho utilizza anche per scrivere queste note, è senz'altro [TeLOS](https://sourceforge.net/projects/teloslinux/) una snella distribuzione proveniente dalla Grecia.
 
 **Nota:** Non esitate ad includere le vostre soluzioni!
 
