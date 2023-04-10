@@ -17,13 +17,13 @@ export default function Translactions({path}) {
       {getLink(path, 'en', 'en', 'English')}
       {getLink(path, 'fr', 'fr', 'Français')}
       {getLink(path, 'it', 'it', 'Italiano')}
+      {getLink(path, 'ja', 'ja', 'やまと')} {/* giapponese */}
       {getLink(path, 'pl', 'pl', 'Polska')} {/* polacco */}
       {getLink(path, 'pt', 'pt', 'Portuguese')} {/* portoghese */}
       {getLink(path, 'ru', 'ru', 'Русский')} {/* russo */}
       {getLink(path, 'sp', 'ep', 'Espagnol')} {/* spagnole */}
       {getLink(path, 'uk', 'uk', 'Українська')} {/* ucraino */}
       {getLink(path, 'zh', 'zh', '中国')} {/* cinese */}
-      {getLink(path, 'ja', 'ja', 'やまと')} {/* giapponese */}
       <br/><br/>
     </span>
   );
