@@ -574,9 +574,9 @@ Utilizzate quindi `krill` solo quando è necessario ed opportuno  e, sono comunq
 
 Già dal nome, che identifica dei piccoli crostacei diffusi ai poli, prende spunto dal ben più famoso installer grafico `calamares` e ne ricalca sostanzialmente lo stesso schema visuale.
 
-Abbiamo una finestra principale che è suddivisa sulla sinistra con i vari passi della procedura, mentre le varie tab: `welcome`, `location`, `keyboard`, `partitions`, `users`, `network`, `summary` ed `finish` aprono, ognuna, i propri form per la visualizzazione o l'immissione e modifica dei dati necessari.
+Abbiamo una finestra principale che è suddivisa sulla sinistra con i vari passi della procedura, mentre le varie tab: `welcome`, `location`, `keyboard`, `partitions`, `users`, `network`, `summary`, `installation` and `finish` aprono, ognuna, i propri form per la visualizzazione o l'immissione e modifica dei dati necessari.
 
-L'insieme è ordinato e cerca di ricordare `calamares` ed `ubiquity` - ben più blasonati installer - e questo per un semplice installer TUI è già molto.
+L'insieme è ordinato e cerca di ricordare `calamares` ed `ubiquity` - ben più blasonati installer -  questo, per un semplice installer TUI è già molto.
 
 Naturalmente siamo in ambiente CLI e, quindi, niente mouse ma esclusivamente tastiera, utilizzando però i tasti di direzione ed invio.
 
@@ -587,10 +587,10 @@ Si procederà quindi da `welcome` sino a `summary` ed una volta accettate le sce
 **Nota**: _in attesa che scriva un apposito modulo per `calamares` per il restore dei dati creato da `eggs`, l'installazione con l'installer `krill` al momento è indispensabile per il restore automatico dei backup realizzati con `eggs`._
 
 ### `krill`: i vari passi dell'installazione
-L'installazione con `krill` procede attraverso alcuni step, comuni  a calamares ed aventi la stessa denominazione, che conducono sino alla schermata finale ed alla richiesta di riavvio.
+L'installazione con `krill` procede attraverso alcuni step, comuni  a `calamares` ed aventi la stessa denominazione, che conducono sino alla schermata finale ed alla richiesta di riavvio.
 
 #### `krill: welcome`
-`welcome` è la prima schermata di krill ed è il posto dove potremo cambiare la lingua. Disporremo solo delle lingue incluse nella nostra iso, per cui normalmente accetteremo il default.
+`welcome` è la prima schermata di `krill` ed è il posto dove potremo cambiare la lingua. Disporremo solo delle lingue incluse nella nostra ISO, per cui normalmente accetteremo il default.
 
 ![eggs-krill-welcome](/images/book9.2/eggs-install-welcome.png)
 
@@ -607,25 +607,25 @@ Stiamo trattando di un programma per l'installazione a misura per le nostre cust
 
 #### `krill: partition`
 
-In `partitions` il discorso si fa più ampio. krill vuole un dispositivo sul quale installare il nostro sistema. L'installazione con `krill` cancellerà il dispositivo in questione, non è possibile partizionare manualmente il disco.
+In `partitions` il discorso si fa più ampio. `krill` vuole un dispositivo sul quale installare il nostro sistema. L'installazione con `krill` cancellerà interamente il dispositivo in questione, non è possibile partizionare manualmente il disco.
 
-La prima cosa che `krill` riporta nella schermata è che cancellerà completamente il disco di destinazione, meglio essere chiari. Subito dopo ci mostra se siamo su un sistema con boot BIOS o UEFI.
+La prima cosa che `krill` riporta nella schermata è l'avviso di cancellazione totale del disco di destinazione, meglio essere chiari! Subito dopo ci mostra se siamo su un sistema con boot BIOS o UEFI.
 
 In questa schermata pure sono presenti quattro campi, tutti selezionabili: 
-* installation device: /dev/sda
-* installation mode: standard
-* filesystem: ext4
-* user swap choice: small
+* `installation device: /dev/sda`
+* `installation mode: standard`
+* `filesystem: ext4`
+* `user swap choice: small`
 
-E' quindi possibile selezionare un dispositivo che krill rileverà tra quelli disponibili, una modalità di installazione - al momento solo la modalità standard, ma sto lavorando per la full-encrypts, la formattazione del filesystem e la grandezza della partizione di swap.
+E' quindi possibile selezionare un dispositivo che `krill` rileverà tra quelli disponibili, una modalità di installazione - al momento solo la modalità `standard`, ma sto lavorando per la `full-encrypt`, la formattazione del filesystem e la grandezza della partizione di swap.
 
-Sarà però krill a decidere come partizionare il device a seconda del tipo di boot e dell'installazione scelta, non è possibile per ora utilizzare uno schema di partizioni manuale.
+Sarà però `krill` a decidere come partizionare il `device` a seconda del tipo di boot e dell'installazione scelta, non è possibile per ora utilizzare uno schema di partizioni manuale.
 
 ![eggs krill partitions](/images/book9.2/eggs-install-partitions.png)
 
 #### `krill: users`
 
-In questo form `users` andrà indicato l'utente principale del sistema, la sua password, la conferma della stessa e l'eventuale utilizzo dell'autologin; password e conferma per l'utente di root ed, infine, il nome dell'host.
+In questo form `users` andrà indicato l'utente principale del sistema, la sua password, la conferma della stessa e l'eventuale utilizzo dell'autologin; la password di root e conferma ed, infine, il nome dell'host.
 
 ![eggs krill users](/images/book9.2/eggs-install-users.png)
 
@@ -648,7 +648,7 @@ Dopo aver accettato la finestra `summary`, parte l'installazione del sistema. In
 ![installation](/images/book9.2/eggs-install-unpackfs.png)
 
 #### `krill finish`
-`finish` è una semplice schermata che ci notifica la fine della installazione e la necessità di un riavvio.
+`finish` è una semplice quadro che ci notifica la fine della installazione e la necessità di un riavvio.
 
 ![eggs krill finished](/images/book9/eggs-krill-finished.png)
 
@@ -674,7 +674,7 @@ compressed data from the system
   Yes 
 ```
 
-**Nota**: _in caso per interruzione del comando produce, sarà impossibile cancellare le directory montate. Il metodo più veloce è semplicemente eseguire un riavvio del sistema e lanciare nuovamente il comando `sudo eggs kill`_.
+**Nota**: _in caso per interruzione del comando `eggs produce`, sarà impossibile cancellare le directory montate. Il metodo più veloce è semplicemente eseguire un riavvio del sistema e lanciare nuovamente il comando `sudo eggs kill`_.
 
 
 ## `eggs mom`
@@ -687,32 +687,32 @@ Una immagine vale più di mille parole, questa è la schermata iniziale di ```eg
 
 ![eggs-mom](/images/book9.4/eggs-mom.png)
 
-Dal menu principale si accede a tutti i comandi eggs ed ai sottomenu Documentation, Export e Tools.
+Dal menu principale si accede a tutti i comandi di `eggs` ed ai sottomenu Documentation, Export e Tools.
 
-### `mom`: Documentation
-In questo menù potete consultare sia il sito che i manuali, sia in formato html che man. 
+### `mom`: `Documentation`
+In questo menù potete consultare sia il sito che i manuali, sia in formato `html` che `man`. 
 
 ![eggs-mom](/images/book9.2/eggs-mom-documentation.png)
 
 Ecco ad esempio come risulta la schermata della pagina man di eggs in formato html, consultabile anche in assenza di connessione.
 
 ```
-Aggiungere schermata eggs mom
+Aggiungere schermata `eggs mom`
 ```
 
-Attenzione: per gli utenti arch e manjaro: non sono riuscito a trovare un equivalente di sensible_browser che utilizzo in DEBIAN per individuare il browser di default installato. Se qualcuno ha un suggerimento, sarà gradito.
+Attenzione: per gli utenti `Arch Linux` e `Manjaro Linux`: non sono riuscito a trovare un equivalente di sensible_browser che utilizzo in Debian per individuare il browser di default installato. Se qualcuno ha un suggerimento, sarà gradito.
 
 Naturalmente se state operando su una stazione solo cli, avrete comunque disponibili le vostre informazioni in formato man.
 
 ### `mom export`
 Da questo menu potete raggiungere tutti i comandi di esportazione:
 
-* eggs export:deb
-* eggs export:iso
+* `eggs export deb`
+* `eggs export iso`
 
 ![eggs mom export](/images/book9.2/eggs-mom-export.png)
 
-### mom tools
+### `mom tools`
 In tools troverete, ovviamente, tutti i gli strumenti di eggs, raccolti sotto eggs:tools.
 
 ![eggs mom tools](/images/book9.2/eggs-mom-tools.png)
@@ -738,7 +738,7 @@ E' questo il comando che più utilizzerete.
 
 Sostanzialmente `produce` è l'unico comando usato quotidianamente, insieme a `kill` che ci consente di sbarazzarci delle immagini iso precedentemente create.
 
-Usato senza parametri produce la iso con i parametri di default che sono quelli specificati con `sudo eggs dad` o impostati editanto il file /etc/penguins-eggs/eggs.yaml. 
+Usato senza parametri produce la iso con i parametri di default che sono quelli specificati con `sudo eggs dad` o impostati editanto il file `/etc/penguins-eggs/eggs.yaml`. 
 
 Al suo avvio `produce` esegue velocemente un controllo sulla corretta inizializzazione di `eggs`, quindi, produce la ISO.
 
@@ -792,20 +792,20 @@ EXAMPLES
 
 ```
 
-Di gran lunga la modalità d'uso che utilizzo è `sudo eggs produce` o `sudo eggs produce --adapt` se sono su xfce o mate, che mi consente si avere una veloce rimasterizzazione - eggs da questa versione utilizza la compressione fast di default - ed avere sul desktop del live il link per ridimensionare la finestra video della mia macchina virtuale. Se voglio controllare cosa sta succedendo, invece aggiungo ```--verbose```
+Di gran lunga la modalità d'uso che utilizzo è `sudo eggs produce` o `sudo eggs produce --adapt` se sono su XFCE o Mate ed avere sul desktop del live il link per ridimensionare la finestra video della mia macchina virtuale. `eggs` da questa versione utilizza la compressione veloce come default, non è quindi più presente il vecchio flag `--fast`. Se voglio controllare cosa sta succedendo, posso aggiungere `--verbose`.
 
-Tra i flag disponibili c'è --theme che imposta il tema per grub ed isolinux sull'immagine iso e per l'installer GUI calamares. 
+Tra i flag disponibili c'è `--theme` che imposta il tema per `grub` ed `isolinux` sull'immagine ISO e per l'installer GUI `calamares`. 
 
-Potete creare un tema personalizzato semplicemente copiandone uno esistente e cambiandone nome e contenuto. Scaricate il wardrobe con: `eggs wardrobe get`, i temi si trovano in ```.wardrobe/themes/vendor```, dove vendor è il nome da passare al flag --theme. 
+Potete creare un tema personalizzato semplicemente copiandone uno esistente e cambiandone nome e contenuto. Scaricate il `wardrobe` con: `eggs wardrobe get`, i temi si trovano in ```.wardrobe/themes/vendor```, dove vendor è il nome da passare al flag --theme. 
 
-I temi consentono una customizzazione di calamares e la possibilità di avere un proprio splashscreen durante l'avvio del sistema live.
+I temi consentono una customizzazione di `calamares` e la possibilità di avere un proprio `splash-screen` durante l'avvio del sistema live.
 
-Un altro flag, importante per gli utenti che vogliono realizzare una distro è `--release` che configura calamares e krill a disinstallare calamares e penguins-eggs a fine installazione.
+Un altro flag, importante per gli utenti che vogliono realizzare una distro è `--release` che configura calamares e krill per disinstallare `calamares` e `penguins-eggs` a fine installazione.
 
-Abbiamo poi due flag per la copia completa del sistema: ```--clone``` e ```--cryptedclone```, che sostanzialmente producono una iso nella quale sono presenti i dati utente. La differenza tra questi due flag è che mentre clone produce una iso nella quale i dati utente sono in chiaro ed utilizzabili anche dal sistema live, il flag ```--cryptedclone``` invece crea all'interno della iso un volume LUKS nel quale i dati saranno cryptati e, questi non disponibili immediatamente da live. Per reinstallare un clone criptato si utilizza krill.
+Abbiamo poi due flag per la copia completa del sistema: `--clone` e `--cryptedclone`, che sostanzialmente producono una iso nella quale sono presenti i dati utente. La differenza tra questi due flag è che mentre clone produce una iso nella quale i dati utente sono in chiaro ed utilizzabili anche dal sistema live, il flag `--cryptedclone` invece crea all'interno della ISO un volume `LUKS` nel quale i dati saranno cryptati e, questi non disponibili immediatamente da live. Per reinstallare un clone criptato si utilizza `krill`.
 
 
-Uso spesso anche il flag `--addons` per inserire sul desktop il link per `adapt` o altri links nelle iso realizzate.
+Uso spesso anche il flag `--addons` per inserire sul desktop il link per `adapt` o altri links nelle ISO realizzate.
 
 ### `eggs produce --cryptedclone / --clone`
 
@@ -819,7 +819,7 @@ Questo consente quindi di distribuire la propria iso con una ragionevole sicurez
 
 Sarà possibile accedere ai dati degli utenti solo se si è a conoscenza della chiave di accesso, che però **non viene mai salvata** ed è quindi non scopribile se non con attacchi brute force.
 
-La live che, per chiarezza, prende il suffisso ``crypted`` si avvia normalmente con il solo utente live e non carica in modalità live il volume criptato.
+La live che, per chiarezza, prende il suffisso `crypted` si avvia normalmente con il solo utente live e non carica in modalità live il volume criptato.
 
 Però, nel caso di nuova installazione, `krill` controlla la presenza del volume `luks-users-data*` all'interno della immagine iso e, se viene rilevato, richiede la passphrase di accesso per montare tale volume e copiare i dati e gli account degli utenti nel sistema appena installato.
 
@@ -835,7 +835,7 @@ Anche se a prima vista, per me specialmente, questa soluzione - che è poi la pi
 ## `eggs tools`
 Sono raccolti sotto tools degli strumenti accessori di eggs, non sono fondamentali, ma possono far comodo.
 
-Abbiamo ```tools clean``` che esegue la pulizia del sistema cancellando la cache del gestore dei pacchetti (apt o pacman) ed esegue la rotazione dei log, ```tools skel``` che permette di configurare l'aspetto del desktop live e del desktop di default dei nuovi utenti, ```tools yolk``` - solo per Debian/Devuan/Ubuntu - che aggiorna la repository inclusa in /usr/local/yolk che viene utilizzata da eggs per caricare i pacchetti indispensabili all'installazione in assenza di connessione internet. 
+Abbiamo `tools clean` che esegue la pulizia del sistema cancellando la cache del gestore dei pacchetti (apt o pacman) ed esegue la rotazione dei log, `tools skel` che permette di configurare l'aspetto del desktop live e del desktop di default dei nuovi utenti, `tools yolk` - solo per Debian/Devuan/Ubuntu - che aggiorna la repository inclusa in `/usr/local/yolk` che viene utilizzata da eggs per caricare i pacchetti indispensabili all'installazione in assenza di connessione internet. 
 
 ![eggs tools](/images/book9.2/eggs-mom-tools.png)
 
@@ -922,7 +922,7 @@ Esegue l'aggiornamento di `eggs`, è un comando che è rimasto poichè spesso, d
 # Creazione di una nostra remix
 La creazione di una nostra remix è un processo che richiede pazienza e passione ma può darci grandi soddisfazioni ed in molti casi, farci risparmiare tempo e fatica.
 
-Scarichiamo la nostra distribuzione che intendiamo customizzare, scegliendo tra Arch, Debian: buster, bullseye. bookworm;  Devuan: beowulf, chimaera; manjaro,  Ubuntu: bionic, focal, groovy, impish  o derivate.
+Scarichiamo la nostra distribuzione che intendiamo customizzare, scegliendo tra `Arch`, Debian: buster, bullseye. bookworm;  Devuan: beowulf, chimaera; manjaro,  Ubuntu: bionic, focal, groovy, impish  o derivate.
 
 Installiamola normalmente, aggiorniamola e facciamo qualche forma di customizzazione prima di passare alla creazione delle iso.
 
@@ -936,15 +936,13 @@ A questo punto, siamo ad un solo passo dalla nostra prima immagine ISO.
 sudo eggs dad -d
 ```
 
-L'aiuto di papà ci farò risparmiare tempo e fatica, impostando sui default la configurazione di eggs.
-
-Alla fine del processo, basterà dare il comando:
+L'aiuto di papà ci farò risparmiare tempo e fatica, impostando sui default la configurazione di `eggs`, alla fine del processo, basterà dare il comando:
 
 ```sudo produce```
 
 per ottenere la nostra prima rimasterizzazione.
 
-Se vogliamo che la nostra iso sia installabile con l'installer grafico calamares, dovremo aggiungerlo PRIMA di produrre la iso. Per Debian/Devuan/Ubuntu ci basterà lanciare il comando:
+Se vogliamo che la nostra ISO sia installabile con l'installer grafico `calamares`, dovremo aggiungerlo **PRIMA** di produrre la ISO. Per Debian/Devuan/Manjaro ed Ubuntu ci basterà lanciare il comando:
 
 ```sudo eggs calamares --install```
 
@@ -966,24 +964,24 @@ Successivamente, si potrà utilizzare il più immediato `sudo eggs produce` con 
 Con questo comando si avvia la costruzione dell'_uovo di pinguino_ che consiste sostanzialmente in tre fasi:
 
 * creazione di una immagine del filesystem live montata con overlayfs - che è istantanea e senza alcuna copia dei dati utente - per permettere le modifiche per la realizzazione del filesystem per l'immagine;
-* compressione dell'intero filesystem in /home/eggs/ovarium/iso/live/filesystem.squashfs;
-* generazione dell'immagine iso dalla struttura precedente in /home/eggs/basename-X64\_AAAA-MM-GG-HHMM.iso
+* compressione dell'intero filesystem in `/home/eggs/ovarium/iso/live/filesystem.squashfs`;
+* generazione dell'immagine iso dalla struttura precedente in `/home/eggs/basename-X64\_AAAA-MM-GG-HHMM.iso`
 
-Il processo ha una certa pesantezza, non ve la prendete ne' con la copia del filesystem che non si effettua proprio e neppure con l'interfaccia grafica - serve un po' di tempo e vi esorto a non esagerare con le dimensioni della vostra iso. Ho visto iso fino a 16 GB, a mio avviso a meno di casi particolare conviene tenersi sotto i 4 GB, meglio ancora sotto i 2GB anche se non esiste alcun limite. 
+Il processo ha una certa pesantezza, non ve la prendete ne' con la copia del filesystem che non si effettua proprio e neppure con l'interfaccia grafica - serve un po' di tempo e vi esorto a non esagerare con le dimensioni della vostra ISO. Ho visto ISO fino a 20 GB, a mio avviso a meno di casi particolare conviene tenersi sotto i 4/5 GB, meglio ancora sotto i 2GB anche se non esiste alcun limite. 
 
-La pesantezza è data dal fatto che dobbiamo comprimere l'intero filesystem e quindi, più è piccolo il nostro sistema, più veloce è la compressione, dipende pure molto dall'algoritmo usato.
+La pesantezza è data dal fatto che dobbiamo comprimere l'intero filesystem e quindi, più è piccolo il nostro sistema e più veloce è la compressione. Dipende pure molto dall'algoritmo usato per la compressione dei dati.
 
-Durante le prove quindi o quando lo riteniate opportuno, vi consiglio di usare `produce` senza alcuna opzione di compressione. Facendo così si utilizzerà l'algoritmo di compressione `zsd` invece del più "pesante" `xz` e si ridurrà notevolmente il tempo necessario alla compressione. Per la versione finale, una volta controllato che sia tutto a posto potremo comunque utilizzare la compressione `--standard`  per ottenere una ISO più snella, oppure l'opzione `--max` che comprime ancora un po' di più, al prezzo di una ulteriore lentezza.
+Durante le prove quindi o quando lo riteniate opportuno, vi consiglio di usare `produce` senza alcuna opzione di compressione. Facendo così si utilizzerà l'algoritmo di compressione `zstd-level-1` invece del più "pesante" `xz` e si ridurrà notevolmente il tempo necessario alla compressione. Per la versione finale, una volta controllato che sia tutto a posto potremo comunque utilizzare la compressione `--standard`  per ottenere una ISO più snella, oppure l'opzione `--max` che comprime ancora un po' di più, al prezzo di una ulteriore lentezza.
 
-Inizialmente era riportato a video ma anche nel codice, il suggerimento è prendersi un caffè e cercare di riservare abbastanza potenza di elaborazione alla macchina. Nel mio caso - utilizzo normalmente delle macchine virtuali con 4 core e 4 GB di memoria - per un filesystem di 7/8 GB occorrono circa _dieci minuti_ con la compressione xz, mentre utilizzando la compressione zsd si riduce moltissimo l'attesa solo un _minuto e mezzo_.  
+Inizialmente - era mostrato sia video che nel codice - il suggerimento è prendersi un caffè e cercare di riservare abbastanza potenza di elaborazione alla macchina. Nel mio caso - utilizzo normalmente delle macchine virtuali con 4 core e 4 GB di memoria - per un filesystem di 7/8 GB occorrono circa _dieci minuti_ con la compressione xz, mentre utilizzando la compressione zstd si riduce moltissimo l'attesa solo un _minuto e mezzo_.  
 
 **Morale della favola**
 
-Quindi niente caffè e/o sigaretta e l'immagine ottenuta passa a _3,0 GB_ a fronte dei _2.00_ GB della compressione xz \(Vedi **nota**\).
+Quindi niente caffè e/o sigaretta e l'immagine ottenuta passa a _3,0 GB_ a fronte dei _2.00_ GB della compressione xz.
 
-Una sola raccomandazione. Normalmente si utilizza più volte questo comando sulla macchina dove si lavora e magari si è già prodotta una versione precedente. Raccomando di cancellare le immagini precedenti con il comando `sudo eggs kill` che rimuove l'intero albero di directory sotto /home/eggs.
+Una sola raccomandazione. Normalmente si utilizza più volte questo comando sulla macchina dove si lavora e magari si è già prodotta una versione precedente. Raccomando di cancellare le immagini precedenti con il comando `sudo eggs kill` che rimuove l'intero albero di directory sotto `/home/eggs`.
 
-**Nota**: _Non tutto il male vien per nuocere però. Se consideriamo che attualmente i DVD  si usano relativamente poco e le chiavette stanno diventando sempre più veloci, vi sono  casi la nostra remix potrebbe essere risultare più ottimizzata con un filesystem più grande ma meno compresso! Difatti, tenuto conto che durante l'uso - nascosto ai nostri occhi - ci sarà un continuo processo di lettura e decompressione del filesystem,  la decompressioone xz risulta comunque più lenta di quella lz4._ 
+**Nota**: _Non tutto il male vien per nuocere però. Se consideriamo che attualmente i DVD  si usano relativamente poco e le chiavette stanno diventando sempre più veloci, vi potrebbero essere  casi la in cui l'immagine live potrebbe essere risultare più ottimizzata con un filesystem più grande ma meno compresso! Difatti, tenuto conto che durante l'uso - nascosto ai nostri occhi - ci sarà un continuo processo di lettura e decompressione del filesystem,  la decompressioone xz risulta comunque più lenta di quella lz4._ 
 
 _Tenendo pure presente che non esiste più il limite delle dimensioni delle immagini iso a 4 GB, la soluzione di utilizzare sempre lz4 potrebbe rivelarsi doppiamente vantaggiosa, soprattutto in caso  di utilizzo con le macchine virtuali che  - quasi sempre - leggono direttamente  il file immagine su disco fisso invece di un reale DVD.  Inoltre, tutti i principali programmi per la creazione di chiavette avviabili  leggono i file iso._ 
 
@@ -993,7 +991,7 @@ Non è mio scopo quello di realizzare una nuova distribuzione Linux, preferisco 
 
 Però anche qua vale il detto: nasce prima l'uovo o la gallina? 
 
-E così, alcune remix le faccio comunque e continuo, impunentemente a proporle.
+E così, alcune remix le faccio comunque e continuo - impunentemente - a proporle.
 
 ## Immagini realizzate dall'autore
 
@@ -1001,38 +999,42 @@ Sono qui riportate una serie di remix realizzate da me stesso e create con Pengu
 
 ### Immagini generiche
 
-In genere, anche per i test, utilizzo essenzialmente Debian in genere la stable, Arch linux e manjaro.
+In genere, anche per i test, utilizzo essenzialmente Debian in genere la stable, `Arch Linux` e Manjaro.
 
-Amando però sia l'interfaccia Cinnamon che la distribuzione Linuxmint, sovente la rimasterizzo, così come pure deepin, KDE neon ed altre. Se una distribuzioni mi sembra interessante, cercare di riprodurla è anche un po' il mio metodo di analizzarla.
+Amando però sia l'interfaccia Cinnamon che la distribuzione Linuxmint, sovente la rimasterizzo, così come pure deepin, KDE neon e avariate altre. Se una distribuzioni mi sembra interessante, cercare di riprodurla è anche un po' il mio metodo di analizzarla.
 
-Però preferisco lasciare questo compito agli appassionati che su sulla customizzazione possono concentrare il proprio ingegno. Considerate pure le iso da me rilasciate come semplici esempi ad eccezione dell'aspetto tecnico.
+Però preferisco lasciare questo compito agli appassionati che su sulla customizzazione possono concentrare il proprio impegno. Considerate pure le ISO da me rilasciate come semplici esempi piuttosto che come sistemi finiti.
 
-### Immagini naked
+### Immagini `naked`
 Sono ottenute da una installazione minimale e senza interfaccia grafica. Solo i pacchetti di base e poco altro, un netinstall per intenderci. 
 
-Però una versione naked contiene comunque il minimo indispensabile per la riproduzione.
+Però una versione `naked` contiene comunque il minimo indispensabile per la riproduzione.
 
 A partire da queste immagini, ovviamente leggere, si può fare di tutto e dare inizio all'evoluzione. 
 
 Possiamo installarci pacchetti desktop oppure server e disporremo sempre e comunque di un completo sistema di riproduzione, che permette quindi di rimasterizzarle ancora ed ancora. 
 
-Utilizzando ```eggs wardrobe``` è possibile per Debian/Devuan/Ubuntu vestire la propria installazione naked con un "vestito" pre-confezionato. Ad esempio:
+Utilizzando `eggs wardrobe` è possibile per Debian/Devuan/Ubuntu vestire la propria installazione `naked` con un "vestito" pre-confezionato. Ad esempio:
 
 ```eggs wardrobe get```
 
 ```sudo eggs wardrobe wear colibri```
 
-Il nostro wardrobe è una repository [penguins-wardrobe](https://github.com/pieroproietti/penguins-wardrobe) che contiene alcune configurazioni, sia server che desktop, utilizzabili come base ed esempio.
+Il nostro `wardrobe` è una repository [penguins-wardrobe](https://github.com/pieroproietti/penguins-wardrobe) che contiene alcune configurazioni, sia server che desktop, utilizzabili come base ed esempio.
 
-Nel caso di Arch e manjaro, anche se non ho propriamente definito le customizzazioni come file .yaml, sono comunque disponibili degli script bash per la configurazione.
+Nel caso di `Arch Linux` e Manjaro, anche se non ho propriamente definito le customizzazioni come file .YAML, sono comunque disponibili degli script bash per la configurazione.
 
 Si rimando alla documentazione di [penguins-wardrobe](https://github.com/pieroproietti/penguins-wardrobe#general-informations) per riferimento.
 
-Mi aspetto un feedback dal wardrobe ed un certo interesse, a mio avviso potrebbe permettere di scambiare facilmente grosse moli di lavoro tra un customer ed un altro. Non esitate a forkare la repository e crearne una per le vostre necessità, questo renderebbe possibile successivamente integrarle nella repository principale e disponibili per altri sviluppatori.
+Mi aspetto un feedback sul `wardrobe` ed un certo interesse. 
+
+A mio avviso potrebbe permettere di scambiare facilmente grosse moli di lavoro tra un customer ed un altro. 
+
+Non esitate ad eseguire il `fork` della repository e crearne una propria versione, questo renderebbe possibile successivamente integrarle nella repository principale e renderla disponibile ad altri sviluppatori.
 
 ### User e password
 
-Tutte le remix create dal sottoscritto sono impostate con user live denominato **live** e password **evolution** valido sia per live che per root. 
+Tutte le remix create dal sottoscritto sono impostate con user live denominato `live` e password `evolution` valido sia per `live` che per `root`. 
 
 * `live/evolution`
 * `root/evolution`
@@ -1041,9 +1043,11 @@ Tutte le remix create dal sottoscritto sono impostate con user live denominato *
 
 Tutte le versioni di `eggs` e le ISO realizzate dall'autore sono scaricabili da `sourgeforge.net` cercando il progetto [penguins-eggs](https://sourceforge.net/projects/penguins-eggs/files/).
 
-## Immagini iso realizzate da terzi
+## Immagini ISO realizzate da terzi
 
-Per un uso d'ufficio posso raccomandare [UfficioZero](https://www.ufficiozero.org/), una serie di più distribuzioni derivate da Debian, Devuan, Ubuntu e Linuxmint tutte finalizzate ad un orientamento professionale.
+Per chi è interessato a realizzare film animati, non posso non consigliare [Quirinux](https://www.quirinux.org/) di Charlie Martinez.
+
+Per un uso d'ufficio posso raccomandare [UfficioZero](https://www.ufficiozero.org/), una serie di più distribuzioni derivate da Debian, Devuan, Ubuntu e Linuxmint tutte finalizzate ad un orientamento professionale. 
 
 Mentre per un utilizzo più ludico, una versione interessante e che posso raccomandare perchè la utilizzo tutti i giorni, anche per scrivere queste note, è senz'altro [TeLOS](https://sourceforge.net/projects/teloslinux/) una snella distribuzione proveniente dalla Grecia.
 
@@ -1072,7 +1076,7 @@ Potete segnalare le varie problematiche sulla pagina [issue](https://github.com/
 # Comunità
 Una comunità di utenti è fondamentale per la crescita di un progetto, creare qualcosa di versatile e pratico in fondo serve relativamente a poco se la gente non conosce il prodotto e, d'altra parte, avere un buon numero di utenti, fornisce feedback e motivazioni agli sviluppatori, migliorando quindi la qualità il progetto stesso.
 
-Potete facilitare la diffusione di eggs e contribuire alla sua crescita in diversi modi:
+Potete facilitare la diffusione di `eggs` e contribuire alla sua crescita in diversi modi:
 
 * iscriversi al gruppo facebook [penguin's eggs](https://www.facebook.com/groups/128861437762355)
 
@@ -1095,10 +1099,10 @@ Piero Proietti
 # Appendice: dipendenze di eggs
 
 ## Debian/Devuan/Ubuntu
-Essenzialmente possiamo dividere i pacchetti da cui eggs dipende, in:
+Essenzialmente possiamo dividere i pacchetti da cui `eggs` dipende, in:
 
 ### pacchetti comuni
-Questi pacchetto sono i prerequisiti di eggs per tutte le versioni installate.
+Questi pacchetto sono i prerequisiti di `eggs` per tutte le versioni installate.
  * `cryptsetup`
  * `dosfstools`
  * `dpkg-dev`
@@ -1115,7 +1119,7 @@ Questi pacchetto sono i prerequisiti di eggs per tutte le versioni installate.
  * `xorriso`
 
 ### pacchetti dipendenti dalla architettura
-A seconda della architettura sulla quale eggs è installato verranno selezionati differenti pacchetti. Le architetture possono essere: i386, amd64, armel ed arm64:
+A seconda della architettura sulla quale `eggs` è installato verranno selezionati differenti pacchetti. Le architetture possono essere: i386, amd64, armel ed arm64:
  * `syslinux`:  i386 / amd64;
  * `syslinux-efi`:  armel / amd64;
  * `ipxe`: armel / amd64;
@@ -1123,7 +1127,7 @@ A seconda della architettura sulla quale eggs è installato verranno selezionati
 ### pacchetti dipendenti dalla versione
 Questi pacchetti sono specifici della versione in uso. si noti che mentre è relativamente semplice cambiare il nome della distribuzione, non è affatto lo stesso per quanto riguarda la versione che è univoca.
 
-Le versioni gestite da eggs sono: jessie, stretch, buster, bullsyes, bionic, focal, hirsute e beowulf.
+Le versioni gestite da `eggs` sono: jessie, stretch, buster, bullsyes, bionic, focal, hirsute e beowulf.
 
 Per alcune distribuzioni come linuxmint, ufficiozero ed altre che pur essendo delle derivate utilizzano dei nomi di versione diversi, sono ricondotte alla versione originale, così ad esempio linuxmint uma viene configurato come Ubuntu focal, mentre linuxmint tricia viene configurato come Ubuntu bionic.
 
@@ -1139,94 +1143,14 @@ Abbiamo bisogno di questo tipo di pacchetti, perchè alcune derivate di Debian b
 
 Mentre i pacchetti comuni e quelli dipendenti dalla architettura sono sempre installati automaticamente dagli script di preinstallazione, non è così per i pacchetti che dipendono dalla versione o dal tipo di inizializzazione. Per questi pacchetti è necessario il comando eggs config.
 
-**Nota**: _I pacchetti per l'installer grafico calamares, non essendo indispensabili per la creazione della iso, non vengono installati automaticamente, semplicemente vengono proposti se ```force_installer: true``` durante la creazione della iso._
+**Nota**: _I pacchetti per l'installer grafico `calamares`, non essendo indispensabili per la creazione della ISO, non vengono installati automaticamente, semplicemente vengono proposti se ```force_installer: true``` durante la creazione della iso._
 
-Potete comunque sempre installare calamares con il comando:
+Potete comunque sempre installare `calamares` con il comando:
 
 * ```sudo eggs calamares --install```
 
 ## `Arch linux`
-Le dipendenze di penguins-eggs per Arch possono essere rilevate dal [PKGBUILD](https://github.com/pieroproietti/penguins-eggs-arch/blob/master/PKGBUILD)
-
-* `arch-install-scripts`
-* `dosfstools`
-* `erofs-utils`
-* `findutils`
-* `grub`
-* `libarchive`
-* `libisoburn`
-* `lsb-release`
-* `lvm2`
-* `mtools`
-* `mkinitcpio-archiso`
-* `mkinitcpio-nfs-utils`
-* `nbd`
-* `nodejs`
-* `pacman-contrib`
-* `parted`
-* `python`
-* `procps-ng`
-* `pv`
-* `rsync`
-* `syslinux`
-* `squashfs-tools`
-* `xdg-utils`
+Le dipendenze di `penguins-eggs` per `Arch Linux` possono essere rilevate dal [PKGBUILD](https://aur.archlinux.org/packages/penguins-eggs)
 
 ## `Manjaro linux`
-Le dipendenze di penguins-eggs per manjaro possono essere rilevate dal [PKGBUILD](https://github.com/pieroproietti/penguins-eggs-manjaro/blob/master/PKGBUILD)
-
-* `arch-install-scripts`
-* `awk`
-* `dosfstools`
-* `e2fsprogs`
-* `erofs-utils`
-* `findutils`
-* `glibc-locales`
-* `gzip`
-* `libarchive`
-* `libisoburn`
-* `lvm2`
-* `manjaro-tools-iso`
-* `mtools`
-* `nodejs`
-* `openssl`
-* `pacman`
-* `parted`
-* `rsync`
-* `sed`
-* `syslinux`
-* `squashfs-tools`
-
-# Uso di eggs con kernel diversi
-
-Nomalmente non vi è alcun problema ad utilizzare eggs con Liquorix o Proxmox, l'unica avvertenza è che DOPO aver installato o aggiornato il kernel - PRIMA - di produrre la iso riconfigurare eggs con ```sudo eggs dad -d``` oppure procedere a mano modiifcando oppurtunamente il file ```/etc/penguins-eggs.d/eggs.yaml```.
-
-Questo è l'esempio della mia stazione di lavoro, con kernel proxmox.
-
-```
-artisan@pve:~/Immagini$ cat /etc/penguins-eggs.d/eggs.yaml 
-version: 9.3.8
-snapshot_dir: /home/eggs/
-snapshot_prefix: egg-of-debian-bullseye-
-snapshot_excludes: /usr/local/share/penguins-eggs/exclude.list
-snapshot_basename: pve
-user_opt: live
-user_opt_passwd: evolution
-root_passwd: evolution
-theme: eggs
-force_installer: true
-make_efi: true
-make_md5sum: false
-make_isohybrid: true
-compression: zstd -b 256K -Xcompression-level 1
-ssh_pass: true
-timezone: America/New_York
-locales_default: it_IT.UTF-8
-locales:
-  - it_IT.UTF-8
-  - en_US.UTF-8
-pmount_fixed: false
-machine_id: 26cc5d34a162448cad5b47d861b579da
-vmlinuz: /boot/vmlinuz-5.15.74-1-pve
-initrd_img: /boot/initrd.img-5.15.74-1-pve
-```
+Le dipendenze di `penguins-eggs` per Manjaro possono essere rilevate dal [PKGBUILD](https://gitlab.manjaro.org/packages/community/penguins-eggs/-/blob/master/PKGBUILD)
