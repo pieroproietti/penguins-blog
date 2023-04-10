@@ -6,7 +6,7 @@ lang: it
 ---
 import Translactions from '@site/src/components/Translactions';
 
-<Translactions path="blog/wardrobe-accessories"/>
+<Translactions />
 
 Ieri ho creato un "vestitino" giusto per aggiungerlo ad una remix di Linuxmint elsie che, come noto, è di base estremamente completa.
 

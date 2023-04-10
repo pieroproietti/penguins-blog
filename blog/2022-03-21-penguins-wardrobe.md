@@ -4,11 +4,9 @@ slug: penguins-wardrobe
 title: penguins' wardrobe
 lang: en
 ---
-
 import Translactions from '@site/src/components/Translactions';
 
-<Translactions path="blog/penguins-wardrobe"/>
-
+<Translactions />
 
 First of all, if we don't have git, install git.
 ```apt install git```

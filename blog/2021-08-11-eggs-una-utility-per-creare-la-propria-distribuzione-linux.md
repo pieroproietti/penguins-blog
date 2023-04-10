@@ -6,7 +6,7 @@ lang: it
 ---
 import Translactions from '@site/src/components/Translactions';
 
-<Translactions path="blog/eggs-una-utility-per-creare-la-propria-distribuzione-linux"/>
+<Translactions />
 
 Se hai sempre desiderato di creare e mantenere una tua distribuzione Linux personalizzata, forse è il momento di provare a realizzarlo con questa simpatica utility.
 

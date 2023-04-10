@@ -6,7 +6,7 @@ lang: it
 ---
 import Translactions from '@site/src/components/Translactions';
 
-<Translactions path="blog/installare-un-forum"/>
+<Translactions />
 
 # nodebb
 

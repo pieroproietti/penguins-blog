@@ -6,7 +6,7 @@ lang: en
 ---
 import Translactions from '@site/src/components/Translactions';
 
-<Translactions path="blog/updated-eggs-revised-commands-and-drop-eggs-i386"/>
+<Translactions />
 
 ![here we are](/images/here-we-are.jpg)
 

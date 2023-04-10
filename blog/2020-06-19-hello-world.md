@@ -6,7 +6,7 @@ lang: it
 ---
 import Translactions from '@site/src/components/Translactions';
 
-<Translactions path="blog/hello-world"/>
+<Translactions />
 
 It’s my first day on line!
 

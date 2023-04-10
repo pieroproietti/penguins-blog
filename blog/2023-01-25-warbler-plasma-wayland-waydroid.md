@@ -6,7 +6,7 @@ lang: en
 ---
 import Translactions from '@site/src/components/Translactions';
 
-<Translactions path="blog/warbler-plasma-wayland-waydroid"/>
+<Translactions />
 
 This is the second version of this experiment, the first - a year ago - was  just named waydroid. It's a temptative to create a slim ISO to be used for develpment.
 

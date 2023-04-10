@@ -6,7 +6,7 @@ lang: en
 ---
 import Translactions from '@site/src/components/Translactions';
 
-<Translactions path="blog/update-penguins-eggs-book-in-different-languages"/>
+<Translactions />
 
 ![install-deb](/images/flags.webp)
 

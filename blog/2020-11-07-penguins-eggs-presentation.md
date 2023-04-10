@@ -6,8 +6,7 @@ lang: en
 ---
 import Translactions from '@site/src/components/Translactions';
 
-<Translactions path="blog/penguins-eggs-presentation"/>
-
+<Translactions />
 
 ![presentation](/images/presentation.png)
 

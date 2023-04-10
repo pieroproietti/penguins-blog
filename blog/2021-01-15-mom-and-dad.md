@@ -6,7 +6,7 @@ lang: en
 ---
 import Translactions from '@site/src/components/Translactions';
 
-<Translactions path="blog/mom-and-dad"/>
+<Translactions />
 
 ![mom](/images/mom.png)
 

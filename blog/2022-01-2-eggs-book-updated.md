@@ -6,7 +6,7 @@ lang: it
 ---
 import Translactions from '@site/src/components/Translactions';
 
-<Translactions path="blog/eggs-book-updated"/>
+<Translactions />
 
 Ho appena finito di aggiornare il [manuale di eggs](https://penguins-eggs.net/docs/tutorial-eggs/italiano) allineandolo alla versione 9.x.
 

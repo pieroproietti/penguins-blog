@@ -6,7 +6,7 @@ lang: en
 ---
 import Translactions from '@site/src/components/Translactions';
 
-<Translactions path="blog/eggs-8.0.0-krill-and-arm64-version"/>
+<Translactions />
 
 After so long time we have a major version, why?
 

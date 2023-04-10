@@ -6,8 +6,7 @@ lang: en
 ---
 import Translactions from '@site/src/components/Translactions';
 
-<Translactions path="blog/macaroni-penguins-illustrating-eggs-on-manjaro"/>
-
+<Translactions />
 
 You have to know that appetite comes with eating, so surprised by how quickly eggs was adopted by manjaro, I tried my hand at cinematography.
 

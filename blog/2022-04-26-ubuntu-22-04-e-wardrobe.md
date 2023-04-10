@@ -6,7 +6,7 @@ lang: it
 ---
 import Translactions from '@site/src/components/Translactions';
 
-<Translactions path="blog/ubuntu-22-04-e-wardrobe"/>
+<Translactions />
 
 Da qualche giorno è uscito Ubuntu 22.04 l'ultima release LTS di Ubuntu.
 

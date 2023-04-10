@@ -6,7 +6,7 @@ lang: it
 ---
 import Translactions from '@site/src/components/Translactions';
 
-<Translactions path="blog/e-quindi-uscimmo-a-riveder-le-stelle"/>
+<Translactions />
 
 ![Dante Alighieri](/images/dantealighieri.webp)
 ...

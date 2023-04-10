@@ -7,7 +7,7 @@ lang: it
 
 import Translactions from '@site/src/components/Translactions';
 
-<Translactions path="blog/customized-isos"/>
+<Translactions />
 
 A volte può essere pratico modificare la ISO prima di crearla, per varie ragioni.
 

@@ -1,14 +1,16 @@
 import React from 'react';
+import {useLocation} from '@docusaurus/router';
 
 export default function Translactions({path}) {
-
-  let getLink = (path, tl, hl, label)=>{
-    let link = `https://penguins--eggs-net.translate.goog/${path}?_x_tr_sl=auto&_x_tr_tl=${tl}&_x_tr_hl=${hl}&_x_tr_pto=wapp&_x_tr_hist=true`
+  // function
+  let getLink = (path, tl, hl, label)=> {
+    const location = useLocation();
+    let link = `https://penguins--eggs-net.translate.goog${location.pathname}?_x_tr_sl=auto&_x_tr_tl=${tl}&_x_tr_hl=${hl}&_x_tr_pto=wapp&_x_tr_hist=true`
     return (
       <>
       <a href={link}>{label}</a>&nbsp;
       </>
-    )
+   )
   }
   return (
     <span>
@@ -27,5 +29,4 @@ export default function Translactions({path}) {
       <br/><br/>
     </span>
   );
-
 }

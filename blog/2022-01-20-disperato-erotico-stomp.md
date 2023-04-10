@@ -4,11 +4,9 @@ slug: disperato-erotico-stomp
 title: Disperato erotico stomp
 lang: it
 ---
-
 import Translactions from '@site/src/components/Translactions';
 
-<Translactions path="blog/disperato-erotico-stomp"/>
-
+<Translactions />
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/jSQ_ovNRIec" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 

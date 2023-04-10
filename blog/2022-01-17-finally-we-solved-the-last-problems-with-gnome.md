@@ -6,7 +6,7 @@ lang: en
 ---
 import Translactions from '@site/src/components/Translactions';
 
-<Translactions path="blog/finally-we-solved-the-last-problems-with-gnome"/>
+<Translactions />
 
 Actually, it was a long story. 
 

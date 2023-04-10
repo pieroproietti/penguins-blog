@@ -6,7 +6,7 @@ lang: en
 ---
 import Translactions from '@site/src/components/Translactions';
 
-<Translactions path="blog/linuxmint-una"/>
+<Translactions />
 
 __You never forget your first love__
 

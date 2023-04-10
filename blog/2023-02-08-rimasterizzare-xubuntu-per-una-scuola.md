@@ -6,7 +6,7 @@ lang: it
 ---
 import Translactions from '@site/src/components/Translactions';
 
-<Translactions path="blog/rimasterizzare-xubuntu-per-una-scuola"/>
+<Translactions />
 
 xubuntu 22.04 è una LTS e ben si presta, per la sua leggerezza, ad essere rimasterizzata ed utilizzata per installazioni multiple, come ad esempio una scuola.
 

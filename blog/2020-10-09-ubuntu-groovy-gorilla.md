@@ -6,7 +6,7 @@ lang: en
 ---
 import Translactions from '@site/src/components/Translactions';
 
-<Translactions path="blog/ubuntu-groovy-gorilla"/>
+<Translactions />
 
 I updated the manual today - only in [italian](/docs/tutorial-eggs/italiano) and [english](/docs/tutorial-eggs/english), _automatic and revised translation_ - and tried for the first time eggs with Ubuntu groovy gorilla. It seems to be going apart from a little problem with the calamares displaymanager module that at the moment I simply removed. (It only serves to manage the possible autologin). 
 

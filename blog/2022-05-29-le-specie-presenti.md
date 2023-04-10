@@ -6,7 +6,7 @@ lang: it
 ---
 import Translactions from '@site/src/components/Translactions';
 
-<Translactions path="blog/le-specie-presenti"/>
+<Translactions />
 
 Continuando la nostra metafora abbiamo ormai quattro specie presenti:
 

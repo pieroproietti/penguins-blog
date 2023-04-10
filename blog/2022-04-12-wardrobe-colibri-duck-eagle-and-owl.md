@@ -6,7 +6,7 @@ lang: it
 ---
 import Translactions from '@site/src/components/Translactions';
 
-<Translactions path="blog/wardrobe-colibri-duck-eagle-and-owl"/>
+<Translactions />
 
 Dopo qualche settimana di esperienza dalla creazione di un sistema di scripting per creare - a partire da versione naked - delle customizzazioni complete, sono lieto di annunciare che tutte le mie attuali customizzazioni sono stare ri-create e vengono ad essere gestite con **eggs wardrobe**.
 

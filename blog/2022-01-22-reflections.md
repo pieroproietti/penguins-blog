@@ -4,10 +4,9 @@ slug: reflections
 title: Reflections
 lang: en
 ---
-
 import Translactions from '@site/src/components/Translactions';
 
-<Translactions path="blog/reflections"/>
+<Translactions />
 
 It's amazing how after so much effort to create a unique remastering tool, it turns out well.
 

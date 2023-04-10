@@ -6,7 +6,7 @@ lang: en
 ---
 import Translactions from '@site/src/components/Translactions';
 
-<Translactions path="blog/customizzazione-del-desktop"/>
+<Translactions />
 
 Partiamo dal desktop standard ed andiamo a modificare, in maniera arbitraria sia lo sfondo che la posizione del menu portando il basso.
 ![desktop-custom](/images/matteo-customizzazione.png)

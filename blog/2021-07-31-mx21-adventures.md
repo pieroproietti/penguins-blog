@@ -6,7 +6,7 @@ lang: en
 ---
 import Translactions from '@site/src/components/Translactions';
 
-<Translactions path="blog/mx21-adventures"/>
+<Translactions />
 
 Few days ago, MX-Linux annunced his new beta release MX21. based on Debian.
 

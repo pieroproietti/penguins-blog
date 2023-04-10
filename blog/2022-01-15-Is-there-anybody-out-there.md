@@ -6,7 +6,7 @@ lang: en
 ---
 import Translactions from '@site/src/components/Translactions';
 
-<Translactions path="blog/is-there-anybody-out-there"/>
+<Translactions />
 
 These are currently the 10 most clicked distros on [distrowatch](https://distrowatch.com/), to date we can already remaster 
 most of them!

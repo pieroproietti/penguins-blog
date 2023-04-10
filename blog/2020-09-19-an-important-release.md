@@ -6,7 +6,7 @@ lang: en
 ---
 import Translactions from '@site/src/components/Translactions';
 
-<Translactions path="blog/an-important-release"/>
+<Translactions />
 
 Same days ago I released eggs-7.6.39_1.deb
 

@@ -6,7 +6,7 @@ lang: en
 ---
 import Translactions from '@site/src/components/Translactions';
 
-<Translactions path="blog/eggs-think"/>
+<Translactions />
 
 New ideas are boiling in the pot, I'm trying to improve the eggs interface using react but always staying within the CLI.
 

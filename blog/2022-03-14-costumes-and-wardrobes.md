@@ -6,7 +6,7 @@ lang: en
 ---
 import Translactions from '@site/src/components/Translactions';
 
-<Translactions path="blog/costumes-and-wardrobes"/>
+<Translactions />
 
 This is a costume, a simple way to code our customizations starting from a naked system to a minimun KDE installation.
 

@@ -6,7 +6,7 @@ lang: it
 ---
 import Translactions from '@site/src/components/Translactions';
 
-<Translactions path="blog/access-to-a-vm-from-egg-of-debian-bullseyes-pve"/>
+<Translactions />
 
 
 # egg-of-debian-bullseye-pve

@@ -6,7 +6,7 @@ lang: it
 ---
 import Translactions from '@site/src/components/Translactions';
 
-<Translactions path="blog/docusauros"/>
+<Translactions />
 
 E' da qualche tempo che cercavo qualcosa di più strutturato per il blog, qualcosa di semplice ed allo stesso modo potente, in grado di crescere.
 

@@ -6,7 +6,7 @@ lang: it
 ---
 import Translactions from '@site/src/components/Translactions';
 
-<Translactions path="blog/wardrobe-ironing"/>
+<Translactions />
 
 
 Ho pensato di utilizzare un file yaml per definire i pacchetti e le modifiche da attuare per passare da una configurazione generica, senza interfaccia grafica ne' servizi, ad una customizzazione, anche spinta come andremo a vedere.

@@ -5,8 +5,7 @@ lang: en
 ---
 import Translactions from '@site/src/components/Translactions';
 
-<Translactions path="docs/"/>
-
+<Translactions />
 
 In the left sidebar you will find Tutorials and documentation of penguins-eggs.
 

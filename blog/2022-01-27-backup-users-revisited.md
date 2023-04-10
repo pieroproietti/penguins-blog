@@ -4,11 +4,9 @@ slug: backup-users-revisited
 title: Backup useres revisited
 lang: it
 ---
-
 import Translactions from '@site/src/components/Translactions';
 
-<Translactions path="blog/backup-users-revisited"/>
-
+<Translactions />
 
 E' da qualche tempo che sto pensando di rendere eggs utile per effettuare backup,
 

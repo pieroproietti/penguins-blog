@@ -6,7 +6,7 @@ lang: en
 ---
 import Translactions from '@site/src/components/Translactions';
 
-<Translactions path="blog/well-the-big-moment-has-come"/>
+<Translactions />
 
 # Eggs compatible with Debian 10, Ubuntu 20.20, Ubuntu 18.04, Linux Mint 20 and Linux Mint 19.3
 

@@ -6,7 +6,7 @@ lang: en
 ---
 import Translactions from '@site/src/components/Translactions';
 
-<Translactions path="blog/users-coming-from-systemback"/>
+<Translactions />
 
 ![systemback](/images/about-systemback.png)
 

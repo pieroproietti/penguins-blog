@@ -6,7 +6,7 @@ lang: it
 ---
 import Translactions from '@site/src/components/Translactions';
 
-<Translactions path="blog/alla-ricerca-dell-arca-perduta"/>
+<Translactions />
 
 Da un paio di giorni - ormai una settimana fa - sto cercando di far funzionare versioni "antiche" Debian con eggs.
 

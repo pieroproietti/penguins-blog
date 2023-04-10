@@ -6,7 +6,7 @@ lang: it
 ---
 import Translactions from '@site/src/components/Translactions';
 
-<Translactions path="blog/oem-installation"/>
+<Translactions />
 
 Sto valutando la possibilità di inserire una installazione OEM all'interno di krill per semplificare il processo di distribuzione di versioni verticali di Linux.
 

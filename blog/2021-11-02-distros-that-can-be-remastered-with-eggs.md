@@ -6,7 +6,7 @@ lang: en
 ---
 import Translactions from '@site/src/components/Translactions';
 
-<Translactions path="blog/distros-that-can-be-remastered-with-eggs"/>
+<Translactions />
 
 You can use eggs on all the following distributions, always having an easy installer available: [krill](https://penguins-eggs.net/2021/05/08/krill/) a console line tool, but usable as GUI for the "older" distributions like Debian jessie and Debian strecth or the versatile graphical installer [calamares](https://calamares.io/) for all the others. Of course You can always use krill on system without GUI, this is a clear advantage if you want to build easy-to-install liveCDs for server systems.
 

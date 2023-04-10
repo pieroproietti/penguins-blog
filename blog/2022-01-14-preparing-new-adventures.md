@@ -6,7 +6,7 @@ lang: en
 ---
 import Translactions from '@site/src/components/Translactions';
 
-<Translactions path="blog/preparing-new-adventures"/>
+<Translactions />
 
 We have just finished the release of eggs for manjaro linux, it has been a nice undertaking and a nice discovery, a system how to say: fast, updated and performing.
 

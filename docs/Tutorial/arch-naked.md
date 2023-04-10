@@ -6,9 +6,9 @@ lang: en
 ---
 import Translactions from '@site/src/components/Translactions';
 
-<Translactions path="docs/Tutorial/arch-naked"/>
+<Translactions />
 
-# Arch Linux
+# `Arch Linux`
 
 In this note we are going to see how, starting from scratch, or rather starting from the Arch Linux installation disk, we can get a complete graphical system useful for eggs development. Colibri is a lightweight configuration with XFCE that I use, precisely, to develop eggs itself.
 

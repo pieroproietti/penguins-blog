@@ -6,7 +6,7 @@ lang: en
 ---
 import Translactions from '@site/src/components/Translactions';
 
-<Translactions path="blog/personal-package-archives"/>
+<Translactions />
 
 Today on the advice of the excellent Yannis I've created a PPA repository for eggs. 
 

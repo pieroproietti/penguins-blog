@@ -6,7 +6,7 @@ lang: en
 ---
 import Translactions from '@site/src/components/Translactions';
 
-<Translactions path="blog/a-bit-more-universal"/>
+<Translactions />
 
 eggs in questo momento ha raggiunto praticamente la totalità delle distribuzioni basate su Debian e da queste derivate: Devuan, Ubuntu e le innumerevoli altre.
 

@@ -6,7 +6,7 @@ lang: it
 ---
 import Translactions from '@site/src/components/Translactions';
 
-<Translactions path="docs/Tutorial/italiano"/>
+<Translactions />
 
 Manuale aggiornato a `eggs v9.4.x`
 

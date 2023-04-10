@@ -6,8 +6,7 @@ lang: en
 ---
 import Translactions from '@site/src/components/Translactions';
 
-<Translactions path="blog/eggs-packaged-for-i386-and-amd64-architectures"/>
-
+<Translactions />
 
 Sometimes, to move forward, you need to step back first.
 

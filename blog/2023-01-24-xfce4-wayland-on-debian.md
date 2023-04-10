@@ -6,7 +6,7 @@ lang: en
 ---
 import Translactions from '@site/src/components/Translactions';
 
-<Translactions path="blog/xfce4-wayland-on-debian"/>
+<Translactions />
 
 Download the last "naked" version of bookworm from [sf](https://sourceforge.net/projects/penguins-eggs/files/ISOS/debian/bookworm/)
 

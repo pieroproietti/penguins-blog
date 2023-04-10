@@ -6,7 +6,7 @@ lang: it
 ---
 import Translactions from '@site/src/components/Translactions';
 
-<Translactions path="blog/presentazione-wardrobe"/>
+<Translactions />
 
 
 Dicono che a volte un video è meglio di mille parole.

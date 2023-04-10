@@ -7,7 +7,7 @@ lang: it
 
 import Translactions from '@site/src/components/Translactions';
 
-<Translactions path="blog/auguri-di-pasqua-e-nuova-versione"/>
+<Translactions />
 
 Auguro a tutti una felice Pasqua.
 
