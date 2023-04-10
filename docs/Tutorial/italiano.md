@@ -73,10 +73,10 @@ cd penguins-eggs-aur
 pkgbuild -si
 ```
 
-### Installazione di Calamares in Arch
-E' possibile installare [calamares](https://aur.archlinux.org/packages/calamares-git) con yay, 
-tuttavia - al momento - c'è un problema sul pacchetto [ckbcomp](https://aur.archlinux.org/packages/ckbcomp), 
-così per installare Calamares, dovete fare questo piccolo workaround:
+### `Calamares on Arch Linux`
+E' possibile installare [`calamares`](https://aur.archlinux.org/packages/calamares-git) con yay, 
+tuttavia - al momento - c'è un problema sul pacchetto [`ckbcomp`](https://aur.archlinux.org/packages/ckbcomp), 
+così per installare `Calamares`, dovete fare questo piccolo workaround:
 ```
 git clone https://github.com/pieroproietti/penguins-eggs-pkgbuilds
 cd penguins-eggs-pkgbuilds/aur/cbkcomp
@@ -89,39 +89,44 @@ yay calamares
 
 ### Manjaro 
 
-Manjaro dovrebbe essere già presente nella repository community di Manjaro, per cui non possiamo installarlo con i comandi:
+Su Manjaro, `penguins-eggs` è presente nella repository community di Manjaro, per cui possiamo sia installare `penguins-eggs` con i comandi:
 
 ```
 sudo pamac upgrade
 sudo pamac install penguins-eggs
 ```
-## Pacchetti npm 
+Sia installare `Calamares` direttamente da `eggs` con il comando:
+```
+sudo eggs calamares --install
+```
 
-Essendo eggs un software sviluppato con nodejs, esiste la possibilità di installare penguins-eggs direttamente come pacchetto npm.
+## Pacchetti `npm`
 
-Però, poichè i pacchetti npm necessitano comunque dei pacchetti delle dipendenze, pur se inizialmente avevo puntato su questo formato - pressochè universale - ed avevo scritto degli appositi moduli per l'installazione dei pacchetti nativi, con l'utilizzo della pacchettizzazione .deb e nei vari PKGBUILD, si è venuta a creare una inutile duplicazione di codice.
+Essendo `eggs` un software sviluppato con `nodejs`, esiste la possibilità di installare `penguins-eggs` direttamente come pacchetto `npm`.
 
-Pertanto, attualmente i pacchetti npm non sono più consigliati. 
+Però, poichè i pacchetti `npm` necessitano comunque dei pacchetti delle dipendenze, pur se inizialmente avevo puntato su questo formato - pressochè universale - ed avevo scritto degli appositi moduli per l'installazione dei pacchetti nativi, con l'utilizzo della pacchettizzazione `.deb` e nei vari `PKGBUILD`, si è venuta a creare una inutile duplicazione di codice.
+
+Pertanto, attualmente i pacchetti `npm` non sono più consigliati. 
 
 E' comunque possibile installarli, curando però separatamente l'installazione delle varie dipendenze.
 
 ## Utilizzo di `eggs` da codice sorgente
 
-Utilizzare `eggs` a partire dai sorgenti può essere estremamente utile sia per il debug che per modificare eggs stesso. Può anche garantire una maggiore sicurezza - in caso di dubbi - vedere il codice che sta girando sulla vostra macchina e, col tempo, sarete capaci di modivicarlo.
+Utilizzare `eggs` a partire dai sorgenti può essere estremamente utile sia per il debug che per modificare eggs stesso. Può anche garantire una maggiore sicurezza - in caso di dubbi - vedere il codice che sta girando sulla vostra macchina e, col tempo, sarete capaci di modificarlo.
 
-E' necessario installare a priori l pacchetti nodejs, npm ed pnpm. L'esempio seguente è per manjaro.
+E' necessario installare a priori i pacchetti `nodejs` ed `pnpm`. L'esempio seguente è per manjaro.
 
 ```
-sudo pamac install nodejs npm pnpm devel-base
+sudo pamac install nodejs pnpm devel-base
 ```
 
-Su Debian/Devuan/Ubuntu si consiglia node16.x dalla repository https://github.com/nodesource/distributions, mentre per installare pnpm, una volta installati nodejs ed npm, sarà sufficiente:
+Su Debian/Devuan/Ubuntu si consiglia la versione `node16.x` dalla repository https://github.com/nodesource/distributions, mentre per installare `pnpm`, una volta installati `nodejs` ed `npm`, sarà sufficiente:
 
 ```
 sudo npm i pnpm -g
 ```
 
-A questo punto andiamo a scaricare il sorgente di penguins-eggs con il comando:
+A questo punto andiamo a scaricare il sorgente di `penguins-eggs` con il comando:
 ```
 git clone https://github.com/pieroproietti/penguins-eggs
 ```
@@ -141,7 +146,7 @@ Ad esempio:
 sudo ./eggs produce --verbose
 ```
 
-**Nota**: _Potete constatare che l'unica differenza d'uso rispetto ai pacchetti precompilati è che dovrete indicare il path per eggs `./eggs` e dovrete lanciarlo dalla directory `~/penguins-eggs`. Il funzionamento rimane tuttavia esattamente lo stesso, ma si ha il vantaggio di poter agire in maniera interattiva con il codice. Per lo sviluppo, personalmente utilizzo [code](https://code.visualstudio.com/), ma potete scegliere altri editor [atom](https://atom.io/), [sublime](https://www.sublimetext.com/), etc)_.
+**Nota**: _Potete constatare che l'unica differenza d'uso rispetto ai pacchetti precompilati è che dovrete indicare il path per `eggs`: `./eggs` e dovrete lanciarlo dalla directory `~/penguins-eggs`. Il funzionamento rimane tuttavia esattamente lo stesso, ma si ha il vantaggio di poter agire in maniera interattiva con il codice. Per lo sviluppo, personalmente utilizzo [code](https://code.visualstudio.com/), ma potete scegliere altri editor [atom](https://atom.io/), [sublime](https://www.sublimetext.com/), etc)_.
 
 # `eggs`: `autocomplete`, pagina `man` ed aiuto
 
@@ -209,7 +214,7 @@ $ eggs produce --
 --cryptedclone   --prefix         --theme          
 ```
 
-Inoltre, come per ogni applicazione CLI che si rispetti, eggs è fornito di una apposita pagina man sempre a vostra disposizione:
+Inoltre, come per ogni applicazione CLI che si rispetti, `eggs` è fornito di una apposita pagina `man` sempre a vostra disposizione:
 
 ```
 man eggs
@@ -217,7 +222,7 @@ man eggs
 
 Di più: una pagina di aiuto è disponibile per tutti i comandi CLI.
 
-Tuttavia non v'è pulcino che non abbia una propria mamma come guida! Ed ho pensato di aggiungere il comando:
+Tuttavia non v'è pulcino che non abbia una propria chioccia come guida! Così ho pensato di aggiungere il comando:
 
 ```
 eggs mom
@@ -229,21 +234,21 @@ La "mamma" ci mette a disposizione una interfaccia interattiva per accompagnarci
 
 ---
 
-# La configurazione di `eggs`
+# Configurazione di `eggs`
 
-Per funzionare `eggs` ha bisogno di vari pacchetti installati: i cosidetti prerequisiti, inoltre necessita di creare ed installare le pagine di `man` di `eggs` ed installare l'autocomplete di `eggs` stesso. Tutto questo viene curato dal processo di pacchettizzazione .deb o PKGBUILD che a sua volta sarà basato sul gestore di pacchetti della distribuzione in uso: apt o pacman.
+Per funzionare `eggs` ha bisogno di vari pacchetti installati: i cosidetti `prerequisities`, inoltre necessita di creare ed installare le pagine di `man` di `eggs` ed installare l'autocomplete di `eggs` stesso. Tutto questo viene curato dal processo di pacchettizzazione `.deb` o `PKGBUILD` che a sua volta sarà basato sul gestore di pacchetti della distribuzione in uso: `apt` o `pacman`.
 
 Questo, tra l'altro, ha reso obsoleto il comando ```eggs config``` prima necessario che viene sostituito da ```eggs dad``` combinato, eventualmente, con il flag ```--default```
 
-Segnalo la presenza di eggs di tre differenti file di configurazione, tutti e tre risiedono nella directory ```/etc/penguins-eggs.d``` e vengono generati automaticamente durante l'installazione.
+Segnalo la presenza in `/etc/penguins-eggs.d` di tre differenti file di configurazione che vengono generati automaticamente durante l'installazione.
 
 * ```/penguins-eggs.d/eggs.yaml``` (configurazioni generali di eggs)
 * ```/penguins-eggs.d/krill.yaml``` (configurazioni per installazione unattended)
 * ```/penguins-eggs.d/tools.yaml``` (principalmente per sviluppatori)
 
-## eggs.yaml
+## `eggs.yaml`
 
-eggs.yaml contiene le variabili principali utilizzate durante il processo di rimasterizzazione.
+`eggs.yaml` contiene le variabili principali utilizzate durante il processo di rimasterizzazione.
 
 ```
 # Penguin's eggs
@@ -317,8 +322,8 @@ vmlinuz: ''
 initrd_img: ''
 ```
 
-## krill.yaml
-krill.yaml contiene i valori di default o i valori per l'installazione unattended con ```eggs install -u```
+## `krill.yaml`
+`krill.yaml` contiene i valori di default o i valori per l'installazione unattended con ```eggs install -u```
 
 ```
 # Penguin's eggs
@@ -362,12 +367,12 @@ dns: ''
 ```
 
 
-## tools.yaml
-Lo scopo delle variabili di tools.yaml è quello di aiutare lo sviluppo di `eggs`, in sostanza mi sono molto utili per sviluppare, esportare pacchetti ed iso ed eseguire aggiornamenti di `eggs` direttamente dalla rete locale. Generalmente il contenuto di questo file non viene utilizzato durante il funzionamento di `eggs`.
+## `tools.yaml`
+Lo scopo delle variabili di `tools.yaml` è quello di aiutare lo sviluppo di `eggs`, in sostanza mi sono molto utili per sviluppare, esportare pacchetti ed ISO ed eseguire aggiornamenti di `eggs` direttamente dalla rete locale. Generalmente il contenuto di questo file non viene utilizzato durante il normale funzionamento di `eggs`.
 
 ```
 # Penguin's eggs
-# eggs.yaml
+# tools.yaml
 ---
 penguins_eggs_conf: /etc/penguins-eggs.d/eggs.yaml
 
@@ -395,12 +400,16 @@ filterDeb: eggs_9.*.*_
 
 
 ## `sudo dad --default`
-Come ogni pulcino non ha un solo genitore, oltre alla mamma non poteva mancare il papà! Avete difficoltà ad editare i file di configurazione in yaml di eggs? Niente paura, papà ci accompagna e può dare una mano!
+Come ogni pulcino non ha un solo genitore, oltre alla "mamma" non poteva mancare il "papà"! 
+
+Avete delle difficoltà ad editare i file di configurazione di eggs? 
+
+Niente paura, `dad` ci accompagna e può dare una mano!
 
 ```
 sudo eggs dad --default
 ```
-Non solo configurerà automaticamente eggs, ma pulirà eventuali dati precedenti e ci proporrà addirittura di ottenere direttamente una veloce iso del nostro sistema, come primo "assaggio"!
+Non solo configurerà automaticamente `eggs`, ma pulirà eventuali dati precedenti e ci proporrà addirittura di ottenere direttamente una veloce iso del nostro sistema, come primo "assaggio"!
 
 Questo comando crea o ricrea la configurazione di eggs nella directory ```/etc/penguins-eggs.d```.
 
