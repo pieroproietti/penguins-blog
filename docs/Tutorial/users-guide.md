@@ -684,20 +684,18 @@ compressed data from the system
 
 Una immagine vale più di mille parole, questa è la schermata iniziale di ```eggs mom```
 
-![eggs-mom](/images/book9.4/eggs-mom.png)
+![eggs-mom](/img/users-guide/mom.png)
 
 Dal menu principale si accede a tutti i comandi di `eggs` ed ai sottomenu Documentation, Export e Tools.
 
 ### `mom`: `Documentation`
 In questo menù potete consultare sia il sito che i manuali, sia in formato `html` che `man`. 
 
-![eggs-mom](/images/book9.2/eggs-mom-documentation.png)
+![eggs-mom-documentation](/img/users-guide/mom-documentation.png)
 
 Ecco ad esempio come risulta la schermata della pagina man di eggs in formato html, consultabile anche in assenza di connessione.
 
-```
-Aggiungere schermata `eggs mom`
-```
+![mon-man-html.png](/img/users-guide/mon-man-html.png)
 
 Attenzione: per gli utenti `Arch Linux` e `Manjaro Linux`: non sono riuscito a trovare un equivalente di sensible_browser che utilizzo in Debian per individuare il browser di default installato. Se qualcuno ha un suggerimento, sarà gradito.
 
@@ -709,12 +707,13 @@ Da questo menu potete raggiungere tutti i comandi di esportazione:
 * `eggs export deb`
 * `eggs export iso`
 
-![eggs mom export](/images/book9.2/eggs-mom-export.png)
-
 ### `mom tools`
-In tools troverete, ovviamente, tutti i gli strumenti di eggs, raccolti sotto eggs:tools.
-
-![eggs mom tools](/images/book9.2/eggs-mom-tools.png)
+Raccolti sotto tools troverete, invece:
+* `eggs tools clean`
+* `eggs tools ppa`
+* `eggs tools skel`
+* `eggs tools stat`
+* `eggs tools yolk`  
 
 Potete tornare indietro da ogni menù selezionando **quit** (basta premere il tasto "q" seguito da invio).
 
@@ -722,13 +721,16 @@ Potete tornare indietro da ogni menù selezionando **quit** (basta premere il ta
 
 Naturalmente con il tempo ogni "pulcino" viene svezzato ed impara a camminare da solo e sarà più comodo immettere direttamente i comandi da terminale.
 
-A questo proprosito ricordate che eggs presenta l'autocomplete dei comandi, quindi, ad esempio digitando:
-```sudo eggs [TAB][TAB]```
+A questo proprosito ricordate che `eggs` fornisce l'autocomplete dei comandi, quindi, ad esempio digitando:
+`sudo eggs [TAB][TAB]`
 vi verranno mostrati i possibili comandi;
-```sudo eggs i [TAB][TAB]```
-vi verranno mostrati solo i comandi che iniziano per i: info ed install;
-'''sudo eggs produce --[TAB][TAB]```
-vi verranno mostrati tutti i possibili flag del comando.
+
+`sudo eggs i [TAB][TAB]`
+vi verranno mostrati solo i comandi che iniziano per i: `info` ed `install`;
+
+'sudo eggs produce --[TAB][TAB]`
+vi verranno mostrati tutti i possibili flag del comando `produce`.
+
 E così via discorrendo.
 
 ## `sudo eggs produce`
@@ -806,7 +808,7 @@ Abbiamo poi due flag per la copia completa del sistema: `--clone` e `--cryptedcl
 
 Uso spesso anche il flag `--addons` per inserire sul desktop il link per `adapt` o altri links nelle ISO realizzate.
 
-### `eggs produce --cryptedclone / --clone`
+### `eggs produce --clone / eggs produce --cryptedclone`
 
 Per molto tempo ho esitato ad aggiungere una modalità per la copia completa del sistema, non perchè fosse complicato, ma perchè temevo il caso che un utente possa inserire nella iso dei propri dati sensibili. Tuttavia, in seguito ad una discussione con un utente, al quale avrebbe fatto comodo per poter trasferire in toto i propri server, mi sono deciso ad aggiungerla prima in modalità criptata con un volume LUKS interno alla iso stessa e successivamente anche in chiaro.
 
@@ -832,19 +834,21 @@ La differenza tra l'opzione `--cryptedclone` e l'opzione `--clone` è che in que
 Anche se a prima vista, per me specialmente, questa soluzione - che è poi la più semplice - non appariva adatta, tuttavia grazie agli utenti mi sono reso conto che è invece estremamente versatile, in quanto molti customizzatori utilizzano spesso la propria home per le modifiche ed in questo modo non è necessario salvarle in `/etc/skel`.
 
 ## `eggs tools`
+
 Sono raccolti sotto tools degli strumenti accessori di eggs, non sono fondamentali, ma possono far comodo.
+```
+USAGE
+  $ eggs tools COMMAND
+
+COMMANDS
+  tools clean  clean system log, apt, etc
+  tools ppa    add/remove PPA repositories (Debian family)
+  tools skel   update skel from home configuration
+  tools stat   get statistics from sourceforge
+  tools yolk   configure eggs to install without internet
+```
 
 Abbiamo `tools clean` che esegue la pulizia del sistema cancellando la cache del gestore dei pacchetti (apt o pacman) ed esegue la rotazione dei log, `tools skel` che permette di configurare l'aspetto del desktop live e del desktop di default dei nuovi utenti, `tools yolk` - solo per Debian/Devuan/Ubuntu - che aggiorna la repository inclusa in `/usr/local/yolk` che viene utilizzata da eggs per caricare i pacchetti indispensabili all'installazione in assenza di connessione internet. 
-
-![eggs tools](/images/book9.2/eggs-mom-tools.png)
-
-## `eggs status`
-
-Mostra a video la configurazione di `eggs` e del sistema. 
-
-![eggs-info](/images/book9.2/eggs-status.png)
-
-Da notare sulla destra la presenza di bottoni rossi, che possono indicare problemi con le dipendenze, configurazione, etc.
 
 ### `sudo eggs tools clean`
 Rimuove la cache del gestore di pacchetti (apt o pacman), esegue il logrotate, etc.
@@ -861,8 +865,6 @@ Aggiunge la repository [penguins-eggs-ppa](https://github.com/pieroproietti/peng
 sudo eggs tool ppa --remove
 ```
 Rimuove la stessa.
-
-
 
 ### `sudo eggs tools skel`
 Con questo comando si ricrea la directory `/etc/skel` della nostra live. 
@@ -888,9 +890,7 @@ DESCRIPTION
 EXAMPLES
   $ eggs skel --user mauro
   desktop configuration of user mauro will get used as default
-
 ```
-
 
 ### `sudo eggs tools yolk`
 Il comando `yolk` - valido solo per Debian/Devuan/Ubuntu - crea una piccola repository locale in `/usr/local/yolk` con i pacchetti strettamente necessari ad assicurare l'installazione del sistema anche in assenza di connessione internet. 
@@ -913,6 +913,42 @@ DESCRIPTION
 EXAMPLES
   $ eggs yolk -v
 ```
+
+## `eggs status`
+
+Mostra a video la configurazione di `eggs` e del sistema. 
+
+```
+E G G S: the reproductive system of penguins
+
+
+     penguins-eggs       Perri's brewery edition        ver. 9.4.5       
+╭─────────────────╮  ╭──────────────────────────╮  ╭─────────────────────────╮
+│live     root p  │  │nest:   name:    ovariu   │  │kernel:      initrd.img  │
+│user/pa  asswd:  │  │/home/  egg-of-  m: /ho   │  │/boot/vmli   : /boot/in  │
+│sswd:     evolu  │  │eggs/   debian-  me/egg   │  │nuz-5.15.1   itrd.img-5  │
+│live/ev  tion    │  │        bullsey  s/ovar   │  │04-1-pve     .15.104-1-  │
+│olution          │  │        e-pve    ium/     │  │             pve         │
+│                 │  │                          │  │                         │
+╰─────────────────╯  ╰──────────────────────────╯  ╰─────────────────────────╯
+╭──────────────────────────────╮  ╭──────────────────────────────────────────╮
+│distro:        compatible:    │  │depende   configur  instal   uef  init:   │
+│Debian 11      Debian         │  │ncies:    ations:   ler:     i:   system  │
+│bullseye       bullseye       │  │OK        OK        GUI      OK   d       │
+╰──────────────────────────────╯  ╰──────────────────────────────────────────╯
+
+╭────────────────────────────────────────────────────────────────────────────╮
+│eggs       install your CLI iso with TUI installer krill, on GUI prefere    │
+│install   calamares                                                         │
+│eggs wardrobe build your personal system starting from cli                  │
+│                                                                            │
+│Info:  blog    https://penguins-eggs.net                                    │
+│       sources https://github.com/pieroproietti/penguins-eggs               │
+│       wardrobe https://github.com/pieroproietti/penguins-wardrobe          │
+╰────────────────────────────────────────────────────────────────────────────╯
+```
+
+Da notare sulla destra la presenza di bottoni rossi, che possono indicare problemi con le dipendenze, configurazione, etc.
 
 ## `sudo eggs update`
 
