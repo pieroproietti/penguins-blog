@@ -1042,6 +1042,8 @@ Tutte le remix create dal sottoscritto sono impostate con user live denominato `
 
 Tutte le versioni di `eggs` e le ISO realizzate dall'autore sono scaricabili da `sourgeforge.net` cercando il progetto [penguins-eggs](https://sourceforge.net/projects/penguins-eggs/files/).
 
+Trovarete: `arch`, `debian`, `devuan`, `educaandos`, `elementary`, `linuxfx`, `linuxmint`, `manjaro`, `mx-linux`, `neon`, `netrunner`, `plastilinux`, `pop-os`, `quirinux`, `rebornos`, `sodilinux`, `spirallinux`, `telos`, `ubuntu` e `waydroid`. 
+
 ## Immagini ISO realizzate da terzi
 
 Nel tempo, più di qualche distribuzione è nata o è passata ad utilizzare penguins-eggs per realizzare velocemente le proprie immagini ISO.
@@ -1078,7 +1080,7 @@ Per un uso d'ufficio posso raccomandare [UfficioZero](https://www.ufficiozero.or
 A questa lista mancano naturalmente molte altre customizzazioni - eggs è scaricato mediamente 50/100 volte a settimana da sourceforge e, sono quasi sempre nuovi utilizzatori - perchè gli aggiornamenti avvengono con i rispettivi package manager.
 
 ### Telos
-Non posso dimenticare l'amico Yannis ed il suo [TeLOS](https://sourceforge.net/projects/teloslinux/) che posso raccomandare perchè l'ho utilizzata molto anche per scrivere questa guida.
+Non posso non includere l'amico Yannis ed il suo [TeLOS](https://sourceforge.net/projects/teloslinux/) che posso raccomandare perchè l'ho utilizzato molto per scrivere una delle prime versioni di questa guida.
 
 ### NovaOS
 Devo molto a Nicklas, praticamente scrivendo su [reddit](https://www.reddit.com/r/linux/comments/11nlqlu/penguinseggs_can_turn_your_system_into_an/) ha fatto conoscere penguins-eggs ai più.
@@ -1086,7 +1088,7 @@ Devo molto a Nicklas, praticamente scrivendo su [reddit](https://www.reddit.com/
 La sua distro si chiama [NovaOS](https://github.com/NicklasVraa/NovaOS) ed è basata su [Linuxmint](https://linuxmint.com/).
 
 ### Deblinux
-Concludiamo con [Deblinux](https://sourceforge.net/projects/deblinux/) di Andrea a cui va riconosciuta una grande determinazione ed il coraggio di fidarsi di un tool all'epoca assolutamente sconosciuto.
+Concludiamo con [Deblinux](https://sourceforge.net/projects/deblinux/) di Andrea a cui va riconosciuta una grande determinazione ed il coraggio o la pazzia di fidarsi di un tool all'epoca assolutamente sconosciuto.
 
 # Supporto e segnalazioni
 
