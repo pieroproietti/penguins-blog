@@ -138,7 +138,7 @@ pnpm install
 ```
 (*) notare l'uso di **pnpm** invece del classico **npm**, ciò permette una più veloce compilazione.
 
-Fatto questo, dalla stessa directory, si potrà utilizzare eggs direttamente dai sorgenti. 
+Fatto questo, dalla stessa directory, si potrà utilizzare `eggs` direttamente dai sorgenti. 
 
 Ad esempio:
 
@@ -452,7 +452,7 @@ Non vi fate spaventare da questi pochi comandi, quelli che utilizzeremo sono ess
 
 Ogni comando può avere alcuni flag. Alcuni sono comuni a tutti i comandi: `--verbose` ed `--help`. Naturalmente `--verbose` mostrerà una descrizione delle operazioni più dettagliata delle operazioni in corso, mentre `--help` o `-h` visualizzerà una breve descrizione del comando stesso.
 
-Tra i vari comandi `produce` è quello che presenta il maggior numero di opzioni. Utilizzato senza un flag di compressine: `--standar` o `--max` userà l'algoritmo di compressione `zstd-level-1`, permettendovi così di risparmiare non poco tempo durante le fasi di sviluppo e test. Sempre in `produce` sono presenti i flag `--clone` e **--cryptedclone` che consentono di avere una copia completa del proprio sistema con i dati utente in chiaro o criptati.
+Tra i vari comandi `produce` è quello che presenta il maggior numero di opzioni. Utilizzato senza un flag di compressine: `--standar` o `--max` userà l'algoritmo di compressione `zstd-level-1`, permettendovi così di risparmiare non poco tempo durante le fasi di sviluppo e test. Sempre in `produce` sono presenti i flag `--clone` e `--cryptedclone` che consentono di avere una copia completa del proprio sistema con i dati utente in chiaro o criptati.
 
 Andiamo ad illustrare i comandi in rigoroso ordine alfabetico, per comodità dello scrivente. 
 
@@ -570,7 +570,7 @@ Utilizzate quindi `krill` solo quando è necessario ed opportuno  e, sono comunq
 
 ### Interfaccia di `krill`
 
-`krill` è stato pensato per essere il più possibile simile ad un installer GUI anche se è un installer a riga di comando. La sua realizzazione è stata possibile grazie all'utilizzo di [ink](https://github.com/vadimdemedes/ink) una libreria che porta react in ambito CLI.
+`krill` è stato pensato per essere il più possibile simile ad un installer GUI anche se è un installer a riga di comando. La sua realizzazione è stata possibile grazie all'utilizzo della libreria [ink](https://github.com/vadimdemedes/ink) una libreria che porta [react](https://react.dev/) in ambito CLI.
 
 Già dal nome, che identifica dei piccoli crostacei diffusi ai poli, prende spunto dal ben più famoso installer grafico `calamares` e ne ricalca sostanzialmente lo stesso schema visuale.
 
