@@ -1,7 +1,7 @@
 ---
 authors: pieroproietti
-slug: docusauros
-title: Docusauros
+slug: docusaurus
+title: Docusaurus
 lang: it
 ---
 import Translactions from '@site/src/components/Translactions';
