@@ -1059,13 +1059,13 @@ Esiste anche una versione Ubuntu con [Waydroid](https://waydro.id/) pre-installa
 
 `eggs` è un progetto che, al momento, consente di rimasterizzare diverse versioni di Linux:
 
-* `Arch`
+* `Arch Linux`
 * `Debian buster/bullseyes/bookworm + stretch/jessie`
 + `Devuan beowulf/chimaera`
-* `manjaro`
+* `Manjaro`
 * `Ubuntu bionic/focal/jammy`
 
-e la maggior parte delle derivate, ne cito solo alcune: deepin, linux mint, lmde 4, KDE neon, pop-os!, zorin, etc.
+e la maggior parte delle derivate, ne cito solo alcune: `deepin`, `Linuxmint`, `LMDE`, `KDE neon`, `pop-os!`, `zorin`, etc.
 
 E' evidente, che lo sviluppatore non può materialmente testare ogni release su tutte le versioni considerate.
 
@@ -1098,7 +1098,7 @@ Piero Proietti
 
 # Appendice: dipendenze di eggs
 
-## Debian/Devuan/Ubuntu
+## `Debian/Devuan/Ubuntu`
 Essenzialmente possiamo dividere i pacchetti da cui `eggs` dipende, in:
 
 ### pacchetti comuni
