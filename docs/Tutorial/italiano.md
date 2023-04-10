@@ -570,7 +570,7 @@ Utilizzate quindi `krill` solo quando è necessario ed opportuno  e, sono comunq
 
 ### Interfaccia di `krill`
 
-`krill` è stato pensato per essere il più possibile simile ad un installer GUI anche se è un installer a riga di comando. La sua realizzazione è stata possibile grazie all'utilizzo della libreria [ink](https://github.com/vadimdemedes/ink) una libreria che porta [react](https://react.dev/) in ambito CLI.
+`krill` è stato pensato per essere il più possibile simile ad un installer GUI anche se è un installer a riga di comando. La sua realizzazione è stata possibile grazie all'utilizzo della libreria [`ink`](https://github.com/vadimdemedes/ink) una libreria che porta [`react`](https://react.dev/) in ambito CLI.
 
 Già dal nome, che identifica dei piccoli crostacei diffusi ai poli, prende spunto dal ben più famoso installer grafico `calamares` e ne ricalca sostanzialmente lo stesso schema visuale.
 
