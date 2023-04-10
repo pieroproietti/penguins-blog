@@ -1044,25 +1044,53 @@ Tutte le versioni di `eggs` e le ISO realizzate dall'autore sono scaricabili da 
 
 ## Immagini ISO realizzate da terzi
 
-[BlissOS](https://blissos.org/) è stata la prima distribuzione nella quale il sistema live è stato creato utilizzando penguins-eggs.
+Nel tempo, più di qualche distribuzione è nata o è passata ad utilizzare penguins-eggs per realizzare velocemente le proprie immagini ISO.
 
-Utilizza [Waydroid](https://waydro.id/) ed è molto interessante e veloce per avere Android sul proprio PC.
+## Waydroid Linux
 
-Le versioni di sviluppo possono essere anche scaricate dalla pagina [sourceforge di penguins-eggs](https://sourceforge.net/projects/penguins-eggs/files/ISOS/waydroid/).
+Waydroid è basato su un approccio `container-based` per avviare un completo sistema Android su un regolare sistema GNU/Linux come Debina, Ubuntu, etc.
+
+[Waydroid-Linux](https://waydro.id/) è stata la prima distribuzione nella quale il sistema live è stato creato utilizzando penguins-eggs.
+
+Utilizzando dei container è molto interessante e veloce per avere Android sul proprio PC.
+
+Può essere scaricata su [Waidroid-Linux#Latest Beta](https://waydro.id/#wdlinux).
+
+![waidroid-linux](/img/users-guide/Computer_wd.png)
+
+Ulteriori versioni personali, soprattutto per sviluppatori, possono essere invece scaricate dalla pagina [sourceforge di penguins-eggs](https://sourceforge.net/projects/penguins-eggs/files/ISOS/waydroid/).
+
+## Quirinux GNU/Linux
 
 Per chi è interessato a realizzare film animati, non posso non consigliare [Quirinux](https://www.quirinux.org/) di Charlie Martinez con cui ho avuto il piacere di collaborare nella realizzazione della versione beta.
 
+![quirinux](/img/users-guide/logo-quirinux.webp)
+
 La versione quirinux-general può essere anche scaricata dalla pagina [sourceforge di penguins-eggs](https://sourceforge.net/projects/penguins-eggs/files/ISOS/quirinux/).
 
-Per un uso d'ufficio posso raccomandare [UfficioZero](https://www.ufficiozero.org/), una serie di più distribuzioni derivate da Debian, Devuan, Ubuntu e Linuxmint tutte finalizzate ad un orientamento professionale. UfficioZero da un po' di tempo non utilizza più `penguins-eggs` ma conto di riportare il buon - si fa per dire - Adriamo sulla retta via. Uno spingitore di cavalieri unico!
+## UfficioZero
 
-Mentre per un utilizzo più ludico, una versione interessante e che posso raccomandare perchè l'ho utilizza anche per scrivere queste note, è senz'altro [TeLOS](https://sourceforge.net/projects/teloslinux/) una snella distribuzione proveniente dalla Grecia.
+Per un uso d'ufficio posso raccomandare [UfficioZero](https://www.ufficiozero.org/), una serie di più distribuzioni derivate da Debian, Devuan, Ubuntu e Linuxmint tutte finalizzate ad un orientamento professionale. UfficioZero - in verità - da un po' di tempo non utilizza più `penguins-eggs` ma il periodo di collaborazione è stato piacevole e proficuo!
 
-**Nota:** Non esitate ad includere le vostre soluzioni!
+![UfficioZero](/img/users-guide/ufficiozero-logo.png)
+
+## Rimasterizzazioni di amici
+A questa lista mancano naturalmente molte altre customizzazioni - eggs è scaricato mediamente 50/100 volte a settimana da sourceforge e, sono quasi sempre nuovi utilizzatori - perchè gli aggiornamenti avvengono con i rispettivi package manager.
+
+### Telos
+Non posso dimenticare l'amico Yannis ed il suo [TeLOS](https://sourceforge.net/projects/teloslinux/) che posso raccomandare perchè l'ho utilizzata molto anche per scrivere questa guida.
+
+### NovaOS
+Devo molto a Nicklas, praticamente scrivendo su [reddit](https://www.reddit.com/r/linux/comments/11nlqlu/penguinseggs_can_turn_your_system_into_an/) ha fatto conoscere penguins-eggs ai più.
+
+La sua distro si chiama [NovaOS](https://github.com/NicklasVraa/NovaOS) ed è basata su [Linuxmint](https://linuxmint.com/).
+
+### Deblinux
+Concludiamo con [Deblinux](https://sourceforge.net/projects/deblinux/) di Andrea a cui va riconosciuta una grande determinazione ed il coraggio di fidarsi di un tool all'epoca assolutamente sconosciuto.
 
 # Supporto e segnalazioni
 
-`eggs` è un progetto che, al momento, consente di rimasterizzare diverse versioni di Linux:
+`eggs` è un progetto che consente di rimasterizzare diverse versioni di Linux:
 
 * `Arch Linux`
 * `Debian buster/bullseyes/bookworm + stretch/jessie`
@@ -1079,7 +1107,7 @@ E' perciò vitale che venga a crearsi una comunità di utenti, indipendentemente
 Potete segnalare le varie problematiche sulla pagina [issue](https://github.com/pieroproietti/penguins-eggs/issues) del progetto penguins-eggs su github.com.
 
 # Comunità
-Una comunità di utenti è fondamentale per la crescita di un progetto, creare qualcosa di versatile e pratico in fondo serve relativamente a poco se la gente non conosce il prodotto e, d'altra parte, avere un buon numero di utenti, fornisce feedback e motivazioni agli sviluppatori, migliorando quindi la qualità il progetto stesso.
+Una comunità di utenti è fondamentale per la crescita di un progetto come questo: creare qualcosa di versatile e pratico in fondo serve relativamente a poco se la gente non conosce il prodotto e - d'altra parte - avere un buon numero di utenti, fornisce feedback e le motivazioni necessarie agli sviluppatori, migliorando quindi la qualità il progetto stesso.
 
 Potete facilitare la diffusione di `eggs` e contribuire alla sua crescita in diversi modi:
 
