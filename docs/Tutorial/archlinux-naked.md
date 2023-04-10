@@ -1,7 +1,6 @@
 ---
 authors: pieroproietti
-title: Create a naked Arch
-slug: arch-naked
+title: Archlinux naked
 lang: en
 ---
 import Translactions from '@site/src/components/Translactions';
