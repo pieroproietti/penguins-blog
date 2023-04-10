@@ -192,7 +192,7 @@ COMMANDS
 
 Se avete già chiuso e riaperto la finestra del terminale, potrete incominciare ad apprezzare anche l'autocomplete. 
 
-Digitanto ```eggs``` e premento ```TAB```, vi appariranno i vari comandi disponibili:
+Digitanto `eggs` e premento `TAB`, vi appariranno i vari comandi disponibili:
 
 ```
 $ eggs 
@@ -202,8 +202,9 @@ autocomplete  dad           kill          syncfrom      version
 calamares     export        mom           syncto        wardrobe
 ```
 
-Se inserite un comando e date ```TAB``` appariranno invece i flags supportati dal comando stesso. 
-Ad esempio: comando ```eggs produce --```
+Se inserite un comando e date `TAB` appariranno invece i flags supportati dal comando stesso. 
+
+Ad esempio: comando `eggs produce --`
 
 ```
 $ eggs produce --
@@ -213,25 +214,47 @@ $ eggs produce --
 --cryptedclone   --prefix         --theme          
 ```
 
-Inoltre, come per ogni applicazione CLI che si rispetti, `eggs` è fornito di una apposita pagina `man` sempre a vostra disposizione:
-
+Come per ogni applicazione CLI che si rispetti, `eggs` è fornito di una apposita pagina `man` sempre a vostra disposizione, che possimo ottenere semplicemente con il comando: `man eggs`
 ```
-man eggs
+EGGS(1)                                                                EGGS(1)
+
+NAME
+       eggs - the reproductive system of penguins: eggs v9.4.5
+
+SYNOPSIS
+       Install Debian families (debian/devuan/ubuntu)
+
+         $ sudo dpkg -i eggs_9.4.5_amd64.deb
+
+       Install Arch families (Arch, manjaro Linux)
+
+       Arch from AUR
+
+         $ git clone https://aur.archlinux.org/penguins-eggs.git
+         $ cd penguins-eggs.git
+         $ makepkg -si
+
+       Arch from development repo
+
+         $ git clone https://github.com/pieroproietti/penguins-eggs-arch
+         $ cd penguins-eggs-arch
+         $ makepkg -si
 ```
 
 Di più: una pagina di aiuto è disponibile per tutti i comandi CLI.
-
-Tuttavia non v'è pulcino che non abbia una propria chioccia come guida! Così ho pensato di aggiungere il comando:
-
 ```
-eggs mom
+eggs produce --
+--addons         --help           --release        --verbose
+--basename       --max            --script         --yolk
+--clone          --nointeractive  --standard       
+--cryptedclone   --prefix         --theme  
 ```
 
-![eggs-mom](/img/book/eggs-mom.png)
+Tuttavia non v'è pulcino che non abbia una propria chioccia come guida! Così ho pensato di aggiungere il comando `eggs mom`.
+
+![eggs-mom](/img/users-guide/mom.png)
 
 La "mamma" ci mette a disposizione una interfaccia interattiva per accompagnarci nei primi passi.
-
----
 
 # Configurazione di `eggs`
 
@@ -471,7 +494,6 @@ Installa e/o configura l'installatore grafico `calamares`. Può essere utilizzat
 eggs calamares -h
 ```
 
-
 ## `sudo eggs cuckoo`
 `cuckoo` offre una grande versatilità per le installazioni da eseguire su una rete locale. Il comando avvia un server PXE che permette a tutte le macchine della LAN di avviarsi dalla rete; questo ci risparmia la creazione di chiavette USB di avvio e, nella maggior parte dei casi, è anche più veloce e pratico.
 Deve essere presente in rete un server dhcp reale che fornisca gli indirizzi ip. Il comando `eggs cuckoo` aggiungerà un servizio `proxy-dhcp` per fornire i dati aggiuntivi necessari al funzionamto PXE.
@@ -701,20 +723,6 @@ Attenzione: per gli utenti `Arch Linux` e `Manjaro Linux`: non sono riuscito a t
 
 Naturalmente se state operando su una stazione solo cli, avrete comunque disponibili le vostre informazioni in formato man.
 
-### `mom export`
-Da questo menu potete raggiungere tutti i comandi di esportazione:
-
-* `eggs export deb`
-* `eggs export iso`
-
-### `mom tools`
-Raccolti sotto tools troverete, invece:
-* `eggs tools clean`
-* `eggs tools ppa`
-* `eggs tools skel`
-* `eggs tools stat`
-* `eggs tools yolk`  
-
 Potete tornare indietro da ogni menù selezionando **quit** (basta premere il tasto "q" seguito da invio).
 
 `mom` rappresenta una versatile guida per l'apprendimento di `eggs` ed un sicuro riferimento. 
@@ -722,13 +730,14 @@ Potete tornare indietro da ogni menù selezionando **quit** (basta premere il ta
 Naturalmente con il tempo ogni "pulcino" viene svezzato ed impara a camminare da solo e sarà più comodo immettere direttamente i comandi da terminale.
 
 A questo proprosito ricordate che `eggs` fornisce l'autocomplete dei comandi, quindi, ad esempio digitando:
+
 `sudo eggs [TAB][TAB]`
 vi verranno mostrati i possibili comandi;
 
 `sudo eggs i [TAB][TAB]`
 vi verranno mostrati solo i comandi che iniziano per i: `info` ed `install`;
 
-'sudo eggs produce --[TAB][TAB]`
+`sudo eggs produce --[TAB][TAB]`
 vi verranno mostrati tutti i possibili flag del comando `produce`.
 
 E così via discorrendo.
@@ -744,7 +753,6 @@ Usato senza parametri produce la iso con i parametri di default che sono quelli 
 Al suo avvio `produce` esegue velocemente un controllo sulla corretta inizializzazione di `eggs`, quindi, produce la ISO.
 
 Presenta diversi flag utilizzabili:
-
 
 ```
 produce a live image from your system whithout your data
