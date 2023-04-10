@@ -813,7 +813,7 @@ Per molto tempo ho esitato ad aggiungere una modalità per la copia completa del
 
 Difatti `eggs` durante l'utilizzo normale esclude sempre dal filesystem della live l'intera cartella /home, inoltre, rimuove tutti gli account presenti sull'host, aggiungendo solo l'utente live.
 
-Con l'opzione `--cryptedclone` però, pur continuando a funzonare esattamente nello stesso modo, eggs inserisce un nuovo passo all'interno della produzione della iso e prima della sua chiusura. In questa fase viene creato un volume cryptato denominato `luks-users-data` sul quale si andranno a copiare i dati di tutti gli utenti presenti ed i loro relativi account.
+Con l'opzione `--cryptedclone` però, pur continuando a funzonare esattamente nello stesso modo, eggs inserisce un nuovo passo all'interno della produzione della ISO e prima della sua chiusura. In questa fase viene creato un volume cryptato denominato `luks-users-data` sul quale si andranno a copiare i dati di tutti gli utenti presenti ed i loro relativi account.
 
 Questo consente quindi di distribuire la propria iso con una ragionevole sicurezza.
 
@@ -963,7 +963,7 @@ Successivamente, si potrà utilizzare il più immediato `sudo eggs produce` con 
 
 Con questo comando si avvia la costruzione dell'_uovo di pinguino_ che consiste sostanzialmente in tre fasi:
 
-* creazione di una immagine del filesystem live montata con overlayfs - che è istantanea e senza alcuna copia dei dati utente - per permettere le modifiche per la realizzazione del filesystem per l'immagine;
+* creazione di una immagine del filesystem `live` montata con `overlayfs` - che è istantanea e senza alcuna copia dei dati utente - per permettere le modifiche per la realizzazione del filesystem per l'immagine;
 * compressione dell'intero filesystem in `/home/eggs/ovarium/iso/live/filesystem.squashfs`;
 * generazione dell'immagine iso dalla struttura precedente in `/home/eggs/basename-X64\_AAAA-MM-GG-HHMM.iso`
 
@@ -1150,7 +1150,8 @@ Potete comunque sempre installare `calamares` con il comando:
 * ```sudo eggs calamares --install```
 
 ## `Arch linux`
-Le dipendenze di `penguins-eggs` per `Arch Linux` possono essere rilevate dal [PKGBUILD](https://aur.archlinux.org/packages/penguins-eggs)
+Le dipendenze di `penguins-eggs` per `Arch Linux` possono essere rilevate dal [PKGBUILD](https://aur.archlinux.org/packages/penguins-eggs) su [AUR](https://aur.archlinux.org/).
 
 ## `Manjaro linux`
-Le dipendenze di `penguins-eggs` per Manjaro possono essere rilevate dal [PKGBUILD](https://gitlab.manjaro.org/packages/community/penguins-eggs/-/blob/master/PKGBUILD)
+Le dipendenze di `penguins-eggs` per Manjaro possono essere rilevate dal [PKGBUILD](https://gitlab.manjaro.org/packages/community/penguins-eggs/-/blob/master/PKGBUILD) su [gitlab Manjaro](https://gitlab.manjaro.org/explore/groups?filter=).
+
