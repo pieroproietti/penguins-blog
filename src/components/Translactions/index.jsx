@@ -10,15 +10,26 @@ export default function Translactions({path}) {
   let itLink = l1 + path + l2 + 'it' + l3 + 'it'
   let ptLink = l1 + path + l2 + 'pt' + l3 + 'pt'
   let spLink = l1 + path + l2 + 'es' + l3 + 'es'
+  let ruLink = l1 + path + l2 + 'ru' + l3 + 'ru'
+  let deLink = l1 + path + l2 + 'de' + l3 + 'de'
+  let ukLink = l1 + path + l2 + 'uk' + l3 + 'uk'
+  let bgLink = l1 + path + l2 + 'bg' + l3 + 'bg'
+  let plLink = l1 + path + l2 + 'pl' + l3 + 'pl'
+
   let origin = "https://penguins-eggs.net"+path
   return (
     <span>
       Google translate:&nbsp;
+      <a href={bgLink}>Български</a>&nbsp;
+      <a href={deLink}>Deutsch</a>&nbsp;
       <a href={enLink}>English</a>&nbsp;
       <a href={frLink}>Français</a>&nbsp;
       <a href={itLink}>italiano</a>&nbsp;
+      <a href={plLink}>Polska</a>&nbsp;
       <a href={ptLink}>Portuguese</a>&nbsp;
+      <a href={ruLink}>Русский</a>&nbsp;
       <a href={spLink}>Espagnol</a>&nbsp;
+      <a href={ukLink}>Українська</a>&nbsp;
       <br/><br/>
     </span>
   );
