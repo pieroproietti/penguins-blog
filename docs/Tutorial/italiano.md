@@ -1,5 +1,5 @@
 ---
-title: Guida utente `eggs`
+title: Guida utente
 authors: pieroproietti
 slug: italiano
 lang: it
@@ -8,7 +8,7 @@ import Translactions from '@site/src/components/Translactions';
 
 <Translactions path="docs/Tutorial/italiano"/>
 
-Aggiornamento `eggs v9.4.x`
+Manuale aggiornato a `eggs v9.4.x`
 
 # Introduzione
 
