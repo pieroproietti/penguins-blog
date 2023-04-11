@@ -61,7 +61,7 @@ Una volta installato il pacchetto, si può utilizzare il comando `eggs tools ppa
 sudo eggs tools ppa --add
 ```
 
-### Arch 
+### `Arch`
 Per Arch Linux possiamo installare penguins-eggs con yay:
 ```
 yay penguins-eggs
@@ -87,7 +87,7 @@ Installato `cbkcomp`, potete tranquillamente installare calamares utilizzando `y
 yay calamares
 ```
 
-### Manjaro 
+### `Manjaro`
 
 Su Manjaro, `penguins-eggs` è presente nella repository community di Manjaro, per cui possiamo sia installare `penguins-eggs` con i comandi:
 
