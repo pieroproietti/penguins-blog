@@ -8,7 +8,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 const config = {
   title: 'penguins\' eggs',
   tagline: 'On the road of Remastersys, Refracta, Systemback and father Knoppix!',
-  favicon: 'img/favicon.ico',
+  favicon: '/img/favicon.ico',
 
   // Set the production url of your site here
   url: 'https://penguins-eggs.net',
@@ -59,12 +59,12 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       // Replace with your project's social card
-      image: 'img/penguins-eggs-social-card.jpg',
+      image: '/img/penguins-eggs-social-card.jpg',
       navbar: {
         title: 'penguins\' eggs',
         logo: {
           alt: 'eggs',
-          src: 'img/logo.png',
+          src: '/img/logo.png',
         },
         items: [
           {
