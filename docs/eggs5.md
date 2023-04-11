@@ -63,9 +63,9 @@ eggs mom
 ```
 ![eggs-mom](/img/book/eggs-mom.png)
 
-## Arch 
+## `Arch`
 
-Su Arch potete usare yay per installare eggs:
+Su `Arch` potete usare `yay` per installare `eggs`:
 ```
 yay penguins-eggs
 ```
@@ -75,19 +75,19 @@ A questo punto la procedura è la stessa,
 sudo eggs dad -d
 ```
 
-E' possibile installare [calamares](https://aur.archlinux.org/packages/calamares-git) con yay, ma al momento c'è un problema con il package [ckbcomp](https://aur.archlinux.org/packages/ckbcomp), per aggirarlo, installate il pacchetto dal mio PKGBUILD:
+E' possibile installare [`calamares`](https://aur.archlinux.org/packages/calamares-git) con yay, ma al momento c'è un problema con il package [ckbcomp](https://aur.archlinux.org/packages/ckbcomp), per aggirarlo, installate il pacchetto dal mio PKGBUILD:
 
 ```
 git clone https://github.com/pieroproietti/penguins-eggs-pkgbuilds
 cd penguins-eggs-pkgbuilds/aur/cbkcomp
 makepkg -si
 ```
-Bene, possiamo finalmente installare Calamares con il comando:
+Bene, possiamo finalmente installare `calamares` con il comando:
 
 ```
 yay calamares
 ```
-Ci metterà un po', circa 10 minuti. Attendete, prendete un caffè o meglio un'aranciata, quindi poichè vogliamo configurare Calamares per funzionare senza richiesta di password, diamo comunque il comando:
+Ci metterà un po', circa 10 minuti. Attendete, prendete un caffè o meglio un'aranciata, quindi poichè vogliamo configurare `calamares` per funzionare senza richiesta di password, diamo comunque il comando:
 
 ```
 sudo eggs calamares --install
@@ -96,7 +96,7 @@ sudo eggs calamares --install
 Che in teoria potrebbe fare tutti e due, ma fallisce per il problema precedente.
 
 
-Bene, pronti per fare l'uovo:
+Bene, siamo pronti per fare l'uovo!
 
 ```
 sudo eggs produce 
