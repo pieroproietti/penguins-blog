@@ -23,7 +23,7 @@ export default function Translactions({path}) {
       {getLink(path, 'pl', 'pl', 'Polska')} {/* polacco */}
       {getLink(path, 'pt', 'pt', 'Portuguese')} {/* portoghese */}
       {getLink(path, 'ru', 'ru', 'Русский')} {/* russo */}
-      {getLink(path, 'sp', 'ep', 'Espagnol')} {/* spagnole */}
+      {getLink(path, 'sp', 'sp', 'Español')} {/* spagnolo */}
       {getLink(path, 'uk', 'uk', 'Українська')} {/* ucraino */}
       {getLink(path, 'zh', 'zh', '中国')} {/* cinese */}
       <br/><br/>
