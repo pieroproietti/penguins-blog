@@ -819,7 +819,7 @@ Abbiamo poi due flag per la copia completa del sistema: `--clone` e `--cryptedcl
 
 Uso spesso anche il flag `--addons` per inserire sul desktop il link per `adapt` o altri links nelle ISO realizzate.
 
-#### `eggs produce --clone / eggs produce --cryptedclone`
+#### `sudo eggs produce --clone / sudo eggs produce --cryptedclone`
 
 Per molto tempo ho esitato ad aggiungere una modalità per la copia completa del sistema, non perchè fosse complicato, ma perchè temevo il caso che un utente possa inserire nella iso dei propri dati sensibili. Tuttavia, in seguito ad una discussione con un utente, al quale avrebbe fatto comodo per poter trasferire in toto i propri server, mi sono deciso ad aggiungerla prima in modalità criptata con un volume LUKS interno alla iso stessa e successivamente anche in chiaro.
 
@@ -839,12 +839,12 @@ Riavviando il sistema, quindi, ci ritroveremo i nostri utenti ed i nostri dati p
 
 Tutto questo, è possibile attualmente solo con l'installer `krill`. Utilizzando calamares invece, non venendo effettuato il controllo sulla eventuale esistenza dei dati degli utenti e verrà installato solo il sistema, con account ed /home vergine, proprio come succede per una iso normale.
 
-#### `eggs produce --clone`
+#### `sudo eggs produce --clone`
 La differenza tra l'opzione `--cryptedclone` e l'opzione `--clone` è che in quest'ultimo caso i dati utente non saranno salvati in un volume cryptato all'interno della immagine ISO, ma verranno direttamente copiati all'interno del `filesystem.squashfs`. Questo comporta vantaggi e svantaggi: il principale vantaggio è che si hanno i propri dati e le proprie configurazioni direttamente disponibili su live, lo svantaggio è che se pubblicate la vostra immagine, tutti i dati utente saranno direttamente a disposizione di chi scarica la ISO.
 
 Anche se a prima vista, per me specialmente, questa soluzione - che è poi la più semplice - non appariva adatta, tuttavia grazie agli utenti mi sono reso conto che è invece estremamente versatile, in quanto molti customizzatori utilizzano spesso la propria home per le modifiche ed in questo modo non è necessario salvarle in `/etc/skel`.
 
-### `eggs tools`
+### `sudo eggs tools`
 
 Sono raccolti sotto tools degli strumenti accessori di eggs, non sono fondamentali, ma possono far comodo.
 ```
