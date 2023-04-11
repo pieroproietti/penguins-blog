@@ -201,7 +201,7 @@ COMMANDS
   version
 ```
 
-### `autocomple`
+### `autocomplete`
 Se avete già chiuso e riaperto la finestra del terminale, potrete incominciare ad apprezzare anche l'autocomplete. 
 
 Digitanto `eggs` e premento `TAB`, vi appariranno i vari comandi disponibili:
@@ -224,6 +224,10 @@ $ eggs produce --
 --clone          --nointeractive  --standard       
 --cryptedclone   --prefix         --theme          
 ```
+
+Introducendo, invece `eggs produce --help` otterremo la schermata di aiuto del comando.
+
+### `man`
 
 Come per ogni applicazione CLI che si rispetti, `eggs` è fornito di una apposita pagina `man` sempre a vostra disposizione, che possimo ottenere semplicemente con il comando: `man eggs`
 ```
@@ -257,11 +261,27 @@ Infine, non v'è pulcino che non abbia una propria chioccia come guida! Così ho
 
 ![eggs-mom](/img/users-guide/mom.png)
 
-La "mamma" ci mette a disposizione una interfaccia interattiva per accompagnarci nei primi passi.
+La "mamma" ci mette a disposizione una interfaccia interattiva per accompagnarci nei primi passi. Selezionando un comando lo stesso viene chiamato con l'opzione `--help`. L'esempio è ottenuto selezionando `cuckoo`:
+
+```
+PXE start with proxy-dhcp
+
+USAGE
+  $ eggs cuckoo [-h]
+
+FLAGS
+  -h, --help  Show CLI help.
+
+DESCRIPTION
+  PXE start with proxy-dhcp
+
+EXAMPLES
+  sudo eggs cuckoo
+```
 
 ## Configurazione di `eggs`
 
-Per funzionare `eggs` ha bisogno di vari pacchetti installati: i cosidetti `prerequisities`, inoltre necessita di creare ed installare le pagine di `man` di `eggs` ed installare l'autocomplete di `eggs` stesso. Tutto questo viene curato dal processo di pacchettizzazione `.deb` o `PKGBUILD` che a sua volta sarà basato sul gestore di pacchetti della distribuzione in uso: `apt` o `pacman`.
+Per funzionare `eggs` ha bisogno di vari pacchetti installati: le cosidette `dependencies`, inoltre necessita di creare ed installare le pagine di `man` di `eggs` ed installare l'autocomplete di `eggs` stesso. Tutto questo viene curato dal processo di pacchettizzazione `.deb` o `PKGBUILD` che a sua volta sarà basato sul gestore di pacchetti della distribuzione in uso: `apt` o `pacman`.
 
 Questo, tra l'altro, ha reso obsoleto il comando ```eggs config``` prima necessario che viene sostituito da ```eggs dad``` combinato, eventualmente, con il flag ```--default```
 
