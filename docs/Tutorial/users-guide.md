@@ -81,7 +81,7 @@ git clone https://github.com/pieroproietti/penguins-eggs-pkgbuilds
 cd penguins-eggs-pkgbuilds/aur/cbkcomp
 makepkg -si
 ```
-Installato cbkcomp, potete tranquillamente installare calamares utilizzando yay:
+Installato `cbkcomp`, potete tranquillamente installare calamares utilizzando `yay`:
 ```
 yay calamares
 ```
@@ -94,12 +94,12 @@ Su Manjaro, `penguins-eggs` è presente nella repository community di Manjaro, p
 sudo pamac upgrade
 sudo pamac install penguins-eggs
 ```
-Sia installare `Calamares` direttamente da `eggs` con il comando:
+Sia installare `calamares` direttamente da `eggs` con il comando:
 ```
 sudo eggs calamares --install
 ```
 
-## Pacchetti `npm`
+## `package npm`
 
 Essendo `eggs` un software sviluppato con `nodejs`, esiste la possibilità di installare `penguins-eggs` direttamente come pacchetto `npm`.
 
@@ -107,35 +107,40 @@ Però, poichè i pacchetti `npm` necessitano comunque dei pacchetti delle dipend
 
 Pertanto, attualmente i pacchetti `npm` non sono più consigliati. 
 
-E' comunque possibile installarli, curando però separatamente l'installazione delle varie dipendenze.
+E' comunque possibile installare `eggs` con `npm`, curando separatamente l'installazione delle varie [dipendenze](#appendice-dipendenze-di-eggs). 
 
 ## Utilizzo di `eggs` da codice sorgente
+Utilizzare `eggs` a partire dai sorgenti può essere estremamente utile sia per il `debug` che per modificare `eggs` stesso. Può anche garantire una maggiore sicurezza - in caso di dubbi - potrete osservare il codice che sta girando sulla vostra macchina. 
 
-Utilizzare `eggs` a partire dai sorgenti può essere estremamente utile sia per il debug che per modificare eggs stesso. Può anche garantire una maggiore sicurezza - in caso di dubbi - vedere il codice che sta girando sulla vostra macchina e, col tempo, sarete capaci di modificarlo.
+Con un po' di esperienza, potrete anche collaborare al progetto.
 
-E' necessario installare a priori i pacchetti `nodejs` ed `pnpm`. L'esempio seguente è per manjaro.
+E' necessario installare sia le [dipendenze](#appendice-dipendenze-di-eggs) che i pacchetti `nodejs` ed `pnpm`. 
+
+L'esempio seguente è riferito a Manjaro:
 
 ```
 sudo pamac install nodejs pnpm devel-base
 ```
 
-Su Debian/Devuan/Ubuntu si consiglia la versione `node16.x` dalla repository https://github.com/nodesource/distributions, mentre per installare `pnpm`, una volta installati `nodejs` ed `npm`, sarà sufficiente:
+Su Debian/Devuan/Ubuntu si consiglia la versione `node16.x` dalla repository [NodeSource](https://github.com/nodesource/distributions). 
+
+Per installare `pnpm`, una volta installati `nodejs` ed `npm`, sarà sufficiente:
 
 ```
 sudo npm i pnpm -g
 ```
 
-A questo punto andiamo a scaricare il sorgente di `penguins-eggs` con il comando:
+A questo punto possiamo scaricare il sorgente di `penguins-eggs` con il comando:
 ```
 git clone https://github.com/pieroproietti/penguins-eggs
 ```
 
-si entra nella directory penguins-eggs ```cd penguins-eggs``` e si immette:
-
+Si entra nella directory penguins-eggs ```cd penguins-eggs``` e si immette:
 ```
 pnpm install
 ```
-(*) notare l'uso di **pnpm** invece del classico **npm**, ciò permette una più veloce compilazione.
+
+(*) notare l'uso di `pnpm` invece del classico `npm`, ciò permette una più veloce compilazione.
 
 Fatto questo, dalla stessa directory, si potrà utilizzare `eggs` direttamente dai sorgenti. 
 
@@ -145,7 +150,11 @@ Ad esempio:
 sudo ./eggs produce --verbose
 ```
 
-**Nota**: _Potete constatare che l'unica differenza d'uso rispetto ai pacchetti precompilati è che dovrete indicare il path per `eggs`: `./eggs` e dovrete lanciarlo dalla directory `~/penguins-eggs`. Il funzionamento rimane tuttavia esattamente lo stesso, ma si ha il vantaggio di poter agire in maniera interattiva con il codice. Per lo sviluppo, personalmente utilizzo [code](https://code.visualstudio.com/), ma potete scegliere altri editor [atom](https://atom.io/), [sublime](https://www.sublimetext.com/), etc)_.
+**Nota**: _Potete constatare che l'unica differenza d'uso rispetto ai pacchetti precompilati è che dovrete indicare il path per avviare `eggs`: `./eggs` e dovrete lanciarlo obbligatoriamente dalla directory `~/penguins-eggs`. 
+
+Il funzionamento rimane tuttavia esattamente lo stesso, ma si ha il vantaggio di poter agire in maniera interattiva con il codice.
+
+Per lo sviluppo, personalmente utilizzo [code](https://code.visualstudio.com/), ma potete scegliere altri editor [atom](https://atom.io/), [sublime](https://www.sublimetext.com/), etc)_.
 
 # `eggs`: `autocomplete`, pagina `man` ed aiuto
 
@@ -159,7 +168,7 @@ si otterrà la seguente schermata:
 
 ```
 VERSION
-  penguins-eggs/9.4.3 linux-x64 node-v16.19.1
+  penguins-eggs/9.4.5 linux-x64 node-v16.19.1
 
 USAGE
   $ eggs [COMMAND]
@@ -201,7 +210,6 @@ analyze       cuckoo        install       status        update
 autocomplete  dad           kill          syncfrom      version
 calamares     export        mom           syncto        wardrobe
 ```
-
 Se inserite un comando e date `TAB` appariranno invece i flags supportati dal comando stesso. 
 
 Ad esempio: comando `eggs produce --`
@@ -241,16 +249,7 @@ SYNOPSIS
          $ makepkg -si
 ```
 
-Di più: una pagina di aiuto è disponibile per tutti i comandi CLI.
-```
-eggs produce --
---addons         --help           --release        --verbose
---basename       --max            --script         --yolk
---clone          --nointeractive  --standard       
---cryptedclone   --prefix         --theme  
-```
-
-Tuttavia non v'è pulcino che non abbia una propria chioccia come guida! Così ho pensato di aggiungere il comando `eggs mom`.
+Infine, non v'è pulcino che non abbia una propria chioccia come guida! Così ho pensato di introdurre il comando `eggs mom`.
 
 ![eggs-mom](/img/users-guide/mom.png)
 
