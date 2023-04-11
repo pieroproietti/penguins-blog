@@ -9,17 +9,9 @@ import Translactions from '@site/src/components/Translactions';
 <Translactions />
 
 
-```
-<!-- Begin SF Tag -->
-<div class="sf-root" data-id="2912322" data-badge="oss-community-choice-black" data-metadata="achievement=oss-community-choice" style="width:125px">
-    <a href="https://sourceforge.net/projects/penguins-eggs/" target="_blank">Penguins' eggs</a>
-</div>
-<script>(function () {var sc=document.createElement('script');sc.async=true;sc.src='https://b.sf-syn.com/badge_js?sf_id=2912322';var p=document.getElementsByTagName('script')[0];p.parentNode.insertBefore(sc, p);})();
-</script>
-<!-- End SF Tag -->
-```
+# With some surprise eggs received the badge for **10,000** downloads!
 
-With some surprise eggs received the badge for **10,000** downloads!
+![community-choice](/img/blog/2022-10-18/oss-community-choice-black.svg)
 
 
 Hi Piero Proietti,
