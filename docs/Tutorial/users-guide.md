@@ -227,7 +227,7 @@ $ eggs produce --
 
 Introducendo, invece `eggs produce --help` otterremo la schermata di aiuto del comando.
 
-### `man`
+### `man eggs`
 
 Come per ogni applicazione CLI che si rispetti, `eggs` è fornito di una apposita pagina `man` sempre a vostra disposizione, che possimo ottenere semplicemente con il comando: `man eggs`
 ```
@@ -251,8 +251,8 @@ SYNOPSIS
 
        Arch from development repo
 
-         $ git clone https://github.com/pieroproietti/penguins-eggs-arch
-         $ cd penguins-eggs-arch
+         $ git clone https://github.com/pieroproietti/penguins-eggs-pkgbuilds
+         $ cd penguins-eggs-pkgbuilds/aur/penguins-eggs/
          $ makepkg -si
 ```
 
