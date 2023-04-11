@@ -38,7 +38,8 @@ Abbiamo diverse possibilità per l'installazione di `penguins-eggs`:
 
 Per la maggior parte degli utenti l'installazione del pacchetto precompilato è quella più indicata.
 
-### Pacchetti .deb (Debian/Devuan/Ubuntu)
+### Pacchetti .deb 
+I pacchetti .deb sono disponibili per tutte le distribuzioni originali e deridate da: `Debian`, `Devuan` ed `Ubuntu`.
 
 Se non desiderate includere penguins-eggs-ppa fra le repository del vostro sistema, potete semplicemente scaricare l'ultima versione di eggs dal sito di [sourceforge](https://sourceforge.net/projects/penguins-eggs/files/DEBS/) ed installarla con il comando:
 
@@ -86,7 +87,7 @@ Installato `cbkcomp`, potete tranquillamente installare calamares utilizzando `y
 yay calamares
 ```
 
-#### Manjaro 
+### Manjaro 
 
 Su Manjaro, `penguins-eggs` è presente nella repository community di Manjaro, per cui possiamo sia installare `penguins-eggs` con i comandi:
 
@@ -109,7 +110,7 @@ Pertanto, attualmente i pacchetti `npm` non sono più consigliati.
 
 E' comunque possibile installare `eggs` con `npm`, curando separatamente l'installazione delle varie [dipendenze](#dependencies). 
 
-### Utilizzo di `eggs` da codice sorgente
+## Utilizzo di `eggs` da codice sorgente
 Utilizzare `eggs` a partire dai sorgenti può essere estremamente utile sia per il `debug` che per modificare `eggs` stesso. Può anche garantire una maggiore sicurezza - in caso di dubbi - potrete osservare il codice che sta girando sulla vostra macchina. 
 
 Con un po' di esperienza, potrete anche collaborare al progetto.
@@ -156,7 +157,9 @@ Il funzionamento rimane tuttavia esattamente lo stesso, ma si ha il vantaggio di
 
 Per lo sviluppo, personalmente utilizzo [code](https://code.visualstudio.com/), ma potete scegliere altri editor [atom](https://atom.io/), [sublime](https://www.sublimetext.com/), etc)_.
 
-## `bash autocomplete, man and help`
+## La praticità di una applicazione CLI
+
+### `help`
 
 Una volta installato il pacchetto disporremo, sul nostro sistema, di un nuovo comando: 
 
@@ -198,7 +201,7 @@ COMMANDS
   version
 ```
 
-
+### `autocomple`
 Se avete già chiuso e riaperto la finestra del terminale, potrete incominciare ad apprezzare anche l'autocomplete. 
 
 Digitanto `eggs` e premento `TAB`, vi appariranno i vari comandi disponibili:
@@ -249,6 +252,7 @@ SYNOPSIS
          $ makepkg -si
 ```
 
+### `mom`
 Infine, non v'è pulcino che non abbia una propria chioccia come guida! Così ho pensato di introdurre il comando `eggs mom`.
 
 ![eggs-mom](/img/users-guide/mom.png)
@@ -420,7 +424,7 @@ filterDeb: eggs_9.*.*_
 
 
 
-## `sudo dad --default`
+### `sudo dad --default`
 Come ogni pulcino non ha un solo genitore, oltre alla "mamma" non poteva mancare il "papà"! 
 
 Avete delle difficoltà ad editare i file di configurazione di eggs? 
@@ -1028,14 +1032,12 @@ Una sola raccomandazione. Normalmente si utilizza più volte questo comando sull
 _Tenendo pure presente che non esiste più il limite delle dimensioni delle immagini iso a 4 GB, la soluzione di utilizzare sempre lz4 potrebbe rivelarsi doppiamente vantaggiosa, soprattutto in caso  di utilizzo con le macchine virtuali che  - quasi sempre - leggono direttamente  il file immagine su disco fisso invece di un reale DVD.  Inoltre, tutti i principali programmi per la creazione di chiavette avviabili  leggono i file iso._ 
 
 ---
-## Immagini ISO prodotte con `eggs`
+## Immagini ISO
 Non è mio scopo quello di realizzare una nuova distribuzione Linux, preferisco piuttosto costruire e mantenere il pacchetto e supportare chi - con passione - si occupa di tale attività.
 
 Però anche qua vale il detto: nasce prima l'uovo o la gallina? 
 
 E così, alcune remix le faccio comunque e continuo - impunentemente - a proporle.
-
-### Immagini realizzate dall'autore
 
 Sono qui riportate una serie di remix realizzate da me stesso e create con Penguin's eggs. 
 
@@ -1047,7 +1049,7 @@ Amando però sia l'interfaccia Cinnamon che la distribuzione Linuxmint, sovente 
 
 Però preferisco lasciare questo compito agli appassionati che su sulla customizzazione possono concentrare il proprio impegno. Considerate pure le ISO da me rilasciate come semplici esempi piuttosto che come sistemi finiti.
 
-#### Immagini `naked`
+### Immagini `naked`
 Sono ottenute da una installazione minimale e senza interfaccia grafica. Solo i pacchetti di base e poco altro, un netinstall per intenderci. 
 
 Però una versione `naked` contiene comunque il minimo indispensabile per la riproduzione.
@@ -1087,11 +1089,11 @@ Tutte le versioni di `eggs` e le ISO realizzate dall'autore sono scaricabili da 
 
 Trovarete: `arch`, `debian`, `devuan`, `educaandos`, `elementary`, `linuxfx`, `linuxmint`, `manjaro`, `mx-linux`, `neon`, `netrunner`, `plastilinux`, `pop-os`, `quirinux`, `rebornos`, `sodilinux`, `spirallinux`, `telos`, `ubuntu` e `waydroid`. 
 
-## Immagini ISO realizzate da terzi
+## Immagini ISO di terze parti
 
 Nel tempo, più di qualche distribuzione è nata o è passata ad utilizzare penguins-eggs per realizzare velocemente le proprie immagini ISO.
 
-### Waydroid Linux
+### `Waydroid Linux`
 
 Waydroid è basato su un approccio `container-based` per avviare un completo sistema Android su un regolare sistema GNU/Linux come Debina, Ubuntu, etc.
 
@@ -1105,7 +1107,7 @@ Può essere scaricata su [Waidroid-Linux#Latest Beta](https://waydro.id/#wdlinux
 
 Ulteriori versioni personali, soprattutto per sviluppatori, possono essere invece scaricate dalla pagina [sourceforge di penguins-eggs](https://sourceforge.net/projects/penguins-eggs/files/ISOS/waydroid/).
 
-### Quirinux GNU/Linux
+### `Quirinux GNU/Linux`
 
 Per chi è interessato a realizzare film animati, non posso non consigliare [Quirinux](https://www.quirinux.org/) di Charlie Martinez con cui ho avuto il piacere di collaborare nella realizzazione della versione beta.
 
@@ -1113,7 +1115,7 @@ Per chi è interessato a realizzare film animati, non posso non consigliare [Qui
 
 La versione quirinux-general può essere anche scaricata dalla pagina [sourceforge di penguins-eggs](https://sourceforge.net/projects/penguins-eggs/files/ISOS/quirinux/).
 
-### UfficioZero
+### `UfficioZero`
 
 Per un uso d'ufficio posso raccomandare [UfficioZero](https://www.ufficiozero.org/), una serie di più distribuzioni derivate da Debian, Devuan, Ubuntu e Linuxmint tutte finalizzate ad un orientamento professionale. UfficioZero - in verità - da un po' di tempo non utilizza più `penguins-eggs` ma il periodo di collaborazione è stato piacevole e proficuo!
 
@@ -1209,7 +1211,7 @@ A seconda della architettura sulla quale `eggs` è installato verranno seleziona
  * `syslinux-efi`:  armel / amd64;
  * `ipxe`: armel / amd64;
 
-### pacchetti dipendenti dalla versione
+#### pacchetti dipendenti dalla versione
 Questi pacchetti sono specifici della versione in uso. si noti che mentre è relativamente semplice cambiare il nome della distribuzione, non è affatto lo stesso per quanto riguarda la versione che è univoca.
 
 Le versioni gestite da `eggs` sono: `buster`, `bullseye`, `beowulf`, `chimaera`, `daedalus`, `bionic`, `focal`, `jammy`.
@@ -1221,7 +1223,7 @@ Per alcune distribuzioni come linuxmint, ufficiozero ed altre che pur essendo de
  * `live-config-sysvinit: beowulf`
  * `open-infrastructure-system-config: bionic`
 
-##### pacchetti dipendenti dal tipo di init
+#### pacchetti dipendenti dal tipo di init
 Abbiamo bisogno di questo tipo di pacchetti, perchè alcune derivate di Debian buster - principalmente MX Linux - utilizzano sysvinit come init al posto di systemd anche se sono contraddistinte dalla stessa versione: buster.
 
  * `live-config-sysvinit sysvinit`
