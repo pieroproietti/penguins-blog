@@ -1,5 +1,5 @@
 ---
-title: User's guide moved to...
+title: Users' guide moved
 authors: pieroproietti
 lang: en
 ---
@@ -7,4 +7,4 @@ import Translactions from '@site/src/components/Translactions';
 
 <Translactions />
 
-# Please visit [User's guide](/docs/Tutorial/users-guide)
+# Please visit [Users' guide](/docs/Tutorial/users-guide)

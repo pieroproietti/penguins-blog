@@ -1,5 +1,5 @@
 ---
-title: User's guide
+title: Users' guide
 authors: pieroproietti
 lang: it
 ---
