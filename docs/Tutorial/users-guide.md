@@ -287,9 +287,9 @@ Questo, tra l'altro, ha reso obsoleto il comando ```eggs config``` prima necessa
 
 Segnalo la presenza in `/etc/penguins-eggs.d` di tre differenti file di configurazione che vengono generati automaticamente durante l'installazione.
 
-* ```/penguins-eggs.d/eggs.yaml``` (configurazioni generali di eggs)
-* ```/penguins-eggs.d/krill.yaml``` (configurazioni per installazione unattended)
-* ```/penguins-eggs.d/tools.yaml``` (principalmente per sviluppatori)
+* `eggs.yaml` (configurazioni generali di eggs)
+* `krill.yaml` (configurazioni per installazione unattended)
+* `/tools.yaml` (principalmente per sviluppatori)
 
 ### `eggs.yaml`
 
