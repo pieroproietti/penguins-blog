@@ -1115,7 +1115,7 @@ Nel tempo, più di qualche distribuzione è nata o è passata ad utilizzare peng
 
 ### `Waydroid Linux`
 
-Waydroid è basato su un approccio `container-based` per avviare un completo sistema Android su un regolare sistema GNU/Linux come Debina, Ubuntu, etc.
+Waydroid è basato su un approccio `container-based` per avviare un completo sistema Android su un regolare sistema GNU/Linux come Debian, Ubuntu, etc.
 
 [Waydroid-Linux](https://waydro.id/) è stata la prima distribuzione nella quale il sistema live è stato creato utilizzando penguins-eggs.
 
@@ -1125,7 +1125,7 @@ Può essere scaricata su [Waidroid-Linux#Latest Beta](https://waydro.id/#wdlinux
 
 ![waidroid-linux](/img/users-guide/Computer_wd.png)
 
-Ulteriori versioni personali, soprattutto per sviluppatori, possono essere invece scaricate dalla pagina [sourceforge di penguins-eggs](https://sourceforge.net/projects/penguins-eggs/files/ISOS/waydroid/).
+Ulteriori versioni personali - soprattutto per sviluppatori - possono essere invece scaricate dalla pagina [sourceforge di penguins-eggs](https://sourceforge.net/projects/penguins-eggs/files/ISOS/waydroid/).
 
 ### `Quirinux GNU/Linux`
 
