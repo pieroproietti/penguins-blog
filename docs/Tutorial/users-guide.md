@@ -985,6 +985,129 @@ Da notare sulla destra la presenza di bottoni rossi, che possono indicare proble
 
 Esegue l'aggiornamento di `eggs`, è un comando che è rimasto poichè spesso, durante lo sviluppo devo aggiornare eggs dalla rete locale, per gli utenti finali è senz'altro opportuno utilizzare il gestore di pacchetti della propria distribuzione.
 
+### `eggs version`
+Mostra la versione di eggs e del pacchetto node.
+
+```
+USAGE
+  $ eggs version [--json] [--verbose]
+
+FLAGS
+  --verbose  Show additional information about the CLI.
+
+GLOBAL FLAGS
+  --json  Format output as json.
+
+FLAG DESCRIPTIONS
+  --verbose  Show additional information about the CLI.
+
+    Additionally shows the architecture, node version, operating system, and versions of plugins that the CLI is using.
+```
+
+_See code: [@oclif/plugin-version](https://github.com/oclif/plugin-version/blob/v1.1.4/src/commands/version.ts)_
+
+### `eggs wardrobe get [REPO]`
+Scarica il `wardrobe` dalla repository indicata in `REPO`, se non viene fornito alcun parametro, viene utilizzato il [penguins-wardrobe](https://github.com/pieroproietti/penguins-wardrobe).
+
+```
+USAGE
+  $ eggs wardrobe get [REPO] [-h] [-v]
+
+ARGUMENTS
+  REPO  repository to get
+
+FLAGS
+  -h, --help     Show CLI help.
+  -v, --verbose
+
+DESCRIPTION
+  get warorobe
+
+EXAMPLES
+  $ eggs wardrobe get
+
+  $ eggs wardrobe get your-wardrobe
+```
+
+### `eggs wardrobe list [WARDROBE]`
+Elenca i `costume` e gli `accessories` disponibili nel `WARDROBE` utilizzato.
+
+```
+USAGE
+  $ eggs wardrobe list [WARDROBE] [-h] [-v]
+
+ARGUMENTS
+  WARDROBE  wardrobe
+
+FLAGS
+  -h, --help     Show CLI help.
+  -v, --verbose
+
+DESCRIPTION
+  list costumes and accessoires in wardrobe
+
+EXAMPLES
+  $ eggs wardrobe list
+
+  $ eggs wardrobe list your-wardrobe
+```
+
+### `eggs wardrobe show [COSTUME]`
+Stampa a video il contenuto di `index.yaml` del `COSTUME`
+
+```
+USAGE
+  $ eggs wardrobe show [COSTUME] [-h] [-j] [-v] [-w <value>]
+
+ARGUMENTS
+  COSTUME  costume
+
+FLAGS
+  -h, --help              Show CLI help.
+  -j, --json              output JSON
+  -v, --verbose
+  -w, --wardrobe=<value>  wardrobe
+
+DESCRIPTION
+  show costumes/accessories in wardrobe
+
+EXAMPLES
+  $ eggs wardrobe show colibri
+
+  $ eggs wardrobe show accessories/firmwares
+
+  $ eggs wardrobe show accessories/
+```
+
+### `eggs wardrobe wear [COSTUME]`
+Indossa, per intendersi installa i pacchetti e le componenti del COSTUME indicato.
+
+```
+USAGE
+  $ eggs wardrobe wear [COSTUME] [-h] [-a] [-f] [-s] [-v] [-w <value>]
+
+ARGUMENTS
+  COSTUME  costume
+
+FLAGS
+  -a, --no_accessories    not install accessories
+  -f, --no_firmwares      not install firmwares
+  -h, --help              Show CLI help.
+  -s, --silent
+  -v, --verbose
+  -w, --wardrobe=<value>  wardrobe
+
+DESCRIPTION
+  wear costume/accessories from wardrobe
+
+EXAMPLES
+  sudo eggs wardrobe wear duck
+
+  sudo eggs wardrobe wear accessories/firmwares
+
+  sudo eggs wardrobe wear wagtail/waydroid
+```
+
 ## Creazione di una nostra remix
 La creazione di una nostra remix è un processo che richiede pazienza e passione ma può darci grandi soddisfazioni ed in molti casi, farci risparmiare tempo e fatica.
 
