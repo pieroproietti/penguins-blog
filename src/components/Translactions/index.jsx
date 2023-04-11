@@ -16,7 +16,7 @@ export default function Translactions({path}) {
     <span>
       {getLink('Deutsch', 'de', 'de', path)}
       {getLink('English', 'en', 'en', path )}
-      {getLink('Español', 'sp', 'sp', path)} {/* spagnolo */}
+      {getLink('Español', 'es', 'es', path)} {/* spagnolo */}
       {getLink('Français', 'fr', 'fr',path)}
       {getLink('Italiano', 'it', 'it', path)}
       {getLink('Polska', 'pl', 'pl', path)} {/* polacco */}
