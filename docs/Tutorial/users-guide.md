@@ -1181,24 +1181,31 @@ Piero Proietti
 Essenzialmente possiamo dividere i pacchetti da cui `eggs` dipende, in:
 
 ### pacchetti comuni
-Questi pacchetto sono i prerequisiti di `eggs` per tutte le versioni installate.
+Questi pacchetto sono i prerequisiti di `eggs` per tutte le versioni installate:
+
+ * `coreutils`
  * `cryptsetup`
+ * `curl`
  * `dosfstools`
  * `dpkg-dev`
+ * `git`
  * `isolinux`
+ * `jq`
  * `live-boot`
  * `live-boot-initramfs`
+ * `lsb-release`
  * `lvm2`
- * `net-tools`
  * `parted`
  * `pxelinux`
  * `rsync`
+ * `sshfs`
  * `squashfs-tools`
  * `whois`
  * `xorriso`
 
 ### pacchetti dipendenti dalla architettura
 A seconda della architettura sulla quale `eggs` è installato verranno selezionati differenti pacchetti. Le architetture possono essere: i386, amd64, armel ed arm64:
+
  * `syslinux`:  i386 / amd64;
  * `syslinux-efi`:  armel / amd64;
  * `ipxe`: armel / amd64;
@@ -1206,12 +1213,12 @@ A seconda della architettura sulla quale `eggs` è installato verranno seleziona
 ### pacchetti dipendenti dalla versione
 Questi pacchetti sono specifici della versione in uso. si noti che mentre è relativamente semplice cambiare il nome della distribuzione, non è affatto lo stesso per quanto riguarda la versione che è univoca.
 
-Le versioni gestite da `eggs` sono: jessie, stretch, buster, bullsyes, bionic, focal, hirsute e beowulf.
+Le versioni gestite da `eggs` sono: `buster`, `bullseye`, `beowulf`, `chimaera`, `daedalus`, `bionic`, `focal`, `jammy`.
 
 Per alcune distribuzioni come linuxmint, ufficiozero ed altre che pur essendo delle derivate utilizzano dei nomi di versione diversi, sono ricondotte alla versione originale, così ad esempio linuxmint uma viene configurato come Ubuntu focal, mentre linuxmint tricia viene configurato come Ubuntu bionic.
 
- * `live-config: jessie, stretch, buster, bullseye, focal, groovy, hirsute`
- * `live-config-systemd: jessie, stretch, buster, bullseye, focal, groovy, hirsute`
+ * `live-config: jessie, stretch, buster, bullseye, focal, jammy`
+ * `live-config-systemd: jessie, stretch, buster, bullseye, focal, jammy`
  * `live-config-sysvinit: beowulf`
  * `open-infrastructure-system-config: bionic`
 
