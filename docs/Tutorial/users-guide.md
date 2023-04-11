@@ -9,7 +9,7 @@ import Translactions from '@site/src/components/Translactions';
 
 Manuale aggiornato a `eggs v9.4.x`
 
-# Introduzione
+## Introduzione
 
 ![Un sistema riproduttivo per pinguini!](/images/manjaro-uefi-booting.png)
 
@@ -25,7 +25,7 @@ Immaginai un processo di produzione dell'uovo, denominato produce, l'operazione 
 
 Prima o poi, trattandosi di un uovo, troverò anche il modo di implementare un server PXE che lo distribuisca attraverso la rete locale, al momento oltre all'intenzione c'è il nome e non poteva essere che `cuckoo`, dal comportamento del cuculo che fa covare le proprie uova da altri.
 
-# Installazione
+## Installazione
 
 Prima di cominciare a produrre le "uova" occorre fornirsi di un sistema riproduttivo. 
 
@@ -38,7 +38,7 @@ Abbiamo diverse possibilità per l'installazione di `penguins-eggs`:
 
 Per la maggior parte degli utenti l'installazione del pacchetto precompilato è quella più indicata.
 
-## Pacchetti .deb (Debian/Devuan/Ubuntu)
+### Pacchetti .deb (Debian/Devuan/Ubuntu)
 
 Se non desiderate includere penguins-eggs-ppa fra le repository del vostro sistema, potete semplicemente scaricare l'ultima versione di eggs dal sito di [sourceforge](https://sourceforge.net/projects/penguins-eggs/files/DEBS/) ed installarla con il comando:
 
@@ -54,13 +54,13 @@ sudo apt install -f
 
 Naturalmente se sul vostro sistena è presente ```gdebi```, potete tranquillamente effettuare l'installazione in modalità grafica.
 
-Una volta installato il pacchetto, si può utilizzare il comando **eggs tools ppa --add** per aggiungere la repository **penguins-eggs-ppa** ed ottenere tutti gli aggiornmenti di eggs tramite il comando ```apt```. Per fare questo è sufficiente dare il comando:
+Una volta installato il pacchetto, si può utilizzare il comando `eggs tools ppa --add` per aggiungere la repository `penguins-eggs-ppa` ed ottenere tutti gli aggiornmenti di eggs tramite il comando `apt`. Per fare questo è sufficiente dare il comando:
 
 ```
 sudo eggs tools ppa --add
 ```
 
-## Arch 
+### Arch 
 Per Arch Linux possiamo installare penguins-eggs con yay:
 ```
 yay penguins-eggs
@@ -72,7 +72,7 @@ cd penguins-eggs-aur
 pkgbuild -si
 ```
 
-### `Calamares on Arch Linux`
+#### `Calamares on Arch Linux`
 E' possibile installare [`calamares`](https://aur.archlinux.org/packages/calamares-git) con yay, 
 tuttavia - al momento - c'è un problema sul pacchetto [`ckbcomp`](https://aur.archlinux.org/packages/ckbcomp), 
 così per installare `Calamares`, dovete fare questo piccolo workaround:
@@ -86,7 +86,7 @@ Installato `cbkcomp`, potete tranquillamente installare calamares utilizzando `y
 yay calamares
 ```
 
-### Manjaro 
+#### Manjaro 
 
 Su Manjaro, `penguins-eggs` è presente nella repository community di Manjaro, per cui possiamo sia installare `penguins-eggs` con i comandi:
 
@@ -99,7 +99,7 @@ Sia installare `calamares` direttamente da `eggs` con il comando:
 sudo eggs calamares --install
 ```
 
-## `package npm`
+### `package npm`
 
 Essendo `eggs` un software sviluppato con `nodejs`, esiste la possibilità di installare `penguins-eggs` direttamente come pacchetto `npm`.
 
@@ -107,14 +107,14 @@ Però, poichè i pacchetti `npm` necessitano comunque dei pacchetti delle dipend
 
 Pertanto, attualmente i pacchetti `npm` non sono più consigliati. 
 
-E' comunque possibile installare `eggs` con `npm`, curando separatamente l'installazione delle varie [dipendenze](#appendice-dipendenze-di-eggs). 
+E' comunque possibile installare `eggs` con `npm`, curando separatamente l'installazione delle varie [dipendenze](#dependencies). 
 
-## Utilizzo di `eggs` da codice sorgente
+### Utilizzo di `eggs` da codice sorgente
 Utilizzare `eggs` a partire dai sorgenti può essere estremamente utile sia per il `debug` che per modificare `eggs` stesso. Può anche garantire una maggiore sicurezza - in caso di dubbi - potrete osservare il codice che sta girando sulla vostra macchina. 
 
 Con un po' di esperienza, potrete anche collaborare al progetto.
 
-E' necessario installare sia le [dipendenze](#appendice-dipendenze-di-eggs) che i pacchetti `nodejs` ed `pnpm`. 
+E' necessario installare sia le [dipendenze](#dependencies) che i pacchetti `nodejs` ed `pnpm`. 
 
 L'esempio seguente è riferito a Manjaro:
 
@@ -156,7 +156,7 @@ Il funzionamento rimane tuttavia esattamente lo stesso, ma si ha il vantaggio di
 
 Per lo sviluppo, personalmente utilizzo [code](https://code.visualstudio.com/), ma potete scegliere altri editor [atom](https://atom.io/), [sublime](https://www.sublimetext.com/), etc)_.
 
-# `eggs`: `autocomplete`, pagina `man` ed aiuto
+## `bash autocomplete, man and help`
 
 Una volta installato il pacchetto disporremo, sul nostro sistema, di un nuovo comando: 
 
@@ -255,7 +255,7 @@ Infine, non v'è pulcino che non abbia una propria chioccia come guida! Così ho
 
 La "mamma" ci mette a disposizione una interfaccia interattiva per accompagnarci nei primi passi.
 
-# Configurazione di `eggs`
+## Configurazione di `eggs`
 
 Per funzionare `eggs` ha bisogno di vari pacchetti installati: i cosidetti `prerequisities`, inoltre necessita di creare ed installare le pagine di `man` di `eggs` ed installare l'autocomplete di `eggs` stesso. Tutto questo viene curato dal processo di pacchettizzazione `.deb` o `PKGBUILD` che a sua volta sarà basato sul gestore di pacchetti della distribuzione in uso: `apt` o `pacman`.
 
@@ -267,7 +267,7 @@ Segnalo la presenza in `/etc/penguins-eggs.d` di tre differenti file di configur
 * ```/penguins-eggs.d/krill.yaml``` (configurazioni per installazione unattended)
 * ```/penguins-eggs.d/tools.yaml``` (principalmente per sviluppatori)
 
-## `eggs.yaml`
+### `eggs.yaml`
 
 `eggs.yaml` contiene le variabili principali utilizzate durante il processo di rimasterizzazione.
 
@@ -343,7 +343,7 @@ vmlinuz: ''
 initrd_img: ''
 ```
 
-## `krill.yaml`
+### `krill.yaml`
 `krill.yaml` contiene i valori di default o i valori per l'installazione unattended con ```eggs install -u```
 
 ```
@@ -388,7 +388,7 @@ dns: ''
 ```
 
 
-## `tools.yaml`
+### `tools.yaml`
 Lo scopo delle variabili di `tools.yaml` è quello di aiutare lo sviluppo di `eggs`, in sostanza mi sono molto utili per sviluppare, esportare pacchetti ed ISO ed eseguire aggiornamenti di `eggs` direttamente dalla rete locale. Generalmente il contenuto di questo file non viene utilizzato durante il normale funzionamento di `eggs`.
 
 ```
@@ -440,7 +440,7 @@ Questo comando crea o ricrea la configurazione di eggs nella directory ```/etc/p
 ![eggs-dad-d](/images/book9.2/eggs-status.png)
 
 
-# I comandi di `eggs`
+## I comandi di `eggs`
 `eggs` necessita dei diritti di root, quindi - tranne per `eggs mom`, `eggs info` ed i comandi di esportazione - DEVE essere chiamato preceduto da `sudo`
 
 ```
@@ -479,21 +479,21 @@ Andiamo ad illustrare i comandi in rigoroso ordine alfabetico, per comodità del
 
 Tenete presente che i comandi che utilizzerete saranno soprattutto: `produce` e `kill`.
 
-## `eggs adapt`
+### `eggs adapt`
 
 Adatta il video alle alla grandezza della finestra di una macchina virtuale. Lo trovo molto comodo per ridimensionare le macchine virtuali con interfacce grafiche diverse da cinnamon, gnome3, e KDE per la quali non è necessario. In pratica `eggs` richiama `xrandr` per adattare lo schermo alla risoluzione corrente. Non è strettamente relato alla produzione di ISO, è però comodissimo lavorando con le macchine virtuali.
 
-## `eggs autocomplete`
+### `eggs autocomplete`
 Produce i file ```eggs.bash``` ed ```_eggs``` per il funzionamento dell'autocomplete di `bash` e `zsh`. Normalmente non è necessario utilizzarlo, perchè viene automaticamente configurato in fase di installazione. Se l'autocomplete non vi funziona, la ragione sarà probabilmente nella mancanza del pacchetto ```bash-completion``` o ```zsh-completions```.
 
-## `sudo eggs calamares`
+### `sudo eggs calamares`
 Installa e/o configura l'installatore grafico `calamares`. Può essere utilizzato anche per configurare una ISO che - prodotta senza `calamares` - la si voglia installare con esso. Basterà dare il comando: `sudo eggs calamares --install` e si avrà sia l'installazione del pacchetto, la sua configurazione e la configurazione di `calamares` per l'utilizzo senza necessità di inserire la password.
 
 ```
 eggs calamares -h
 ```
 
-## `sudo eggs cuckoo`
+### `sudo eggs cuckoo`
 `cuckoo` offre una grande versatilità per le installazioni da eseguire su una rete locale. Il comando avvia un server PXE che permette a tutte le macchine della LAN di avviarsi dalla rete; questo ci risparmia la creazione di chiavette USB di avvio e, nella maggior parte dei casi, è anche più veloce e pratico.
 Deve essere presente in rete un server dhcp reale che fornisca gli indirizzi ip. Il comando `eggs cuckoo` aggiungerà un servizio `proxy-dhcp` per fornire i dati aggiuntivi necessari al funzionamto PXE.
 
@@ -502,7 +502,7 @@ Tutto ciò che occorre fare è avviare un computer in rete - anche da live - ed 
 
 A questo punto sarà possibile avviare le varie macchine da installare direttamente tramite il boot da rete locale. Il metodo funziona sia su computer con BIOS standard che su macchine UEFI.
 
-## `sudo eggs dad`
+### `sudo eggs dad`
 Chiedi a papà come configurare `eggs` e generare la tua ISO!
 
 Questo comando riassume in forma essenziale, i task necessari a produrre una ISO del sistema con `eggs`. 
@@ -520,7 +520,7 @@ Daddy, what else did you leave for me?
 - distro template install...
 ```
 
-## `eggs export`
+### `eggs export`
 Questo è un comando che, alla stragrande maggioranza degli utenti, non serve! 
 
 Non fa altro che generare a partire dai parametri di configurazione, quali ISO cancellare ed esportare nell'host. Mi spiego, durante la scrittura di `eggs`, sono costretto a generare una moltitudine di immagini ISO a partire da macchine virtuali ed, ad esportarle sulla mia stazione di lavoro. Per farlo utilizzo il comando scp, tuttavia digitare continuamente il comando e cancellare tutte le precedenti versioni di ISO presenti, è - diciamo così - fastidioso. Allo scopo, ho ideato questo comando.
@@ -546,13 +546,13 @@ ssh root@192.168.1.2 rm -rf /home/artisan/sourceforge/iso/egg-of-debian-bullseye
 root@192.168.1.2's password: 
 ```
 
-### `eggs export deb`
+#### `eggs export deb`
 Esporta i pacchetti deb. Notate che questo comando è utilizzato esclusivamente per lo sviluppo di eggs.
 
-### `eggs export iso`
+#### `eggs export iso`
 Esporta l'immagine iso. Potete modificare a piacere sia l'host di esportazione che il path associato nel file **tools.yaml**. 
 
-## `eggs help`
+### `eggs help`
 
 Come dice il comando stesso genera la lista dei comandi disponibili. A sua volta ogni comando con il flag -h o --help emette usa sua descrizione.
 
@@ -562,7 +562,7 @@ Ad esempio:
 calamares
 ```
 
-## `sudo eggs install`
+### `sudo eggs install`
 
 Lancia l'installaler CLI del sistema operativo con krill.
 
@@ -574,7 +574,7 @@ sudo eggs install --unattended
 ![eggs-krill-unattended-on-arch](/images/book9.2/eggs-install-u.png)
 
 
-### Presentazione dell'installer `krill` (`eggs install`)
+#### Presentazione dell'installer `krill` (`eggs install`)
 
 Lo scopo di `krill` non è quello di entrare in concorrenza con un progetto molto più ampio come `calamares`, piuttosto quello di affiancarlo in ambiti dove la potenza e la sofisticazione di calamares non sono disponibili: ad esempio in ambito server. o in caso di sistemi desktop nei quali non sia possibile utilizzare calamares perchè non disponibile, come per le versioni di Debian jessie e stretch. 
 
@@ -588,7 +588,7 @@ Vi è però una eccezione a questo schema generale, ed è la necessità utilizza
 
 Utilizzate quindi `krill` solo quando è necessario ed opportuno  e, sono comunque abbastanza casi: installazioni unattended, installazioni si sistemi solo CLI, sistemi basati su Debian jessie o Debian stretch, installazioni su macchine con meno di 2GB di RAM. Per tutti gli altri casi è generalmente preferibile utilizzare [calamares](https://calamares.io/). 
 
-### Interfaccia di `krill`
+#### Interfaccia di `krill`
 
 `krill` è stato pensato per essere il più possibile simile ad un installer GUI anche se è un installer a riga di comando. La sua realizzazione è stata possibile grazie all'utilizzo della libreria [`ink`](https://github.com/vadimdemedes/ink) una libreria che porta [`react`](https://react.dev/) in ambito CLI.
 
@@ -606,26 +606,26 @@ Si procederà quindi da `welcome` sino a `summary` ed una volta accettate le sce
 
 **Nota**: _in attesa che scriva un apposito modulo per `calamares` per il restore dei dati creato da `eggs`, l'installazione con l'installer `krill` al momento è indispensabile per il restore automatico dei backup realizzati con `eggs`._
 
-### `krill`: i vari passi dell'installazione
+#### `krill`: i vari passi dell'installazione
 L'installazione con `krill` procede attraverso alcuni step, comuni  a `calamares` ed aventi la stessa denominazione, che conducono sino alla schermata finale ed alla richiesta di riavvio.
 
-#### `krill: welcome`
+##### `krill: welcome`
 `welcome` è la prima schermata di `krill` ed è il posto dove potremo cambiare la lingua. Disporremo solo delle lingue incluse nella nostra ISO, per cui normalmente accetteremo il default.
 
 ![eggs-krill-welcome](/images/book9.2/eggs-install-welcome.png)
 
-#### `krill: location`
+##### `krill: location`
 
 In `location` potremo selezionare e variare la nostra area geografica e la nostra zona per l'impostazione del fuso orario. Le aree e le zone sono complete, non è così per le lingue che non verranno neppure proposte (vengono preselezionate dall'impostazione della lingua in `welcome`).
 
 ![eggs-krill-location](/images/book9.2/eggs-install-location.png)
 
-#### `krill: keyboard`
+##### `krill: keyboard`
 Stiamo trattando di un programma per l'installazione a misura per le nostre customizzazioni, quindi, se vogliamo avere altre lingue, dobbiamo ricordarci di aggiungerle attraverso `dpkg-reconfigure locales`. `krill` permetterà la selezione solo delle lingue già presenti ed, per il momento, non è un dramma per lo scopo di questo installer. Anche se non è escluso che in futuro faremo di meglio.
 
 ![eggs-krill-keyboard](/images/book9.2/eggs-install-keyboard.png)
 
-#### `krill: partition`
+##### `krill: partition`
 
 In `partitions` il discorso si fa più ampio. `krill` vuole un dispositivo sul quale installare il nostro sistema. L'installazione con `krill` cancellerà interamente il dispositivo in questione, non è possibile partizionare manualmente il disco.
 
@@ -643,25 +643,25 @@ Sarà però `krill` a decidere come partizionare il `device` a seconda del tipo 
 
 ![eggs krill partitions](/images/book9.2/eggs-install-partitions.png)
 
-#### `krill: users`
+##### `krill: users`
 
 In questo form `users` andrà indicato l'utente principale del sistema, la sua password, la conferma della stessa e l'eventuale utilizzo dell'autologin; la password di root e conferma ed, infine, il nome dell'host.
 
 ![eggs krill users](/images/book9.2/eggs-install-users.png)
 
-#### `krill: network`
+##### `krill: network`
 
 In `network` è possibile scegliere l'interfaccia di rete tra quelle disponibili e selezionare per essa la modalità tra dhcp e static. Nel caso di static si potranno impostare indirizzo `ip`, la `netmask`, il `gateway`, `domain` e `dns`.
 
 ![network](/images/book9.2/eggs-install-network.png)
 
-#### `krill: summary`
+##### `krill: summary`
 
 `summary` è un semplice riepilogo delle varie scelte effettuate, permette un rapido controllo visivo ed attende per una conferma o una rinuncia.
 
 ![eggs krill summary](/images/book9.2/eggs-install-summary.png)
 
-#### `krill: installation`
+##### `krill: installation`
 
 Dopo aver accettato la finestra `summary`, parte l'installazione del sistema. In `installation` avremo la possibiità di seguire passo - passo le varie fasi dell'installazione sino al passaggio alla fase finale.
 
@@ -673,7 +673,7 @@ Dopo aver accettato la finestra `summary`, parte l'installazione del sistema. In
 ![eggs krill finished](/images/book9/eggs-krill-finished.png)
 
 
-## `sudo eggs kill`
+### `sudo eggs kill`
 
 Cancella le immagini realizzate e la directory di lavoro di `eggs`. 
 
@@ -697,11 +697,11 @@ compressed data from the system
 **Nota**: _in caso per interruzione del comando `eggs produce`, sarà impossibile cancellare le directory montate. Il metodo più veloce è semplicemente eseguire un riavvio del sistema e lanciare nuovamente il comando `sudo eggs kill`_.
 
 
-## `eggs mom`
+### `eggs mom`
 `eggs mom` è una interfaccia realizzata con [easybashgui](https://github.com/BashGui/easybashgui), che utilizza [whiptail](https://linux.die.net/man/1/whiptail= disponibile praticamente su ogni versione Linux anche CLI, oppure [xdialog](http://xdialog.free.fr/), [zenity](https://help.gnome.org/users/zenity/stable/) o [kdialog](https://github.com/KDE/kdialog) che permette di avere una interfaccia grafica o simil grafica, nella quale ho raggruppato tutti i comandi eggs e la documantazione.
 
 
-### `eggs mom`
+#### `eggs mom`
 
 Una immagine vale più di mille parole, questa è la schermata iniziale di ```eggs mom```
 
@@ -709,7 +709,7 @@ Una immagine vale più di mille parole, questa è la schermata iniziale di ```eg
 
 Dal menu principale si accede a tutti i comandi di `eggs` ed ai sottomenu Documentation, Export e Tools.
 
-### `mom`: `Documentation`
+#### `mom`: `Documentation`
 In questo menù potete consultare sia il sito che i manuali, sia in formato `html` che `man`. 
 
 ![eggs-mom-documentation](/img/users-guide/mom-documentation.png)
@@ -741,7 +741,7 @@ vi verranno mostrati tutti i possibili flag del comando `produce`.
 
 E così via discorrendo.
 
-## `sudo eggs produce`
+### `sudo eggs produce`
 
 E' questo il comando che più utilizzerete. 
 
@@ -815,7 +815,7 @@ Abbiamo poi due flag per la copia completa del sistema: `--clone` e `--cryptedcl
 
 Uso spesso anche il flag `--addons` per inserire sul desktop il link per `adapt` o altri links nelle ISO realizzate.
 
-### `eggs produce --clone / eggs produce --cryptedclone`
+#### `eggs produce --clone / eggs produce --cryptedclone`
 
 Per molto tempo ho esitato ad aggiungere una modalità per la copia completa del sistema, non perchè fosse complicato, ma perchè temevo il caso che un utente possa inserire nella iso dei propri dati sensibili. Tuttavia, in seguito ad una discussione con un utente, al quale avrebbe fatto comodo per poter trasferire in toto i propri server, mi sono deciso ad aggiungerla prima in modalità criptata con un volume LUKS interno alla iso stessa e successivamente anche in chiaro.
 
@@ -835,12 +835,12 @@ Riavviando il sistema, quindi, ci ritroveremo i nostri utenti ed i nostri dati p
 
 Tutto questo, è possibile attualmente solo con l'installer `krill`. Utilizzando calamares invece, non venendo effettuato il controllo sulla eventuale esistenza dei dati degli utenti e verrà installato solo il sistema, con account ed /home vergine, proprio come succede per una iso normale.
 
-### `eggs produce --clone`
+#### `eggs produce --clone`
 La differenza tra l'opzione `--cryptedclone` e l'opzione `--clone` è che in quest'ultimo caso i dati utente non saranno salvati in un volume cryptato all'interno della immagine ISO, ma verranno direttamente copiati all'interno del `filesystem.squashfs`. Questo comporta vantaggi e svantaggi: il principale vantaggio è che si hanno i propri dati e le proprie configurazioni direttamente disponibili su live, lo svantaggio è che se pubblicate la vostra immagine, tutti i dati utente saranno direttamente a disposizione di chi scarica la ISO.
 
 Anche se a prima vista, per me specialmente, questa soluzione - che è poi la più semplice - non appariva adatta, tuttavia grazie agli utenti mi sono reso conto che è invece estremamente versatile, in quanto molti customizzatori utilizzano spesso la propria home per le modifiche ed in questo modo non è necessario salvarle in `/etc/skel`.
 
-## `eggs tools`
+### `eggs tools`
 
 Sono raccolti sotto tools degli strumenti accessori di eggs, non sono fondamentali, ma possono far comodo.
 ```
@@ -857,11 +857,11 @@ COMMANDS
 
 Abbiamo `tools clean` che esegue la pulizia del sistema cancellando la cache del gestore dei pacchetti (apt o pacman) ed esegue la rotazione dei log, `tools skel` che permette di configurare l'aspetto del desktop live e del desktop di default dei nuovi utenti, `tools yolk` - solo per Debian/Devuan/Ubuntu - che aggiorna la repository inclusa in `/usr/local/yolk` che viene utilizzata da eggs per caricare i pacchetti indispensabili all'installazione in assenza di connessione internet. 
 
-### `sudo eggs tools clean`
+#### `sudo eggs tools clean`
 Rimuove la cache del gestore di pacchetti (apt o pacman), esegue il logrotate, etc.
 
 
-### `sudo eggs tools ppa`
+#### `sudo eggs tools ppa`
 Aggiunge o rimuove la repository di `eggs` alla nostra configurazione apt.
 ```
 sudo eggs tool ppa --add
@@ -873,7 +873,7 @@ sudo eggs tool ppa --remove
 ```
 Rimuove la stessa.
 
-### `sudo eggs tools skel`
+#### `sudo eggs tools skel`
 Con questo comando si ricrea la directory `/etc/skel` della nostra live. 
 
 E' utile per dare una veste coerente e personalizzata all'utente della live ed ai futuri utenti che creeremo dopo che il nostro sistema sarà installato. 
@@ -899,7 +899,7 @@ EXAMPLES
   desktop configuration of user mauro will get used as default
 ```
 
-### `sudo eggs tools yolk`
+#### `sudo eggs tools yolk`
 Il comando `yolk` - valido solo per Debian/Devuan/Ubuntu - crea una piccola repository locale in `/usr/local/yolk` con i pacchetti strettamente necessari ad assicurare l'installazione del sistema anche in assenza di connessione internet. 
 
 In assenza della repository locale che, ad esempio, viene cancellata da un aggiornamento di `eggs`, `yolk` viene automaticamente richiamato da `produce`. Inoltre, sempre in `produce`, con il flag `--yolk` se ne può forzare l'aggiornamento. La sua presenza di questo comando è quindi giustificata solo dalla comodità del suo utilizzo in sede di sviluppo.
@@ -921,7 +921,7 @@ EXAMPLES
   $ eggs yolk -v
 ```
 
-## `eggs status`
+### `eggs status`
 
 Mostra a video la configurazione di `eggs` e del sistema. 
 
@@ -957,18 +957,18 @@ E G G S: the reproductive system of penguins
 
 Da notare sulla destra la presenza di bottoni rossi, che possono indicare problemi con le dipendenze, configurazione, etc.
 
-## `sudo eggs update`
+### `sudo eggs update`
 
 Esegue l'aggiornamento di `eggs`, è un comando che è rimasto poichè spesso, durante lo sviluppo devo aggiornare eggs dalla rete locale, per gli utenti finali è senz'altro opportuno utilizzare il gestore di pacchetti della propria distribuzione.
 
-# Creazione di una nostra remix
+## Creazione di una nostra remix
 La creazione di una nostra remix è un processo che richiede pazienza e passione ma può darci grandi soddisfazioni ed in molti casi, farci risparmiare tempo e fatica.
 
 Scarichiamo la nostra distribuzione che intendiamo customizzare, scegliendo tra `Arch`, Debian: buster, bullseye. bookworm;  Devuan: beowulf, chimaera; manjaro,  Ubuntu: bionic, focal, groovy, impish  o derivate.
 
 Installiamola normalmente, aggiorniamola e facciamo qualche forma di customizzazione prima di passare alla creazione delle iso.
 
-## Inizializzazione e prerequisiti
+### Inizializzazione e prerequisiti
 
 Installiamo quindi `eggs`, con uno dei metodi descritti in precedenza a seconda della nostra versione di Linux.
 
@@ -995,7 +995,7 @@ sudo eggs calamares --install
 per avere anche la possibilà che il nostro utente live possa utilizzare calamare senza specificare la password di accesso.
 
 
-## Produzione della ISO
+### Produzione della ISO
 
 Una volta installato `eggs`, siamo pronti al grande salto.
 
@@ -1028,14 +1028,14 @@ Una sola raccomandazione. Normalmente si utilizza più volte questo comando sull
 _Tenendo pure presente che non esiste più il limite delle dimensioni delle immagini iso a 4 GB, la soluzione di utilizzare sempre lz4 potrebbe rivelarsi doppiamente vantaggiosa, soprattutto in caso  di utilizzo con le macchine virtuali che  - quasi sempre - leggono direttamente  il file immagine su disco fisso invece di un reale DVD.  Inoltre, tutti i principali programmi per la creazione di chiavette avviabili  leggono i file iso._ 
 
 ---
-# Immagini ISO prodotte con `eggs`
+## Immagini ISO prodotte con `eggs`
 Non è mio scopo quello di realizzare una nuova distribuzione Linux, preferisco piuttosto costruire e mantenere il pacchetto e supportare chi - con passione - si occupa di tale attività.
 
 Però anche qua vale il detto: nasce prima l'uovo o la gallina? 
 
 E così, alcune remix le faccio comunque e continuo - impunentemente - a proporle.
 
-## Immagini realizzate dall'autore
+### Immagini realizzate dall'autore
 
 Sono qui riportate una serie di remix realizzate da me stesso e create con Penguin's eggs. 
 
@@ -1047,7 +1047,7 @@ Amando però sia l'interfaccia Cinnamon che la distribuzione Linuxmint, sovente 
 
 Però preferisco lasciare questo compito agli appassionati che su sulla customizzazione possono concentrare il proprio impegno. Considerate pure le ISO da me rilasciate come semplici esempi piuttosto che come sistemi finiti.
 
-### Immagini `naked`
+#### Immagini `naked`
 Sono ottenute da una installazione minimale e senza interfaccia grafica. Solo i pacchetti di base e poco altro, un netinstall per intenderci. 
 
 Però una versione `naked` contiene comunque il minimo indispensabile per la riproduzione.
@@ -1074,14 +1074,14 @@ A mio avviso potrebbe permettere di scambiare facilmente grosse moli di lavoro t
 
 Non esitate ad eseguire il `fork` della repository e crearne una propria versione, questo renderebbe possibile successivamente integrarle nella repository principale e renderla disponibile ad altri sviluppatori.
 
-### User e password
+#### User e password
 
 Tutte le remix create dal sottoscritto sono impostate con user live denominato `live` e password `evolution` valido sia per `live` che per `root`. 
 
 * `live/evolution`
 * `root/evolution`
 
-### Scaricare `eggs` e le ISO
+#### Scaricare `eggs` e le ISO
 
 Tutte le versioni di `eggs` e le ISO realizzate dall'autore sono scaricabili da `sourgeforge.net` cercando il progetto [penguins-eggs](https://sourceforge.net/projects/penguins-eggs/files/).
 
@@ -1091,7 +1091,7 @@ Trovarete: `arch`, `debian`, `devuan`, `educaandos`, `elementary`, `linuxfx`, `l
 
 Nel tempo, più di qualche distribuzione è nata o è passata ad utilizzare penguins-eggs per realizzare velocemente le proprie immagini ISO.
 
-## Waydroid Linux
+### Waydroid Linux
 
 Waydroid è basato su un approccio `container-based` per avviare un completo sistema Android su un regolare sistema GNU/Linux come Debina, Ubuntu, etc.
 
@@ -1105,7 +1105,7 @@ Può essere scaricata su [Waidroid-Linux#Latest Beta](https://waydro.id/#wdlinux
 
 Ulteriori versioni personali, soprattutto per sviluppatori, possono essere invece scaricate dalla pagina [sourceforge di penguins-eggs](https://sourceforge.net/projects/penguins-eggs/files/ISOS/waydroid/).
 
-## Quirinux GNU/Linux
+### Quirinux GNU/Linux
 
 Per chi è interessato a realizzare film animati, non posso non consigliare [Quirinux](https://www.quirinux.org/) di Charlie Martinez con cui ho avuto il piacere di collaborare nella realizzazione della versione beta.
 
@@ -1113,27 +1113,27 @@ Per chi è interessato a realizzare film animati, non posso non consigliare [Qui
 
 La versione quirinux-general può essere anche scaricata dalla pagina [sourceforge di penguins-eggs](https://sourceforge.net/projects/penguins-eggs/files/ISOS/quirinux/).
 
-## UfficioZero
+### UfficioZero
 
 Per un uso d'ufficio posso raccomandare [UfficioZero](https://www.ufficiozero.org/), una serie di più distribuzioni derivate da Debian, Devuan, Ubuntu e Linuxmint tutte finalizzate ad un orientamento professionale. UfficioZero - in verità - da un po' di tempo non utilizza più `penguins-eggs` ma il periodo di collaborazione è stato piacevole e proficuo!
 
 ![UfficioZero](/img/users-guide/ufficiozero-logo.png)
 
-## Rimasterizzazioni di amici
+### Rimasterizzazioni di amici
 A questa lista mancano naturalmente molte altre customizzazioni - eggs è scaricato mediamente 50/100 volte a settimana da sourceforge e, sono quasi sempre nuovi utilizzatori - perchè gli aggiornamenti avvengono con i rispettivi package manager.
 
-### Telos
+#### Telos
 Non posso non includere l'amico Yannis ed il suo [TeLOS](https://sourceforge.net/projects/teloslinux/) che posso raccomandare perchè l'ho utilizzato molto per scrivere una delle prime versioni di questa guida.
 
-### NovaOS
+#### NovaOS
 Devo molto a Nicklas, praticamente scrivendo su [reddit](https://www.reddit.com/r/linux/comments/11nlqlu/penguinseggs_can_turn_your_system_into_an/) ha fatto conoscere penguins-eggs ai più.
 
 La sua distro si chiama [NovaOS](https://github.com/NicklasVraa/NovaOS) ed è basata su [Linuxmint](https://linuxmint.com/).
 
-### Deblinux
+#### Deblinux
 Concludiamo con [Deblinux](https://sourceforge.net/projects/deblinux/) di Andrea a cui va riconosciuta una grande determinazione ed il coraggio o la pazzia di fidarsi di un tool all'epoca assolutamente sconosciuto.
 
-# Supporto e segnalazioni
+## Supporto e segnalazioni
 
 `eggs` è un progetto che consente di rimasterizzare diverse versioni di Linux:
 
@@ -1151,7 +1151,7 @@ E' perciò vitale che venga a crearsi una comunità di utenti, indipendentemente
 
 Potete segnalare le varie problematiche sulla pagina [issue](https://github.com/pieroproietti/penguins-eggs/issues) del progetto penguins-eggs su github.com.
 
-# Comunità
+## Comunità
 Una comunità di utenti è fondamentale per la crescita di un progetto come questo: creare qualcosa di versatile e pratico in fondo serve relativamente a poco se la gente non conosce il prodotto e - d'altra parte - avere un buon numero di utenti, fornisce feedback e le motivazioni necessarie agli sviluppatori, migliorando quindi la qualità il progetto stesso.
 
 Potete facilitare la diffusione di `eggs` e contribuire alla sua crescita in diversi modi:
@@ -1164,7 +1164,7 @@ Potete facilitare la diffusione di `eggs` e contribuire alla sua crescita in div
 
 Naturalmente, anche sponsorizzare o finanziare lo sviluppo potrebbe essere una opportunità.
 
-# Ringraziamenti
+## Ringraziamenti
 Se siete giunti fino a questo passo, senza l'ausilio del tasto di scorrimento rapido, avete utilizzato parte del Vostro tempo - risorsa preziosa - per seguirmi su questo percorso e, quindi, è mio dovere e - ancor di più desiderio - ringraziarvi per il vostro interesse. 
 
 Grazie a tutti e... happy hacking!
@@ -1174,12 +1174,12 @@ Grazie a tutti e... happy hacking!
 Piero Proietti
 
 
-# Appendice: dipendenze di eggs
+## `Dependencies`
 
-## `Debian/Devuan/Ubuntu`
+### `Debian/Devuan/Ubuntu`
 Essenzialmente possiamo dividere i pacchetti da cui `eggs` dipende, in:
 
-### pacchetti comuni
+#### Pacchetti comuni
 Questi pacchetto sono i prerequisiti di `eggs` per tutte le versioni installate:
 
  * `coreutils`
@@ -1202,7 +1202,7 @@ Questi pacchetto sono i prerequisiti di `eggs` per tutte le versioni installate:
  * `whois`
  * `xorriso`
 
-### pacchetti dipendenti dalla architettura
+#### pacchetti dipendenti dalla architettura
 A seconda della architettura sulla quale `eggs` è installato verranno selezionati differenti pacchetti. Le architetture possono essere: i386, amd64, armel ed arm64:
 
  * `syslinux`:  i386 / amd64;
@@ -1221,7 +1221,7 @@ Per alcune distribuzioni come linuxmint, ufficiozero ed altre che pur essendo de
  * `live-config-sysvinit: beowulf`
  * `open-infrastructure-system-config: bionic`
 
-### pacchetti dipendenti dal tipo di init
+##### pacchetti dipendenti dal tipo di init
 Abbiamo bisogno di questo tipo di pacchetti, perchè alcune derivate di Debian buster - principalmente MX Linux - utilizzano sysvinit come init al posto di systemd anche se sono contraddistinte dalla stessa versione: buster.
 
  * `live-config-sysvinit sysvinit`
@@ -1234,9 +1234,9 @@ Potete comunque sempre installare `calamares` con il comando:
 
 * ```sudo eggs calamares --install```
 
-## `Arch linux`
+### `Arch linux`
 Le dipendenze di `penguins-eggs` per `Arch Linux` possono essere rilevate dal [PKGBUILD](https://aur.archlinux.org/packages/penguins-eggs) su [AUR](https://aur.archlinux.org/).
 
-## `Manjaro linux`
+### `Manjaro linux`
 Le dipendenze di `penguins-eggs` per Manjaro possono essere rilevate dal [PKGBUILD](https://gitlab.manjaro.org/packages/community/penguins-eggs/-/blob/master/PKGBUILD) su [gitlab Manjaro](https://gitlab.manjaro.org/explore/groups?filter=).
 
