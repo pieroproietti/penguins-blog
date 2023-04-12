@@ -1267,16 +1267,22 @@ Per un uso d'ufficio posso raccomandare [UfficioZero](https://www.ufficiozero.or
 ### Rimasterizzazioni di amici
 A questa lista mancano naturalmente molte altre customizzazioni - eggs è scaricato mediamente 50/100 volte a settimana da sourceforge e, sono quasi sempre nuovi utilizzatori - perchè gli aggiornamenti avvengono con i rispettivi package manager.
 
-#### Telos
-Non posso non includere l'amico Yannis ed il suo [TeLOS](https://sourceforge.net/projects/teloslinux/) che posso raccomandare perchè l'ho utilizzato molto per scrivere una delle prime versioni di questa guida.
+#### Deblinux
+[Deblinux](https://sourceforge.net/projects/deblinux/) di andreone a cui va riconosciuta una grande determinazione ed il coraggio o, la pazzia, di fidarsi di un tool assolutamente sconosciuto.
+
+#### EducAndOS +
+Andrés è stato il primo a creare un tema per `eggs` e la sua remix [EducAndOS+](https://github.com/aosucas499/guadalinex) che è molto utilizzata in Spagna in ambito scolastico.
 
 #### NovaOS
 Devo molto a Nicklas, praticamente scrivendo su [reddit](https://www.reddit.com/r/linux/comments/11nlqlu/penguinseggs_can_turn_your_system_into_an/) ha fatto conoscere penguins-eggs ai più.
 
+#### Telos
+Non posso non includere l'amico Yannis ed il suo [TeLOS](https://sourceforge.net/projects/teloslinux/) che posso raccomandare anche perchè con Telos ho scritto una delle prime versioni di questa guida.
+
 La sua distro si chiama [NovaOS](https://github.com/NicklasVraa/NovaOS) ed è basata su [Linuxmint](https://linuxmint.com/).
 
-#### Deblinux
-Concludiamo con [Deblinux](https://sourceforge.net/projects/deblinux/) di Andrea a cui va riconosciuta una grande determinazione ed il coraggio o la pazzia di fidarsi di un tool all'epoca assolutamente sconosciuto.
+
+
 
 ## Supporto e segnalazioni
 
