@@ -1276,13 +1276,10 @@ Andrés è stato il primo a creare un tema per `eggs` e la sua remix [EducAndOS+
 #### NovaOS
 Devo molto a Nicklas, praticamente scrivendo su [reddit](https://www.reddit.com/r/linux/comments/11nlqlu/penguinseggs_can_turn_your_system_into_an/) ha fatto conoscere penguins-eggs ai più.
 
-#### Telos
-Non posso non includere l'amico Yannis ed il suo [TeLOS](https://sourceforge.net/projects/teloslinux/) che posso raccomandare anche perchè con Telos ho scritto una delle prime versioni di questa guida.
-
 La sua distro si chiama [NovaOS](https://github.com/NicklasVraa/NovaOS) ed è basata su [Linuxmint](https://linuxmint.com/).
 
-
-
+#### Telos
+Non posso non includere l'amico Yannis ed il suo [TeLOS](https://sourceforge.net/projects/teloslinux/) che posso raccomandare anche perchè con Telos ho scritto una delle prime versioni di questa guida.
 
 ## Supporto e segnalazioni
 
