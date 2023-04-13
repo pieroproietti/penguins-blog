@@ -50,6 +50,7 @@ Come? Aprendo un terminale ed immettendo il comando:
 ```
 sudo eggs install -un
 ```
+![eggs-install-un](/img/blog/2023-04-13/eggs-install-un.png)
 
 # L'esperto risolve il problema
 Dopo qualche tempo il mio corrispondente risolve il problema. 
@@ -61,6 +62,7 @@ Cosa possiamo fare?
 ```
 sudo eggs produce --max --cryptedclone
 ```
+![eggs-produce-cryptedclone-max](/img/blog/2023-04-13/eggs-produce-cryptedclone-max.png)
 
 A lui verrà richiesto di immettere una passphrase che verrà utilizzata per un volume LUKS inserito nella immagine ISO prodotta.
 
