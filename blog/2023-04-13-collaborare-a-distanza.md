@@ -93,6 +93,6 @@ Ad un certo punto mi verrà richiesta la passphrase per il file LUKS e questo ve
 Otterrò quindi nuovamente la configurazione originale, con le modifiche del collega e tenuta lontata da occhi indiscreti.
 
 ## Utenti
-In un clone NON esiste un utente live, gli utenti sono gli stessi della postazione originaria, in questo caso `artisan`. 
+In un clone NON esiste un utente `live`, gli utenti sono gli stessi della postazione originaria, in questo caso `artisan`. 
 
 L'utente `live`, invece, esiste ed è necessario in un clone cryptato, SOLO dopo l'installazione si avrà accesso ai dati memorizzati.
