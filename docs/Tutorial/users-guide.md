@@ -1273,10 +1273,14 @@ A questa lista mancano naturalmente molte altre customizzazioni - eggs è scaric
 #### EducAndOS +
 Andrés è stato il primo a creare un tema per `eggs` e la sua remix [EducAndOS+](https://github.com/aosucas499/guadalinex) che è molto utilizzata in Spagna in ambito scolastico.
 
+![EducAndOS](/img/users-guide/educandos.png)
+
 #### NovaOS
 Devo molto a Nicklas, praticamente scrivendo su [reddit](https://www.reddit.com/r/linux/comments/11nlqlu/penguinseggs_can_turn_your_system_into_an/) ha fatto conoscere penguins-eggs ai più.
 
 La sua distro si chiama [NovaOS](https://github.com/NicklasVraa/NovaOS) ed è basata su [Linuxmint](https://linuxmint.com/).
+
+![NovaOS](/img/users-guide/novaos.png)
 
 #### SysLinuxOS
 [SysLinuxOS](https://syslinuxos.com/) for System Integrators di [Franco Conidi](https://francoconidi.it/), conosciuto anche per il suo lavoro su systemBack, rappresenta un ottimo esempio di distribuzione verticale.
