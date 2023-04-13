@@ -66,14 +66,14 @@ sudo eggs produce --max --cryptedclone
 
 A lui verrà richiesto di immettere una passphrase che verrà utilizzata per un volume LUKS inserito nella immagine ISO prodotta.
 
-![produce-luks-passoword](/static/img/blog/2023-04-13/produce-luks-passoword.png)
+![produce-luks-password](/img/blog/2023-04-13/produce-luks-password.png)
 
 Che dovrà confermare:
-![produce-lucks-passord-confirm](/static/img/blog/2023-04-13/produce-lucks-passord-confirm.png)
+![produce-luks-passord-confirm](/img/blog/2023-04-13/produce-luks-passord-confirm.png)
 
 Verra creato ed inizializzato un volume LUKS sotto /tmp per l'apertura del quale verrà nuovamente richiesta la password di accesso:
 
-![produce-luks-password-open](/static/img/blog/2023-04-13/produce-luks-password-open.png)
+![produce-luks-password-open](/img/blog/2023-04-13/produce-luks-passord-confirm.png)
 
 
 Su un altro canale di comunicazione mi sarà passata la passphrase, quindi io scaricherò la nuova immagine.
@@ -87,6 +87,8 @@ sudo eggs install -un
 ```
 
 Ad un certo punto mi verrà richiesta la passphrase per il file LUKS e questo verrà decriptato ed aggiunto alla postazione vergine.
+
+![eggs-install-un-luks-password](/static//img/blog/2023-04-13/eggs-install-un-luks-password.png)
 
 Otterrò quindi nuovamente la configurazione originale, con le modifiche del collega e tenuta lontata da occhi indiscreti.
 
