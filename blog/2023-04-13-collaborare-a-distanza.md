@@ -23,7 +23,7 @@ A questo punto, apro una semplice chat con l'esperto e questa è la sua risposta
 
 ```I'll use that as a starting point then```
 
-# Come passare tutta la stazione di lavoro
+## Come passare tutta la stazione di lavoro
 
 In questo caso, non avendo dati importanti da proteggere, ho semplicemente creato un clone della macchina utilizzando `eggs` e senza installare `calamares`. In questi casi un installatore grafico è solo una perdita di tempo visto che installaremo su una macchina virtuale e tra esperti.
 
@@ -52,7 +52,7 @@ sudo eggs install -un
 ```
 ![eggs-install-un](/img/blog/2023-04-13/eggs-install-un.png)
 
-# L'esperto risolve il problema
+## L'esperto risolve il problema
 Dopo qualche tempo il mio corrispondente risolve il problema. 
 
 Comprensibile il codice aperto ma - talvolta - è opportuno non mettere in piazza direttamente tutto e rilasciare un clone così potrebbe essere non . 
@@ -80,7 +80,7 @@ Su un altro canale di comunicazione mi sarà passata la passphrase, quindi io sc
 
 Dal live non avrò accesso ad alcun dato.
 
-# Proviamo ad installare...
+## Proviamo ad installare...
 
 ```
 sudo eggs install -un
