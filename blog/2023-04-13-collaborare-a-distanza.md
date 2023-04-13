@@ -88,7 +88,7 @@ sudo eggs install -un
 
 Ad un certo punto mi verrà richiesta la passphrase per il file LUKS e questo verrà decriptato ed aggiunto alla postazione vergine.
 
-![eggs-install-un-luks-password](/static//img/blog/2023-04-13/eggs-install-un-luks-password.png)
+![eggs-install-un-luks-password](/img/blog/2023-04-13/eggs-install-un-luks-password.png)
 
 Otterrò quindi nuovamente la configurazione originale, con le modifiche del collega e tenuta lontata da occhi indiscreti.
 
