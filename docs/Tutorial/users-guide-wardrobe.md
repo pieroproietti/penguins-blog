@@ -354,22 +354,5 @@ Lo stesso discorso vale per gli accessori che possono pure essere definiti per d
 ### Versioni naked
 Un'altra ragione per utilizzare Debian/Devuan invece di Ubuntu e derivate è la difficoltà di ottenere una versione "naked" ovvero una installazione CLI minima. E' possibile con Ubuntu, utilizzando la versione server, ma l'immagine contiene comunque funzionalità non richieste ed è abbastanza pesante rispetto alle controparti.
 
-## Thats all folks!
-
-### Altre informazioni
-C'è un manuale [Penguin's eggs official book](https://penguins-eggs.net/book/) ed altra documentazione  - principalmente per sviluppatori - su [penguins-eggs repo](https://github.com/pieroproietti/penguins-eggs) sotto **documents** oltre alla documentazione presente in [penguins-wardrobe](https://github.com/pieroproietti/penguins-wardrobe/DOCUMENTATION) 
-
-* [blog](https://penguins-eggs.net)    
-* [facebook penguin's eggs group](https://www.facebook.com/groups/128861437762355/)
-* [telegram penguin's eggs channel](https://t.me/penguins_eggs) 
-* [twitter](https://twitter.com/pieroproietti)
-* [sources](https://github.com/pieroproietti/penguins-krill)
-
-You can contact me at pieroproietti@gmail.com or [meet me](https://meet.jit.si/PenguinsEggsMeeting)
-
-### Copyright and licenses
-Copyright (c) 2017, 2023 [Piero Proietti](https://penguins-eggs.net/about-me.html), dual licensed under the MIT or GPL Version 2 licenses.
-
-
 ![wagtail-warbler-whipbird](/img/wardrobe/wagtail-warbler-whipbird.png)
 Lo screenshot è stato preso durante la "vestizione" di wagtail, warbler e whipbird sulla mia stazione di lavoro, potete trovare il risultato finale [qui](https://sourceforge.net/projects/penguins-eggs/files/ISOS/waydroid/).
