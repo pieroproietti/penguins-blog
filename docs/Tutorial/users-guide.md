@@ -1278,6 +1278,11 @@ Devo molto a Nicklas, praticamente scrivendo su [reddit](https://www.reddit.com/
 
 La sua distro si chiama [NovaOS](https://github.com/NicklasVraa/NovaOS) ed è basata su [Linuxmint](https://linuxmint.com/).
 
+#### SysLinuxOS
+[SysLinuxOS](https://syslinuxos.com/) for System Integrators di [Franco Conidi](https://francoconidi.it/), conosciuto anche per il suo lavoro su systemBack, rappresenta un ottimo esempio di distribuzione verticale.
+
+![SysLinuxOS](/img/users-guide/syslinuxos.png)
+
 #### Telos
 Non posso non includere l'amico Yannis ed il suo [TeLOS](https://sourceforge.net/projects/teloslinux/) che posso raccomandare anche perchè con Telos ho scritto una delle prime versioni di questa guida.
 
