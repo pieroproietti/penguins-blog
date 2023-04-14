@@ -241,21 +241,26 @@ sudo eggs wardrobe wear colibri
 * `colibri` è un Desktop XFC4 leggero che utilizzo per sviluppare `eggs` e che quindi potete utilizzare per collaborare al progetto.
 * `duck` utilizza `cinnamon` e probabilmente è il giusto Desktop per utilizzatori abituati all'interfaccia di Windows - inoltre fornisce `libreoffice`, `gimp`, `vlc` e vari.
 * `owl` basato su XFCE4 per grafici e designer. E' una customizzazione sperimentale, basata molto sul lavoro di Charlie Martinez per [quirinux](https://blog.quirinux.org/).
-
-* `wagtail`, una installazione `wayland/Gnome/waydroid`.
-* `warbler`, installazione `wayland/KDE/waydroid installation`.
-* `whipbird`: installazione `wayland/weston/waydroid`.
+* `wagtail`, una installazione basata su `wayland/Gnome/waydroid`.
+* `warbler`, una installazione basata su `wayland/KDE/waydroid`.
+* `whipbird`: una installazione basata su `wayland/weston/waydroid`.
 
 ## `accessories`
 Al momento su `penguins-wardrobe` sono presenti i seguenti `accessories`:
-* `base`
-* `eggs-dev`
-* `firmwares`
-* `graphics`
-* `liquorix`
-* `multimedia`
-* `office`
-* `waydroid`
+* `base: add spice-vdagent and penguins-eggs-ppa repository`
+* `chicks: desktop xfce4 per scuola primaria`
+* `eggs-dev: add repositories: nodesource, code, install: nodejs, code`
+* `firmwares: install firmware`
+* `flatpak: flatpack`
+* `grafica: grafics packages`
+* `kvm: add necessary to run VMs`
+* `liquorix: install liquorix kernel Debian/Devuan/Ubuntu`
+* `live-installer: Linux Mint live-installer deb`
+* `multimedia: a selection of usefull multimedia packages`
+* `nextcloud: nextcloud`
+* `office: install libreoffice, gimp, vlc`
+* `python3-dev: sviluppo in python`
+* `waydroid: waydroid installer`
 
 ## `themes`
 Mentre i `costumes` e gli `accessories` si applicano ad un sistema installato, i `themes` rendono possibile la customizzazione dell'immagine `live`. E' possibile sia customizzare il boot delle immagini ISO che l'aspetto dell'installer GUI `calamares`.
