@@ -35,7 +35,7 @@ Un `costume` consiste essenzialmente in una directory denominata con il nome del
 
 In `wardrobe`, quindi abbiamo soltanto delle informazioni che specificano soprattutto repository e pacchetti in linguaggio yaml. Questo esempio è tratto dal file `index.yaml` del mio `colibri`. Potete visualizzare l'intero [index.yaml](https://github.com/pieroproietti/penguins-wardrobe/blob/main/costumes/colibri/index.yml).
 
-`
+``
 # wardrobe: .
 # costume: /colibri
 ---
@@ -50,7 +50,7 @@ distributions:
 ...
   hostname: true
 reboot: true
-`
+``
 La sintassi utilizzata è yaml, piuttosto semplice da leggere, mentre per la scrittura potete contare su numerosi addon per praticamente ogni editor.
 
 Andiamo a vedere come è composto il file `index.yaml` di un `costume`.
