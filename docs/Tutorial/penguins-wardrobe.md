@@ -94,7 +94,7 @@ L'idea dietro la `sequence` è stata quella di renderla il più possibile atomic
 Vediamo come è composta in dettaglio la sequenza.
 
 #### `repositories`
-Definisce cosa abbiamo bisogno sia nella nostra ```/etc/apt/surces.list``` e principalmente, nella directory ```/etc/apt/sources.list.d```.
+Definisce cosa abbiamo bisogno sia nella nostra ```/etc/apt/surces.list``` e - principalmente - nella directory ```/etc/apt/sources.list.d```.
 
 ```repositories``` è formata da due item:
 
@@ -114,10 +114,10 @@ Un semplice array di pacchetti da installare, è il cuore del sistema.
 Una semplice array di pacchetti da installare con l'opzione ```--no-install-recommends```.
 
 #### `try_packages`
-Come [packages](#packages) ma non fallisce se non trova il pacchetto.
+Si comporta come [packages](#packages) ma non fallisce se non trova il pacchetto.
 
 #### `try_packages_no_install_recommends`
-Come [packages_no_install_recommends](#packages_no_install_recommends) ma non fallisce se non trova il pacchetto.
+Funziona come [packages_no_install_recommends](#packages_no_install_recommends) ma non fallisce se non trova il pacchetto.
 
 #### `debs`
 
@@ -178,18 +178,18 @@ customize:
 Se vero in sistema verrà riavviato dopo la vestizione.
 
 ## `Accessories`
-Gli accessori possono essere definiti all'interno di un costume o fuori dallo stesso - principalmente in ```accessories``` ma anche interni ad un altro costume. Gli accessori interni vivono all'interno di un `costume` o di altri accessori che li dichiarano.
+Gli accessori possono essere definiti all'interno di un `costume` o fuori dallo stesso - principalmente in ```accessories``` ma anche interni ad un altro `costume`. Gli accessori interni vivono all'interno di un `costume` o di altri accessori che li dichiarano.
 
-Hanno la stessa struttura dei costumi e vengono richiamati da questi. Potete vederli come una cintura da mettere con dei pantaloni alla moda o una borsa associata al tailler.
+Hanno la stessa struttura dei `costumes` e vengono richiamati da questi. Potete vederli come una cintura da mettere con dei pantaloni alla moda o una borsa associata al tailler.
 
-Gli accessori, però sono installabili anche singolarmente, ad esempio: ```sudo eggs wardrobe wear accessories/eggs-dev``` ci installerà gli strumenti di sviluppo. 
+Gli `accessories`, però sono installabili anche singolarmente, ad esempio: ```sudo eggs wardrobe wear accessories/eggs-dev``` ci installerà gli strumenti di sviluppo. 
 
 Tutto quello che risiede sotto ```accessories²`` è un accessorio. Ad esempio: `base` è un accessorio, utilizzato in molti vestiti; `waydroid` è un accessorio ed è utilizzato da `wagtail` (gnome3), `warbler` (KDE) e `whipbird`; `firmwares` è usato in `duck` ed `owl`.
 
 `colibri`, `wagtail`, `warbler` e `whispbird` essendo nati essenzialmente per sviluppatori, non usano l'accessorio `firmwares`, ma dispongono un un accessorio interno `firmwares` contentente principalmente driver per wifi. (*)
 
 
-__Nota__ ```sudo eggs wardrobe wear``` accetta una flag ```--no_firmwares``` per saltare completamente il firmware nel caso stiamo lavorando per macchine virtuali o facendo dei test.
+__Nota__ ```sudo eggs wardrobe wear``` accetta una flag ```--no_firmwares``` per saltare completamente il firmware nel caso stiamo lavorando su macchine virtuali o facendo dei test.
 
 (*) `wagtail`, `warbler` e `whispbird` prima della fine dell'installazione chiamano pure uno speciale script [add_wifi_firmwares.sh](https://github.com/pieroproietti/penguins-wardrobe/blob/main/scripts/add_wifi_firmwares.sh) per aggiungere in Debian bookworm firmware scaricabile da [cdimage unofficial non-free](http://cdimage.debian.org/cdimage/unofficial/non-free/firmware/bookworm/current/).
 
@@ -203,7 +203,7 @@ Abbiamo solo quattro comandi: `get`, `list`, `show` e `wear`.
 eggs wardrobe get
 ```
 
-Esegue il clone di [penguins-wardrobe](https://github.com/pieroproietti/penguins-wardrobe) in ```~/.wardrobe```, il comando accetta un argomento [REPO], così potete lavorare con il vostro wardrobe invece di quello standard. Ad esempio:
+Esegue il clone di [penguins-wardrobe](https://github.com/pieroproietti/penguins-wardrobe) in ```~/.wardrobe```, il comando accetta un argomento [REPO], così potete lavorare con il vostro `wardrobe` invece di quello standard. Ad esempio:
 
 ```
 eggs wardrobe https://github.com/quirinux-so/penguins-wardrobe
@@ -212,20 +212,20 @@ eggs wardrobe https://github.com/quirinux-so/penguins-wardrobe
 scaricherà in  ```~/.wardrobe``` la versione del `wardrobe` di `quirinux`.
 
 ### `wardrobe list`
-Mostra la lista dei costumes ed accessories presenti nel `wardrobe`.
+Mostra la lista dei `costumes` ed `accessories` presenti nel `wardrobe`.
 
 ```
 eggs wardrobe list 
 ```
 
 ### wardrobe show COSTUME
-Mostra l'indice `index`.yaml di un costume.
+Mostra l'indice `index`.yaml di un `costume`.
 ```
 eggs wardrobe show colibri
 ```
 
 ### `sudo wardrobe wear COSTUME`
-Avvia il processo di vestizione di un costume, alla fine del processo il sistema sarà modificato secondo le indicazioni del costume.
+Avvia il processo di vestizione di un `costume`, alla fine del processo il sistema sarà modificato secondo le indicazioni del `costume`.
 
 ```
 sudo eggs wardrobe wear colibri 
@@ -251,17 +251,17 @@ sudo eggs wardrobe wear colibri
 * `waydroid`
 
 ## Temi
-Mentre i costumi e gli accessori si applicano ad un sistema installato, i temi rendono possibile la customizzazione dell'immagine live. E' possibile customizzare il boot delle immagini iso create con eggs ed l'aspetto dell'installer GUI calamares.
+Mentre i `costumes` e gli `accessories` si applicano ad un sistema installato, i temi rendono possibile la customizzazione dell'immagine `live`. E' possibile customizzare il boot delle immagini ISO create con `eggs` ed l'aspetto dell'installer GUI `calamares`.
 
-Come per i costumi e gli accessori, i temi sono principalmente costituiti da una directory, file yaml, icone, sfondi e quant'altro necessario. L'idea è stata presa da calamares ed i suoi file di configurazione ed estesa ad aspetti più specifici di eggs come il boot live e, successivamente i costumi e gli accessori. Solo da poco ho deciso di racchiudere anche i temi in wardrobe, inizialmente erano parte di eggs, poi sono stati spostati in penguins-addons, infine con la nascita di penguins-wardrobe sono stati aggiunti ad esso.
+Come per i `costumes` e gli `accessories`, i `themes` sono principalmente costituiti da una directory, file yaml, icone, sfondi e quant'altro necessario. L'idea è stata presa da `calamares` e dai suoi file di configurazione ed estesa ad aspetti più specifici di `eggs` come il boot live. Solo da poco ho deciso di racchiudere anche i `themes` in `penguins-wardrobe`, inizialmente erano parte di `eggs`, poi sono stati spostati in `penguins-addons`, infine con la nascita di `penguins-wardrobe` sono stati inclusi nella stessa repository.
 
-E solo scrivento questo questo scritto, mi rendo conto del grande debito nei confronti di calamares che mi ha suggerito prima di passare a yaml per la configurazione di eggs e, poi di utilizzare in maniera estensiva questa metodologia. Spero però che il mio debito possa essere stato ripagato dal fatto di aver denominato krill l'installer CLI interno di eggs.
+Ed è solo scrivento questo questo scritto, mi rendo conto del grande debito di riconoscenza nei confronti di `calamares` che mi ha suggerito prima di passare a yaml per la configurazione di `eggs` e, poi di utilizzare in maniera estensiva questa metodologia. Spero però che il mio debito possa essere stato ripagato dal fatto di aver denominato `krill` l'installer CLI interno di `eggs`.
 
-[educaandos-plus](https://github.com/aosucas499/guadalinex) è stato il primo esempio di un tema esterno disponibile. Altri temi che potete trovare nel wardrobe sono: neon, telos, ufficiozero and waydroid.
+[educaandos-plus](https://github.com/aosucas499/guadalinex) è stato il primo esempio di un tema esterno disponibile. Altri `themes` che potete trovare nel wardrobe sono: `neon`, `telos`, `ufficiozero` e`waydroid`.
 
-### Analizziamo un tema
+### Analizziamo un `theme`
 
-Un tema consiste in una semplice directory sotto themes, denominata con il nome del vendor (in questo esempio: educanaandos-plus), che include:
+Un `theme` consiste in una semplice directory sotto `themes`, denominata con il nome del `vendor` (in questo esempio: `educanaandos-plus`), che include:
 
 ```
 educaandos-plus/
@@ -278,37 +278,37 @@ E' solo il contenitore di tutto, la radice per così dire del tema stesso.
 
 Contiene:
 
-##### applications
+##### `applications`
 
-Solo un link .desktop, verrà copiato in /usr/share/applications/ e sulla cartella Desktop.
+Solo un link `.desktop`, verrà copiato in `/usr/share/applications/` e sulla cartella `Desktop`.
 
-#### artwork
+#### `artwork`
 L'icona per il tuo link .desktop, verrà copiata in /usr/share/icons/.
 
-#### calamares
-Contiene la configurazione per calamares ed è la parte più importante del tema.
+#### `calamares`
+Contiene la configurazione per `calamares` ed è la parte più importante del `theme`.
 
-I file di configurazione di calamares sono scritti sempre in yaml e contengono la documentazione per le varie optioni. Il principale file di configurazione settings.conf viene automaticamente generato da eggs, solo partition, locale ed users sono attualmente usati da wardrobe.
+I file di configurazione di `calamares` sono scritti sempre in yaml e contengono la documentazione per le varie optioni. Il principale file di configurazione `settings.conf` viene automaticamente generato da `eggs`, solo `partition`, `locale` ed `users` sono attualmente usati da `eggs` e `wardrobe`.
 
 Per le informazioni di riferimento sulla configurazione di questi file si rimanda al sito di [calamares](https://calamares.is).
 
-###### branding
-branding.desc viene generato da eggs, fare riferimento a calamares [branding.desc](https://github.com/calamares/calamares/blob/calamares/src/branding/default/branding.desc) per maggiori informazioni.
+###### `branding`
+`branding.desc` viene generato da `eggs`, fare riferimento a `calamares` [branding.desc](https://github.com/calamares/calamares/blob/calamares/src/branding/default/branding.desc) per maggiori informazioni.
 
-###### modules
-* [locale.yml](/themes/educaandos-plus/theme/calamares/modules/locale.yml)
-* [partitions.yml](/themes/educaandos-plus/theme/calamares/modules/partition.yml)
-* [users.yml](/themes/educaandos-plus/theme/calamares/modules/users.yml) (*)
+###### `modules`
+* [`locale.yml`](/themes/educaandos-plus/theme/calamares/modules/locale.yml)
+* [`partitions`.yml](/themes/educaandos-plus/theme/calamares/modules/partition.yml)
+* [`users.yml`](/themes/educaandos-plus/theme/calamares/modules/users.yml) (*)
 
 (*) In ```EducaAndOS``` per avere i diritti di amministrazione per l'utente, abbiamo la necessità di configurare lo stesso in un gruppo specifico.
 
-##### livecd
-Si prende cura dell'aspetto del boot da live.
+##### `livecd`
+Si prende cura dell'aspetto del boot da `live`.
 
 Abbiamo in questo casi i temi per [grub](/themes/educaandos-plus/theme/livecd/grub.theme.cfg) ed [isolinux](/themes/educaandos-plus/theme/livecd/isolinux.theme.cfg), nonchè lo [spash](/themes/educaandos-plus/theme/livecd/splash.png) per il boot.
 
-### Uso dei temi
-Per essere utilizzato un tema deve essere passato come parametro al flag ```--theme``` in produce:
+### Uso dei `themes`
+Per essere utilizzato un `theme` deve essere passato come parametro al flag ```--theme``` in `produce`:
 
 ```
 sudo eggs produce --theme ../path/to/theme
@@ -319,12 +319,12 @@ esempio:
 sudo eggs produce --theme .wardrobe/themes/educaandos-plus
 ```
 
-Potete anche clonare il wardrobe con Git e prendere il tema da esso:
+Potete anche clonare il `wardrobe~ con Git e prendere il `theme` da esso:
 ```
 sudo eggs produce --theme /penguins-wardrobe/themes/educaandos-plus
 ```
 
-## Config
+## `Config`
 Questa directory è utilizzata per permettere una customizzazione delle opzioni per l'installazione --unattended. 
 
 ```sudo eggs install --unattended``` è equivalente a ```sudo install --custom us``` in questo modo è relativamente facile avere customizzazioni diverse, semplicemente creando un fork di questa repository ed una PR al sottoscritto.
@@ -333,26 +333,26 @@ Ad esempio potete copiare us.yaml in bliss.yaml, e cambiare sia il nome dell'ute
 
 ```sudo eggs install --custom bliss```
 
-Se invece vo serve la customizzazione in italiano:
+Se invece vi serve la customizzazione in italiano:
 ```sudo eggs install --custom it```
 
 Ovviamente è possibile creare configurazioni a misura per tutti.
 
 ## Compatibilità
-Utilizzo wardrobe soprattutto per Debian dove si assicura la massima compatibilità, ma anche per Devuan che sostanzialmente ricalca Debian stessa. Qualche aggiunta ed accorgimento, invece, si è reso necessario per includere anche Ubuntu.
+Utilizzo `wardrobe` soprattutto per Debian dove si assicura la massima compatibilità, ma anche per Devuan che sostanzialmente ricalca Debian stessa. Qualche aggiunta ed accorgimento, invece, si è reso necessario per includere anche Ubuntu.
 
-### repositories
-I Ubuntu abbiamo delle differenze nel sources.list, in particolare cambia il nome dei componenti che passano dai canonici: ```main```, ```contrib```, ```non-free``` alla diversa denominazione di Ubuntu: ```main```, ```restricted```, ```universe``` e ```multiverse```.
+### `repositories`
+I Ubuntu abbiamo delle differenze nel `sources.list`, in particolare cambia il nome dei componenti che passano dai canonici: ```main```, ```contrib```, ```non-free``` alla classificazione di Ubuntu: ```main```, ```restricted```, ```universe``` e ```multiverse```.
 
-In Ubuntu, quindi, sources.list viene semplicemente ignorato, mentre è comunque possibile aggiungere altre repository in source.list.d. Lo stesso avviene per LMDE5 elsie che pur essendo una derivata Debian, ha un source.list dummy e riporta il suo contenuto in source.list.d.
+In Ubuntu, quindi, `sources.list` viene semplicemente ignorato, mentre è comunque possibile aggiungere altre repository in `source.list.d`. Lo stesso avviene per LMDE5 elsie che pur essendo una derivata Debian, ha un `source.list` dummy e riporta il suo contenuto sotto `source.list.d`.
 
 ### Gestione delle differenze dei nomi dei pacchetti
-Alcuni pacchetti possono essere denominati diversamente Debian/Devuan rispetto ad Ubuntu. Un caso tipico è firefox, ```firefox-esr``` su Debian semplicemente ```firefox``` in Ubuntu. La soluzioni è l'utilizzo della sezione ```try_packages``` dove si possono includere entrambi e si caricherà solo il pacchetto corrispondente.
+Alcuni pacchetti possono essere denominati diversamente Debian/Devuan rispetto ad Ubuntu. Un caso tipico è firefox, ```firefox-esr``` su Debian semplicemente ```firefox``` in Ubuntu. La soluzione che ho trovato è l'utilizzo della sezione ```try_packages``` dove si possono includere entrambi e si caricherà solo il pacchetto corrispondente.
 
-Lo stesso discorso vale per gli accessori che possono pure essere definiti per distribuzioni diverse, anche qua c'è la possibilità di utilizzare ```try_accessories``` .
+Lo stesso discorso vale per gli `accessories` che possono pure essere definiti per distribuzioni diverse, anche qua c'è la possibilità di utilizzare ```try_accessories``` .
 
-### Versioni naked
-Un'altra ragione per utilizzare Debian/Devuan invece di Ubuntu e derivate è la difficoltà di ottenere una versione "naked" ovvero una installazione CLI minima. E' possibile con Ubuntu, utilizzando la versione server, ma l'immagine contiene comunque funzionalità non richieste ed è abbastanza pesante rispetto alle controparti.
+### Versioni `naked`
+Un'altra ragione per utilizzare Debian/Devuan invece di Ubuntu e derivate è la difficoltà di ottenere una versione **naked** ovvero una installazione CLI minima. E' possibile con Ubuntu, utilizzando la versione server, ma l'immagine contiene comunque funzionalità non richieste ed è abbastanza pesante rispetto alle controparti.
 
 ![wagtail-warbler-whipbird](/img/wardrobe/wagtail-warbler-whipbird.png)
 Lo screenshot è stato preso durante la "vestizione" di wagtail, warbler e whipbird sulla mia stazione di lavoro, potete trovare il risultato finale [qui](https://sourceforge.net/projects/penguins-eggs/files/ISOS/waydroid/).
