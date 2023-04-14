@@ -14,7 +14,7 @@ Ho utilizzato questo metodo sia per la creazione di alcune personalizzazioni gen
 
 ## La metafora del guardaroba
 
-La metafora consiste in un guardaroba contenente costumi ed accessori per la vestizione.
+La metafora consiste in un guardaroba contenente `costumes` ed `accessories` per la vestizione.
 
 ![wardrobe](/img/wardrobe/51616859915_5f8eaabfa4_w.jpg)
 
@@ -28,7 +28,7 @@ Questo metodo si è dimostrato utile per lo sviluppo e l'organizzazione del lavo
 
 Un `costume` consiste essenzialmente in una directory denominata con il nome del `costume` ed un file yaml: `index.yaml`. 
 
-`index.yaml` specifica la composizione del costume, a sua definizione la troviamo in [i-materia.ts](https://github.com/pieroproietti/penguins-eggs/blob/master/src/interfaces/i-materia.ts), e viene analizzato dalla classe [tailor.ts](https://github.com/pieroproietti/penguins-eggs/blob/master/src/classes/tailor.ts) di `eggs`. In sostanza, noi forniamo le indicazioni ed il sarto ci cuce il vestito.
+`index.yaml` specifica la composizione del `costume`, a sua definizione la troviamo in [i-materia.ts](https://github.com/pieroproietti/penguins-eggs/blob/master/src/interfaces/i-materia.ts), e viene analizzato dalla classe [`tailor.ts`](https://github.com/pieroproietti/penguins-eggs/blob/master/src/classes/tailor.ts) di `eggs`. In sostanza, noi forniamo le indicazioni ed il sarto ci cuce il vestito.
 
 In `wardrobe`, quindi abbiamo soltanto delle informazioni che specificano soprattutto repository e pacchetti in linguaggio yaml. Questo esempio è tratto dal file `index.yaml` del mio `colibri`. Potete visualizzare l'intero [index.yaml](https://github.com/pieroproietti/penguins-wardrobe/blob/main/costumes/colibri/index.yml).
 
@@ -73,7 +73,7 @@ distributions:
 ```
 
 ### `sequence`
-La `sequence` è la parte cruciale sia dei costumi che degli accessori, viene eseguita in sequenza - da qua il nome - e l'idea è stata di renderla minima ed indivisibile. Può contenere:
+La `sequence` è la parte cruciale sia dei `costumes` che degli `accessories`, viene eseguita in sequenza - da qua il nome - e l'idea è stata di renderla minima ed indivisibile. Può contenere:
 
 * [`repositories`](#repositories)
   * [`sources_list`](#sources_list)
