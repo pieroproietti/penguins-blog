@@ -8,9 +8,9 @@ import Translactions from '@site/src/components/Translactions';
 <Translactions />
 
 
-Si tratta di un repository costituito principalmente da file yaml e da semplici  script bash ed usato da eggs per creare personalizzazioni di sistemi Linux a partire da una sistema minimale CLI già installato - o nella nostra terminologia "naked" - per ottenere un sistema completo.
+Si tratta di un repository costituito principalmente da file yaml e da semplici  script bash ed usato da `eggs` per creare personalizzazioni di sistemi Linux a partire da una sistema minimale CLI già installato - o nella nostra terminologia `naked` - per ottenere un sistema completo.
 
-Ho utilizzato questo metodo sia per la creazione di alcune personalizzazioni generiche, sia per la creazione di sistemi Linux con waydroid denominati:  wagtail, warbler e whipbird e basati rispettivamente su Gnome, KDE Plasma e Weston.
+Ho utilizzato questo metodo sia per la creazione di alcune personalizzazioni generiche, sia per la creazione di sistemi Linux con `waydroid` denominati:  `wagtail`, `warbler` e `whipbird` e basati rispettivamente su `Gnome`, `KDE Plasma` e `Weston`.
 
 ## La metafora del guardaroba
 
@@ -18,7 +18,7 @@ La metafora consiste in un guardaroba contenente costumi ed accessori per la ves
 
 ![wardrobe](/img/wardrobe/51616859915_5f8eaabfa4_w.jpg)
 
-penguins-wardrobe è una repository per **costumes** ed **accessories**, gestita con Git ed organizzata per directory: costumes, accessories, config, themes e documentation. Il wardrobe permette sia una facile organizzazione del nostro lavoro, sia il consolidamento delle nostre esperienze di customizzatori Linux, rendendo più semplice cercare e riutilizzare il lavoro svolto in precedenza.
+`penguins-wardrobe` è una repository per **`costumes`** ed **`accessories`**, gestita con `Git` ed organizzata per directory: `costumes`, `accessories`, `config`, `themes` e `documentation`. Il `wardrobe` permette sia una facile organizzazione del nostro lavoro, sia il consolidamento delle nostre esperienze di customizzatori Linux, rendendo più semplice cercare e riutilizzare il lavoro svolto in precedenza.
 
 E' possibile vestire un sistema CLI con un splendida interfaccia GUI, ma è anche possibile utilizzare il wardrobe per collezionare configurazioni server senza necessariamente avere una interfaccia grafica. 
 
@@ -26,11 +26,11 @@ Questo metodo si è dimostrato utile per lo sviluppo e l'organizzazione del lavo
 
 ## Costumi
 
-Un costume consiste essenzialmente in una directory denominata con il nome del costume ed un file yaml: index.yaml. 
+Un `costume` consiste essenzialmente in una directory denominata con il nome del `costume` ed un file yaml: `index.yaml`. 
 
-index.yaml specifica la composizione del costume, a sua definizione la troviamo in [i-materia.ts](https://github.com/pieroproietti/penguins-eggs/blob/master/src/interfaces/i-materia.ts), e viene analizzato dalla classe [tailor.ts](https://github.com/pieroproietti/penguins-eggs/blob/master/src/classes/tailor.ts) di eggs. In sostanza, noi forniamo le indicazioni ed il sarto ci cuce il vestito.
+`index.yaml` specifica la composizione del costume, a sua definizione la troviamo in [i-materia.ts](https://github.com/pieroproietti/penguins-eggs/blob/master/src/interfaces/i-materia.ts), e viene analizzato dalla classe [tailor.ts](https://github.com/pieroproietti/penguins-eggs/blob/master/src/classes/tailor.ts) di `eggs`. In sostanza, noi forniamo le indicazioni ed il sarto ci cuce il vestito.
 
-In wardrobe, quindi abbiamo soltanto delle informazioni che specificano soprattutto repository e pacchetti in linguaggio yaml. Questo esempio è tratto dal file index.yaml del mio colibri. Potete visualizzare l'intero [index.yaml](https://github.com/pieroproietti/penguins-wardrobe/blob/main/costumes/colibri/index.yml).
+In `wardrobe`, quindi abbiamo soltanto delle informazioni che specificano soprattutto repository e pacchetti in linguaggio yaml. Questo esempio è tratto dal file `index.yaml` del mio `colibri`. Potete visualizzare l'intero [index.yaml](https://github.com/pieroproietti/penguins-wardrobe/blob/main/costumes/colibri/index.yml).
 
 ```
 # wardrobe: .
@@ -50,7 +50,7 @@ reboot: true
 ```
 La sintassi utilizzata è yaml, piuttosto semplice da leggere, mentre per la scrittura potete contare su numerosi addon per praticamente ogni editor.
 
-Andiamo a vedere come è composto il file index.yaml di un costume.
+Andiamo a vedere come è composto il file `index.yaml` di un `costume`.
 
 Possiamo suddividerlo in tre parti:
 * [intestazione](#intestazione)
@@ -72,81 +72,81 @@ distributions:
   - bookworm
 ```
 
-### sequence 
-La sequence è la parte cruciale sia dei costumi che degli accessori, viene eseguita in sequenza - da qua il nome - e l'idea è stata di renderla minima ed indivisibile. Può contenere:
+### `sequence`
+La `sequence` è la parte cruciale sia dei costumi che degli accessori, viene eseguita in sequenza - da qua il nome - e l'idea è stata di renderla minima ed indivisibile. Può contenere:
 
-* [repositories](#repositories)
-  * [sources_list](#sources_list)
-  * [sources_list_d](#sources_list_d)
-* [preinst](#preinst)
-* [dependencies](#dependencies)
-* [packages](#packages)
-* [packages_no_install_recommends](#packages_no_install_recommends)
-* [try_packages](#try_packages)
-* [try_packages_no_install_recommends](#try_packages_no_install_recommends)
-* [debs](#debs)
-* [packages_python](#packages_python)
-* [accessories](#accessories)
-* [try_accessories](#try_accessories)
+* [`repositories`](#repositories)
+  * [`sources_list`](#sources_list)
+  * [`sources_list_d`](#sources_list_d)
+* [`preinst`](#preinst)
+* [`dependencies`](#dependencies)
+* [`packages`](#packages)
+* [`packages_no_install_recommends`](#packages_no_install_recommends)
+* [`try_packages`](#try_packages)
+* [`try_packages_no_install_recommends`](#try_packages_no_install_recommends)
+* [`debs`](#debs)
+* [`packages_python`](#packages_python)
+* [`accessories`](#accessories)
+* [`try_accessories`](#try_accessories)
 
-L'idea dietro la sequenza è stata quella di renderla il più possibile atomica.
+L'idea dietro la `sequence` è stata quella di renderla il più possibile atomica.
 
 Vediamo come è composta in dettaglio la sequenza.
 
-#### repositories
+#### `repositories`
 Definisce cosa abbiamo bisogno sia nella nostra ```/etc/apt/surces.list``` e principalmente, nella directory ```/etc/apt/sources.list.d```.
 
 ```repositories``` è formata da due item:
 
-##### sources_list
-Specifica dei componenti da utilizzare: **main**, **contrib**, **non-free**
+##### `sources_list`
+Specifica dei componenti da utilizzare: **`main`**, **`contrib`**, **`non-free`**
 
-##### sources_list_d
+##### `sources_list_d`
 Specifica dei commandi per aggiungere altre repository all'interno di ```/etc/apt/sources.list.d```.
 
-#### preinst
+#### `preinst`
 Abbiamo a volte la necessita di eseguire alcune azioni prima dell'installazione dei pacchetti, possiamo aggiungere queste azioni in forma di script in questa sezione.
 
-#### packages
+#### `packages`
 Un semplice array di pacchetti da installare, è il cuore del sistema.
 
-#### packages_no_install_recommends
+#### `packages_no_install_recommends`
 Una semplice array di pacchetti da installare con l'opzione ```--no-install-recommends```.
 
-#### try_packages
+#### `try_packages`
 Come [packages](#packages) ma non fallisce se non trova il pacchetto.
 
-#### try_packages_no_install_recommends
+#### `try_packages_no_install_recommends`
 Come [packages_no_install_recommends](#packages_no_install_recommends) ma non fallisce se non trova il pacchetto.
 
-#### debs
+#### `debs`
 
-Questo è un campo booleano, se è true il contenuto della directory ./debs sarà installato con il comando ```dpkg -i ./debs/*.deb```.
+Questo è un campo booleano, se è true il contenuto della directory `./debs` sarà installato con il comando ```dpkg -i ./debs/*.deb```.
 
-#### packages_python
-Un semplice array di pacchetti python che saranno installati con pip.
+#### `packages_python`
+Un semplice array di pacchetti `python` che saranno installati con `pip`.
 
-#### accessories
-Una lista di accessori da installare per completare il costume. esempio:
+#### `accessories`
+Una lista di accessori da installare per completare il `costume`. esempio:
 ```
-accessories:
-- base
-- eggs-dev # defined in /accessory
-- waydroid # defined in /accessory
-- ./firmwares # here we will use an accessory defined inside the costume, note ./
+`accessories`:
+- `base`
+- `eggs-dev # defined in /accessory`
+- `waydroid # defined in /accessory`
+- `./firmwares # here we will use an accessory defined inside the costume, note ./`
 ```
 
-#### try_accessories
-Come  [accessories](#accessories) ma non fallisce.
+#### `try_accessories`
+Come  [`accessories`](#accessories) ma non fallisce.
 
-### customize
-costomize contiene le azioni per finalizzare l'installazione e customizzare il risultato. Può contente:
-* [dirs](#dirs)
-* [hostname](#hostname)
-* [scripts](#scripts)
+### `customize`
+`costomize` contiene le azioni per finalizzare l'installazione e customizzare il risultato. Può contente:
+* `[dirs](#dirs)`
+* `[hostname](#hostname)`
+* `[scripts](#scripts)`
 
-##### dirs
-dirs è un campo booleano, se true la directory ./dirs interna al costume verrà copiata nella root del sistema.
+##### `dirs`
+`dirs` è un campo booleano, se true la directory `./dirs` interna al `costume` verrà copiata nella `root` del sistema.
 
 Esempio: Abbiamo bisogno di copiare la nostra customizzazione del desktop ```/etc/skel``` ed il nostro background su ```/usr/share/background```. 
 
@@ -156,13 +156,13 @@ Possiamo mettere il tutto in ```dirs```:
 - dirs   + etc   + skel  
          + usr   + backgrounds  + colibri
 ```
-##### hostname
-Anche questo è un campo booleano e, se true, il file ```/etc/hostname``` verrà posto al nome del costume ed in accordo ad esso sarà anche modificato ```/etc/hosts```.
+##### `hostname`
+Anche questo è un campo booleano e, se `true`, il file ```/etc/hostname``` verrà posto al nome del `costume` ed in accordo ad esso sarà anche modificato ```/etc/hosts```.
 
-#### scripts
-scripts contiene un array di uno o più script utilizzati per customizzare il risulto.
+#### `scripts`
+`scripts` contiene un `array` di uno o più script utilizzati per customizzare il risulto.
 
-Potete aggiunge altri script e directory all'interno di del costume o utilizzare gli script sotto ```../../scripts/``` come ```../../scripts/config_desktop_link.sh```.
+Potete aggiunge altri script e directory all'interno di del `costume` o utilizzare gli script sotto ```../../scripts/``` come ```../../scripts/config_desktop_link.sh```.
 
 **Esempi**
 
@@ -174,30 +174,30 @@ customize:
     - ../../scripts/config_desktop_link.sh
     - ../../scripts/config_lightdm.sh
 ```
-### reboot
+### `reboot`
 Se vero in sistema verrà riavviato dopo la vestizione.
 
-## Accessories
-Gli accessori possono essere definiti all'interno di un costume o fuori dallo stesso - principalmente in ```accessories``` ma anche interni ad un altro costume. Gli accessori interni vivono all'interno di un costume o di altri accessori che li dichiarano.
+## `Accessories`
+Gli accessori possono essere definiti all'interno di un costume o fuori dallo stesso - principalmente in ```accessories``` ma anche interni ad un altro costume. Gli accessori interni vivono all'interno di un `costume` o di altri accessori che li dichiarano.
 
 Hanno la stessa struttura dei costumi e vengono richiamati da questi. Potete vederli come una cintura da mettere con dei pantaloni alla moda o una borsa associata al tailler.
 
 Gli accessori, però sono installabili anche singolarmente, ad esempio: ```sudo eggs wardrobe wear accessories/eggs-dev``` ci installerà gli strumenti di sviluppo. 
 
-Tutto quello che risiede sotto ```accessories²`` è un accessorio. Ad esempio: base è un accessorio, utilizzato in molti vestiti; waydroid è un accessorio ed è utilizzato da wagtail (gnome3),  warbler (KDE) e whipbird; firmwares usato in duck ed owl.
+Tutto quello che risiede sotto ```accessories²`` è un accessorio. Ad esempio: `base` è un accessorio, utilizzato in molti vestiti; `waydroid` è un accessorio ed è utilizzato da `wagtail` (gnome3), `warbler` (KDE) e `whipbird`; `firmwares` è usato in `duck` ed `owl`.
 
-colibri, wagtail, warbler e whispbird essendo nati essenzialmente per sviluppatori, non usano l'accessorio firmwares, ma dispongono un un accessorio interno firmware contentente principalmente driver per wifi. (*)
+`colibri`, `wagtail`, `warbler` e `whispbird` essendo nati essenzialmente per sviluppatori, non usano l'accessorio `firmwares`, ma dispongono un un accessorio interno `firmwares` contentente principalmente driver per wifi. (*)
 
 
 __Nota__ ```sudo eggs wardrobe wear``` accetta una flag ```--no_firmwares``` per saltare completamente il firmware nel caso stiamo lavorando per macchine virtuali o facendo dei test.
 
-(*) wagtail, warbler e whispbird prima della fine dell'installazione chiamano pure uno speciale script [add_wifi_firmwares.sh](https://github.com/pieroproietti/penguins-wardrobe/blob/main/scripts/add_wifi_firmwares.sh) per aggiungere in Debian bookworm firmware scaricabile da [cdimage unofficial non-free](http://cdimage.debian.org/cdimage/unofficial/non-free/firmware/bookworm/current/).
+(*) `wagtail`, `warbler` e `whispbird` prima della fine dell'installazione chiamano pure uno speciale script [add_wifi_firmwares.sh](https://github.com/pieroproietti/penguins-wardrobe/blob/main/scripts/add_wifi_firmwares.sh) per aggiungere in Debian bookworm firmware scaricabile da [cdimage unofficial non-free](http://cdimage.debian.org/cdimage/unofficial/non-free/firmware/bookworm/current/).
 
 
 ## I comandi
-Abbiamo solo quattro comandi: get, list, show e wear.
+Abbiamo solo quattro comandi: `get`, `list`, `show` e `wear`.
 
-### wardrobe get
+### `wardrobe get`
 
 ```
 eggs wardrobe get
@@ -209,22 +209,22 @@ Esegue il clone di [penguins-wardrobe](https://github.com/pieroproietti/penguins
 eggs wardrobe https://github.com/quirinux-so/penguins-wardrobe
 ```
 
-scaricherà in  ```~/.wardrobe``` la versione di quirinux.
+scaricherà in  ```~/.wardrobe``` la versione del `wardrobe` di `quirinux`.
 
-### wardrobe list
-Mostra la lista dei costumes ed accessories presenti nel wardrobe.
+### `wardrobe list`
+Mostra la lista dei costumes ed accessories presenti nel `wardrobe`.
 
 ```
 eggs wardrobe list 
 ```
 
 ### wardrobe show COSTUME
-Mostra l'indice index.yaml di un costume.
+Mostra l'indice `index`.yaml di un costume.
 ```
 eggs wardrobe show colibri
 ```
 
-### sudo wardrobe wear COSTUME
+### `sudo wardrobe wear COSTUME`
 Avvia il processo di vestizione di un costume, alla fine del processo il sistema sarà modificato secondo le indicazioni del costume.
 
 ```
@@ -241,14 +241,14 @@ sudo eggs wardrobe wear colibri
 * ```whipbird```: a wayland/weston/waydroid installation.
 
 ## Accessories
-* base
-* eggs-dev
-* firmwares
-* graphics
-* liquorix
-* multimedia
-* office
-* waydroid
+* `base`
+* `eggs-dev`
+* `firmwares`
+* `graphics`
+* `liquorix`
+* `multimedia`
+* `office`
+* `waydroid`
 
 ## Temi
 Mentre i costumi e gli accessori si applicano ad un sistema installato, i temi rendono possibile la customizzazione dell'immagine live. E' possibile customizzare il boot delle immagini iso create con eggs ed l'aspetto dell'installer GUI calamares.
