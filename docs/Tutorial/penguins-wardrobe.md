@@ -362,16 +362,16 @@ Un'altra ragione per utilizzare Debian/Devuan invece di Ubuntu e derivate è la 
 ## `Arch Linux`
 `Arch Linux` si presta benissimo alla creazione di immagini `naked` ed anche alla creazione di `wardrobe`, il grande problema è la diversa denominazione dei pacchetti.
 
-Difatti, mentre sarebbe facilmente possibile estendere i comandi `eggs wardrobe` ad utilizzare `pacman` piuttosto che  `apt`, quello che ne rende impossibile l'utilizzo è la diversa denominazione dei pacchetti che rende praticamente impossibile gestire lo stesso `costume` in comune con Debian.
+Difatti, mentre sarebbe facilmente possibile estendere il comando `eggs wardrobe wear` ad utilizzare `pacman` piuttosto che  `apt`, quello che non ne rende pratico l'utilizzo è la diversa denominazione dei pacchetti e, quindi, gestire lo stesso `costume` in comune con Debian.
 
-Occorrerebbe probabilmente gestire due `wardrobe` differenti.
+Occorrerebbe probabilmente utilizzare due `wardrobe` differenti o una differente metodologia.
 
-Segnalo che all'interno del costume `colibri` è posto uno script bash che crea la medesima configurazione `colibri` per `Arch Linux`. 
+Segnalo che, comunque. all'interno del costume `colibri` è posto un semplice script bash che crea la medesima configurazione `colibri` per `Arch Linux`. 
 
 Sono possibili ulteriori sviluppi.
 
 ## `Manjaro`
-Non viene utilizzato il `wardrobe`.
+Non viene utilizzato il `wardrobe`, vale lo stesso discorso di `Arch Linux`.
 
 ![wagtail-warbler-whipbird](/img/wardrobe/wagtail-warbler-whipbird.png)
 Lo screenshot è stato preso durante la "vestizione" di wagtail, warbler e whipbird sulla mia stazione di lavoro, potete trovare il risultato finale [qui](https://sourceforge.net/projects/penguins-eggs/files/ISOS/waydroid/).
