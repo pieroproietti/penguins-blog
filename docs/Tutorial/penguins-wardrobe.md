@@ -56,11 +56,11 @@ La sintassi utilizzata è yaml, piuttosto semplice da leggere, mentre per la scr
 Andiamo a vedere come è composto il file `index.yaml` di un `costume`.
 
 Possiamo suddividerlo in tre parti:
-* [intestazione](#intestazione)
-* [sequence](#sequence)
-* [customize](#customize)
+* [`header`](#header)
+* [`sequence`](#sequence)
+* [`customize`](#customize)
 
-### intestazione
+### `header`
 Definisce il nome, l'autore, descrizione e la release del costume. Una parte importante è `distributions` se la distribuzione corrente non è inclusa il costume non verrà applicato.
 
 `
