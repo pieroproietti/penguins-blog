@@ -7,10 +7,13 @@ import Translactions from '@site/src/components/Translactions';
 
 <Translactions />
 
+`Penguins' wardrobe`, non fa parte di `eggs` e non è necessaria la sua conoscenza ed il suo utilizzo per rimasterizzare il proprio sistema o per creare delle proprie customizzazioni originali. E' piuttosto una metodologia che consente - nel mentre si sviluppa un progetto proprio - di tenere traccia dei passi effettuati e riutilizzarli all'occorrenza. 
 
-Si tratta di un repository costituito principalmente da file yaml e da semplici  script bash ed usato da `eggs` per creare personalizzazioni di sistemi Linux a partire da una sistema minimale CLI già installato - o nella nostra terminologia `naked` - per ottenere un sistema completo.
+Si tratta di un repository [penguins-wardrobe](https://github.com/pieroproietti/penguins-wardrobe) costituito principalmente da file yaml e da semplici  script bash ed utilizzato da `eggs` attraverso il comando `wardorobe` per creare personalizzazioni di sistemi Linux a partire da una sistema minimale CLI già installato, nella nostra terminologia `naked`.
 
 Ho utilizzato questo metodo sia per la creazione di alcune personalizzazioni generiche, sia per la creazione di sistemi Linux con `waydroid` denominati:  `wagtail`, `warbler` e `whipbird` e basati rispettivamente su `Gnome`, `KDE Plasma` e `Weston`.
+
+Potete SEMPRE utilizzare `eggs` a partire da vostre customizzazioni originali senza utilizzare il comando `wardrobe` ma seguendo le vostre metodologie.
 
 ## La metafora del guardaroba
 
@@ -18,13 +21,13 @@ La metafora consiste in un guardaroba contenente `costumes` ed `accessories` per
 
 ![wardrobe](/img/wardrobe/51616859915_5f8eaabfa4_w.jpg)
 
-`penguins-wardrobe` è una repository per **`costumes`** ed **`accessories`**, gestita con `Git` ed organizzata per directory: `costumes`, `accessories`, `config`, `themes` e `documentation`. Il `wardrobe` permette sia una facile organizzazione del nostro lavoro, sia il consolidamento delle nostre esperienze di customizzatori Linux, rendendo più semplice cercare e riutilizzare il lavoro svolto in precedenza.
+`penguins-wardrobe` è una repository, gestita con `git` ed organizzata per directory: `costumes`, `accessories`, `config`, `themes` e `documentation`. Il suo utilizzo prevede di effettuare il fork della stessa al fine di creare customizzazioni proprie, permette così sia una facile organizzazione del nostro lavoro, sia il consolidamento delle nostre esperienze, rendendo più semplice cercare e riutilizzare del lavoro lavoro fatto in precedenza o importare lavori fatti da terzi.
 
-E' possibile vestire un sistema CLI con un splendida interfaccia GUI, ma è anche possibile utilizzare il wardrobe per collezionare configurazioni server senza necessariamente avere una interfaccia grafica. 
+E' possibile vestire un sistema CLI con un splendida interfaccia GUI, ma è anche possibile utilizzare il wardrobe per collezionare configurazioni server senza necessariamente una interfaccia grafica. 
 
 Questo metodo si è dimostrato utile per lo sviluppo e l'organizzazione del lavoro.
 
-## Costumi
+## `costumes`
 
 Un `costume` consiste essenzialmente in una directory denominata con il nome del `costume` ed un file yaml: `index.yaml`. 
 
@@ -250,7 +253,7 @@ sudo eggs wardrobe wear colibri
 * `office`
 * `waydroid`
 
-## Temi
+## `themes`
 Mentre i `costumes` e gli `accessories` si applicano ad un sistema installato, i temi rendono possibile la customizzazione dell'immagine `live`. E' possibile customizzare il boot delle immagini ISO create con `eggs` ed l'aspetto dell'installer GUI `calamares`.
 
 Come per i `costumes` e gli `accessories`, i `themes` sono principalmente costituiti da una directory, file yaml, icone, sfondi e quant'altro necessario. L'idea è stata presa da `calamares` e dai suoi file di configurazione ed estesa ad aspetti più specifici di `eggs` come il boot live. Solo da poco ho deciso di racchiudere anche i `themes` in `penguins-wardrobe`, inizialmente erano parte di `eggs`, poi sono stati spostati in `penguins-addons`, infine con la nascita di `penguins-wardrobe` sono stati inclusi nella stessa repository.
@@ -338,21 +341,38 @@ Se invece vi serve la customizzazione in italiano:
 
 Ovviamente è possibile creare configurazioni a misura per tutti.
 
-## Compatibilità
-Utilizzo `wardrobe` soprattutto per Debian dove si assicura la massima compatibilità, ma anche per Devuan che sostanzialmente ricalca Debian stessa. Qualche aggiunta ed accorgimento, invece, si è reso necessario per includere anche Ubuntu.
+## Ubuntu
+Utilizzo `wardrobe` soprattutto per Debian dove si assicura la massima compatibilità, ma anche per Devuan che sostanzialmente ricalca Debian stessa. Qualche aggiunta ed accorgimento, invece, si è reso necessario per includere anche Ubuntu. 
 
-### `repositories`
+In particolare:
+
+### `ubuntu repositories`
 I Ubuntu abbiamo delle differenze nel `sources.list`, in particolare cambia il nome dei componenti che passano dai canonici: ```main```, ```contrib```, ```non-free``` alla classificazione di Ubuntu: ```main```, ```restricted```, ```universe``` e ```multiverse```.
 
 In Ubuntu, quindi, `sources.list` viene semplicemente ignorato, mentre è comunque possibile aggiungere altre repository in `source.list.d`. Lo stesso avviene per LMDE5 elsie che pur essendo una derivata Debian, ha un `source.list` dummy e riporta il suo contenuto sotto `source.list.d`.
 
-### Gestione delle differenze dei nomi dei pacchetti
+### `ubuntu try_packages`
 Alcuni pacchetti possono essere denominati diversamente Debian/Devuan rispetto ad Ubuntu. Un caso tipico è firefox, ```firefox-esr``` su Debian semplicemente ```firefox``` in Ubuntu. La soluzione che ho trovato è l'utilizzo della sezione ```try_packages``` dove si possono includere entrambi e si caricherà solo il pacchetto corrispondente.
 
+### `ubuntu try_accessories`
 Lo stesso discorso vale per gli `accessories` che possono pure essere definiti per distribuzioni diverse, anche qua c'è la possibilità di utilizzare ```try_accessories``` .
 
-### Versioni `naked`
-Un'altra ragione per utilizzare Debian/Devuan invece di Ubuntu e derivate è la difficoltà di ottenere una versione **naked** ovvero una installazione CLI minima. E' possibile con Ubuntu, utilizzando la versione server, ma l'immagine contiene comunque funzionalità non richieste ed è abbastanza pesante rispetto alle controparti.
+### `ubuntu naked`
+Un'altra ragione per utilizzare Debian/Devuan invece di Ubuntu e derivate è la difficoltà di ottenere una versione **naked** ovvero una installazione CLI minima. E' possibile con Ubuntu, utilizzando la versione server, ma l'immagine contiene comunque funzionalità non richieste ed è abbastanza pesante rispetto a Debian.
+
+## `Arch Linux`
+`Arch Linux` si presta benissimo alla creazione di immagini `naked` ed anche alla creazione di `wardrobe`, il grande problema è la diversa denominazione dei pacchetti.
+
+Difatti, mentre sarebbe facilmente possibile estendere i comandi `eggs wardrobe` ad utilizzare `pacman` piuttosto che  `apt`, quello che ne rende impossibile l'utilizzo è la diversa denominazione dei pacchetti che rende praticamente impossibile gestire lo stesso `costume` in comune con Debian.
+
+Occorrerebbe probabilmente gestire due `wardrobe` differenti.
+
+Segnalo che all'interno del costume `colibri` è posto uno script bash che crea la medesima configurazione `colibri` per `Arch Linux`. 
+
+Sono possibili ulteriori sviluppi.
+
+## `Manjaro`
+Non viene utilizzato il `wardrobe`.
 
 ![wagtail-warbler-whipbird](/img/wardrobe/wagtail-warbler-whipbird.png)
 Lo screenshot è stato preso durante la "vestizione" di wagtail, warbler e whipbird sulla mia stazione di lavoro, potete trovare il risultato finale [qui](https://sourceforge.net/projects/penguins-eggs/files/ISOS/waydroid/).
