@@ -11,7 +11,7 @@ import Translactions from '@site/src/components/Translactions';
 
 Si tratta di un repository [penguins-wardrobe](https://github.com/pieroproietti/penguins-wardrobe) costituito principalmente da file yaml e da semplici  script bash ed utilizzato da `eggs` attraverso il comando `wardorobe` per creare personalizzazioni di sistemi Linux a partire da una sistema minimale CLI già installato, nella nostra terminologia `naked`.
 
-Ho utilizzato questo metodo sia per la creazione di alcune personalizzazioni generiche, sia per la creazione di sistemi Linux con `waydroid` denominati:  `wagtail`, `warbler` e `whipbird` e basati rispettivamente su `Gnome`, `KDE Plasma` e `Weston`.
+Ho utilizzato questo metodo sia per la creazione di alcune personalizzazioni generiche: `colibri`, `duck`, `owl` e `eagle`, sia per la creazione di sistemi Linux con `waydroid` denominati:  `wagtail`, `warbler` e `whipbird` e basati rispettivamente su `Gnome`, `KDE Plasma` e `Weston`.
 
 Potete SEMPRE utilizzare `eggs` a partire da vostre customizzazioni originali senza utilizzare il comando `wardrobe` ma seguendo le vostre metodologie.
 
@@ -35,7 +35,7 @@ Un `costume` consiste essenzialmente in una directory denominata con il nome del
 
 In `wardrobe`, quindi abbiamo soltanto delle informazioni che specificano soprattutto repository e pacchetti in linguaggio yaml. Questo esempio è tratto dal file `index.yaml` del mio `colibri`. Potete visualizzare l'intero [index.yaml](https://github.com/pieroproietti/penguins-wardrobe/blob/main/costumes/colibri/index.yml).
 
-```
+`
 # wardrobe: .
 # costume: /colibri
 ---
@@ -50,7 +50,7 @@ distributions:
 ...
   hostname: true
 reboot: true
-```
+`
 La sintassi utilizzata è yaml, piuttosto semplice da leggere, mentre per la scrittura potete contare su numerosi addon per praticamente ogni editor.
 
 Andiamo a vedere come è composto il file `index.yaml` di un `costume`.
@@ -61,9 +61,9 @@ Possiamo suddividerlo in tre parti:
 * [customize](#customize)
 
 ### intestazione
-Definisce il nome, l'autore, descrizione e la release del costume. Una parte importante è ```distributions``` se la distribuzione corrente non è inclusa il costume non verrà applicato.
+Definisce il nome, l'autore, descrizione e la release del costume. Una parte importante è `distributions` se la distribuzione corrente non è inclusa il costume non verrà applicato.
 
-```
+`
 name: colibri
 description: >-
   desktop xfce4 plus all that I need to develop eggs, firmwares and anydesk
@@ -73,7 +73,7 @@ release: 0.0.3
 distributions:
   - bullseye
   - bookworm
-```
+`
 
 ### `sequence`
 La `sequence` è la parte cruciale sia dei `costumes` che degli `accessories`, viene eseguita in sequenza - da qua il nome - e l'idea è stata di renderla minima ed indivisibile. Può contenere:
@@ -97,15 +97,15 @@ L'idea dietro la `sequence` è stata quella di renderla il più possibile atomic
 Vediamo come è composta in dettaglio la sequenza.
 
 #### `repositories`
-Definisce cosa abbiamo bisogno sia nella nostra ```/etc/apt/surces.list``` e - principalmente - nella directory ```/etc/apt/sources.list.d```.
+Definisce cosa abbiamo bisogno sia nella nostra `/etc/apt/surces.list` e - principalmente - nella directory `/etc/apt/sources.list.d`.
 
-```repositories``` è formata da due item:
+`repositories` è formata da due item:
 
 ##### `sources_list`
 Specifica dei componenti da utilizzare: **`main`**, **`contrib`**, **`non-free`**
 
 ##### `sources_list_d`
-Specifica dei commandi per aggiungere altre repository all'interno di ```/etc/apt/sources.list.d```.
+Specifica dei commandi per aggiungere altre repository all'interno di `/etc/apt/sources.list.d`.
 
 #### `preinst`
 Abbiamo a volte la necessita di eseguire alcune azioni prima dell'installazione dei pacchetti, possiamo aggiungere queste azioni in forma di script in questa sezione.
@@ -114,7 +114,7 @@ Abbiamo a volte la necessita di eseguire alcune azioni prima dell'installazione 
 Un semplice array di pacchetti da installare, è il cuore del sistema.
 
 #### `packages_no_install_recommends`
-Una semplice array di pacchetti da installare con l'opzione ```--no-install-recommends```.
+Una semplice array di pacchetti da installare con l'opzione `--no-install-recommends`.
 
 #### `try_packages`
 Si comporta come [packages](#packages) ma non fallisce se non trova il pacchetto.
@@ -124,20 +124,20 @@ Funziona come [packages_no_install_recommends](#packages_no_install_recommends) 
 
 #### `debs`
 
-Questo è un campo booleano, se è true il contenuto della directory `./debs` sarà installato con il comando ```dpkg -i ./debs/*.deb```.
+Questo è un campo booleano, se è true il contenuto della directory `./debs` sarà installato con il comando `dpkg -i ./debs/*.deb`.
 
 #### `packages_python`
 Un semplice array di pacchetti `python` che saranno installati con `pip`.
 
 #### `accessories`
 Una lista di accessori da installare per completare il `costume`. esempio:
-```
+`
 `accessories`:
 - `base`
 - `eggs-dev # defined in /accessory`
 - `waydroid # defined in /accessory`
 - `./firmwares # here we will use an accessory defined inside the costume, note ./`
-```
+`
 
 #### `try_accessories`
 Come  [`accessories`](#accessories) ma non fallisce.
@@ -151,48 +151,48 @@ Come  [`accessories`](#accessories) ma non fallisce.
 ##### `dirs`
 `dirs` è un campo booleano, se true la directory `./dirs` interna al `costume` verrà copiata nella `root` del sistema.
 
-Esempio: Abbiamo bisogno di copiare la nostra customizzazione del desktop ```/etc/skel``` ed il nostro background su ```/usr/share/background```. 
+Esempio: Abbiamo bisogno di copiare la nostra customizzazione del desktop `/etc/skel` ed il nostro background su `/usr/share/background`. 
 
-Possiamo mettere il tutto in ```dirs```:
+Possiamo mettere il tutto in `dirs`:
 
-```
+`
 - dirs   + etc   + skel  
          + usr   + backgrounds  + colibri
-```
+`
 ##### `hostname`
-Anche questo è un campo booleano e, se `true`, il file ```/etc/hostname``` verrà posto al nome del `costume` ed in accordo ad esso sarà anche modificato ```/etc/hosts```.
+Anche questo è un campo booleano e, se `true`, il file `/etc/hostname` verrà posto al nome del `costume` ed in accordo ad esso sarà anche modificato `/etc/hosts`.
 
 #### `scripts`
 `scripts` contiene un `array` di uno o più script utilizzati per customizzare il risulto.
 
-Potete aggiunge altri script e directory all'interno di del `costume` o utilizzare gli script sotto ```../../scripts/``` come ```../../scripts/config_desktop_link.sh```.
+Potete aggiunge altri script e directory all'interno di del `costume` o utilizzare gli script contenuti nella cartella `scripts` come `../../scripts/config_desktop_link.sh`.
 
 **Esempi**
 
-Gli scripts sono chiamati da ```customize/scripts``` ed eseguiti nell'ordine specifico.
-```
+Gli scripts sono chiamati da `customize/scripts` ed eseguiti nell'ordine specifico.
+`
 customize:
   dirs: true
   scripts:
     - ../../scripts/config_desktop_link.sh
     - ../../scripts/config_lightdm.sh
-```
+`
 ### `reboot`
 Se vero in sistema verrà riavviato dopo la vestizione.
 
 ## `Accessories`
-Gli accessori possono essere definiti all'interno di un `costume` o fuori dallo stesso - principalmente in ```accessories``` ma anche interni ad un altro `costume`. Gli accessori interni vivono all'interno di un `costume` o di altri accessori che li dichiarano.
+Gli accessori possono essere definiti all'interno di un `costume` o fuori dallo stesso - principalmente in `accessories` ma anche interni ad un altro `costume`. Gli accessori interni vivono all'interno di un `costume` o di altri accessori che li dichiarano.
 
 Hanno la stessa struttura dei `costumes` e vengono richiamati da questi. Potete vederli come una cintura da mettere con dei pantaloni alla moda o una borsa associata al tailler.
 
-Gli `accessories`, però sono installabili anche singolarmente, ad esempio: ```sudo eggs wardrobe wear accessories/eggs-dev``` ci installerà gli strumenti di sviluppo. 
+Gli `accessories`, però sono installabili anche singolarmente, ad esempio: `sudo eggs wardrobe wear accessories/eggs-dev` ci installerà gli strumenti di sviluppo. 
 
-Tutto quello che risiede sotto ```accessories²`` è un accessorio. Ad esempio: `base` è un accessorio, utilizzato in molti vestiti; `waydroid` è un accessorio ed è utilizzato da `wagtail` (gnome3), `warbler` (KDE) e `whipbird`; `firmwares` è usato in `duck` ed `owl`.
+Tutto quello che risiede sotto `accessories²`` è un accessorio. Ad esempio: `base` è un accessorio, utilizzato in molti vestiti; `waydroid` è un accessorio ed è utilizzato da `wagtail` (gnome3), `warbler` (KDE) e `whipbird`; `firmwares` è usato in `duck` ed `owl`.
 
 `colibri`, `wagtail`, `warbler` e `whispbird` essendo nati essenzialmente per sviluppatori, non usano l'accessorio `firmwares`, ma dispongono un un accessorio interno `firmwares` contentente principalmente driver per wifi. (*)
 
 
-__Nota__ ```sudo eggs wardrobe wear``` accetta una flag ```--no_firmwares``` per saltare completamente il firmware nel caso stiamo lavorando su macchine virtuali o facendo dei test.
+__Nota__ `sudo eggs wardrobe wear` accetta una flag `--no_firmwares` per saltare completamente il firmware nel caso stiamo lavorando su macchine virtuali o facendo dei test.
 
 (*) `wagtail`, `warbler` e `whispbird` prima della fine dell'installazione chiamano pure uno speciale script [add_wifi_firmwares.sh](https://github.com/pieroproietti/penguins-wardrobe/blob/main/scripts/add_wifi_firmwares.sh) per aggiungere in Debian bookworm firmware scaricabile da [cdimage unofficial non-free](http://cdimage.debian.org/cdimage/unofficial/non-free/firmware/bookworm/current/).
 
@@ -202,46 +202,46 @@ Abbiamo solo quattro comandi: `get`, `list`, `show` e `wear`.
 
 ### `wardrobe get`
 
-```
+`
 eggs wardrobe get
-```
+`
 
-Esegue il clone di [penguins-wardrobe](https://github.com/pieroproietti/penguins-wardrobe) in ```~/.wardrobe```, il comando accetta un argomento [REPO], così potete lavorare con il vostro `wardrobe` invece di quello standard. Ad esempio:
+Esegue il clone di [penguins-wardrobe](https://github.com/pieroproietti/penguins-wardrobe) in `~/.wardrobe`, il comando accetta un argomento [REPO], così potete lavorare con il vostro `wardrobe` invece di quello standard. Ad esempio:
 
-```
+`
 eggs wardrobe https://github.com/quirinux-so/penguins-wardrobe
-```
+`
 
-scaricherà in  ```~/.wardrobe``` la versione del `wardrobe` di `quirinux`.
+scaricherà in  `~/.wardrobe` la versione del `wardrobe` di `quirinux`.
 
 ### `wardrobe list`
 Mostra la lista dei `costumes` ed `accessories` presenti nel `wardrobe`.
 
-```
+`
 eggs wardrobe list 
-```
+`
 
 ### wardrobe show COSTUME
 Mostra l'indice `index`.yaml di un `costume`.
-```
+`
 eggs wardrobe show colibri
-```
+`
 
 ### `sudo wardrobe wear COSTUME`
 Avvia il processo di vestizione di un `costume`, alla fine del processo il sistema sarà modificato secondo le indicazioni del `costume`.
 
-```
+`
 sudo eggs wardrobe wear colibri 
-```
+`
 
 ## Costumi esistenti:
-* ```colibri``` is a light XFC4 for developers you can easily start to improve eggs.
-* ```duck``` come with cinnamon - probably is the right desktop for peoples coming from windows - here complete plus office, gimp and vlc
-* ```owl``` is a XFCE4 for graphics designers, this a simple/experimental bird, based on the work of Charlie Martinez [quirinux](https://blog.quirinux.org/)
+* `colibri` is a light XFC4 for developers you can easily start to improve eggs.
+* `duck` come with cinnamon - probably is the right desktop for peoples coming from windows - here complete plus office, gimp and vlc
+* `owl` is a XFCE4 for graphics designers, this a simple/experimental bird, based on the work of Charlie Martinez [quirinux](https://blog.quirinux.org/)
 
-* ```wagtail```, a wayland/Gnome/waydroid installation;
-* ```warbler```, a wayland/KDE/waydroid installation;
-* ```whipbird```: a wayland/weston/waydroid installation.
+* `wagtail`, a wayland/Gnome/waydroid installation;
+* `warbler`, a wayland/KDE/waydroid installation;
+* `whipbird`: a wayland/weston/waydroid installation.
 
 ## Accessories
 * `base`
@@ -266,7 +266,7 @@ Ed è solo scrivento questo questo scritto, mi rendo conto del grande debito di 
 
 Un `theme` consiste in una semplice directory sotto `themes`, denominata con il nome del `vendor` (in questo esempio: `educanaandos-plus`), che include:
 
-```
+`
 educaandos-plus/
     theme
         applications
@@ -275,7 +275,7 @@ educaandos-plus/
             branding
             modules
         livecd
-```
+`
 #### themes
 E' solo il contenitore di tutto, la radice per così dire del tema stesso. 
 
@@ -303,7 +303,7 @@ Per le informazioni di riferimento sulla configurazione di questi file si rimand
 * [`partitions`.yml](/themes/educaandos-plus/theme/calamares/modules/partition.yml)
 * [`users.yml`](/themes/educaandos-plus/theme/calamares/modules/users.yml) (*)
 
-(*) In ```EducaAndOS``` per avere i diritti di amministrazione per l'utente, abbiamo la necessità di configurare lo stesso in un gruppo specifico.
+(*) In `EducaAndOS` per avere i diritti di amministrazione per l'utente, abbiamo la necessità di configurare lo stesso in un gruppo specifico.
 
 ##### `livecd`
 Si prende cura dell'aspetto del boot da `live`.
@@ -311,33 +311,33 @@ Si prende cura dell'aspetto del boot da `live`.
 Abbiamo in questo casi i temi per [grub](/themes/educaandos-plus/theme/livecd/grub.theme.cfg) ed [isolinux](/themes/educaandos-plus/theme/livecd/isolinux.theme.cfg), nonchè lo [spash](/themes/educaandos-plus/theme/livecd/splash.png) per il boot.
 
 ### Uso dei `themes`
-Per essere utilizzato un `theme` deve essere passato come parametro al flag ```--theme``` in `produce`:
+Per essere utilizzato un `theme` deve essere passato come parametro al flag `--theme` in `produce`:
 
-```
+`
 sudo eggs produce --theme ../path/to/theme
-```
+`
 esempio: 
 
-```
+`
 sudo eggs produce --theme .wardrobe/themes/educaandos-plus
-```
+`
 
 Potete anche clonare il `wardrobe~ con Git e prendere il `theme` da esso:
-```
+`
 sudo eggs produce --theme /penguins-wardrobe/themes/educaandos-plus
-```
+`
 
 ## `Config`
 Questa directory è utilizzata per permettere una customizzazione delle opzioni per l'installazione --unattended. 
 
-```sudo eggs install --unattended``` è equivalente a ```sudo install --custom us``` in questo modo è relativamente facile avere customizzazioni diverse, semplicemente creando un fork di questa repository ed una PR al sottoscritto.
+`sudo eggs install --unattended` è equivalente a `sudo install --custom us` in questo modo è relativamente facile avere customizzazioni diverse, semplicemente creando un fork di questa repository ed una PR al sottoscritto.
 
 Ad esempio potete copiare us.yaml in bliss.yaml, e cambiare sia il nome dell'utente live che la password ed avere la vostra installazione personalizzazione con:
 
-```sudo eggs install --custom bliss```
+`sudo eggs install --custom bliss`
 
 Se invece vi serve la customizzazione in italiano:
-```sudo eggs install --custom it```
+`sudo eggs install --custom it`
 
 Ovviamente è possibile creare configurazioni a misura per tutti.
 
@@ -347,15 +347,15 @@ Utilizzo `wardrobe` soprattutto per Debian dove si assicura la massima compatibi
 In particolare:
 
 ### `ubuntu repositories`
-I Ubuntu abbiamo delle differenze nel `sources.list`, in particolare cambia il nome dei componenti che passano dai canonici: ```main```, ```contrib```, ```non-free``` alla classificazione di Ubuntu: ```main```, ```restricted```, ```universe``` e ```multiverse```.
+I Ubuntu abbiamo delle differenze nel `sources.list`, in particolare cambia il nome dei componenti che passano dai canonici: `main`, `contrib`, `non-free` alla classificazione di Ubuntu: `main`, `restricted`, `universe` e `multiverse`.
 
 In Ubuntu, quindi, `sources.list` viene semplicemente ignorato, mentre è comunque possibile aggiungere altre repository in `source.list.d`. Lo stesso avviene per LMDE5 elsie che pur essendo una derivata Debian, ha un `source.list` dummy e riporta il suo contenuto sotto `source.list.d`.
 
 ### `ubuntu try_packages`
-Alcuni pacchetti possono essere denominati diversamente Debian/Devuan rispetto ad Ubuntu. Un caso tipico è firefox, ```firefox-esr``` su Debian semplicemente ```firefox``` in Ubuntu. La soluzione che ho trovato è l'utilizzo della sezione ```try_packages``` dove si possono includere entrambi e si caricherà solo il pacchetto corrispondente.
+Alcuni pacchetti possono essere denominati diversamente Debian/Devuan rispetto ad Ubuntu. Un caso tipico è firefox, `firefox-esr` su Debian semplicemente `firefox` in Ubuntu. La soluzione che ho trovato è l'utilizzo della sezione `try_packages` dove si possono includere entrambi e si caricherà solo il pacchetto corrispondente.
 
 ### `ubuntu try_accessories`
-Lo stesso discorso vale per gli `accessories` che possono pure essere definiti per distribuzioni diverse, anche qua c'è la possibilità di utilizzare ```try_accessories``` .
+Lo stesso discorso vale per gli `accessories` che possono pure essere definiti per distribuzioni diverse, anche qua c'è la possibilità di utilizzare `try_accessories` .
 
 ### `ubuntu naked`
 Un'altra ragione per utilizzare Debian/Devuan invece di Ubuntu e derivate è la difficoltà di ottenere una versione **naked** ovvero una installazione CLI minima. E' possibile con Ubuntu, utilizzando la versione server, ma l'immagine contiene comunque funzionalità non richieste ed è abbastanza pesante rispetto a Debian.
