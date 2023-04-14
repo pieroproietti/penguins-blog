@@ -200,7 +200,7 @@ __Nota__ `sudo eggs wardrobe wear` accetta una flag `--no_firmwares` per saltare
 ## I comandi
 Abbiamo solo quattro comandi: `get`, `list`, `show` e `wear`.
 
-### `wardrobe get`
+### `wardrobe get [REPO]`
 
 ```
 eggs wardrobe get
@@ -214,6 +214,8 @@ eggs wardrobe https://github.com/quirinux-so/penguins-wardrobe
 
 scaricherà in  `~/.wardrobe` la versione del `wardrobe` di `quirinux`.
 
+Il consiglio per utilizzare [`penguins-wardrobe`](https://github.com/pieroproietti/penguins-wardrobe) per i propri progetti è che - dopo i primi passi - conviene crearsi un proprio `fork` del progetto ed utilizzare quello.
+
 ### `wardrobe list`
 Mostra la lista dei `costumes` ed `accessories` presenti in `~.\wardrobe`.
 
@@ -223,6 +225,7 @@ eggs wardrobe list
 
 ### wardrobe show COSTUME
 Mostra l'indice `index`.yaml di un `costume` presente in `~.\wardrobe`.
+
 ```
 eggs wardrobe show colibri
 ```
