@@ -215,35 +215,35 @@ eggs wardrobe https://github.com/quirinux-so/penguins-wardrobe
 scaricherà in  `~/.wardrobe` la versione del `wardrobe` di `quirinux`.
 
 ### `wardrobe list`
-Mostra la lista dei `costumes` ed `accessories` presenti nel `wardrobe`.
+Mostra la lista dei `costumes` ed `accessories` presenti in `~.\wardrobe`.
 
 ```
 eggs wardrobe list 
 ```
 
 ### wardrobe show COSTUME
-Mostra l'indice `index`.yaml di un `costume`.
+Mostra l'indice `index`.yaml di un `costume` presente in `~.\wardrobe`.
 ```
 eggs wardrobe show colibri
 ```
 
 ### `sudo wardrobe wear COSTUME`
-Avvia il processo di vestizione di un `costume`, alla fine del processo il sistema sarà modificato secondo le indicazioni del `costume`.
+Avvia il processo di "vestizione" di un `costume`. I pacchetti del `costume` verranno installati, così come degli `accessories` interni o esterni, infine verrà eseguito `customize` ed alla fine del processo il sistema sarà modificato secondo le istruzioni del `costume` stesso.
 
 ```
 sudo eggs wardrobe wear colibri 
 ```
 
 ## Costumi esistenti:
-* `colibri` is a light XFC4 for developers you can easily start to improve eggs.
-* `duck` come with cinnamon - probably is the right desktop for peoples coming from windows - here complete plus office, gimp and vlc
-* `owl` is a XFCE4 for graphics designers, this a simple/experimental bird, based on the work of Charlie Martinez [quirinux](https://blog.quirinux.org/)
+* `colibri` è un Desktop XFC4 leggero che utilizzo per sviluppare `eggs`.
+* `duck` utilizza `cinnamon` e probabilmente è il giusto Desktop per utilizzatori abituati all'interfaccia di Windows - inoltre fornisce una suite completa di `office`, `gimp`, `vlc` e varie.
+* `owl` basato su XFCE4 per grafici e designer. E' un esemplare sperimentale, basato molto sul lavoro di Charlie Martinez [quirinux](https://blog.quirinux.org/).
 
-* `wagtail`, a wayland/Gnome/waydroid installation;
-* `warbler`, a wayland/KDE/waydroid installation;
-* `whipbird`: a wayland/weston/waydroid installation.
+* `wagtail`, una installazione `wayland/Gnome/waydroid`.
+* `warbler`, installazione `wayland/KDE/waydroid installation`.
+* `whipbird`: installazione `wayland/weston/waydroid`.
 
-## Accessories
+## `accessories`
 * `base`
 * `eggs-dev`
 * `firmwares`
@@ -254,17 +254,25 @@ sudo eggs wardrobe wear colibri
 * `waydroid`
 
 ## `themes`
-Mentre i `costumes` e gli `accessories` si applicano ad un sistema installato, i temi rendono possibile la customizzazione dell'immagine `live`. E' possibile customizzare il boot delle immagini ISO create con `eggs` ed l'aspetto dell'installer GUI `calamares`.
+Mentre i `costumes` e gli `accessories` si applicano ad un sistema installato, i `themes` rendono possibile la customizzazione dell'immagine `live`. E' possibile sia customizzare il boot delle immagini ISO che l'aspetto dell'installer GUI `calamares`.
 
-Come per i `costumes` e gli `accessories`, i `themes` sono principalmente costituiti da una directory, file yaml, icone, sfondi e quant'altro necessario. L'idea è stata presa da `calamares` e dai suoi file di configurazione ed estesa ad aspetti più specifici di `eggs` come il boot live. Solo da poco ho deciso di racchiudere anche i `themes` in `penguins-wardrobe`, inizialmente erano parte di `eggs`, poi sono stati spostati in `penguins-addons`, infine con la nascita di `penguins-wardrobe` sono stati inclusi nella stessa repository.
+Come per i `costumes` e gli `accessories`, i `themes` sono principalmente costituiti da una directory, dei file yaml, delle icone, sfondi e quant'altro necessario. L'idea è stata presa da `calamares` e dai suoi file di configurazione ed estesa ad aspetti più specifici di `eggs` come il boot live. 
 
-Ed è solo scrivento questo questo scritto, mi rendo conto del grande debito di riconoscenza nei confronti di `calamares` che mi ha suggerito prima di passare a yaml per la configurazione di `eggs` e, poi di utilizzare in maniera estensiva questa metodologia. Spero però che il mio debito possa essere stato ripagato dal fatto di aver denominato `krill` l'installer CLI interno di `eggs`.
+Solo da poco ho deciso di racchiudere anche i `themes` in `penguins-wardrobe`. 
 
-[educaandos-plus](https://github.com/aosucas499/guadalinex) è stato il primo esempio di un tema esterno disponibile. Altri `themes` che potete trovare nel wardrobe sono: `neon`, `telos`, `ufficiozero` e`waydroid`.
+Inizialmente i `themes` erano contenuti direttamente in `penguins-eggs`, successivamente - anche per questioni di pesantezza - sono stati spostati in una nuova repository `penguins-addons` non piè utilizzata.
+
+Infine con la nascita di `penguins-wardrobe` sono stati inclusi nello stesso.
+
+E' solo scrivento questo questo scritto, mi rendo conto del grande debito di riconoscenza nei confronti di `calamares` che mi ha suggerito prima di passare a yaml per la configurazione di `eggs`, poi di utilizzare in maniera estensiva yaml per la configurazione dei `themes`. Spero però che il mio debito possa essere stato ripagato dal fatto di aver denominato `krill` l'installer TUI di `eggs`.
+
+[educaandos-plus](https://github.com/aosucas499/guadalinex) è stato il primo tema esterno disponibile. 
+
+Altri `themes` che potete trovare nel wardrobe sono: `neon`, `telos`, `ufficiozero` e`waydroid`.
 
 ### Analizziamo un `theme`
 
-Un `theme` consiste in una semplice directory sotto `themes`, denominata con il nome del `vendor` (in questo esempio: `educanaandos-plus`), che include:
+Un `theme` consiste in una semplice directory sotto `themes`, denominata con il nome del `vendor`. In  questo esempio: `educanaandos-plus`, che è così composto:
 
 ```
 educaandos-plus/
@@ -276,8 +284,8 @@ educaandos-plus/
             modules
         livecd
 ```
-#### themes
-E' solo il contenitore di tutto, la radice per così dire del tema stesso. 
+#### `theme`
+La directory `theme` è solo il contenitore di tutto, la radice per così dire del `theme` stesso. 
 
 Contiene:
 
@@ -291,24 +299,24 @@ L'icona per il tuo link .desktop, verrà copiata in /usr/share/icons/.
 #### `calamares`
 Contiene la configurazione per `calamares` ed è la parte più importante del `theme`.
 
-I file di configurazione di `calamares` sono scritti sempre in yaml e contengono la documentazione per le varie optioni. Il principale file di configurazione `settings.conf` viene automaticamente generato da `eggs`, solo `partition`, `locale` ed `users` sono attualmente usati da `eggs` e `wardrobe`.
+I file di configurazione di `calamares` sono scritti sempre in yaml e contengono la documentazione per le varie optioni. Il principale file di configurazione `settings.conf` viene automaticamente generato da `eggs` e solo `partition`, `locale` ed `users` sono attualmente utilizzati da `eggs` e dal `wardrobe`.
 
-Per le informazioni di riferimento sulla configurazione di questi file si rimanda al sito di [calamares](https://calamares.is).
+Per le informazioni di riferimento sulla configurazione di questi file sostanzialmente di `calamares` si rimanda al sito [calamares](https://calamares.is).
 
 ###### `branding`
-`branding.desc` viene generato da `eggs`, fare riferimento a `calamares` [branding.desc](https://github.com/calamares/calamares/blob/calamares/src/branding/default/branding.desc) per maggiori informazioni.
+`branding.desc` viene generato automaticamente da `eggs`, come prima, fare riferimento a `calamares` [branding.desc](https://github.com/calamares/calamares/blob/calamares/src/branding/default/branding.desc) per maggiori informazioni.
 
 ###### `modules`
 * [`locale.yml`](/themes/educaandos-plus/theme/calamares/modules/locale.yml)
 * [`partitions`.yml](/themes/educaandos-plus/theme/calamares/modules/partition.yml)
 * [`users.yml`](/themes/educaandos-plus/theme/calamares/modules/users.yml) (*)
 
-(*) In `EducaAndOS` per avere i diritti di amministrazione per l'utente, abbiamo la necessità di configurare lo stesso in un gruppo specifico.
+(*) In `EducaAndOS` per avere i diritti di amministrazione per l'utente, abbiamo la necessità di configurare lo stesso in un gruppo specifico, per questo si rese necessario l'utilizzo di `users.yml`.
 
 ##### `livecd`
-Si prende cura dell'aspetto del boot da `live`.
+`livecd` raccoglie invece l'aspetto del boot da `live` ed è una caratterista di `eggs`.
 
-Abbiamo in questo casi i temi per [grub](/themes/educaandos-plus/theme/livecd/grub.theme.cfg) ed [isolinux](/themes/educaandos-plus/theme/livecd/isolinux.theme.cfg), nonchè lo [spash](/themes/educaandos-plus/theme/livecd/splash.png) per il boot.
+Abbiamo in questo casi i `template` per `grub` ed `isolinux`, nonchà l'immagine di splash [EducaAndOS-plus/theme/livecd](https://github.com/pieroproietti/penguins-wardrobe/tree/main/themes/educaandos-plus/theme/livecd) per il boot da live.
 
 ### Uso dei `themes`
 Per essere utilizzato un `theme` deve essere passato come parametro al flag `--theme` in `produce`:
@@ -318,31 +326,36 @@ sudo eggs produce --theme ../path/to/theme
 `
 esempio: 
 
-`
+```
 sudo eggs produce --theme .wardrobe/themes/educaandos-plus
-`
+```
 
 Potete anche clonare il `wardrobe~ con Git e prendere il `theme` da esso:
-`
+
+```
 sudo eggs produce --theme /penguins-wardrobe/themes/educaandos-plus
-`
+```
 
 ## `Config`
-Questa directory è utilizzata per permettere una customizzazione delle opzioni per l'installazione --unattended. 
+Questa directory è utilizzata per permettere una customizzazione delle opzioni per l'installazione `--unattended`. 
 
-`sudo eggs install --unattended` è equivalente a `sudo install --custom us` in questo modo è relativamente facile avere customizzazioni diverse, semplicemente creando un fork di questa repository ed una PR al sottoscritto.
+`sudo eggs install --unattended` è equivalente a `sudo install --custom us` in questo modo è relativamente facile avere customizzazioni diverse, semplicemente creando un fork di questa repository ed una `PR` al sottoscritto.
 
-Ad esempio potete copiare us.yaml in bliss.yaml, e cambiare sia il nome dell'utente live che la password ed avere la vostra installazione personalizzazione con:
+Ad esempio potete copiare `us.yaml` in `bliss.yaml`, e cambiare sia il nome dell'utente `live` che la `password` per avere la vostra installazione `unattended` personalizzazione:
 
-`sudo eggs install --custom bliss`
+```
+sudo eggs install --custom bliss
+```
 
-Se invece vi serve la customizzazione in italiano:
-`sudo eggs install --custom it`
+Se invece vi volete una configurazione con l'italiano:
+```
+sudo eggs install --custom it
+```
 
-Ovviamente è possibile creare configurazioni a misura per tutti.
+Ovviamente è possibile creare configurazioni diverse e per tutte le necessità.
 
 ## Ubuntu
-Utilizzo `wardrobe` soprattutto per Debian dove si assicura la massima compatibilità, ma anche per Devuan che sostanzialmente ricalca Debian stessa. Qualche aggiunta ed accorgimento, invece, si è reso necessario per includere anche Ubuntu. 
+Utilizzo `wardrobe` soprattutto per Debian dove si assicura la massima compatibilità, ma anche per Devuan che sostanzialmente ricalca Debian. Qualche aggiunta ed accorgimento, invece, si è reso necessario per includere Ubuntu. 
 
 In particolare:
 
@@ -361,13 +374,13 @@ Lo stesso discorso vale per gli `accessories` che possono pure essere definiti p
 Un'altra ragione per utilizzare Debian/Devuan invece di Ubuntu e derivate è la difficoltà di ottenere una versione **naked** ovvero una installazione CLI minima. E' possibile con Ubuntu, utilizzando la versione server, ma l'immagine contiene comunque funzionalità non richieste ed è abbastanza pesante rispetto a Debian.
 
 ## `Arch Linux`
-`Arch Linux` si presta benissimo alla creazione di immagini `naked` ed anche alla creazione di `wardrobe`, il grande problema è la diversa denominazione dei pacchetti.
+`Arch Linux` si presta benissimo alla creazione di immagini `naked` ed anche alla creazione di `wardrobe`, il problema è la diversa denominazione dei pacchetti.
 
-Difatti, mentre sarebbe facilmente possibile estendere il comando `eggs wardrobe wear` ad utilizzare `pacman` piuttosto che  `apt`, quello che non ne rende pratico l'utilizzo è la diversa denominazione dei pacchetti e, quindi, gestire lo stesso `costume` in comune con Debian.
+Difatti, mentre sarebbe facilmente possibile estendere il comando `eggs wardrobe wear` ad utilizzare `pacman` piuttosto che  `apt`, quello che non ne rende pratico l'utilizzo è la diversa denominazione dei pacchetti che rende difficile gestire lo stesso `costume` in comune con Debian.
 
-Occorrerebbe probabilmente utilizzare due `wardrobe` differenti o una differente metodologia.
+Occorrerebbe probabilmente utilizzare due `wardrobe` differenti e forse andrebbe ripensato il concetto.
 
-Segnalo che, comunque. all'interno del costume `colibri` è posto un semplice script bash che crea la medesima configurazione `colibri` per `Arch Linux`. 
+Segnalo che, ad ogni modo, all'interno del costume `colibri` è posto un semplice script bash che crea la medesima configurazione `colibri` per `Arch Linux`. 
 
 Sono possibili ulteriori sviluppi.
 
