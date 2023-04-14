@@ -35,7 +35,7 @@ Un `costume` consiste essenzialmente in una directory denominata con il nome del
 
 In `wardrobe`, quindi abbiamo soltanto delle informazioni che specificano soprattutto repository e pacchetti in linguaggio yaml. Questo esempio è tratto dal file `index.yaml` del mio `colibri`. Potete visualizzare l'intero [index.yaml](https://github.com/pieroproietti/penguins-wardrobe/blob/main/costumes/colibri/index.yml).
 
-``
+```
 # wardrobe: .
 # costume: /colibri
 ---
@@ -50,7 +50,8 @@ distributions:
 ...
   hostname: true
 reboot: true
-``
+```
+
 La sintassi utilizzata è yaml, piuttosto semplice da leggere, mentre per la scrittura potete contare su numerosi addon per praticamente ogni editor.
 
 Andiamo a vedere come è composto il file `index.yaml` di un `costume`.
@@ -63,7 +64,7 @@ Possiamo suddividerlo in tre parti:
 ### `header`
 Definisce il nome, l'autore, descrizione e la release del costume. Una parte importante è `distributions` se la distribuzione corrente non è inclusa il costume non verrà applicato.
 
-`
+```
 name: colibri
 description: >-
   desktop xfce4 plus all that I need to develop eggs, firmwares and anydesk
@@ -73,7 +74,7 @@ release: 0.0.3
 distributions:
   - bullseye
   - bookworm
-`
+```
 
 ### `sequence`
 La `sequence` è la parte cruciale sia dei `costumes` che degli `accessories`, viene eseguita in sequenza - da qua il nome - e l'idea è stata di renderla minima ed indivisibile. Può contenere:
@@ -130,13 +131,12 @@ Un semplice array di pacchetti `python` che saranno installati con `pip`.
 
 #### `accessories`
 Una lista di accessori da installare per completare il `costume`. esempio:
-`
+
 `accessories`:
 - `base`
 - `eggs-dev # defined in /accessory`
 - `waydroid # defined in /accessory`
 - `./firmwares # here we will use an accessory defined inside the costume, note ./`
-`
 
 #### `try_accessories`
 Come  [`accessories`](#accessories) ma non fallisce.
@@ -169,13 +169,14 @@ Potete aggiunge altri script e directory all'interno di del `costume` o utilizza
 **Esempi**
 
 Gli scripts sono chiamati da `customize/scripts` ed eseguiti nell'ordine specifico.
-`
+```
 customize:
   dirs: true
   scripts:
     - ../../scripts/config_desktop_link.sh
     - ../../scripts/config_lightdm.sh
-`
+```
+
 ### `reboot`
 Se vero in sistema verrà riavviato dopo la vestizione.
 
@@ -201,37 +202,37 @@ Abbiamo solo quattro comandi: `get`, `list`, `show` e `wear`.
 
 ### `wardrobe get`
 
-`
+```
 eggs wardrobe get
-`
+```
 
 Esegue il clone di [penguins-wardrobe](https://github.com/pieroproietti/penguins-wardrobe) in `~/.wardrobe`, il comando accetta un argomento [REPO], così potete lavorare con il vostro `wardrobe` invece di quello standard. Ad esempio:
 
-`
+```
 eggs wardrobe https://github.com/quirinux-so/penguins-wardrobe
-`
+```
 
 scaricherà in  `~/.wardrobe` la versione del `wardrobe` di `quirinux`.
 
 ### `wardrobe list`
 Mostra la lista dei `costumes` ed `accessories` presenti nel `wardrobe`.
 
-`
+```
 eggs wardrobe list 
-`
+```
 
 ### wardrobe show COSTUME
 Mostra l'indice `index`.yaml di un `costume`.
-`
+```
 eggs wardrobe show colibri
-`
+```
 
 ### `sudo wardrobe wear COSTUME`
 Avvia il processo di vestizione di un `costume`, alla fine del processo il sistema sarà modificato secondo le indicazioni del `costume`.
 
-`
+```
 sudo eggs wardrobe wear colibri 
-`
+```
 
 ## Costumi esistenti:
 * `colibri` is a light XFC4 for developers you can easily start to improve eggs.
@@ -265,7 +266,7 @@ Ed è solo scrivento questo questo scritto, mi rendo conto del grande debito di 
 
 Un `theme` consiste in una semplice directory sotto `themes`, denominata con il nome del `vendor` (in questo esempio: `educanaandos-plus`), che include:
 
-`
+```
 educaandos-plus/
     theme
         applications
@@ -274,7 +275,7 @@ educaandos-plus/
             branding
             modules
         livecd
-`
+```
 #### themes
 E' solo il contenitore di tutto, la radice per così dire del tema stesso. 
 
