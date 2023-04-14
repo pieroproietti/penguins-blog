@@ -198,7 +198,7 @@ __Nota__ `sudo eggs wardrobe wear` accetta una flag `--no_firmwares` per saltare
 
 
 ## I comandi
-Abbiamo solo quattro comandi: `get`, `list`, `show` e `wear`.
+Abbiamo solo quattro comandi `wardrobe`: `get`, `list`, `show` e `wear`.
 
 ### `wardrobe get [REPO]`
 
@@ -238,15 +238,16 @@ sudo eggs wardrobe wear colibri
 ```
 
 ## Costumi esistenti:
-* `colibri` è un Desktop XFC4 leggero che utilizzo per sviluppare `eggs`.
-* `duck` utilizza `cinnamon` e probabilmente è il giusto Desktop per utilizzatori abituati all'interfaccia di Windows - inoltre fornisce una suite completa di `office`, `gimp`, `vlc` e varie.
-* `owl` basato su XFCE4 per grafici e designer. E' un esemplare sperimentale, basato molto sul lavoro di Charlie Martinez [quirinux](https://blog.quirinux.org/).
+* `colibri` è un Desktop XFC4 leggero che utilizzo per sviluppare `eggs` e che quindi potete utilizzare per collaborare al progetto.
+* `duck` utilizza `cinnamon` e probabilmente è il giusto Desktop per utilizzatori abituati all'interfaccia di Windows - inoltre fornisce `libreoffice`, `gimp`, `vlc` e vari.
+* `owl` basato su XFCE4 per grafici e designer. E' una customizzazione sperimentale, basata molto sul lavoro di Charlie Martinez per [quirinux](https://blog.quirinux.org/).
 
 * `wagtail`, una installazione `wayland/Gnome/waydroid`.
 * `warbler`, installazione `wayland/KDE/waydroid installation`.
 * `whipbird`: installazione `wayland/weston/waydroid`.
 
 ## `accessories`
+Al momento su `penguins-wardrobe` sono presenti i seguenti `accessories`:
 * `base`
 * `eggs-dev`
 * `firmwares`
