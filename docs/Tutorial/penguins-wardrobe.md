@@ -82,7 +82,6 @@ La `sequence` è la parte cruciale sia dei `costumes` che degli `accessories`, v
   * [`sources_list`](#sources_list)
   * [`sources_list_d`](#sources_list_d)
 * [`preinst`](#preinst)
-* [`dependencies`](#dependencies)
 * [`packages`](#packages)
 * [`packages_no_install_recommends`](#packages_no_install_recommends)
 * [`try_packages`](#try_packages)
@@ -144,9 +143,9 @@ Come  [`accessories`](#accessories) ma non fallisce.
 
 ### `customize`
 `costomize` contiene le azioni per finalizzare l'installazione e customizzare il risultato. Può contente:
-* `[dirs](#dirs)`
-* `[hostname](#hostname)`
-* `[scripts](#scripts)`
+* [`dirs`](#dirs)
+* [`hostname`](#hostname)
+* [`scripts`](#scripts)
 
 ##### `dirs`
 `dirs` è un campo booleano, se true la directory `./dirs` interna al `costume` verrà copiata nella `root` del sistema.
