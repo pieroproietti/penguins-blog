@@ -154,10 +154,10 @@ Esempio: Abbiamo bisogno di copiare la nostra customizzazione del desktop `/etc/
 
 Possiamo mettere il tutto in `dirs`:
 
-`
+```
 - dirs   + etc   + skel  
          + usr   + backgrounds  + colibri
-`
+```
 ##### `hostname`
 Anche questo è un campo booleano e, se `true`, il file `/etc/hostname` verrà posto al nome del `costume` ed in accordo ad esso sarà anche modificato `/etc/hosts`.
 
