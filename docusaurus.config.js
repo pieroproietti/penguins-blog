@@ -35,23 +35,32 @@ const config = {
     [
       'classic',
       /** @type {import('@docusaurus/preset-classic').Options} */
-      ({
-        docs: {
-          sidebarPath: require.resolve('./sidebars.js'),
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          // editUrl: 'https://github.com/piero-proietti/penguins-blog/tree/main/packages/create-docusaurus/templates/shared/',
-        },
-        blog: {
-          showReadingTime: true,
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          // editUrl: 'https://github.com/pieroproietti/penguins-blog/tree/main/packages/create-docusaurus/templates/shared/',
-        },
-        theme: {
-          customCss: require.resolve('./src/css/custom.css'),
-        },
-      }),
+      (
+        {
+          gtag: {
+            /**
+             * proprieta: GA4 368716187
+             * 
+             */
+            trackingID: 'G-999X9XX9XX',
+            anonymizeIP: true,
+          },
+          docs: {
+            sidebarPath: require.resolve('./sidebars.js'),
+            // Please change this to your repo.
+            // Remove this to remove the "edit this page" links.
+            // editUrl: 'https://github.com/piero-proietti/penguins-blog/tree/main/packages/create-docusaurus/templates/shared/',
+          },
+          blog: {
+            showReadingTime: true,
+            // Please change this to your repo.
+            // Remove this to remove the "edit this page" links.
+            // editUrl: 'https://github.com/pieroproietti/penguins-blog/tree/main/packages/create-docusaurus/templates/shared/',
+          },
+          theme: {
+            customCss: require.resolve('./src/css/custom.css'),
+          },
+        }),
     ],
   ],
 
@@ -73,7 +82,7 @@ const config = {
             position: 'left',
             label: 'Tutorial',
           },
-          {to: '/blog', label: 'Blog', position: 'left'},
+          { to: '/blog', label: 'Blog', position: 'left' },
           {
             href: 'https://github.com/pieroproietti/',
             label: 'GitHub',
