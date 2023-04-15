@@ -42,7 +42,8 @@ const config = {
              * proprieta: GA4 368716187
              * 
              */
-            trackingID: 'G-999X9XX9XX',
+            //trackingID: 'G-999X9XX9XX',
+            trackingID: 'G-368716187',
             anonymizeIP: true,
           },
           docs: {
