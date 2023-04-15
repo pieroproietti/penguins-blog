@@ -39,11 +39,11 @@ const config = {
         {
           gtag: {
             /**
-             * proprieta: GA4 368716187
-             * 
+             * proprieta GA4: 368716187
+             * id-misurazione: G-KWVSZ1TJNZ
              */
             //trackingID: 'G-999X9XX9XX',
-            trackingID: 'G-368716187',
+            trackingID: 'G-KWVSZ1TJNZ',
             anonymizeIP: true,
           },
           docs: {
