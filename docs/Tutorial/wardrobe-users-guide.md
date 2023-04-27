@@ -1,5 +1,5 @@
 ---
-title: Penguins' wardrobe
+title: wardrobe users' guide
 authors: pieroproietti
 lang: it
 ---

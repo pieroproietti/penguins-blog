@@ -72,10 +72,27 @@ Questo è possibile utilizzando il comando: `sudo eggs tools skel` che copierà 
 ### Produzione della iso - con i propri dati utente
 La produzione della ISO con i propri dati utente viene effettuata con il comando: `sudo eggs produce --clone`.
 
-## Ottimizzazione della ISO
-Un'altro "trucco" per ridurre le dimensioni è eliminare la cache dei gestori di pacchetti che si fa con il comando: `sudo eggs tools clean`.
+## Ridurre le dimensioni della ISO
+Per ridurre le dimensioni della ISO possiamo - di massima - eliminare dal filesystem della macchina genitore quei dati come logs, cache dei pacchetti, etc non stettamente necessari in una live. E semplice come dare il comando: `sudo eggs tools clean`.
 
-Per ottenere una ISO più leggera, possimo utilizzare le opzioni di compression `--standard` o `--max`, entrambe utilizzano l'algoritmo xz, la seconda riduce ancora di più le dimensioni dell'immagine al prezzo di un maggior tempo di attesa.
+Naturalmente l'algoritmo di compressione del filesystem utilizzato da squashfs può ridurre notevolmente la dimensione ottenuta. 
+
+Di default eggs utilizza per la compressione `zstd lovel-1` molto veloce in compressione ma non altrettanto efficiente. E' consigliato per la creazione delle ISO di prova, poichè ci fa risparmiare tempo.
+
+Per ottenere una ISO più leggera però, possimo utilizzare le opzioni di compression `--standard` o `--max`, entrambe utilizzano il parametro `xz -b 256L`, la seconda `xz -b 256K -Xbcj` riducendo ancora di più le dimensioni ottenute al prezzo di un maggior tempo di compressione.
+
+Ai fini pratici, consiglio SEMPRE di utilizzare il valore di default per le ISO di prova, quindi l'opzione `--max` per la ISO finale.
+
+#### ISO finale
+eggs è un programma di rimasterizzazione e, non è detto che debba essere utilizzato da tutti gli utenti. Aggiungendo l'opzione `--release` al comando `produce` andremo a configurare l'installer per la rimozione di eggs e di calamares - se installato - dopo l'avvenuta installazione del sistema.
+
+Esempio: `sudo eggs produce --max --release`
+
+@@@@ Customizzazione del theme del live e di calamares
+E' possibile, infine, utilizzare un tema diverso da quello di default per la propria remix. Tutto quello che dovete fare è crearvi un tema proprio od utilizzare uno dei `themes` inclusi in `wardrobe`,
+
+Esempio:  `sudo eggs produce --max --release --theme ./wardrobe/themes/waydroid`
+
 
 
 

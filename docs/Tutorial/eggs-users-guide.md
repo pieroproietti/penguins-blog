@@ -1,5 +1,5 @@
 ---
-title: Users' guide
+title: eggs users' guide
 authors: pieroproietti
 lang: it
 ---
