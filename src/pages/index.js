@@ -23,8 +23,14 @@ function HomepageHeader() {
           &nbsp;
           <Link
             className="button button--secondary button--lg"
-            to="/docs/Tutorial/users-guide">
-            Users' guide
+            to="/docs/Tutorial/eggs-users-guide">
+            eggs users' guide
+          </Link>
+          &nbsp;
+          <Link
+            className="button button--secondary button--lg"
+            to="/docs/Tutorial/wardrobe-users-guide">
+            wardrobe users' guide
           </Link>
           &nbsp;
           <Link
