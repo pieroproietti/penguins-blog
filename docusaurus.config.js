@@ -84,10 +84,11 @@ const config = {
             label: 'Tutorial',
           },
           { to: '/blog', label: 'Blog', position: 'left' },
+          
           {
             href: 'https://github.com/pieroproietti/',
             label: 'GitHub',
-            position: 'left',
+            position: 'right',
           },
           {
             href: 'https://sourceforge.net/projects/penguins-eggs/files/ISOS/',
