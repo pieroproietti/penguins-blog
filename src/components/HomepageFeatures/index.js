@@ -10,6 +10,7 @@ const FeatureList = [
       <>
         Adding Arch was laborious, but it was possible, because the 
         project started and evolved to be as universal as possible.
+        <a href="https://sourceforge.net/projects/penguins-eggs/files/ISOS/arch/">&nbsp;download</a>
       </>
     ),
   },
@@ -20,6 +21,7 @@ const FeatureList = [
       <>
         Penguins' eggs started on Debian in 2017, it still supports buster
         in addition to bullseye and - still in development - bookworm.
+        <a href="https://sourceforge.net/projects/penguins-eggs/files/ISOS/debian/">&nbsp;download</a>
       </>
     ),
   },
@@ -29,15 +31,7 @@ const FeatureList = [
     description: (
       <>
         Eggs support Devuan beowulf, chimaera and daedalus.
-      </>
-    ),
-  },
-  {
-    title: 'Manjaro',
-    Svg: require('@site/static/img/manjaro.svg').default,
-    description: (
-      <>
-        Eggs is part of communty of Manjaro.
+        <a href="https://sourceforge.net/projects/penguins-eggs/files/ISOS/devuan/">&nbsp;download</a>
       </>
     ),
   },
@@ -47,15 +41,37 @@ const FeatureList = [
     description: (
       <>
         Ubuntu is full supported: bionic, focal and jammy.
+        <a href="https://sourceforge.net/projects/penguins-eggs/files/ISOS/ubuntu/">&nbsp;download</a>
       </>
     ),
   },
   {
-    title: 'Others',
+    title: 'Manjaro',
+    Svg: require('@site/static/img/manjaro.svg').default,
+    description: (
+      <>
+        Eggs is part of communty of Manjaro.
+        <a href="https://sourceforge.net/projects/penguins-eggs/files/ISOS/manjaro/">&nbsp;download</a>
+      </>
+    ),
+  },
+  {
+    title: 'Linuxmint',
     Svg: require('@site/static/img/linuxmint.svg').default,
     description: (
       <>
         Virtually every Debian, Devuan and Ubuntu derivative is supported. 
+        <a href="https://sourceforge.net/projects/penguins-eggs/files/ISOS/linuxmint/">&nbsp;download</a>
+      </>
+    ),
+  },
+  {
+    title: 'EndeavourOS',
+    Svg: require('@site/static/img/endeavouros.svg').default,
+    description: (
+      <>
+        The last added...
+        <a href="https://sourceforge.net/projects/penguins-eggs/files/ISOS/endeavourOS/">download&nbsp;</a>
       </>
     ),
   },
