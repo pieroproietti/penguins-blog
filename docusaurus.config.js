@@ -114,8 +114,12 @@ const config = {
             title: 'Docs',
             items: [
               {
-                label: 'Tutorial',
-                to: '/docs/',
+                label: 'eggs users\' guide',
+                to: 'https://penguins-eggs.net/docs/Tutorial/eggs-users-guide',
+              },
+              {
+                label: 'wardrobe users\' guide',
+                to: 'https://penguins-eggs.net/docs/Tutorial/wardrobe-users-guide',
               },
               {
                 label: 'wiki ubuntu-it',
