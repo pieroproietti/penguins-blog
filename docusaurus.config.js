@@ -117,6 +117,10 @@ const config = {
                 label: 'Tutorial',
                 to: '/docs/',
               },
+              {
+                label: 'wiki ubuntu-it',
+                to: 'https://wiki.ubuntu-it.org/wilecoyote/Installazione/Eggs',
+              },
             ],
           },
           {
