@@ -43,12 +43,10 @@ I then, created three simple configuration files:
 * ```eggs_naked_configuration.json```
 
 
-For example:
+For example, copy and paste:
 
 ```
-archinstall --config https://raw.githubusercontent.com/pieroproietti/penguins-eggs/master/naked/arch/eggs_configuration.json \
-            --creds https://raw.githubusercontent.com/pieroproietti/penguins-eggs/master/naked/arch/eggs_credentials.json \
-            --disk_layouts https://raw.githubusercontent.com/pieroproietti/penguins-eggs/master/naked/arch/eggs_disk_layout.json
+archinstall --config https://raw.githubusercontent.com/pieroproietti/penguins-eggs/master/naked/arch/eggs_configuration.json --creds https://raw.githubusercontent.com/pieroproietti/penguins-eggs/master/naked/arch/eggs_credentials.json --disk_layouts https://raw.githubusercontent.com/pieroproietti/penguins-eggs/master/naked/arch/eggs_disk_layout.json
 ```
 
 we simply modified some parameters for our needs:
