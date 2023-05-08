@@ -158,7 +158,7 @@ const config = {
             ],
           },
         ],
-        copyright: `Copyright © 2017-${new Date().getFullYear()} Piero Proietti - Officina informativa Via Pio Joris 13, Roma.`,
+        copyright: `Copyright © 2017-${new Date().getFullYear()} Piero Proietti - Officina informatica Via Pio Joris 13, Roma.`,
       },
       prism: {
         theme: lightCodeTheme,
