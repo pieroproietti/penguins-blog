@@ -60,7 +60,7 @@ const FeatureList = [
     Svg: require('@site/static/img/linuxmint.svg').default,
     description: (
       <>
-        Linuxmint and Virtually every Debian, Devuan and Ubuntu derivative are supported. 
+        Linuxmint, KDE Neon and virtually every Debian, Devuan and Ubuntu derivative are supported. 
         <a href="https://sourceforge.net/projects/penguins-eggs/files/ISOS/linuxmint/">&nbsp;download</a>
       </>
     ),
