@@ -40,7 +40,7 @@ const FeatureList = [
     Svg: require('@site/static/img/ubuntu.svg').default,
     description: (
       <>
-        Ubuntu is full supported: bionic, focal and jammy.
+        Ubuntu is full supported: bionic, focal, jammy and lunar.
         <a href="https://sourceforge.net/projects/penguins-eggs/files/ISOS/ubuntu/">&nbsp;download</a>
       </>
     ),
@@ -60,7 +60,7 @@ const FeatureList = [
     Svg: require('@site/static/img/linuxmint.svg').default,
     description: (
       <>
-        Virtually every Debian, Devuan and Ubuntu derivative is supported. 
+        Linuxmint and Virtually every Debian, Devuan and Ubuntu derivative are supported. 
         <a href="https://sourceforge.net/projects/penguins-eggs/files/ISOS/linuxmint/">&nbsp;download</a>
       </>
     ),
@@ -70,7 +70,7 @@ const FeatureList = [
     Svg: require('@site/static/img/endeavouros.svg').default,
     description: (
       <>
-        The last added...
+        EndeavourOS, RebornOS and others Arch derivative are supported too
         <a href="https://sourceforge.net/projects/penguins-eggs/files/ISOS/endeavourOS/">download&nbsp;</a>
       </>
     ),
