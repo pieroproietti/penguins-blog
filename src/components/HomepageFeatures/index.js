@@ -71,7 +71,7 @@ const FeatureList = [
     description: (
       <>
         EndeavourOS, RebornOS and others Arch derivative are supported too. 
-        <a href="https://sourceforge.net/projects/penguins-eggs/files/ISOS/endeavourOS/">download&nbsp;</a>
+        <a href="https://sourceforge.net/projects/penguins-eggs/files/ISOS/endeavourOS/">&nbsp;download</a>
       </>
     ),
   },
