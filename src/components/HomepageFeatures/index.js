@@ -30,7 +30,7 @@ const FeatureList = [
     Svg: require('@site/static/img/devuan.svg').default,
     description: (
       <>
-        Eggs support Devuan beowulf, chimaera and daedalus.
+        Eggs support Devuan beowulf, chimaera and daedalus. 
         <a href="https://sourceforge.net/projects/penguins-eggs/files/ISOS/devuan/">&nbsp;download</a>
       </>
     ),
@@ -40,7 +40,7 @@ const FeatureList = [
     Svg: require('@site/static/img/ubuntu.svg').default,
     description: (
       <>
-        Ubuntu is full supported: bionic, focal, jammy and lunar.
+        Ubuntu is full supported: bionic, focal, jammy and lunar. 
         <a href="https://sourceforge.net/projects/penguins-eggs/files/ISOS/ubuntu/">&nbsp;download</a>
       </>
     ),
@@ -70,7 +70,7 @@ const FeatureList = [
     Svg: require('@site/static/img/endeavouros.svg').default,
     description: (
       <>
-        EndeavourOS, RebornOS and others Arch derivative are supported too
+        EndeavourOS, RebornOS and others Arch derivative are supported too. 
         <a href="https://sourceforge.net/projects/penguins-eggs/files/ISOS/endeavourOS/">download&nbsp;</a>
       </>
     ),
