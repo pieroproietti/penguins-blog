@@ -84,6 +84,15 @@ const FeatureList = [
       </>
     ),
   },
+  {
+    title: 'fedora',
+    Svg: require('@site/static/img/fedora.svg').default,
+    description: (
+      <>
+      Come in to bring penguins' eggs to fedora!
+      </>
+    ),
+  },
 ];
 
 function Feature({Svg, title, description}) {
