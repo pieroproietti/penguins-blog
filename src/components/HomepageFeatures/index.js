@@ -89,7 +89,7 @@ const FeatureList = [
     Svg: require('@site/static/img/fedora.svg').default,
     description: (
       <>
-      Come in to bring penguins' eggs to fedora!
+      <a href="https://web.telegram.org/a/#-1701470533">Come in</a> to bring penguins' eggs to fedora!
       </>
     ),
   },
