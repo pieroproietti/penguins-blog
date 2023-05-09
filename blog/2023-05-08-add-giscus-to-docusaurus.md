@@ -9,14 +9,17 @@ import Translactions from '@site/src/components/Translactions';
 
 <Translactions />
 
-Questo articolo è una libera traduzione di [how to add giscus comments to docusaurus](https://dev.to/m19v/how-to-add-giscus-comments-to-docusaurus-439h)
+Questo articolo è una libera traduzione di [how to add giscus comments to docusaurus](https://dev.to/m19v/how-to-add-giscus-comments-to-docusaurus-439h).
+
+Al momento la pagina è ancora in lavorazione.
 
 # Aggiungere commenti Giscus a Docusaurus
+
 ## Scopo
-Questo post è una descrizione passo per passo di come aggiungere Giscur, un sistema di commenti alimentato da GiutHub Discussion, ad un sito statico generato con Docusaurus.
+Questo post è una descrizione passo per passo di come aggiungere [Giscus](https://giscus.app/), un sistema di commenti alimentato da GitHub Discussion, ad un sito statico generato con Docusaurus.
 
 ## Setup Giscus
-Follow the steps in the sections of the current chapter to set up Giscus and connect it to the GitHub discussions.
+Seguite i prossimi passi per configurare Giscus e collegarlo alle discussioni di GitHub.
 
 ## Abilitare GitHub discussion
 Create una repository Github nel vostro account dove i commenti possano essere memorizzati nella sessione Discussion.
@@ -27,15 +30,19 @@ Sotto la sezione "Features", cliccate su "Set up discussions".
 Modificate il template in "Start a new discussion" e cliccate su "Start discussion".
 
 ## Abilitate Giscus
-Configure giscus in your GitHub account.
-In Section "Repository access" add only created repository from previous step to be accessed by giscus and click "Save".
-Get repository API key
-Login with GitHub account in GraphQL API Explorer.
-Use following query to fetch the id of created repository, discussion categories with its details (e.g. id and name). Note! Replace owner and name with your GitHub account name and name of repository you created.
+Configurate Giscus nel vostro account GitHub.
+
+Nella sezione "Repository access" aggiungete solo il repository creato nel passo precedente per essere accessibile a giscus e fare clic su "Save"
+
+## Get repository API key
+Accedere con l'account GitHub in GraphQL API Explorer.
+
+Utilizzare la seguente query per ottenere l'id del repository creato, le categorie di discussione con i relativi dettagli (ad esempio, id e nome). 
+**Nota** Sostituire proprietario e nome con il nome del proprio account GitHub e il nome del repository creato.
 
 ```
 query { 
-  repository(owner: "nameOfYourGitHubAccount", name:"nameOfCreatedRepository"){
+  repository(owner: "pieroproietti", name:"giscus"){
     id
     discussionCategories(first:10) {
       edges {
@@ -103,12 +110,12 @@ L'oggetto json risultante dovrebbe essere simile a questo:
 
 ## Create Giscus component
 
-* Install @giscus/react package
+* Installate il pacchetto @giscus/react:
 ```
 pnpm i @giscus/react
 ```
 
-* Create Giscus Component, e.g. under /src/components/GiscusComponent as follows:
+* Creiamo il componente Giscus, ad esempio sotto `/src/components/GiscusComponent` come di seguito:
 
 ```typescript
 import React from 'react';
@@ -138,18 +145,15 @@ export default function GiscusComponent() {
     />
   );
 ```
-## Create BlogPostItem component
-* Create BlogPostItem component to wrap blog posts with Giscus commenting system as follows:
+## Creazione del componente `BlogPostItem`
+* creazione del componente `BlogPostItem` per impacchettare i post del blog con il sistema di commenti di Giscus:
 
 ```
-pnpm run swizzle [theme name] [component name] -- --wrap
-
-# Example:
 pnpm run swizzle @docusaurus/theme-classic BlogPostItem -- --wrap
 ```
 
-This will create a BlogPostItem component under
-`src/theme`. Edit `index.js` as follows:
+Questo creerà un componente `BlogPostItem` sotto `src/theme`. 
+Modificate `index.js` come di seguito:
 
 ```typescript
 import React from 'react';
@@ -175,7 +179,7 @@ export default function BlogPostItemWrapper(props) {
   );
 }
 ```
-**Note** that the `useBlogPost()` Hook is used in `BlogPostItem` component to make activation of comments per blog post configurable. The key value `enableComments: true` must be added to your blog post md file in order to activate commenting for it. E.g.:
+**Nota** l'Hook `useBlogPost()` viene utilizzato nel componente `BlogPostItem` per rendere configurabile l'attivazione dei commenti per post del blog. Il valore chiave `enableComments: true` deve essere aggiunto al file `.md` del post del blog per attivare i commenti. Ad esempio:
 
 ```
 ---
@@ -185,5 +189,4 @@ tags: [keywordOne, keywordTwo]
 enableComments: true # for Gisqus
 ---
 ```
-I have enabled the comment function of current post in my page, which can be used as a demo. Feel free to hit the "Like" button if you found this post helpful, or post your question in the comment if you have one.
-
+A fine lavoro, sarà attivata la funzione di commento del post corrente su questa pagina, che potrà essere utilizzata come dimostrazione. Sentitevi liberi di premere il pulsante "Mi piace" se avete trovato utile questo post, o di postare la vostra domanda nei commenti se ne avete una.
