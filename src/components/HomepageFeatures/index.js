@@ -8,9 +8,8 @@ const FeatureList = [
     Svg: require('@site/static/img/arch.svg').default,
     description: (
       <>
-        Adding Arch was laborious, but it was possible, because the 
-        project started and evolved to be as universal as possible.
-        <a href="https://sourceforge.net/projects/penguins-eggs/files/ISOS/arch/">&nbsp;download</a>
+        Adding <a href="https://sourceforge.net/projects/penguins-eggs/files/ISOS/arch/">&nbsp;Arch&nbsp;</a>
+        was laborious, but it was possible, because the project started and evolved to be as universal as possible.
       </>
     ),
   },
@@ -19,9 +18,11 @@ const FeatureList = [
     Svg: require('@site/static/img/debian.svg').default,
     description: (
       <>
-        Penguins' eggs started on Debian in 2017, it still supports buster
-        in addition to bullseye and - still in development - bookworm.
-        <a href="https://sourceforge.net/projects/penguins-eggs/files/ISOS/debian/">&nbsp;download</a>
+        Penguins' eggs started on Debian in 2017, it still supports 
+        <a href="https://sourceforge.net/projects/penguins-eggs/files/ISOS/debian/buster">&nbsp;buster&nbsp;</a>
+        in addition to 
+        <a href="https://sourceforge.net/projects/penguins-eggs/files/ISOS/debian/bullseye">&nbsp;bullseye&nbsp;</a>
+        and <a href="https://sourceforge.net/projects/penguins-eggs/files/ISOS/debian/bookworm">&nbsp;bookworm&nbsp;</a>
       </>
     ),
   },
@@ -30,8 +31,10 @@ const FeatureList = [
     Svg: require('@site/static/img/devuan.svg').default,
     description: (
       <>
-        Eggs support Devuan beowulf, chimaera and daedalus. 
-        <a href="https://sourceforge.net/projects/penguins-eggs/files/ISOS/devuan/">&nbsp;download</a>
+        Eggs support Devuan 
+        <a href="https://sourceforge.net/projects/penguins-eggs/files/ISOS/devuan/beowulf">&nbsp;beowulf</a>, 
+        <a href="https://sourceforge.net/projects/penguins-eggs/files/ISOS/devuan/chimaera">&nbsp;chimaera</a>, and 
+        <a href="https://sourceforge.net/projects/penguins-eggs/files/ISOS/devuan/daedalus">&nbsp;daedalus</a>
       </>
     ),
   },
@@ -40,8 +43,11 @@ const FeatureList = [
     Svg: require('@site/static/img/ubuntu.svg').default,
     description: (
       <>
-        Ubuntu is full supported: bionic, focal, jammy and lunar. 
-        <a href="https://sourceforge.net/projects/penguins-eggs/files/ISOS/ubuntu/">&nbsp;download</a>
+        Ubuntu is full supported: 
+        <a href="https://sourceforge.net/projects/penguins-eggs/files/ISOS/ubuntu/bionic">&nbsp;bionic</a>,
+        <a href="https://sourceforge.net/projects/penguins-eggs/files/ISOS/ubuntu/focal">&nbsp;focal</a>,
+        <a href="https://sourceforge.net/projects/penguins-eggs/files/ISOS/ubuntu/jammy">&nbsp;jammy</a> and
+        <a href="https://sourceforge.net/projects/penguins-eggs/files/ISOS/ubuntu/lunar">&nbsp;lunar</a>
       </>
     ),
   },
@@ -50,28 +56,31 @@ const FeatureList = [
     Svg: require('@site/static/img/manjaro.svg').default,
     description: (
       <>
-        Eggs is part of communty of Manjaro.
-        <a href="https://sourceforge.net/projects/penguins-eggs/files/ISOS/manjaro/">&nbsp;download</a>
+        Eggs is part of communty of <a href="https://sourceforge.net/projects/penguins-eggs/files/ISOS/manjaro/">Manjaro</a>.
       </>
     ),
   },
   {
-    title: 'Linuxmint',
+    title: 'Debian derivatives',
     Svg: require('@site/static/img/linuxmint.svg').default,
     description: (
       <>
-        Linuxmint, KDE Neon and virtually every Debian, Devuan and Ubuntu derivative are supported. 
-        <a href="https://sourceforge.net/projects/penguins-eggs/files/ISOS/linuxmint/">&nbsp;download</a>
+        <a href="https://sourceforge.net/projects/penguins-eggs/files/ISOS/linuxmint/">&nbsp;Linuxmint</a>,
+        <a href="https://sourceforge.net/projects/penguins-eggs/files/ISOS/neon/">&nbsp;KDE neon</a>,
+        <a href="https://sourceforge.net/projects/penguins-eggs/files/ISOS/pop-os/">&nbsp;Pop!_OS</a>,
+        <a href="https://sourceforge.net/projects/penguins-eggs/files/ISOS/elementary/">&nbsp;elementary OS&nbsp;</a>
+        and virtually every Debian, Devuan and Ubuntu derivatives are supported. 
       </>
     ),
   },
   {
-    title: 'EndeavourOS',
+    title: 'Arch derivatives',
     Svg: require('@site/static/img/endeavouros.svg').default,
     description: (
       <>
-        EndeavourOS, RebornOS and others Arch derivative are supported too. 
-        <a href="https://sourceforge.net/projects/penguins-eggs/files/ISOS/endeavourOS/">&nbsp;download</a>
+      <a href="https://sourceforge.net/projects/penguins-eggs/files/ISOS/endeavourOS/">&nbsp;EndeavourOS</a>,
+      <a href="https://sourceforge.net/projects/penguins-eggs/files/ISOS/rebornos/">&nbsp;RebornOS&nbsp;</a>
+      are supported too.
       </>
     ),
   },
