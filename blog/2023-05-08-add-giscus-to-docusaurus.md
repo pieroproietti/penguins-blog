@@ -155,8 +155,10 @@ export default function GiscusComponent() {
 * creazione del componente `BlogPostItem` per impacchettare i post del blog con il sistema di commenti di Giscus:
 
 ```
-pnpm run swizzle @docusaurus/theme-classic BlogPostItem -- --wrap
+pnpm run swizzle @docusaurus/theme-classic BlogPostItem --
 ```
+
+Scegliere wrap.
 
 Questo creerà un componente `BlogPostItem` sotto `src/theme`. 
 Modificate `index.js` come di seguito:
