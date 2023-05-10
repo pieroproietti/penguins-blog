@@ -14,6 +14,8 @@ Questo articolo è una libera traduzione di [how to add giscus comments to docus
 
 Al momento la pagina è ancora in lavorazione, sarà da considerarsi finita quando funzioneranno i commenti.
 
+Consultare: https://thedaxshepherd.net/2023/1/24/Docu-Adding-Comments
+
 ## Scopo
 Questo post è una descrizione passo per passo di come aggiungere [Giscus](https://giscus.app/), un sistema di commenti alimentato da GitHub Discussion, ad un sito statico generato con Docusaurus.
 
