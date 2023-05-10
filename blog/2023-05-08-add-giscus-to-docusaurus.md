@@ -10,11 +10,14 @@ import Translactions from '@site/src/components/Translactions';
 
 <Translactions />
 
+
 Questo articolo è una libera traduzione di [how to add giscus comments to docusaurus](https://dev.to/m19v/how-to-add-giscus-comments-to-docusaurus-439h).
 
-Al momento la pagina è ancora in lavorazione, sarà da considerarsi finita quando funzioneranno i commenti.
+Ho seguito anche l'articolo di [thedaxshepherd.net](https://thedaxshepherd.net) ][Docu-Adding-Comments](https://thedaxshepherd.net/2023/1/24/Docu-Adding-Comments).
 
-Consultare: https://thedaxshepherd.net/2023/1/24/Docu-Adding-Comments
+La pagina è praticamente finita e sono astati attivati i commenti via giscus, manca ancora qualche ritocco.
+
+Quello che mi ha fatto veramente diventare matto è stata la mancanza di installazione del pacchetto `@docusaurus/theme-common`, detta così sembrava semplice arrivarci, purtroppo m'è costata quasi una settimana - ben spesa però - ma posso dirlo solo adesso dopo aver risolto!
 
 ## Scopo
 Questo post è una descrizione passo per passo di come aggiungere [Giscus](https://giscus.app/), un sistema di commenti alimentato da GitHub Discussion, ad un sito statico generato con Docusaurus.
