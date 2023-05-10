@@ -11,7 +11,7 @@ import Translactions from '@site/src/components/Translactions';
 
 Questo articolo è una libera traduzione di [how to add giscus comments to docusaurus](https://dev.to/m19v/how-to-add-giscus-comments-to-docusaurus-439h).
 
-Al momento la pagina è ancora in lavorazione.
+Al momento la pagina è ancora in lavorazione, sarà da considerarsi finita quando funzioneranno i commenti.
 
 ## Scopo
 Questo post è una descrizione passo per passo di come aggiungere [Giscus](https://giscus.app/), un sistema di commenti alimentato da GitHub Discussion, ad un sito statico generato con Docusaurus.
@@ -40,7 +40,7 @@ Utilizzare la seguente query per ottenere l'id del repository creato, le categor
 
 ```
 query { 
-  repository(owner: "pieroproietti", name:"giscus"){
+  repository(owner: "pieroproietti", name:"penguins-blog"){
     id
     discussionCategories(first:10) {
       edges {
@@ -60,42 +60,42 @@ L'oggetto json risultante dovrebbe essere simile a questo:
 {
   "data": {
     "repository": {
-      "id": "R_kgDOIVqhTg",
+      "id": "R_kgDOJOjGXA",
       "discussionCategories": {
         "edges": [
           {
             "node": {
-              "id": "DIC_kwDOIVqhTs4CSSES",
+              "id": "DIC_kwDOJOjGXM4CWX2L",
               "name": "Announcements"
             }
           },
           {
             "node": {
-              "id": "DIC_kwDOIVqhTs4CSSET",
+              "id": "DIC_kwDOJOjGXM4CWX2M",
               "name": "General"
             }
           },
           {
             "node": {
-              "id": "DIC_kwDOIVqhTs4CSSEV",
+              "id": "DIC_kwDOJOjGXM4CWX2O",
               "name": "Ideas"
             }
           },
           {
             "node": {
-              "id": "DIC_kwDOIVqhTs4CSSEX",
+              "id": "DIC_kwDOJOjGXM4CWX2Q",
               "name": "Polls"
             }
           },
           {
             "node": {
-              "id": "DIC_kwDOIVqhTs4CSSEU",
+              "id": "DIC_kwDOJOjGXM4CWX2N",
               "name": "Q&A"
             }
           },
           {
             "node": {
-              "id": "DIC_kwDOIVqhTs4CSSEW",
+              "id": "DIC_kwDOJOjGXM4CWX2P",
               "name": "Show and tell"
             }
           }
