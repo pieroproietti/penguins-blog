@@ -149,6 +149,7 @@ export default function GiscusComponent() {
       async
     />
   );
+}
 ```
 ## Creazione del componente `BlogPostItem`
 * creazione del componente `BlogPostItem` per impacchettare i post del blog con il sistema di commenti di Giscus:
