@@ -3,6 +3,7 @@ authors: pieroproietti
 slug: ubuntu-22-04-e-wardrobe
 title: Ubuntu 22.04 e wardrobe
 lang: it
+enableComments: true
 ---
 import Translactions from '@site/src/components/Translactions';
 

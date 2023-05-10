@@ -3,6 +3,7 @@ authors: pieroproietti
 slug: mx21-adventures
 title: MX21 adventures
 lang: en
+enableComments: true
 ---
 import Translactions from '@site/src/components/Translactions';
 

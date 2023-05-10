@@ -3,6 +3,7 @@ authors: pieroproietti
 slug: eggs-update-i
 title: eggs update -i
 lang: en
+enableComments: true
 ---
 import Translactions from '@site/src/components/Translactions';
 

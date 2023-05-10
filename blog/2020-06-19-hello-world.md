@@ -3,6 +3,7 @@ authors: pieroproietti
 slug: hello-world
 title: Hello World
 lang: it
+enableComments: true
 ---
 import Translactions from '@site/src/components/Translactions';
 

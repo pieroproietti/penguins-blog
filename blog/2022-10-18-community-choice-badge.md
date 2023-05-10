@@ -3,6 +3,7 @@ title: Community choice badge
 slug: community-choice-badge
 authors: pieroproietti
 lang: en
+enableComments: true
 ---
 import Translactions from '@site/src/components/Translactions';
 

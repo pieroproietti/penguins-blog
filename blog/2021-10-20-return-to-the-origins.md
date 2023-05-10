@@ -3,6 +3,7 @@ authors: pieroproietti
 slug: return-to-the-origins
 title: Return to the origins eggs 8.17.x
 lang: en
+enableComments: true
 ---
 import Translactions from '@site/src/components/Translactions';
 

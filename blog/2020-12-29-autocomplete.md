@@ -3,6 +3,7 @@ authors: pieroproietti
 slug: autocomplete
 title: autocomplete
 lang: en
+enableComments: true
 ---
 import Translactions from '@site/src/components/Translactions';
 

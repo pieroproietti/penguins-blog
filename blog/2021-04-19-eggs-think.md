@@ -3,6 +3,7 @@ authors: pieroproietti
 slug: eggs-think
 title: eggs think
 lang: en
+enableComments: true
 ---
 import Translactions from '@site/src/components/Translactions';
 

@@ -3,6 +3,7 @@ authors: pieroproietti
 slug: xfce4-wayland-on-debian
 title: XFCE4 wayland on Debian
 lang: en
+enableComments: true
 ---
 import Translactions from '@site/src/components/Translactions';
 

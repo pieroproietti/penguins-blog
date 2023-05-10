@@ -3,6 +3,7 @@ authors: pieroproietti
 slug: ubuntu-groovy-gorilla
 title: Ubuntu groovy gorilla
 lang: en
+enableComments: true
 ---
 import Translactions from '@site/src/components/Translactions';
 

@@ -3,6 +3,7 @@ authors: pieroproietti
 slug: le-specie-presenti
 title: Le specie presenti
 lang: it
+enableComments: true
 ---
 import Translactions from '@site/src/components/Translactions';
 

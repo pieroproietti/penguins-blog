@@ -3,6 +3,7 @@ authors: pieroproietti
 slug: pacchetti
 title: Pacchetti
 lang: it
+enableComments: true
 ---
 import Translactions from '@site/src/components/Translactions';
 

@@ -3,6 +3,7 @@ authors: pieroproietti
 slug: good-luks-eggs
 title: Good LUKS eggs!
 lang: en
+enableComments: true
 ---
 import Translactions from '@site/src/components/Translactions';
 

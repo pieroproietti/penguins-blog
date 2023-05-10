@@ -3,6 +3,7 @@ authors: pieroproietti
 slug: well-the-big-moment-has-come
 title: Well, the big moment has come!
 lang: en
+enableComments: true
 ---
 import Translactions from '@site/src/components/Translactions';
 

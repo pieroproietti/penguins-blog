@@ -3,6 +3,7 @@ authors: pieroproietti
 slug: alla-ricerca-dell-arca-perduta
 title: Alla ricerca dell'arca perduta
 lang: it
+enableComments: true
 ---
 import Translactions from '@site/src/components/Translactions';
 

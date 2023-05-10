@@ -3,6 +3,7 @@ authors: pieroproietti
 slug: is-there-anybody-out-there
 title: Is There Anybody Out There?
 lang: en
+enableComments: true
 ---
 import Translactions from '@site/src/components/Translactions';
 

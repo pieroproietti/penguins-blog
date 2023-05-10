@@ -3,6 +3,7 @@ authors: pieroproietti
 slug: wardrobe-accessories
 title: 'wardrobe: accessories'
 lang: it
+enableComments: true
 ---
 import Translactions from '@site/src/components/Translactions';
 

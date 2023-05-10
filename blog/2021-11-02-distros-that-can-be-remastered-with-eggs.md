@@ -3,6 +3,7 @@ authors: pieroproietti
 slug: distros-that-can-be-remastered-with-eggs
 title: Distros that can be remastered with eggs
 lang: en
+enableComments: true
 ---
 import Translactions from '@site/src/components/Translactions';
 

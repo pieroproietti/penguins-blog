@@ -3,6 +3,7 @@ authors: pieroproietti
 slug: e-quindi-uscimmo-a-riveder-le-stelle
 title: E quindi uscimmo a riveder le stelle
 lang: it
+enableComments: true
 ---
 import Translactions from '@site/src/components/Translactions';
 

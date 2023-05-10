@@ -3,6 +3,7 @@ authors: pieroproietti
 slug: docusaurus
 title: Docusaurus
 lang: it
+enableComments: true
 ---
 import Translactions from '@site/src/components/Translactions';
 

@@ -3,6 +3,7 @@ authors: pieroproietti
 slug: macaroni-penguins-illustrating-eggs-on-manjaro
 title: 'Macaroni penguins: illustrating eggs on manjaro'
 lang: en
+enableComments: true
 ---
 import Translactions from '@site/src/components/Translactions';
 

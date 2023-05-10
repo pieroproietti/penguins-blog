@@ -3,6 +3,7 @@ authors: pieroproietti
 slug: rimasterizzare-xubuntu-per-una-scuola
 title: Rimasterizzare xubuntu per una scuola
 lang: it
+enableComments: true
 ---
 import Translactions from '@site/src/components/Translactions';
 

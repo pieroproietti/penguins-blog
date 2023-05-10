@@ -3,6 +3,7 @@ authors: pieroproietti
 slug: wardrobe-colibri-duck-eagle-and-owl
 title: 'wardrobe: colibri, duck, eagle and owl'
 lang: it
+enableComments: true
 ---
 import Translactions from '@site/src/components/Translactions';
 

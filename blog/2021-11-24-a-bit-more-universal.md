@@ -3,6 +3,7 @@ authors: pieroproietti
 slug: a-bit-more-universal
 title: A bit more universal
 lang: en
+enableComments: true
 ---
 import Translactions from '@site/src/components/Translactions';
 

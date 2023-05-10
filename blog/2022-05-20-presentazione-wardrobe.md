@@ -3,6 +3,7 @@ authors: pieroproietti
 slug: presentazione-wardrobe
 title: Presentazione wardrobe
 lang: it
+enableComments: true
 ---
 import Translactions from '@site/src/components/Translactions';
 

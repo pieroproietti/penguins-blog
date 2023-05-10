@@ -3,6 +3,7 @@ authors: pieroproietti
 slug: warbler-plasma-wayland-waydroid
 title: 'Warbler: plasma/wayland/waydroid'
 lang: en
+enableComments: true
 ---
 import Translactions from '@site/src/components/Translactions';
 

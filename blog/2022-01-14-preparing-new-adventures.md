@@ -3,6 +3,7 @@ authors: pieroproietti
 slug: preparing-new-adventures
 title: 'Macaroni penguins: preparing new adventures'
 lang: en
+enableComments: true
 ---
 import Translactions from '@site/src/components/Translactions';
 

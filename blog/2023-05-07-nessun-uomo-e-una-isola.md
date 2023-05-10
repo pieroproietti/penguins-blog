@@ -3,6 +3,7 @@ authors: pieroproietti
 slug: nessun-uomo-e-una-isola
 title: Nessun uomo è un'isola
 lang: it
+enableComments: true
 ---
 
 import Translactions from '@site/src/components/Translactions';

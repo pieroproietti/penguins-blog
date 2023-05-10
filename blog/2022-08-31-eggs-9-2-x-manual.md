@@ -3,6 +3,7 @@ authors: pieroproietti
 slug: eggs-9-2-x-manual
 title: eggs 9.2.x manual
 lang: en
+enableComments: true
 ---
 import Translactions from '@site/src/components/Translactions';
 

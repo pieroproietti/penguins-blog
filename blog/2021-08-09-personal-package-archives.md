@@ -3,6 +3,7 @@ authors: pieroproietti
 slug: personal-package-archives
 title: Personal Package Archives PPA
 lang: en
+enableComments: true
 ---
 import Translactions from '@site/src/components/Translactions';
 

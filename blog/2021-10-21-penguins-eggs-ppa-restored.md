@@ -3,6 +3,7 @@ authors: pieroproietti
 slug: penguins-eggs-ppa-restored
 title: penguins-eggs-ppa
 lang: en
+enableComments: true
 ---
 import Translactions from '@site/src/components/Translactions';
 

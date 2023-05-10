@@ -3,6 +3,7 @@ authors: pieroproietti
 slug: ufficiozero-adopt-eggs
 title: UfficioZero adopt eggs
 lang: eng
+enableComments: true
 ---
 import Translactions from '@site/src/components/Translactions';
 

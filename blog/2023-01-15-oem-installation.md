@@ -3,6 +3,7 @@ authors: pieroproietti
 slug: oem-installation
 title: OEM installation
 lang: it
+enableComments: true
 ---
 import Translactions from '@site/src/components/Translactions';
 

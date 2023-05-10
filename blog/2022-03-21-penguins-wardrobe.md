@@ -3,6 +3,7 @@ authors: pieroproietti
 slug: penguins-wardrobe
 title: penguins' wardrobe
 lang: en
+enableComments: true
 ---
 import Translactions from '@site/src/components/Translactions';
 

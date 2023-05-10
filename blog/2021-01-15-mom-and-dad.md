@@ -3,6 +3,7 @@ authors: pieroproietti
 slug: mom-and-dad
 title: mom and dad
 lang: en
+enableComments: true
 ---
 import Translactions from '@site/src/components/Translactions';
 

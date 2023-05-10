@@ -3,6 +3,7 @@ authors: pieroproietti
 slug: collaborare-a-distanza
 title: Collaborare a distanza
 lang: it
+enableComments: true
 ---
 
 import Translactions from '@site/src/components/Translactions';

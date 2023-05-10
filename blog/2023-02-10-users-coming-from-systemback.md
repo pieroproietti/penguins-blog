@@ -3,6 +3,7 @@ authors: pieroproietti
 slug: users-coming-from-systemback
 title: Users coming from systemback
 lang: en
+enableComments: true
 ---
 import Translactions from '@site/src/components/Translactions';
 

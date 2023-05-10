@@ -3,6 +3,7 @@ authors: pieroproietti
 slug: that-will-be-the-future
 title: That will be the future
 lang: en
+enableComments: true
 ---
 import Translactions from '@site/src/components/Translactions';
 

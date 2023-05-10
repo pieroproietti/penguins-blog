@@ -3,6 +3,7 @@ authors: pieroproietti
 slug: auguri-di-pasqua-e-nuova-versione
 title: Auguri di Pasqua e nuova versione
 lang: it
+enableComments: true
 ---
 
 import Translactions from '@site/src/components/Translactions';

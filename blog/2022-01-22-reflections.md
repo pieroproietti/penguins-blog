@@ -3,6 +3,7 @@ authors: pieroproietti
 slug: reflections
 title: Reflections
 lang: en
+enableComments: true
 ---
 import Translactions from '@site/src/components/Translactions';
 

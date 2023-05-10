@@ -3,6 +3,7 @@ authors: pieroproietti
 slug: costumes-and-wardrobes
 title: Costumes and wardrobes
 lang: en
+enableComments: true
 ---
 import Translactions from '@site/src/components/Translactions';
 

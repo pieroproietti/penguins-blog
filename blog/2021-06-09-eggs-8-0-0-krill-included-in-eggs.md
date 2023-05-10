@@ -3,6 +3,7 @@ authors: pieroproietti
 slug: eggs-8.0.0-krill-and-arm64-version
 title: eggs 8.0.0 krill and arm64 version
 lang: en
+enableComments: true
 ---
 import Translactions from '@site/src/components/Translactions';
 

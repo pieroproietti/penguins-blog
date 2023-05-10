@@ -3,6 +3,7 @@ authors: pieroproietti
 slug: customized-isos
 title: Customized ISOs
 lang: it
+enableComments: true
 ---
 
 import Translactions from '@site/src/components/Translactions';

@@ -3,6 +3,7 @@ authors: pieroproietti
 slug: linuxmint-una
 title: Linuxmint una
 lang: en
+enableComments: true
 ---
 import Translactions from '@site/src/components/Translactions';
 

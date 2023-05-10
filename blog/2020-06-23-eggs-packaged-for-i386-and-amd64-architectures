@@ -3,6 +3,7 @@ authors: pieroproietti
 slug: eggs-packaged-for-i386-and-amd64-architectures
 title: eggs packaged for for i386 and amd64 architectures
 lang: en
+enableComments: true
 ---
 import Translactions from '@site/src/components/Translactions';
 

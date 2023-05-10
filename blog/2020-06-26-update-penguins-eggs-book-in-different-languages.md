@@ -3,6 +3,7 @@ authors: pieroproietti
 slug: update-penguins-eggs-book-in-different-languages
 title: Penguins' eggs guide in different 
 lang: en
+enableComments: true
 ---
 import Translactions from '@site/src/components/Translactions';
 

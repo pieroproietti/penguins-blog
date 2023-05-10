@@ -3,6 +3,7 @@ authors: pieroproietti
 slug: customizzazione-del-desktop
 title: Customizzazione del desktop
 lang: en
+enableComments: true
 ---
 import Translactions from '@site/src/components/Translactions';
 

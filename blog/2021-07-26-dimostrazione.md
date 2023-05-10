@@ -3,6 +3,7 @@ authors: pieroproietti
 slug: dimostrazione-eggs
 title: Dimostrazione eggs
 lang: it
+enableComments: true
 ---
 import Translactions from '@site/src/components/Translactions';
 

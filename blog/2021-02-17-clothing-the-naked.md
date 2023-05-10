@@ -3,6 +3,7 @@ authors: pieroproietti
 slug: clothing-the-naked
 title: Clothing the naked
 lang: en
+enableComments: true
 ---
 import Translactions from '@site/src/components/Translactions';
 

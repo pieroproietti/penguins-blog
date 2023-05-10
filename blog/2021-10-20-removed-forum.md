@@ -3,6 +3,7 @@ authors: pieroproietti
 slug: removed-forum
 title: Removed forum and others stuffs
 lang: en
+enableComments: true
 ---
 
 import Translactions from '@site/src/components/Translactions';

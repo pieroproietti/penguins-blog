@@ -3,6 +3,7 @@ authors: pieroproietti
 slug: updated-eggs-revised-commands-and-drop-eggs-i386
 title: Updated eggs, revised commands and drop eggs i386
 lang: en
+enableComments: true
 ---
 import Translactions from '@site/src/components/Translactions';
 

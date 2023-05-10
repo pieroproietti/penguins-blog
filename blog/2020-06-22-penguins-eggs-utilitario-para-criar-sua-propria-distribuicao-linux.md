@@ -3,6 +3,7 @@ authors: pieroproietti
 slug: penguins-eggs-utilitario-para-criar-sua-propria-distribuicao-linux
 title: 'Penguin’s eggs: utilitário para criar sua própria distribuição Linux!'
 lang: en
+enableComments: true
 ---
 import Translactions from '@site/src/components/Translactions';
 

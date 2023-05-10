@@ -3,6 +3,7 @@ authors: pieroproietti
 slug: eggs-book-updated
 title: eggs book updated
 lang: it
+enableComments: true
 ---
 import Translactions from '@site/src/components/Translactions';
 
