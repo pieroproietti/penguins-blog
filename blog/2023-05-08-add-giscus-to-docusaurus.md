@@ -17,6 +17,10 @@ Al momento la pagina è ancora in lavorazione, sarà da considerarsi finita quan
 ## Scopo
 Questo post è una descrizione passo per passo di come aggiungere [Giscus](https://giscus.app/), un sistema di commenti alimentato da GitHub Discussion, ad un sito statico generato con Docusaurus.
 
+```
+pnpm install -D @giscus/react
+```
+
 ## Setup Giscus
 Seguite i prossimi passi per configurare Giscus e collegarlo alle discussioni di GitHub.
 
