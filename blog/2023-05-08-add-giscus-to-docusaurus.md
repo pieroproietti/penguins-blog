@@ -11,23 +11,21 @@ import Translactions from '@site/src/components/Translactions';
 <Translactions />
 
 
-Questo articolo è una libera traduzione di [how to add giscus comments to docusaurus](https://dev.to/m19v/how-to-add-giscus-comments-to-docusaurus-439h).
+Questo articolo è una libera traduzione dell'articolo [how to add giscus comments to docusaurus](https://dev.to/m19v/how-to-add-giscus-comments-to-docusaurus-439h) su [dev.to](https://dev.to/).
 
-Ho seguito anche l'articolo di [thedaxshepherd.net](https://thedaxshepherd.net) ][Docu-Adding-Comments](https://thedaxshepherd.net/2023/1/24/Docu-Adding-Comments).
+Ho anche seguito dal blog di [thedaxshepherd.net](https://thedaxshepherd.net) il post [Docu-Adding-Comments](https://thedaxshepherd.net/2023/1/24/Docu-Adding-Comments).
 
-La pagina è praticamente finita e sono astati attivati i commenti via giscus, manca ancora qualche ritocco.
+Durante la stesura, inoltre, mi sono reso conto che è possibile recuperare numerosi esempi direttamente da github, facendo una ricerca sui tag `docusauros` e `giscus`.
 
-Quello che mi ha fatto veramente diventare matto è stata la mancanza di installazione del pacchetto `@docusaurus/theme-common`, detta così sembrava semplice arrivarci, purtroppo m'è costata quasi una settimana - ben spesa però - ma posso dirlo solo adesso dopo aver risolto!
+La pagina è praticamente finita e sono stati attivati i commenti via [Giscus](https://giscus.app/), manca tuttavia qualche ritocco.
+
+Quello che mi ha fatto veramente impazzire è stata la mancata installazione del pacchetto `@docusaurus/theme-common` da effettuarsi con `pnpm i @docusaurus/theme-common`- Detta così sembrerebbe semplice arrivarci, purtroppo m'è costata quasi una settimana - ben spesa però - ma posso dirlo solo adesso che ho risolto!
 
 ## Scopo
-Questo post è una descrizione passo per passo di come aggiungere [Giscus](https://giscus.app/), un sistema di commenti alimentato da GitHub Discussion, ad un sito statico generato con Docusaurus.
-
-```
-pnpm install -D @giscus/react
-```
+Questo post è una descrizione passo per passo di come aggiungere [Giscus](https://giscus.app/), un sistema di commenti alimentato da GitHub Discussion, ad un sito statico generato con [Docusaurus](https://docusaurus.io/).
 
 ## Setup Giscus
-Seguite i prossimi passi per configurare Giscus e collegarlo alle discussioni di GitHub.
+Configuriamo Giscus e colleghiamolo alle discussioni di github.
 
 ## Abilitare GitHub discussion
 Create una repository Github nel vostro account dove i commenti possano essere memorizzati nella sessione Discussion.
@@ -43,9 +41,10 @@ Configurate Giscus nel vostro account GitHub.
 Nella sezione "Repository access" aggiungete solo il repository creato nel passo precedente per essere accessibile a giscus e fare clic su "Save"
 
 ## Get repository API key
-Accedere con l'account GitHub in GraphQL API Explorer.
+Accedere con l'account GitHub in [GraphQL API Explorer](https://docs.github.com/en/graphql/overview/explorer).
 
 Utilizzare la seguente query per ottenere l'id del repository creato, le categorie di discussione con i relativi dettagli (ad esempio, id e nome). 
+
 **Nota** Sostituire proprietario e nome con il nome del proprio account GitHub e il nome del repository creato.
 
 ```
@@ -154,17 +153,18 @@ export default function GiscusComponent() {
   );
 }
 ```
+
 ## Creazione del componente `BlogPostItem`
 * creazione del componente `BlogPostItem` per impacchettare i post del blog con il sistema di commenti di Giscus:
-
 ```
 pnpm run swizzle @docusaurus/theme-classic BlogPostItem --
 ```
 
-Scegliere wrap.
+e scegliere wrap.
 
 Questo creerà un componente `BlogPostItem` sotto `src/theme`. 
-Modificate `index.js` come di seguito:
+
+A questo punto, ,odificate `index.js` come di seguito:
 
 ```typescript
 import React from 'react';
@@ -194,10 +194,12 @@ export default function BlogPostItemWrapper(props) {
 
 ```
 ---
-title: "Title of blog post"
-authors: author
-tags: [keywordOne, keywordTwo]
-enableComments: true # for Gisqus
+authors: pieroproietti
+slug: add-giscus-docusaurus
+title: add giscus a docusaurus
+lang: it
+enableComments: true
 ---
 ```
+
 A fine lavoro, sarà attivata la funzione di commento del post corrente su questa pagina, che potrà essere utilizzata come dimostrazione. Sentitevi liberi di premere il pulsante "Mi piace" se avete trovato utile questo post, o di postare la vostra domanda nei commenti se ne avete una.
