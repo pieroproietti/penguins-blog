@@ -12,7 +12,7 @@ import Translactions from '@site/src/components/Translactions';
 
 ## exclude.list
 
-Escludere file dalla riproduzione è sempre stato previsto da `eggs`, grazie agli strumenti ereditati da `refracta-snapshot`. Quello che non avevo sinora capito è che eggs aveva perso questa capacità nel momento stesso in cui avevo scelto di non copiare più il file system originale per creare il `file system live` ma di procedere con il file system originale montato `--bind` ed `overlay` per permettere le variazioni.
+Escludere dei file dalla riproduzione è sempre stato previsto da `eggs`, grazie agli strumenti ereditati da `refracta-snapshot`. Quello che non avevo sinora capito è che eggs aveva perso questa capacità nel momento stesso in cui avevo scelto di non copiare più il file system originale per creare il `file system live` ma di procedere con il file system originale montato `--bind` ed `overlay` per permettere le variazioni.
 
 La tecnica permette di risparmiare veramente tanto tempo e tanto spazio sul disco, ma - quello che non avevo notato - ha ed aveva pure un impatto sul funzionamento della exclude.list che era pensata, per l'appunto, per escludere i file dalla copia fatta con `rsync`.
 
