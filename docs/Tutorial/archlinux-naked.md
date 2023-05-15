@@ -21,9 +21,13 @@ Boot archiso from virtual machine, then:
 `install-naked.sh`
 
 
-Reboot and on the new machineç
+Reboot, and on the new installed machine:
 
 `pacman -Sy git`
+
+`sudo /sbin/groupadd autologin`
+
+`sudo gpassword -a artisan autologin`
 
 `git clone https://github.com/pieroproietti/penguins-wardrobe`
 
@@ -37,5 +41,6 @@ Reboot and on the new machineç
 
 `sudo eggs dad -d`
 
+`sudo eggs produce --max`
 
 ![colibri-iso-installing](/images/arch-naked/colibri-iso-installing.png)
