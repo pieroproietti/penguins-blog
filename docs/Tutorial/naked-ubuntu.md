@@ -1,6 +1,6 @@
 ---
 authors: pieroproietti
-title: Ubuntu Linux naked
+title: Ubuntu naked
 lang: it
 ---
 import Translactions from '@site/src/components/Translactions';

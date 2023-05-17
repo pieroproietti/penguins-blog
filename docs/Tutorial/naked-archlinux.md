@@ -1,6 +1,6 @@
 ---
 authors: pieroproietti
-title: Arch Linux naked
+title: Arch naked
 lang: en
 ---
 import Translactions from '@site/src/components/Translactions';
