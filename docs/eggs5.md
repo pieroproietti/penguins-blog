@@ -79,7 +79,7 @@ E' possibile installare [`calamares`](https://aur.archlinux.org/packages/calamar
 
 ```
 git clone https://github.com/pieroproietti/penguins-eggs-pkgbuilds
-cd penguins-eggs-pkgbuilds/aur/cbkcomp
+cd penguins-eggs-pkgbuilds/aur/ckbcomp
 makepkg -si
 ```
 Bene, possiamo finalmente installare `calamares` con il comando:

@@ -79,10 +79,10 @@ tuttavia - al momento - c'è un problema sul pacchetto [`ckbcomp`](https://aur.a
 così per installare `Calamares`, dovete fare questo piccolo workaround:
 ```
 git clone https://github.com/pieroproietti/penguins-eggs-pkgbuilds
-cd penguins-eggs-pkgbuilds/aur/cbkcomp
+cd penguins-eggs-pkgbuilds/aur/ckbcomp
 makepkg -si
 ```
-Installato `cbkcomp`, potete tranquillamente installare calamares utilizzando `yay`:
+Installato `ckbcomp`, potete tranquillamente installare calamares utilizzando `yay`:
 ```
 yay calamares
 ```
