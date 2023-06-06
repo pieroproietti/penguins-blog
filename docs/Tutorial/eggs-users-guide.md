@@ -74,6 +74,27 @@ pkgbuild -si
 ```
 
 #### `Calamares on Arch Linux`
+Calamares non è compreso nelle repository Arch, ma possiamo installarlo dalla repository [Chaotic-AUR](https://aur.chaotic.cx/) denominata Automated building repo for AUR packages.
+
+##### `Calamares Chaotic-AUR`
+Tutto quello che dobbiamo fare è:
+
+```
+ pacman-key --recv-key FBA220DFC880C036 --keyserver keyserver.ubuntu.com
+ pacman-key --lsign-key FBA220DFC880C036
+ pacman -U 'https://cdn-mirror.chaotic.cx/chaotic-aur/chaotic-keyring.pkg.tar.zst' 'https://cdn-mirror.chaotic.cx/chaotic-aur/chaotic-mirrorlist.pkg.tar.zst'
+```
+
+A questo punto, aggiungiamo alla fine di `/etc/pacman.conf` il seguente testo:
+```
+[chaotic-aur]
+Include = /etc/pacman.d/chaotic-mirrorlist
+```
+
+Bene, adesso possiamo procedere con pacman o con `sudo eggs calamares --install`.
+
+##### `Calamares yay`
+
 E' possibile installare [`calamares`](https://aur.archlinux.org/packages/calamares-git) con yay, 
 tuttavia - al momento - c'è un problema sul pacchetto [`ckbcomp`](https://aur.archlinux.org/packages/ckbcomp), 
 così per installare `Calamares`, dovete fare questo piccolo workaround:
