@@ -17,39 +17,39 @@ Debian, Devuan, Ubuntu e [derivate](https://github.com/pieroproietti/penguins-eg
 Scaricate eggs da [sourceforge](https://sourceforge.net/projects/penguins-eggs/files/DEBS/), quindi installatela:
 
 ```
-sudo dpkg -i eggs_9.4.3_amd64.deb
+sudo dpkg -i eggs_9.4.17_amd64.deb
 sudo apt install -f
 ```
 
-OK, andiamo ad autoconfiguralo:
+OK, andiamo ad configurarlo, se scegliamo il default fa da solo!
 
 ```
-sudo eggs dad -d
+sudo eggs dad --default
 ```
 
-Perfetto, se vogliamo calamares installer dobbiamo installarlo adesso:
+Perfetto! Se vogliamo installare la nostra ISO con Calamares installer, dobbiamo - come dire - installare l'installer stesso, basterà dare il comando:
 
 ```
 sudo eggs calamares --install
 ```
 
-Bene, pronti per fare l'uovo:
+Bene, pronti per produrre la nostra prima ISO!
 
 ```
 sudo eggs produce 
 ```
 
-Se volete fare il backup del vostro systema, potente aggiungere --clone
+Se, invece di creare una rimasterizzazione distribuibile, volete farvi una copia live del vostro sistema, potente aggiungere l'opzione `--clone`:
 ```
 sudo eggs produce --clone
 ```
 
-Se volete, invece,  fare il backup del vostro server internet, ma non volete esporre i dati in chiaro, potente aggiungere --cryptedclone
+Inoltre, potete utilizzare eggs per trasferire un vostro server su internet, ma senza esporre direttamente i dati, utilizzando `--cryptedclone`
 ```
-sudo eggs produce --clone
+sudo eggs produce --cryptedclone
 ```
 
-Se volete la compressione massima e la rimozione di eggs e calamares installer a fine installazione, aggiungete: --max --release
+Se volete la massima compressione e la rimozione di eggs e di calamares installer a fine installazione, basterà aggiungere i flag: --max --release
 ```
 sudo eggs produce --max --release
 ```
@@ -75,28 +75,24 @@ A questo punto la procedura è la stessa,
 sudo eggs dad -d
 ```
 
-E' possibile installare [`calamares`](https://aur.archlinux.org/packages/calamares-git) con yay, ma al momento c'è un problema con il package [ckbcomp](https://aur.archlinux.org/packages/ckbcomp), per aggirarlo, installate il pacchetto dal mio PKGBUILD:
+### Aggiungere Chaotic-AUR
+Calamares non è presente nelle repository standard di Arch, mentre è presente nella repository chaotic-AUS, tutto quello che dobbiamo fare è configurarla:
 
 ```
-git clone https://github.com/pieroproietti/penguins-eggs-pkgbuilds
-cd penguins-eggs-pkgbuilds/aur/ckbcomp
-makepkg -si
-```
-Bene, possiamo finalmente installare `calamares` con il comando:
-
-```
-yay calamares
-```
-Ci metterà un po', circa 10 minuti. Attendete, prendete un caffè o meglio un'aranciata, quindi poichè vogliamo configurare `calamares` per funzionare senza richiesta di password, diamo comunque il comando:
-
-```
-sudo eggs calamares --install
+ pacman-key --recv-key FBA220DFC880C036 --keyserver keyserver.ubuntu.com
+ pacman-key --lsign-key FBA220DFC880C036
+ pacman -U 'https://cdn-mirror.chaotic.cx/chaotic-aur/chaotic-keyring.pkg.tar.zst' 'https://cdn-mirror.chaotic.cx/chaotic-aur/chaotic-mirrorlist.pkg.tar.zst'
 ```
 
-Che in teoria potrebbe fare tutti e due, ma fallisce per il problema precedente.
+A questo punto, aggiungiamo alla fine di `/etc/pacman.conf` il seguente testo:
+```
+[chaotic-aur]
+Include = /etc/pacman.d/chaotic-mirrorlist
+```
 
+Bene, adesso possiamo procedere con `sudo eggs calamares --install`.
 
-Bene, siamo pronti per fare l'uovo!
+Bene, anche per Arch siamo pronti a produrre la nostra prima ISO!
 
 ```
 sudo eggs produce 
@@ -106,9 +102,18 @@ Per le altre istruzioni fate riferimento a Debian e poi, che diavolo, usate Arch
 
 ## Manjaro
 
-Eggs è sulla community repository di Manjaro ormai da qualche giorno, in pacchetto dovrebbe essere cotto, quindi:
+eggs è sulla community repository di Manjaro, basterà, quindi:
+
 ```
 sudo pamac install penguins-eggs
 ```
 
-Per il resto come nei casi precedenti,
+Per il resto come nei casi precedenti.
+
+
+# Suggerimenti e feedback
+
+Cerco di fare questa miniguida breve e coincisa, non sò se ci riesco, se avete problemi o suggerimenti non esitate a scrivermi.
+
+
+
