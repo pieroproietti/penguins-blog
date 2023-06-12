@@ -7,7 +7,7 @@ import Translactions from '@site/src/components/Translactions';
 
 <Translactions />
 
-You can also consult a detailed [README](https://github.com/pieroproietti/penguins-eggs#readme) in English on the repository.
+### In case of problems with translation links, You can also consult a detailed [README](https://github.com/pieroproietti/penguins-eggs#readme) in English on the repository.
 
 
 Manuale aggiornato a `eggs v9.4.x`
