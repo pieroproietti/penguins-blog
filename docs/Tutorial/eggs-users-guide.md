@@ -62,22 +62,9 @@ sudo eggs tools ppa --add
 ```
 
 ### `Arch`
-Per Arch Linux possiamo installare penguins-eggs con yay:
-```
-yay penguins-eggs
-```
-oppure, più tradizionalmente:
-```
-git clone https://aur.archlinux.org/penguins-eggs.git penguins-eggs-aur
-cd penguins-eggs-aur
-pkgbuild -si
-```
 
-#### `Calamares on Arch Linux`
-Calamares non è compreso nelle repository Arch, ma possiamo installarlo dalla repository [Chaotic-AUR](https://aur.chaotic.cx/) denominata Automated building repo for AUR packages.
-
-##### `Calamares Chaotic-AUR`
-Tutto quello che dobbiamo fare è:
+### Utilizzando `Chaotic-AUR`
+penguins-eggs e calamares non sono presenti nelle repository standard di Arch, mentre è presente nella repository chaotic-AUS, tutto quello che dobbiamo fare è configurarla:
 
 ```
  pacman-key --recv-key FBA220DFC880C036 --keyserver keyserver.ubuntu.com
@@ -91,12 +78,27 @@ A questo punto, aggiungiamo alla fine di `/etc/pacman.conf` il seguente testo:
 Include = /etc/pacman.d/chaotic-mirrorlist
 ```
 
-Bene, adesso possiamo procedere con pacman o con `sudo eggs calamares --install`.
+A questo punto possiamo installare penguins-eggs con il comando: `sudo pacman -Sy penguins-eggs`
 
-##### `Calamares yay`
+### Utilizzando `yay`
 
-E' possibile installare [`calamares`](https://aur.archlinux.org/packages/calamares-git) con yay, 
-tuttavia - al momento - c'è un problema sul pacchetto [`ckbcomp`](https://aur.archlinux.org/packages/ckbcomp), 
+Su `Arch` potete usare `yay` per installare `eggs`:
+```
+yay penguins-eggs
+```
+oppure, più tradizionalmente:
+```
+git clone https://aur.archlinux.org/penguins-eggs.git penguins-eggs-aur
+cd penguins-eggs-aur
+pkgbuild -si
+```
+
+#### `Calamares on Arch Linux`
+Se abbiamo installato [Chaotic-AUR](https://aur.chaotic.cx/), abbiamo a disposizione anche calamares e possiamo procedere con pacman o con `sudo eggs calamares --install`.
+
+##### insallare calamares con yay
+
+E' possibile installare [`calamares`](https://aur.archlinux.org/packages/calamares-git) con yay, tuttavia - al momento - c'è un problema sul pacchetto [`ckbcomp`](https://aur.archlinux.org/packages/ckbcomp), 
 così per installare `Calamares`, dovete fare questo piccolo workaround:
 ```
 git clone https://github.com/pieroproietti/penguins-eggs-pkgbuilds

@@ -65,18 +65,8 @@ eggs mom
 
 ## `Arch`
 
-Su `Arch` potete usare `yay` per installare `eggs`:
-```
-yay penguins-eggs
-```
-A questo punto la procedura è la stessa, 
-
-```
-sudo eggs dad -d
-```
-
-### Aggiungere Chaotic-AUR
-Calamares non è presente nelle repository standard di Arch, mentre è presente nella repository chaotic-AUS, tutto quello che dobbiamo fare è configurarla:
+### Utilizzando `Chaotic-AUR`
+penguins-eggs e calamares non sono presenti nelle repository standard di Arch, mentre è presente nella repository chaotic-AUS, tutto quello che dobbiamo fare è configurarla:
 
 ```
  pacman-key --recv-key FBA220DFC880C036 --keyserver keyserver.ubuntu.com
@@ -90,7 +80,22 @@ A questo punto, aggiungiamo alla fine di `/etc/pacman.conf` il seguente testo:
 Include = /etc/pacman.d/chaotic-mirrorlist
 ```
 
-Bene, adesso possiamo procedere con `sudo eggs calamares --install`.
+A questo punto possiamo installare penguins-eggs con il comando: `sudo pacman -Sy penguins-eggs`
+
+### Utilizzando `yay`
+
+Su `Arch` potete usare `yay` per installare `eggs`:
+```
+yay penguins-eggs
+```
+
+### Crezione della ISO
+
+A questo punto la procedura è la stessa, 
+
+```
+sudo eggs dad -d
+```
 
 Bene, anche per Arch siamo pronti a produrre la nostra prima ISO!
 
