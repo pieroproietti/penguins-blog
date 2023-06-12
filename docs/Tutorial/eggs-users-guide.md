@@ -96,7 +96,7 @@ pkgbuild -si
 #### `Calamares on Arch Linux`
 Se abbiamo installato [Chaotic-AUR](https://aur.chaotic.cx/), abbiamo a disposizione anche calamares e possiamo procedere con pacman o con `sudo eggs calamares --install`.
 
-##### insallare calamares con yay
+##### installare calamares con yay
 
 E' possibile installare [`calamares`](https://aur.archlinux.org/packages/calamares-git) con yay, tuttavia - al momento - c'è un problema sul pacchetto [`ckbcomp`](https://aur.archlinux.org/packages/ckbcomp), 
 così per installare `Calamares`, dovete fare questo piccolo workaround:

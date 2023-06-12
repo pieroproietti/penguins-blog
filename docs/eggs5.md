@@ -1,5 +1,5 @@
 ---
-title: Cook eggs in 5 minuts!
+title: Cook eggs in 5 minutes!
 authors: pieroproietti
 slug: eggs5
 lang: it
