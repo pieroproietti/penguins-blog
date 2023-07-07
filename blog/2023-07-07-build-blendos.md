@@ -25,7 +25,7 @@ cd ~/blendOS/build
 assemble init 'https://github.com/blend-os/manifests' 'main'
 ```
 
-![click-error](/static/images/click-error.png)
+![click-error](/images/click-error.png)
 
 Per procedere sono costretto a dare i comandi:
 
