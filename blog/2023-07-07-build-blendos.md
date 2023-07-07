@@ -10,7 +10,7 @@ import Translactions from '@site/src/components/Translactions';
 
 <Translactions />
 
-I wrote something about ]blendOS](https://blendos.co/) in this previous [post](https://penguins-eggs.net/blog/blendos), now I'm trying to build blendOS image, following official [blendOS Documentation](https://docs.blendos.co/) and particularly this pages:
+I wrote something about [blendOS](https://blendos.co/) in this previous [post](https://penguins-eggs.net/blog/blendos), now I'm trying to build blendOS image, following official [blendOS Documentation](https://docs.blendos.co/) and particularly this pages:
 
 * [Setting up blendOS builds
 ](https://docs.blendos.co/docs/build-blend/build_environment)
