@@ -1,7 +1,7 @@
 ---
 authors: pieroproietti
-slug: build-blendos
-title: Build blendOS
+slug: build-blendos-image
+title: Build blendOS image
 lang: en
 enableComments: true
 ---
@@ -10,7 +10,8 @@ import Translactions from '@site/src/components/Translactions';
 
 <Translactions />
 
-I'm trying to build blendOS image, following this pages:
+
+I'm trying to build blendOS image, following official [blendOS Documentation](https://docs.blendos.co/) and particularly this pages:
 
 * [Setting up blendOS builds
 ](https://docs.blendos.co/docs/build-blend/build_environment)
