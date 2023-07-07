@@ -57,4 +57,5 @@ sudo brunch
 This is the complete log of the command: [sudo brunch](/logs/brunch.log)
 
 
-Note: you can comment in this page too, with you github account.
+## Note
+You can comment in this page too, using you github account.
