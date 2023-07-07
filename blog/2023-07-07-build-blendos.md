@@ -39,4 +39,4 @@ source build/envsetup.sh
 breakfast | tee breakfast.log
 ```
 
-Questo è il [breackfast.log](/static/logs/breakfast.log)
+Questo è il [breackfast.log](/logs/breakfast.log)
