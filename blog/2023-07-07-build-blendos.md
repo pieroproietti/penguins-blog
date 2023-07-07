@@ -10,7 +10,7 @@ import Translactions from '@site/src/components/Translactions';
 
 <Translactions />
 
-I following these pages:
+I'm trying to build blendOS image, following this pages:
 
 * [Setting up blendOS builds
 ](https://docs.blendos.co/docs/build-blend/build_environment)
@@ -18,11 +18,11 @@ I following these pages:
 
 # Setting up blending builds
 
-All OK
+All OK.
 
 # Building an image
 
-All right until command:
+All right, until command:
 
 ```
 cd ~/blendOS/build
@@ -31,7 +31,7 @@ assemble init 'https://github.com/blend-os/manifests' 'main'
 
 ![click-error](/images/click-error.png)
 
-To continue I must install python-pip and with pip module click:
+To continue I must install `python-pip` and with `pip` module `click`:
 
 ```
 sudo pacman -S python-pip
@@ -54,3 +54,6 @@ sudo brunch
 ```
 
 This is the complete log of the command: [sudo brunch](/logs/brunch.log)
+
+
+Note: you can comment in this page too, with you github account.
