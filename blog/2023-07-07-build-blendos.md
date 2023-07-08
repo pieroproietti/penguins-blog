@@ -88,7 +88,7 @@ The iso installs, but the system--once installed--fails to boot!
 
 but that's the way it is and fairy tales if they don't end well you have to contrinue them and so I decided to do another test of my new image.
 
-![gnome-iso-installed.png](/gnome-iso-installed.png)
+![gnome-iso-installed.png](/images/gnome-iso-installed.png)
 
 Everything seems to be running smoothly! 
 
