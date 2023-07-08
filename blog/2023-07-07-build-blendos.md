@@ -77,16 +77,14 @@ In this case, finally, even without the need to install python-pip and the click
 # creating ISO
 At this point I gave the `sudo brunch` command and chose gnome as the iso to be created and it too ran correctly.
 
-|[blendos-gnome-ok](/images/blendos-gnome-ok.png)
+![blendos-gnome-ok](/images/blendos-gnome-ok.png)
 
-# booting ISO
+# booting resulting ISO
 Every fairy tale has a happy ending, for ours what can we say: evidently there is still something to be fixed. 
 
-The iso installs, but the system--once installed--fails to boot.
+The iso installs, but the system--once installed--fails to boot! 
 
-
-
-
+![cant-boot.png](/images/cant-boot.png)
 
 ## Note
 You can comment in this page too, using you github account.
