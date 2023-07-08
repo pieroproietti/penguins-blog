@@ -94,7 +94,7 @@ Everything seems to be running smoothly!
 
 I am uploading this image to the [penguins' eggs sourceforge](https://sourceforge.net/projects/penguins-eggs/files/ISOS/blendos/) page, created by the - let's say so orthodox - method among the images previously created with eggs. 
 
-You can distinguish it simply by the lack of the `egg-of` prefix,
+You can distinguish it simply by the lack of the `egg-of-` prefix,
 
 ## Note
 You can comment in this page too, using you github account.
