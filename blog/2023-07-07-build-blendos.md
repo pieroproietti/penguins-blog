@@ -53,6 +53,9 @@ source build/envsetup.sh
 breakfast | tee breakfast.log
 ```
 
+And we end in this way:
+![blendos-end-breakfast.png](/images/blendos-end-breakfast.png)
+
 This is the complete log of the command: [breackfast.log](/logs/breakfast.log)
 
 I tried to build iso too, giving from the same container the command:
