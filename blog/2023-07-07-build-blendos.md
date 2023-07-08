@@ -1,7 +1,7 @@
 ---
 authors: pieroproietti
 slug: build-blendos-image
-title: Build blendOS image
+title: build blendOS image
 lang: en
 enableComments: true
 ---
