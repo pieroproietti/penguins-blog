@@ -66,6 +66,27 @@ sudo brunch
 
 This is the complete log of the command: [sudo brunch](/logs/brunch.log)
 
+# On a blendOS without akshara hook
+
+After trying to use a normal Arch system as the parent, encountering the same problems as above, I wanted to try using an installed blendOS system, however, made "mutable" by removing the akshara hook.
+
+In this case, finally, even without the need to install python-pip and the click module, everything seemed to proceed properly, reaching the conclusion of the procedure.
+
+![all-packages-ok](/images/all-packages-ok.png)
+
+# creating ISO
+At this point I gave the `sudo brunch` command and chose gnome as the iso to be created and it too ran correctly.
+
+|[blendos-gnome-ok](/images/blendos-gnome-ok.png)
+
+# booting ISO
+Every fairy tale has a happy ending, for ours what can we say: evidently there is still something to be fixed. 
+
+The iso installs, but the system--once installed--fails to boot.
+
+
+
+
 
 ## Note
 You can comment in this page too, using you github account.
