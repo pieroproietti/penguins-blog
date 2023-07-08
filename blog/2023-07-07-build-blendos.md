@@ -86,5 +86,18 @@ The iso installs, but the system--once installed--fails to boot!
 
 ![cant-boot.png](/images/cant-boot.png)
 
+but that's the way it is and fairy tales if they don't end well you have to contrinue them and so I decided to do another test of my new image.
+
+![gnome-iso-installed.png](/gnome-iso-installed.png)
+
+Everything seems to be running smoothly! 
+
+I am uploading this image to the [penguins' eggs sourceforge](https://sourceforge.net/projects/penguins-eggs/files/ISOS/blendos/) page, created by the - let's say so orthodox - method among the images previously created with eggs. 
+
+You can distinguish it simply by the lack of the `egg-of` prefix,
+
 ## Note
 You can comment in this page too, using you github account.
+
+Everything seems to be running smoothly! 
+
