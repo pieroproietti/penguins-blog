@@ -84,13 +84,13 @@ const config = {
             label: 'Tutorial',
           },
           { to: '/blog', label: 'Blog', position: 'left' },
+
+
           {
             href: 'https://github.com/pieroproietti/penguins-blog/discussions',
             label: 'Discussions',
-            position: 'left',
+            position: 'right',
           },
-
-          
           {
             href: 'https://github.com/pieroproietti/',
             label: 'GitHub',
