@@ -38,7 +38,15 @@ sudo pacman -S python-pip
 sudo pip install click --break-system-packages
 ```
 
-Then I continue, with:
+Give again the previous command:
+
+```
+cd ~/blendOS/build
+assemble init 'https://github.com/blend-os/manifests' 'main'
+```
+And this time, it go! 
+
+After finished, I continue, with:
 
 ```
 source build/envsetup.sh
