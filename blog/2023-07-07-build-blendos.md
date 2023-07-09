@@ -81,13 +81,16 @@ rm -rf "${TEMP_ASSEMBLE_DIR}"`
 
 `mkdir -p ~/blendOS/build`
 
-`cd ~/blendOS/build
-assemble init 'https://github.com/blend-os/manifests' 'main'`
+`cd ~/blendOS/build`
+
+`assemble init 'https://github.com/blend-os/manifests' 'main'`
 
 `assemble sync`
 
-`source build/envsetup.sh
-breakfast`
+`source build/envsetup.sh`
+
+`breakfast`
+
 
 ![all-packages-ok](/images/all-packages-ok.png)
 
