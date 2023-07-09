@@ -94,10 +94,15 @@ Everything seems to be running smoothly!
 
 I am uploading this image to the [penguins' eggs sourceforge](https://sourceforge.net/projects/penguins-eggs/files/ISOS/blendos/) page, created by the - let's say so orthodox - method among the images previously created with eggs. 
 
-You can distinguish it simply by the lack of the `egg-of-` prefix,
+You can distinguish it simply by the lack of the `egg-of-` prefix.
+
+# Conclusions
+
+in the coming days I will try to better understand this operation, at the moment I see that by removing the akshara hook the system becomes "mutable" and can be remastered with penguins-eggs.
+
+The difference between the two methodologies is that with eggs one builds one's system, then reproduces it, while using manifest one first designs the system then builds it.
+
+In some ways eggs is less rigorous but more fun.
 
 ## Note
 You can comment in this page too, using you github account.
-
-Everything seems to be running smoothly! 
-
