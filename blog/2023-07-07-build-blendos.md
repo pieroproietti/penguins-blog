@@ -72,10 +72,30 @@ After trying to use a normal Arch system as the parent, encountering the same pr
 
 In this case, finally, even without the need to install python-pip and the click module, everything seemed to proceed properly, reaching the conclusion of the procedure.
 
+`sudo pacman -S git archiso base-devel xorriso python python-psutil squashfs-tools`
+ 
+`TEMP_ASSEMBLE_DIR="$(mktemp -d)"
+git clone https://github.com/blend-os/assemble "${TEMP_ASSEMBLE_DIR}/assemble"
+sudo cp "${TEMP_ASSEMBLE_DIR}/assemble/assemble" /usr/local/bin
+rm -rf "${TEMP_ASSEMBLE_DIR}"`
+
+`mkdir -p ~/blendOS/build`
+
+`cd ~/blendOS/build
+assemble init 'https://github.com/blend-os/manifests' 'main'`
+
+`assemble sync`
+
+`source build/envsetup.sh
+breakfast`
+
 ![all-packages-ok](/images/all-packages-ok.png)
+
 
 # creating ISO
 At this point I gave the `sudo brunch` command and chose gnome as the iso to be created and it too ran correctly.
+
+`sudo brunch`
 
 ![blendos-gnome-ok](/images/blendos-gnome-ok.png)
 
