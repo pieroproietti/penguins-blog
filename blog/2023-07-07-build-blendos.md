@@ -56,7 +56,7 @@ breakfast | tee breakfast.log
 And we end in this way:
 ![blendos-end-breakfast.png](/images/blendos-end-breakfast.png)
 
-This is the complete log of the command: [breackfast.log](/logs/breakfast.log)
+This is the complete log of the command: [breakfast.log](/logs/breakfast.log)
 
 I tried to build iso too, giving from the same container the command:
 
@@ -86,7 +86,7 @@ The iso installs, but the system--once installed--fails to boot!
 
 ![cant-boot.png](/images/cant-boot.png)
 
-but that's the way it is and fairy tales if they don't end well you have to contrinue them and so I decided to do another test of my new image.
+but that's the way it is and fairy tales if they don't end well you have to continue them and so I decided to do another test of my new image.
 
 ![gnome-iso-installed.png](/images/gnome-iso-installed.png)
 
