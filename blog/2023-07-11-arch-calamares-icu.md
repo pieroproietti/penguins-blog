@@ -19,5 +19,7 @@ In particolare la versione attuale: [icu@73.2-1](https://gitlab.archlinux.org/ar
 
 Ho provato a sistemare con un link simbolico ma continua a non funzionare, probabilmente con le prossime versioni il problema rientrerà da solo, per il momento - purtroppo - calamares su Arch non mi funziona.
 
+E per un programma di rimasterizzazione è un grandissimo problema.
+
 Soluzioni?
 
