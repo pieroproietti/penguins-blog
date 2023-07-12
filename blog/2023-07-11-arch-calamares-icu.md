@@ -32,6 +32,12 @@ Per installare con krill, basterà:
 
 # Soluzioni?
 
+* rimuovendo dai settings.conf di Calamares le chiamate al modulo user l'installer  funziona, ma rinunciare alla creazione dell'utente sembra una rinuncia piuttosto pesante:
+
+* ho provato a ricompilare calamares, va bene per quanto riguarda icu ed il modulo user si carica, ma calamares si pianta sul modulo mount;
+
+* ho provato ad utilizzare la versione [7.3.1](https://archive.archlinux.org/packages/i/icu/icu-73.1-1-x86_64.pkg.tar.zst) niente da fare, il modulo user non funziona e cerca la 72!!!
+
 Se qualcuno è a conoscenza di una soluzione, può indicarla nei commenti. Grazie
 
 
