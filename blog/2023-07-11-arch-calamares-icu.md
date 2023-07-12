@@ -11,7 +11,7 @@ import Translactions from '@site/src/components/Translactions';
 <Translactions />
 
 
-Ho un problema invalidante con le ultime versioni di Arch riguardo calamares: 
+Ho un problema invalidante con le ultime versioni di Arch Linux con l'installer grafico calamares: 
 
 il pacchetto [icu](https://icu.unicode.org/) International Components for Unicode viene utilizzato da [calamares](https://aur.archlinux.org/packages/calamares)
 
@@ -21,5 +21,16 @@ Ho provato a sistemare con un link simbolico ma continua a non funzionare, proba
 
 E per un programma di rimasterizzazione è un grandissimo problema.
 
-Soluzioni?
+Ad ogni modo è ancora possibile installare Arch utilizzando krill, l'installer CLI integrato in penguins-eggs. Naturalmente occorre tener presente che krill eseguirà una installazione distruttiva, ovvero cancellerà il disco sul quale avete deciso si installare. 
+
+Per installare con krill, basterà: 
+* aprire una finestra di terminale
+* digitare il comando: `sudo eggs install` 
+* seguire le istruzioni.
+
+# Soluzioni?
+
+Se qualcuno è a conoscenza di una soluzione, può indicarla nei commenti. Grazie
+
+
 
