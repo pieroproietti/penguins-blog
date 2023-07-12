@@ -21,6 +21,8 @@ Ho provato a sistemare con un link simbolico ma continua a non funzionare, proba
 
 E per un programma di rimasterizzazione è un grandissimo problema.
 
+## Krill
+
 Ad ogni modo è ancora possibile installare Arch utilizzando krill, l'installer CLI integrato in penguins-eggs. Naturalmente occorre tener presente che krill eseguirà una installazione distruttiva, ovvero cancellerà il disco sul quale avete deciso si installare. 
 
 Per installare con krill, basterà: 
