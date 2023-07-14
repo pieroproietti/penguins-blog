@@ -50,5 +50,7 @@ Però va!
 
 ![installing blendos with calamares.png](/images/installing-blendos-plasma-with-calamares.png)
 
+![installig gnome](/images/gnome-installing.png)
 
+![installig gnome dark](/images/gnome-installing-dark.png)
 
