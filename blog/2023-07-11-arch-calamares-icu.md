@@ -40,5 +40,15 @@ Per installare con krill, basterà:
 
 Se qualcuno è a conoscenza di una soluzione, può indicarla nei commenti. Grazie
 
+# calamares-eggs
+
+E così dopo aver pensato le uova di pinguino per far riprodurre i pinguini, ci è toccato passare alle uova di calamaro per far riprodurre i calamari. D'altra parte i pinguini qualcosa devono pur mangiare!
+
+Non sò ancora come organizzarmi con il pacchetto, al momento ho semplicemente creato lo stesso in [eggs-pkgbuilds](https://github.com/pieroproietti/eggs-pkgbuilds)
+
+Però va!
+
+![installing blendos with calamares.png](/images/installing-blendos-plasma-with-calamares.png)
+
 
 
