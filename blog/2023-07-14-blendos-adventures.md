@@ -10,6 +10,14 @@ import Translactions from '@site/src/components/Translactions';
 
 <Translactions />
 
+To re-build the blendOS ISOs, I started with the documentation on [blendOS Docs](https://docs.blendos.co/), and then experimented, finding a way to use blendOS to recreate itself by removing the `akshara` hook.
+
+Reasoning with Ray, I was told and must agree that this method: 
+
+"yes but then you take away one of Blends biggist reasons to exist :-)"
+
+and, therefore, using Ray`s suggestions, I began to inquire about a more `orthodox` version.
+
 ## Do this from a CLI in blendOs, NOT in a container:
 
 `mkdir -p build-root; sudo pacstrap -K build-root base linux linux-firmware`
