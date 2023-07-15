@@ -26,11 +26,11 @@ Show me your commands please
 
 OK, I started with a clean blend-xfce (i choose it becouse is light) then, once installed I create a container blendos-build, as Arch:
 
-From the container started, I cut and copy from your docs:
+Using blend-setting I created an Arch container called blend-build, then once started, cut and copy:
 
 `sudo pacman -S git archiso base-devel xorriso python python-psutil squashfs-tools`
 
-then:
+Again, inside the container
 
 `TEMP_ASSEMBLE_DIR="$(mktemp -d)"
 git clone https://github.com/blend-os/assemble "${TEMP_ASSEMBLE_DIR}/assemble"
@@ -52,25 +52,48 @@ ok
 do this from a cli in BlendOs
 so NOT in a conainer
 
-`
-cd 
-mkdir -p archroot; sudo pacstrap -K archroot base linux linux-firmware`
+`mkdir -p build-root; sudo pacstrap -K build-root base linux linux-firmware`
 
 OK, I will do... just the time to build another VM
 
 I did, now I have archroot dir in home...
 
-Ray Vermey
 when that finishes ok do
-`sudo mount --bind arch-chroot arch-chroot`
-
+`sudo mount --bind build-root mnt-root`
+pacman -S python-click
 then
 
-`sudo arch-chroot arch-chroot`
+`sudo arch-chroot mnt-root`
 
-ou should have done mkdir  arch-chroot, pactrap , then mount. then arch-chroot arch-chroot
-
-I make a bit noise with arch-root and archroot but now I'm chrooted in archroot
-
-Ray Vermey
 `pacman -S git archiso base-devel xorriso python python-psutil squashfs-tools`
+
+`pacman -S python-click`
+
+`useradd -m -G wheel -s /bin/bash piero`
+
+`passwd piero`
+
+`su piero`
+
+`cd`
+
+`mkdir blendos/build -p`
+
+`cd blendos/buid`
+
+`assemble init 'https://github.com/blend-os/manifests' 'main'`
+
+`assemble sync`
+
+edit /etc/pacman.conf, add the line:
+
+`
+[blend]
+Server = https://pkg-repo.blendos.co/$repo/os/$arch
+`
+
+then: `sudo pacman -Syu`
+
+`source build/envsetup.sh`
+`breakfast`
+
