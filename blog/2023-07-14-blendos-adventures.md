@@ -28,7 +28,7 @@ then:
 
 `useradd -m -G wheel -s /bin/bash artisan`
 
-use visudo to edit '/etc/sudores``:
+use visudo to edit '/etc/sudoers``:
 
 `export EDITOR=nano; visudo`
 
