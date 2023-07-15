@@ -22,7 +22,7 @@ and, therefore, using Ray's suggestions, I began to inquire about a more "orthod
 
 `mkdir -p build-root; sudo pacstrap -K build-root base linux linux-firmware`
 
-when that finishes, do
+when that finishes, do:
 
 `sudo mount --bind build-root mnt-root`
 
@@ -97,6 +97,7 @@ then:
 ## Build an ISO
 `sudo brunch`
 
+I did the actual blendOS-gnome-2023.07.15-x86_64.iso on penguins' eggs sourceforge page, starting from a blendOS-xfce-2023.07.15-x86_64.iso I previusly did before, and installed. You can found both on [sf](https://sourceforge.net/projects/penguins-eggs/files/ISOS/blendos/).
 
 ## Conclusions
 
