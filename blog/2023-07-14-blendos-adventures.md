@@ -102,6 +102,6 @@ then:
 
 I did all the procedure, it work nicelly.
 
-To be honest I like more to remove hook `akshara`, build the ISO and reintroduce it, I feel it more simple and I think this is a value not a problem.
+To be honest I like more to remove hook [`akshara`](https://github.com/blend-os/akshara), build the ISO and then reintroduce it. I feel it more simple and I think this is a value more than a problem, but - of course - the authors know better than me.
 
-With penguins-eggs, I'm using that way, create the iso without `akshara` and reintroduce the hook `akshara` during installatione with calamares or krill, using theme blendos.
+With [penguins-eggs](https://github.com/pieroproietti/penguins-eggs), I'm using that way, create the iso without `akshara` and reintroduce the hook `akshara` during installation with calamares or krill, using theme [blendos](https://github.com/pieroproietti/penguins-wardrobe/tree/main/vendors/blendos).
