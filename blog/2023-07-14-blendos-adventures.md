@@ -27,12 +27,15 @@ when that finishes, do
 `sudo mount --bind build-root mnt-root`
 
 then:
+`mkdir mnt-root`
 
 `sudo arch-chroot mnt-root`
 
 `pacman -S git archiso base-devel xorriso python python-psutil squashfs-tools`
 
-`pacman -S python-click`
+Wait a bit, expecially at the end. Then:
+
+`pacman -S python-click nano`
 
 `useradd -m -G wheel -s /bin/bash artisan`
 
@@ -93,3 +96,12 @@ then:
 
 ## Build an ISO
 `sudo brunch`
+
+
+## Conclusion
+
+I did all the procedure, it work nicelly.
+
+To be honest I like more to remove hook `akshara`, build the ISO and reintroduce it, I feel it more simple and I think this is a value not a problem.
+
+With penguins-eggs, I'm using that way, create the iso without `akshara` and reintroduce the hook `akshara` during installatione with calamares or krill, using theme blendos.
