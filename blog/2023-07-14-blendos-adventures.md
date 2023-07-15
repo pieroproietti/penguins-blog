@@ -42,7 +42,7 @@ then:
 
 `assemble sync`
 
-edit `etc/pacman.conf``, add the line:
+edit `etc/pacman.conf`, add the line:
 
 ```
 [blend]
@@ -54,4 +54,7 @@ then:
 `sudo pacman -Syu`
 
 `source build/envsetup.sh`
+
 `breakfast`
+
+`sudo brunch`
