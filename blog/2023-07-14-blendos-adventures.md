@@ -26,11 +26,11 @@ then:
 
 `pacman -S python-click`
 
-`useradd -m -G wheel -s /bin/bash piero`
+`useradd -m -G wheel -s /bin/bash artisan`
 
 `passwd artisan`
 
-`su artisa`
+`su artisan`
 
 `cd`
 
