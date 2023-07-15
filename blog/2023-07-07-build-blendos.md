@@ -74,10 +74,12 @@ In this case, finally, even without the need to install python-pip and the click
 
 `sudo pacman -S git archiso base-devel xorriso python python-psutil squashfs-tools`
  
-`TEMP_ASSEMBLE_DIR="$(mktemp -d)"
+`
+TEMP_ASSEMBLE_DIR="$(mktemp -d)"
 git clone https://github.com/blend-os/assemble "${TEMP_ASSEMBLE_DIR}/assemble"
 sudo cp "${TEMP_ASSEMBLE_DIR}/assemble/assemble" /usr/local/bin
-rm -rf "${TEMP_ASSEMBLE_DIR}"`
+rm -rf "${TEMP_ASSEMBLE_DIR}"
+`
 
 `mkdir -p ~/blendOS/build`
 
