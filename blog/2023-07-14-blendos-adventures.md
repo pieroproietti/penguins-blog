@@ -16,7 +16,7 @@ Reasoning with Ray, I was told and must agree that this method:
 
 "yes but then you take away one of Blends biggist reasons to exist :-)"
 
-and, therefore, using Ray`s suggestions, I began to inquire about a more `orthodox` version.
+and, therefore, using Ray's suggestions, I began to inquire about a more "orthodox" version.
 
 ## Do this from a CLI in blendOs, NOT in a container:
 
@@ -98,7 +98,7 @@ then:
 `sudo brunch`
 
 
-## Conclusion
+## Conclusions
 
 I did all the procedure, it work nicelly.
 
