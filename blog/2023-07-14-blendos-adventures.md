@@ -10,7 +10,7 @@ import Translactions from '@site/src/components/Translactions';
 
 <Translactions />
 
-Do this from a CLI in blendOs, NOT in a container:
+## Do this from a CLI in blendOs, NOT in a container:
 
 `mkdir -p build-root; sudo pacstrap -K build-root base linux linux-firmware`
 
@@ -28,19 +28,34 @@ then:
 
 `useradd -m -G wheel -s /bin/bash piero`
 
-`passwd piero`
+`passwd artisan`
 
-`su piero`
+`su artisa`
 
 `cd`
 
 `mkdir blendos/build -p`
 
-`cd blendos/buid`
+`cd blendos/build`
 
+## Installing assemble
+blendOS uses its own system, Assemble, for managing code and builds. It's quite similar to repo in the realm of Android development.
+
+`TEMP_ASSEMBLE_DIR="$(mktemp -d)"`
+
+`git clone https://github.com/blend-os/assemble "${TEMP_ASSEMBLE_DIR}/assemble"`
+
+`sudo cp "${TEMP_ASSEMBLE_DIR}/assemble/assemble" /usr/local/bin`
+
+`rm -rf "${TEMP_ASSEMBLE_DIR}"`
+
+You may now proceed to building blendOS.
+
+## Initialize an Assemble repository
 `assemble init 'https://github.com/blend-os/manifests' 'main'`
 
 `assemble sync`
+
 
 edit `etc/pacman.conf`, add the line:
 
@@ -53,8 +68,11 @@ then:
 
 `sudo pacman -Syu`
 
+## Prepare the system packages
+
 `source build/envsetup.sh`
 
 `breakfast`
 
+## Build an ISO
 `sudo brunch`
