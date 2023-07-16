@@ -24,11 +24,11 @@ and, therefore, using Ray's suggestions, I began to inquire about a more "orthod
 
 when that finishes, do:
 
+`mkdir mnt-root`
+
 `sudo mount --bind build-root mnt-root`
 
 then:
-
-`mkdir mnt-root`
 
 `sudo arch-chroot mnt-root`
 
@@ -94,6 +94,8 @@ then:
 `source build/envsetup.sh`
 
 `breakfast`
+
+NOTE: All is working here, the only real problem ask for password every time artisan must use sudo... This is really boring becouse are a lot of cases.
 
 ## Build an ISO
 `sudo brunch`
