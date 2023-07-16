@@ -104,6 +104,8 @@ I did the actual blendOS-gnome-2023.07.15-x86_64.iso on penguins' eggs sourcefor
 
 [This image](https://sourceforge.net/projects/penguins-eggs/files/ISOS/blendos/blendOS-ray-2023.07.16-x86_64.iso/download), was made with this way.
 
+Also this [blendOS-ray-gnome-2023.07.16-x86_64.iso](https://sourceforge.net/projects/penguins-eggs/files/ISOS/blendos/blendOS-ray-gnome-2023.07.16-x86_64.iso) was made in the same day.
+
 ![ray-installing](/images/installing-ray.png)
 
 ## Mastering other versions
