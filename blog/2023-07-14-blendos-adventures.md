@@ -27,6 +27,7 @@ when that finishes, do:
 `sudo mount --bind build-root mnt-root`
 
 then:
+
 `mkdir mnt-root`
 
 `sudo arch-chroot mnt-root`
