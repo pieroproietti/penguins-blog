@@ -97,14 +97,14 @@ then:
 
 **NOTE**: All is working here, the only real problem ask for password every time artisan must use sudo... This is really boring becouse are a lot of cases.
 
-[This image](https://sourceforge.net/projects/penguins-eggs/files/ISOS/blendos/blendOS-ray-2023.07.16-x86_64.iso/download), was made with this way.
-
-![ray-installing](/images/installing-ray.png)
-
 ## Build an ISO
 `sudo brunch`
 
 I did the actual blendOS-gnome-2023.07.15-x86_64.iso on penguins' eggs sourceforge page, starting from a blendOS-xfce-2023.07.15-x86_64.iso I previusly did before, and installed. You can found both on [sf](https://sourceforge.net/projects/penguins-eggs/files/ISOS/blendos/).
+
+[This image](https://sourceforge.net/projects/penguins-eggs/files/ISOS/blendos/blendOS-ray-2023.07.16-x86_64.iso/download), was made with this way.
+
+![ray-installing](/images/installing-ray.png)
 
 ## Mastering other versions
 Once we have made our gnome version, we can create the others: plasma, xfce, cinnamon, etc. For the purpose I first move the ISO made outside the system, also to recover space, then:
