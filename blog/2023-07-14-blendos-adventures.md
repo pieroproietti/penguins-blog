@@ -97,6 +97,10 @@ then:
 
 **NOTE**: All is working here, the only real problem ask for password every time artisan must use sudo... This is really boring becouse are a lot of cases.
 
+[This image](https://sourceforge.net/projects/penguins-eggs/files/ISOS/blendos/blendOS-ray-2023.07.16-x86_64.iso/download), was made with this way.
+
+![ray-installing](/images/installing-ray.png)
+
 ## Build an ISO
 `sudo brunch`
 
