@@ -78,7 +78,7 @@ You may now proceed to building blendOS.
 `assemble sync`
 
 
-edit `etc/pacman.conf`, add the line:
+edit `/etc/pacman.conf`, add the line:
 
 ```
 [blend]
@@ -95,7 +95,7 @@ then:
 
 `breakfast`
 
-NOTE: All is working here, the only real problem ask for password every time artisan must use sudo... This is really boring becouse are a lot of cases.
+**NOTE**: All is working here, the only real problem ask for password every time artisan must use sudo... This is really boring becouse are a lot of cases.
 
 ## Build an ISO
 `sudo brunch`
