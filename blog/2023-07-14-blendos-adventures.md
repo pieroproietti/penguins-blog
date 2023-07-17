@@ -12,7 +12,7 @@ import Translactions from '@site/src/components/Translactions';
 
 To re-build the blendOS ISOs, I started with the documentation on [blendOS Docs](https://docs.blendos.co/), and then experimented, finding a way to use blendOS to recreate itself by removing the `akshara` hook.
 
-Reasoning with Ray, I was told and must agree that this method: 
+Reasoning with `@RayVermey`, I was told - and must agree - that using this method: 
 
 "yes but then you take away one of Blends biggist reasons to exist :-)"
 
@@ -97,6 +97,24 @@ then:
 
 **NOTE**: I refreshed the instructions again, follow last indication of Ray. It seem to work like a charm!
 
+:::
+I discarted the follow part, from Ray suggestions.
+
+```
+pacman -S rsync reflector
+sudo reflector -c Netherlands -f 10 > mymirror
+sudo cp /etc/pacman.d/mirrorlist /etc/pacman.d/mirrorlist.bak
+sudo cp mymirror /etc/pacman.d/mirrorlist
+sudo nano /etc/pacman.conf
+```
+And add line:
+```
+add SigLevel = Never
+```
+under all active repositories.
+:::
+
+
 ## Build an ISO
 `sudo brunch`
 
@@ -124,3 +142,5 @@ I did all the procedure, it work nicelly.
 To be honest I like more to remove hook [`akshara`](https://github.com/blend-os/akshara), build the ISO and then reintroduce it. I feel it more simple and I think this is a value more than a problem, but - of course - the authors know better than me.
 
 With [penguins-eggs](https://github.com/pieroproietti/penguins-eggs), I'm using that way: create the ISO without `akshara` and reintroduce the hook `akshara` during installation with calamares or krill, using custom theme [blendos](https://github.com/pieroproietti/penguins-wardrobe/tree/main/vendors/blendos).
+
+
