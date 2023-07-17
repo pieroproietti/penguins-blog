@@ -120,7 +120,7 @@ under all active repositories.
 
 I did the actual blendOS-gnome-2023.07.15-x86_64.iso on penguins' eggs sourceforge page, starting from a blendOS-xfce-2023.07.15-x86_64.iso I previusly did before, and installed. You can found both on [sf](https://sourceforge.net/projects/penguins-eggs/files/ISOS/blendos/).
 
-This image [blendOS-ray-2023.07.16-x86_64.iso](https://sourceforge.net/projects/penguins-eggs/files/ISOS/blendos/blendOS-ray-2023.07.16-x86_64.iso/download), was made with this way.
+This image [blendOS-lxqt-2023.07.17-x86_64.iso](https://sourceforge.net/projects/penguins-eggs/files/ISOS/blendos/blendOS-lxqt-2023.07.17-x86_64.iso/download), was made with this way.
 
 Also this [blendOS-ray-gnome-2023.07.16-x86_64.iso](https://sourceforge.net/projects/penguins-eggs/files/ISOS/blendos/blendOS-ray-gnome-2023.07.16-x86_64.iso) was made in the same way to confirm the process and check waydroid.
 
