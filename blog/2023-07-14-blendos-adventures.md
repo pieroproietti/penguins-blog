@@ -104,13 +104,12 @@ pacman -S rsync reflector
 sudo reflector -c Netherlands -f 10 > mymirror
 sudo cp /etc/pacman.d/mirrorlist /etc/pacman.d/mirrorlist.bak
 sudo cp mymirror /etc/pacman.d/mirrorlist
+```
+then, add line `add SigLevel = Never` to `/etc/pacman.conf` under all active repositories:
+
+```
 sudo nano /etc/pacman.conf
 ```
-and, add line:
-```
-add SigLevel = Never
-```
-under all active repositories.
 :::
 
 ## Build an ISO
