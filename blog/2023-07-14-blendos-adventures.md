@@ -95,10 +95,11 @@ then:
 
 `breakfast`
 
-**NOTE**: I refreshed the instructions again, follow last indication of Ray. It seem to work like a charm!
+**NOTE**
 
-:::
-I discarted the follow part, from Ray suggestions.
+I refreshed the instructions again, follow last indication of Ray. It seem to work like a charm.
+
+Just discarted the follow part, from Ray suggestions:
 
 ```
 pacman -S rsync reflector
@@ -112,7 +113,6 @@ And add line:
 add SigLevel = Never
 ```
 under all active repositories.
-:::
 
 
 ## Build an ISO
