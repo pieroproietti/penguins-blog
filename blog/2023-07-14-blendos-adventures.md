@@ -100,7 +100,7 @@ then:
 I refreshed the instructions again, follow last indication of Ray. It seem to work like a charm. Just discarted the following part:
 
 ```
-pacman -S rsync reflector
+sudo pacman -S rsync reflector
 sudo reflector -c Netherlands -f 10 > mymirror
 sudo cp /etc/pacman.d/mirrorlist /etc/pacman.d/mirrorlist.bak
 sudo cp mymirror /etc/pacman.d/mirrorlist
