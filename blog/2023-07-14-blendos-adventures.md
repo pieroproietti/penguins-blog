@@ -93,7 +93,7 @@ then:
 
 `source build/envsetup.sh`
 
-`breakfast`
+`breakfast | tee breakfast.log`
 
 :::info
 
