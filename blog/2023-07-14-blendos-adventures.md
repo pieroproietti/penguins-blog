@@ -20,17 +20,17 @@ and, therefore, using Ray's suggestions, I began to inquire about a more "orthod
 
 ## Do this from a CLI in blendOs, NOT in a container:
 
-`mkdir -p build-root; sudo pacstrap -K build-root base linux linux-firmware`
+`mkdir arch-chroot`
+
+`sudo pacstrap -K arch-root base linux linux-firmware`
 
 when that finishes, do:
 
-`mkdir mnt-root`
-
-`sudo mount --bind build-root mnt-root`
+`sudo mount --bind arch-chroot`
 
 then:
 
-`sudo arch-chroot mnt-root`
+`sudo arch-chroot arch-chroot`
 
 `pacman -S git archiso base-devel xorriso python python-psutil squashfs-tools`
 
@@ -51,7 +51,7 @@ use visudo to edit `/etc/sudoers`:
 
 `passwd artisan`
 
-`su artisan`
+`su - artisan`
 
 `cd`
 
@@ -78,7 +78,7 @@ You may now proceed to building blendOS.
 `assemble sync`
 
 
-edit `/etc/pacman.conf`, add the line:
+edit `/etc/pacman.conf`, and add the line:
 
 ```
 [blend]
