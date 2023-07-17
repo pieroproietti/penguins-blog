@@ -139,6 +139,22 @@ I did all the procedure, it work nicelly.
 
 To be honest I like more to remove hook [`akshara`](https://github.com/blend-os/akshara), build the ISO and then reintroduce it. I feel it more simple and I think this is a value more than a problem, but - of course - the authors know better than me.
 
-With [penguins-eggs](https://github.com/pieroproietti/penguins-eggs), I'm using that way: create the ISO without `akshara` and reintroduce the hook `akshara` during installation with calamares or krill, using custom theme [blendos](https://github.com/pieroproietti/penguins-wardrobe/tree/main/vendors/blendos).
+:::info
+With [penguins-eggs](https://github.com/pieroproietti/penguins-eggs), I'm using that way: remaster the system without `akshara` and reintroduce the `akshara` during installation with calamares or krill, just using theme [blendos](https://github.com/pieroproietti/penguins-wardrobe/tree/main/vendors/blendos).
 
+In short, using eggs, I do this:
+
+* remove `akshara` from `/etc/mkinitcpio.conf`;
+* rebuild `initramfs-linux-zen.img`: `sudo mkinitcopio -g /boot/initramfs-linux-zen.img`;
+* reboot;
+* add `chaotic aur`, just follow instructions on their site.
+* install penguins-eggs: `sudo pacman -Syu penguins-eggs`
+* configure it: `sudo eggs dad -d`
+* `eggs wardrobe get`
+* `sudo eggs produce --theme blendos`
+
+If you want to use calamares as GUI installer, just build it before to configure eggs. clone and build from [eggs-pkgbuilds](https://github.com/pieroproietti/eggs-pkgbuilds).
+
+
+:::
 
