@@ -95,11 +95,9 @@ then:
 
 `breakfast`
 
-**NOTE**
+:::info
 
-I refreshed the instructions again, follow last indication of Ray. It seem to work like a charm.
-
-Just discarted the follow part, from Ray suggestions:
+I refreshed the instructions again, follow last indication of Ray. It seem to work like a charm. Just discarted the following part:
 
 ```
 pacman -S rsync reflector
@@ -108,12 +106,12 @@ sudo cp /etc/pacman.d/mirrorlist /etc/pacman.d/mirrorlist.bak
 sudo cp mymirror /etc/pacman.d/mirrorlist
 sudo nano /etc/pacman.conf
 ```
-And add line:
+and, add line:
 ```
 add SigLevel = Never
 ```
 under all active repositories.
-
+:::
 
 ## Build an ISO
 `sudo brunch`
@@ -122,9 +120,10 @@ I did the actual blendOS-gnome-2023.07.15-x86_64.iso on penguins' eggs sourcefor
 
 This image [blendOS-lxqt-2023.07.17-x86_64.iso](https://sourceforge.net/projects/penguins-eggs/files/ISOS/blendos/blendOS-lxqt-2023.07.17-x86_64.iso/download), was made with this way.
 
+![ray-installing](/images/installing-ray.png)
+
 Also this [blendOS-ray-gnome-2023.07.16-x86_64.iso](https://sourceforge.net/projects/penguins-eggs/files/ISOS/blendos/blendOS-ray-gnome-2023.07.16-x86_64.iso) was made in the same way to confirm the process and check waydroid.
 
-![ray-installing](/images/installing-ray.png)
 
 ## Mastering other versions
 Once we have made our gnome version, we can create the others: plasma, xfce, cinnamon, etc. For the purpose I first move the ISO made outside the system, also to recover space, then:
