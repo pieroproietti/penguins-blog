@@ -22,11 +22,11 @@ and, therefore, using Ray's suggestions, I began to inquire about a more "orthod
 
 `mkdir arch-chroot`
 
-`sudo pacstrap -K arch-root base linux linux-firmware`
+`sudo pacstrap -K arch-chroot base linux linux-firmware`
 
-when that finishes, do:
+when that finishes, remount arch-chroot binded:
 
-`sudo mount --bind arch-chroot`
+`sudo mount --bind arch-chroot arch-chroot`
 
 then:
 
@@ -38,7 +38,7 @@ Wait a bit, expecially at the end. Then:
 
 `pacman -S python-click nano`
 
-`useradd -m -G wheel -s /bin/bash artisan`
+`useradd -m -G wheel -s /bin/bash apprentice`
 
 use visudo to edit `/etc/sudoers`:
 
@@ -49,9 +49,9 @@ use visudo to edit `/etc/sudoers`:
 %wheel ALL=(ALL:ALL) ALL
 ```
 
-`passwd artisan`
+`passwd apprentice`
 
-`su - artisan`
+`su - apprentice`
 
 `cd`
 
@@ -95,7 +95,7 @@ then:
 
 `breakfast`
 
-**NOTE**: All is working here, the only real problem ask for password every time artisan must use sudo... This is really boring becouse are a lot of cases.
+**NOTE**: I refreshed the instructions again, follow last indication of Ray. It seem to work like a charm!
 
 ## Build an ISO
 `sudo brunch`
