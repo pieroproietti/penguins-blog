@@ -153,7 +153,7 @@ In short, using eggs, I do this:
 * `eggs wardrobe get`
 * `sudo eggs produce --theme blendos`
 
-If you want to use calamares as GUI installer, just build it before to configure eggs. clone and build from [eggs-pkgbuilds](https://github.com/pieroproietti/eggs-pkgbuilds).
+If you want to use calamares as GUI installer, just build it before to configure eggs. Clone and build it from [eggs-pkgbuilds](https://github.com/pieroproietti/eggs-pkgbuilds), just `makepkg -si`
 
 
 :::
