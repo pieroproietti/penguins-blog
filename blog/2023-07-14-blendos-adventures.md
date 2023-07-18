@@ -135,9 +135,9 @@ sudo brunch
 
 ## Conclusions
 
-I did all the procedure, it work nicelly.
+I did all the procedure - many, many times, it work nicelly.
 
-Actually following this procedure - just cut and copy commands - I was able to build blendOS from my Arch develop machine (colibri).
+Actually following this procedure - just cut and copy commands - I was able to build blendOS from blendOS itself, from my Arch develop machine (colibri) and from a simple CLI Arch installation (naked).
 
 To be honest I like more to remove hook [`akshara`](https://github.com/blend-os/akshara), build the ISO and then reintroduce it. I feel it more simple and I think this is a value more than a problem, but - of course - the authors know better than me.
 
