@@ -12,11 +12,14 @@ import Translactions from '@site/src/components/Translactions';
 
 To re-build the blendOS ISOs, I started with the documentation on [blendOS Docs](https://docs.blendos.co/), and then experimented, finding a way to use blendOS to recreate itself by removing the `akshara` hook.
 
-Reasoning with `@RayVermey`, I was told - and must agree - that using this method: 
+Reasoning with [Ray Vermey](https://github.com/rayvermey), I was told - and must agree - that using this method: 
 
 "yes but then you take away one of Blends biggist reasons to exist :-)"
 
 and, therefore, using Ray's suggestions, I began to inquire about a more "orthodox" version.
+
+This is the original [Ray Vermey way](https://github.com/rayvermey/blendos).
+
 
 ## Do this from a CLI in blendOs, NOT in a container:
 
