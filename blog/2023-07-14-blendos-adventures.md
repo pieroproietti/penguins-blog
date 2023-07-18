@@ -135,7 +135,7 @@ sudo brunch
 
 ## Conclusions
 
-I did all the procedure - many, many times, it work nicelly.
+I did all the procedure - many, many times - it work nicelly.
 
 Actually following this procedure - just cut and copy commands - I was able to build blendOS from blendOS itself, from my Arch develop machine (colibri) and from a simple CLI Arch installation (naked).
 
@@ -156,7 +156,6 @@ In short, using eggs, I do this:
 * `sudo eggs produce --theme blendos`
 
 If you want to use calamares as GUI installer, just build it before to configure eggs. Clone and build it from [eggs-pkgbuilds](https://github.com/pieroproietti/eggs-pkgbuilds), just `makepkg -si`
-
 
 :::
 
