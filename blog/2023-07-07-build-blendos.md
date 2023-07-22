@@ -40,22 +40,36 @@ To continue we must install `python-pip` and with `pip` module `click`:
 sudo pacman -S python-click
 ```
 
-then we can:
+# Create the directories
+You will need to create a directory where Assemble will pull blendOS's sources and build them.
+
+```
+mkdir -p ~/blendOS/build
+```
+This directory should not be pushed anywhere, as it's simply used for storing blendOS's code.
+
+# Initialize an Assemble repository
+You may now initialize an Assemble repo to download blendOS's sources.
 
 ```
 cd ~/blendOS/build
 assemble init 'https://github.com/blend-os/manifests' 'main'
 ```
+Sync/download the sources locally
+To start the download of the sources, type the following:
 
-After finished, we continue, with:
+```
+assemble sync
+```
+By default, assemble uses all of the available cores on the system being used to build blendOS. However, you may change that behaviour by passing the -j argument. For example, use -j 4 to use only 4 of the available cores.
+
+# Prepare the system packages
+After the source downloads, ensure you’re in the root of the source code (cd ~/blendOS/build), then type:
 
 ```
 source build/envsetup.sh
 breakfast | tee breakfast.log
 ```
-
-And we end in this way:
-![blendos-end-breakfast.png](/images/blendos-end-breakfast.png)
 
 This is the complete log of the command: [breakfast.log](/logs/breakfast.log)
 
