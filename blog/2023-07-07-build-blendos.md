@@ -18,35 +18,36 @@ I wrote something about [blendOS](https://blendos.co/) in this previous [post](h
 
 # Setting up blending builds
 
-All OK.
+We build a container named `blenOS-build` and inside it
+
+`sudo pacman -S git archiso base-devel xorriso python python-psutil squashfs-tools`
+
+
+blendOS uses its own system, Assemble, for managing code and builds. It's quite similar to repo in the realm of Android development.
+
+```
+TEMP_ASSEMBLE_DIR="$(mktemp -d)"
+git clone https://github.com/blend-os/assemble "${TEMP_ASSEMBLE_DIR}/assemble"
+sudo cp "${TEMP_ASSEMBLE_DIR}/assemble/assemble" /usr/local/bin
+rm -rf "${TEMP_ASSEMBLE_DIR}"
+```
 
 # Building an image
 
-All right, until command:
+To continue we must install `python-pip` and with `pip` module `click`:
+
+```
+sudo pacman -S python-click
+```
+
+then we can:
 
 ```
 cd ~/blendOS/build
 assemble init 'https://github.com/blend-os/manifests' 'main'
 ```
 
-![click-error](/images/click-error.png)
-
-To continue I must install `python-pip` and with `pip` module `click`:
-
-```
-sudo pacman -S python-pip
-sudo pip install click --break-system-packages
-```
-
-Give again the previous command:
-
-```
-cd ~/blendOS/build
-assemble init 'https://github.com/blend-os/manifests' 'main'
-```
-And this time, it go! 
-
-After finished, I continue, with:
+After finished, we continue, with:
 
 ```
 source build/envsetup.sh
