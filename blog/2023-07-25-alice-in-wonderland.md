@@ -44,17 +44,17 @@ Viveva, quindi nel suo castello tra chroot ed altro, in compagnia del suo compar
 
 Dopo un po' di tempo di queste frequentazioni, Alice cominciò ad indagare il bandolo della matassa e, prima fece alcuni tentativi mal riusciti, poi fece un fringuello che covò un colibri.
 
-Il colibri era - in origine - una leggera macchina Debian di chissà quale versione, diciamo buster - ma già in età matura.
+Il colibri era - in origine - una leggera macchina Debian di chissà quale versione, forse buster - ma buster già in età matura.
 
 Col tempo il colibri aveva preso ad essere anche una piccola macchina Arch con pressapoco le stesse caratteristiche: nodejs, code e tutto l'occorrente per produrre penguins-eggs, solo su una distribuzione diversa.
 
-Le due macchine si somigliavano molto però, i programmi erano praticamente gli stessi e, di solito, prima di creava la versione con Debian e poi la si testava su Arch o viceversa.
+Le due macchine si somigliavano molto però, i programmi erano praticamente gli stessi e, di solito, prima si creava la versione Debian, poi si testava su Arch ma anche viceversa.
 
 Era un continuo saltare tra i due colibri ed il rilascio avveniva - dopo le iniziali difficoltà - pressochè in contemporanea.
 
 # La nascita del fringuello
 
-Il fringuello nacque semplicemente da un Arch colibri a cui fu aggiunto distrobox e poco altro:
+Il fringuello nacque semplicemente da un Arch colibri a cui fu aggiunto [distrobox](https://github.com/89luca89/distrobox) e poco altro:
 
 `sudo pacman -Syu podman distrobox`
 
@@ -85,6 +85,6 @@ Dopo aver fatto un uovo di colibri, naturalmente il fringuello di riprodursi!
 
 Era tempo di ferie e tempo non ce ne era molto, per cui manco cambiò il desktop, solo il nome.
 
-Creato l'uovo e reinstallato il fringuello, naturalmente ci si rese conto che aveva perso una parte dell'anima Debian12, ma era rimasta l'impalcatura di distrobox.
+Creato l'uovo e reinstallato il [fringuello](https://sourceforge.net/projects/penguins-eggs/files/ISOS/arch/), naturalmente ci si rese conto che aveva perso una parte dell'anima Debian12, ma era rimasta l'impalcatura di distrobox.
 
 Sarebbe stato possibile naturalmente creare un clone e portarsi dietro tutto, ma per la prossima volta!
