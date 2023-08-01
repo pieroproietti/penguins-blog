@@ -39,3 +39,43 @@ Ebbi nuove notizie, su white rabbit solo dopo qualche tempo, avevo già trovato 
 Costui viveva in Olanda nella regione dei pazzi e, si narrava facesse di professione il maestro, aveva più o meno la mia stessa età, qualche anno di meno,
 
 Viveva, quindi nel suo castello tra chroot ed altro, in compagnia del suo compare, tale asterisco da Bologna, giovine dotto ed intrarprendente.
+
+# Fringuelli che producevano colibri
+
+Dopo un po' di tempo di queste frequentazioni, Alice cominciò ad indagare il bandolo della matassa e, prima fece alcuni tentativi mal riusciti, poi fece un fringuello che covò un colibri.
+
+Il colibri era - in origine - una leggera macchina Debian di chissà quale versione, diciamo buster - ma già in età matura.
+
+Col tempo il colibri aveva preso ad essere anche una piccola macchina Arch con pressapoco le stesse caratteristiche: nodejs, code e tutto l'occorrente per produrre penguins-eggs, solo su una distribuzione diversa.
+
+Le due macchine si somigliavano molto però, i programmi erano praticamente gli stessi e, di solito, prima di creava la versione con Debian e poi la si testava su Arch o viceversa.
+
+Era un continuo saltare tra i due colibri ed il rilascio avveniva - dopo le iniziali difficoltà - pressochè in contemporanea.
+
+# La nascita del fringuello
+
+Il fringuello nacque semplicemente da un Arch colibri a cui fu aggiunto distrobox e poco altro:
+
+`sudo pacman -Syu podman distrobox`
+
+`distrobox-create -n debian12 -i debian:12`
+
+`distrobox enter debian12`
+
+`sudo apt install bzip2 git nano tar xz-utils`
+
+Scaricacare ed installere nodejs19 da sourceforge, quindi:
+
+`sudo npm i pnpm -g`
+
+`git clone https://github.com/pieroproietti/penguins-eggs`
+
+`cd penguins-eggs`
+
+`pnpm i`
+
+`pnpm deb`
+
+e strano a dirsi, la versione esportata riusci a fare l'uovo sul vecchio colibri Debian!
+
+Se non è una meraviglia questa...
