@@ -79,3 +79,12 @@ Scaricacare ed installere nodejs19 da sourceforge, quindi:
 e strano a dirsi, la versione esportata riusci a fare l'uovo sul vecchio colibri Debian!
 
 Se non è una meraviglia questa...
+
+# La seconda cosa che fece il fringuello...
+Dopo aver fatto un uovo di colibri, naturalmente il fringuello di riprodursi!
+
+Era tempo di ferie e tempo non ce ne era molto, per cui manco cambiò il desktop, solo il nome.
+
+Creato l'uovo e reinstallato il fringuello, naturalmente ci si rese conto che aveva perso una parte dell'anima Debian12, ma era rimasta l'impalcatura di distrobox.
+
+Sarebbe stato possibile naturalmente creare un clone e portarsi dietro tutto, ma per la prossima volta!
