@@ -87,4 +87,4 @@ Era tempo di ferie e tempo non ce ne era molto, per cui manco cambiò il desktop
 
 Creato l'uovo e reinstallato il [fringuello](https://sourceforge.net/projects/penguins-eggs/files/ISOS/arch/), naturalmente ci si rese conto che aveva perso una parte dell'anima Debian12, ma era rimasta l'impalcatura di distrobox.
 
-Sarebbe stato possibile naturalmente creare un clone e portarsi dietro tutto, ma per la prossima volta!
+Sarebbe stato possibile naturalmente creare un clone e portarsi dietro tutto, ma: per la prossima volta!
