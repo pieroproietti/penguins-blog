@@ -119,6 +119,8 @@ Una volta eseguito il login:
 
 `distrobox enter debian12`
 
+`cd penguins-eggs`
+
 `pnpm i`
 
 `pnpm deb`
