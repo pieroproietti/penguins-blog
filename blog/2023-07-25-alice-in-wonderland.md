@@ -92,3 +92,34 @@ Era tempo di ferie e di tempo non ce ne era poi molto, per cui manco cambiò lo 
 Creato l'uovo e reinstallato il [fringuello](https://sourceforge.net/projects/penguins-eggs/files/ISOS/arch/), naturalmente ci si rese conto che aveva perso una parte dell'anima Debian12, ma era rimasta l'impalcatura di distrobox.
 
 Sarebbe stato possibile naturalmente creare un clone e portarsi dietro tutto, ma... Per la prossima volta!
+
+# il clone prima del viaggio
+L'aereo partiva alle 15:05, lui - era anziano - s'era svegliato alle 6:00 ed era già tardi per la sua abitudine.
+
+Si prese cura di cancellare il cancellabile per non farlo ingrassare, specificatamente:
+* penguins-eggs/dist
+* penguins-eggs/tmp
+
+`cd penguins-eggs`
+
+`sudo rm penguins-eggs/dist -rf`
+
+`sudo rm penguins-eggs/tmp -rf`
+
+E provò a fare il clone:
+
+`sudo eggs produce --clone --max`
+
+Gli riuscì un uccelletto poco più grosso e provò ad installarlo e ricreare penguins-eggs per Debian.
+
+`distrobox enter debian12`
+
+`pnpm i`
+
+`pnpm deb`
+
+Tutto funzionò perfettamente, basta ricordarsi che per il clone, gli user sono gli stessi del genitore e, quindi, nel nostro caso: `artisan/evolution`` e `root/evolution`.
+
+Pose il risultato [fringuello-clone](https://sourceforge.net/projects/penguins-eggs/files/ISOS/arch/) fra le pagine sourceforge di penguins' eggs per Arch.
+
+Buon lavoro e buona vita a tutti.
