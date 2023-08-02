@@ -129,4 +129,6 @@ E tutto funzionò perfettamente!
 
 Pose il risultato [fringuello-clone](https://sourceforge.net/projects/penguins-eggs/files/ISOS/arch/) fra le pagine sourceforge di penguins' eggs per Arch.
 
+Se volete e potete, poteste scaricarvi il fringuello e compilarvi penguins-eggs sia per Arch che per Debian.
+
 Buon lavoro e buona vita a tutti.
