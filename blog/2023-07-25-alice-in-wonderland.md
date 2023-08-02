@@ -98,11 +98,12 @@ L'aereo partiva alle 15:00, lui - era anziano - s'era svegliato alle 6:00, già 
 
 Si prese cura di cancellare il cancellabile per non farlo ingrassare troppo e, specificatamente:
 * penguins-eggs/dist
+* penguins-eggs/node_modules`
 * penguins-eggs/tmp
 
-`cd penguins-eggs`
-
 `sudo rm penguins-eggs/dist -rf`
+
+`rm penguins-eggs/node_modules -rf`
 
 `sudo rm penguins-eggs/tmp -rf`
 
@@ -112,13 +113,17 @@ E provò a fare il clone:
 
 Gli riuscì un uccelletto poco più grande 2,2 GB, giusto 600 MB di Debian e provò quindi ad installarlo, poi a creare nuovamente penguins-eggs per Debian.
 
+Lo installò di nuovo e, bastò ricordarsi che per il clone, gli user sono gli stessi del genitore e, quindi, nel nostro caso: `artisan/evolution` e `root/evolution`.
+
+Una volta eseguito il login:
+
 `distrobox enter debian12`
 
 `pnpm i`
 
 `pnpm deb`
 
-Tutto funzionò perfettamente, basta ricordarsi che per il clone, gli user sono gli stessi del genitore e, quindi, nel nostro caso: `artisan/evolution`` e `root/evolution`.
+E tutto funzionò perfettamente!
 
 Pose il risultato [fringuello-clone](https://sourceforge.net/projects/penguins-eggs/files/ISOS/arch/) fra le pagine sourceforge di penguins' eggs per Arch.
 
