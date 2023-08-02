@@ -64,7 +64,7 @@ Il fringuello nacque semplicemente da un Arch colibri a cui fu aggiunto [distrob
 
 `sudo apt install bzip2 git nano tar xz-utils`
 
-Scaricacare ed installere nodejs19 da sourceforge, quindi:
+Scaricare ed installare nodejs19 da [nodesource](https://github.com/nodesource), quindi:
 
 `sudo npm i pnpm -g`
 
