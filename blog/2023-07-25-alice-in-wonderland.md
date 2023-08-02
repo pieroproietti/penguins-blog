@@ -89,14 +89,14 @@ Dopo aver fatto un uovo di colibri, naturalmente il fringuello pensò bene a rip
 
 Era tempo di ferie e di tempo non ce ne era poi molto, per cui manco cambiò lo sfondo del desktop, giusto il nome per distinguersi.
 
-Creato l'uovo e reinstallato il [fringuello](https://sourceforge.net/projects/penguins-eggs/files/ISOS/arch/), naturalmente ci si rese conto che aveva perso una parte dell'anima Debian12, ma era rimasta l'impalcatura di distrobox.
+Creato l'uovo e reinstallato il [fringuello](https://sourceforge.net/projects/penguins-eggs/files/ISOS/arch/), naturalmente ci si rese conto che aveva perso però l'anima Debian12, ma era rimasta tutta l'impalcatura di distrobox.
 
 Sarebbe stato possibile naturalmente creare un clone e portarsi dietro tutto, ma... Per la prossima volta!
 
 # il clone prima del viaggio
 L'aereo partiva alle 15:00, lui - era anziano - s'era svegliato alle 6:00, già tardi per le sue abitudini.
 
-Si prese cura di cancellare il cancellabile per non farlo ingrassare troèèp e, specificatamente:
+Si prese cura di cancellare il cancellabile per non farlo ingrassare troppo e, specificatamente:
 * penguins-eggs/dist
 * penguins-eggs/tmp
 
