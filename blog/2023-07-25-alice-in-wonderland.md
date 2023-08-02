@@ -94,9 +94,9 @@ Creato l'uovo e reinstallato il [fringuello](https://sourceforge.net/projects/pe
 Sarebbe stato possibile naturalmente creare un clone e portarsi dietro tutto, ma... Per la prossima volta!
 
 # il clone prima del viaggio
-L'aereo partiva alle 15:05, lui - era anziano - s'era svegliato alle 6:00 ed era già tardi per la sua abitudine.
+L'aereo partiva alle 15:00, lui - era anziano - s'era svegliato alle 6:00, già tardi per le sue abitudini.
 
-Si prese cura di cancellare il cancellabile per non farlo ingrassare, specificatamente:
+Si prese cura di cancellare il cancellabile per non farlo ingrassare troèèp e, specificatamente:
 * penguins-eggs/dist
 * penguins-eggs/tmp
 
@@ -110,7 +110,7 @@ E provò a fare il clone:
 
 `sudo eggs produce --clone --max`
 
-Gli riuscì un uccelletto poco più grosso e provò ad installarlo e ricreare penguins-eggs per Debian.
+Gli riuscì un uccelletto poco più grande 2,2 GB, giusto 600 MB di Debian e provò quindi ad installarlo, poi a creare nuovamente penguins-eggs per Debian.
 
 `distrobox enter debian12`
 
