@@ -24,6 +24,8 @@ Se ne è reso conto però Emer Chen che sta realizzando il suo LDS ed ha affront
 
 Dopo qualche tentativo ed anche più in effetti, ho riscontrato che il problema sorgeva dalla mancanza del file di configurazione welcome.conf che, non essendo modificato da eggs, non veniva copiato su `/etc/calamares/modules`.
 
+![calamares replace partition](/images/calamares-replace-partition.png)
+
 Quindi, ieri ho rilasciato una versione di eggs v9.5.17 che risolve questo noioso problema e, naturalmente sto iniziando a rifare - per l'ennesima volta - le principali ISO.
 
 # Fedora, SuSE e le altre
@@ -35,12 +37,14 @@ Attualmente sto ricevendo richieste in tal senso, specialmente per fedora.
 
 La mia intenzione è estendere eggs a fedora e successivamente a SuSE, ma necessito di collaborazione e, se possibile, di sponsorizzazione.
 
-Mi spiego: sinora con eggs sono andato avanti esclusivamente con le mie gambe, ovverò investo in esso le mie conoscenze, il mio tempo ed anche - diciamo così - mi autofinanzio. 
+# L'Assunzione
 
-Diciamo che una sponsorizzazione darebbe maggior senso a questa attività, visto che normalmente si protrae per dieci/dodici ore lavorative al giorno.
+Mi spiego meglio, parafrasando la festività. 
 
-Almeno agli occhi della moglie! 
+Sinora con eggs sono andato avanti esclusivamente con le mie proprie risorse: ovverò investo in esso tutte le mie conoscenze, la quasi totalità del mio tempo ed anche - diciamo così - mi autofinanzio per hardware e sito. 
 
+Diciamo che una sponsorizzazione darebbe un maggior senso a questo lavoro - piuttosto impegnativo - nonchè garantirebbe anche una maggiore autostima.
 
-# Il periodo di vacanza
+Poi, se non altro, renderebbe più sopportabile a mia moglie la mia passione! :-D
 
+![assunzione](/images/assunzione.jpg)
