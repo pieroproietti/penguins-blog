@@ -33,5 +33,5 @@ Insomma, le strade percorribili sono state percorse, in lungo ed in largo.
 # Che fare?
 Qua la domanda è per me e per voi cari lettori, che mi suggerite e - come potete eventualmente supportarmi nello sviluppo?
 
-
+![un punto morti](/images/un-punto-morto.png)
 
