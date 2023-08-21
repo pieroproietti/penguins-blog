@@ -26,7 +26,7 @@ Sono circa tre giorni che mi "diverto" - alla lunga diventa palloso - a rinfresc
 
 Diciamo pure, che - a patto di perderci un minimo di tempo - è possibile ricreare tutto lo scibile delle derivate Debian e praticamente abbiamo la stessa situazione nella famiglia Arch.
 
-Ho rimasterizzato [blendOS](https://blendos.co/) che mi sembra un buon sistema, in grado di essere compatibile con altre distribuzioni e ne ho creato uno proprio [fringuello](https://sourceforge.net/projects/penguins-eggs/files/ISOS/arch/) aggiungendo alla mia macchina di sviluppo colibri il softare ]distrobox](https://github.com/89luca89/distrobox) per la gestione dei container.
+Ho rimasterizzato [blendOS](https://blendos.co/) che mi sembra un buon sistema, in grado di essere compatibile con altre distribuzioni e ne ho creato uno proprio [fringuello](https://sourceforge.net/projects/penguins-eggs/files/ISOS/arch/) aggiungendo alla mia macchina di sviluppo colibri - in versione Arch - il software [distrobox](https://github.com/89luca89/distrobox) per la gestione dei container.
 
 Insomma, le strade percorribili sono state percorse: in lungo ed in largo.
 
@@ -37,7 +37,7 @@ Io al momento sono orientato a sondare la possibilità di supportare fedora, che
 
 E voi cosa ne pensate? 
 
-Potete anche scriverlo qua sotto.
+Potete commentare anche qua sotto. Grazie!
 
-![un punto morti](/images/un-punto-morto.png)
+![un punto morto](/images/un-punto-morto.png)
 
