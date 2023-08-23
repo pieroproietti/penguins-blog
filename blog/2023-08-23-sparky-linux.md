@@ -56,3 +56,10 @@ After that is better to look apt upgrade of calamares, just use:
 sudo apt-mark hold calamares
 ```
 
+# to be continued
+
+I tried to answer to the [post](https://sparkylinux.org/penguins-eggs/) on Sparky site, unfortunately I get **access denied**, so before I try to disturb the author, then I decided to publish here.
+
+There is so much to say and discuss a possible collaboration, we will see.
+
+
