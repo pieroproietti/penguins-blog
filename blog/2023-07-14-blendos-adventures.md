@@ -155,9 +155,8 @@ In short, using eggs, I do this:
 * add `chaotic aur`, just follow instructions on their site.
 * install penguins-eggs: `sudo pacman -Syu penguins-eggs`
 * configure it: `sudo eggs dad -d`
+* add calamares: `sudo eggs calamares --install`
 * `eggs wardrobe get`
 * `sudo eggs produce --theme blendos`
-
-If you want to use calamares as GUI installer, just build it before to configure eggs. Clone and build it from [eggs-pkgbuilds](https://github.com/pieroproietti/eggs-pkgbuilds), just `makepkg -si`
 
 :::
