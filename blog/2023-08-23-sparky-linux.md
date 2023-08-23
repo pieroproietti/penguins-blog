@@ -2,7 +2,7 @@
 authors: pieroproietti
 slug: sparky-linux
 title: "Sparky Linux"
-lang: it
+lang: en
 enableComments: true
 ---
 
