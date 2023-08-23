@@ -27,7 +27,7 @@ Sparky did not give me any major problems, but I still had to take action on two
 
 ## os-release
 
-The first, the lack of the field `VERSION_CODENAME` field in `/etc/os-release`.
+The first, the lack of the field `VERSION_CODENAME` in `/etc/os-release`.
 
 eggs goes to detect the result of command `lsb_release -c` to decide which distribution it is, here it turns out `n/a` which stands for `rolling release` and that's not good, because that way I impose Arch Linux compatibility.
 
