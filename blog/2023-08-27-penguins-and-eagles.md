@@ -23,9 +23,13 @@ Inoltre, garuda utilizza direttamente la repository aur chaotic nella quale peng
 Ho fatto una prima installazione di garuda nella versione XFCE, quindi ho preso la versione dr4gonized ed installata con il nome plasma.
 
 `sudo pacman -Syu penguins-eggs`
+
 `sudo eggs dad -d`
+
 `sudo eggs calamares --install`
+
 `sudo eggs tools clean`
+
 `sudo eggs produce
 
 Tutto fatto!
