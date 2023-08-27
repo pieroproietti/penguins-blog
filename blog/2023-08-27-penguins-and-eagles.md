@@ -22,7 +22,7 @@ Inoltre, e qua c'entra soprattutto il Principe, Garuda utilizza nativamente la r
 Quindi non occorre alcuna configurazione particolare per poterlo installare.
 
 # Proviamo
-Ho fatto una prima installazione di Garuda nella versione XFCE, ed hha funzionato. quindi sto ripetendo l'esperimento la versione plasma, da loto denominata `dr460nized` ed installata con il più semplice nome plasma.
+Ho fatto una prima installazione di Garuda nella versione XFCE, ed hha funzionato. Quindi ho ripetuto  l'esperimento con la versione plasma, da loto denominata `dr460nized`.
 
 `sudo pacman -Syu penguins-eggs`
 
@@ -32,10 +32,12 @@ Ho fatto una prima installazione di Garuda nella versione XFCE, ed hha funzionat
 
 `sudo eggs tools clean`
 
-`sudo eggs produce
+`sudo eggs produce`
 
 Tutto fatto!
 
 ![garuda](/images/garuda-plasma.png)
 
 Trovate delle ISO rimasterizzate con eggs di Garuda Linux su [garuda](https://sourceforge.net/projects/penguins-eggs/files/ISOS/garuda/)
+
+Work in progress...
