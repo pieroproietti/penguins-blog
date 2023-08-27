@@ -22,7 +22,11 @@ Inoltre, e qua c'entra soprattutto il Principe, Garuda utilizza nativamente la r
 Quindi non occorre alcuna configurazione particolare per poterlo installare.
 
 # Proviamo
-Ho fatto una prima installazione di Garuda nella versione XFCE, ed hha funzionato. Quindi ho ripetuto  l'esperimento con la versione plasma, da loto denominata `dr460nized`.
+Ho fatto una prima installazione di Garuda Linux nella versione XFCE, ed ha funzionato!
+
+Quindi ho ripetuto l'esperimento con la versione plasma, da loro denominata `dr460nized`. 
+
+Questi i comandi necessari:
 
 `sudo pacman -Syu penguins-eggs`
 
