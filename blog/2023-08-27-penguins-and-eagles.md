@@ -1,7 +1,7 @@
 ---
 authors: pieroproietti
 slug: penguins-and-eagles
-title: "penguins and eagles"
+title: "Penguins and eagles (Garuda)"
 lang: it
 enableComments: true
 ---
@@ -12,7 +12,7 @@ Non è la prima volta, ormai stiamo diventando amici, e ci stimiamo a vicenda.
 
 In questi giorni, tra indecisioni ed altro, alla fine ho aggiunto ad `eggs` la capacità - in realtà piuttosto semplice - di configurare calamares con diversi filesystem, in particolare btrfs.
 
-Prova e riprova però non riuscivo a farlo effettivamente funzionare. Almeno sino a quando Stefano Capitali mi ha suggerito di dare una occhiata a Garuda Linux. Tra l'altro un suo concorrente perchè Stefano fa parte della board di Manjaro ed ha anche contribuito non poco al porting di `eggs` su Manjaro e quindi su Arch e derivate.
+Prova e riprova però non riuscivo a farlo effettivamente funzionare. Almeno sino a quando Stefano Capitali mi ha suggerito di dare una occhiata a Garuda Linux. Tra l'altro, Stefano fa parte della board di Manjaro ed ha anche contribuito non poco al porting di `eggs` su Manjaro, Arch e derivate ma, nonostante fosse per così dire "la concorrenza", non ha lesinato il consiglio.
 
 # Garuda Linux
 Perchè Garuda? Perchè in Garuda Linux il filesystem installato di default è, appunto, btrfs e - come dire - ci deve essere tutto l'occorrente per farlo funzionare.
