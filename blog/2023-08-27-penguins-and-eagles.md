@@ -30,3 +30,4 @@ Ho fatto una prima installazione di garuda nella versione XFCE, quindi ho preso 
 
 Tutto fatto!
 
+![garuda](/images/garuda-plasma.png)
