@@ -44,4 +44,8 @@ Tutto fatto!
 
 Trovate delle ISO rimasterizzate con eggs di Garuda Linux nella pagina di sourceforge di penguins-eggs sotto la voce [garuda](https://sourceforge.net/projects/penguins-eggs/files/ISOS/garuda/)
 
+# Problemi e workaround
+Ho dovuto creare la directory `/etc/sddm.conf.d` ed il file `kde_settings.conf`, quest'ultimo utilizzando la configurazione GUI di sddm.
+
+
 Work in progress...
