@@ -40,6 +40,11 @@ Che cosa è Moksha?
 La parola "Moksha" (pronunciata "monk-shuh") è originale in sancrito proprio come Bodhi. Il suo significato è "emancipazione, liberazione o rilascio". Moksha è la continuazione di Enlightenment 17 desktop. Consiste nel back porting dei bug fix e delle caratteristiche dalla future release di Enlightenment, così come nella rimozione di parti parzialmente finite o rotte contenute in E17.
 
 
+# Bhodi Linux rimasterizzato con eggs
+Ho fatto la mia rimasterizzazione di Bodhi Linux lasciandolo il più possibile com'è in originale, in sostanza cambia solo il programma di installazione - eggs utilizza calamares.
+
+Lo potete scaricare dalle pagine di sourceforge di penguins-eggs sotto la cartella [bhodi](https://sourceforge.net/projects/penguins-eggs/files/ISOS/bhodi/).
+
 
 
 
