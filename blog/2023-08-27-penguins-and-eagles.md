@@ -6,7 +6,11 @@ lang: it
 enableComments: true
 ---
 
-Credo di aver nuovamente incontrato il Principe Serendip.
+import Translactions from '@site/src/components/Translactions';
+
+<Translactions />
+
+Credo di aver nuovamente incontrato il Principe di Serendip.
 
 Non è la prima volta, ormai stiamo diventando amici, e ci stimiamo a vicenda.
 
