@@ -12,18 +12,24 @@ import Translactions from '@site/src/components/Translactions';
 
 Non riesco a trovare ulteriori informazioni su come fare installare btrfs su una distribuzione tipo Debian o Arch, o meglio, non riesco a reperire quello che mi manca:
 
-## quali pacchetti installare:
+## quali pacchetti installare?
 * btrfs-progs
 * libbtrfs0  (userspace shared code library libbtrfs)
 * libbtrfsutil1 (runtime util library)
 
-## quali configurazioni occorrono
-?
+## quali configurazioni occorrono?
+God know, at the moment...
+
+## Dove reperire informazioni
+* [btrfs-archWiki](https://wiki.archlinux.org/title/btrfs)
+* [btrfs-debianWiki](https://wiki.debian.org/Btrfs)
 
 # Bodhi Linux
 Ogni tanto, come molti, dò una occhiata a [distrowatch](https://distrowatch.com/) per vedere quello che succede.
 
 Oggi ho trovato l'[annuncio](https://distrowatch.com/?newsid=11915) di una nuova release di [Bodhi Linux](https://www.bodhilinux.com/) ed ho provato a rimasterizzarla.
+
+Bodhi Linux, è una distribuzione leggera con il desktop Moksha, veloce e completamente personalizzabile. La versione a 64 bit è basata su Ubuntu (22.04).
 
 Cosa significa Bodhi?
 
