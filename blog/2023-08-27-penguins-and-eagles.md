@@ -44,12 +44,18 @@ Questi i comandi necessari:
 
 Tutto fatto!
 
-![garuda](/images/garuda-plasma.png)
+![garuda](/images/garuda-raptor-plasma.png)
 
 Trovate delle ISO rimasterizzate con eggs di Garuda Linux nella pagina di sourceforge di penguins-eggs sotto la voce [garuda](https://sourceforge.net/projects/penguins-eggs/files/ISOS/garuda/)
 
 # Problemi e workaround
-Ho dovuto creare la directory `/etc/sddm.conf.d` ed il file `kde_settings.conf`, quest'ultimo utilizzando la configurazione GUI di sddm.
+E' stato necessario creare la directory `/etc/sddm.conf.d`, il file `kde_settings.conf` utilizzando la configurazione GUI di sddm ed il file `/etc/sddm.conf.d/autologin.conf`.
+
+Mentre inizialmente ho utilizzato la versione [Garuda KDE Dr460nized](https://garudalinux.org/downloads.html), alla fine ho optato per la versione [Garuda Linux KDE lite](https://garudalinux.org/downloads.html) che non ha tutte le customizzazioni di Garuda e, con la quale mi trovo meglio per i miei scopi.
+
+# Installazione
+Occorre SEMPRE selezionare l'installazione btrfs, per l'installazione di Garuda, in quanto il sistema è configurato per funzionare su btrfs. Non si avvia se lo installiamo formattando il disco con ext4.
 
 
-Work in progress...
+
+
