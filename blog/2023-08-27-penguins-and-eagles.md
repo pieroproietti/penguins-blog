@@ -56,6 +56,8 @@ Mentre inizialmente ho utilizzato la versione [Garuda KDE Dr460nized](https://ga
 # Installazione
 Occorre SEMPRE selezionare l'installazione btrfs, per l'installazione di Garuda, in quanto il sistema è configurato per funzionare su btrfs. Non si avvia se lo installiamo formattando il disco con ext4.
 
+# Remastered Garuda ISOs
+Potete trovare varie versioni di Garuda rimasterizzate con eggs sulla pagina [sourceforge](https://sourceforge.net/projects/penguins-eggs) del progetto, alla cartella [garuda](https://sourceforge.net/projects/penguins-eggs/files/ISOS/garuda/)
 
 
 
