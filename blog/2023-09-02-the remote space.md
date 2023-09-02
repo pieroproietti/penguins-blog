@@ -17,22 +17,22 @@ Quando serve spostare un sistema da un computer ad un altro, normalmente ci si t
 
 Spesso stiamo spostando il sistema proprio perchè abbiamo bisogno di più spazio,
 
-eggs, necessita per creare l'immagine iso del sistema di uno spazio pari alla grandezza dell'intero filesystem compresso, moltiplicata per due perchè poi il file `filesystem.squashfs`, più altro spazio - normalmente trascurabile necessario per la configurazione della iso.
+eggs, necessita per creare l'immagine iso del sistema di uno spazio pari alla grandezza dell'intero filesystem compresso, moltiplicata per due - perchè il file `filesystem.squashfs` verrà copiato interamente nella iso - più altro spazio - normalmente trascurabile - necessario per la configurazione della iso stessa.
 
-Si finisce, così a non poter rimasterizzare/clonare un sistema proprio nel momento di massimo bisogno.
+Si finisce, così a non poter rimasterizzare/clonare il sistema proprio nel momento del massimo bisogno.
 
 # La soluzione
 Ragionando su questa problematica con l'utente @unibox, ho pensato di spostare la creazione della iso avviabile su un punto di mount.
 
-In sostanza, mentre precedentemente il file system compresso veniva costruito in una cartella iso direttamente posta direttamente sotto `/home/eggs`, attualmente avviene sotto `/home/eggs/mnt`.
+In sostanza, mentre precedentemente il file system compresso veniva costruito in una cartella iso posta direttamente sotto `/home/eggs`, attualmente avviene sotto `/home/eggs/mnt`.
 
 Il bello è che si può montare sotto `/home/eggs/mnt` sia una partizione locale, sia dello spazio remoto.
 
-Per montare una partizione locale, ad esempio: `/dev/sdb1` è suddiciente dare il comando: `sudo mount /dev/sdb1 /home/eggs/mnt`, mentre se si vuole montare una partizione remota daremo: `sudo sshfs root@x.x.x.x:/path/to/free/space /home/eggs/mnt`.
+Per montare una partizione locale, ad esempio: `/dev/sdb1` è suddiciente utilizzare il comando: `sudo mount /dev/sdb1 /home/eggs/mnt`, mentre se si vuole montare una partizione remota daremo: `sudo sshfs root@x.x.x.x:/path/to/free/space /home/eggs/mnt`.
 
 A questo punto potremo generare la iso, avendo garantito ad eggs lo spazio sufficiente per poter funzionare: `sudo eggs produce`.
 
-# Conclusioni
+# Prospettive
 Questo naturalmente apre la porta ad una pletora di applicazioni per `eggs` come spostare sistemi da un computer ed un altro su rete locale. Considerando poi che è anche possibile utilizzare l'opzione `--crypedclone` per non esporre i propri dati, possiamo trasferire in  relativa sicurezza un server dalla nostra sede alla server farm all'estero.
 
 # Avvertenza
