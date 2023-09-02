@@ -10,8 +10,8 @@ import Translactions from '@site/src/components/Translactions';
 
 <Translactions />
 
-![spatiul-cosmic.jpg](/images/spatiul-cosmic.jpg) 
-[publicdomainpictures](https://www.publicdomainpictures.net/en/view-image.php?image=31051&picture=space)
+![remote space](/images/spatiul-cosmic.jpg) 
+Foto concessa da: [publicdomainpictures](https://www.publicdomainpictures.net/en/view-image.php?image=31051&picture=space)
 
 Quando serve spostare un sistema da un computer ad un altro, normalmente ci si trova con molti dati. 
 
