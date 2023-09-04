@@ -1,6 +1,6 @@
 ---
 authors: pieroproietti
-slug: the remote space
+slug: the-remote-space
 title: "The remote space"
 lang: it
 enableComments: true
