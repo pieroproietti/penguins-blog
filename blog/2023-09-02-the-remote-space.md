@@ -39,12 +39,12 @@ Se, invece, si vuole montare una condivisione remota daremo:
 A questo punto potremo generare la iso, avendo garantito ad eggs lo spazio sufficiente per poter funzionare: `sudo eggs produce`.
 
 # Prospettive
-Questo naturalmente apre la porta ad una pletora di applicazioni per `eggs` come spostare sistemi da un computer ed un altro su rete locale. Considerando poi che è anche possibile utilizzare l'opzione `--crypedclone` per non esporre i propri dati, possiamo trasferire in  relativa sicurezza un server dalla nostra sede alla server farm all'estero.
+Questo naturalmente facilita molto l'utilizzo di eggs per spostare interi sistemi da un computer ad un altro, e possiamo farlo direttamente utilizzando condivisioni di rete. Considerate pure che è anche possibile utilizzare l'opzione `--crypedclone` per clonare il sistema senza esporlo direttamente - ma su un volume LUKS - possiamo anche pensare di trasferire un server dalla nostra sede alla server farm all'estero in relativa sicurezza.
 
 # Avvertenza
-Nonostante tutte le attenzioni poste non sono certo infallibile, quindi prestate SEMPRE le dovute precauzioni necessarie.
+Nonostante tutte le attenzioni poste nello sviluppo non sono certo infallibile, quindi prestate SEMPRE le dovute precauzioni necessarie.
 
-Il programma è distribuito, così come è, sotto licenza di software libero [GNU GPLv2](https://www.gnu.org/licenses/old-licenses/lgpl-2.1.html) o [Licenza MIT](https://it.wikipedia.org/wiki/Licenza_MIT) e, per essere chiari, non si risponde di eventuale perdita di dati dovuta all'utilizzo di penguins-eggs.
+Il programma è distribuito, così come è, sotto licenza di software libero [GNU GPLv2](https://www.gnu.org/licenses/old-licenses/lgpl-2.1.html) o [Licenza MIT](https://it.wikipedia.org/wiki/Licenza_MIT). Per essere chiari - l'utilizzo di questo software è a vostro rischio e pericolo - e l'autore non risponde, in alcun modo, di una eventuale perdita di dati dovuta all'utilizzo del software. 
 
 # Prossimi step
 Dalla regia chiedono se è possibile far funzionare eggs con [systemd-boot](https://wiki.archlinux.org/title/systemd-boot), credo di si, ma occorre studiarlo!
