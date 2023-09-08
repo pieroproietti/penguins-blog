@@ -28,9 +28,13 @@ In sostanza, mentre precedentemente il file system compresso veniva costruito in
 
 Il bello è che si può montare sotto `/home/eggs/mnt` sia una partizione locale, sia dello spazio remoto.
 
-Per montare una partizione locale, ad esempio: `/dev/sdb1` è suddiciente utilizzare il comando: `sudo mount /dev/sdb1 /home/eggs/mnt`, mentre se si vuole montare una partizione remota daremo:
+Per montare una partizione locale, ad esempio: `/dev/sdb1` è suddiciente utilizzare il comando: 
 
-`sudo sshfs root@x.x.x.x:/path/to/space /home/eggs/mnt`
+`sudo mount /dev/sdb1 /home/eggs/mnt`
+
+Se, invece, si vuole montare una condivisione remota daremo:
+
+`sudo sshfs root@x.x.x.x:/path/to/share /home/eggs/mnt`
 
 A questo punto potremo generare la iso, avendo garantito ad eggs lo spazio sufficiente per poter funzionare: `sudo eggs produce`.
 
