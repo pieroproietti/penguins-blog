@@ -17,14 +17,14 @@ Quando serve spostare un sistema da un computer ad un altro, normalmente ci si t
 
 Spesso stiamo spostando il sistema proprio perchè abbiamo bisogno di più spazio,
 
-eggs, necessita per creare l'immagine iso del sistema di uno spazio pari alla grandezza dell'intero filesystem compresso, moltiplicata per due - perchè il file `filesystem.squashfs` verrà copiato interamente nella iso - più altro spazio - normalmente trascurabile - necessario per la configurazione della iso stessa.
+eggs, necessita per creare l'immagine ISO del sistema di uno spazio pari alla grandezza dell'intero filesystem compresso, moltiplicata per due - perchè il file `filesystem.squashfs` verrà copiato interamente nella ISO - più altro spazio - normalmente trascurabile - necessario per la configurazione della iso stessa.
 
 Si finisce, così a non poter rimasterizzare/clonare il sistema proprio nel momento del massimo bisogno.
 
 # La soluzione
-Ragionando su questa problematica con l'utente @unibox, ho pensato di spostare la creazione della iso avviabile su un punto di mount.
+Ragionando su questa problematica con l'utente @unibox, ho pensato di spostare la creazione della ISO avviabile su un punto di mount.
 
-In sostanza, mentre precedentemente il file system compresso veniva costruito in una cartella iso posta direttamente sotto `/home/eggs`, attualmente avviene sotto `/home/eggs/mnt`.
+In sostanza, mentre precedentemente il file system compresso veniva costruito in una cartella ISO posta direttamente sotto `/home/eggs`, attualmente avviene sotto `/home/eggs/mnt`.
 
 Il bello è che si può montare sotto `/home/eggs/mnt` sia una partizione locale, sia dello spazio remoto.
 
@@ -42,5 +42,6 @@ Il programma è distribuito, così come è, sotto licenza di software libero [GN
 
 # Prossimi step
 Dalla regia chiedono se è possibile far funzionare eggs con [systemd-boot](https://wiki.archlinux.org/title/systemd-boot), credo di si, ma occorre studiarlo!
+
 
 
