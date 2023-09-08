@@ -87,7 +87,7 @@ const config = {
 
 
           {
-            href: 'https://github.com/pieroproietti/penguins-blog/discussions',
+            href: 'https://github.com/pieroproietti/penguins-eggs/discussions',
             label: 'Discussions',
             position: 'right',
           },
