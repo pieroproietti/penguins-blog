@@ -41,7 +41,6 @@ Nonostante tutte le attenzioni poste non sono certo infallibile, quindi prestate
 Il programma è distribuito, così come è, sotto licenza di software libero [GNU GPLv2](https://www.gnu.org/licenses/old-licenses/lgpl-2.1.html) o [Licenza MIT](https://it.wikipedia.org/wiki/Licenza_MIT) e, per essere chiari, non si risponde di eventuale perdita di dati dovuta all'utilizzo di penguins-eggs.
 
 # Prossimi step
-Dalla regia chiedono se è possibile far funzionare eggs con [systemd-boot](https://wiki.archlinux.org/title/systemd-boot), penso di si, ma tocca studiarselo.
-
+Dalla regia chiedono se è possibile far funzionare eggs con [systemd-boot](https://wiki.archlinux.org/title/systemd-boot), credo di si, ma occorre studiarlo!
 
 
