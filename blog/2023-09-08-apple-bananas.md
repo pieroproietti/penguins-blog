@@ -24,7 +24,7 @@ Ogni singolo individuo, ma più facilmente delle organizzazioni possono avere la
 
 Inoltre, ma non mi dilungo, forse è da rivedere il concetto di stesso distribuzione originale: alla fine è un quasi ossimoro. 
 
-Alla fin fine TUIIE le distribuzioni sono derivate - includono difatti il codice ed il lavoro dei vari pacchetti che "distribuiscono", aggiungendo ed integrandolo come un sistema completo.
+Alla fin fine TUTTE le distribuzioni sono derivate - includono difatti il codice ed il lavoro dei vari pacchetti che appunto "distribuiscono", aggiungendo ed integrandolo come un sistema completo.
 
 # Selezione di popolazioni e varianza
 Lo sò, rischio di essere mandato al diavolo. D'altra parte alla non tenera età di sessantadue anni, qualche sassolino bisogna pure toglierselo.
