@@ -29,7 +29,7 @@ Alla fin fine TUTTE le distribuzioni sono derivate - includono difatti il codice
 # Selezione di popolazioni e varianza
 Lo sò, rischio di essere mandato al diavolo. D'altra parte alla non tenera età di sessantadue anni, qualche sassolino bisogna pure toglierselo.
 
-Il sassolino, nel mio caso è l'idea che - non solo - rimugino da anni è che l'evoluzione dei sistemi ripercorra un po' quella degli esseri viventi e non solo dei sistemi operativi.
+Il sassolino, nel mio caso è l'idea che - non da solo - rimugino da anni è che l'evoluzione dei sistemi ripercorra un po' quella degli esseri viventi e non necessariamente solo quella dei sistemi operativi.
 
 Chi è più o meno della mia età, ma anche più giovane ricorderà i tempi delle videocassette VHS, non certo le migliori, ma le più diffuse.
 
