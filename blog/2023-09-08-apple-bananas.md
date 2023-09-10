@@ -1,6 +1,6 @@
 ---
 authors: pieroproietti
-slug: apple-bananas-and-other-oddities
+slug: apple-bananas
 title: "apples, bananas and other oddities"
 lang: it
 enableComments: true
@@ -54,10 +54,10 @@ E qua bisogna essere ciechi, se con un Linux o un Darwin che vi gira in tasca, u
 
 E' sbagliato proprio il concetto: la scelta del software chiuso e non modificabile è un suicidio.
 
-Ci potranno essere dei gemelli omozigoti, un certo grado di parentela fra simili, ma senza riproduzione con varianza tutto è destinato alla fine. Windows ed Apple non sono altro che alberi di banane clonati: una volta mangiavamo le [Gros Michel](https://it.wikipedia.org/wiki/Gros_Michel) ora le [Cavendish](), in futuro magari ci adatteremo alle [Goldfinger](https://it.wikipedia.org/wiki/FHIA-1) o ne troveremo migliori.
+Ci potranno essere dei gemelli omozigoti, un certo grado di parentela fra simili, ma senza riproduzione con varianza tutto è destinato alla fine. Windows ed Apple non sono altro che alberi di banane clonati: una volta mangiavamo le [Gros Michel](https://it.wikipedia.org/wiki/Gros_Michel) ora le [Cavendish](https://it.wikipedia.org/wiki/Cavendish_(banana)), in futuro magari ci adatteremo alle [Goldfinger](https://it.wikipedia.org/wiki/FHIA-1) o ne troveremo migliori.
 
 ![Gros Michel](https://upload.wikimedia.org/wikipedia/commons/4/4e/Approximately_30_Gros_Michel_Bananas.jpg)
 
-Qui ci vorrebbe una vera bibliografia:
+E qua ci vorrebbe una vera bibliografia, ma possiamo espanderla:
 
 * [Tutte le banane sono cloni: una storia di varietà, malattie ed estinzioni](https://www.geopop.it/tutte-le-banane-sono-cloni-una-storia-di-varieta-malattie-ed-estinzioni/)
