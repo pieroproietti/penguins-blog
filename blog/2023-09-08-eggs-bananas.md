@@ -1,7 +1,7 @@
 ---
 authors: pieroproietti
-slug: apple-bananas
-title: "apples, bananas and other oddities"
+slug: eggs-bananas
+title: "eggs, bananas and other oddities"
 lang: it
 enableComments: true
 ---
