@@ -26,7 +26,7 @@ OK, andiamo ad configurarlo, se scegliamo il default fa tutto da solo!
 ```
 sudo eggs dad --default
 ```
-[eggs dad --default](/images/eggs-dad-default.png)
+![eggs dad --default](/images/eggs-dad-default.png)
 
 Perfetto! Abbiamo sufficiente spazione e possiamo procedere.
 
