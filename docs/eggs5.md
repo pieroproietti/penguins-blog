@@ -21,13 +21,18 @@ sudo dpkg -i eggs_9.4.17_amd64.deb
 sudo apt install -f
 ```
 
-OK, andiamo ad configurarlo, se scegliamo il default fa da solo!
+OK, andiamo ad configurarlo, se scegliamo il default fa tutto da solo!
 
 ```
 sudo eggs dad --default
 ```
+[eggs dad --default](/images/eggs-dad-default.png)
 
-Perfetto! Se vogliamo installare la nostra ISO con Calamares installer, dobbiamo - come dire - installare l'installer stesso, basterà dare il comando:
+Perfetto! Abbiamo sufficiente spazione e possiamo procedere.
+
+Se non avessimo abbastanza spazio disponibile eggs dad ci suggerisce dove reperirlo: su uno share remoto o su una partizione locale.
+
+Se vogliamo installare la nostra ISO con Calamares installer, dobbiamo - come dire - installare l'installer stesso, basterà dare il comando:
 
 ```
 sudo eggs calamares --install
