@@ -2,6 +2,7 @@
 authors: pieroproietti
 title: Arch naked
 lang: en
+enableComments: true
 ---
 import Translactions from '@site/src/components/Translactions';
 

@@ -3,6 +3,7 @@ title: Cook eggs in 5 minutes!
 authors: pieroproietti
 slug: eggs5
 lang: it
+enableComments: true
 ---
 import Translactions from '@site/src/components/Translactions';
 

@@ -2,6 +2,7 @@
 authors: pieroproietti
 title: Debian naked
 lang: it
+enableComments: true
 ---
 import Translactions from '@site/src/components/Translactions';
 
