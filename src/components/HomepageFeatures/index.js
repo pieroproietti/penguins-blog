@@ -81,7 +81,7 @@ const FeatureList = [
       <a href="https://sourceforge.net/projects/penguins-eggs/files/ISOS/endeavourOS/">&nbsp;EndeavourOS</a>,
       <a href="https://sourceforge.net/projects/penguins-eggs/files/ISOS/garuda/">&nbsp;Garuda</a>,
       <a href="https://sourceforge.net/projects/penguins-eggs/files/ISOS/rebornos/">&nbsp;RebornOS&nbsp;</a>
-      and others.
+      and <a href="https://sourceforge.net/projects/penguins-eggs/files/ISOS/">others</a>.
       </>
     ),
   },
@@ -99,9 +99,10 @@ const FeatureList = [
     Svg: require('@site/static/img/telegram.svg').default,
     description: (
       <>
-      <a href="https://www.facebook.com/groups/penguins.eggs">Facebook group</a> and
-      <a href="https://web.telegram.org/a/#-1701470533">Telegram group</a>, 
-      <a href="https://github.com/pieroproietti/penguins-eggs/discussions">penguins' eggs discussions</a>
+      <a href="https://github.com/pieroproietti/penguins-eggs/discussions">Github</a>, &nbsp;
+      <a href="https://www.facebook.com/groups/penguins.eggs">Facebook</a>,&nbsp;
+      <a href="https://web.telegram.org/a/#-1701470533">Telegram</a> and&nbsp;
+      <a href="https://twitter.com/pieroproietti">Twitter</a>
       </>
     ),
   },

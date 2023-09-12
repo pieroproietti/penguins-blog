@@ -133,12 +133,16 @@ const config = {
             title: 'Community',
             items: [
               {
-                label: 'Telegram channel',
-                href: 'https://t.me/penguins_eggs',
+                label: 'Github discussion',
+                href: 'https://github.com/pieroproietti/penguins-eggs/discussions',
               },
               {
                 label: 'Facebook group',
                 href: 'https://www.facebook.com/groups/penguins.eggs',
+              },
+              {
+                label: 'Telegram channel',
+                href: 'https://t.me/penguins_eggs',
               },
               {
                 label: 'Twitter',
