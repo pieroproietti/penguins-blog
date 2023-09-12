@@ -164,7 +164,7 @@ e scegliere wrap.
 
 Questo creerà un componente `BlogPostItem` sotto `src/theme`. 
 
-A questo punto, ,odificate `index.js` come di seguito:
+A questo punto, modificate `index.js` come di seguito:
 
 ```typescript
 import React from 'react';
