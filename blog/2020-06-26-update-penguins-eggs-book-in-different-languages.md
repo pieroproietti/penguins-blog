@@ -25,8 +25,8 @@ import Translactions from '@site/src/components/Translactions';
 
 * first is this site building, who distract me - not little - from the coding;
 * second, thanx [DeepL](https://www.deepl.com/translator) - but with attentions to the code - is on line the Penguin's eggs guide in 4 different languages:
-   * [Guide eggs english](/docs/tutorial-eggs/english)
-   * [Guida eggs italiano](/docs/tutorial-eggs/italiano)
+   * [Guide eggs english](https://penguins--eggs-net.translate.goog/docs/Tutorial/eggs-users-guide?_x_tr_sl=auto&_x_tr_tl=en&_x_tr_hl=en&_x_tr_pto=wapp&_x_tr_hist=true)
+   * [Guida eggs italiano](/docs/Tutorial/eggs-users-guide)
 * third terminal examples videos
 
 # Italiano
@@ -38,9 +38,9 @@ Certo, ma c'è una ragione o meglio tre:
 
 * prima la costruzione di questo sito, che mi ha distratto - non poco - dallo sviluppo;
 * secondo, grazie a [DeepL](https://www.deepl.com/translator) - ma con grande attenzione a non rovinare il codice - è online la nuova guida di eggs in quattro differenti lingue;
-   * [Guide eggs english](/docs/tutorial-eggs/english)
+   * [Guide eggs english](https://penguins--eggs-net.translate.goog/docs/Tutorial/eggs-users-guide?_x_tr_sl=auto&_x_tr_tl=en&_x_tr_hl=en&_x_tr_pto=wapp&_x_tr_hist=true)
    * Guia eggs español
-   * [Guida eggs italiano](/docs/tutorial-eggs/italiano)
+   * [Guida eggs italiano](/docs/Tutorial/eggs-users-guide)
    * Guia eggs português
 * terzo gli esempi d'uso da terminale
 

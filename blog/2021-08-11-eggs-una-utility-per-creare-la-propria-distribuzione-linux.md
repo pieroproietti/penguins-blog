@@ -157,4 +157,4 @@ e così via.
 
 Potete sperimentare liberamente in maniera interattiva, naturalmente la lettura del manuale vi aiuterà non poco, ma tutta questa introduzione, spero, vi abbia messo sulla buona strada per l'apprendimento.
 
-Riporto il link alla [Penguin's eggs user's guide](/docs/tutorial-eggs/italiano) e vi auguro una buona lettura.
+Riporto il link alla [Penguin's eggs user's guide](/docs/Tutorial/eggs-users-guide) e vi auguro una buona lettura.
