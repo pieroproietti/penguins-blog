@@ -120,11 +120,11 @@ const config = {
             title: 'Docs',
             items: [
               {
-                label: 'eggs users\' guide',
+                label: 'Eggs users\' guide',
                 to: 'https://penguins-eggs.net/docs/Tutorial/eggs-users-guide',
               },
               {
-                label: 'wardrobe users\' guide',
+                label: 'Wardrobe users\' guide',
                 to: 'https://penguins-eggs.net/docs/Tutorial/wardrobe-users-guide',
               },
             ],
