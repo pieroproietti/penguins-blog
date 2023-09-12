@@ -29,44 +29,41 @@ sudo eggs dad --default
 ```
 ![eggs dad --default](/images/eggs-dad-default.png)
 
-Perfetto! Abbiamo sufficiente spazione e possiamo procedere.
+Perfetto! Abbiamo sufficiente spazio libero e, quindi, possiamo procedere.
 
-Se non avessimo abbastanza spazio disponibile eggs dad ci suggerisce dove reperirlo: su uno share remoto o su una partizione locale.
+Se non avessimo abbastanza spazio disponibile `eggs dad` ci suggerisce come aggiungerlo: da uno share remoto o su una partizione locale.
 
-Se vogliamo installare la nostra ISO con Calamares installer, dobbiamo - come dire - installare l'installer stesso, basterà dare il comando:
+Se vogliamo installare la nostra ISO con Calamares installer, dobbiamo - come dire - installare l'installer, ci basterà dare il comando:
 
 ```
 sudo eggs calamares --install
 ```
 
-Bene, pronti per produrre la nostra prima ISO!
+Bene, siamo pronti per produrre la nostra prima ISO!
 
 ```
 sudo eggs produce 
 ```
 
-Se, invece di creare una rimasterizzazione distribuibile, volete farvi una copia live del vostro sistema, potente aggiungere l'opzione `--clone`:
+Se, invece di creare una rimasterizzazione distribuibile, volete farvi una copia intera del vostro sistema, potete aggiungere l'opzione `--clone`:
 ```
 sudo eggs produce --clone
 ```
 
-Inoltre, potete utilizzare eggs per trasferire un vostro server su internet, ma senza esporre direttamente i dati, utilizzando `--cryptedclone`
+Inoltre, potete utilizzare `eggs` per trasferire un vostro server su internet, ma senza esporre direttamente i dati, utilizzando `--cryptedclone`
 ```
 sudo eggs produce --cryptedclone
 ```
 
-Se volete la massima compressione e la rimozione di eggs e di calamares installer a fine installazione, basterà aggiungere i flag: --max --release
+Se volete la massima compressione e la rimozione di eggs e di calamares installer alla fine dell'installazione, basterà aggiungere i flag: --max --release
 ```
 sudo eggs produce --max --release
 ```
 
 ### Problemi?
 
-Chiedete a mamma!
+Chiedete a mamma! `eggs mom`
 
-```
-eggs mom
-```
 ![eggs-mom](/img/book/eggs-mom.png)
 
 ## `Arch`
