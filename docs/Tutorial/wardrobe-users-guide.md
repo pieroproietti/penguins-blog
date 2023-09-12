@@ -1,5 +1,5 @@
 ---
-title: wardrobe users' guide
+title: Wardrobe users' guide
 authors: pieroproietti
 lang: it
 enableComments: true
@@ -8,7 +8,7 @@ import Translactions from '@site/src/components/Translactions';
 
 <Translactions />
 
-`Penguins' wardrobe`, non fa parte di `eggs` e non è necessaria la sua conoscenza ed il suo utilizzo per rimasterizzare il proprio sistema o per creare delle proprie customizzazioni originali. E' piuttosto una metodologia che consente - nel mentre si sviluppa un progetto proprio - di tenere traccia dei passi effettuati e riutilizzarli all'occorrenza. 
+`Penguins' wardrobe`, non fa parte di `eggs` e non è necessaria la sua conoscenza ed il suo utilizzo per rimasterizzare il proprio sistema o per creare delle proprie customizzazioni originali. E' piuttosto una metodologia che consente - nel mentre si sviluppa un progetto di rimasterizzazione - di tenere traccia dei passi effettuati e riutilizzarli all'occorrenza. 
 
 Si tratta di un repository [penguins-wardrobe](https://github.com/pieroproietti/penguins-wardrobe) costituito principalmente da file yaml e da semplici  script bash ed utilizzato da `eggs` attraverso il comando `wardorobe` per creare personalizzazioni di sistemi Linux a partire da una sistema minimale CLI già installato, nella nostra terminologia `naked`.
 

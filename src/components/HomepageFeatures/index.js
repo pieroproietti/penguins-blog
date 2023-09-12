@@ -21,7 +21,7 @@ const FeatureList = [
         Penguins' eggs started on Debian in 2017, it still supports 
         <a href="https://sourceforge.net/projects/penguins-eggs/files/ISOS/debian/buster">&nbsp;buster&nbsp;</a>
         in addition to 
-        <a href="https://sourceforge.net/projects/penguins-eggs/files/ISOS/debian/bullseye">&nbsp;bullseye&nbsp;</a>
+        <a href="https://sourceforge.net/projects/penguins-eggs/files/ISOS/debian/bullseye">&nbsp;bullseye&nbsp;</a>,
         and <a href="https://sourceforge.net/projects/penguins-eggs/files/ISOS/debian/bookworm">&nbsp;bookworm&nbsp;</a>
       </>
     ),
@@ -79,8 +79,9 @@ const FeatureList = [
     description: (
       <>
       <a href="https://sourceforge.net/projects/penguins-eggs/files/ISOS/endeavourOS/">&nbsp;EndeavourOS</a>,
+      <a href="https://sourceforge.net/projects/penguins-eggs/files/ISOS/garuda/">&nbsp;Garuda</a>,
       <a href="https://sourceforge.net/projects/penguins-eggs/files/ISOS/rebornos/">&nbsp;RebornOS&nbsp;</a>
-      are supported too.
+      and others.
       </>
     ),
   },
@@ -98,7 +99,7 @@ const FeatureList = [
     Svg: require('@site/static/img/telegram.svg').default,
     description: (
       <>
-      <a href="https://web.telegram.org/a/#-1701470533">Discussion</a> about <a href="https://github.com/pieroproietti/penguins-eggs">penguins' eggs</a>
+      <a href="https://web.telegram.org/a/#-1701470533">Telegram group</a> about <a href="https://github.com/pieroproietti/penguins-eggs">penguins' eggs</a>
       </>
     ),
   },

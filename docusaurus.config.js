@@ -127,10 +127,6 @@ const config = {
                 label: 'wardrobe users\' guide',
                 to: 'https://penguins-eggs.net/docs/Tutorial/wardrobe-users-guide',
               },
-              {
-                label: 'wiki ubuntu-it',
-                to: 'https://wiki.ubuntu-it.org/wilecoyote/Installazione/Eggs',
-              },
             ],
           },
           {

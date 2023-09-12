@@ -1,5 +1,5 @@
 ---
-title: eggs users' guide
+title: Eggs users' guide
 authors: pieroproietti
 lang: it
 enableComments: true
