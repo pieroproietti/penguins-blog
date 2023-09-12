@@ -95,12 +95,13 @@ const FeatureList = [
     ),
   },
   {
-    title: 'social',
+    title: 'Community',
     Svg: require('@site/static/img/telegram.svg').default,
     description: (
       <>
       <a href="https://www.facebook.com/groups/penguins.eggs">Facebook group</a> and
-      <a href="https://web.telegram.org/a/#-1701470533">Telegram group</a> about <a href="https://github.com/pieroproietti/penguins-eggs">penguins' eggs</a>
+      <a href="https://web.telegram.org/a/#-1701470533">Telegram group</a>, 
+      <a href="https://github.com/pieroproietti/penguins-eggs/discussions">penguins' eggs discussions</a>
       </>
     ),
   },
