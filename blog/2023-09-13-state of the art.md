@@ -40,4 +40,7 @@ Mentre una alternativa ad oclif potrebbe essere [cliffy](https://cliffy.io/).
 
 Ma c'è tanto mare da attraversare!
 
-![deno](https://deno.com/runtime/deno-looking-up.svg?__frsh_c=89b71b58a766ed92012c9bddef9fe89f3993b76e)
+![deno](/images/DenoLogo3D-Anim.gif)
+
+Credits: [MasterJames](https://github.com/MasterJames/high-res-deno-logo)
+
