@@ -26,6 +26,16 @@ Ho provato a chiedere l'inclusione del supporto per pnpm in oclif, sembra non ve
 
 La stessa cosa sta pure succedendo con ink, eggs riesce a lavorare con la versione 3.x ma non con la nuova versione 4.x.
 
-# Quale può essere la via d'uscita?
+# Una via d'uscita?
+
+L'ideale sarebbe uno strumento come oclif, che consenta di gestire il tutto compatibile con ink o similari che consentano di utilizzare React in una CLI.
+
+Al momento tutto questo non esiste.
+
+Potrebbe essere anche una opportunità scrivere qualcosa del genere con [deno][https://deno.com/] o [bun](https://bun.sh/).
+
+
+
+
 
 
