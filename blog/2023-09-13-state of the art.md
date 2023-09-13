@@ -32,7 +32,7 @@ L'ideale sarebbe uno strumento come oclif, che consenta di gestire il tutto comp
 
 Al momento tutto questo non esiste.
 
-Potrebbe essere anche una opportunità pensare di scrivere qualcosa del genere utilizzando [deno](https://deno.com/= o [bun](https://bun.sh/).
+Potrebbe essere anche una opportunità pensare di scrivere qualcosa del genere utilizzando [deno](https://deno.com/) o [bun](https://bun.sh/).
 
 Consultando tra le [issue](https://github.com/vadimdemedes/ink/issues/250) di ink, sembra che vi sia una certa compatibilità.
 
@@ -40,9 +40,4 @@ Mentre una alternativa ad oclif potrebbe essere [cliffy](https://cliffy.io/).
 
 Ma c'è tanto mare da attraversare!
 
-
-
-
-
-
-
+![deno](https://deno.com/runtime/deno-looking-up.svg?__frsh_c=89b71b58a766ed92012c9bddef9fe89f3993b76e)
