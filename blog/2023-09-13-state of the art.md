@@ -34,7 +34,7 @@ Al momento tutto questo non esiste.
 
 Potrebbe essere anche una opportunità pensare di scrivere qualcosa del genere utilizzando [deno](https://deno.com/) o [bun](https://bun.sh/).
 
-Consultando tra le [issue](https://github.com/vadimdemedes/ink/issues/250) di ink, sembra che vi sia una certa compatibilità.
+Consultando tra le [issue](https://github.com/vadimdemedes/ink/issues/250) di ink, sembra che vi sia una certa compatibilità tra ink e deno.
 
 Mentre una alternativa ad oclif potrebbe essere [cliffy](https://cliffy.io/).
 
