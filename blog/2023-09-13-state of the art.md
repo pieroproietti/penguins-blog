@@ -22,7 +22,10 @@ Successivamente, sempre attraverso oclif sono riuscito a creare i primi pacchett
 
 Il programma cresceva e si dilungava il tempo di compilazione, così decisi di cominciare ad utilizzare [pnpm](https://pnpm.io) al posto di [npm](https://www.npmjs.com/). L'operazione non si mostrò affatto indolore, oclif non era compatibile con pnpm e decisi di fare un fork di oclif denominato [oclif-phpm](https://github.com/pieroproietti/oclif-pnpm) attualmente allineato alla versione di oclif v3.4.3.
 
-Ho provato a chiedere ad oclif l'inclusione del supporto per pnpm, sembra non ve ne sia l'opportunità e, naturalmente, oclif - un progetto importante - va avanti e rilascia nuove versioni, non più pienamente compatibili con il mio fork.
+Ho provato a chiedere l'inclusione del supporto per pnpm in oclif, sembra non ve ne sia l'opportunità e, naturalmente, oclif - un progetto importante - va avanti e rilascia continuamente nuove versioni, ed ho difficoltà con il mio fork a seguirle.
 
-La stessa cosa sta succedendo on ink che dalla versione 4.x.
+La stessa cosa sta pure succedendo con ink, eggs riesce a lavorare con la versione 3.x ma non con la nuova versione 4.x.
+
+# Quale può essere la via d'uscita?
+
 
