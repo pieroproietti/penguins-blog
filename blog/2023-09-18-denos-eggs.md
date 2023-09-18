@@ -21,7 +21,7 @@ Non ho ancora ben chiaro quali potranno essere i prossimi passi: potrei partire 
 
 Al momento mi sembra uno sforzo difficile, quindi ho provveduto a vedere se era possibile "limare" da qualche parte ed, in effetti, ho ridotto di qualche funzione non più utilizzata il codice di [penguins'eggs](https://github.com/pieroproietti/penguins-eggs) stesso.
 
-Ad ogni modo, potete seguire e forkare la repository di [denos'eggs](https://github.com/pieroproietti/denos-eggs), controllare voi stessi o darmi una mano.
+Ad ogni modo, potete seguire la repository di [denos'eggs](https://github.com/pieroproietti/denos-eggs), farvi un [fork](https://github.com/pieroproietti/denos-eggs/fork) e darmi una mano!
 
 ![deno](/images/DenoLogo3D-Anim.gif)
 
