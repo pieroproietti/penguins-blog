@@ -20,3 +20,7 @@ La procedura al momento non fa assolutamente niente, ma sicuramente ho dimostrat
 Non ho ancora ben chiaro quali potranno essere i prossimi passi, potrei partire dalla classe settings e replicare la configurazione di eggs. 
 
 Al momento mi sembra uno sforzo difficile, quindi ho provveduto a vedere se era possibile "limare" da qualche altra parte ed, in effetti, ho ridotto di qualche funzione non più utilizzata il codice di penguins' eggs.
+
+Ad ogni modo, potete seguire e forkare la repository di [denos-eggs](https://github.com/pieroproietti/denos-eggs), controllare voi stessi o darmi una mano.
+
+
