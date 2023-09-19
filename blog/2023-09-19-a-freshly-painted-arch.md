@@ -61,3 +61,10 @@ Per quanto arronzata, la iso è uscita fuori, ci sarebbe da lavorarci attorno pe
 
 E d'altra parte, non è l'opera di uno scultore, piuttosto di un costruttore di scalpelli.
 
+Si noti pure l'utilizzo di un tema - per così dire "rubato" - KDE neon.
+
+Se volete farvi un giro, trovate `egg-of-arch-plasma_amd64_2023-09-19_1414.iso` sulla pagina [Arch](https://sourceforge.net/projects/penguins-eggs/files/ISOS/arch/).
+
+Ancora migliore, sarebbe una proposta di collaborazione.
+
+
