@@ -10,7 +10,7 @@ import Translactions from '@site/src/components/Translactions';
 
 <Translactions />
 
-Sinora eggs è compatibile solo con grub, ma occorrerà includere altri bootloader, ho notato su archinstall la possibilità di installare:
+So far eggs is only compatible with grub, but other bootloaders will need to be included, I noticed on archinstall the possibility of installing:
 * systemd-boot
 * grub
 * efistub
