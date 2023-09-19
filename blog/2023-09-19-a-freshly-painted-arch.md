@@ -59,8 +59,5 @@ Per quanto arronzata, la iso è uscita fuori, ci sarebbe da lavorarci attorno pe
 
 ![arch kde plasma install](/images/arch-kde-plasma-install.png)
 
-
-
-
-
+E d'altra parte, non è l'opera di uno scultore, piuttosto di un costruttore di scalpelli.
 
