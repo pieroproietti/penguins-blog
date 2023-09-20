@@ -44,7 +44,7 @@ Fino a qualche tempo fa usavo calamares da aur ed andava benissimo, poi si è ro
 
 In qualche modo, misi insieme una versione di calamares per eggs, denominata per l'appunto [calamares eggs](https://github.com/pieroproietti/eggs-pkgbuilds/tree/master/aur/calamares-eggs), ma vatti a ricordare che cosa ho fatto.
 
-L'unica cosa che mi sono segnato è il fatto di essere partito dalla repository [Arco Linux](https://github.com/arcolinux/arcolinux-pkgbuild-calamares) di Erik Dubois.
+L'unica cosa che mi sono segnato è il fatto di essere partito dalla repository [Arco Linux](https://github.com/arcolinux/arcolinux-pkgbuild-calamares) di [Erik Dubois](https://github.com/erikdubois).
 
 Un po' poco: se non avessi fatto niente tanto valeva usarla così com'era!
 
