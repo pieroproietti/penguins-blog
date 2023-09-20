@@ -61,7 +61,7 @@ Sembra, quindi, che non ho scritto altro semplicemente perchè altro non ho fatt
 
 Per quanto "arronzata", la iso è uscita fuori. Ci sarebbe da lavorarci attorno ed affinarla, ma va già bene così per "stomaci forti".
 
-E d'altra parte, non è l'opera di uno scultore, piuttosto di un maniscalco, di un costruttore di scalpelli.
+E d'altra parte, non è l'opera di uno scultore, piuttosto quella di un maniscalco, di un costruttore di scalpelli.
 
 ![arch kde plasma install](/images/arch-kde-plasma-install.png)
 
