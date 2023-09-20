@@ -59,12 +59,14 @@ Sembra, quindi, che non ho scritto altro semplicemente perchè altro non ho fatt
 
 # Conclusioni (per ora)
 
-Per quanto arronzata, la iso è uscita fuori, ci sarebbe da lavorarci attorno ed affinarla, ma va già bene così per "stomaci forti"!
+Per quanto "arronzata", la iso è uscita fuori. Ci sarebbe da lavorarci attorno ed affinarla, ma va già bene così per "stomaci forti".
 
-E d'altra parte, non è l'opera di uno scultore, piuttosto di un costruttore di scalpelli.
+E d'altra parte, non è l'opera di uno scultore, piuttosto di un maniscalco, di un costruttore di scalpelli.
+
+![arch kde plasma install](/images/arch-kde-plasma-install.png)
 
 Si noti pure l'utilizzo di un tema - per così dire "rubato" - a KDE neon.
 
 Se volete farvi un giro, trovate `egg-of-arch-plasma_amd64_2023-09-19_1414.iso` sulla pagina [Arch](https://sourceforge.net/projects/penguins-eggs/files/ISOS/arch/).
 
-![arch kde plasma install](/images/arch-kde-plasma-install.png)
+
