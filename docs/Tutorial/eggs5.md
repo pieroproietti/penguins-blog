@@ -18,7 +18,7 @@ Debian, Devuan, Ubuntu e [derivate](https://github.com/pieroproietti/penguins-eg
 Scaricate eggs da [sourceforge](https://sourceforge.net/projects/penguins-eggs/files/DEBS/), quindi installatela:
 
 ```
-sudo dpkg -i eggs_9.4.17_amd64.deb
+sudo dpkg -i eggs_9.6.1_amd64.deb
 sudo apt install -f
 ```
 
@@ -84,6 +84,16 @@ Include = /etc/pacman.d/chaotic-mirrorlist
 ```
 
 A questo punto possiamo installare penguins-eggs con il comando: `sudo pacman -Sy penguins-eggs`
+
+### Addaura
+Potete anche utilizzare il tool `addaura`, in questo modo:
+
+* `git clone https://github.com/pieroproietti/addaura`
+* `cd addaura`
+* `sudo ./addaura`
+
+su Arch, addaura installa AUR e in pacchetto penguins-eggs.
+
 
 ### Utilizzando `yay`
 
