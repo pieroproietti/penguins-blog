@@ -1,6 +1,6 @@
 ---
 authors: pieroproietti
-title: Versions naked (how to build)
+title: Versions naked
 lang: en
 enableComments: true
 ---
