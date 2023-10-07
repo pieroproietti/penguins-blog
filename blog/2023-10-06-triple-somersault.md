@@ -1,7 +1,7 @@
 ---
 authors: pieroproietti
 slug: triple-somersault
-title: "triple somersault"
+title: "Triple somersault!"
 lang: it
 enableComments: true
 ---
@@ -9,15 +9,13 @@ import Translactions from '@site/src/components/Translactions';
 
 <Translactions />
 
-# Triplo salto mortale!gi
+# Triplo salto mortale!
 
-Una volta creato e testato eggs per ARM64, abbiamo il problema di testarlo su hardware reale.
+Una volta creato e testato eggs per l'architettura [ARM64](https://developer.arm.com/Architectures/A64%20Instruction%20Set%20Architecture), abbiamo il problema di testarlo su hardware reale.
 
-Non essendo un esperto del caso, ho chiesto assistenza a chi conosce meglio, specificatamente al buon Jon West di [BlissOS](https://blissos.org/) ed al "solito" Stefano Capitali di Manjaro, che mi ha poi re-indirizzato a Furkan che si occupa della versione ARM di Manjaro stesso.
+Non essendo un esperto del caso, ho chiesto assistenza a chi conosce meglio, specificatamente al buon Jon West di [BlissOS](https://blissos.org/) ed al "solito" Stefano Capitali di [Manjaro](https://manjaro.org/), che mi ha poi re-indirizzato a Furkan che si occupa delle versioni ARM per Manjaro stesso.
 
-Jon mi ha avvisato che, per quanto di sua conoscenza, i dispositivi ARM64 utilizzano soprattutto uboot come booloader al posto di GRUB, Furkan mi ha aperto un po' meglio la strada spiegandomi che esistono diverse versioni di Manjaro ognuna per degli specifici dispositivi.
-
-Non tutti i dispositivi ARM sono compatibili UEFI, ma ve ne sono alcuni da grandi sistemi come [Ampere](https://amperecomputing.com/products/processors) a piccoli come [rockpro64](https://www.pine64.org/rockpro64/) di pine64, o [rock64](https://wiki.radxa.com/Rock4) di radxa, entrambi con il rockchip rk3399.
+Jon mi ha avvisato che, per quanto di sua conoscenza, i dispositivi ARM64 utilizzano soprattutto [uboot](https://u-boot.readthedocs.io/en/latest/) come booloader al posto di GRUB, Furkan mi ha aperto un po' di più la prospettiva spiegandomi che esistono diverse versioni di Manjaro ognuna per degli specifici dispositivi e che, non tutti i dispositivi ARM sono compatibili UEFI, ma ve ne sono alcuni, da grandi sistemi come [Ampere](https://amperecomputing.com/products/processors), a piccoli come [rockpro64](https://www.pine64.org/rockpro64/) di pine64, o [rock64](https://wiki.radxa.com/Rock4) di radxa, entrambi con il rockchip [rk3399](http://rockchip.wikidot.com/rk3399).
 
 Ho continuato a documentarmi e mi sono imbattuto in [Raspberry Pi 4 UEFI Firmware Images](https://github.com/pftf/RPi4), che - nello specifico - fa proprio il caso nostro in quanto consente di avviare RPI4 con UEFI e, sembra da USB come specificato nell'articolo [ESXi on ARM - Installing ESXi on a Raspberry Pi](https://rudimartinsen.com/2020/10/07/esxi-on-arm-fling-install-on-rpi/) in bibliografia.
 
@@ -93,7 +91,6 @@ Partizioniamo il disco con il formato MS-DOS e lo denominiamo `UEFI`.
 Dopo averlo partizionato, possimoa copiare il necessario firmware sulla nostra SD card.
 
 Prima di tutto rimuoviamo tutti i file kernel* dalla directory `firmware-master/boot`, quindi copiate l'intere boot directory sulla SD card.
-
 
 
 # Bibliografia
