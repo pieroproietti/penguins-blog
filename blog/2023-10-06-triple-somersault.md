@@ -107,3 +107,4 @@ Eseguire un triplo salto mortale, per me, NON è semplice! Piero
 * [Raspberry Pi 4 UEFI Firmware Images](https://github.com/pftf/RPi4)
 * [Raspberry Pi 4 UEFI Boot](https://www.reddit.com/r/raspberry_pi/comments/gte2lp/raspberry_pi_4_uefi_boot/)
 * [ESXi on ARM - Installing ESXi on a Raspberry Pi](https://rudimartinsen.com/2020/10/07/esxi-on-arm-fling-install-on-rpi/)
+* [Pimox 7](https://github.com/pimox/pimox7) Proxmox VE V7 for Raspberry Pi
