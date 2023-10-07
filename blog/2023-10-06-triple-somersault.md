@@ -5,6 +5,9 @@ title: "triple somersault"
 lang: it
 enableComments: true
 ---
+import Translactions from '@site/src/components/Translactions';
+
+<Translactions />
 
 Una volta creato e testato eggs per ARM64, abbiamo il problema di testarlo su hardware reale.
 
