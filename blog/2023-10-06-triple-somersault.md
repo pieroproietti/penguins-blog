@@ -38,6 +38,8 @@ Inseriti la card SD o la chiavetta USB ed accendete la vostra Raspberry PO. Dovr
 A questo punto, potete premere il tasto ESC per entrare nel setup, FI per lanciare la shell UEFI e, se fornito, avere yn bootloader UEFI in efi/bootaa64.efi che potete avviare (sarà il default se non verrà intrapresa alcuna azione)
 
 # Metodo
+Ancora non ho provato questo metodo, e non ho capito se devo usarlo su un computer o su raspberry. Credo su un computer con un maledetto lettore di SD che acquisterò presto e che, a questo punto, è l'unico tassello che manca!
+
 ## Create an msdos partition table
 * `sudo parted --script /dev/sdf mklabel msdos`
 
@@ -48,7 +50,7 @@ A questo punto, potete premere il tasto ESC per entrare nel setup, FI per lancia
 
 ## Get the UEFI firmware onto the SD card
 * `sudo mount /dev/sdf1 /mnt/data/`
-*  `sudo unzip Downloads/RPi3_UEFI_Firmware_v1.38.zip -d /mnt/data/`
+* `sudo unzip Downloads/RPi3_UEFI_Firmware_v1.38.zip -d /mnt/data/`
 * `sudo umount /mnt/data`
 
 A questo punto la card SD può essere usata per avviare la RPi e vi troverete nel firmware UEFI.
