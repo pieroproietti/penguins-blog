@@ -15,11 +15,11 @@ Una volta creato e testato eggs per l'architettura [ARM64](https://developer.arm
 
 Non essendo un esperto del caso, ho chiesto assistenza a chi conosce meglio, specificatamente al buon Jon West di [BlissOS](https://blissos.org/) ed al "solito" Stefano Capitali di [Manjaro](https://manjaro.org/), che mi ha poi re-indirizzato a Furkan che si occupa delle versioni ARM per Manjaro stesso.
 
-Jon mi ha avvisato che, per quanto di sua conoscenza, i dispositivi ARM64 utilizzano soprattutto [uboot](https://u-boot.readthedocs.io/en/latest/) come booloader al posto di GRUB, Furkan mi ha aperto un po' di più la prospettiva spiegandomi che esistono diverse versioni di Manjaro ognuna per degli specifici dispositivi e che, non tutti i dispositivi ARM sono compatibili UEFI, ma ve ne sono alcuni, da grandi sistemi come [Ampere](https://amperecomputing.com/products/processors), a piccoli come [rockpro64](https://www.pine64.org/rockpro64/) di pine64, o [rock64](https://wiki.radxa.com/Rock4) di radxa, entrambi con il rockchip [rk3399](http://rockchip.wikidot.com/rk3399).
+Jon mi ha avvisato che, per quanto di sua conoscenza, i dispositivi ARM64 utilizzano soprattutto [uboot](https://u-boot.readthedocs.io/en/latest/) come bootloader al posto di GRUB, Furkan mi ha allargato un po' di più la prospettiva spiegandomi che esistono diverse versioni di Manjaro ognuna per degli specifici dispositivi e che, non tutti i dispositivi ARM sono compatibili UEFI, ma alcuni si: dai grandi sistemi come [Ampere](https://amperecomputing.com/products/processors), a sistemi anche molto piccoli il [rockpro64](https://www.pine64.org/rockpro64/) di pine64, o il [rock64](https://wiki.radxa.com/Rock4) di radxa, entrambi con il rockchip [rk3399](http://rockchip.wikidot.com/rk3399).
 
-Ho continuato a documentarmi e mi sono imbattuto in [Raspberry Pi 4 UEFI Firmware Images](https://github.com/pftf/RPi4), che - nello specifico - fa proprio il caso nostro in quanto consente di avviare RPI4 con UEFI e, sembra da USB come specificato nell'articolo [ESXi on ARM - Installing ESXi on a Raspberry Pi](https://rudimartinsen.com/2020/10/07/esxi-on-arm-fling-install-on-rpi/) in bibliografia.
+Ho continuato quindi a documentarmi e mi sono imbattuto in [Raspberry Pi 4 UEFI Firmware Images](https://github.com/pftf/RPi4), che - nello specifico - fa proprio il caso nostro in quanto consente di avviare RPI4 con UEFI e, sembra da USB come specificato nell'articolo [ESXi on ARM - Installing ESXi on a Raspberry Pi](https://rudimartinsen.com/2020/10/07/esxi-on-arm-fling-install-on-rpi/) in bibliografia.
 
-Disponendo quindi di un abbastanza datato RPI4 con 8 GB di RAM, mi sto accingendo a prepararmi al grande salto.
+Disponendo quindi di un abbastanza datato RPI4 - forse con 8 GB di RAM - mi sto accingendo a prepararmi al grande salto.
 
 # Installazione
 Scarica l'ultimo archivio dalla repository Releases.
