@@ -88,15 +88,18 @@ Per prima cosa, andremo ad indentificare l'id del disco SD card e ci andremo ad 
 
 Partizioniamo il disco con il formato MS-DOS e lo denominiamo `UEFI`.
 
-Dopo averlo partizionato, possimoa copiare il necessario firmware sulla nostra SD card.
+Dopo averlo partizionato, possiamo copiare il necessario firmware sulla nostra SD card.
 
 Prima di tutto rimuoviamo tutti i file `kernel*` dalla directory `firmware-master/boot`, quindi copiate l'intera directory `boot` sulla nostra SD card.
 
 
 
-**ARTICOLO DA COMPLETARE** Eseguire un triplo salto mortale, per me, NON è semplice!
+**ARTICOLO DA COMPLETARE** 
 
 ![El “salto de la muerte” de la gimnasia que teme Simone Biles](https://www.telemundo.com/sites/nbcutelemundo/files/styles/fit-1240w/public/images/article/cover/2016/08/17/simone-biles.jpg?ramen_itok=iqwQftIcTf)
+
+
+Eseguire un triplo salto mortale, per me, NON è semplice! Piero
 
 
 # Bibliografia
