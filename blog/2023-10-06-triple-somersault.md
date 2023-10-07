@@ -38,6 +38,71 @@ Inseriti la card SD o la chiavetta USB ed accendete la vostra Raspberry PO. Dovr
 A questo punto, potete premere il tasto ESC per entrare nel setup, FI per lanciare la shell UEFI e, se fornito, avere yn bootloader UEFI in efi/bootaa64.efi che potete avviare (sarà il default se non verrà intrapresa alcuna azione)
 
 # Metodo
+## Create an msdos partition table
+* `sudo parted --script /dev/sdf mklabel msdos`
+
+## Create, format, and label a 10M fat32 partition
+
+`sudo parted --script /dev/sdf mkpart primary fat32 0% 10M`
+`sudo mkfs.vfat /dev/sdf1`
+`sudo fatlabel /dev/sdf1 RPI-FW`
+
+## Get the UEFI firmware onto the SD card
+`sudo mount /dev/sdf1 /mnt/data/`
+`sudo unzip Downloads/RPi3_UEFI_Firmware_v1.38.zip -d /mnt/data/`
+`sudo umount /mnt/data`
+
+
+**ARTICOLO DA COMPLETARE** 
+
+![El “salto de la muerte” de la gimnasia que teme Simone Biles](https://www.telemundo.com/sites/nbcutelemundo/files/styles/fit-1240w/public/images/article/cover/2016/08/17/simone-biles.jpg?ramen_itok=iqwQftIcTf)
+
+
+Eseguire un triplo salto mortale, per me, NON è semplice! Piero
+
+
+# Bibliografia
+
+* [Raspberry Pi 4 UEFI Firmware Images](https://github.com/pftf/RPi4)
+* [Raspberry Pi 4 UEFI Boot](https://www.reddit.com/r/raspberry_pi/comments/gte2lp/raspberry_pi_4_uefi_boot/)
+* [UEFI Secure Boot on the Raspberry Pi](https://www.linux.it/~ema/posts/secure-boot-rpi/)
+* [Pimox 7](https://github.com/pimox/pimox7) Proxmox VE V7 for Raspberry Pi
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# Questa parte è stata rimossa
+
+
+
+[ESXi on ARM - Installing ESXi on a Raspberry Pi](https://rudimartinsen.com/2020/10/07/esxi-on-arm-fling-install-on-rpi/)
+
 ## SD card
 Abbiamo bisogno di una card SD che verrà utilizzata per il firmware UEFI necessario al boot. Può essere piccola ed economica, ho utilizzato una card da 1 GB per il mio setup, ma se ne può utilizare anche una più piccola.
 
@@ -92,19 +157,3 @@ Dopo averlo partizionato, possiamo copiare il necessario firmware sulla nostra S
 
 Prima di tutto rimuoviamo tutti i file `kernel*` dalla directory `firmware-master/boot`, quindi copiate l'intera directory `boot` sulla nostra SD card.
 
-
-
-**ARTICOLO DA COMPLETARE** 
-
-![El “salto de la muerte” de la gimnasia que teme Simone Biles](https://www.telemundo.com/sites/nbcutelemundo/files/styles/fit-1240w/public/images/article/cover/2016/08/17/simone-biles.jpg?ramen_itok=iqwQftIcTf)
-
-
-Eseguire un triplo salto mortale, per me, NON è semplice! Piero
-
-
-# Bibliografia
-
-* [Raspberry Pi 4 UEFI Firmware Images](https://github.com/pftf/RPi4)
-* [Raspberry Pi 4 UEFI Boot](https://www.reddit.com/r/raspberry_pi/comments/gte2lp/raspberry_pi_4_uefi_boot/)
-* [ESXi on ARM - Installing ESXi on a Raspberry Pi](https://rudimartinsen.com/2020/10/07/esxi-on-arm-fling-install-on-rpi/)
-* [Pimox 7](https://github.com/pimox/pimox7) Proxmox VE V7 for Raspberry Pi
