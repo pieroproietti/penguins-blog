@@ -42,23 +42,20 @@ A questo punto, potete premere il tasto ESC per entrare nel setup, FI per lancia
 * `sudo parted --script /dev/sdf mklabel msdos`
 
 ## Create, format, and label a 10M fat32 partition
-
-`sudo parted --script /dev/sdf mkpart primary fat32 0% 10M`
-`sudo mkfs.vfat /dev/sdf1`
-`sudo fatlabel /dev/sdf1 RPI-FW`
+* `sudo parted --script /dev/sdf mkpart primary fat32 0% 10M`
+* `sudo mkfs.vfat /dev/sdf1`
+* `sudo fatlabel /dev/sdf1 RPI-FW`
 
 ## Get the UEFI firmware onto the SD card
-`sudo mount /dev/sdf1 /mnt/data/`
-`sudo unzip Downloads/RPi3_UEFI_Firmware_v1.38.zip -d /mnt/data/`
-`sudo umount /mnt/data`
+* `sudo mount /dev/sdf1 /mnt/data/`
+*  `sudo unzip Downloads/RPi3_UEFI_Firmware_v1.38.zip -d /mnt/data/`
+* `sudo umount /mnt/data`
 
+A questo punto la card SD può essere usata per avviare la RPi e vi troverete nel firmware UEFI.
 
-**ARTICOLO DA COMPLETARE** 
+Non resta che creare la chiavetta con la normale procedura descritta nella [guida](https://www.debian.org/releases/bookworm/arm64/ch04s03.en.html).
 
 ![El “salto de la muerte” de la gimnasia que teme Simone Biles](https://www.telemundo.com/sites/nbcutelemundo/files/styles/fit-1240w/public/images/article/cover/2016/08/17/simone-biles.jpg?ramen_itok=iqwQftIcTf)
-
-
-Eseguire un triplo salto mortale, per me, NON è semplice! Piero
 
 
 # Bibliografia
@@ -67,93 +64,3 @@ Eseguire un triplo salto mortale, per me, NON è semplice! Piero
 * [Raspberry Pi 4 UEFI Boot](https://www.reddit.com/r/raspberry_pi/comments/gte2lp/raspberry_pi_4_uefi_boot/)
 * [UEFI Secure Boot on the Raspberry Pi](https://www.linux.it/~ema/posts/secure-boot-rpi/)
 * [Pimox 7](https://github.com/pimox/pimox7) Proxmox VE V7 for Raspberry Pi
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-# Questa parte è stata rimossa
-
-
-
-[ESXi on ARM - Installing ESXi on a Raspberry Pi](https://rudimartinsen.com/2020/10/07/esxi-on-arm-fling-install-on-rpi/)
-
-## SD card
-Abbiamo bisogno di una card SD che verrà utilizzata per il firmware UEFI necessario al boot. Può essere piccola ed economica, ho utilizzato una card da 1 GB per il mio setup, ma se ne può utilizare anche una più piccola.
-
-Nota: è anche possibile includere il firmware UEFI nell'installazione ESXi, ma per semplicità è più meglio averlo su una card SD.
-
-## USB stick (or other install media)
-Ora abbiamo bisogno di installare medie per il sistema, Questo può essere una chiavetta USB e, nel mio setup, sto usando la stessa chiavetta sia per avviare l'installer che come disco di installazione.
-
-Sto usando una SAN Disk Ultra Fit da 16GB (che utilizzo anche per NUC Intel a casa).
-
-(...)
-
-### Prepare Raspberry Pi OS SD card and run eeprom update
-Aggiorniamo la nostra PI, prima di avviarla. Non sempre è necessario e, quindi, può essere eventualmente saltato.
-
-Per flashare la card SD sto usando Raspberry Pi Imager dove potete scegliere OS e card SD. Sto utilizzando Raspberry Pi OS (32-bit), ma può essere fatto anche in modalità CLI.
-
-![raspberry-imager](https://rudimartinsen.com/img/esxiarm_raspbianimager.png)
-
-Dopo aver avviato per la prima volta. 
-After booting up the first time I'm stepping through setting the language and regional settings, set the password and then run the software update. After the software updates are done I'm accepting the option to reboot the Pi.
-
-Dopo il reboot, sto riaprendo il Terminale e lancio il programma per eggiornare la eepron:
-
-`sudo rpi-eeprom-update`
-
-Il programma controllarà la disponibilità di aggiornamente. Se ci sono aggiornamenti dispobibili, riavviamo il programma con il flag `-a`
-
-`sudo rpi-eeprom-update -a`
-
-Se il sistema si è aggiornato potete riavviare.
-
-Con il sistema aggiornato possiamo spegnere la Pi e continuare a preparare il firmware UEFI.
-
-### 2. Prepare UEFI firmware SD card
-
-Per poter avviare il boot UEFI, la Pi abbiamo bisogno del firmware UEFI sulla SD card
-
-Ci sono due serie di firmware che devono essere scaricati:
-* [Official Pi firmware](https://github.com/raspberrypi/firmware/archive/master.zip)
-* [Community UEFI firmware](https://github.com/pftf/RPi4/releases/download/v1.20/RPi4_UEFI_Firmware_v1.20.zip)
-
-Estraete i due file zip sul vostro laptop (nel mio esempio li ho estratti in  ~/tmp) e continuate formattando la card SD.
-
-La card SD deve essere formattata con il filesystem FAT32. Su windows potete semplicemente dare il tasto destro del mouse sulla vostra card e cliccare format. Per linux possiamo utilizzare gparted.
-
-Per prima cosa, andremo ad indentificare l'id del disco SD card e ci andremo ad annotare il nome del device (esempio: /dev/sdC)
-
-Partizioniamo il disco con il formato MS-DOS e lo denominiamo `UEFI`.
-
-Dopo averlo partizionato, possiamo copiare il necessario firmware sulla nostra SD card.
-
-Prima di tutto rimuoviamo tutti i file `kernel*` dalla directory `firmware-master/boot`, quindi copiate l'intera directory `boot` sulla nostra SD card.
-
