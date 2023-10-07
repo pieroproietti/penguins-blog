@@ -9,6 +9,8 @@ import Translactions from '@site/src/components/Translactions';
 
 <Translactions />
 
+# Triplo salto mortale!
+
 Una volta creato e testato eggs per ARM64, abbiamo il problema di testarlo su hardware reale.
 
 Non essendo un esperto del caso, ho chiesto assistenza a chi conosce meglio, specificatamente al buon Jon West di [BlissOS](https://blissos.org/) ed al "solito" Stefano Capitali di Manjaro, che mi ha poi re-indirizzato a Furkan che si occupa della versione ARM di Manjaro stesso.
