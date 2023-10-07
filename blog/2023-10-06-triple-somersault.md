@@ -14,7 +14,9 @@ Jon mi ha avvisato che, per quanto di sua conoscenza, i dispositivi ARM64 utiliz
 
 Non tutti i dispositivi ARM sono compatibili UEFI, ma ve ne sono alcuni da grandi sistemi come [Ampere](https://amperecomputing.com/products/processors) a piccoli come [rockpro64](https://www.pine64.org/rockpro64/) di pine64, o [rock64](https://wiki.radxa.com/Rock4) di radxa, entrambi con il rockchip rk3399.
 
-Ho continuato a documentarmi e mi sono imbattuto in [Raspberry Pi 4 UEFI Firmware Images](https://github.com/pftf/RPi4), che - nello specifico - fa proprio il caso nostro e questo README sto riscrivendomi, soprattutto per me.
+Ho continuato a documentarmi e mi sono imbattuto in [Raspberry Pi 4 UEFI Firmware Images](https://github.com/pftf/RPi4), che - nello specifico - fa proprio il caso nostro in quanto consente di avviare RPI4 con UEFI e, sembra da USB come specificato nell'articolo [ESXi on ARM - Installing ESXi on a Raspberry Pi](https://rudimartinsen.com/2020/10/07/esxi-on-arm-fling-install-on-rpi/) in bibliografia.
+
+Disponendo quindi di un abbastanza datato RPI4 con 8 GB di RAM, mi sto accingendo a prepararmi al grande salto.
 
 # Installazione
 Scarica l'ultimo archivio dalla repository Releases.
