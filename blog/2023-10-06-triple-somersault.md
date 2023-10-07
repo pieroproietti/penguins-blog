@@ -27,15 +27,16 @@ Nota: Avviando da USB o da ESP richiede un versione di PI EEPROM recente (così 
 
 Estraete tutti i file dell'archivio nella partizione che avete creato precedentemente.
 
-Notate che - a parte questo README.md, che potete rimuovere liberamente - non dovete cambiare assolutamente i nodi dei file e delle directory estratte.
+Notate che - a parte questo README.md, che potete rimuovere liberamente - non dovete cambiare assolutamente i nomi dei file e delle directory estratte.
 
-# 
+# Utilizzo
+Inseriti la card SD o la chiavetta USB ed accendete la vostra Raspberry PO. Dovreste vedere uno schermo multicolore (che indica che il bootloaded embedded sta leggendo i dati dalla partizione SB/USB) quindi, appare il logo Raspberry in bianco e nero una volta che il firmware UEFI è prondo.
+
+A questo punto, potete premere il tasto ESC per entrare nel setup, FI per lanciare la shell UEFI e, se fornito, avere yn bootloader UEFI in efi/bootaa64.efi che potete avviare (sarà il default se non verrà intrapresa alcuna azione)
 
 
+# Bibliografia
 
-
-
-# Altre informazioni
-
+* [Raspberry Pi 4 UEFI Firmware Images](https://github.com/pftf/RPi4)
 * [Raspberry Pi 4 UEFI Boot](https://www.reddit.com/r/raspberry_pi/comments/gte2lp/raspberry_pi_4_uefi_boot/)
 * [ESXi on ARM - Installing ESXi on a Raspberry Pi](https://rudimartinsen.com/2020/10/07/esxi-on-arm-fling-install-on-rpi/)
