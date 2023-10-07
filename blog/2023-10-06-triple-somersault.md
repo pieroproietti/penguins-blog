@@ -9,7 +9,7 @@ import Translactions from '@site/src/components/Translactions';
 
 <Translactions />
 
-# Triplo salto mortale!
+# Triplo salto mortale!gi
 
 Una volta creato e testato eggs per ARM64, abbiamo il problema di testarlo su hardware reale.
 
@@ -84,9 +84,16 @@ Ci sono due serie di firmware che devono essere scaricati:
 
 Estraete i due file zip sul vostro laptop (nel mio esempio li ho estratti in  ~/tmp) e continuate formattando la card SD.
 
-La card SD deve essere formattata con il filesystem FAT32. Su windows potete semplicemente dare il tasto destro del mouse sulla vostra card e cliccare format. Per linux 
+La card SD deve essere formattata con il filesystem FAT32. Su windows potete semplicemente dare il tasto destro del mouse sulla vostra card e cliccare format. Per linux possiamo utilizzare gparted.
 
-Per prima cosa, andremo ad indentificare l'id del disco SD card e ci andremo ad annotare il nome del device (es: /dev/sdcX)
+Per prima cosa, andremo ad indentificare l'id del disco SD card e ci andremo ad annotare il nome del device (esempio: /dev/sdC)
+
+Partizioniamo il disco con il formato MS-DOS e lo denominiamo `UEFI`.
+
+Dopo averlo partizionato, possimoa copiare il necessario firmware sulla nostra SD card.
+
+Prima di tutto rimuoviamo tutti i file kernel* dalla directory `firmware-master/boot`, quindi copiate l'intere boot directory sulla SD card.
+
 
 
 # Bibliografia
