@@ -50,7 +50,7 @@ Ancora non ho provato questo metodo, e non ho capito se devo usarlo su un comput
 
 ## Get the UEFI firmware onto the SD card
 * `sudo mount /dev/sdf1 /mnt/data/`
-* Download from [RPi4 Releases](https://github.com/pftf/RPi4/releases)
+* Download from [RPi4 UEFI Firmware](https://github.com/pftf/RPi4/releases)
 * `sudo unzip Downloads/RPi4_UEFI_Firmware_v1.35.zip -d /mnt/data/`
 * `sudo umount /mnt/data`
 
@@ -59,6 +59,23 @@ A questo punto la card SD può essere usata per avviare la RPi e vi troverete ne
 Non resta che creare la chiavetta con la normale procedura descritta nella [guida](https://www.debian.org/releases/bookworm/arm64/ch04s03.en.html).
 
 ![El “salto de la muerte” de la gimnasia que teme Simone Biles](https://www.telemundo.com/sites/nbcutelemundo/files/styles/fit-1240w/public/images/article/cover/2016/08/17/simone-biles.jpg?ramen_itok=iqwQftIcTf)
+
+
+# Funziona!
+Oggi, con l'aiuto dell'amico Walter di [DNetware computer](https://www.facebook.com/DnetwareComputer/) a Roma zona Tor Sapienza, finalmente ho avuto il "coraggio" di aprire il minicase del mio Raspberry ed effettuare la prova.
+
+Abbiamo semplicemente formattato tutta la SD card con fat32 direttamente da uno dei computer Windows in costruzione, quindi - effettuato il download del firmware - il contenuto è stato decompresso nell'unica partizione creata. La SD è da 16GB in effetti sarebbero bastati pochi Kb per il firmware.
+
+A questo punto ho avviato il Raspberry che, correttamente, ha riconoscito la chiavetta USB sulla quale ho posto la ISO del sistema operativo precedentemente creata e, con soddisfazione si è avviato.
+
+Dopo un tentativo, non riuscito di installazione, ho effettuato nuovamente una prova di avvio, Questa volta il boot è stato effettuato da un disco SSD, sempre formattato con fat32, sul quale avevo installato [ventoy](https://www.ventoy.net/en/index.html). Anche in questo caso il disco è stato riconoscito correttamente, ventoy ha creato la lista delle ISO disponibile e, selezionato `egg-of-debian-bookwor-arm64` il sistema si è avviato correttamente.
+
+La soddisfazione è enorme: `eggs` riesce a rimasterizzare buona parte delle distribuzioni Linux e su tre architetture di processore diverse: amd64, i386 ed adesso anche arm64.
+
+L'utilità - al momento - è ancora poca, manca l'installazione su Raspberry ed ARM in genere, ma orami è questione di tempo e di prove.
+
+Ringrazio molto l'amico Walter, ed attendo notizie su eventuali repliche, vero [Franco Conidi](https://francoconidi.it/)?
+
 
 
 # Bibliografia
