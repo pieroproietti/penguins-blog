@@ -58,7 +58,7 @@ A questo punto la card SD può essere usata per avviare la RPi e vi troverete ne
 
 Non resta che creare la chiavetta con la normale procedura descritta nella [guida](https://www.debian.org/releases/bookworm/arm64/ch04s03.en.html).
 
-# Funziona!
+## Funziona!
 Oggi, con l'aiuto dell'amico Walter di [DNetware computer](https://www.facebook.com/DnetwareComputer/) a Roma zona Tor Sapienza, finalmente ho avuto il "coraggio" di aprire il minicase del mio Raspberry ed effettuare la prova.
 
 Abbiamo semplicemente formattato tutta la SD card con fat32 direttamente da uno dei computer Windows in costruzione, quindi - effettuato il download del firmware - il contenuto è stato decompresso nell'unica partizione creata: una SD è da 16GB. In effetti sarebbero bastati pochi Kb per il firmware.
@@ -76,7 +76,7 @@ Ringrazio molto l'amico Walter, ed attendo notizie su eventuali repliche, vero [
 ![El “salto de la muerte” de la gimnasia que teme Simone Biles](https://www.telemundo.com/sites/nbcutelemundo/files/styles/fit-1240w/public/images/article/cover/2016/08/17/simone-biles.jpg?ramen_itok=iqwQftIcTf)
 
 
-# Bibliografia
+## Bibliografia
 
 * [Raspberry Pi 4 UEFI Firmware Images](https://github.com/pftf/RPi4)
 * [Raspberry Pi 4 UEFI Boot](https://www.reddit.com/r/raspberry_pi/comments/gte2lp/raspberry_pi_4_uefi_boot/)
