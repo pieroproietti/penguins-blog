@@ -21,7 +21,7 @@ Ho continuato quindi a documentarmi e mi sono imbattuto in [Raspberry Pi 4 UEFI 
 
 Disponendo quindi di un abbastanza datato RPI4 - forse con 8 GB di RAM - mi sto accingendo a prepararmi al grande salto.
 
-# Installazione
+## Installazione
 Scarica l'ultimo archivio dalla repository Releases.
 
 Crea un SD card o un disco USB, con almeno una partizione formattata come FAT16 o FAT32
@@ -32,23 +32,23 @@ Estraete tutti i file dell'archivio nella partizione che avete creato precedente
 
 Notate che - a parte questo README.md, che potete rimuovere liberamente - non dovete cambiare assolutamente i nomi dei file e delle directory estratte.
 
-# Utilizzo
+## Utilizzo
 Inseriti la card SD o la chiavetta USB ed accendete la vostra Raspberry PO. Dovreste vedere uno schermo multicolore (che indica che il bootloaded embedded sta leggendo i dati dalla partizione SB/USB) quindi, appare il logo Raspberry in bianco e nero una volta che il firmware UEFI è prondo.
 
 A questo punto, potete premere il tasto ESC per entrare nel setup, FI per lanciare la shell UEFI e, se fornito, avere yn bootloader UEFI in efi/bootaa64.efi che potete avviare (sarà il default se non verrà intrapresa alcuna azione)
 
-# Metodo
+## Metodo
 Ancora non ho provato questo metodo, e non ho capito se devo usarlo su un computer o su Raspberry. Credo su un computer con un maledetto lettore di SD che acquisterò presto e che, a questo punto, è l'unico tassello che manca!
 
-## Create an msdos partition table
+### Create an msdos partition table
 * `sudo parted --script /dev/sdf mklabel msdos`
 
-## Create, format, and label a 10M fat32 partition
+### Create, format, and label a 10M fat32 partition
 * `sudo parted --script /dev/sdf mkpart primary fat32 0% 10M`
 * `sudo mkfs.vfat /dev/sdf1`
 * `sudo fatlabel /dev/sdf1 RPI-FW`
 
-## Get the UEFI firmware onto the SD card
+### Get the UEFI firmware onto the SD card
 * `sudo mount /dev/sdf1 /mnt/data/`
 * Download from [RPi4 UEFI Firmware](https://github.com/pftf/RPi4/releases)
 * `sudo unzip Downloads/RPi4_UEFI_Firmware_v1.35.zip -d /mnt/data/`
