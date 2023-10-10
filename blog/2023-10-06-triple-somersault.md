@@ -11,7 +11,7 @@ import Translactions from '@site/src/components/Translactions';
 
 # Triplo salto mortale!
 
-Una volta creato e testato eggs per l'architettura [ARM64](https://developer.arm.com/Architectures/A64%20Instruction%20Set%20Architecture), abbiamo il problema di testarlo su hardware reale.
+Una volta creato e testato eggs per l'architettura [ARM64](https://developer.arm.com/Architectures/A64%20Instruction%20Set%20Architecture), abbiamo il problema di provarlo su hardware reale.
 
 Non essendo un esperto del caso, ho chiesto assistenza a chi conosce meglio, specificatamente al buon Jon West di [BlissOS](https://blissos.org/) ed al "solito" Stefano Capitali di [Manjaro](https://manjaro.org/), che mi ha poi re-indirizzato a Furkan che si occupa delle versioni ARM per Manjaro stesso.
 
@@ -38,7 +38,7 @@ Inseriti la card SD o la chiavetta USB ed accendete la vostra Raspberry PO. Dovr
 A questo punto, potete premere il tasto ESC per entrare nel setup, FI per lanciare la shell UEFI e, se fornito, avere yn bootloader UEFI in efi/bootaa64.efi che potete avviare (sarà il default se non verrà intrapresa alcuna azione)
 
 # Metodo
-Ancora non ho provato questo metodo, e non ho capito se devo usarlo su un computer o su raspberry. Credo su un computer con un maledetto lettore di SD che acquisterò presto e che, a questo punto, è l'unico tassello che manca!
+Ancora non ho provato questo metodo, e non ho capito se devo usarlo su un computer o su Raspberry. Credo su un computer con un maledetto lettore di SD che acquisterò presto e che, a questo punto, è l'unico tassello che manca!
 
 ## Create an msdos partition table
 * `sudo parted --script /dev/sdf mklabel msdos`
@@ -50,7 +50,8 @@ Ancora non ho provato questo metodo, e non ho capito se devo usarlo su un comput
 
 ## Get the UEFI firmware onto the SD card
 * `sudo mount /dev/sdf1 /mnt/data/`
-* `sudo unzip Downloads/RPi3_UEFI_Firmware_v1.38.zip -d /mnt/data/`
+* Download from [RPi4 Releases](https://github.com/pftf/RPi4/releases)
+* `sudo unzip Downloads/RPi4_UEFI_Firmware_v1.35.zip -d /mnt/data/`
 * `sudo umount /mnt/data`
 
 A questo punto la card SD può essere usata per avviare la RPi e vi troverete nel firmware UEFI.
