@@ -61,15 +61,15 @@ Non resta che creare la chiavetta con la normale procedura descritta nella [guid
 # Funziona!
 Oggi, con l'aiuto dell'amico Walter di [DNetware computer](https://www.facebook.com/DnetwareComputer/) a Roma zona Tor Sapienza, finalmente ho avuto il "coraggio" di aprire il minicase del mio Raspberry ed effettuare la prova.
 
-Abbiamo semplicemente formattato tutta la SD card con fat32 direttamente da uno dei computer Windows in costruzione, quindi - effettuato il download del firmware - il contenuto è stato decompresso nell'unica partizione creata. La SD è da 16GB in effetti sarebbero bastati pochi Kb per il firmware.
+Abbiamo semplicemente formattato tutta la SD card con fat32 direttamente da uno dei computer Windows in costruzione, quindi - effettuato il download del firmware - il contenuto è stato decompresso nell'unica partizione creata: una SD è da 16GB. In effetti sarebbero bastati pochi Kb per il firmware.
 
-A questo punto ho avviato il Raspberry che, correttamente, ha riconoscito la chiavetta USB sulla quale ho posto la ISO del sistema operativo precedentemente creata e, con soddisfazione si è avviato.
+A questo punto ho avviato il Raspberry che, correttamente, ha riconoscito la chiavetta USB sulla quale avevo posto la ISO del sistema operativo e, con soddisfazione il piccolo s'è avviato.
 
-Dopo un tentativo, non riuscito di installazione, ho effettuato nuovamente una prova di avvio, Questa volta il boot è stato effettuato da un disco SSD, sempre formattato con fat32, sul quale avevo installato [ventoy](https://www.ventoy.net/en/index.html). Anche in questo caso il disco è stato riconoscito correttamente, ventoy ha creato la lista delle ISO disponibile e, selezionato `egg-of-debian-bookwor-arm64` il sistema si è avviato correttamente.
+Dopo un tentativo, non riuscito di installazione, ho effettuato nuovamente una ulteriore prova, Questa volta, però, il boot è stato effettuato da un disco SSD da 128 GB, sempre formattato con fat32, sul quale avevo installato [ventoy](https://www.ventoy.net/en/index.html). Anche in questo caso il disco è stato riconoscito correttamente, ventoy ha creato la lista delle ISO disponibili e, selezionata `egg-of-debian-bookwor-arm64` il sistema si è avviato correttamente.
 
 La soddisfazione è enorme: `eggs` riesce a rimasterizzare buona parte delle distribuzioni Linux e su tre architetture di processore diverse: amd64, i386 ed adesso anche arm64.
 
-L'utilità - al momento - è ancora poca, manca l'installazione su Raspberry ed ARM in genere, ma orami è questione di tempo e di prove.
+L'utilità - al momento - è ancora poca, e manca infine l'installazione su Raspberry ed ARM in genere, ma ormai è questione di tempo e di test.
 
 Ringrazio molto l'amico Walter, ed attendo notizie su eventuali repliche, vero [Franco Conidi](https://francoconidi.it/)?
 
