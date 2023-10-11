@@ -33,12 +33,14 @@ Estraete tutti i file dell'archivio nella partizione che avete creato precedente
 Notate che - a parte questo README.md, che potete rimuovere liberamente - non dovete cambiare assolutamente i nomi dei file e delle directory estratte.
 
 ## Utilizzo
-Inseriti la card SD o la chiavetta USB ed accendete la vostra Raspberry PO. Dovreste vedere uno schermo multicolore (che indica che il bootloaded embedded sta leggendo i dati dalla partizione SB/USB) quindi, appare il logo Raspberry in bianco e nero una volta che il firmware UEFI è prondo.
+Inserita la card SD accesa la vostra Raspberry Pi, dovreste vedere uno schermo multicolore (che indica che il bootloaded embedded sta leggendo i dati dalla partizione SB/USB) quindi, appare il logo Raspberry in bianco e nero una volta che il firmware UEFI è prondo.
 
 A questo punto, potete premere il tasto ESC per entrare nel setup, FI per lanciare la shell UEFI e, se fornito, avere yn bootloader UEFI in efi/bootaa64.efi che potete avviare (sarà il default se non verrà intrapresa alcuna azione)
 
+![uefi boot](https://www.bujarra.com/wp-content/uploads/2020/10/VMware-ESXi-Raspberry-Pi-06.jpg)
+
 ## Metodo
-Ancora non ho provato questo metodo, e non ho capito se devo usarlo su un computer o su Raspberry. Credo su un computer con un maledetto lettore di SD che acquisterò presto e che, a questo punto, è l'unico tassello che manca!
+Ho scritto questa parte prima ancora di provarla, l'ho fatto presso il negozio [DNetware computer](https://www.facebook.com/DnetwareComputer/) di Tor Sapienza a Roma, su un missile per gamer in preparazione con Windows ed una chiavetta USB con adattatore per SD card.
 
 ### Create an msdos partition table
 * `sudo parted --script /dev/sdf mklabel msdos`
@@ -59,11 +61,11 @@ A questo punto la card SD può essere usata per avviare la RPi e vi troverete ne
 Non resta che creare la chiavetta con la normale procedura descritta nella [guida](https://www.debian.org/releases/bookworm/arm64/ch04s03.en.html).
 
 ## Funziona!
-Oggi, con l'aiuto dell'amico Walter di [DNetware computer](https://www.facebook.com/DnetwareComputer/) a Roma zona Tor Sapienza, finalmente ho avuto il "coraggio" di aprire il minicase del mio Raspberry ed effettuare la prova.
+Oggi, con l'aiuto dell'amico Walter di [DNetware computer](https://www.facebook.com/DnetwareComputer/), finalmente ho avuto il "coraggio" di aprire il minicase del mio Raspberry ed effettuare la prova.
 
 Abbiamo semplicemente formattato tutta la SD card con fat32 direttamente da uno dei computer Windows in costruzione, quindi - effettuato il download del firmware - il contenuto è stato decompresso nell'unica partizione creata: una SD è da 16GB. In effetti sarebbero bastati pochi Kb per il firmware.
 
-A questo punto ho avviato il Raspberry che, correttamente, ha riconoscito la chiavetta USB sulla quale avevo posto la ISO del sistema operativo e, con soddisfazione il piccolo s'è avviato.
+A questo punto ho avviato il Raspberry che, correttamente, ha riconosciuto la chiavetta USB sulla quale avevo posto la ISO del sistema operativo e, con soddisfazione il piccolo s'è avviato.
 
 Dopo un tentativo, non riuscito di installazione, ho effettuato nuovamente una ulteriore prova, Questa volta, però, il boot è stato effettuato da un disco SSD da 128 GB, sempre formattato con fat32, sul quale avevo installato [ventoy](https://www.ventoy.net/en/index.html). Anche in questo caso il disco è stato riconoscito correttamente, ventoy ha creato la lista delle ISO disponibili e, selezionata `egg-of-debian-bookwor-arm64` il sistema si è avviato correttamente.
 
@@ -82,3 +84,4 @@ Ringrazio molto l'amico Walter, ed attendo notizie su eventuali repliche, vero [
 * [Raspberry Pi 4 UEFI Boot](https://www.reddit.com/r/raspberry_pi/comments/gte2lp/raspberry_pi_4_uefi_boot/)
 * [UEFI Secure Boot on the Raspberry Pi](https://www.linux.it/~ema/posts/secure-boot-rpi/)
 * [Pimox 7](https://github.com/pimox/pimox7) Proxmox VE V7 for Raspberry Pi
+* [instalando-vmware-esxi-en-una-raspberry-pi](https://www.bujarra.com/instalando-vmware-esxi-en-una-raspberry-pi/)
