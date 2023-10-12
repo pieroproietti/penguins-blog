@@ -40,7 +40,7 @@ A questo punto, potete premere il tasto ESC per entrare nel setup, FI per lancia
 ![uefi boot](https://www.bujarra.com/wp-content/uploads/2020/10/VMware-ESXi-Raspberry-Pi-06.jpg)
 
 ## Metodo
-Ho scritto questa parte prima ancora di provarla, l'ho fatto presso il negozio [DNetware computer](https://www.facebook.com/DnetwareComputer/) di Tor Sapienza a Roma, su un missile per gamer in preparazione con Windows ed una chiavetta USB con adattatore per SD card.
+Ho scritto questa parte prima ancora di provarla, l'ho fatto presso il negozio [DNetware computer](http://www.dnetware.com/) di Tor Sapienza a Roma, su un missile per gamer in preparazione con Windows ed una chiavetta USB con adattatore per SD card.
 
 ### Create an msdos partition table
 * `sudo parted --script /dev/sdf mklabel msdos`
@@ -85,3 +85,4 @@ Ringrazio molto l'amico Walter, ed attendo notizie su eventuali repliche, vero [
 * [UEFI Secure Boot on the Raspberry Pi](https://www.linux.it/~ema/posts/secure-boot-rpi/)
 * [Pimox 7](https://github.com/pimox/pimox7) Proxmox VE V7 for Raspberry Pi
 * [instalando-vmware-esxi-en-una-raspberry-pi](https://www.bujarra.com/instalando-vmware-esxi-en-una-raspberry-pi/)
+
