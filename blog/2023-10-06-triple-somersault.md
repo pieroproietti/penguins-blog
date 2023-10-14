@@ -77,6 +77,8 @@ Ringrazio molto l'amico Walter, ed attendo notizie su eventuali repliche, vero [
 
 ![El “salto de la muerte” de la gimnasia que teme Simone Biles](https://www.telemundo.com/sites/nbcutelemundo/files/styles/fit-1240w/public/images/article/cover/2016/08/17/simone-biles.jpg?ramen_itok=iqwQftIcTf)
 
+# E' nato, è nato!
+E così dopo una ulteriore avventura con Franco, lottando contro i Titali: problemi di saturazione della memoria per lui, incapacità di capire come dovessi abilitare il boot per me il giorno 13 ottobre 2023, il primo uovo da Raspberry 4 è nato, è nato!
 
 ![is-born!](/images/arm64-first-egg-born.jpeg)
 
