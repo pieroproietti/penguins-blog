@@ -82,6 +82,14 @@ E così dopo una ulteriore avventura con Franco, lottando contro i Titali: probl
 
 ![is-born!](/images/arm64-first-egg-born.jpeg)
 
+# Downloads
+Al momento sto creando immagini solo Debian booworm ARM64 e, quindi, le trovate sulla pagina di penguins-eggs di sourceforge sotto [Debian](https://sourceforge.net/projects/penguins-eggs/files/ISOS/debian/bookworm/).
+
+Per avviarle, naturalmente è necessario predisporre il Raspberry per il boot UEFI come indicato in precedenza.
+
+Buon divertimento!
+
+
 ## Bibliografia
 
 * [Raspberry Pi 4 UEFI Firmware Images](https://github.com/pftf/RPi4)
