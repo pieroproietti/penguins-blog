@@ -43,18 +43,18 @@ A questo punto, potete premere il tasto ESC per entrare nel setup, FI per lancia
 Ho scritto questa parte prima ancora di provarla, l'ho fatto presso il negozio [DNetware computer](http://www.dnetware.com/) di Tor Sapienza a Roma, su un missile per gamer in preparazione con Windows ed una chiavetta USB con adattatore per SD card.
 
 ### Create an msdos partition table
-* `sudo parted --script /dev/sdf mklabel msdos`
+* `sudo parted --script /dev/sdb mklabel msdos`
 
 ### Create, format, and label a 10M fat32 partition
-* `sudo parted --script /dev/sdf mkpart primary fat32 0% 10M`
-* `sudo mkfs.vfat /dev/sdf1`
-* `sudo fatlabel /dev/sdf1 RPI-FW`
+* `sudo parted --script /dev/sdb mkpart primary fat32 0% 10M`
+* `sudo mkfs.vfat /dev/sdb1`
+* `sudo fatlabel /dev/sdb1 RPI-FW`
 
 ### Get the UEFI firmware onto the SD card
-* `sudo mount /dev/sdf1 /mnt/data/`
+* `sudo mount /dev/sdb1 /mnt/`
 * Download from [RPi4 UEFI Firmware](https://github.com/pftf/RPi4/releases)
-* `sudo unzip Downloads/RPi4_UEFI_Firmware_v1.35.zip -d /mnt/data/`
-* `sudo umount /mnt/data`
+* `sudo unzip Downloads/RPi4_UEFI_Firmware_v1.35.zip -d /mnt/`
+* `sudo umount /mnt/`
 
 A questo punto la card SD può essere usata per avviare la RPi e vi troverete nel firmware UEFI.
 
@@ -77,6 +77,8 @@ Ringrazio molto l'amico Walter, ed attendo notizie su eventuali repliche, vero [
 
 ![El “salto de la muerte” de la gimnasia que teme Simone Biles](https://www.telemundo.com/sites/nbcutelemundo/files/styles/fit-1240w/public/images/article/cover/2016/08/17/simone-biles.jpg?ramen_itok=iqwQftIcTf)
 
+
+![is-born!](/images/arm64-first-egg-born.jpeg)
 
 ## Bibliografia
 
