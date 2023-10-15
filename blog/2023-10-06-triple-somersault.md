@@ -67,7 +67,7 @@ Abbiamo semplicemente formattato tutta la SD card con fat32 direttamente da uno 
 
 A questo punto ho avviato il Raspberry che, correttamente, ha riconosciuto la chiavetta USB sulla quale avevo posto la ISO del sistema operativo e, con soddisfazione il piccolo s'è avviato.
 
-Dopo un tentativo, non riuscito di installazione, ho effettuato nuovamente una ulteriore prova, Questa volta, però, il boot è stato effettuato da un disco SSD da 128 GB, sempre formattato con fat32, sul quale avevo installato [ventoy](https://www.ventoy.net/en/index.html). Anche in questo caso il disco è stato riconoscito correttamente, ventoy ha creato la lista delle ISO disponibili e, selezionata `egg-of-debian-bookwor-arm64` il sistema si è avviato correttamente.
+Dopo un tentativo, non riuscito di installazione, ho effettuato nuovamente una ulteriore prova, Questa volta, però, il boot è stato effettuato da un disco SSD da 128 GB, sempre formattato con fat32, sul quale avevo installato [ventoy](https://www.ventoy.net/en/index.html). Anche in questo caso il disco è stato riconosciuto correttamente, ventoy ha creato la lista delle ISO disponibili e, selezionata `egg-of-debian-bookworm-arm64` il sistema si è avviato correttamente.
 
 La soddisfazione è enorme: `eggs` riesce a rimasterizzare buona parte delle distribuzioni Linux e su tre architetture di processore diverse: amd64, i386 ed adesso anche arm64.
 
