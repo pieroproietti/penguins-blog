@@ -64,3 +64,27 @@ Questo avrebbe naturalmente agevolato non poco lo sviluppo, disporre di un virtu
 
 # Proxmox VE 8 arm64
 
+Questa è la configurazione di una VM per arm64 su una installazione x64.
+
+```
+agent: 1
+arch: aarch64
+bios: ovmf
+boot: order=scsi0;scsi1;net0
+cores: 4
+efidisk0: local-lvm:vm-103-disk-0,efitype=4m,pre-enrolled-keys=1,size=64M
+ipconfig0: ip=192.168.2.251/32,gw=192.168.2.1
+memory: 4096
+name: arm64-clean
+nameserver: 192.168.2.1
+net0: virtio=62:F1:E4:BD:B9:FB,bridge=vmbr0
+numa: 0
+ostype: l26
+scsi0: local-lvm:vm-103-disk-1,size=32G
+scsi1: none,media=cdrom
+scsihw: virtio-scsi-pci
+serial0: socket
+smbios1: uuid=cb608992-87ee-4641-8caf-412d24748e1b
+sockets: 1
+vga: serial0
+```
