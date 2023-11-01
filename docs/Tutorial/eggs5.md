@@ -85,14 +85,14 @@ Include = /etc/pacman.d/chaotic-mirrorlist
 
 A questo punto possiamo installare penguins-eggs con il comando: `sudo pacman -Sy penguins-eggs`
 
-### Addaura
-Potete anche utilizzare il tool `addaura`, in questo modo:
+### get-eggs
+Potete anche utilizzare il tool `get-eggs`, in questo modo:
 
-* `git clone https://github.com/pieroproietti/addaura`
-* `cd addaura`
-* `sudo ./addaura`
+* `git clone https://github.com/pieroproietti/get-eggs`
+* `cd get-eggs`
+* `sudo ./get-eggs.sh`
 
-su Arch, addaura installa AUR e in pacchetto penguins-eggs.
+get-eggs funziona attualmente sia su Arch che su Debian e derivate, installando tutto il necessario per configurare penguins-eggs.
 
 
 ### Utilizzando `yay`
