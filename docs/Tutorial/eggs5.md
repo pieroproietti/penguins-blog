@@ -9,7 +9,7 @@ import Translactions from '@site/src/components/Translactions';
 
 <Translactions />
 
-o anche meno...
+o anche meno... usando [get-eggs](/blog/get-eggs)!
 
 ## Debian
 
