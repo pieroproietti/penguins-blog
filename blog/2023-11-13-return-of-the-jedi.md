@@ -12,16 +12,16 @@ import Translactions from '@site/src/components/Translactions';
 
 Il [Ritorno dello Jedi](https://it.wikipedia.org/wiki/Il_ritorno_dello_Jedi) è il terzo episodio di Guerre Stellari, uscito nel 1983.
 
-Forse è l'età e per questo mi deve essere rimasto in testa, con le Guerre Stellari non c'entra niente, però volevo raccontarvi la novità del gradito ritorno all'architettura i386 su penguins-eggs.
+Forse è l'età - per questo mi deve essere rimasto in testa - con le Guerre Stellari quello che devo dire non c'entra niente, però volevo raccontarvi la novità del gradito ritorno dell'architettura i386 su penguins-eggs.
 
 # Come sono riuscito a "ricompilare" eggs sia i386 che su arm64?
 penguins-eggs è un programma scritto in typescript quindi compilare è qui utilizzato in maniera un po' improria. Sarebbe più corretto scrivere come sono riuscito a generare nuovamente il pacchetto su l'architettura i386 non più supportata da node.
 
-Qua dobbiamo ringraziare la Regina Debian. 
+Qua dobbiamo ringraziare la sua Maestà Debian.
 
-Cercando di aiutare un utente alle prese con LMDE 6 ho notato che sulla macchina era presente node18, grazie alla versione pacchettizzata da Debian. 
+Cercando di aiutare un utente alle prese con LMDE 6 "Faye" ho notato che sulla macchina era presente node18, grazie alla versione pacchettizzata da Debian. 
 
-Su bullseye è presente solo node12, usando da tempo node16 - non si può fare - ma qua essendo presente la versione 18 mi è venuto il dubbio e l'idea di provarci.
+Su Debian bullseye è presente solo node12, ed essendo passato da tempo a node16 - non si può fare - ma qua, con la versione 18 mi è venuto il dubbio e l'idea di provarci.
 
 Eggs è costruito con [oclif](https://oclif.io/), e genero il pacchetto con lo stesso framework che - tra l'altro - racchiude l'eseguibile di node nel pacchetto stesso.
 
@@ -33,7 +33,7 @@ Ha funzionato!
 
 **Nota** La storia è naturalmente un po' più lunga e non priva di una certa fatica, ma è la stessa che mi ha portato - usando sostanzialmente lo stesso schema - ad ottenere una versione arm64 funzionante.
 
-Ma di questo parleremo un'altra volta.
+Ma di questo parleremo la prossima volta.
 
 # E come la mettiamo con Visual Studio code?
 
@@ -47,4 +47,4 @@ wget https://az764295.vo.msecnd.net/stable/c7d83e57cd18f18026a8162d042843bda1bcf
 sudo dpkg -i ./code*.deb
 ```
 
-Era pure facile! A saperlo, però...
+Era pure facile! A saperlo, però.

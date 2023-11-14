@@ -35,12 +35,12 @@ Notate che - a parte questo README.md, che potete rimuovere liberamente - non do
 ## Utilizzo
 Inserita la card SD accesa la vostra Raspberry Pi, dovreste vedere uno schermo multicolore (che indica che il bootloaded embedded sta leggendo i dati dalla partizione SB/USB) quindi, appare il logo Raspberry in bianco e nero una volta che il firmware UEFI è prondo.
 
-A questo punto, potete premere il tasto ESC per entrare nel setup, FI per lanciare la shell UEFI e, se fornito, avere yn bootloader UEFI in efi/bootaa64.efi che potete avviare (sarà il default se non verrà intrapresa alcuna azione)
+A questo punto, potete premere il tasto ESC per entrare nel setup, F1 per lanciare la shell UEFI e - se fornito - avere un bootloader UEFI in `efi/bootaa64.efi`` che potete avviare (sarà il vostro default se non verrà intrapresa alcuna azione)
 
 ![uefi boot](https://www.bujarra.com/wp-content/uploads/2020/10/VMware-ESXi-Raspberry-Pi-06.jpg)
 
 ## Metodo
-Ho scritto questa parte prima ancora di provarla, l'ho fatto presso il negozio [DNetware computer](http://www.dnetware.com/) di Tor Sapienza a Roma, su un missile per gamer in preparazione con Windows ed una chiavetta USB con adattatore per SD card.
+Ho scritto questa parte ancora prima di provarla. L'ho fatto presso il negozio [DNetware computer](http://www.dnetware.com/) di Tor Sapienza a Roma, su un missile i9 per gamer in preparazione ed una chiavetta USB con adattatore per SD card.
 
 ### Create an msdos partition table
 * `sudo parted --script /dev/sdb mklabel msdos`
@@ -96,4 +96,3 @@ Buon divertimento!
 * [UEFI Secure Boot on the Raspberry Pi](https://www.linux.it/~ema/posts/secure-boot-rpi/)
 * [Pimox 7](https://github.com/pimox/pimox7) Proxmox VE V7 for Raspberry Pi
 * [instalando-vmware-esxi-en-una-raspberry-pi](https://www.bujarra.com/instalando-vmware-esxi-en-una-raspberry-pi/)
-
