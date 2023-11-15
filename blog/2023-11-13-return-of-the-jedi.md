@@ -37,9 +37,9 @@ Ma di questo parleremo la prossima volta.
 
 # E come la mettiamo con Visual Studio code?
 
-Non sò quante volte ho bestemmiato in turco la mancanza di code su i386, ho tentato con lite, un editor LUA un po' somigliante; ho smadonnato con sublime - bello ma diverso - alla fine, non usando più di tanto i386, m'ero adattato a geany.
+Non sò quante volte ho bestemmiato in turco la mancanza di code su i386, ho tentato con [lite](https://github.com/rxi/lite), un editor LUA un po' somigliante; ho smadonnato con [sublime](https://www.sublimetext.com/) - bello, ma diverso - alla fine, non usando più di tanto i386, m'ero adattato a [geany](https://www.geany.org/).
 
-Ecco il sistema per installare l'ultima versione di code funzionante su i386
+Ecco il sistema per installare l'ultima versione di code funzionante su i386.
 
 ```
 wget https://az764295.vo.msecnd.net/stable/c7d83e57cd18f18026a8162d042843bda1bcf21f/code_1.35.1-1560349847_i386.deb 
