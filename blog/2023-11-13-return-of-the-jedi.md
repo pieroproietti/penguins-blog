@@ -62,7 +62,9 @@ Avere lo stesso sistema di sviluppo su tutte e tre le architetture supportate ai
 # A quando una versione per RISCV?
 Ad inizio dicembre dovrebbe arrivarmi un computer a scheda singola VisionFive 2 Quad-core RISC-V StarFive JH7110 quad-core RISC-V con ben 8GB di RAM.
 
-Il progetto [Proxmox-port](https://github.com/jiangcuo/Proxmox-Port) promette bene anche per quanto rigurda l'architettura [RISCV](https://riscv.org/), vediamo che succede.
+Il progetto [Proxmox-port](https://github.com/jiangcuo/Proxmox-Port), grazie al quale ho trasformato la mia Raspberry Pi 4 in un server Proxmox VE, promette bene anche per quanto rigurda l'architettura [RISCV](https://riscv.org/).
+
+Vediamo che succede, ci spero!
 
 
 
