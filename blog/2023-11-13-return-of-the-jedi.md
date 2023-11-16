@@ -55,9 +55,9 @@ Naked - la versione CLI - e Colibri sono le due ISO ufficiali che pubblico per o
 
 Colibri è interessante per chi vuole cimentarsi con gli stessi strumenti che utilizzo per creare eggs, naturalmente raccomando la versione amd64, ma attualmente è possibile utilizzare sia arm64 che i386 senza troppe rinunce.
 
-In sostanza viene installato il desktop XFCE - senza troppi fronzoli - nodejs, npm, pnpm e l'editor code o codim nel caso di arm64.
+In sostanza viene installato il desktop XFCE - senza troppi fronzoli - nodejs, npm, pnpm e l'editor [code](https://code.visualstudio.com/) o [codium](https://vscodium.com/) nel caso di arm64.
 
-Avere lo stesso sistema di sviluppo su tutte e tre le architetture supportate aiuta non poco nel debug.
+Avere lo stesso sistema di sviluppo su tutte e tre le architetture supportate aiuta non poco diurante il debug.
 
 # A quando una versione per RISCV?
 Ad inizio dicembre dovrebbe arrivarmi un computer a scheda singola VisionFive 2 Quad-core RISC-V StarFive JH7110 quad-core RISC-V con ben 8GB di RAM.
