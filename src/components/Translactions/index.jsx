@@ -26,6 +26,7 @@ export default function Translactions({path}) {
       {getLink('Українська', 'uk', 'uk', path)} {/* ucraino */}
       {getLink('やまと', 'ja', 'ja', path)} {/* giapponese */}
       {getLink('中国', 'zh', 'zh', path)} {/* cinese */}
+      {getLink('فارسی', 'fa', 'fa', path)} {/* persiano */}
       <br/><br/>
     </span>
   );
