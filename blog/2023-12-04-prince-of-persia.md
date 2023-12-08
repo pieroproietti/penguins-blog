@@ -2,7 +2,7 @@
 authors: pieroproietti
 slug: prince-of-persia
 title: "Prince of Persia"
-lang: it
+lang: en
 enableComments: true
 ---
 
@@ -10,7 +10,7 @@ import Translactions from '@site/src/components/Translactions';
 
 <Translactions />
 
-Qualche tempo fa ho ricevuto questo messaggio su un problema di eggs con plasma:
+Some time ago I received this message about an eggs problem with plasma:
 
 ```
 I have an error on calamares installer.
@@ -27,6 +27,6 @@ The error is caused by Plasma settings → Removable Storage → Removable Devic
 and solved problem, calamares installed the system fine.
 
 
-Il Principe di Persia ci ha inviato anche un nuovo splash screen
+The Prince of Persia also sent us a new splash screen
 ![error](/img/blog/2023-12-04/1280-800-final.png)
 
