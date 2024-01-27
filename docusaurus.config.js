@@ -1,8 +1,10 @@
 // @ts-check
-// Note: type annotations allow type checking and IDEs autocompletion
+// `@type` JSDoc annotations allow editor autocompletion and type checking
+// (when paired with `@ts-check`).
+// There are various equivalent ways to declare your Docusaurus config.
+// See: https://docusaurus.io/docs/api/docusaurus-config
 
-const lightCodeTheme = require('prism-react-renderer/themes/github');
-const darkCodeTheme = require('prism-react-renderer/themes/dracula');
+import {themes as prismThemes} from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
@@ -21,47 +23,40 @@ const config = {
   organizationName: 'pieroproietti', // Usually your GitHub org/user name.
   projectName: 'penguins-blog', // Usually your repo name.
 
-  onBrokenLinks: 'warn', // it was throw
+  onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
 
-  // Even if you don't use internalization, you can use this field to set useful
-  // metadata like html lang. For example, if your site is Chinese, you may want
-  // to replace "en" with "zh-Hans".
+  // Even if you don't use internationalization, you can use this field to set
+  // useful metadata like html lang. For example, if your site is Chinese, you
+  // may want to replace "en" with "zh-Hans".
   i18n: {
     defaultLocale: 'it',
     locales: ['it'],
   },
+
   presets: [
     [
       'classic',
       /** @type {import('@docusaurus/preset-classic').Options} */
-      (
-        {
-          gtag: {
-            /**
-             * proprieta GA4: 368716187
-             * id-misurazione: G-KWVSZ1TJNZ
-             */
-            //trackingID: 'G-999X9XX9XX',
-            trackingID: 'G-KWVSZ1TJNZ',
-            anonymizeIP: true,
-          },
-          docs: {
-            sidebarPath: require.resolve('./sidebars.js'),
-            // Please change this to your repo.
-            // Remove this to remove the "edit this page" links.
-            // editUrl: 'https://github.com/piero-proietti/penguins-blog/tree/main/packages/create-docusaurus/templates/shared/',
-          },
-          blog: {
-            showReadingTime: true,
-            // Please change this to your repo.
-            // Remove this to remove the "edit this page" links.
-            // editUrl: 'https://github.com/pieroproietti/penguins-blog/tree/main/packages/create-docusaurus/templates/shared/',
-          },
-          theme: {
-            customCss: require.resolve('./src/css/custom.css'),
-          },
-        }),
+      ({
+        docs: {
+          sidebarPath: './sidebars.js',
+          // Please change this to your repo.
+          // Remove this to remove the "edit this page" links.
+          editUrl:
+            'https://github.com/pieroproietti/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+        },
+        blog: {
+          showReadingTime: true,
+          // Please change this to your repo.
+          // Remove this to remove the "edit this page" links.
+          editUrl:
+            'https://github.com/pieroproietti/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+        },
+        theme: {
+          customCss: './src/css/custom.css',
+        },
+      }),
     ],
   ],
 
@@ -83,32 +78,10 @@ const config = {
             position: 'left',
             label: 'Tutorial',
           },
-          { to: '/blog', label: 'Blog', position: 'left' },
-
-
+          {to: '/blog', label: 'Blog', position: 'left'},
           {
-            href: 'https://github.com/pieroproietti/penguins-eggs/discussions',
-            label: 'Discussions',
-            position: 'right',
-          },
-          {
-            href: 'https://github.com/pieroproietti/',
+            href: 'https://github.com/pieroproietti/docusaurus',
             label: 'GitHub',
-            position: 'right',
-          },
-          {
-            href: 'https://sourceforge.net/projects/penguins-eggs/files/ISOS/',
-            label: 'ISOs',
-            position: 'right',
-          },
-          {
-            href: 'https://sourceforge.net/projects/penguins-eggs/files/DEBS/',
-            label: 'DEBs',
-            position: 'right',
-          },
-          {
-            href: 'https://github.com/pieroproietti/penguins-eggs-pkgbuilds#penguins-eggs-pkgbuilds',
-            label: 'PKGBUILDs',
             position: 'right',
           },
         ],
@@ -167,10 +140,10 @@ const config = {
         copyright: `Copyright © 2017-${new Date().getFullYear()} Piero Proietti - Officina informatica Via Pio Joris 13, Roma.`,
       },
       prism: {
-        theme: lightCodeTheme,
-        darkTheme: darkCodeTheme,
+        theme: prismThemes.github,
+        darkTheme: prismThemes.dracula,
       },
     }),
 };
 
-module.exports = config;
+export default config;

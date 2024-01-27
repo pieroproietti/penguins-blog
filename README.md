@@ -1,19 +1,17 @@
-# Penguins' eggs - site and blog
+# Website
 
-I'm trying to find something even more practical than the already excellent hexo to manage penguins' eggs blog.
-
-This website is built using [Docusaurus 2](https://docusaurus.io/), a modern static website generator.
+This website is built using [Docusaurus](https://docusaurus.io/), a modern static website generator.
 
 ### Installation
 
 ```
-$ pnpm install
+$ yarn
 ```
 
 ### Local Development
 
 ```
-$ pnpm start
+$ yarn start
 ```
 
 This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
@@ -21,7 +19,7 @@ This command starts a local development server and opens up a browser window. Mo
 ### Build
 
 ```
-$ pnpm build
+$ yarn build
 ```
 
 This command generates static content into the `build` directory and can be served using any static contents hosting service.
