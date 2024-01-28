@@ -47,5 +47,4 @@ L'immagine una volta creata dovrà essere esportata e messa su una chiavetta USB
 ## 03 Installazione della nostra live su un nuovo sistema
 A questo punto non ci resta che vedere il risultato finale della nostra configurazione, ovvero un sistema creato da noi stessi, per le nostre necessità creato con cura professionale.
 
-`{% youtube 7tJ-QckuGoM %}`
-
+[![Installazione](https://img.youtube.com/vi/7tJ-QckuGoM/0.jpg)](https://www.youtube.com/watch?v=Y7tJ-QckuGoM)
