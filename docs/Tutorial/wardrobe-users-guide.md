@@ -317,9 +317,9 @@ Per le informazioni di riferimento sulla configurazione di questi file sostanzia
 `branding.desc` viene generato automaticamente da `eggs`, come prima, fare riferimento a `calamares` [branding.desc](https://github.com/calamares/calamares/blob/calamares/src/branding/default/branding.desc) per maggiori informazioni.
 
 ###### `modules`
-* [`locale.yml`](/themes/educaandos-plus/theme/calamares/modules/locale.yml)
-* [`partitions`.yml](/themes/educaandos-plus/theme/calamares/modules/partition.yml)
-* [`users.yml`](/themes/educaandos-plus/theme/calamares/modules/users.yml) (*)
+* [`locale.yml`](https://github.com/pieroproietti/penguins-wardrobe/blob/main/vendors/educaandos-plus/theme/calamares/modules/locale.yml)
+* [`partitions.yml`](https://github.com/pieroproietti/penguins-wardrobe/blob/main/vendors/educaandos-plus/theme/calamares/modules/partition.yml)
+* [`users.yml`](https://github.com/pieroproietti/penguins-wardrobe/blob/main/vendors/educaandos-plus/theme/calamares/modules/users.yml) (*)
 
 (*) In `EducaAndOS` per avere i diritti di amministrazione per l'utente, abbiamo la necessità di configurare lo stesso in un gruppo specifico, per questo si rese necessario l'utilizzo di `users.yml`.
 

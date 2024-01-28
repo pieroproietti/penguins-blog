@@ -27,7 +27,7 @@ sudo apt update
 sudo apt install eggs
 ```
 
-#[penguins-eggs-ppa](./images/penguins-eggs-ppa.png)
+#[penguins-eggs-ppa](/images/penguins-eggs-ppa.png)
 
 [link](https://pieroproietti.github.io/penguins-eggs-ppa/)
 

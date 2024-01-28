@@ -32,7 +32,7 @@ This is great, becouse peoples need again it!
 
 I started a [mail list in sourceforge](https://sourceforge.net/p/penguins-eggs/mailman/penguins-eggs-developers/), and describe on the last mail that was the solution. If you are interested you can subscribe it.
 
-Now we have a [man page](/docs/man) build automatically, so always updated and on line with the sources. 
+Now we have a `man page` build automatically, so always updated and on line with the sources. 
 
 Not only, we "sell" it in double versions: man and html. You can find it always update in our [site](//docs/man) too!
 
@@ -49,8 +49,6 @@ I need same help for translations, contact me to propose yourself.
 
 ## mom
 The script `mom` is continuing to improve and remain cli compatible. Don't use more zenity anymore but whitail only - it is more rational - and I found enought cases where zenity is not installed (kde) and a bit too heavy to install on them.
-
-![mom](/images/eggs-mom.png)
 
 ## So, You are welcome to eggs-7.7.27
 

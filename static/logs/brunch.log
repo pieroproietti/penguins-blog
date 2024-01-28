@@ -1,0 +1,83 @@
+Available build profiles:
+
+0. gnome
+1. plasma
+2. xfce
+3. cinnamon
+4. mate
+5. deepin
+6. lxqt
+
+Select a profile [0/gnome]: [mkarchiso] INFO: Validating options...
+[mkarchiso] INFO: 'edk2-shell' is not in the package list. The ISO will not contain a bootable UEFI shell.
+[mkarchiso] INFO: Validating 'uefi-ia32.grub.esp': 'memtest86+-efi' is not in the package list. Memory testing will not be available from GRUB.
+[mkarchiso] INFO: 'edk2-shell' is not in the package list. The ISO will not contain a bootable UEFI shell.
+[mkarchiso] INFO: Validating 'uefi-ia32.grub.eltorito': 'memtest86+-efi' is not in the package list. Memory testing will not be available from GRUB.
+[mkarchiso] INFO: 'edk2-shell' is not in the package list. The ISO will not contain a bootable UEFI shell.
+[mkarchiso] INFO: Validating 'uefi-x64.grub.esp': 'memtest86+-efi' is not in the package list. Memory testing will not be available from GRUB.
+[mkarchiso] INFO: 'edk2-shell' is not in the package list. The ISO will not contain a bootable UEFI shell.
+[mkarchiso] INFO: Validating 'uefi-x64.grub.eltorito': 'memtest86+-efi' is not in the package list. Memory testing will not be available from GRUB.
+[mkarchiso] INFO: Done!
+[mkarchiso] INFO: mkarchiso configuration settings
+[mkarchiso] INFO:              Architecture:   x86_64
+[mkarchiso] INFO:         Working directory:   /home/artisan/blendOS/build/.brunch-tmp/workdir
+[mkarchiso] INFO:    Installation directory:   blend
+[mkarchiso] INFO:                Build date:   2023-07-07T21:28+0200
+[mkarchiso] INFO:          Output directory:   /home/artisan/blendOS/build/.brunch-tmp/out
+[mkarchiso] INFO:        Current build mode:   iso
+[mkarchiso] INFO:               Build modes:   iso
+[mkarchiso] INFO:                   GPG key:   None
+[mkarchiso] INFO:                GPG signer:   None
+[mkarchiso] INFO: Code signing certificates:   None
+[mkarchiso] INFO:                   Profile:   /home/artisan/blendOS/build/.brunch-tmp
+[mkarchiso] INFO: Pacman configuration file:   /home/artisan/blendOS/build/.brunch-tmp/pacman.conf
+[mkarchiso] INFO:           Image file name:   blendOS-2023.07.07-x86_64.iso
+[mkarchiso] INFO:          ISO volume label:   BLENDOS_202307
+[mkarchiso] INFO:             ISO publisher:   blendOS <https://blendos.co>
+[mkarchiso] INFO:           ISO application:   blendOS Live/Rescue CD
+[mkarchiso] INFO:                Boot modes:   bios.syslinux.mbr bios.syslinux.eltorito uefi-ia32.grub.esp uefi-ia32.grub.eltorito uefi-x64.grub.esp uefi-x64.grub.eltorito
+[mkarchiso] INFO:             Packages File:   /home/artisan/blendOS/build/.brunch-tmp/packages.x86_64
+[mkarchiso] INFO:                  Packages:   alsa-utils amd-ucode arch-install-scripts archinstall b43-fwcutter base bash bash-completion bind brltty broadcom-wl-dkms btrfs-progs cryptsetup dhclient dmidecode dnsmasq dosfstools e2fsprogs efibootmgr espeakup exfatprogs f2fs-tools fatresize gpart gptfdisk grub-blend hdparm hyperv intel-ucode irssi less libfido2 libusb-compat linux-zen linux-zen-headers linux-atm linux-firmware linux-firmware-marvell man-db man-pages mc mdadm memtest86+ mkinitcpio mkinitcpio-archiso mkinitcpio-nfs-utils modemmanager mtools nano nbd ndisc6 neovim nfs-utils nilfs-utils ntfs-3g openconnect openssh openvpn os-prober parted partimage pcsclite ppp pptpclient pv rsync smartmontools sof-firmware squashfs-tools sudo syslinux tcpdump tpm2-tss udftools usb_modeswitch usbmuxd usbutils vpnc wireless-regdb wireless_tools wpa_supplicant wvdial xfsprogs xl2tpd nvidia-dkms akshara-git blend-git flatpak blendos-first-setup-git blend-settings-git blend-web-store-git system-git noto-fonts noto-fonts-cjk noto-fonts-emoji ttf-jetbrains-mono pipewire pipewire-pulse pipewire-jack pipewire-alsa wireplumber networkmanager plymouth-blend arc-gtk-theme papirus-icon-theme filesystem-blend lsb-release-blend blend-inst-git python-yaml jade-gui blend-keyring spice-vdagent python-gobject firefox cups wget cups-pk-helper open-vm-tools iio-sensor-proxy xorg-xhost waydroid-blend-git waydroid-image gnome adw-gtk3 gnome-software gnome-shell-extension-blur-my-shell gnome-shell-extension-appindicator
+[mkarchiso] INFO: Copying custom pacman.conf to work directory...
+[mkarchiso] INFO: Using pacman CacheDir: /var/cache/pacman/pkg/ 
+[mkarchiso] INFO: Copying custom airootfs files...
+[mkarchiso] INFO: Done!
+[mkarchiso] INFO: Installing packages to '/home/artisan/blendOS/build/.brunch-tmp/workdir/x86_64/airootfs/'...
+==> Creating install root at /home/artisan/blendOS/build/.brunch-tmp/workdir/x86_64/airootfs
+[mkarchiso] INFO: Validating options...
+[mkarchiso] INFO: 'edk2-shell' is not in the package list. The ISO will not contain a bootable UEFI shell.
+[mkarchiso] INFO: Validating 'uefi-ia32.grub.esp': 'memtest86+-efi' is not in the package list. Memory testing will not be available from GRUB.
+[mkarchiso] INFO: 'edk2-shell' is not in the package list. The ISO will not contain a bootable UEFI shell.
+[mkarchiso] INFO: Validating 'uefi-ia32.grub.eltorito': 'memtest86+-efi' is not in the package list. Memory testing will not be available from GRUB.
+[mkarchiso] INFO: 'edk2-shell' is not in the package list. The ISO will not contain a bootable UEFI shell.
+[mkarchiso] INFO: Validating 'uefi-x64.grub.esp': 'memtest86+-efi' is not in the package list. Memory testing will not be available from GRUB.
+[mkarchiso] INFO: 'edk2-shell' is not in the package list. The ISO will not contain a bootable UEFI shell.
+[mkarchiso] INFO: Validating 'uefi-x64.grub.eltorito': 'memtest86+-efi' is not in the package list. Memory testing will not be available from GRUB.
+[mkarchiso] INFO: Done!
+[mkarchiso] INFO: mkarchiso configuration settings
+[mkarchiso] INFO:              Architecture:   x86_64
+[mkarchiso] INFO:         Working directory:   /home/artisan/blendOS/build/.brunch-tmp/workdir
+[mkarchiso] INFO:    Installation directory:   blend
+[mkarchiso] INFO:                Build date:   2023-07-07T21:28+0200
+[mkarchiso] INFO:          Output directory:   /home/artisan/blendOS/build/.brunch-tmp/out
+[mkarchiso] INFO:        Current build mode:   iso
+[mkarchiso] INFO:               Build modes:   iso
+[mkarchiso] INFO:                   GPG key:   None
+[mkarchiso] INFO:                GPG signer:   None
+[mkarchiso] INFO: Code signing certificates:   None
+[mkarchiso] INFO:                   Profile:   /home/artisan/blendOS/build/.brunch-tmp
+[mkarchiso] INFO: Pacman configuration file:   /home/artisan/blendOS/build/.brunch-tmp/pacman.conf
+[mkarchiso] INFO:           Image file name:   blendOS-2023.07.07-x86_64.iso
+[mkarchiso] INFO:          ISO volume label:   BLENDOS_202307
+[mkarchiso] INFO:             ISO publisher:   blendOS <https://blendos.co>
+[mkarchiso] INFO:           ISO application:   blendOS Live/Rescue CD
+[mkarchiso] INFO:                Boot modes:   bios.syslinux.mbr bios.syslinux.eltorito uefi-ia32.grub.esp uefi-ia32.grub.eltorito uefi-x64.grub.esp uefi-x64.grub.eltorito
+[mkarchiso] INFO:             Packages File:   /home/artisan/blendOS/build/.brunch-tmp/packages.x86_64
+[mkarchiso] INFO:                  Packages:   alsa-utils amd-ucode arch-install-scripts archinstall b43-fwcutter base bash bash-completion bind brltty broadcom-wl-dkms btrfs-progs cryptsetup dhclient dmidecode dnsmasq dosfstools e2fsprogs efibootmgr espeakup exfatprogs f2fs-tools fatresize gpart gptfdisk grub-blend hdparm hyperv intel-ucode irssi less libfido2 libusb-compat linux-zen linux-zen-headers linux-atm linux-firmware linux-firmware-marvell man-db man-pages mc mdadm memtest86+ mkinitcpio mkinitcpio-archiso mkinitcpio-nfs-utils modemmanager mtools nano nbd ndisc6 neovim nfs-utils nilfs-utils ntfs-3g openconnect openssh openvpn os-prober parted partimage pcsclite ppp pptpclient pv rsync smartmontools sof-firmware squashfs-tools sudo syslinux tcpdump tpm2-tss udftools usb_modeswitch usbmuxd usbutils vpnc wireless-regdb wireless_tools wpa_supplicant wvdial xfsprogs xl2tpd nvidia-dkms akshara-git blend-git flatpak blendos-first-setup-git blend-settings-git blend-web-store-git system-git noto-fonts noto-fonts-cjk noto-fonts-emoji ttf-jetbrains-mono pipewire pipewire-pulse pipewire-jack pipewire-alsa wireplumber networkmanager plymouth-blend arc-gtk-theme papirus-icon-theme filesystem-blend lsb-release-blend blend-inst-git python-yaml jade-gui blend-keyring spice-vdagent python-gobject firefox cups wget cups-pk-helper open-vm-tools iio-sensor-proxy xorg-xhost waydroid-blend-git waydroid-image gnome adw-gtk3 gnome-software gnome-shell-extension-blur-my-shell gnome-shell-extension-appindicator
+[mkarchiso] INFO: Installing packages to '/home/artisan/blendOS/build/.brunch-tmp/workdir/x86_64/airootfs/'...
+==> Creating install root at /home/artisan/blendOS/build/.brunch-tmp/workdir/x86_64/airootfs
+
+Building gnome.
+
+Build failed, attempting again.
+Profile build failed.
