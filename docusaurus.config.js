@@ -87,11 +87,6 @@ const config = {
             label: 'penguins-eggs',
             position: 'right',
           },
-          {
-            href: 'https://github.com/pieroproietti/penguins-blog',            
-            label: 'penguins-blog', 
-            position: 'right',
-          },
         ],
       },
       footer: {
@@ -135,12 +130,16 @@ const config = {
             title: 'More',
             items: [
               {
-                label: 'Blog',
-                to: '/blog',
+                label: 'DEBS',
+                to: 'https://sourceforge.net/projects/penguins-eggs/files/DEBS/',
+              },
+              {
+                label: 'ISOs',
+                to: 'https://sourceforge.net/projects/penguins-eggs/files/ISOS/',
               },
               {
                 label: 'GitHub',
-                href: 'https://github.com/pieroproietti/penguins-blog',
+                href: 'https://github.com/pieroproietti/',
               },
             ],
           },
