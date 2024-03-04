@@ -83,8 +83,13 @@ const config = {
             position: 'left'
           },
           {
+            href: 'https://github.com/pieroproietti/penguins-eggs',            
+            label: 'penguins-eggs',
+            position: 'right',
+          },
+          {
             href: 'https://github.com/pieroproietti/penguins-blog',            
-            label: 'GitHub', 
+            label: 'penguins-blog', 
             position: 'right',
           },
         ],
