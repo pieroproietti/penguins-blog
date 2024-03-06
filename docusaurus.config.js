@@ -109,8 +109,8 @@ const config = {
             title: 'Community',
             items: [
               {
-                label: 'Github discussion',
-                href: 'https://github.com/pieroproietti/penguins-eggs/discussions',
+                label: 'penguins-eggs Persian site',
+                href: 'https://penguins-eggs.ir',
               },
               {
                 label: 'Facebook group',
