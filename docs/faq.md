@@ -12,9 +12,9 @@ import Translactions from '@site/src/components/Translactions';
 
 ### Debian/Devuan/Ubuntu
 
-Scarica il pacchetto `eggs_9.4.x_amd64.deb` dalla pagina del progetto [penguins-eggs](https://sourceforge.net/projects/penguins-eggs/files/DEBS/).
+Scarica il pacchetto `penguins-eggs_10.0.x_amd64.deb` dalla pagina del progetto [penguins-eggs](https://sourceforge.net/projects/penguins-eggs/files/DEBS/).
 
-`sudo dpkg -i eggs_9.4.x_amd64.deb` 
+`sudo dpkg -i penguins-eggs_10.0.x_amd64.deb` 
 
 Otterrete un errore per mancanza delle dipendenze, ma non preoccupatevi.
 

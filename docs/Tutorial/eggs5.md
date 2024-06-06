@@ -18,7 +18,7 @@ Debian, Devuan, Ubuntu e [derivate](https://github.com/pieroproietti/penguins-eg
 Scaricate eggs da [sourceforge](https://sourceforge.net/projects/penguins-eggs/files/DEBS/), quindi installatela:
 
 ```
-sudo dpkg -i eggs_9.6.1_amd64.deb
+sudo dpkg -i penguins_eggs_10.0.0-1_amd64.deb
 sudo apt install -f
 ```
 

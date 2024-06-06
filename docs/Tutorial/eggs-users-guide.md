@@ -11,7 +11,7 @@ import Translactions from '@site/src/components/Translactions';
 ### In case of problems with translation links, You can consult a detailed [README](https://github.com/pieroproietti/penguins-eggs#readme) in English on the repository.
 
 
-Manuale aggiornato a `eggs v9.4.x`
+Manuale aggiornato a `eggs v10.0.x`
 
 
 ## Introduzione
@@ -49,7 +49,7 @@ I pacchetti .deb sono disponibili per tutte le distribuzioni originali e deridat
 Se non desiderate includere penguins-eggs-ppa fra le repository del vostro sistema, potete semplicemente scaricare l'ultima versione di eggs dal sito di [sourceforge](https://sourceforge.net/projects/penguins-eggs/files/DEBS/) ed installarla con il comando:
 
 ```
-sudo dpkg -i eggs-9.4.x.deb
+sudo dpkg -i penguins_eggs-10.0.x.deb
 ```
 
 Se si tratta della prima installazione, il pacchetto non verrà installato per la mancanza delle dipendenze. Vi basterà dare il comando:
@@ -199,7 +199,7 @@ si otterrà la seguente schermata:
 
 ```
 VERSION
-  penguins-eggs/9.4.5 linux-x64 node-v16.19.1
+  penguins-eggs/10.0.3 linux-x64 node-v20.5.1
 
 USAGE
   $ eggs [COMMAND]
@@ -212,21 +212,23 @@ TOPICS
 COMMANDS
   adapt         adapt monitor resolution for VM only
   analyze       analyze for syncto
-  autocomplete  display autocomplete installation instructions
+  autocomplete  Display autocomplete installation instructions.
   calamares     configure calamares or install or configure it
-  config        Configure and install prerequisites deb packages to run it
+  config        Configure eggs to run it
   cuckoo        PXE start with proxy-dhcp
   dad           ask help from daddy - TUI configuration helper
   help          Display help for eggs.
   install       krill: the CLI system installer - the egg became a penguin!
   kill          kill the eggs/free the nest
+  krill         krill: the CLI system installer - the egg became a penguin!
   mom           ask help from mommy - TUI helper
   produce       produce a live image from your system whithout your data
   status        informations about eggs status
   syncfrom      restore users and user data from a LUKS volumes
-  syncto        saves users and user data in a LUKS volume inside the iso
+  syncto        Save users and users' data ENCRYPTED
   update        update the Penguins' eggs tool
   version
+
 ```
 
 ### `autocomplete`
@@ -247,10 +249,9 @@ Ad esempio: comando `eggs produce --`
 
 ```
 $ eggs produce --
---addons         --help           --release        --verbose
---basename       --max            --script         --yolk
---clone          --nointeractive  --standard       
---cryptedclone   --prefix         --theme          
+--addons         --cryptedclone   --links          --nointeractive  --script         --unsecure
+--basename       --excludes       --max            --prefix         --standard       --verbose
+--clone          --help           --noicons        --release        --theme          --yolk
 ```
 
 Introducendo, invece `eggs produce --help` otterremo la schermata di aiuto del comando.
@@ -259,15 +260,15 @@ Introducendo, invece `eggs produce --help` otterremo la schermata di aiuto del c
 
 Come per ogni applicazione CLI che si rispetti, `eggs` è fornito di una apposita pagina `man` sempre a vostra disposizione, che possimo ottenere semplicemente con il comando: `man eggs`
 ```
-EGGS(1)                                                                EGGS(1)
+EGGS(1)                                                                                       EGGS(1)
 
 NAME
-       eggs - the reproductive system of penguins: eggs v9.4.5
+       eggs - the reproductive system of penguins: eggs v10.0.3
 
 SYNOPSIS
        Install Debian families (debian/devuan/ubuntu)
 
-         $ sudo dpkg -i eggs_9.4.5_amd64.deb
+         $ sudo dpkg -i penguins-eggs_10.0.3-1_amd64.deb
 
        Install Arch families (Arch, manjaro Linux)
 
@@ -279,9 +280,10 @@ SYNOPSIS
 
        Arch from development repo
 
-         $ git clone https://github.com/pieroproietti/penguins-eggs-pkgbuilds
-         $ cd penguins-eggs-pkgbuilds/aur/penguins-eggs/
+         $ git clone https://github.com/pieroproietti/penguins-eggs-arch
+         $ cd penguins-eggs-arch
          $ makepkg -si
+
 ```
 
 ### `mom`
@@ -327,79 +329,34 @@ Segnalo la presenza in `/etc/penguins-eggs.d` di tre differenti file di configur
 # Penguin's eggs
 # eggs.yaml
 ---
-version: '' 
-
-# eggs nest, default: /home/eggs
-snapshot_dir: /home/eggs/
-
-# Default '', dad -d put it at egg-of-distro-version-
-snapshot_prefix: ''
-
-# You can edit this rsync excludes file
-snapshot_excludes: /usr/local/share/penguins-eggs/exclude.list
-
-# snapshot_basename, default: ''
-snapshot_basename: ''
-
-# user liveCD, default: live
-user_opt: live
-
-# user liveCD password, default: evolution
-user_opt_passwd: evolution
-
-# root liveCD password, default: evolution
-root_passwd: evolution
-
-# theme to be used, default: eggs
-theme: eggs
-
-# Ask for installation calamares
-force_installer: true
-
-# make_efi, default: true
+compression: fast
+force_installer: false
+initrd_img: /boot/initrd.img-6.2.16-20-pve
+machine_id: 604f58a358594f6a8833daa259a8b663
 make_efi: true
-
-# Create md5sum file, default true
-make_md5sum: true
-
-# make_isohybrid, default true
 make_isohybrid: true
-
-# Compression algorithm, default xz
-compression: zstd -b 256K -Xcompression-level 1
-
-# Allow password login to ssh for users (not root).
-ssh_pass: true
-
-# timezone
-timezone: Europe/Rome
-
-# locales_default, default env.LANG or en_US.UTF-8
-locales_default: it_IT.UTF-8
-
-# locales, default: locales_default + en_US.UTF-8
-locales:
-  - it_IT.UTF-8
-  - en_US.UTF-8
-
-# it's still used?
+make_md5sum: false
 pmount_fixed: false
-
-# machine_id: default /etc/machine-id (eg: c297d3d858334abe99b719fc33415324)
-machine_id: ''
-
-# vmlinuz, default: /path/to/vmlinuz (eg: /boot/vmlinuz-5.10.0-16-amd64)
-vmlinuz: ''
-
-# initrd_img, default: /path/to/initrd_img (eg: /boot/initrd.img-5.10.0-16-amd64)
-initrd_img: ''
+root_passwd: evolution
+snapshot_basename: father
+snapshot_dir: /home/eggs/
+snapshot_excludes: /etc/penguins-eggs.d/exclude.list
+snapshot_mnt: /home/eggs/.mnt/
+snapshot_prefix: egg-of_debian-bookworm-
+ssh_pass: false
+theme: eggs
+timezone: Europe/Rome
+user_opt: live
+user_opt_passwd: evolution
+version: 10.0.3
+vmlinuz: /boot/vmlinuz-6.2.16-20-pve
 ```
 
 ### `krill.yaml`
 `krill.yaml` contiene i valori di default o i valori per l'installazione unattended con ```eggs install -u```
 
 ```
-# Penguin's eggs
+# Penguins' eggs
 # krill.yaml
 ---
 # welcome (put your language, example: it_IT.UTF-8)
@@ -444,7 +401,7 @@ dns: ''
 Lo scopo delle variabili di `tools.yaml` è quello di aiutare lo sviluppo di `eggs`, in sostanza mi sono molto utili per sviluppare, esportare pacchetti ed ISO ed eseguire aggiornamenti di `eggs` direttamente dalla rete locale. Generalmente il contenuto di questo file non viene utilizzato durante il normale funzionamento di `eggs`.
 
 ```
-# Penguin's eggs
+# Penguins' eggs
 # tools.yaml
 ---
 penguins_eggs_conf: /etc/penguins-eggs.d/eggs.yaml
@@ -452,22 +409,19 @@ penguins_eggs_conf: /etc/penguins-eggs.d/eggs.yaml
 # you can adapt this configuration to your needs
 remoteHost: 192.168.1.2
 
-# user to be used in remote host
-remoteUser: artisan
+# path to remote host
+remotePathDeb: /eggs/
+remotePathIso: /var/lib/vz/template/iso/
 
-# path in remote host
-remotePathDeb: /home/artisan/sourceforge/packages-deb/
-remotePathDoc: /home/artisan/sourceforge/DOCS/
-remotePathIso: /home/artisan/sourceforge/iso/
+# always root
+remoteUser: root
 
-
-# local directories - only for developers 
-localPathDeb: ~/penguins-eggs/perrisbrewery/workdir/
-localPathDoc: ~/penguins-eggs/docs
+# path to local host
+localPathDeb: /home/artisan/penguins-eggs/perrisbrewery/workdir/
 localPathIso: /home/eggs
 
 # filter package files
-filterDeb: eggs_9.*.*_
+filterDeb: penguins-eggs_10.?.*-?_
 ```
 
 
@@ -496,6 +450,14 @@ Questo comando crea o ricrea la configurazione di eggs nella directory ```/etc/p
 `eggs` necessita dei diritti di root, quindi - tranne per `eggs mom`, `eggs info` ed i comandi di esportazione - DEVE essere chiamato preceduto da `sudo`
 
 ```
+A remaster system tool, compatible with Arch, Debian, Devuan, Ubuntu and others
+
+VERSION
+  penguins-eggs/10.0.3 linux-x64 node-v20.5.1
+
+USAGE
+  $ eggs [COMMAND]
+
 TOPICS
   export    export deb/docs/iso to the destination host
   tools     clean system log, apt, etc
@@ -503,21 +465,22 @@ TOPICS
 
 COMMANDS
   adapt         adapt monitor resolution for VM only
-(*) analyze       analyze for syncto
-  autocomplete  display autocomplete installation instructions
-  calamares     calamares or install or configure it
-(*) config        Configure and install prerequisites deb packages to run it
-  cuckoo        start a PXE boot server serving the live image
-  dad           ask help from daddy - configuration helper
+  analyze       analyze for syncto
+  autocomplete  Display autocomplete installation instructions.
+  calamares     configure calamares or install or configure it
+  config        Configure eggs to run it
+  cuckoo        PXE start with proxy-dhcp
+  dad           ask help from daddy - TUI configuration helper
   help          Display help for eggs.
-  install       command-line system installer - the egg became a penguin!
+  install       krill: the CLI system installer - the egg became a penguin!
   kill          kill the eggs/free the nest
-  mom           ask for mommy - gui helper
+  krill         krill: the CLI system installer - the egg became a penguin!
+  mom           ask help from mommy - TUI helper
   produce       produce a live image from your system whithout your data
   status        informations about eggs status
   syncfrom      restore users and user data from a LUKS volumes
-  syncto        saves users and user data in a LUKS volume inside the iso
-  update        update the penguin's eggs tool
+  syncto        Save users and users' data ENCRYPTED
+  update        update the Penguins' eggs tool
   version
 ```
 
@@ -564,12 +527,30 @@ Analizza la presenza o meno della configurazione, i pacchetti installati e, quin
 ```
 E G G S: the reproductive system of penguins
 
-      penguins-eggs       Perri's Brewery edition        ver. 9.2.3       
+      penguins-eggs       Perri's Brewery edition        ver. 10.0.3       
 command: dad -d
 
 Daddy, what else did you leave for me?
 - creating configuration dir...
+configurationInstall: /etc/penguins-eggs.d
+Due the lacks of calamares package set force_installer = false
 - distro template install...
+
+Your configuration was saved on: /etc/penguins-eggs.d
+
+You can create a clean ISO with: sudo eggs produce
+or a full personal clone: sudo eggs produce --clone
+
+If you don't have enough space to remaster, you can mount
+some remote or local space. Follow the samples:
+- first, create an hidden mountpoint under the nest:
+sudo mkdir /home/eggs/.mnt -p
+- then, mount remote space:
+sudo sshfs -o allow_other root@192.168.1.2:/zfs/iso /home/eggs/.mnt
+- or, mount a local partition:
+sudo mount /dev/sdx1 /home/eggs/.mnt
+
+More help? eggs mom
 ```
 
 ### `eggs export`
@@ -586,16 +567,24 @@ Nel mio caso, utilizzo una stazione di lavoro con Proxmox VE e delle macchine vi
 Naturalmente, nel caso siate facendo la riproduzione direttamente sul sistema e non di una macchina virtuale, avrete tutto nello stesso disco ed il problema non si pone. In questo caso i comandi di esportazione rimarranno inutilizzati.
 
 ```
+export iso in the destination host
 
- E G G S: the reproductive system of penguins
+USAGE
+  $ eggs export iso [-C] [-c] [-h] [-v]
 
-      penguins-eggs       Perri's Brewery edition        ver. 9.2.3       
-command: export:iso -c
+FLAGS
+  -C, --checksum  export checksums md5 and sha256
+  -c, --clean     delete old ISOs before to copy
+  -h, --help      Show CLI help.
+  -v, --verbose   verbose
 
-eggs >>> export iso in the destination host.
-eggs >>> cleaning destination....
-ssh root@192.168.1.2 rm -rf /home/artisan/sourceforge/iso/egg-of-debian-bullseye-colibri-amd64_*
-root@192.168.1.2's password: 
+DESCRIPTION
+  export iso in the destination host
+
+EXAMPLES
+  $ eggs export iso
+
+  $ eggs export iso --clean
 ```
 
 #### `eggs export deb`
@@ -628,11 +617,11 @@ sudo eggs install --unattended
 
 #### Presentazione dell'installer `krill` (`eggs install`)
 
-Lo scopo di `krill` non è quello di entrare in concorrenza con un progetto molto più ampio come `calamares`, piuttosto quello di affiancarlo in ambiti dove la potenza e la sofisticazione di calamares non sono disponibili: ad esempio in ambito server. o in caso di sistemi desktop nei quali non sia possibile utilizzare calamares perchè non disponibile, come per le versioni di Debian jessie e stretch. 
+Lo scopo di `krill` non è quello di entrare in concorrenza con un progetto molto più ampio come `calamares`, piuttosto quello di affiancarlo in ambiti dove la potenza e la sofisticazione di calamares non sono disponibili perche manca una GUI, ad esempio in ambito server, oppure in caso di sistemi desktop nei quali non sia possibile utilizzare calamares perchè non disponibile, come per le versioni di Debian jessie e stretch. 
 
-Inoltre, `krill` permette una installazione unattended ed è, proprio perchè più parco, generalmente più veloce.
+Inoltre, `krill` permette una installazione unattended ed è, proprio perchè più parco, generalmente estremamente più veloce.
 
-Potete, infine, utilizzare `krill` su macchine desktop leggere con 2 GB di RAM o meno, nelle quali l'installazione con `krill`, in questi casi, risulterà particolarmente più veloce.
+Potete, infine, utilizzare `krill` su macchine desktop leggere con 2 GB di RAM o meno.
 
 In tutti gli altri casi è consigliato utilizzare `calamares` che offre molte più possibilità: in particolare l'installazione dual-boot.
 
@@ -732,14 +721,14 @@ Cancella le immagini realizzate e la directory di lavoro di `eggs`.
 ```
  E G G S: the reproductive system of penguins
 
-      penguins-eggs       Perri's Brewery edition        ver. 9.2.3       
+      penguins-eggs       Perri's Brewery edition        ver. 10.0.3       
 command: kill 
 
-Disk space used: 7.5 GB
-Space available: 19.2 GB
+Disk space used: 330.6 GB
+Space available: 505 GB
 There are 0 snapshots taking 0 GB of disk space.
 
-The free space should  be sufficient to hold the
+The free space should be sufficient to hold the
 compressed data from the system
 ? Select yes to continue...  (Use arrow keys)
 ❯ No 
@@ -806,53 +795,55 @@ Al suo avvio `produce` esegue velocemente un controllo sulla corretta inizializz
 Presenta diversi flag utilizzabili:
 
 ```
-produce a live image from your system whithout your data
+E G G S: the reproductive system of penguins
 
-USAGE
-  $ eggs produce [--addons <value>] [--basename <value>] [-c] [-C]
-    [-h] [-m] [-n] [-p <value>] [--release] [-s] [-f] [--theme <value>] [-v]
-    [-y]
+      penguins-eggs       Perri's Brewery edition        ver. 10.0.3       
+command: kill 
 
-FLAGS
-  -C, --cryptedclone    crypted clone
-  -c, --clone           clone
-  -f, --standard        standard compression
-  -h, --help            Show CLI help.
-  -m, --max             max compression
-  -n, --nointeractive   don't ask for user interctions
-  -p, --prefix=<value>  prefix
-  -s, --script          script mode. Generate scripts to manage iso build
-  -v, --verbose         verbose
-  -y, --yolk            -y force yolk renew
-  --addons=<value>...   addons to be used: adapt, ichoice, pve, rsupport
-  --basename=<value>    basename
-  --release             release: max compression, remove penguins-eggs and
-                        calamares after installation
-  --theme=<value>       theme for livecd, calamares branding and partitions
+Disk space used: 330.6 GB
+Space available: 505 GB
+There are 0 snapshots taking 0 GB of disk space.
 
-DESCRIPTION
-  produce a live image from your system whithout your data
-
-EXAMPLES
-  sudo eggs produce
-
-  sudo eggs produce --standard
-
-  sudo eggs produce --max
-
-  sudo eggs produce --max --basename=colibri
-
-  sudo eggs produce --cryptedclone
-
-  sudo eggs produce --clone
-
-  sudo eggs produce --basename=colibri
-
-  sudo eggs produce --basename=colibri --theme /path/to/theme --addons adapt
-
+The free space should be sufficient to hold the
+compressed data from the system
+? Select yes to continue...  (Use arrow keys)
+❯ No 
+  Yes 
 ```
 
 Di gran lunga la modalità d'uso che utilizzo è `sudo eggs produce` o `sudo eggs produce --adapt` se sono su XFCE o Mate ed avere sul desktop del live il link per ridimensionare la finestra video della mia macchina virtuale. `eggs` da questa versione utilizza la compressione veloce come default, non è quindi più presente il vecchio flag `--fast`. Se voglio controllare cosa sta succedendo, posso aggiungere `--verbose`.
+
+```
+produce a live image from your system whithout your data
+
+USAGE
+  $ eggs produce [--addons <value>...] [--basename <value>] [-c] [-C] [--excludes <value>...] [-h] [--links <value>...] [-m] [-N] [-n] [-p <value>] [--release] [-s] [-f] [--theme
+    <value>] [-u] [-v] [-y]
+
+FLAGS
+  -C, --cryptedclone         crypted clone
+  -N, --noicons              no icons on desktop
+  -c, --clone                clone
+  -f, --standard             standard compression
+  -h, --help                 Show CLI help.
+  -m, --max                  max compression
+  -n, --nointeractive        no user interaction
+  -p, --prefix=<value>       prefix
+  -s, --script               script mode. Generate scripts to manage iso build
+  -u, --unsecure             /root contents are included on live
+  -v, --verbose              verbose
+  -y, --yolk                 force yolk renew
+      --addons=<value>...    addons to be used: adapt, ichoice, pve, rsupport
+      --basename=<value>     basename
+      --excludes=<value>...  use: custom, home, mine, usr, var
+      --links=<value>...     desktop links
+      --release              release: max compression, remove penguins-eggs and calamares after installation
+      --theme=<value>        theme for livecd, calamares branding and partitions
+
+DESCRIPTION
+  produce a live image from your system whithout your data
+```
+
 
 Tra i flag disponibili c'è `--theme` che imposta il tema per `grub` ed `isolinux` sull'immagine ISO e per l'installer GUI `calamares`. 
 
@@ -896,16 +887,18 @@ Anche se a prima vista, per me specialmente, questa soluzione - che è poi la pi
 
 Sono raccolti sotto tools degli strumenti accessori di eggs, non sono fondamentali, ma possono far comodo.
 ```
+clean system log, apt, etc
+
 USAGE
   $ eggs tools COMMAND
 
 COMMANDS
   tools clean  clean system log, apt, etc
-  tools ppa    add/remove PPA repositories (Debian family)
+  tools ppa    add/remove repo
   tools skel   update skel from home configuration
   tools stat   get statistics from sourceforge
   tools yolk   configure eggs to install without internet
-```
+  ```
 
 Abbiamo `tools clean` che esegue la pulizia del sistema cancellando la cache del gestore dei pacchetti (apt o pacman) ed esegue la rotazione dei log, `tools skel` che permette di configurare l'aspetto del desktop live e del desktop di default dei nuovi utenti, `tools yolk` - solo per Debian/Devuan/Ubuntu - che aggiorna la repository inclusa in `/usr/local/yolk` che viene utilizzata da eggs per caricare i pacchetti indispensabili all'installazione in assenza di connessione internet. 
 
@@ -947,8 +940,9 @@ DESCRIPTION
   update skel from home configuration
 
 EXAMPLES
-  $ eggs skel --user mauro
-  desktop configuration of user mauro will get used as default
+  sudo eggs tools skel
+
+  sudo eggs tools skel --user user-to-be-copied
 ```
 
 #### `sudo eggs tools yolk`
@@ -970,7 +964,7 @@ DESCRIPTION
   configure eggs to install without internet
 
 EXAMPLES
-  $ eggs yolk -v
+  sudo eggs tools yolk
 ```
 
 ### `eggs status`
@@ -978,33 +972,29 @@ EXAMPLES
 Mostra a video la configurazione di `eggs` e del sistema. 
 
 ```
-E G G S: the reproductive system of penguins
+E G G S: reproductive system of penguins
 
 
-     penguins-eggs       Perri's brewery edition        ver. 9.4.5       
-╭─────────────────╮  ╭──────────────────────────╮  ╭─────────────────────────╮
-│live     root p  │  │nest:   name:    ovariu   │  │kernel:      initrd.img  │
-│user/pa  asswd:  │  │/home/  egg-of-  m: /ho   │  │/boot/vmli   : /boot/in  │
-│sswd:     evolu  │  │eggs/   debian-  me/egg   │  │nuz-5.15.1   itrd.img-5  │
-│live/ev  tion    │  │        bullsey  s/ovar   │  │04-1-pve     .15.104-1-  │
-│olution          │  │        e-pve    ium/     │  │             pve         │
-│                 │  │                          │  │                         │
-╰─────────────────╯  ╰──────────────────────────╯  ╰─────────────────────────╯
-╭──────────────────────────────╮  ╭──────────────────────────────────────────╮
-│distro:        compatible:    │  │depende   configur  instal   uef  init:   │
-│Debian 11      Debian         │  │ncies:    ations:   ler:     i:   system  │
-│bullseye       bullseye       │  │OK        OK        GUI      OK   d       │
-╰──────────────────────────────╯  ╰──────────────────────────────────────────╯
+     penguins-eggs       Perri's brewery edition        ver. 10.0.3       
+╭───────────────────────────╮  ╭───────────────────────────╮  ╭──────────────────────────────────────╮
+│live user/  root passwd:   │  │nest: /ho  name: egg-of_   │  │kernel: /boot/vmli   initrd.img:      │
+│passwd:     evolution      │  │me/eggs/   debian-bookwo   │  │nuz-6.2.16-20-pve    /boot/initrd.im  │
+│live/evolu                 │  │           rm-father       │  │                     g-6.2.16-20-pve  │
+│tion                       │  │                           │  │                                      │
+╰───────────────────────────╯  ╰───────────────────────────╯  ╰──────────────────────────────────────╯
+╭───────────────────────────────────────────╮  ╭─────────────────────────────────────────────────────╮
+│distro: Debian 12    compatible: Debian    │  │configuration  uefi:   installer:    init system:    │
+│bookworm             bookworm              │  │s: OK          OK      krill         systemd         │
+╰───────────────────────────────────────────╯  ╰─────────────────────────────────────────────────────╯
 
-╭────────────────────────────────────────────────────────────────────────────╮
-│eggs       install your CLI iso with TUI installer krill, on GUI prefere    │
-│install   calamares                                                         │
-│eggs wardrobe build your personal system starting from cli                  │
-│                                                                            │
-│Info:  blog    https://penguins-eggs.net                                    │
-│       sources https://github.com/pieroproietti/penguins-eggs               │
-│       wardrobe https://github.com/pieroproietti/penguins-wardrobe          │
-╰────────────────────────────────────────────────────────────────────────────╯
+╭────────────────────────────────────────────────────────────────────────────────────────────────────╮
+│eggs install install your CLI iso with TUI installer krill, on GUI prefere calamares                │
+│eggs wardrobe build your personal system starting from cli                                          │
+│                                                                                                    │
+│Info:  blog    https://penguins-eggs.net                                                            │
+│       sources https://github.com/pieroproietti/penguins-eggs                                       │
+│       wardrobe https://github.com/pieroproietti/penguins-wardrobe                                  │
+╰────────────────────────────────────────────────────────────────────────────────────────────────────╯
 ```
 
 Da notare sulla destra la presenza di bottoni rossi, che possono indicare problemi con le dipendenze, configurazione, etc.
@@ -1029,7 +1019,8 @@ GLOBAL FLAGS
 FLAG DESCRIPTIONS
   --verbose  Show additional information about the CLI.
 
-    Additionally shows the architecture, node version, operating system, and versions of plugins that the CLI is using.
+    Additionally shows the architecture, node version, operating system, and versions of plugins that
+    the CLI is using.
 ```
 
 _See code: [@oclif/plugin-version](https://github.com/oclif/plugin-version/blob/v1.1.4/src/commands/version.ts)_
@@ -1038,6 +1029,8 @@ _See code: [@oclif/plugin-version](https://github.com/oclif/plugin-version/blob/
 Scarica il `wardrobe` dalla repository indicata in `REPO`, se non viene fornito alcun parametro, viene utilizzato il [penguins-wardrobe](https://github.com/pieroproietti/penguins-wardrobe).
 
 ```
+et warorobe
+
 USAGE
   $ eggs wardrobe get [REPO] [-h] [-v]
 
@@ -1062,13 +1055,14 @@ Elenca i `costume` e gli `accessories` disponibili nel `WARDROBE` utilizzato.
 
 ```
 USAGE
-  $ eggs wardrobe list [WARDROBE] [-h] [-v]
+  $ eggs wardrobe list [REPO] [-d <value>] [-h] [-v]
 
 ARGUMENTS
-  WARDROBE  wardrobe
+  REPO  wardrobe to get
 
 FLAGS
-  -h, --help     Show CLI help.
+  -d, --distro=<value>  distro
+  -h, --help            Show CLI help.
   -v, --verbose
 
 DESCRIPTION
@@ -1078,17 +1072,21 @@ EXAMPLES
   $ eggs wardrobe list
 
   $ eggs wardrobe list your-wardrobe
+
+  $ eggs wardrobe list --distro arch
 ```
 
 ### `eggs wardrobe show [COSTUME]`
 Stampa a video il contenuto di `index.yaml` del `COSTUME`
 
 ```
+show costumes/accessories in wardrobe
+
 USAGE
-  $ eggs wardrobe show [COSTUME] [-h] [-j] [-v] [-w <value>]
+  $ eggs wardrobe show [REPO] [-h] [-j] [-v] [-w <value>]
 
 ARGUMENTS
-  COSTUME  costume
+  REPO  costume to show
 
 FLAGS
   -h, --help              Show CLI help.
@@ -1367,25 +1365,48 @@ Essenzialmente possiamo dividere i pacchetti da cui `eggs` dipende, in:
 #### Pacchetti comuni
 Questi pacchetto sono i prerequisiti di `eggs` per tutte le versioni installate:
 
- * `coreutils`
- * `cryptsetup`
- * `curl`
- * `dosfstools`
- * `dpkg-dev`
- * `git`
- * `isolinux`
- * `jq`
- * `live-boot`
- * `live-boot-initramfs`
- * `lsb-release`
- * `lvm2`
- * `parted`
- * `pxelinux`
- * `rsync`
- * `sshfs`
- * `squashfs-tools`
- * `whois`
- * `xorriso`
+```
+# Description: This file contains the dependencies for the packages in the project.
+---
+##
+# common dependencies 
+common:
+  - coreutils 
+  - cryptsetup 
+  - curl # wardrobe
+  - dosfstools # eggs
+  - dpkg-dev  # yolk
+  - git # wardrobe
+  - isolinux # eggs
+  - jq # mom
+  - live-boot # eggs
+  - live-boot-doc # eggs
+  - live-boot-initramfs-tools # eggs
+  - 'live-config-systemd | live-config-sysvinit'
+  - live-tools # eggs
+  - lsb-release  # eggs
+  - lvm2  # pvdisplay in krill
+  - nodejs (>= 18)
+  - parted 
+  - pxelinux # cuckoo
+  - rsync
+  - squashfs-tools
+  - sshfs # eggs
+  - syslinux-common
+  - xorriso
+
+# dependencies arch specific
+arch:
+  amd64:
+  - grub-efi-amd64-bin
+  - syslinux
+
+  i386:
+  - syslinux
+
+  arm64:
+  - syslinux-efi
+```
 
 #### pacchetti dipendenti dalla architettura
 A seconda della architettura sulla quale `eggs` è installato verranno selezionati differenti pacchetti. Le architetture possono essere: i386, amd64, armel ed arm64:
@@ -1397,7 +1418,7 @@ A seconda della architettura sulla quale `eggs` è installato verranno seleziona
 #### pacchetti dipendenti dalla versione
 Questi pacchetti sono specifici della versione in uso. si noti che mentre è relativamente semplice cambiare il nome della distribuzione, non è affatto lo stesso per quanto riguarda la versione che è univoca.
 
-Le versioni gestite da `eggs` sono: `buster`, `bullseye`, `beowulf`, `chimaera`, `daedalus`, `bionic`, `focal`, `jammy`.
+Le versioni gestite da `eggs` sono: `buster`, `bullseye`, `beowulf`, `chimaera`, `daedalus`, `bionic`, `focal`, `jammy`, `noble`.
 
 Per alcune distribuzioni come linuxmint, ufficiozero ed altre che pur essendo delle derivate utilizzano dei nomi di versione diversi, sono ricondotte alla versione originale, così ad esempio linuxmint uma viene configurato come Ubuntu focal, mentre linuxmint tricia viene configurato come Ubuntu bionic.
 
@@ -1409,7 +1430,7 @@ Per alcune distribuzioni come linuxmint, ufficiozero ed altre che pur essendo de
 #### pacchetti dipendenti dal tipo di init
 Abbiamo bisogno di questo tipo di pacchetti, perchè alcune derivate di Debian buster - principalmente MX Linux - utilizzano sysvinit come init al posto di systemd anche se sono contraddistinte dalla stessa versione: buster.
 
- * `live-config-sysvinit sysvinit`
+ * 'live-config-systemd | live-config-sysvinit'
 
 Mentre i pacchetti comuni e quelli dipendenti dalla architettura sono sempre installati automaticamente dagli script di preinstallazione, non è così per i pacchetti che dipendono dalla versione o dal tipo di inizializzazione. Per questi pacchetti è necessario il comando eggs config.
 
