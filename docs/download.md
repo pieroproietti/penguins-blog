@@ -11,8 +11,8 @@ import Translactions from '@site/src/components/Translactions';
 ## Distribuzioni 
 
 ### Debian
-* [debian-bookworm-colibri_amd64](../static/iso/egg-of_debian-bookworm-colibri_amd64_2024-06-25_1215.iso)
+* [egg-of_debian-bookworm-colibri_amd64](https://sourceforge.net/projects/penguins-eggs/files/ISOS/debian/bookworm/amd64/egg-of_debian-bookworm-colibri_amd64_2024-06-25_0857.iso/download)
 
 ### Linuxmint faye
-* [linuxmint-faye-cinnamon_amd64](../static/iso/egg-of_linuxmint-faye-cinnamon_amd64_2024-06-24_2047.iso)
-* [linuxmint-faye-cinnamon_i386](../static/iso/egg-of_linuxmint-faye-cinnamon_i386_2024-06-25_0806.iso)
+* [linuxmint-faye-cinnamon_amd64](https://sourceforge.net/projects/penguins-eggs/files/ISOS/linuxmint/faye/egg-of_linuxmint-faye-cinnamon_amd64_2024-06-24_2047.iso/download)
+* [linuxmint-faye-cinnamon_i386](https://sourceforge.net/projects/penguins-eggs/files/ISOS/linuxmint/faye/egg-of_linuxmint-faye-cinnamon_i386_2024-06-25_0806.iso/download)
