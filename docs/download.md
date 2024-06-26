@@ -2,17 +2,18 @@
 title: Download
 authors: pieroproietti
 slug: download
-lang: it
+lang: en
 ---
 import Translactions from '@site/src/components/Translactions';
 
 <Translactions />
 
-## Distribuzioni 
+## Distros
 
 ### Debian bookworm colibri
+A light xfce4 for developers you can easily start to improve eggs installing colibri.
 
-* [colibri amd64](https://sourceforge.net/projects/penguins-eggs/files/ISOS/debian/bookworm/amd64/egg-of_debian-bookworm-colibri_amd64_2024-06-25_0857.iso/download)
+Download: [colibri amd64](https://mega.nz/file/QDJhjIhR#mKZrD3KpQ6pOCm6k5f_EPFEO7mqh0DwtqeQYYbeUNS0)
 
 ### LastOSLinux
 After having for more than 20 years, countless success with Windows-based live distributions, team at [LastOS.org](https://home.lastos.org/) is teaming up with penguins-eggs to release their first version of LastOSLinux, naturally Windows compatible.
