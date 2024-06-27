@@ -1353,14 +1353,6 @@ Per chi è interessato a realizzare film animati, non posso non consigliare [Qui
 
 La versione quirinux-general può essere anche scaricata dalla pagina [sourceforge di penguins-eggs](https://sourceforge.net/projects/penguins-eggs/files/ISOS/quirinux/).
 
-### `UfficioZero`
-
-Per un uso d'ufficio posso raccomandare [UfficioZero](https://www.ufficiozero.org/), una serie di più distribuzioni derivate da Debian, Devuan, Ubuntu e Linuxmint tutte finalizzate ad un orientamento professionale. UfficioZero - in verità - da un po' di tempo non utilizza più `penguins-eggs` ma il periodo di collaborazione è stato piacevole e proficuo!
-
-![UfficioZero](/img/users-guide/ufficiozero-logo.png)
-
-### Rimasterizzazioni di amici
-A questa lista mancano naturalmente molte altre customizzazioni - eggs è scaricato mediamente 50/100 volte a settimana da sourceforge e, sono quasi sempre nuovi utilizzatori - perchè gli aggiornamenti avvengono con i rispettivi package manager.
 
 #### Deblinux
 [Deblinux](https://sourceforge.net/projects/deblinux/) di andreone a cui va riconosciuta una grande determinazione ed il coraggio o, la pazzia, di fidarsi di un tool assolutamente sconosciuto.
@@ -1377,6 +1369,9 @@ La sua distro si chiama [NovaOS](https://github.com/NicklasVraa/NovaOS) ed è ba
 
 ![NovaOS](/img/users-guide/novaos.png)
 
+#### PredatorOS
+[Predator-OS](https://predator-os.ir/) is actually a Debian-based distribution designed for penetration testing and ethical hacking and also privacy, hardened, secure, anonymized use, from our friend 
+
 #### SysLinuxOS
 [SysLinuxOS](https://syslinuxos.com/) for System Integrators di [Franco Conidi](https://francoconidi.it/), conosciuto anche per il suo lavoro su systemBack, rappresenta un ottimo esempio di distribuzione verticale.
 
@@ -1385,15 +1380,16 @@ La sua distro si chiama [NovaOS](https://github.com/NicklasVraa/NovaOS) ed è ba
 #### Telos
 Non posso non includere l'amico Yannis ed il suo [TeLOS](https://sourceforge.net/projects/teloslinux/) che posso raccomandare anche perchè con Telos ho scritto una delle prime versioni di questa guida.
 
+
 ## Supporto e segnalazioni
 
-`eggs` è un progetto che consente di rimasterizzare diverse versioni di Linux:
+`penguins-eggs` è un progetto che consente di rimasterizzare diverse versioni di Linux:
 
 * `Arch Linux`
 * `Debian buster/bullseyes/bookworm + stretch/jessie`
 + `Devuan beowulf/chimaera`
 * `Manjaro`
-* `Ubuntu bionic/focal/jammy`
+* `Ubuntu bionic/focal/jammy/noble`
 
 e la maggior parte delle derivate, ne cito solo alcune: `deepin`, `Linuxmint`, `LMDE`, `KDE neon`, `pop-os!`, `zorin`, etc.
 
@@ -1432,7 +1428,8 @@ Piero Proietti
 Essenzialmente possiamo dividere i pacchetti da cui `eggs` dipende, in:
 
 #### Pacchetti comuni
-Questi pacchetto sono i prerequisiti di `eggs` per tutte le versioni installate:
+
+Questi pacchetti sono i prerequisiti di `penguins-eggs` per tutte le versioni installate:
 
 ```
 # Description: This file contains the dependencies for the packages in the project.
@@ -1451,7 +1448,7 @@ common:
   - live-boot # eggs
   - live-boot-doc # eggs
   - live-boot-initramfs-tools # eggs
-  - 'live-config-systemd | live-config-sysvinit'
+  - live-config-systemd | live-config-sysvinit 
   - live-tools # eggs
   - lsb-release  # eggs
   - lvm2  # pvdisplay in krill
@@ -1476,32 +1473,6 @@ arch:
   arm64:
   - syslinux-efi
 ```
-
-#### pacchetti dipendenti dalla architettura
-A seconda della architettura sulla quale `eggs` è installato verranno selezionati differenti pacchetti. Le architetture possono essere: i386, amd64, armel ed arm64:
-
- * `syslinux`:  i386 / amd64;
- * `syslinux-efi`:  armel / amd64;
- * `ipxe`: armel / amd64;
-
-#### pacchetti dipendenti dalla versione
-Questi pacchetti sono specifici della versione in uso. si noti che mentre è relativamente semplice cambiare il nome della distribuzione, non è affatto lo stesso per quanto riguarda la versione che è univoca.
-
-Le versioni gestite da `eggs` sono: `buster`, `bullseye`, `beowulf`, `chimaera`, `daedalus`, `bionic`, `focal`, `jammy`, `noble`.
-
-Per alcune distribuzioni come linuxmint, ufficiozero ed altre che pur essendo delle derivate utilizzano dei nomi di versione diversi, sono ricondotte alla versione originale, così ad esempio linuxmint uma viene configurato come Ubuntu focal, mentre linuxmint tricia viene configurato come Ubuntu bionic.
-
- * `live-config: jessie, stretch, buster, bullseye, focal, jammy`
- * `live-config-systemd: jessie, stretch, buster, bullseye, focal, jammy`
- * `live-config-sysvinit: beowulf`
- * `open-infrastructure-system-config: bionic`
-
-#### pacchetti dipendenti dal tipo di init
-Abbiamo bisogno di questo tipo di pacchetti, perchè alcune derivate di Debian buster - principalmente MX Linux - utilizzano sysvinit come init al posto di systemd anche se sono contraddistinte dalla stessa versione: buster.
-
- * 'live-config-systemd | live-config-sysvinit'
-
-Mentre i pacchetti comuni e quelli dipendenti dalla architettura sono sempre installati automaticamente dagli script di preinstallazione, non è così per i pacchetti che dipendono dalla versione o dal tipo di inizializzazione. Per questi pacchetti è necessario il comando eggs config.
 
 **Nota**: _I pacchetti per l'installer grafico `calamares`, non essendo indispensabili per la creazione della ISO, non vengono installati automaticamente, semplicemente vengono proposti se ```force_installer: true``` durante la creazione della iso._
 
