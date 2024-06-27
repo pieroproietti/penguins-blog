@@ -44,7 +44,25 @@ Abbiamo diverse possibilità per l'installazione di `penguins-eggs`:
 Per la maggior parte degli utenti l'installazione del pacchetto precompilato è quella più indicata.
 
 ### Pacchetti .deb 
+
 I pacchetti .deb sono disponibili per tutte le distribuzioni originali e deridate da: `Debian`, `Devuan` ed `Ubuntu`.
+
+Note: Dalla versione 10.0.x sto utilizzando un diverso metodo per pacchetizzare penguins-eggs: nodejs non è più incluso nel pacchetto come in precedenza, ma dipende dalla disponibilità di nodejs>18 tra i pacchetti disponibili nelle repositories.
+
+Tutto cià è configurato nel pacchetto penguins-eggs, che attualmente richiede nodejs (>= 18), nel suo fileDEBIAN/control.
+
+Non tutte le distribuzioni e derivate, però hanno di defailt nodejs >=18 disponibile, nelle lore repository originali.
+
+Per installare penguins-eggs, dovremo aggiungere le repository nodesource per nodejs 18 o migliore.
+
+```
+sudo apt-get install -y curl
+curl -fsSL https://deb.nodesource.com/setup_18.x -o nodesource_setup.sh
+sudo -E bash nodesource_setup.sh
+```
+
+A questo punto, saremo pronti per installare penguins-eggs al nostro sistema.
+
 
 Se non desiderate includere penguins-eggs-ppa fra le repository del vostro sistema, potete semplicemente scaricare l'ultima versione di eggs dal sito di [sourceforge](https://sourceforge.net/projects/penguins-eggs/files/DEBS/) ed installarla con il comando:
 
@@ -52,7 +70,7 @@ Se non desiderate includere penguins-eggs-ppa fra le repository del vostro siste
 sudo dpkg -i penguins_eggs-10.0.x.deb
 ```
 
-Se si tratta della prima installazione, il pacchetto non verrà installato per la mancanza delle dipendenze. Vi basterà dare il comando:
+Se si tratta della prima installazione, il pacchetto non verrà installato per la mancanza delle dipendenze. Per concludere l'installazione vi basterà dare il comando:
 
 ```
 sudo apt install -f
