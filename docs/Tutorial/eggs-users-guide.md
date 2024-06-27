@@ -331,7 +331,23 @@ EXAMPLES
 
 Per funzionare `eggs` ha bisogno di vari pacchetti installati: le cosidette `dependencies`, inoltre necessita di creare ed installare le pagine di `man` di `eggs` ed installare l'autocomplete di `eggs` stesso. Tutto questo viene curato dal processo di pacchettizzazione `.deb` o `PKGBUILD` che a sua volta sarà basato sul gestore di pacchetti della distribuzione in uso: `apt` o `pacman`.
 
-Questo, tra l'altro, ha reso obsoleto il comando ```eggs config``` prima necessario che viene sostituito da ```eggs dad``` combinato, eventualmente, con il flag ```--default```
+Questo, tra l'altro, ha reso obsoleto il comando ```eggs config``` prima necessario che viene sostituito da ```eggs dad``` combinato, eventualmente, con il flag ```--default``` o con il flad ```--file``` ed un file yaml di configurazione come in questo esempio:
+
+```
+sudo eggs dad --file custom.yaml
+```
+
+dove il file custom.yaml, contiene:
+
+```
+# custom.yaml
+---
+root_passwd: secret
+snapshot_basename: columbus
+snapshot_prefix: '' # none
+user_opt_passwd: secret
+user_opt: user 
+```
 
 Segnalo la presenza in `/etc/penguins-eggs.d` di tre differenti file di configurazione che vengono generati automaticamente durante l'installazione.
 
