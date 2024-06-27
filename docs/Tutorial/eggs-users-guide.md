@@ -204,7 +204,7 @@ Il funzionamento rimane tuttavia esattamente lo stesso, ma si ha il vantaggio di
 Per lo sviluppo, personalmente utilizzo [code](https://code.visualstudio.com/), ma potete scegliere altri editor [atom](https://atom.io/), [sublime](https://www.sublimetext.com/), etc)_.
 
 ## La praticità di una applicazione CLI
-Una applicazione CLI non deve per forza essere difficile da utilizzare, anzi, spesso è molto intuitiva, presenta per ogni comando flag come `--help`, `--verbose`, un manuale sempre disponibile ed aggiornato `man eggs`, ed aiuti vari, come `mom` e `dad`.
+Una applicazione CLI non deve per forza essere difficile da utilizzare, anzi, spesso è molto intuitiva, presenta per ogni comando flag come `--help`, `--verbose`, un manuale sempre disponibile ed aggiornato `man eggs`, ed aiuti vari, come `mom` e `dad`. Se sul nostro sistema è installato il pacchetto `bash-completion` avremo, inoltre, a disposizione le funzioni di autocomplete dei vari comandi.
 
 ### `--help`
 

@@ -35,6 +35,12 @@ function HomepageHeader() {
           &nbsp;
           <Link
             className="button button--secondary button--lg"
+            to="/docs/download">
+            Download
+          </Link >
+          &nbsp;
+          <Link
+            className="button button--secondary button--lg"
             to="/docs/faq">
             FAQ 
           </Link>
