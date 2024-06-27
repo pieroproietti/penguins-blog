@@ -331,7 +331,7 @@ EXAMPLES
 
 Per funzionare `eggs` ha bisogno di vari pacchetti installati: le cosidette `dependencies`, inoltre necessita di creare ed installare le pagine di `man` di `eggs` ed installare l'autocomplete di `eggs` stesso. Tutto questo viene curato dal processo di pacchettizzazione `.deb` o `PKGBUILD` che a sua volta sarà basato sul gestore di pacchetti della distribuzione in uso: `apt` o `pacman`.
 
-Questo, tra l'altro, ha reso obsoleto il comando ```eggs config``` prima necessario che viene sostituito da ```eggs dad``` combinato, eventualmente, con il flag ```--default``` o con il flad ```--file``` ed un file yaml di configurazione come in questo esempio:
+Questo, tra l'altro, ha reso obsoleto il comando ```eggs config``` prima necessario, che viene sostituito - quasi completamente - da ```eggs dad``` combinato, eventualmente, con il flag ```--default``` o con il flag ```--file``` ed un file yaml di configurazione come in questo esempio:
 
 ```
 sudo eggs dad --file custom.yaml
@@ -478,6 +478,16 @@ Questo comando crea o ricrea la configurazione di eggs nella directory ```/etc/p
 
 
 ![eggs-dad-d](/images/book9.2/eggs-status.png)
+
+
+Naturalmente, i valori di default, non vanno bene per tutti, possiamo rimpiazzarli creand in file yaml nel quale andremo ad inserire i nostri valori.
+A questo punto, chiameremo dad in questo modo:
+
+```
+sudo eggs dad --file custom.yaml
+```
+
+Ottentendo una configurazione personalizzata per la nostra distro.
 
 
 ## I comandi di `eggs`
@@ -851,31 +861,56 @@ Di gran lunga la modalità d'uso che utilizzo è `sudo eggs produce` o `sudo egg
 produce a live image from your system whithout your data
 
 USAGE
-  $ eggs produce [--addons <value>...] [--basename <value>] [-c] [-C] [--excludes <value>...] [-h] [--links <value>...] [-m] [-N] [-n] [-p <value>] [--release] [-s] [-f] [--theme
-    <value>] [-u] [-v] [-y]
+  $ eggs produce [--addons <value>...] [--basename <value>] [-c] [-C]
+    [--excludes <value>...] [-h] [--links <value>...] [-m] [-N] [-n] [-p] [-P
+    <value>] [--release] [-s] [-f] [--theme <value>] [-u] [-v] [-y]
 
 FLAGS
   -C, --cryptedclone         crypted clone
-  -N, --noicons              no icons on desktop
+  -N, --noicon               no icon eggs on desktop
+  -P, --prefix=<value>       prefix
   -c, --clone                clone
-  -f, --standard             standard compression
+  -f, --standard             standard compression: xz -b 1M
   -h, --help                 Show CLI help.
-  -m, --max                  max compression
+  -m, --max                  max compression: xz -Xbcj ...
   -n, --nointeractive        no user interaction
-  -p, --prefix=<value>       prefix
+  -p, --pendrive             optimized for pendrive: zstd -b 1M
+                             -Xcompression-level 15
   -s, --script               script mode. Generate scripts to manage iso build
   -u, --unsecure             /root contents are included on live
   -v, --verbose              verbose
   -y, --yolk                 force yolk renew
       --addons=<value>...    addons to be used: adapt, ichoice, pve, rsupport
       --basename=<value>     basename
-      --excludes=<value>...  use: custom, home, mine, usr, var
+      --excludes=<value>...  use: static, homes, home
       --links=<value>...     desktop links
-      --release              release: max compression, remove penguins-eggs and calamares after installation
+      --release              release: remove penguins-eggs, calamares and
+                             dependencies after installation
       --theme=<value>        theme for livecd, calamares branding and partitions
 
 DESCRIPTION
   produce a live image from your system whithout your data
+
+EXAMPLES
+  sudo eggs produce                    # fast compression
+
+  sudo eggs produce --max              # max compression
+
+  sudo eggs produce --pendrive         # compression optomized pendrive
+
+  sudo eggs produce --clone            # clone
+
+  sudo eggs produce --cryptedclone     # crypted clone
+
+  sudo eggs produce --basename=colibri
+
+  sudo eggs produce --theme lastos
+
+  sudo eggs produce --excludes static  # you can customize it
+
+  sudo eggs produce --excludes homes   # exclude /home/*
+
+  sudo eggs produce --excludes home    # exclude ~/*
 ```
 
 
