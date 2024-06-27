@@ -12,6 +12,16 @@ import Translactions from '@site/src/components/Translactions';
 
 ### Debian/Devuan/Ubuntu
 
+> Nota: Se non siete su: Debian bookworm o Ubuntu noble, non avrete immediatamente disponibile nodejs >18. 
+
+Per rendere disponibile, nodejs 18, copiate ed incollate i seguenti comandi:
+```
+sudo apt-get install -y curl
+curl -fsSL https://deb.nodesource.com/setup_18.x -o nodesource_setup.sh
+sudo -E bash nodesource_setup.sh
+```
+A questo punto siete pronti ai passaggi successivi.
+
 Scarica il pacchetto `penguins-eggs_10.0.x_amd64.deb` dalla pagina del progetto [penguins-eggs](https://sourceforge.net/projects/penguins-eggs/files/DEBS/).
 
 `sudo dpkg -i penguins-eggs_10.0.x_amd64.deb` 
