@@ -34,3 +34,7 @@ Penguins-eggs provides the tool for creating the system that is managed directly
 
 Download: [LastOSLinux_amd64_2024-06-26_1620.iso](https://mega.nz/file/YTgiHLDB#4eGqVuPwRfpBEJ3znklYsOzlvAoDIPkoQmp_ZYZomrA).
 
+
+# All others respins, packages, etc can be found at out [sourceforge page](https://sourceforge.net/projects/penguins-eggs/).
+
+
