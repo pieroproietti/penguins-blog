@@ -86,22 +86,19 @@ Se vogliamo utilizzare l'installer grafico Calamares per l'installazione delle i
 Per installare e configurare calamares. utilizziamo il comando: `sudo eggs calamares --install`
 
 ## Produzione della prima ISO
-Creare una ISO è semplice come dare un solo comando: `sudo eggs produce` tuttavia occorre fare una premessa.
+
+Creare una ISO è semplice come dare il comando: `sudo eggs produce`.
 
 ### La directory `/etc/skel`
-La creazione di un nuovo utente parte dalla copia della directory `/etc/skel` e del suo contenuto nella home dell'utente stesso.
+Per conservare le impostazioni del desktop - nel caso non stiamo producendo un clone - occorre che siano impostate nella cartella `/etc/skel`. Infatti Linux, per la creazione di un nuovo utente, parte con la copia di `/etc/skel` nella home del nuovo utente.
 
-Se abbiamo fatto delle configurazione sul nostro utente in uso, le perderemo sulla live, perchè partiremo dalla configurazione presente in `/etc/skel`.
+Se abbiamo fatto, quindi, delle configurazione sul nostro utente, queste saranno perse sia sulla live che per ogni ulteriore utente creato. 
 
-Per ovviare al problem e conservare le nostre configurazioni, quindi, è opportuno copiarle all'interno di `/etc/skel`.
+Per ovviare al problema e conservare le nostre configurazioni è, quindi, necessario riportare queste configurazioni all'interno di `/etc/skel`.
 
-Questo è possibile utilizzando il comando: `sudo eggs tools skel` che copierà le principali configurazioni presenti a seconda del Desktop in uso.
+Utilizzando il comando: `sudo eggs tools skel`, le principali configurazioni presenti a seconda del Desktop in uso saranno copiate in `/etc/skel`. pronte ad essere utilizzate per i nuovi utenti e per l'utente live.
 
-### Produzione della iso
-
-`sudo eggs produce`
-
-#### Produzione della iso - con i propri dati utente
+### Produzione della iso - con i propri dati utente
 La produzione della ISO con i propri dati utente viene effettuata con il comando: `sudo eggs produce --clone`.
 
 ## Dimensioni della ISO
