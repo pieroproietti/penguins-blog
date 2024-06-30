@@ -10,21 +10,31 @@ import Translactions from '@site/src/components/Translactions';
 
 ## Prima installazione
 
-### Debian/Devuan/Ubuntu
+### Arch/Debian/Devuan/Manjaro/Ubuntu
 
-> Nota: Se non siete su: Debian bookworm o Ubuntu noble, non avrete immediatamente disponibile nodejs >18. 
+```
+git clone https://github.com/pieroproietti/get-eggs
+cd get-eggs
+sudo ./get-eggs
+```
 
-Per rendere disponibile, nodejs 18, copiate ed incollate i seguenti comandi:
+Questa produra è applicabile anche a Debian buster / bullseye, Ubuntu focal ed Ubuntu jammy.
+Per queste distribuzioni, `get-eggs` provvederà ad installare la repository
+[nodesource](https://github.com/nodesource/distributions) per rendere disponibile
+`nodejs>18`
+
+
+### Ubuntu bionic
 ```
 sudo apt-get install -y curl
-curl -fsSL https://deb.nodesource.com/setup_18.x -o nodesource_setup.sh
+curl -fsSL https://deb.nodesource.com/setup_16.x -o nodesource_setup.sh
 sudo -E bash nodesource_setup.sh
 ```
-A questo punto siete pronti ai passaggi successivi.
 
-Scarica il pacchetto `penguins-eggs_10.0.x_amd64.deb` dalla pagina del progetto [penguins-eggs](https://sourceforge.net/projects/penguins-eggs/files/DEBS/).
 
-`sudo dpkg -i penguins-eggs_10.0.x_amd64.deb` 
+Scarica il pacchetto `penguins-eggs_10.0.x_amd64-bionic-x.deb` dalla pagina del progetto [penguins-eggs](https://sourceforge.net/projects/penguins-eggs/files/DEBS/).
+
+`sudo dpkg -i penguins-eggs_10.0.x_amd64-bionic-x.deb` 
 
 Otterrete un errore per mancanza delle dipendenze, ma non preoccupatevi.
 
@@ -34,14 +44,12 @@ Otterrete un errore per mancanza delle dipendenze, ma non preoccupatevi.
 
 In tal caso, lanciate il comando: `sudo apt update` e ricominciate da capo.
 
-##### Aggiunta delle repository ppa di penguins-eggs
+#### Aggiunta delle repository ppa di penguins-eggs
 
 Una volta installato penguins-eggs, potete aggiungere le repository ppa per tenerlo sempre aggiornato utilizzando semplicemente il comando apt o qualsiasi gestiore dei pacchetti grafico. 
 
 Per farlo, lanciate il comando: `sudo eggs tools ppa --add`
 
-### Arch
-Per installare penguins-eggs su Arch, utilizzate il comando yay: `sudo yay penguins-eggs`
 
 ### Manjaro
 L'installazione di penguins-eggs su Manjaro avviene tramite il comando pamac:
