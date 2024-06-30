@@ -87,29 +87,23 @@ Per ridurre le dimensioni della ISO possiamo - di massima - eliminare dal filesy
 
 Naturalmente l'algoritmo di compressione del filesystem utilizzato da squashfs può ridurre notevolmente la dimensione ottenuta. 
 
-Di default eggs utilizza per la compressione `zstd lovel-1` molto veloce in compressione ma non altrettanto efficiente. E' consigliato per la creazione delle ISO di prova, poichè ci fa risparmiare tempo.
+Di default eggs utilizza per la compressione `zstd lovel-3` è molto veloce in compressione ma non altrettanto efficiente. E' consigliato per la creazione delle ISO di prova, poichè ci fa risparmiare tempo.
 
-Per ottenere una ISO più leggera però, possimo utilizzare le opzioni di compression `--standard` o `--max`, entrambe utilizzano il parametro `xz -b 256L`, la seconda `xz -b 256K -Xbcj` riducendo ancora di più le dimensioni ottenute al prezzo di un maggior tempo di compressione.
+Abbiamo due scelte per le nostre ISO definitive e dipendono anche da come le vogliamo utilizzare.
 
-Ai fini pratici, consiglio SEMPRE di utilizzare il valore di default per le ISO di prova, quindi l'opzione `--max` per la ISO finale.
+eggs dispone del flag `--pendrive` che imposta una compressione `zstd level 15` abbastanza veloce in compressione e molto veloce in decompressione. Proprio per quest'ulima caratteristica è quella indicata per memorizzare le nostre ISO su una pennetta USB.
+
+Per ottenere una ISO più compressa - al prezzo anche di un certo ritardo nella decompressione, possimo utilizzare le opzioni di compression `--standard` o `--max`, entrambe utilizzano il parametro `xz -b 256L`. La seconda aggiunge `xz -b 256K -Xbcj` riducendo ancora di più le dimensioni ottenute al prezzo di un maggior tempo di compressione.
+
+Ai fini pratici, consiglio SEMPRE di utilizzare il valore di default per le ISO di prova, quindi l'opzione `--pendrive` o `--max` per la ISO finale.
 
 #### ISO finale
-eggs è un programma di rimasterizzazione e, non è detto che debba essere utilizzato da tutti gli utenti. Aggiungendo l'opzione `--release` al comando `produce` andremo a configurare l'installer per la rimozione di eggs e di calamares - se installato - dopo l'avvenuta installazione del sistema.
+eggs è un programma di rimasterizzazione e, non è detto che debba essere utilizzato da tutti gli utenti. Aggiungendo l'opzione `--release` al comando `produce` andremo a configurare l'installer per la rimozione di eggs e dell'installer calamares - se installato - nonchè di tutte le dipendenze, ad avvenuta installazione del sistema.
 
-Esempio: `sudo eggs produce --max --release`
+Esempio: `sudo eggs produce --pendrive --release`
 
-@@@@ Customizzazione del theme del live e di calamares
+#### Customizzazione del theme del live e di calamares
 E' possibile, infine, utilizzare un tema diverso da quello di default per la propria remix. Tutto quello che dovete fare è crearvi un tema proprio od utilizzare uno dei `themes` inclusi in `wardrobe`,
 
-Esempio:  `sudo eggs produce --max --release --theme ./wardrobe/themes/waydroid`
-
-
-
-
-
-
-
-
-
-
+Esempio:  `sudo eggs produce --max --release --theme educandos`
 
