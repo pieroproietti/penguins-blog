@@ -54,13 +54,8 @@ La configurazione può essere fatta con il comando: `sudo eggs dad -d`. Verrà c
 ## Installazione di Calamares
 Se vogliamo utilizzare l'installer grafico Calamares per l'installazione delle immagini ISO create con penguins-eggs, dobbiamo installare Calamares.
 
-### Debian/Devuan/Ubuntu/Manjaro
-`sudo eggs calamares --install`
-
-### Arch
-In Arch è necessario utilizzare yay per installare Calamares, il comando è semplice, ma richiede un po' di tempo perchè comporta la compilazione del pacchetto: `yay calamares`.
-
-Una volta installato calamares, daremo comunque il comando `sudo eggs calamares --install` che configurerà calamares per l'uso senza l'introduzione della password di root.
+### Arch/Debian/Devuan/Ubuntu/Manjaro
+Per installare e configurare calamares. utilizziamo il comando: `sudo eggs calamares --install`
 
 ## Produzione della prima ISO
 Creare una ISO è semplice come dare un solo comando: `sudo eggs produce` tuttavia occorre fare una premessa.
@@ -73,7 +68,6 @@ Se abbiamo fatto delle configurazione sul nostro utente in uso, le perderemo sul
 Per ovviare al problem e conservare le nostre configurazioni, quindi, è opportuno copiarle all'interno di `/etc/skel`.
 
 Questo è possibile utilizzando il comando: `sudo eggs tools skel` che copierà le principali configurazioni presenti a seconda del Desktop in uso.
-
 
 ### Produzione della iso
 
