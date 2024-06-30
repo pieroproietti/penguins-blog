@@ -47,14 +47,34 @@ Per installare penguins-eggs su Arch, utilizzate il comando yay: `sudo yay pengu
 L'installazione di penguins-eggs su Manjaro avviene tramite il comando pamac:
 `pamac install penguins-eggs`
 
-
-## Configurazione
+## Configurazione di penguins-eggs
 La configurazione può essere fatta con il comando: `sudo eggs dad -d`. Verrà creato il file `/etc/penguins-eggs.d.eggs.yaml` che potete successivamente editare per adattare meglio alle vostre necessità.
+
+Se volete sostituire i paramentri di default potete crearvi un file `custom.yaml` ed apportare le vostre modifiche.
+
+```
+# custom.yaml
+---
+root_passwd: secret
+snapshot_basename: columbus
+snapshot_prefix: '' # none
+user_opt_passwd: secret
+user_opt: user 
+```
+
+Per avere, sempre a disposizione le vostre impostazione, vi basterà lanciare dad on il flag --file. come in questo esempio:
+
+```
+sudo eggs dad --file custom.yaml
+```
+
+La configurazione verrà impostata secondo i vostri default.
+
 
 ## Installazione di Calamares
 Se vogliamo utilizzare l'installer grafico Calamares per l'installazione delle immagini ISO create con penguins-eggs, dobbiamo installare Calamares.
 
-### Arch/Debian/Devuan/Ubuntu/Manjaro
+#### Arch/Debian/Devuan/Ubuntu/Manjaro
 Per installare e configurare calamares. utilizziamo il comando: `sudo eggs calamares --install`
 
 ## Produzione della prima ISO
@@ -73,10 +93,10 @@ Questo è possibile utilizzando il comando: `sudo eggs tools skel` che copierà 
 
 `sudo eggs produce`
 
-### Produzione della iso - con i propri dati utente
+#### Produzione della iso - con i propri dati utente
 La produzione della ISO con i propri dati utente viene effettuata con il comando: `sudo eggs produce --clone`.
 
-## Ridurre le dimensioni della ISO
+## Dimensioni della ISO
 Per ridurre le dimensioni della ISO possiamo - di massima - eliminare dal filesystem della macchina genitore quei dati come logs, cache dei pacchetti, etc non stettamente necessari in una live. E semplice come dare il comando: `sudo eggs tools clean`.
 
 Naturalmente l'algoritmo di compressione del filesystem utilizzato da squashfs può ridurre notevolmente la dimensione ottenuta. 
@@ -91,7 +111,7 @@ Per ottenere una ISO più compressa - al prezzo anche di un certo ritardo nella 
 
 Ai fini pratici, consiglio SEMPRE di utilizzare il valore di default per le ISO di prova, quindi l'opzione `--pendrive` o `--max` per la ISO finale.
 
-#### ISO finale
+## ISO finale
 eggs è un programma di rimasterizzazione e, non è detto che debba essere utilizzato da tutti gli utenti. Aggiungendo l'opzione `--release` al comando `produce` andremo a configurare l'installer per la rimozione di eggs e dell'installer calamares - se installato - nonchè di tutte le dipendenze, ad avvenuta installazione del sistema.
 
 Esempio: `sudo eggs produce --pendrive --release`
@@ -100,4 +120,3 @@ Esempio: `sudo eggs produce --pendrive --release`
 E' possibile, infine, utilizzare un tema diverso da quello di default per la propria remix. Tutto quello che dovete fare è crearvi un tema proprio od utilizzare uno dei `themes` inclusi in `wardrobe`,
 
 Esempio:  `sudo eggs produce --max --release --theme educandos`
-
