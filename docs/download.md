@@ -17,7 +17,9 @@ For the purpose, for some respins: colibri and LastOSLinux, I created this downl
 ## Debian bookworm colibri
 A light xfce4 for developers you can easily start to improve eggs installing colibri. Completely made from the penguins-eggs team and used for the complete development.
 
-Download: [colibri amd64](https://mega.nz/file/QDJhjIhR#mKZrD3KpQ6pOCm6k5f_EPFEO7mqh0DwtqeQYYbeUNS0)
+Download: 
+* [egg-of_debian-bookworm-colibri_amd64_2024-06-30_1828.iso](https://mega.nz/folder/kTgnwCjI#eWwvhACs94fmGBakXCbG0g)
+* [egg-of_debian-bookworm-colibri_i386_2024-06-30_1308.iso](https://mega.nz/file/cGwiTYJK#1op4xI_b2gdInkgg0mSNS-LPtINvh3mqmc3pYGUQzNI)
 
 ## LastOSLinux
 After having for more than 20 years, countless success with Windows-based live distributions, team at [LastOS.org](https://home.lastos.org/) is teaming up with penguins-eggs to release their first version of LastOSLinux, naturally Windows compatible.
