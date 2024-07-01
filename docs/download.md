@@ -12,18 +12,12 @@ import Translactions from '@site/src/components/Translactions';
 
 For a long time I have been using to distribute the ISOs I create with penguins-eggs the [sourceforge page](https://sourceforge.net/projects/penguins-eggs/), unfortunately for some time now it has been getting longer and longer to download the ISOs. 
 
-For the purpose, for some respins: colibri and LastOSLinux at the moment, I created this download page using [mega services](https://mega.io/).
+For the purpose, for some respins: colibri and LastOSLinux, I created this download page using [mega services](https://mega.io/).
 
 ## Debian bookworm colibri
 A light xfce4 for developers you can easily start to improve eggs installing colibri. Completely made from the penguins-eggs team and used for the complete development.
 
 Download: [colibri amd64](https://mega.nz/file/QDJhjIhR#mKZrD3KpQ6pOCm6k5f_EPFEO7mqh0DwtqeQYYbeUNS0)
-
-## Debian bookworm voyager
-Voyager Live is an Xubuntu-based distribution and live DVD showcasing the Xfce desktop environment. Its features include the Avant Window Navigator or AWN (a dock-like navigation bar), Conky (a program which displays useful information on the desktop), and over 300 photographs and animations that can be used as desktop backgrounds. The project also develops several other editions of Voyager Live - a "GE" edition with GNOME Shell, a "GS" variant for Gamers, and a separately-maintained flavour based on Debian's "stable" branch.
-
-Download: [egg-of_debian-bookworm-voyager_amd64_2024-06-27_0821.iso](https://mega.nz/file/Yf5AjLxC#k08Vm0lIaiSBNpi3ivaf-oQeV1HTfWIeB9xBAitPEiI)
-
 
 ## LastOSLinux
 After having for more than 20 years, countless success with Windows-based live distributions, team at [LastOS.org](https://home.lastos.org/) is teaming up with penguins-eggs to release their first version of LastOSLinux, naturally Windows compatible.
