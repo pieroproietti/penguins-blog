@@ -87,10 +87,12 @@ Per installare e configurare calamares. utilizziamo il comando: `sudo eggs calam
 
 ## Produzione della prima ISO
 
+### Produrre una ISO (senza i dati utente)
 Creare una ISO è semplice come dare il comando: `sudo eggs produce`.
 
-### La directory `/etc/skel`
-Per conservare le impostazioni del desktop - nel caso non stiamo producendo un clone - occorre che siano impostate nella cartella `/etc/skel`. Infatti Linux, per la creazione di un nuovo utente, parte con la copia di `/etc/skel` nella home del nuovo utente.
+Occorre però occuparsi della directory `/etc/skel`, se vogliamo conservare la nostra customizzazione.
+
+Però per conservare le impostazioni del desktop - nel caso non stiamo producendo un clone - occorre che siano impostate nella cartella `/etc/skel`. Infatti Linux, per la creazione di un nuovo utente, parte con la copia di `/etc/skel` nella home del nuovo utente.
 
 Se abbiamo fatto, quindi, delle configurazione sul nostro utente, queste saranno perse sia sulla live che per ogni ulteriore utente creato. 
 
@@ -98,7 +100,7 @@ Per ovviare al problema e conservare le nostre configurazioni è, quindi, necess
 
 Utilizzando il comando: `sudo eggs tools skel`, le principali configurazioni presenti a seconda del Desktop in uso saranno copiate in `/etc/skel`. pronte ad essere utilizzate per i nuovi utenti e per l'utente live.
 
-### Produzione della iso - con i propri dati utente
+### Produzione della iso (con i dati utente)
 La produzione della ISO con i propri dati utente viene effettuata con il comando: `sudo eggs produce --clone`.
 
 ## Dimensioni della ISO
@@ -116,12 +118,31 @@ Per ottenere una ISO più compressa - al prezzo anche di un certo ritardo nella 
 
 Ai fini pratici, consiglio SEMPRE di utilizzare il valore di default per le ISO di prova, quindi l'opzione `--pendrive` o `--max` per la ISO finale.
 
-## ISO finale
-eggs è un programma di rimasterizzazione e, non è detto che debba essere utilizzato da tutti gli utenti. Aggiungendo l'opzione `--release` al comando `produce` andremo a configurare l'installer per la rimozione di eggs e dell'installer calamares - se installato - nonchè di tutte le dipendenze, ad avvenuta installazione del sistema.
+## ISO finale, l'opzione `--release`
+eggs è un programma di rimasterizzazione e, non è detto, che debba essere utilizzato da tutti gli utenti. 
+
+Aggiungendo l'opzione `--release` al comando `produce` andremo a configurare l'installer per la rimozione sia di eggs che di calamares, nonchè di tutte le dipendenze, dopo l'installazione del sistema.
 
 Esempio: `sudo eggs produce --pendrive --release`
 
-#### Customizzazione del theme del live e di calamares
-E' possibile, infine, utilizzare un tema diverso da quello di default per la propria remix. Tutto quello che dovete fare è crearvi un tema proprio od utilizzare uno dei `themes` inclusi in `wardrobe`,
+## Customizzazione del theme del live e di calamares
+E' possibile, utilizzare un tema diverso da quello di default per la propria remix. 
 
-Esempio:  `sudo eggs produce --max --release --theme educandos`
+Tutto quello che dovete fare è crearvi un tema proprio od utilizzare uno dei `themes` inclusi in `wardrobe`.
+
+Scaricate il wardrobe:
+
+```
+git clone https://github.com/pieroproietti/penguins-wardrobe
+```
+
+Vedete i temi disponibile:
+```
+eggs wardrobe list
+```
+
+Producete la iso, scegliendone uno, ad esempio:
+
+```
+sudo eggs produce --max --release --theme neon
+```
