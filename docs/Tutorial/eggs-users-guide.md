@@ -268,9 +268,10 @@ Ad esempio: comando `eggs produce --`
 
 ```
 $ eggs produce --
---addons         --cryptedclone   --links          --nointeractive  --script         --unsecure
---basename       --excludes       --max            --prefix         --standard       --verbose
---clone          --help           --noicons        --release        --theme          --yolk
+--addons         --excludes       --noicon         --release        --udf
+--basename       --help           --nointeractive  --script         --unsecure
+--clone          --links          --pendrive       --standard       --verbose
+--cryptedclone   --max            --prefix         --theme          --yolk
 ```
 
 Introducendo, invece `eggs produce --help` otterremo la schermata di aiuto del comando.
@@ -862,21 +863,21 @@ Di gran lunga la modalità d'uso che utilizzo è `sudo eggs produce` o `sudo egg
 produce a live image from your system whithout your data
 
 USAGE
-  $ eggs produce [--addons <value>...] [--basename <value>] [-c] [-C]
-    [--excludes <value>...] [-h] [--links <value>...] [-m] [-N] [-n] [-p] [-P
-    <value>] [--release] [-s] [-f] [--theme <value>] [-u] [-v] [-y]
+  $ eggs produce [--addons <value>...] [--basename <value>] [-c] [-C] [--excludes
+    <value>...] [-h] [--links <value>...] [-m] [-N] [-n] [-p] [-P <value>] [--release] [-s] [-f]
+    [--theme <value>] [-u] [-v] [-U] [-y]
 
 FLAGS
   -C, --cryptedclone         crypted clone
   -N, --noicon               no icon eggs on desktop
   -P, --prefix=<value>       prefix
+  -U, --udf                  use UDF format on ISO with genisoimage breacking 4.7 G limit
   -c, --clone                clone
   -f, --standard             standard compression: xz -b 1M
   -h, --help                 Show CLI help.
   -m, --max                  max compression: xz -Xbcj ...
   -n, --nointeractive        no user interaction
-  -p, --pendrive             optimized for pendrive: zstd -b 1M
-                             -Xcompression-level 15
+  -p, --pendrive             optimized for pendrive: zstd -b 1M -Xcompression-level 15
   -s, --script               script mode. Generate scripts to manage iso build
   -u, --unsecure             /root contents are included on live
   -v, --verbose              verbose
@@ -885,8 +886,8 @@ FLAGS
       --basename=<value>     basename
       --excludes=<value>...  use: static, homes, home
       --links=<value>...     desktop links
-      --release              release: remove penguins-eggs, calamares and
-                             dependencies after installation
+      --release              release: remove penguins-eggs, calamares and dependencies after
+                             installation
       --theme=<value>        theme for livecd, calamares branding and partitions
 
 DESCRIPTION
