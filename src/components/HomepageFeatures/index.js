@@ -95,14 +95,11 @@ const FeatureList = [
     ),
   },
   {
-    title: 'Community',
-    Svg: require('@site/static/img/telegram.svg').default,
+    title: 'Alpine Linux',
+    Svg: require('@site/static/img/alpine.svg').default,
     description: (
       <>
-      <a href="https://github.com/pieroproietti/penguins-eggs/discussions">Github</a>, &nbsp;
-      <a href="https://www.facebook.com/groups/penguins.eggs">Facebook</a>,&nbsp;
-      <a href="https://web.telegram.org/a/#-1701470533">Telegram</a> and&nbsp;
-      <a href="https://twitter.com/pieroproietti">Twitter</a>
+      <a href="https://github.com/pieroproietti/penguins-eggs/discussions/377">Come in</a> help to bring penguins' eggs to <a href="https://alpinelinux.org/">Alpine Linux</a>!
       </>
     ),
   },
