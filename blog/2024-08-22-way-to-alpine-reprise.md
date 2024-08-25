@@ -36,3 +36,5 @@ Capisco che attualmente tutti ci stiamo allontando dal desktop per andare su dis
 Inoltre per un esercito di "smanettoni" può essere sorprendente far girare le ultime versioni dei desktop con dimensioni e pretese pari a metà o meno di quanto previsto da altre distribuzioni.
 
 Ad esempio, la mia colibri, su [Arch](https://sourceforge.net/projects/penguins-eggs/files/ISOS/arch/) misura: 1,8 GB, su [Debian boowwork](https://sourceforge.net/projects/penguins-eggs/files/ISOS/debian/bookworm/amd64/) è di 1.3 GB menre la versione [Alpine](https://sourceforge.net/projects/penguins-eggs/files/ISOS/alpine/) è di solo 743 KB,
+
+![](/images/albatros.png)
