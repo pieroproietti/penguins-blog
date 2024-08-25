@@ -17,7 +17,7 @@ Usare eggs con Alpine linux può essere veramente un piacere, rimasterizzare è 
 
 Per quanto riguarda l'hardware non ho modo di fare test, lavoro esclusivamente su macchine virtuali, ad ogni buon conto c'è un pacchetto `linux-firmware` che può essere aggiunto con `doas apk add linux-firware` e che dovrebbe "renderla" compatibile con i maggiori hardware presenti.
 
-Dal mio punto di vista di sviluppatore di penguins-eggs, non ho voluto includere questo pacchetto perchè pesa 700 MB e rende quindi Alpine Linux meno leggera da rimasterizzare anche se - a parotà di configurazione - è, comunque, più leggera di Debian e di Arch.
+Dal mio punto di vista di sviluppatore di penguins-eggs, non ho voluto includere questo pacchetto perchè pesa 700 MB e rende quindi Alpine Linux meno leggera da rimasterizzare anche se - a parità di configurazione - più leggera  di Arch, anche aggiungendo i firmware, e pesante la metà di Debian senza includere i firmware.
 
 ## Ostacoli
 
@@ -31,10 +31,12 @@ D'altra parte ci sono alcuni scogli che mio malgrado ancora non riesco a superar
 ## Conclusioni
 A mio avviso penguins-eggs potrebbe essere lo strumento per portare Alpine Linux verso i desktop. 
 
-Capisco che attualmente tutti ci stiamo allontando dal desktop per andare su dispositivi touch ed Alpine da questo lato è ben fornita con [PostmarketOS](https://postmarketos.org/), però è sempre una possibilità e, comunque lo sviluppo avviene acora su desktop.
+Capisco che attualmente tutti ci stiamo allontando dal desktop per andare su dispositivi touch ed Alpine da questo lato è ben fornita con [PostmarketOS](https://postmarketos.org/), però è sempre una possibilità e, comunque lo sviluppo avviene ancora su desktop.
 
 Inoltre per un esercito di "smanettoni" può essere sorprendente far girare le ultime versioni dei desktop con dimensioni e pretese pari a metà o meno di quanto previsto da altre distribuzioni.
 
-Ad esempio, la mia colibri, su [Arch](https://sourceforge.net/projects/penguins-eggs/files/ISOS/arch/) misura: 1,8 GB, su [Debian boowwork](https://sourceforge.net/projects/penguins-eggs/files/ISOS/debian/bookworm/amd64/) è di 1.3 GB menre la versione [Alpine](https://sourceforge.net/projects/penguins-eggs/files/ISOS/alpine/) è di solo 743 KB,
+Ad esempio, la mia colibri, su [Arch](https://sourceforge.net/projects/penguins-eggs/files/ISOS/arch/) misura: 1,8 GB, su [Debian boowwork](https://sourceforge.net/projects/penguins-eggs/files/ISOS/debian/bookworm/amd64/) è di 1.3 GB menre la versione [Alpine](https://sourceforge.net/projects/penguins-eggs/files/ISOS/alpine/) è di solo 743 KB.
+
+La foto sotto è della versione di Albatros per... i686!!!
 
 ![](/images/albatros.png)
