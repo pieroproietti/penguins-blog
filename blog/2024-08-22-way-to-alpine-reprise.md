@@ -1,7 +1,7 @@
 ---
 authors: pieroproietti
-slug: way-to-alpine
-title: "way to Alpine"
+slug: way-to-alpine-reprise
+title: "way to Alpine (reprise)"
 lang: it
 enableComments: true
 ---
