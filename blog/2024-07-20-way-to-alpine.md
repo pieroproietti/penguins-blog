@@ -22,7 +22,7 @@ Lo scopo ormai può dirsi riuscito, dispongo di una VM configurata perfettamente
 
 
 # A che punto siamo con la creazione di una ISO?
-Se avete già letto [WAY-TO-ALPINE.md](https://github.com/pieroproietti/penguins-eggs/blob/master/WAY-TO-ALPINE.md) avete già una risposta: `filesystem.squashfs` completo, ISO avviabile da BIOS, mancanza di un `initramfs` che monti il `filesystem.squashfs` ed esegua il chroot in eggs.
+Se avete già letto [WAY-TO-ALPINE.md](https://github.com/pieroproietti/penguins-eggs/blob/master/DOCS/WAY-TO-ALPINE.md) avete già una risposta: `filesystem.squashfs` completo, ISO avviabile da BIOS, mancanza di un `initramfs` che monti il `filesystem.squashfs` ed esegua il chroot in eggs.
 
 # A chi posso rivolgermi per una collaborazione?
 Pure se sto continuando ad andare avanti, è evidente che mi servirebbe la collaborazione di una persona esperta di Alpine Linux, per trovare la soluzione.
