@@ -25,7 +25,7 @@ Da una parte è stata una esperienza bellissima ed alcune cose sono venute più 
 
 D'altra parte ci sono alcuni scogli che mio malgrado ancora non riesco a superare:
 * non ho ancora trovato il modo per avviare la ISO senza andare in recovery shell per montare overlayfs. Il risultato è aggirabile tramine lo script sidecar.sh, ma per l'utente finale e pure per me medesimo è una grande scocciatura.
-* ancora peggio con [aports](https://gitlab.alpinelinux.org/alpine/aports). Sono al terzo tentativo di effettuare il merge dal mio fork [aport](https://gitlab.alpinelinux.org/alpine/aports/-/merge_requests/70933), per il momento ancora non se parla e, francamente essere bloccato così, dopo tanto impegno nello sviluppo, nel porting di eggs e nel costruiire il pacchetto è, come dire: un pè "pesante";
+* ancora peggio con [aports](https://gitlab.alpinelinux.org/alpine/aports). Sono al terzo tentativo di effettuare il [merge](https://gitlab.alpinelinux.org/alpine/aports/-/merge_requests/70933) dal mio [fork](https://gitlab.alpinelinux.org/pieroproietti/aports), per il momento ancora non se parla e, francamente essere bloccato così, dopo tanto impegno nello sviluppo, nel porting di eggs e nel costruire il pacchetto è, come dire: un pò "pesante"; (*) vedi nota
 * calamares, per qualche ragione - probabilmente mancanza di librerie - è presente sino alla version 3.18-8, ma non nella versione corrente 3.20-2  e neppure in edge.
 .
 ## Conclusioni
@@ -40,3 +40,7 @@ Ad esempio, la mia colibri, su [Arch](https://sourceforge.net/projects/penguins-
 La foto sotto è della versione di Albatros per... i686!!!
 
 ![](/images/albatros.png)
+
+(*) Nota: Se qualcuno è pratico di git rebase, squash con git, etc magari mi può dare una mano. Non mi sento completamente a digiuno del resto, ma non riesco a capire il problema.
+
+
