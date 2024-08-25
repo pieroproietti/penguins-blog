@@ -10,7 +10,7 @@ import Translactions from '@site/src/components/Translactions';
 
 <Translactions />
 
-Da qualche giorno sto impegnandomi, sarà il caldo, a portare penguins-eggs su Alpine Linux.
+Da qualche giorno - inizio luglio 2024 - sto impegnandomi, sarà il caldo, a portare penguins-eggs su Alpine Linux.
 
 Naturalmente non è un processo semplice, Alpine è una distribuzione non derivata da Debian o da Arch e, pertanto, abbastanza diversa.
 
