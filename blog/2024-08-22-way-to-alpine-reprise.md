@@ -13,7 +13,7 @@ import Translactions from '@site/src/components/Translactions';
 E' passato un mese, forse due dall'inizio dell'avventura con Alpine Linux visto che ho cominciato dopo metà giugno. 
 
 ## Punti di forza
-Usare eggs con Alpine linux può essere veramente un piacere, rimasterizzare è un soffio, crearsi la propria versione con XFCE, plasma, gnome, etc veloce (per XFCE vi sono i costumi del wardrobe di eggs: colibri ed albatros e funzionano egregiamente).
+Usare eggs con Alpine linux può essere veramente un piacere, rimasterizzare è un soffio, crearsi la propria versione con XFCE, plasma, gnome, etc veloce (vi sono i costumi del wardrobe di eggs: colibri ed albatros e funzionano egregiamente).
 
 Per quanto riguarda l'hardware non ho modo di fare test, lavoro esclusivamente su macchine virtuali, ad ogni buon conto c'è un pacchetto `linux-firmware` che può essere aggiunto con `doas apk add linux-firware` e che dovrebbe "renderla" compatibile con i maggiori hardware presenti. Niente nvidia naturalmente, ma meglio così.
 
@@ -37,10 +37,9 @@ Inoltre per un esercito di "smanettoni" può essere sorprendente far girare le u
 
 Ad esempio, la mia colibri, su [Arch](https://sourceforge.net/projects/penguins-eggs/files/ISOS/arch/) misura: 1,8 GB, su [Debian boowwork](https://sourceforge.net/projects/penguins-eggs/files/ISOS/debian/bookworm/amd64/) è di 1.3 GB menre la versione [Alpine](https://sourceforge.net/projects/penguins-eggs/files/ISOS/alpine/) è di solo 743 KB.
 
-La foto sotto è della versione di Albatros per... i686!!!
+La foto sotto è una versione di Albatros costruita utilizzando il wardrobe di eggs su un sistema Alpine Linux... i686! Il peso? Circa 1,2 GB.
 
 ![](/images/albatros.png)
 
 (*) Nota: Se qualcuno è pratico di git rebase, squash con git, etc magari mi può dare una mano. Non mi sento completamente a digiuno del resto, ma non riesco a capire il problema.
-
 
