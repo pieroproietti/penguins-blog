@@ -45,8 +45,11 @@ Al moment krll su fedora è piuttoso dispettoso, non configura i locales e qualc
 Per il momento consigli di installare con: `sudo eggs install -u² saltando tutte le configurazioni.
 
 # calamares installer
-Sarebbe comodo trovare un esempio di configurazione di calamare su Fedora, non dubito ve ne siano ma non li conosco, se qualcuno ha degli esempi prego contattarmi.
+Sarebbe comodo trovare un esempio di configurazione di calamares su Fedora, non dubito ve ne siano ma non ne conosco - vengo da Debian - se qualcuno ha degli esempi prego contattarmi.
 
+![fedora](/images/fedora.png)
 
+# OpenSuSE
+Naturalmente un prossimo target è openSuSE.
 
 
