@@ -26,11 +26,11 @@ The download is a 4.6gb ISO file.
 
 Semi direct link to ISO download: 
 
-https://sourceforge.net/projects/lastoslinux/files/ISOs/
+[ISOs](https://sourceforge.net/projects/lastoslinux/files/ISOs/)
 
 Builder Scripts (to make your own ISO from scratch, includes Penguins Eggs as the very first step after the manual jobs):
 
-https://github.com/.../LastOSL.../releases/tag/v24.10.07-RC1
+[v24.10.07-RC1](https://github.com/LiveFreeDead/LastOSLinux/releases/tag/v24.10.07-RC1)
 
 Also my build works on top of Mint v22, meaning when Mint v22 gets updated in December to v22.1, LastOSLinux will to, I was well aware of the issue with Distro's dying when I decided how to go about this. In other words, so long as Debian, Ubuntu and Mint Survive - LastOSLinux will too.
 I am not doing what others try and make a distribution, instead I am using a solid base and packing my toolset on top of that... and making the code freely available so anyone can mod my mod or help me with mine.
