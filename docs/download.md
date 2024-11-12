@@ -8,13 +8,7 @@ import Translactions from '@site/src/components/Translactions';
 
 <Translactions />
 
-# Distros
-
-For a long time I have been using to distribute the ISOs I create with penguins-eggs the [sourceforge page](https://sourceforge.net/projects/penguins-eggs/), unfortunately for some time now it has been getting longer and longer to download the ISOs. 
-
 ## Naked images
-
-Download: 
 * [egg-of_almalinux-9.4-naked_amd64_2024-11-10_1708.iso](https://penguins-eggs.net/isos/egg-of_almalinux-9.4-naked_amd64_2024-11-10_1708.iso)
 * [egg-of_arch-naked_amd64_2024-11-10_0755.iso](https://penguins-eggs.net/isos/egg-of_arch-naked_amd64_2024-11-10_0755.iso)
 * [egg-of_debian-bookworm-naked_amd64_2024-11-11_1026.iso](https://penguins-eggs.net/isos/)
@@ -29,7 +23,6 @@ Download:
 * [egg-of_ubuntu-noble-naked_amd64_2024-11-10_1106.iso](https://penguins-eggs.net/isos/egg-of_ubuntu-noble-naked_amd64_2024-11-10_1106.iso)
 * [egg-of_ubuntu-oracular-naked_amd64_2024-11-10_1126.iso](https://penguins-eggs.net/isos/egg-of_ubuntu-oracular-naked_amd64_2024-11-10_1126.iso)
 
-## [sourceforge page](https://sourceforge.net/projects/penguins-eggs/).
+## respins
 All others respins, packages, etc, can be found at our [sourceforge page](https://sourceforge.net/projects/penguins-eggs/).
-
 
