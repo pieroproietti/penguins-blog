@@ -1,5 +1,5 @@
 ---
-title: Download
+title: Downloads
 authors: pieroproietti
 slug: download
 lang: en
@@ -8,7 +8,7 @@ import Translactions from '@site/src/components/Translactions';
 
 <Translactions />
 
-## Naked images
+## naked images
 * [egg-of_almalinux-9.4-naked_amd64_2024-11-10_1708.iso](https://penguins-eggs.net/isos/egg-of_almalinux-9.4-naked_amd64_2024-11-10_1708.iso)
 * [egg-of_arch-naked_amd64_2024-11-10_0755.iso](https://penguins-eggs.net/isos/egg-of_arch-naked_amd64_2024-11-10_0755.iso)
 * [egg-of_debian-bookworm-naked_amd64_2024-11-11_1026.iso](https://penguins-eggs.net/isos/)
