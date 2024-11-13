@@ -106,6 +106,10 @@ const config = {
                 label: 'Wardrobe users\' guide',
                 to: 'https://penguins-eggs.net/docs/Tutorial/wardrobe-users-guide',
               },
+              {
+                label: 'Get eggs',
+                to: 'https://penguins-eggs.net/docs/Tutorial/get-eggs',
+              },
             ],
           },
           {
@@ -122,10 +126,6 @@ const config = {
               {
                 label: 'Telegram channel',
                 href: 'https://t.me/penguins_eggs',
-              },
-              {
-                label: 'Twitter',
-                href: 'https://twitter.com/pieroproietti',
               },
             ],
           },
