@@ -30,14 +30,8 @@ function HomepageHeader() {
           <Link
             className="button button--secondary button--lg"
             to="/docs/Tutorial/wardrobe-users-guide">
-            Wardrobe users' guide
+            Wardrobe
           </Link>
-          &nbsp;
-          <Link
-            className="button button--secondary button--lg"
-            to="/docs/downloads">
-            Downloads
-          </Link >
           &nbsp;
           <Link
             className="button button--secondary button--lg"

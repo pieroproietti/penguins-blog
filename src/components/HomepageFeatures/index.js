@@ -76,8 +76,8 @@ const FeatureList = [
     Svg: require('@site/static/img/endeavouros.svg').default,
     description: (
       <>
-      <a href="https://sourceforge.net/projects/penguins-eggs/files/ISOS/arch/">&nbsp;Arch, </a>,
-      and <a href="https://sourceforge.net/projects/penguins-eggs/files/ISOS/">and others</a>.
+      <a href="https://sourceforge.net/projects/penguins-eggs/files/ISOS/arch/">&nbsp;Arch</a>
+      , and <a href="https://sourceforge.net/projects/penguins-eggs/files/ISOS/">derivatives</a>.
       </>
     ),
   },
