@@ -77,7 +77,7 @@ const FeatureList = [
     description: (
       <>
       <a href="https://sourceforge.net/projects/penguins-eggs/files/ISOS/arch/">&nbsp;Arch</a>
-      , and <a href="https://sourceforge.net/projects/penguins-eggs/files/ISOS/">derivatives</a>.
+      and<a href="https://sourceforge.net/projects/penguins-eggs/files/ISOS/">derivatives</a>.
       </>
     ),
   },
