@@ -32,9 +32,8 @@ const FeatureList = [
     description: (
       <>
         Eggs support Devuan 
-        <a href="https://sourceforge.net/projects/penguins-eggs/files/ISOS/devuan/beowulf">&nbsp;beowulf</a>, 
-        <a href="https://sourceforge.net/projects/penguins-eggs/files/ISOS/devuan/chimaera">&nbsp;chimaera</a>, and 
         <a href="https://sourceforge.net/projects/penguins-eggs/files/ISOS/devuan/daedalus">&nbsp;daedalus</a>
+        <a href="https://sourceforge.net/projects/penguins-eggs/files/ISOS/devuan/excalibur">&nbsp;excalibur</a>, 
       </>
     ),
   },
@@ -47,7 +46,7 @@ const FeatureList = [
         <a href="https://sourceforge.net/projects/penguins-eggs/files/ISOS/ubuntu/bionic">&nbsp;bionic</a>,
         <a href="https://sourceforge.net/projects/penguins-eggs/files/ISOS/ubuntu/focal">&nbsp;focal</a>,
         <a href="https://sourceforge.net/projects/penguins-eggs/files/ISOS/ubuntu/jammy">&nbsp;jammy</a> and
-        <a href="https://sourceforge.net/projects/penguins-eggs/files/ISOS/ubuntu/lunar">&nbsp;lunar</a>
+        <a href="https://sourceforge.net/projects/penguins-eggs/files/ISOS/ubuntu/noble">&nbsp;noble</a>
       </>
     ),
   },
@@ -67,8 +66,7 @@ const FeatureList = [
       <>
         <a href="https://sourceforge.net/projects/penguins-eggs/files/ISOS/linuxmint/">&nbsp;Linuxmint</a>,
         <a href="https://sourceforge.net/projects/penguins-eggs/files/ISOS/neon/">&nbsp;KDE neon</a>,
-        <a href="https://sourceforge.net/projects/penguins-eggs/files/ISOS/pop-os/">&nbsp;Pop!_OS</a>,
-        <a href="https://sourceforge.net/projects/penguins-eggs/files/ISOS/elementary/">&nbsp;elementary OS&nbsp;</a>
+        <a href="https://sourceforge.net/projects/penguins-eggs/files/ISOS/pop-os/">&nbsp;Pop!_OS</a>&nbsp;
         and virtually every Debian, Devuan and Ubuntu derivatives are supported. 
       </>
     ),
@@ -78,10 +76,8 @@ const FeatureList = [
     Svg: require('@site/static/img/endeavouros.svg').default,
     description: (
       <>
-      <a href="https://sourceforge.net/projects/penguins-eggs/files/ISOS/endeavourOS/">&nbsp;EndeavourOS</a>,
-      <a href="https://sourceforge.net/projects/penguins-eggs/files/ISOS/garuda/">&nbsp;Garuda</a>,
-      <a href="https://sourceforge.net/projects/penguins-eggs/files/ISOS/rebornos/">&nbsp;RebornOS&nbsp;</a>
-      and <a href="https://sourceforge.net/projects/penguins-eggs/files/ISOS/">others</a>.
+      <a href="https://sourceforge.net/projects/penguins-eggs/files/ISOS/arch/">&nbsp;Arch, </a>,
+      and <a href="https://sourceforge.net/projects/penguins-eggs/files/ISOS/">and others</a>.
       </>
     ),
   },
@@ -90,7 +86,7 @@ const FeatureList = [
     Svg: require('@site/static/img/fedora.svg').default,
     description: (
       <>
-      <a href="https://github.com/pieroproietti/penguins-eggs/discussions/376">Come in</a> help to bring penguins' eggs to <a href="https://fedoraproject.org/">fedora</a>!
+      Fedora of course, but also AlmaLinux and RockyLinux!
       </>
     ),
   },
