@@ -43,9 +43,8 @@ const config = {
           sidebarPath: './sidebars.js',
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/pieroproietti/penguins-blog/tree/main/packages/create-docusaurus/templates/shared/',
-            //'https://github.com/pieroproietti/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+          //editUrl:
+            // 'https://github.com/pieroproietti/penguins-blog/tree/main/packages/create-docusaurus/templates/shared/',
         },
         blog: {
           showReadingTime: true,
@@ -135,7 +134,7 @@ const config = {
               },
               {
                 label: 'ISOs',
-                to: 'https://sourceforge.net/projects/penguins-eggs/files/ISOS/',
+                to: 'https://penguins-eggs.net/downloads',
               },
               {
                 label: 'GitHub',

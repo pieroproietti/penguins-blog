@@ -1,14 +1,14 @@
 ---
 title: Downloads
 authors: pieroproietti
-slug: download
+slug: downloads
 lang: en
 ---
 import Translactions from '@site/src/components/Translactions';
 
 <Translactions />
 
-## naked images
+## naked (ISOs)
 * [egg-of_almalinux-9.4-naked_amd64_2024-11-10_1708.iso](https://penguins-eggs.net/isos/egg-of_almalinux-9.4-naked_amd64_2024-11-10_1708.iso)
 * [egg-of_arch-naked_amd64_2024-11-10_0755.iso](https://penguins-eggs.net/isos/egg-of_arch-naked_amd64_2024-11-10_0755.iso)
 * [egg-of_debian-bookworm-naked_amd64_2024-11-11_1026.iso](https://penguins-eggs.net/isos/)
@@ -23,6 +23,7 @@ import Translactions from '@site/src/components/Translactions';
 * [egg-of_ubuntu-noble-naked_amd64_2024-11-10_1106.iso](https://penguins-eggs.net/isos/egg-of_ubuntu-noble-naked_amd64_2024-11-10_1106.iso)
 * [egg-of_ubuntu-oracular-naked_amd64_2024-11-10_1126.iso](https://penguins-eggs.net/isos/egg-of_ubuntu-oracular-naked_amd64_2024-11-10_1126.iso)
 
-## respins
-All others respins, packages, etc, can be found at our [sourceforge page](https://sourceforge.net/projects/penguins-eggs/).
+## respins (ISOs)
+
+Due the band limits, all others respins, packages, etc, can be found at our [sourceforge page](https://sourceforge.net/projects/penguins-eggs/).
 
