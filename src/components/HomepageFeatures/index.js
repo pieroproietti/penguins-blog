@@ -86,7 +86,7 @@ const FeatureList = [
     Svg: require('@site/static/img/fedora.svg').default,
     description: (
       <>
-      Fedora of course, but also AlmaLinux and RockyLinux!
+      <a href="https://www.fedoraproject.org/">Fedora</a> of course, but also <a href="https://almalinux.org/">AlmaLinux</a> and <a href="https://rockylinux.org/">RockyLinux</a>!
       </>
     ),
   },
