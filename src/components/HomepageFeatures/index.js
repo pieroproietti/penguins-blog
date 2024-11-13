@@ -55,7 +55,7 @@ const FeatureList = [
     Svg: require('@site/static/img/manjaro.svg').default,
     description: (
       <>
-        Eggs is part of communty of <a href="https://sourceforge.net/projects/penguins-eggs/files/ISOS/manjaro/">Manjaro</a>.
+        penguins-eggs is part of communty repo of <a href="https://sourceforge.net/projects/penguins-eggs/files/ISOS/manjaro/">Manjaro</a>.
       </>
     ),
   },
