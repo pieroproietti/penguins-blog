@@ -134,7 +134,7 @@ const config = {
               },
               {
                 label: 'ISOs',
-                to: 'https://penguins-eggs.net/downloads',
+                to: 'https://penguins-eggs.net/docs/downloads',
               },
               {
                 label: 'GitHub',
