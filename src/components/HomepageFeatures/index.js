@@ -67,7 +67,7 @@ const FeatureList = [
         <a href="https://sourceforge.net/projects/penguins-eggs/files/ISOS/linuxmint/">&nbsp;Linuxmint</a>,
         <a href="https://sourceforge.net/projects/penguins-eggs/files/ISOS/neon/">&nbsp;KDE neon</a>,
         <a href="https://sourceforge.net/projects/penguins-eggs/files/ISOS/pop-os/">&nbsp;Pop!_OS</a>&nbsp;
-        and virtually every Debian, Devuan and Ubuntu derivatives are supported. 
+        and virtually every Debian, Devuan and Ubuntu <a href="https://sourceforge.net/projects/penguins-eggs/files/ISOS/">derivatives</a> are supported. 
       </>
     ),
   },
@@ -76,8 +76,8 @@ const FeatureList = [
     Svg: require('@site/static/img/endeavouros.svg').default,
     description: (
       <>
-      <a href="https://sourceforge.net/projects/penguins-eggs/files/ISOS/arch/">&nbsp;Arch</a>
-      and<a href="https://sourceforge.net/projects/penguins-eggs/files/ISOS/">derivatives</a>.
+      <a href="https://sourceforge.net/projects/penguins-eggs/files/ISOS/arch/">&nbsp;Arch&nbsp;</a>
+      and <a href="https://sourceforge.net/projects/penguins-eggs/files/ISOS/">derivatives</a>.
       </>
     ),
   },
