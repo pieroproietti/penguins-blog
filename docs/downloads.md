@@ -10,9 +10,9 @@ import Translactions from '@site/src/components/Translactions';
 
 ## Packages
 * [AlpineLinux](https://sourceforge.net/projects/penguins-eggs/files/Packages/ALPINE/)
-* ]Arch](https://sourceforge.net/projects/penguins-eggs/files/Packages/AUR/)
-* ]Debian/Devuan/Ubuntu](https://sourceforge.net/projects/penguins-eggs/files/Packages/DEBS/)
-* ]Manjaro](https://sourceforge.net/projects/penguins-eggs/files/Packages/MANJARO/)
+* [Arch](https://sourceforge.net/projects/penguins-eggs/files/Packages/AUR/)
+* [Debian/Devuan/Ubuntu](https://sourceforge.net/projects/penguins-eggs/files/Packages/DEBS/)
+* [Manjaro](https://sourceforge.net/projects/penguins-eggs/files/Packages/MANJARO/)
 
 
 ## ISOs images naked (just minimal CLI reproductive installation)
