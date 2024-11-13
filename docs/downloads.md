@@ -8,7 +8,14 @@ import Translactions from '@site/src/components/Translactions';
 
 <Translactions />
 
-## naked (ISOs)
+## Packages
+* [AlpineLinux](https://sourceforge.net/projects/penguins-eggs/files/Packages/ALPINE/)
+* ]Arch](https://sourceforge.net/projects/penguins-eggs/files/Packages/AUR/)
+* ]Debian/Devuan/Ubuntu](https://sourceforge.net/projects/penguins-eggs/files/Packages/DEBS/)
+* ]Manjaro](https://sourceforge.net/projects/penguins-eggs/files/Packages/MANJARO/)
+
+
+## ISOs images naked (just minimal CLI reproductive installation)
 * [`egg-of_almalinux-9.4-naked_amd64_2024-11-10_1708.iso`](https://penguins-eggs.net/basket/isos/egg-of_almalinux-9.4-naked_amd64_2024-11-10_1708.iso)
 * [`egg-of_arch-naked_amd64_2024-11-10_0755.iso`](https://penguins-eggs.net/basket/isos/egg-of_arch-naked_amd64_2024-11-10_0755.iso)
 * [`egg-of_debian-bookworm-naked_amd64_2024-11-11_1026.iso`](https://penguins-eggs.net/basket/isos/egg-of_debian-bookworm-naked_amd64_2024-11-11_1026.iso)
@@ -23,7 +30,7 @@ import Translactions from '@site/src/components/Translactions';
 * [`egg-of_ubuntu-noble-naked_amd64_2024-11-10_1106.iso`](https://penguins-eggs.net/basket/isos/egg-of_ubuntu-noble-naked_amd64_2024-11-10_1106.iso)
 * [`egg-of_ubuntu-oracular-naked_amd64_2024-11-10_1126.iso`](https://penguins-eggs.net/basket/isos/egg-of_ubuntu-oracular-naked_amd64_2024-11-10_1126.iso)
 
-## respins (ISOs)
+## ISOs images complete
 
 Due the band limits, all others respins, packages, etc, can be found at our [sourceforge page](https://sourceforge.net/projects/penguins-eggs/).
 
