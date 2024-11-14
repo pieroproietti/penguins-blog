@@ -81,7 +81,7 @@ const config = {
             label: 'Blog', 
             position: 'left'
           },
-          { to: '/docs/downloads', 
+          { to: 'https://penguins-eggs.net/basket/', 
             label: 'Downloads', 
             position: 'left'
           },
@@ -133,8 +133,8 @@ const config = {
             title: 'More',
             items: [
               {
-                label: 'Downloads',
-                to: 'https://penguins-eggs.net/docs/downloads',
+                label: 'Downloads (guest/evolution)',
+                to: 'https://penguins-eggs.net/basket/',
               },
               {
                 label: 'Sourceforge',

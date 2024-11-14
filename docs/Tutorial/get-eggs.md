@@ -1,6 +1,6 @@
 ---
 authors: pieroproietti
-title: get-eggs
+title: Get eggs
 lang: en
 enableComments: true
 ---
