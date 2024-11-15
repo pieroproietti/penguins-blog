@@ -1,7 +1,7 @@
 ---
 authors: pieroproietti
 slug: lastoslinux
-title: LastOSLinux
+title: LastOSLinux - The methods behind the madness
 lang: en
 enableComments: true
 ---
