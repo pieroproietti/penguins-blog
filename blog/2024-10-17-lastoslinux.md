@@ -155,10 +155,10 @@ one knows how to use them safely.
 I am just getting things started and with over 1350 download in less than 7 
 days, I am motivated to help this project thrive.
 
+Here You can get [more info](https://www.lastos.org/lastoslinux/) and the [forum](https://forum.lastos.org/index.php).
+
 Enjoy
 
 **Glenn** aka [LiveFreeDead](https://github.com/LiveFreeDead)
-
-Here You can get [more info](https://www.lastos.org/lastoslinux/), and a [forum](https://forum.lastos.org/index.php),
 
 ![theme-selector](https://www.lastos.org/lastoslinux/assets/images/Desktop-ThemeSelector.jpg)
