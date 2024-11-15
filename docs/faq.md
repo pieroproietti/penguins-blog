@@ -46,7 +46,7 @@ In tal caso, lanciate il comando: `sudo apt update` e ricominciate da capo.
 
 #### Aggiunta delle repository ppa di penguins-eggs
 
-Una volta installato penguins-eggs, potete aggiungere le repository ppa per tenerlo sempre aggiornato utilizzando semplicemente il comando apt o qualsiasi gestiore dei pacchetti grafico. 
+Una volta installato penguins-eggs, potete aggiungere le repository ppa per tenerlo sempre aggiornato utilizzando semplicemente il comando apt o qualsiasi gestore dei pacchetti grafico. 
 
 Per farlo, lanciate il comando: `sudo eggs tools ppa --add`
 
@@ -108,7 +108,7 @@ Per ridurre le dimensioni della ISO possiamo - di massima - eliminare dal filesy
 
 Naturalmente l'algoritmo di compressione del filesystem utilizzato da squashfs può ridurre notevolmente la dimensione ottenuta. 
 
-Di default eggs utilizza per la compressione `zstd lovel-3` è molto veloce in compressione ma non altrettanto efficiente. E' consigliato per la creazione delle ISO di prova, poichè ci fa risparmiare tempo.
+Di default eggs utilizza per la compressione `zstd lovel-3` è molto veloce in compressione ma non altrettanto efficiente. E' utile per la creazione delle ISO di prova, poichè ci fa risparmiare tempo.
 
 Abbiamo due scelte per le nostre ISO definitive e dipendono anche da come le vogliamo utilizzare.
 
@@ -116,7 +116,7 @@ eggs dispone del flag `--pendrive` che imposta una compressione `zstd level 15` 
 
 Per ottenere una ISO più compressa - al prezzo anche di un certo ritardo nella decompressione, possimo utilizzare le opzioni di compression `--standard` o `--max`, entrambe utilizzano il parametro `xz -b 256L`. La seconda aggiunge `xz -b 256K -Xbcj` riducendo ancora di più le dimensioni ottenute al prezzo di un maggior tempo di compressione.
 
-Ai fini pratici, consiglio SEMPRE di utilizzare il valore di default per le ISO di prova, quindi l'opzione `--pendrive` o `--max` per la ISO finale.
+Ai fini pratici, consiglio di utilizzare il valore di default per le ISO di prova, quindi l'opzione `--pendrive` o `--max` per la ISO finale.
 
 ## ISO finale, l'opzione `--release`
 eggs è un programma di rimasterizzazione e, non è detto, che debba essere utilizzato da tutti gli utenti. 
