@@ -29,6 +29,8 @@ Per concludere, serviva una immagine su AlmaLinux e RockyLinux per introdurle. L
 
 ## Red Hat Enterprise Linux 9.5
 
-Novità, proprio mentre scrivevo questo post, [Red Hat Enterprise Linux 9.5](https://distrowatch.com/?newsid=12289) è stato rilasciato.
+Novità: proprio mentre scrivevo questo post, ho scoperto che il 13 novembre [Red Hat Enterprise Linux 9.5](https://distrowatch.com/?newsid=12289) è stato rilasciato!
 
-Oggi è il 15 nomembre 2024, vediamo come reagiranno ed in quanto tempo AlmaLinux e RockyLinux.
+Oggi è il 15, vediamo come risponderanno ed in quanto tempo AlmaLinux e RockyLinux.
+
+Per la verità AlmaLinux ha già annunciato in data odierna [AlmaLinux 9.5 Beta](https://almalinux.org/blog/2024-10-15-announcing-95-beta/), quindi direi che siamo prossimi.
