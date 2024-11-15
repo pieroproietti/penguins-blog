@@ -34,3 +34,44 @@ Novità: proprio mentre scrivevo questo post, ho scoperto che il 13 novembre [Re
 Oggi è il 15, vediamo come risponderanno ed in quanto tempo AlmaLinux e RockyLinux.
 
 Per la verità AlmaLinux ha già annunciato in data odierna [AlmaLinux 9.5 Beta](https://almalinux.org/blog/2024-10-15-announcing-95-beta/), quindi direi che siamo prossimi.
+
+Ho scaricato l'attuale versione `AlmaLinux-9.5-beta-1-x86_64-minimal.iso` e proveremo a rimasterizzarla.
+
+Il primo passo naturalmente è l'installazione. 
+
+Selezionata l'installazione minima, ho definito una installazione su ext4 con una partizione di swap, veramente ho barato riutilizzando le partizioni della Debian installata sulla stessa VM. Ho assegnato la password all'utente root: `evolution`, quindi ho creato un utente `artisan` con la stessa password. Ho incluso artisan nel gruppo `wheel` per abilitare il `sudo`.
+
+L'installazione sta andando, regolarmente.
+
+# Installazione di penguins-eggs
+* `git clone https://github.com/pieroproietti/penguins-eggs`
+* `cd penguins-eggs/PREREQUISITES/almalinux`
+* `sudo ./nodesource.sh` # per installare nodejs >18
+* `cd ~/penguins-eggs`
+* `sudo ./install-eggs-dev`
+
+
+Fine dell'installazione, adesso non ci resta che rimasterizzare la nostra AlmaLinux 9.5 beta. 
+
+Un solo comando:
+
+`eggs love`
+
+Otterremo la nostra ISO, denominata: `egg-of_almalinux-9.5-naked_amd64_2024-11-15_2029.iso`
+
+Per effettuare una successiva installazione tutto quello che dovremo fare è inserire l'immagine in una VM o copiarla su DVD o chiavetta, ed avviare il nuovo sistema.
+
+![]/images/almalinux-9.5-beta-boot.png
+
+Saremo automaticamente loggati, e non ci resta che far partire l'installazione!
+
+![]/images/almalinux-9.5-installing.png
+
+
+Potete scaricare l'esperimento direttamente dal [cestino](https://penguins-eggs.net/basket/index.php?p=isos), e mi raccomando fresche! 
+
+**egg-of_almalinux-9.5-naked_amd64_2024-11-15_2029.iso**.
+
+
+
+
