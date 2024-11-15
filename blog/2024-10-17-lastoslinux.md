@@ -40,3 +40,5 @@ I am just getting things started and with over 1350 download in less than 7 days
 Enjoy
 
 Glenn aka LiveFreeDead
+
+![theme-selector](https://www.lastos.org/lastoslinux/assets/images/Desktop-ThemeSelector.jpg)
