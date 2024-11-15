@@ -157,16 +157,3 @@ const config = {
 };
 
 export default config;
-module.exports = {
-  presets: [
-    [
-      '@docusaurus/preset-classic',
-      {
-        gtag: {
-          trackingID: 'G-DCRVZRVWEV', 
-          anonymizeIP: true,
-        },
-      },
-    ],
-  ],
-};
