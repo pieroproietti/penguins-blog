@@ -127,7 +127,7 @@ make a Bootable USB, Or simply burn a DVD of it, this is the only stepping stone
 to starting... and don't forget to backup your important data and photos before 
 you start the journey.
 
-https://www.lastos.org/lastoslinux/
+[About LastOSLinux](https://www.lastos.org/lastoslinux/)
 
 The download is a 4.6gb ISO file.
 
