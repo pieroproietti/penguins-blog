@@ -9,6 +9,8 @@ import Translactions from '@site/src/components/Translactions';
 
 <Translactions />
 
+![](https://www.lastos.org/lastoslinux/assets/images/left-image.jpg)
+
 ## LastOSLinux: The methods behind the madness
 
 For years Linux users have been set in their ways, just like me and windows, they 
@@ -159,6 +161,6 @@ days, I am motivated to help this project thrive.
 
 Enjoy
 
-Glenn aka LiveFreeDead
+Glenn aka [LiveFreeDead](https://github.com/LiveFreeDead)
 
 ![theme-selector](https://www.lastos.org/lastoslinux/assets/images/Desktop-ThemeSelector.jpg)
