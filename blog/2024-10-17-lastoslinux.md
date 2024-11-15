@@ -1,13 +1,15 @@
 ---
 authors: pieroproietti
 slug: lastoslinux
-title: LastOSLinux - The methods behind the madness
+title: LastOSLinux
 lang: en
 enableComments: true
 ---
 import Translactions from '@site/src/components/Translactions';
 
 <Translactions />
+
+## LastOSLinux: The methods behind the madness
 
 For years Linux users have been set in their ways, just like me and windows, they 
 are so used to walking the fine line of tinkering with things enough to get them 
