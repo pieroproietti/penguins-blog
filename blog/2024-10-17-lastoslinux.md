@@ -11,7 +11,7 @@ import Translactions from '@site/src/components/Translactions';
 
 ![](https://www.lastos.org/lastoslinux/assets/images/left-image.jpg)
 
-## LastOSLinux: The methods behind the madness
+## The methods behind the madness
 
 For years Linux users have been set in their ways, just like me and windows, they 
 are so used to walking the fine line of tinkering with things enough to get them 
@@ -129,14 +129,10 @@ you start the journey.
 
 ## About LastOSLinux 
 
-The download is a 4.6gb ISO file.
-
-Semi direct link to ISO download from [sourceforge](https://sourceforge.net/projects/lastoslinux/files/ISOs/)
+The download is a 4.6gb ISO file, semi direct link to ISO download from [sourceforge](https://sourceforge.net/projects/lastoslinux/files/ISOs/).
 
 Builder Scripts (to make your own ISO from scratch, includes Penguins Eggs as 
-the very first step after the manual jobs):
-
-[LastOSLinux v24.08.17.01](https://github.com/LiveFreeDead/LastOSLinux/releases/tag/Release)
+the very first step after the manual jobs): [LastOSLinux v24.08.17.01](https://github.com/LiveFreeDead/LastOSLinux/releases/tag/Release)
 
 Also my build works on top of Mint v22, meaning when Mint v22 gets updated in 
 December to v22.1, LastOSLinux will to, I was well aware of the issue with 
