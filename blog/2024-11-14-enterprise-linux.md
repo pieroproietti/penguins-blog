@@ -51,11 +51,11 @@ L'installazione sta andando, regolarmente.
 * `git clone https://github.com/pieroproietti/penguins-eggs`
 * `cd penguins-eggs/PREREQUISITES/almalinux`
 * `sudo ./nodesource.sh` # per installare nodejs >18
+* `sudo ./install.sh`
 * `cd ~/penguins-eggs`
 * `sudo ./install-eggs-dev`
 
-
-Fine dell'installazione, adesso non ci resta che rimasterizzare la nostra AlmaLinux 9.5 beta. 
+Finita l'installazione, adesso non ci resta che rimasterizzare la nostra AlmaLinux 9.5 beta. 
 
 Un solo comando:
 
@@ -67,8 +67,6 @@ Per effettuare una successiva installazione tutto quello che dovremo fare è ins
 
 ## Installare la nostra versione
 
-![](/images/almalinux-9.5-beta-boot.png)
-
 Saremo automaticamente loggati, e non ci resta che far partire l'installazione!
 
 ![](/images/almalinux-9.5-installing.png)
@@ -77,6 +75,19 @@ Saremo automaticamente loggati, e non ci resta che far partire l'installazione!
 Potete scaricare l'esperimento direttamente dal [cestino](https://penguins-eggs.net/basket/index.php?p=isos), e mi raccomando fresche! 
 
 **egg-of_almalinux-9.5-naked_amd64_2024-11-15_2029.iso**.
+
+# Vestiamo la nostra naked_amd64_2024
+
+Possiamo customizzare la nostra versione anche utilizzando il `wardrobe` di eggs,
+non dobbiamo far altro che:
+
+* `eggs wardrobe get`
+* `sudo eggs wardrobe wear colibri`
+
+Ecco il risultato!
+
+![](/images/almalinux-9.5-colibri.png)
+
 
 
 
