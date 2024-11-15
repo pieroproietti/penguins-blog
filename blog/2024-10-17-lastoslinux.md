@@ -127,7 +127,7 @@ make a Bootable USB, Or simply burn a DVD of it, this is the only stepping stone
 to starting... and don't forget to backup your important data and photos before 
 you start the journey.
 
-[About LastOSLinux](https://www.lastos.org/lastoslinux/)
+## About LastOSLinux 
 
 The download is a 4.6gb ISO file.
 
@@ -161,6 +161,8 @@ days, I am motivated to help this project thrive.
 
 Enjoy
 
-Glenn aka [LiveFreeDead](https://github.com/LiveFreeDead)
+**Glenn** aka [LiveFreeDead](https://github.com/LiveFreeDead)
+
+Here You can get [more info](https://www.lastos.org/lastoslinux/), and a [forum](https://forum.lastos.org/index.php),
 
 ![theme-selector](https://www.lastos.org/lastoslinux/assets/images/Desktop-ThemeSelector.jpg)
