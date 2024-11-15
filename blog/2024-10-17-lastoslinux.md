@@ -127,14 +127,12 @@ https://www.lastos.org/lastoslinux/
 
 The download is a 4.6gb ISO file.
 
-Semi direct link to ISO download:
-
-https://sourceforge.net/projects/lastoslinux/files/ISOs/
+Semi direct link to ISO download from [sourceforge](https://sourceforge.net/projects/lastoslinux/files/ISOs/)
 
 Builder Scripts (to make your own ISO from scratch, includes Penguins Eggs as 
 the very first step after the manual jobs):
 
-https://github.com/.../LastOSL.../releases/tag/v24.10.07-RC1
+[LastOSLinux v24.08.17.01](https://github.com/LiveFreeDead/LastOSLinux/releases/tag/Release)
 
 Also my build works on top of Mint v22, meaning when Mint v22 gets updated in 
 December to v22.1, LastOSLinux will to, I was well aware of the issue with 
