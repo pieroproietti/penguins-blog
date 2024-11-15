@@ -19,10 +19,10 @@ Programmare è un bel mestiere, ma difficilmente è fine a se stesso. Pur non gu
 
 AlmaLinux e RockyLinux sono adatti ad un uso professionale, anche [OpenSuSE](https://www.opensuse.org/) è attualmente rimasterizzabile con penguins-eggs e [Debian](https://www.debian.org) ed [Ubuntu](https://ubuntu.com/) sono anche ottime soluzioni server spesso utilizzate. Però da esperienza personale ho notato, che almeno in Italia, molte organizzazioni tendono ad usare RedHat ed usano/usavano CentOS, per il loro funzionamento. 
 
-Per questi grandi organizzazioni, avere la possibilità di creare delle ISO personalizzate ed installabili delle loro applicazioni server, potrebbe essere vista come una ottima opportunità.
+Per queste grandi organizzazioni, avere la possibilità di creare delle ISO personalizzate ed installabili delle loro applicazioni server, potrebbe essere vista come una ottima opportunità.
 
 Vediamo se c'è interesse, personalmente lo spero.
 
-Per concludere, serviva una immagine su AlmaLinux e RockyLinux per introdurli. L'ho trovata e fa parte di un interessante articolo: [AlmaLinux VS Rocky Linux, quali sono le differenze chiave?](https://managedserver.it/almalinux-vs-rocky-linux-quali-sono-le-differenze-chiave/#Differenze_chiave_tra_AlmaLinux_e_Rocky_Linux), buona lettura.
+Per concludere, serviva una immagine su AlmaLinux e RockyLinux per introdurli. L'ho trovata e fa parte di un interessante articolo: [AlmaLinux VS Rocky Linux, quali sono le differenze chiave?](https://managedserver.it/almalinux-vs-rocky-linux-quali-sono-le-differenze-chiave/#Differenze_chiave_tra_AlmaLinux_e_Rocky_Linux) Buona lettura!
 
 ![](https://cdn-gdbgh.nitrocdn.com/XsjHqdZrwNOTMrKVooDNBYYdgGozsmFz/assets/images/optimized/rev-c7dc79f/managedserver.it/wp-content/uploads/2022/09/almalinux-vs-rockylinux-1536x864.png)
