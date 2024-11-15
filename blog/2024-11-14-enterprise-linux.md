@@ -72,11 +72,11 @@ Saremo automaticamente loggati, e non ci resta che far partire l'installazione!
 ![](/images/almalinux-9.5-installing.png)
 
 
-Potete scaricare l'esperimento direttamente dal [cestino](https://penguins-eggs.net/basket/index.php?p=isos), e mi raccomando fresche! 
+Potete scaricare l'esperimento direttamente dal [cestino delle uova](https://penguins-eggs.net/basket/index.php?p=isos) e, mi raccomando, fresche! 
 
 **egg-of_almalinux-9.5-naked_amd64_2024-11-15_2029.iso**.
 
-# Vestiamo la nostra naked_amd64_2024
+# Vestiamo la nostra naked
 
 Possiamo customizzare la nostra versione anche utilizzando il `wardrobe` di eggs,
 non dobbiamo far altro che:
@@ -87,8 +87,3 @@ non dobbiamo far altro che:
 Ecco il risultato!
 
 ![](/images/almalinux-9.5-colibri.png)
-
-
-
-
-
