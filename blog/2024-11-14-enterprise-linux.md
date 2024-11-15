@@ -26,3 +26,9 @@ Vediamo se c'è interesse, personalmente lo spero.
 Per concludere, serviva una immagine su AlmaLinux e RockyLinux per introdurle. L'ho trovata e fa parte di un interessante articolo di [managedserver](https://managedserver.it): [AlmaLinux VS Rocky Linux, quali sono le differenze chiave?](https://managedserver.it/almalinux-vs-rocky-linux-quali-sono-le-differenze-chiave/#Differenze_chiave_tra_AlmaLinux_e_Rocky_Linux) Buona lettura!
 
 ![](https://cdn-gdbgh.nitrocdn.com/XsjHqdZrwNOTMrKVooDNBYYdgGozsmFz/assets/images/optimized/rev-c7dc79f/managedserver.it/wp-content/uploads/2022/09/almalinux-vs-rockylinux-1536x864.png)
+
+## Red Hat Enterprise Linux 9.5
+
+Novità, proprio mentre scrivevo questo post, [Red Hat Enterprise Linux 9.5](https://distrowatch.com/?newsid=12289) è stato rilasciato.
+
+Oggi è il 15 nomembre 2024, vediamo come reagiranno ed in quanto tempo AlmaLinux e RockyLinux.
