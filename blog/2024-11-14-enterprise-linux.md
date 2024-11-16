@@ -96,7 +96,7 @@ Ecco il risultato!
 
 ## Due parole sul wardrobe
 
-Il wardrobe è costituito essenzialmente da un file `.YAML` e da una `sysroot`
+Il wardrobe è costituito essenzialmente da un file `.YAML`, in questo caso [fedora.yml](https://github.com/pieroproietti/penguins-wardrobe/blob/main/costumes/colibri/fedora.yml) e da una `sysroot`
 nella quale vanno copiate le varie customizzazione.
 
 Il file YAML è utilizzato per installare i pacchetti, la sysroot viene 
