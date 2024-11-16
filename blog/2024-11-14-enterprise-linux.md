@@ -35,7 +35,7 @@ Oggi è il 15, vediamo come risponderanno ed in quanto tempo AlmaLinux e RockyLi
 
 ## AlmaLinux 9.5 beta
 
-E la risposta è arrivata immadiatamente, AlmaLinux ha già annunciato in data odierna [AlmaLinux 9.5 Beta](https://almalinux.org/blog/2024-10-15-announcing-95-beta/).
+E la risposta è arrivata immadiatamente, AlmaLinux ha annunciato in data odierna [AlmaLinux 9.5 Beta](https://almalinux.org/blog/2024-10-15-announcing-95-beta/).
 
 ## Rimasterizziamo?
 
@@ -50,6 +50,8 @@ L'installazione sta andando, regolarmente.
 ![](/images/almalinux-9.5-beta-installing.png)
 
 ### Installazione di penguins-eggs
+Una volta completata l'installazione e riavviato, installeremo `git`, quindi:
+
 * `git clone https://github.com/pieroproietti/penguins-eggs`
 * `cd penguins-eggs/PREREQUISITES/almalinux`
 * `sudo ./nodesource.sh` # per installare nodejs >18
@@ -57,7 +59,8 @@ L'installazione sta andando, regolarmente.
 * `cd ~/penguins-eggs`
 * `sudo ./install-eggs-dev`
 
-Finita l'installazione, adesso non ci resta che rimasterizzare la nostra AlmaLinux 9.5 beta. 
+Finita l'installazione di penguins-eggs, non ci resta che rimasterizzare la nostra 
+AlmaLinux 9.5 beta. 
 
 Un solo comando:
 
@@ -79,7 +82,7 @@ Potete scaricare l'esperimento direttamente dal [cestino delle uova](https://pen
 
 **egg-of_almalinux-9.5-naked_amd64_2024-11-15_2029.iso**.
 
-# Vestiamo la nostra naked
+## Vestiamo la nostra naked
 
 Possiamo customizzare la nostra versione anche utilizzando il `wardrobe` di eggs,
 non dobbiamo far altro che:
@@ -90,3 +93,16 @@ non dobbiamo far altro che:
 Ecco il risultato!
 
 ![](/images/almalinux-9.5-colibri.png)
+
+## Due parole sul wardrobe
+
+Il wardrobe è costituito essenzialmente da un file `.YAML` e da una `sysroot`
+nella quale vanno copiate le varie customizzazione.
+
+Il file YAML è utilizzato per installare i pacchetti, la sysroot viene 
+copiata in /.
+
+Tutta questa è la magia!
+
+Potete trovare il `wardrobe` su [penguins-wardrobe](https://github.com/pieroproietti/penguins-wardrobe),
+eseguire il fork e farvene uno vostro, oltre che - naturalmente - usare l'originale.
