@@ -35,9 +35,9 @@ Oggi è il 15, vediamo come risponderanno ed in quanto tempo AlmaLinux e RockyLi
 
 ## AlmaLinux 9.5 beta
 
-Per la verità AlmaLinux ha già annunciato in data odierna [AlmaLinux 9.5 Beta](https://almalinux.org/blog/2024-10-15-announcing-95-beta/), quindi direi che siamo prossimi.
+E la risposta è arrivata immadiatamente, AlmaLinux ha già annunciato in data odierna [AlmaLinux 9.5 Beta](https://almalinux.org/blog/2024-10-15-announcing-95-beta/).
 
-## Perchè non rimasterizzarla?
+## Rimasterizziamo?
 
 Ho scaricato l'attuale versione `AlmaLinux-9.5-beta-1-x86_64-minimal.iso` e proveremo a rimasterizzarla.
 
@@ -46,6 +46,8 @@ Il primo passo naturalmente è l'installazione.
 Selezionata l'installazione minima, ho definito una installazione su ext4 con una partizione di swap, veramente ho barato riutilizzando le partizioni della Debian installata sulla stessa VM. Ho assegnato la password all'utente root: `evolution`, quindi ho creato un utente `artisan` con la stessa password. Ho incluso artisan nel gruppo `wheel` per abilitare il `sudo`.
 
 L'installazione sta andando, regolarmente.
+
+![](/images/almalinux-9.5-beta-installing.png)
 
 ### Installazione di penguins-eggs
 * `git clone https://github.com/pieroproietti/penguins-eggs`
@@ -61,15 +63,16 @@ Un solo comando:
 
 `eggs love`
 
-Otterremo la nostra ISO, denominata: `egg-of_almalinux-9.5-naked_amd64_2024-11-15_2029.iso`
+![](/images/almalinux-9.5-beta-producing.png)
 
-Per effettuare una successiva installazione tutto quello che dovremo fare è inserire l'immagine in una VM o copiarla su DVD o chiavetta, ed avviare il nuovo sistema.
+Alla fine del processo otterremo la nostra ISO, denominata: `egg-of_almalinux-9.5-naked_amd64_2024-11-15_2029.iso`
 
 ## Installare la nostra versione
+Per effettuare una successiva installazione tutto quello che dovremo fare è inserire l'immagine in una VM o copiarla su DVD o chiavetta, ed avviare il nuovo sistema.
 
 Saremo automaticamente loggati, e non ci resta che far partire l'installazione!
 
-![](/images/almalinux-9.5-installing.png)
+![](/images/almalinux-9.5-beta-reinstalling.png)
 
 
 Potete scaricare l'esperimento direttamente dal [cestino delle uova](https://penguins-eggs.net/basket/index.php?p=isos) e, mi raccomando, fresche! 
