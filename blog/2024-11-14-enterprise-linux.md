@@ -106,3 +106,11 @@ Tutta questa è la magia!
 
 Potete trovare il `wardrobe` su [penguins-wardrobe](https://github.com/pieroproietti/penguins-wardrobe),
 eseguire il fork e farvene uno vostro, oltre che - naturalmente - usare l'originale.
+
+## Aggiornamento del 19 novembre 2024
+
+AlmaLinux è già uscita con la release 9.5 definitiva, mentre sul sito di RockyLinux non si vedono ancora annunci.
+
+Ho rimasterizzato la nuova AlmaLinux 9.5 e la potete trovare nel [basket](https://penguins-eggs.net/basket/index.php?p=isos)
+
+![](https://almalinux.org/blog-images/2024/2024-11-18-almalinux-9-5-stable.png)
