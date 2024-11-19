@@ -109,7 +109,11 @@ eseguire il fork e farvene uno vostro, oltre che - naturalmente - usare l'origin
 
 ## Aggiornamento del 19 novembre 2024
 
-AlmaLinux è già uscita con la release 9.5 definitiva, mentre sul sito di RockyLinux non si vedono ancora annunci.
+AlmaLinux - a distanza di soli 5 giorni, quindi, dall'uscita di RHEL 9.5 - ha già rilasciato la release 9.5 definitiva. 
+
+A ruota avremo anche RockyLinux 9.5, anche se per il momento, non sono riuscito a trovare indicazioni in merito.
+
+Direi che il ritardo è minimo rispetto al vantaggio di vivere liberi, mettere le mani sul prodotto quando esce poter valutare subito, non tra due, tre mesi o peggio. come normalmente succede.
 
 Ho rimasterizzato la nuova AlmaLinux 9.5 e la potete trovare nel [basket](https://penguins-eggs.net/basket/index.php?p=isos)
 
