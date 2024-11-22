@@ -118,3 +118,12 @@ Direi che il ritardo è minimo rispetto al vantaggio di vivere liberi, mettere l
 Ho rimasterizzato la nuova AlmaLinux 9.5 e la potete trovare nel [basket](https://penguins-eggs.net/basket/index.php?p=isos)
 
 ![](https://almalinux.org/blog-images/2024/2024-11-18-almalinux-9-5-stable.png)
+
+## Aggiornamento del 22 novembre 2024
+A distanza di poco, scopro che il 19 novembre sono state rilasciate sia 
+[Rockylinux 9.5](https://rockylinux.org/news/rocky-linux-9-5-ga-release)
+che [Oracle's Linux Distribution 9.5](https://blogs.oracle.com/linux/post/announcing-oracle-linux-9-update-5-general-availability).
+
+Il quadro sembra completo!
+
+
