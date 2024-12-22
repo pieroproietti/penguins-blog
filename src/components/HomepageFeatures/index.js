@@ -8,7 +8,7 @@ const FeatureList = [
     Svg: require('@site/static/img/almalinux.svg').default,
     description: (
       <>
-        <a href="https://sourceforge.net/projects/penguins-eggs/files/ISOS/arch/">&nbsp;Almalinux&nbsp;</a>
+        <a href="https://drive.google.com/drive/folders/1KVd6uRlX5bwICCCuWcX42uxHj3vJRK3T">&nbsp;Almalinux&nbsp;</a>
       </>
     ),
   },
@@ -17,7 +17,7 @@ const FeatureList = [
     Svg: require('@site/static/img/arch.svg').default,
     description: (
       <>
-        Adding <a href="https://sourceforge.net/projects/penguins-eggs/files/ISOS/arch/">&nbsp;Arch&nbsp;</a>
+        Adding <a href="https://drive.google.com/drive/folders/1qWh-hWjldQpb6TWSDY9h8tKdD4VadkOr">&nbsp;Arch&nbsp;</a>
         was laborious, but it was possible, because the project started and evolved to be as universal as possible.
       </>
     ),
@@ -27,11 +27,9 @@ const FeatureList = [
     Svg: require('@site/static/img/debian.svg').default,
     description: (
       <>
-        Penguins' eggs started on Debian in 2017, it still supports 
-        <a href="https://sourceforge.net/projects/penguins-eggs/files/ISOS/debian/buster">&nbsp;buster&nbsp;</a>
-        in addition to 
-        <a href="https://sourceforge.net/projects/penguins-eggs/files/ISOS/debian/bullseye">&nbsp;bullseye&nbsp;</a>,
-        and <a href="https://sourceforge.net/projects/penguins-eggs/files/ISOS/debian/bookworm">&nbsp;bookworm&nbsp;</a>
+        Penguins' eggs started on Debian in 2017, it still supports jessie, stretch, buster, bullseye,
+        <a href="https://drive.google.com/drive/folders/18QIqicyecLMuU1Zmb2E039gWawzZuy3e">&nbsp;bookworm&nbsp;</a>
+        and <a href="https://drive.google.com/drive/folders/195I7mSh35kLhQ-39C7Lu7PvueJHx7jgh">&nbsp;trixie&nbsp;</a>
       </>
     ),
   },
@@ -41,8 +39,8 @@ const FeatureList = [
     description: (
       <>
         Eggs support Devuan 
-        <a href="https://sourceforge.net/projects/penguins-eggs/files/ISOS/devuan/daedalus">&nbsp;daedalus</a>
-        <a href="https://sourceforge.net/projects/penguins-eggs/files/ISOS/devuan/excalibur">&nbsp;excalibur</a>, 
+        <a href="https://drive.google.com/drive/folders/1EIuPNQbQf6iw0VUOgDZ2EAVhlpPzGFhh">&nbsp;daedalus</a>
+        <a href="https://drive.google.com/drive/folders/1fi3PLk8LXJ4o4TLjIJR8wBDWzbxT_2__">&nbsp;excalibur</a>, 
       </>
     ),
   },
@@ -51,7 +49,7 @@ const FeatureList = [
     Svg: require('@site/static/img/fedora.svg').default,
     description: (
       <>
-      <a href="https://www.fedoraproject.org/">Fedora</a> of course, but also <a href="https://almalinux.org/">AlmaLinux</a> and <a href="https://rockylinux.org/">RockyLinux</a>!
+      <a href="https://drive.google.com/drive/folders/1B8am7G3FSxCD8rCLcyysDGTJD0GVUMhY">Fedora</a>
       </>
     ),
   },
@@ -60,8 +58,7 @@ const FeatureList = [
     Svg: require('@site/static/img/linuxmint.svg').default,
     description: (
       <>
-        <a href="https://sourceforge.net/projects/penguins-eggs/files/ISOS/linuxmint/">&nbsp;Linuxmint</a>
-        and virtually every Debian, Devuan and Ubuntu <a href="https://sourceforge.net/projects/penguins-eggs/files/ISOS/">derivatives</a> are supported. 
+        <a href="https://drive.google.com/drive/folders/1perjMEKAo5F-ezb2TXbae5dACstJ5VAl">&nbsp;Linuxmint</a> and virtually every Debian, Devuan and Ubuntu derivatives are supported. 
       </>
     ),
   },
@@ -70,7 +67,7 @@ const FeatureList = [
     Svg: require('@site/static/img/manjaro.svg').default,
     description: (
       <>
-        penguins-eggs is part of communty repo of <a href="https://sourceforge.net/projects/penguins-eggs/files/ISOS/manjaro/">Manjaro</a>.
+        penguins-eggs is part of communty repo of <a href="https://drive.google.com/drive/folders/1perjMEKAo5F-ezb2TXbae5dACstJ5VAl">Manjaro</a>.
       </>
     ),
   },
@@ -89,10 +86,8 @@ const FeatureList = [
     description: (
       <>
         Ubuntu is full supported: 
-        <a href="https://sourceforge.net/projects/penguins-eggs/files/ISOS/ubuntu/bionic">&nbsp;bionic</a>,
-        <a href="https://sourceforge.net/projects/penguins-eggs/files/ISOS/ubuntu/focal">&nbsp;focal</a>,
-        <a href="https://sourceforge.net/projects/penguins-eggs/files/ISOS/ubuntu/jammy">&nbsp;jammy</a> and
-        <a href="https://sourceforge.net/projects/penguins-eggs/files/ISOS/ubuntu/noble">&nbsp;noble</a>
+        <a href="https://drive.google.com/drive/folders/1perjMEKAo5F-ezb2TXbae5dACstJ5VAl">&nbsp;bionic</a>,
+        <a href="https://drive.google.com/drive/folders/1perjMEKAo5F-ezb2TXbae5dACstJ5VAl">&nbsp;noble</a>
       </>
     ),
   },
