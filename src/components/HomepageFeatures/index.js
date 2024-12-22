@@ -4,6 +4,15 @@ import styles from './styles.module.css';
 
 const FeatureList = [
   {
+    title: 'AlmaLinux',
+    Svg: require('@site/static/img/almalinux.svg').default,
+    description: (
+      <>
+        <a href="https://sourceforge.net/projects/penguins-eggs/files/ISOS/arch/">&nbsp;Almalinux&nbsp;</a>
+      </>
+    ),
+  },
+  {
     title: 'Arch',
     Svg: require('@site/static/img/arch.svg').default,
     description: (
@@ -38,15 +47,21 @@ const FeatureList = [
     ),
   },
   {
-    title: 'Ubuntu',
-    Svg: require('@site/static/img/ubuntu.svg').default,
+    title: 'fedora',
+    Svg: require('@site/static/img/fedora.svg').default,
     description: (
       <>
-        Ubuntu is full supported: 
-        <a href="https://sourceforge.net/projects/penguins-eggs/files/ISOS/ubuntu/bionic">&nbsp;bionic</a>,
-        <a href="https://sourceforge.net/projects/penguins-eggs/files/ISOS/ubuntu/focal">&nbsp;focal</a>,
-        <a href="https://sourceforge.net/projects/penguins-eggs/files/ISOS/ubuntu/jammy">&nbsp;jammy</a> and
-        <a href="https://sourceforge.net/projects/penguins-eggs/files/ISOS/ubuntu/noble">&nbsp;noble</a>
+      <a href="https://www.fedoraproject.org/">Fedora</a> of course, but also <a href="https://almalinux.org/">AlmaLinux</a> and <a href="https://rockylinux.org/">RockyLinux</a>!
+      </>
+    ),
+  },
+  {
+    title: 'Linuxmint',
+    Svg: require('@site/static/img/linuxmint.svg').default,
+    description: (
+      <>
+        <a href="https://sourceforge.net/projects/penguins-eggs/files/ISOS/linuxmint/">&nbsp;Linuxmint</a>
+        and virtually every Debian, Devuan and Ubuntu <a href="https://sourceforge.net/projects/penguins-eggs/files/ISOS/">derivatives</a> are supported. 
       </>
     ),
   },
@@ -60,42 +75,15 @@ const FeatureList = [
     ),
   },
   {
-    title: 'Debian derivatives',
-    Svg: require('@site/static/img/linuxmint.svg').default,
+    title: 'Ubuntu',
+    Svg: require('@site/static/img/ubuntu.svg').default,
     description: (
       <>
-        <a href="https://sourceforge.net/projects/penguins-eggs/files/ISOS/linuxmint/">&nbsp;Linuxmint</a>,
-        <a href="https://sourceforge.net/projects/penguins-eggs/files/ISOS/neon/">&nbsp;KDE neon</a>,
-        <a href="https://sourceforge.net/projects/penguins-eggs/files/ISOS/pop-os/">&nbsp;Pop!_OS</a>&nbsp;
-        and virtually every Debian, Devuan and Ubuntu <a href="https://sourceforge.net/projects/penguins-eggs/files/ISOS/">derivatives</a> are supported. 
-      </>
-    ),
-  },
-  {
-    title: 'Arch derivatives',
-    Svg: require('@site/static/img/endeavouros.svg').default,
-    description: (
-      <>
-      <a href="https://sourceforge.net/projects/penguins-eggs/files/ISOS/arch/">&nbsp;Arch&nbsp;</a>
-      and <a href="https://sourceforge.net/projects/penguins-eggs/files/ISOS/">derivatives</a>.
-      </>
-    ),
-  },
-  {
-    title: 'fedora',
-    Svg: require('@site/static/img/fedora.svg').default,
-    description: (
-      <>
-      <a href="https://www.fedoraproject.org/">Fedora</a> of course, but also <a href="https://almalinux.org/">AlmaLinux</a> and <a href="https://rockylinux.org/">RockyLinux</a>!
-      </>
-    ),
-  },
-  {
-    title: 'Alpine Linux',
-    Svg: require('@site/static/img/alpine.svg').default,
-    description: (
-      <>
-      <a href="https://github.com/pieroproietti/penguins-eggs/discussions/377">Come in</a> help to bring penguins' eggs to <a href="https://alpinelinux.org/">Alpine Linux</a>!
+        Ubuntu is full supported: 
+        <a href="https://sourceforge.net/projects/penguins-eggs/files/ISOS/ubuntu/bionic">&nbsp;bionic</a>,
+        <a href="https://sourceforge.net/projects/penguins-eggs/files/ISOS/ubuntu/focal">&nbsp;focal</a>,
+        <a href="https://sourceforge.net/projects/penguins-eggs/files/ISOS/ubuntu/jammy">&nbsp;jammy</a> and
+        <a href="https://sourceforge.net/projects/penguins-eggs/files/ISOS/ubuntu/noble">&nbsp;noble</a>
       </>
     ),
   },
