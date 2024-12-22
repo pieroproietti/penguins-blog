@@ -75,6 +75,15 @@ const FeatureList = [
     ),
   },
   {
+    title: 'Rocky',
+    Svg: require('@site/static/img/rocky.svg').default,
+    description: (
+      <>
+        <a href="https://drive.google.com/drive/folders/1perjMEKAo5F-ezb2TXbae5dACstJ5VAl">RockyLinux</a>.
+      </>
+    ),
+  },
+  {
     title: 'Ubuntu',
     Svg: require('@site/static/img/ubuntu.svg').default,
     description: (
