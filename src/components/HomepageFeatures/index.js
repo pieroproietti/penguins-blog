@@ -73,10 +73,10 @@ const FeatureList = [
   },
   {
     title: 'openmamba',
-    Svg: require('@site/static/img/openmamba.png').default,
+    Svg: require('@site/static/img/opensuse.svg').default,
     description: (
       <>
-        <a href="https://drive.google.com/drive/folders/1-7LbgkKIrp8hUFTbO3qGtPKzaHter6RM">openmamba</a> an indipendent distro, using dnf.
+        <a href="https://drive.google.com/drive/folders/1-7LbgkKIrp8hUFTbO3qGtPKzaHter6RM">openmamba</a>
       </>
     ),
   },
