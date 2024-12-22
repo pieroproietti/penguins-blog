@@ -38,10 +38,11 @@ function HomepageHeader() {
             to="/docs/faq">
             FAQ 
           </Link>
+          &nbsp;
           <Link
             className="button button--secondary button--lg"
             to="/docs/google-drive-penguins-eggs">
-            Google drive
+            Google Drive
           </Link>
 
         </div>

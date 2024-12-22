@@ -134,7 +134,7 @@ const config = {
             items: [
               {
                 label: 'Google drive',
-                to: 'https://penguins-eggs.net/docs/google-drive-penguins-eggs',
+                to: 'https://penguins-eggs.net/google-drive-penguins-eggs',
               },
               {
                 label: 'Sourceforge',

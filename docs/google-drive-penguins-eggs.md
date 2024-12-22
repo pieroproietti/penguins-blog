@@ -1,5 +1,5 @@
 ---
-title: Google drive
+title: Google Drive
 authors: pieroproietti
 slug: google-drive-penguins-eggs
 lang: en
@@ -8,7 +8,7 @@ import Translactions from '@site/src/components/Translactions';
 
 <Translactions />
 
-Download from Google drive
+Clik on the links, to download from Google Drive
 
 * [isos](https://drive.google.com/drive/folders/19M7fDEebPZjEY4yHD79zSMWFndCPishN)
     * [almalinux](https://drive.google.com/drive/folders/1KVd6uRlX5bwICCCuWcX42uxHj3vJRK3T)
