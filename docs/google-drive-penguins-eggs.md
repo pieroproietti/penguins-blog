@@ -1,7 +1,7 @@
 ---
 title: Google drive
 authors: pieroproietti
-slug: gooogle-drive-penguins-eggs
+slug: google-drive-penguins-eggs
 lang: en
 ---
 import Translactions from '@site/src/components/Translactions';
