@@ -38,7 +38,7 @@ const FeatureList = [
     Svg: require('@site/static/img/devuan.svg').default,
     description: (
       <>
-        Eggs support Devuan 
+        Devuan:&nbsp;
         <a href="https://drive.google.com/drive/folders/1EIuPNQbQf6iw0VUOgDZ2EAVhlpPzGFhh">&nbsp;daedalus</a>
         <a href="https://drive.google.com/drive/folders/1fi3PLk8LXJ4o4TLjIJR8wBDWzbxT_2__">&nbsp;excalibur</a>, 
       </>
@@ -49,7 +49,7 @@ const FeatureList = [
     Svg: require('@site/static/img/fedora.svg').default,
     description: (
       <>
-      <a href="https://drive.google.com/drive/folders/1B8am7G3FSxCD8rCLcyysDGTJD0GVUMhY">Fedora</a>
+      <a href="https://drive.google.com/drive/folders/1B8am7G3FSxCD8rCLcyysDGTJD0GVUMhY">Fedora 41</a>
       </>
     ),
   },
@@ -67,13 +67,13 @@ const FeatureList = [
     Svg: require('@site/static/img/manjaro.svg').default,
     description: (
       <>
-        penguins-eggs is part of communty repo of <a href="https://drive.google.com/drive/folders/1perjMEKAo5F-ezb2TXbae5dACstJ5VAl">Manjaro</a>.
+        penguins-eggs is part of community repo of <a href="https://drive.google.com/drive/folders/1perjMEKAo5F-ezb2TXbae5dACstJ5VAl">Manjaro</a>.
       </>
     ),
   },
   {
     title: 'openmamba',
-    Svg: require('@site/static/img/opensuse.svg').default,
+    Svg: require('@site/static/img/openmamba.svg').default,
     description: (
       <>
         <a href="https://drive.google.com/drive/folders/1-7LbgkKIrp8hUFTbO3qGtPKzaHter6RM">openmamba</a>
