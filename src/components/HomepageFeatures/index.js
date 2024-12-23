@@ -13,6 +13,16 @@ const FeatureList = [
     ),
   },
   {
+    title: 'Alpine',
+    Svg: require('@site/static/img/alpine.svg').default,
+    description: (
+      <>
+        penguins-eggs on <a href="https://#">&nbsp;Almalinux&nbsp;</a> is breack, actually
+      </>
+    ),
+  },
+
+  {
     title: 'Arch',
     Svg: require('@site/static/img/arch.svg').default,
     description: (
