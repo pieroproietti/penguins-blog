@@ -8,7 +8,7 @@ const FeatureList = [
     Svg: require('@site/static/img/almalinux.svg').default,
     description: (
       <>
-        <a href="https://drive.google.com/drive/folders/1KVd6uRlX5bwICCCuWcX42uxHj3vJRK3T">&nbsp;Almalinux&nbsp;</a>
+        <a href="/almalinux">&nbsp;Almalinux&nbsp;</a>
       </>
     ),
   },
@@ -17,7 +17,7 @@ const FeatureList = [
     Svg: require('@site/static/img/alpine.svg').default,
     description: (
       <>
-        penguins-eggs on <a href="https://#">&nbsp;Almalinux&nbsp;</a> is breack, actually
+        penguins-eggs on <a href="/alpine">&nbsp;Alpine&nbsp;</a> actually is breack.
       </>
     ),
   },
@@ -27,7 +27,7 @@ const FeatureList = [
     Svg: require('@site/static/img/arch.svg').default,
     description: (
       <>
-        Adding <a href="https://drive.google.com/drive/folders/1qWh-hWjldQpb6TWSDY9h8tKdD4VadkOr">&nbsp;Arch&nbsp;</a>
+        Adding <a href="/archlinux">&nbsp;Arch&nbsp;</a>
         was laborious, but it was possible, because the project started and evolved to be as universal as possible.
       </>
     ),
@@ -37,9 +37,9 @@ const FeatureList = [
     Svg: require('@site/static/img/debian.svg').default,
     description: (
       <>
-        Penguins' eggs started on Debian in 2017, it still supports jessie, stretch, buster, bullseye,
-        <a href="https://drive.google.com/drive/folders/18QIqicyecLMuU1Zmb2E039gWawzZuy3e">&nbsp;bookworm&nbsp;</a>
-        and <a href="https://drive.google.com/drive/folders/195I7mSh35kLhQ-39C7Lu7PvueJHx7jgh">&nbsp;trixie&nbsp;</a>
+        Penguins' eggs started on <a href="Debian">Debian</a> in 2017, it still supports jessie, stretch, buster, bullseye,
+        <a href="/debian/bookworm">&nbsp;bookworm&nbsp;</a>
+        and <a href="/debian/bookworm">&nbsp;trixie&nbsp;</a>
       </>
     ),
   },

@@ -4,9 +4,6 @@ authors: pieroproietti
 slug: google-drive-penguins-eggs
 lang: en
 ---
-import Translactions from '@site/src/components/Translactions';
-
-<Translactions />
 
 Clik on the links, to download from Google Drive
 

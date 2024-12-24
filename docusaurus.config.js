@@ -133,8 +133,8 @@ const config = {
             title: 'More',
             items: [
               {
-                label: 'Google drive',
-                to: 'https://penguins-eggs.net/google-drive-penguins-eggs',
+                label: 'Drive',
+                to: 'https://penguins-eggs.net/drive',
               },
               {
                 label: 'Sourceforge',
