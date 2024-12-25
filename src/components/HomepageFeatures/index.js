@@ -37,7 +37,7 @@ const FeatureList = [
     Svg: require('@site/static/img/debian.svg').default,
     description: (
       <>
-        Penguins' eggs started on <a href="Debian">Debian</a> in 2017, it still supports jessie, stretch, buster, bullseye,
+        Penguins' eggs started on <a href="/debian">Debian</a> in 2017, it still supports jessie, stretch, buster, bullseye,
         <a href="/debian/bookworm">&nbsp;bookworm&nbsp;</a>
         and <a href="/debian/trixie">&nbsp;trixie&nbsp;</a>
       </>
@@ -48,9 +48,9 @@ const FeatureList = [
     Svg: require('@site/static/img/devuan.svg').default,
     description: (
       <>
-        Devuan:&nbsp;
-        <a href="https://drive.google.com/drive/folders/1EIuPNQbQf6iw0VUOgDZ2EAVhlpPzGFhh">&nbsp;daedalus</a>
-        <a href="https://drive.google.com/drive/folders/1fi3PLk8LXJ4o4TLjIJR8wBDWzbxT_2__">&nbsp;excalibur</a>, 
+        <a href="/devuan/">Devuan</a>:&nbsp;
+        <a href="/devuan/daedalus/">&nbsp;daedalus</a>, 
+        <a href="/devuan/excalibue/">&nbsp;excalibur</a>, 
       </>
     ),
   },

@@ -1,26 +1,16 @@
-# Penguins' eggs remastered ISOs
-
-All ISOs are based on Devuan daedalus
-
-# user/password
-* ```live/evolution```
-* ```root/evolution```
-
-All ISOs include eggs, you can udate it with: ```sudo eggs update```.
-
 # Devuan daedalus
+![](/img/devuan.svg)
 
-* **naked** - just the juice, without GUI. You can start here to build your revolution!
-*  **colibri** A light xfce4 for developers you can easily start to improve eggs installing colibri.
-* **gnome** just a naked Devuan dressed with gnome, customize it!
+## Penguins' eggs remastered ISOs
+All ISOS have user set to ```live/evolution```, and ```root/evolution```
 
-## More informations:
+* [drive](https://drive.google.com/drive/folders/1EIuPNQbQf6iw0VUOgDZ2EAVhlpPzGFhh)
 
-* Repository: [penguins-eggs](https://github.com/pieroproietti/penguins-eggs)
-* Blog: [penguins-eggs](https://penguins-eggs.net)
+## Penguins' eggs packages
+Here you can download actual packages to install and reproduce your system.
 
-* You can find more informations on this Linux distro at: [Devuan](https://devuan.org/).
+* [drive](https://drive.google.com/drive/folders/14s1JNNp9FW6oESWgIIPifglNB6eRbYko)
 
-# Disclaim
+## Disclaim
 __Please note what this project is in no way connected to the original distro in any official way, it’s just my personal experiment.__
 
