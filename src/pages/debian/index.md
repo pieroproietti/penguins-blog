@@ -3,7 +3,7 @@
 
 Debian: the universal operating system
 
-## Remastered version
+## Penguins' eggs remastered version
 Penguins' eggs started on <a href="Debian">Debian</a> in 2017:
 * [Debian 8 jessie](https://sourceforge.net/projects/penguins-eggs/files/isos/debian/jessie/)
 * [Debian 9 stretch](https://sourceforge.net/projects/penguins-eggs/files/isos/debian/stretch/)
@@ -12,8 +12,9 @@ Penguins' eggs started on <a href="Debian">Debian</a> in 2017:
 * [Debian 12 bookwom](/debian/bookworm/)
 * [Debian 13 trixie](/debian/trixie/)
 
-## penguins' eggs packages
+## Penguins' eggs packages
 Here you can download actual [packages](https://drive.google.com/drive/folders/14s1JNNp9FW6oESWgIIPifglNB6eRbYko) to install and reproduce your system.
+
 
 ## Disclaim
 __Please note what this project is in no way connected to the original distro in any official way, it’s just my personal experiment.__

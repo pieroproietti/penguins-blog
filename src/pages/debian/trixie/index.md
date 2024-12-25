@@ -5,25 +5,14 @@ All ISOs are based on Debian trixie.
 
 Since version `9.6.2` Penguins' eggs is released - as Debian package - for: `amd64`, `i386` and `arm64` architectures, supporting the majority of PCs, old ones and single board ARM systems like Raspberry Pi. Read on my the article [Triple somersault!](https://penguins-eggs.net/blog/triple-somersault).
 
-# user/password
-* ```live/evolution```
-* ```root/evolution```
+## Penguins' eggs trixie remastered ISOs
+All ISOS have user set to ```live/evolution```, and ```root/evolution```
 
-# Debian trixie
-* [](https://drive.google.com/drive/folders/195I7mSh35kLhQ-39C7Lu7PvueJHx7jgh)
-## **naked**
-Just the juice, without GUI. You can start here to build your revolution!
+* [drive](https://drive.google.com/drive/folders/195I7mSh35kLhQ-39C7Lu7PvueJHx7jgh)
 
-##  **colibri**
-A light xfce4 for developers you can easily start to improve eggs installing colibri.
+## Penguins' eggs packages
+Here you can download actual [packages](https://drive.google.com/drive/folders/14s1JNNp9FW6oESWgIIPifglNB6eRbYko) to install and reproduce your system.
 
-## More informations:
-
-* Repository: [penguins-eggs](https://github.com/pieroproietti/penguins-eggs)
-* Blog: [penguins-eggs](https://penguins-eggs.net)
-
-* You can find more informations on this Linux distro at: [Debian](https://debian.org/).
-
-# Disclaim
+## Disclaim
 __Please note what this project is in no way connected to the original distro in any official way, it’s just my personal experiment.__
 
