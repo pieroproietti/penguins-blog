@@ -41,8 +41,8 @@ function HomepageHeader() {
           &nbsp;
           <Link
             className="button button--secondary button--lg"
-            to="/drive">
-            Download
+            to="https://drive.google.com/drive/folders/19fwjvsZiW0Dspu2Iq-fQN0J-PDbKBlYY">
+            Google Drive
           </Link>
 
         </div>
