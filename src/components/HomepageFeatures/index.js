@@ -69,7 +69,7 @@ const FeatureList = [
     Svg: require('@site/static/img/linuxmint.svg').default,
     description: (
       <>
-        <a href="https://drive.google.com/drive/folders/1perjMEKAo5F-ezb2TXbae5dACstJ5VAl">&nbsp;Linuxmint</a> and virtually every Debian, Devuan and Ubuntu derivatives are supported. 
+        <a href="/linuxmint">&nbsp;Linuxmint</a> and virtually every Debian, Devuan and Ubuntu derivatives are supported. 
       </>
     ),
   },
