@@ -78,7 +78,7 @@ const FeatureList = [
     Svg: require('@site/static/img/manjaro.svg').default,
     description: (
       <>
-        penguins-eggs is part of community repo of <a href="https://drive.google.com/drive/folders/1perjMEKAo5F-ezb2TXbae5dACstJ5VAl">Manjaro</a>.
+        penguins-eggs is part of community repo of <a href="/manjaro">Manjaro</a>.
       </>
     ),
   },
