@@ -96,7 +96,7 @@ const FeatureList = [
     Svg: require('@site/static/img/opensuse.svg').default,
     description: (
       <>
-        <a href="https://drive.google.com/drive/folders/1MzrJrEbx8RJiX2NIlbgoVojH7vtosaMo">OpenSuSE</a>, the makers' choice for sysadmins, developers and desktop users.
+        <a href="/opensuse">OpenSuSE</a>, the makers' choice for sysadmins, developers and desktop users.
       </>
     ),
   },
