@@ -59,7 +59,7 @@ const FeatureList = [
     Svg: require('@site/static/img/fedora.svg').default,
     description: (
       <>
-      <a href="https://drive.google.com/drive/folders/1B8am7G3FSxCD8rCLcyysDGTJD0GVUMhY">Fedora 41</a>: It's your Operating System.
+      <a href="/fedora">Fedora 41</a>: It's your Operating System.
 
       </>
     ),
