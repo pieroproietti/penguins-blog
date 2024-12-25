@@ -87,7 +87,7 @@ const FeatureList = [
     Svg: require('@site/static/img/openmamba.svg').default,
     description: (
       <>
-        <a href="https://drive.google.com/drive/folders/1-7LbgkKIrp8hUFTbO3qGtPKzaHter6RM">openmamba</a> is an operating system based on the Linux kernel but is not a derivative of other distributions.
+        <a href="/openmamba">openmamba</a> is an operating system based on the Linux kernel but is not a derivative of other distributions.
       </>
     ),
   },
