@@ -114,9 +114,9 @@ const FeatureList = [
     Svg: require('@site/static/img/ubuntu.svg').default,
     description: (
       <>
-        Ubuntu is full supported: 
-        <a href="https://drive.google.com/drive/folders/1perjMEKAo5F-ezb2TXbae5dACstJ5VAl">&nbsp;bionic</a>,
-        <a href="https://drive.google.com/drive/folders/1perjMEKAo5F-ezb2TXbae5dACstJ5VAl">&nbsp;noble</a>
+        <a href="/ubuntu">Ubuntu</a> is full supported: 
+        <a href="/ubuntu/bionic/">&nbsp;bionic</a>,
+        <a href="/ubuntu/noble/">&nbsp;noble</a>
       </>
     ),
   },
