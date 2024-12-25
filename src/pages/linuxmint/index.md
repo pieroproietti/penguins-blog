@@ -5,9 +5,9 @@
 
 
 ## Penguins' eggs remastered version
-* [LMDE 6 faye](/faye/) based on Debian bookworm
-* [Linuxmint 22 vera](/vera/) based on Ubuntu jammy
-* [Linuxmint 22 wilma](/wilma/) based on Ubuntu noble
+* [LMDE 6 faye](/linuxmint/faye/) based on Debian bookworm
+* [Linuxmint 22 vera](/linuxmint/vera/) based on Ubuntu jammy
+* [Linuxmint 22 wilma](/linuxmint/wilma/) based on Ubuntu noble
 
 
 ## Penguins' eggs packages
