@@ -1,4 +1,4 @@
-# Penguins' eggs Debian trixie
+# Debian trixie
 ![](/img/debian.svg)
 
 Since version `9.6.2` Penguins' eggs is released - as Debian package - for: `amd64`, `i386` and `arm64` architectures, supporting the majority of PCs, old ones and single board ARM systems like Raspberry Pi. Read on my the article [Triple somersault!](https://penguins-eggs.net/blog/triple-somersault).

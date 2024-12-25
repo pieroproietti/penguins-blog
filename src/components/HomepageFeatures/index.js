@@ -39,7 +39,7 @@ const FeatureList = [
       <>
         Penguins' eggs started on <a href="Debian">Debian</a> in 2017, it still supports jessie, stretch, buster, bullseye,
         <a href="/debian/bookworm">&nbsp;bookworm&nbsp;</a>
-        and <a href="/debian/trixe">&nbsp;trixie&nbsp;</a>
+        and <a href="/debian/trixie">&nbsp;trixie&nbsp;</a>
       </>
     ),
   },
