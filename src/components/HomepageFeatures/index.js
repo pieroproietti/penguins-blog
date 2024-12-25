@@ -8,16 +8,16 @@ const FeatureList = [
     Svg: require('@site/static/img/almalinux.svg').default,
     description: (
       <>
-        <a href="/almalinux">&nbsp;Almalinux&nbsp;</a>
+        <a href="/almalinux">&nbsp;Almalinux&nbsp;</a> a RHEL clone
       </>
     ),
   },
   {
-    title: 'Alpine',
+    title: 'Alpine Linux',
     Svg: require('@site/static/img/alpine.svg').default,
     description: (
       <>
-        penguins-eggs on <a href="/alpine">&nbsp;Alpine&nbsp;</a> actually is breack.
+        penguins-eggs on <a href="/alpine">&nbsp;Alpine&nbsp;</a> is actually break.
       </>
     ),
   },
@@ -59,7 +59,8 @@ const FeatureList = [
     Svg: require('@site/static/img/fedora.svg').default,
     description: (
       <>
-      <a href="https://drive.google.com/drive/folders/1B8am7G3FSxCD8rCLcyysDGTJD0GVUMhY">Fedora 41</a>
+      <a href="https://drive.google.com/drive/folders/1B8am7G3FSxCD8rCLcyysDGTJD0GVUMhY">Fedora 41</a>: It's your Operating System.
+
       </>
     ),
   },
@@ -86,7 +87,7 @@ const FeatureList = [
     Svg: require('@site/static/img/openmamba.svg').default,
     description: (
       <>
-        <a href="https://drive.google.com/drive/folders/1-7LbgkKIrp8hUFTbO3qGtPKzaHter6RM">openmamba</a>
+        <a href="https://drive.google.com/drive/folders/1-7LbgkKIrp8hUFTbO3qGtPKzaHter6RM">openmamba</a> is an operating system based on the Linux kernel but is not a derivative of other distributions.
       </>
     ),
   },
@@ -95,7 +96,7 @@ const FeatureList = [
     Svg: require('@site/static/img/opensuse.svg').default,
     description: (
       <>
-        <a href="https://drive.google.com/drive/folders/1MzrJrEbx8RJiX2NIlbgoVojH7vtosaMo">OpenSuSE</a>.
+        <a href="https://drive.google.com/drive/folders/1MzrJrEbx8RJiX2NIlbgoVojH7vtosaMo">OpenSuSE</a>, the makers' choice for sysadmins, developers and desktop users.
       </>
     ),
   },
@@ -104,7 +105,7 @@ const FeatureList = [
     Svg: require('@site/static/img/rocky.svg').default,
     description: (
       <>
-        <a href="https://drive.google.com/drive/folders/1perjMEKAo5F-ezb2TXbae5dACstJ5VAl">RockyLinux</a>.
+        <a href="https://drive.google.com/drive/folders/1perjMEKAo5F-ezb2TXbae5dACstJ5VAl">RockyLinux</a> a RHEL clone.
       </>
     ),
   },
