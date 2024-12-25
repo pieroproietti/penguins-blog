@@ -105,7 +105,7 @@ const FeatureList = [
     Svg: require('@site/static/img/rocky.svg').default,
     description: (
       <>
-        <a href="https://drive.google.com/drive/folders/1perjMEKAo5F-ezb2TXbae5dACstJ5VAl">RockyLinux</a> a RHEL clone.
+        <a href="/rocky">RockyLinux</a> a RHEL clone.
       </>
     ),
   },
