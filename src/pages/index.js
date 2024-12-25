@@ -42,7 +42,7 @@ function HomepageHeader() {
           <Link
             className="button button--secondary button--lg"
             to="/drive">
-            Drive
+            Download
           </Link>
 
         </div>

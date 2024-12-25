@@ -81,10 +81,6 @@ const config = {
             label: 'Blog', 
             position: 'left'
           },
-          { to: 'https://penguins-eggs.net/basket/', 
-            label: 'Downloads', 
-            position: 'left'
-          },
           {
             href: 'https://github.com/pieroproietti/penguins-eggs',            
             label: 'penguins-eggs',
@@ -116,16 +112,16 @@ const config = {
             title: 'Community',
             items: [
               {
-                label: 'penguins-eggs Persian site',
-                href: 'https://penguins-eggs.ir',
-              },
-              {
                 label: 'Facebook group',
                 href: 'https://www.facebook.com/groups/penguins.eggs',
               },
               {
                 label: 'Telegram channel',
                 href: 'https://t.me/penguins_eggs',
+              },
+              {
+                label: 'penguins-eggs Persian site',
+                href: 'https://penguins-eggs.ir',
               },
             ],
           },
@@ -138,7 +134,7 @@ const config = {
               },
               {
                 label: 'Sourceforge',
-                to: 'https://sourceforge.net/projects/penguins-eggs/files/DEBS/',
+                to: 'https://sourceforge.net/projects/penguins-eggs/',
               },
               {
                 label: 'GitHub',
