@@ -1,7 +1,7 @@
 # Ubuntu
-![](/img/ubuntu.svg)
+![Ubuntu](/img/ubuntu.svg)
 
-Debian: the universal operating system
+The number 1 open source operating system powers millions of PCs and laptops around the world.
 
 ## Penguins' eggs remastered version
 * [Ubuntu 18.10 bionic](/ubuntu/bionic/)

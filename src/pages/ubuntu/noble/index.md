@@ -1,6 +1,8 @@
 # Ubuntu 24.04 noble
 ![](/img/ubuntu.svg)
 
+The number 1 open source operating system powers millions of PCs and laptops around the world.
+
 ## Penguins' eggs remastered ISOs
 All ISOS have user set to ```live/evolution```, and ```root/evolution```
 
