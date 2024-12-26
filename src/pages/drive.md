@@ -26,7 +26,7 @@ Clik on the links to download from penguins-eggs Google Drive
       * [openmamba](https://drive.google.com/drive/folders/1-7LbgkKIrp8hUFTbO3qGtPKzaHter6RM)
       * [opensuse](https://drive.google.com/drive/folders/1MzrJrEbx8RJiX2NIlbgoVojH7vtosaMo)
       * [pop-os](https://drive.google.com/drive/folders/1Ir-N1n5gbS8JaW5GMZYqLGomLaGb2k3j)
-      * [predator-os](/predator-os/)
+      * [predator-os](https://drive.google.com/drive/folders/1zuiY8zWKlxBWtXoNbALKiGaRvzFyRx3o)
       * [rocky](https://drive.google.com/drive/folders/1perjMEKAo5F-ezb2TXbae5dACstJ5VAl)
       * [ubuntu](https://drive.google.com/drive/folders/1zd-5istKS9eVHBcbXD7CL9T_UxjaKotQ)
           * [bionic](https://drive.google.com/drive/folders/18_8Rt4KrwFiUjrHwYJKucPK3dt03LIly)
