@@ -10,7 +10,7 @@ The number 1 open source operating system powers millions of PCs and laptops aro
 ## Penguins' eggs packages
 Here you can download actual packages to install and reproduce your system.
 
-[drive](https://drive.google.com/drive/folders/14s1JNNp9FW6oESWgIIPifglNB6eRbYko)
+[download](https://drive.google.com/drive/folders/14s1JNNp9FW6oESWgIIPifglNB6eRbYko)
 
 ## Disclaim
 __Please note what this project is in no way connected to the original distro in any official way, it’s just my personal experiment.__

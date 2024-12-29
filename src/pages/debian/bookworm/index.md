@@ -6,12 +6,12 @@ Since version `9.6.2` Penguins' eggs is released - as Debian package - for: `amd
 ## Penguins' eggs remastered ISOs
 All ISOS have user set to ```live/evolution```, and ```root/evolution```
 
-* [drive](https://drive.google.com/drive/folders/18QIqicyecLMuU1Zmb2E039gWawzZuy3e)
+* [download](https://drive.google.com/drive/folders/18QIqicyecLMuU1Zmb2E039gWawzZuy3e)
 
 ## Penguins' eggs packages
 Here you can download actual packages to install and reproduce your system.
 
-* [drive](https://drive.google.com/drive/folders/14s1JNNp9FW6oESWgIIPifglNB6eRbYko)
+* [download](https://drive.google.com/drive/folders/14s1JNNp9FW6oESWgIIPifglNB6eRbYko)
 
 ## Disclaim
 __Please note what this project is in no way connected to the original distro in any official way, it’s just my personal experiment.__

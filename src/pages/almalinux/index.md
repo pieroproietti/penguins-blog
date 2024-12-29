@@ -8,12 +8,12 @@ An Open Source, community owned and governed, forever-free enterprise Linux dist
 ## Penguins' eggs remastered ISOs
 All ISOS have user set to ```live/evolution```, and ```root/evolution```
 
-* [drive](https://drive.google.com/drive/folders/1KVd6uRlX5bwICCCuWcX42uxHj3vJRK3T)
+* [download](https://drive.google.com/drive/folders/1KVd6uRlX5bwICCCuWcX42uxHj3vJRK3T)
 
 ## Penguins' eggs packages
 Here you can download actual tarballs to install and reproduce your system.
 
-* [drive](https://drive.google.com/drive/folders/1ECZnKQg4r08TyUT9yHPsZMlzuNeLP5e5)
+* [download](https://drive.google.com/drive/folders/1ECZnKQg4r08TyUT9yHPsZMlzuNeLP5e5)
 
 ## Disclaim
 __Please note what this project is in no way connected to the original distro in any official way, it’s just my personal experiment.__
