@@ -32,6 +32,7 @@ Clik on the links to download from Google Drive [penguins-eggs](https://drive.go
   * [wilma](/linuxmint/wilma)
 * [makulu](/makulu)
 * [manjaro](/manjaro)
+* [mxlinux](/mxlinux)
 * [openmamba](/openmamba)
 * [opensuse](/opensuse)
 * [predator-os](/predator)
