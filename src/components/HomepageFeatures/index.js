@@ -50,7 +50,7 @@ const FeatureList = [
       <>
         <a href="/devuan/">Devuan</a>:&nbsp;
         <a href="/devuan/daedalus/">&nbsp;daedalus</a>, 
-        <a href="/devuan/excalibue/">&nbsp;excalibur</a>, 
+        <a href="/devuan/excalibur/">&nbsp;excalibur</a>, 
       </>
     ),
   },
