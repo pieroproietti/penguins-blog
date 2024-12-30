@@ -60,7 +60,6 @@ const FeatureList = [
     description: (
       <>
       <a href="/fedora">Fedora 41</a>: It's your Operating System.
-
       </>
     ),
   },
