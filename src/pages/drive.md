@@ -5,7 +5,15 @@ slug: google-drive-penguins-eggs
 lang: en
 ---
 
+The sourceforge page - due to problems uploading and downloading - is no longer used in favor of GoogleDrive and the VPS used for the penguins-eggs.net blog.
+
+## Packages
+You can download the packages from penguins-eggs.net, currently there is no history but I am counting on retrieving the material on sourceforge.
+
 * [packages](https://penguins-eggs.net/basket/index.php/packages/?p=packages)
+
+
+## ISOS
 
 Clik on the links to download from Google Drive [penguins-eggs](https://drive.google.com/drive/folders/19fwjvsZiW0Dspu2Iq-fQN0J-PDbKBlYY)
 
@@ -34,6 +42,3 @@ Clik on the links to download from Google Drive [penguins-eggs](https://drive.go
     * [ubuntu](https://drive.google.com/drive/folders/1zd-5istKS9eVHBcbXD7CL9T_UxjaKotQ)
         * [bionic](https://drive.google.com/drive/folders/18_8Rt4KrwFiUjrHwYJKucPK3dt03LIly)
         * [noble](https://drive.google.com/drive/folders/1F5RuX77B-Hc_sFoeOIWO1y4rlyY-J317)
-
-
-
