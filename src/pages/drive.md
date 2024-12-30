@@ -5,6 +5,8 @@ slug: google-drive-penguins-eggs
 lang: en
 ---
 
+* [packages](https://penguins-eggs.net/basket/index.php/packages/?p=packages)
+
 Clik on the links to download from Google Drive [penguins-eggs](https://drive.google.com/drive/folders/19fwjvsZiW0Dspu2Iq-fQN0J-PDbKBlYY)
 
 * [isos](https://drive.google.com/drive/folders/19M7fDEebPZjEY4yHD79zSMWFndCPishN)
@@ -32,13 +34,6 @@ Clik on the links to download from Google Drive [penguins-eggs](https://drive.go
     * [ubuntu](https://drive.google.com/drive/folders/1zd-5istKS9eVHBcbXD7CL9T_UxjaKotQ)
         * [bionic](https://drive.google.com/drive/folders/18_8Rt4KrwFiUjrHwYJKucPK3dt03LIly)
         * [noble](https://drive.google.com/drive/folders/1F5RuX77B-Hc_sFoeOIWO1y4rlyY-J317)
-
-* [packages](https://drive.google.com/drive/folders/14Z5dypw6XE5NVsAjSaOzjPny1QSJJKhj)
-* [aur](https://drive.google.com/drive/folders/1e4IUCgS7y8DQF1hU8kJ6Ou1MX2Kqeop9)
-* [debs](https://drive.google.com/drive/folders/14s1JNNp9FW6oESWgIIPifglNB6eRbYko)
-* [manjaro](https://drive.google.com/drive/folders/1iX_Eu71VjHGXptueiEZIw8y6XFuUROFR)
-* [openmamba](https://drive.google.com/drive/folders/1gZ46_PmtWVNXx_CDmLg0UJ7AV96MscCf)
-* [tarballs](https://drive.google.com/drive/folders/1ECZnKQg4r08TyUT9yHPsZMlzuNeLP5e5)
 
 
 
