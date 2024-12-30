@@ -10,7 +10,7 @@ Devuan GNU+Linux is a free software operating system for your computer. Free sof
 ## Penguins' eggs packages
 Here you can download actual packages to install and reproduce your system.
 
-[download](https://drive.google.com/drive/folders/1cOpanKa-zRjwBi-1fwSCFf8JfmKfw40w)
+[download](https://penguins-eggs.net/basket/index.php?p=packages%2Fdebs)
 
 ## Disclaim
 __Please note what this project is in no way connected to the original distro in any official way, it’s just my personal experiment.__

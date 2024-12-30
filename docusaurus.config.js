@@ -96,15 +96,15 @@ const config = {
             items: [
               {
                 label: 'Eggs users\' guide',
-                to: 'https://penguins-eggs.net/docs/Tutorial/eggs-users-guide',
+                to: '/docs/Tutorial/eggs-users-guide',
               },
               {
                 label: 'Wardrobe users\' guide',
-                to: 'https://penguins-eggs.net/docs/Tutorial/wardrobe-users-guide',
+                to: '/docs/Tutorial/wardrobe-users-guide',
               },
               {
                 label: 'Get eggs',
-                to: 'https://penguins-eggs.net/docs/Tutorial/get-eggs',
+                to: '/docs/Tutorial/get-eggs',
               },
             ],
           },
@@ -129,8 +129,8 @@ const config = {
             title: 'More',
             items: [
               {
-                label: 'Google Drive',
-                to: 'https://drive.google.com/drive/folders/19fwjvsZiW0Dspu2Iq-fQN0J-PDbKBlYY',
+                label: 'Downloads',
+                to: '/drive',
               },
               {
                 label: 'Sourceforge',
