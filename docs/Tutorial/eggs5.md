@@ -9,129 +9,66 @@ import Translactions from '@site/src/components/Translactions';
 
 <Translactions />
 
-o anche meno... usando [get-eggs](/blog/get-eggs)!
+or even less using [get-eggs](/blog/get-eggs), for every supported distro.
 
-## Debian
 
-Debian, Devuan, Ubuntu e [derivate](https://github.com/pieroproietti/penguins-eggs/blob/master/conf/derivatives.yaml).
+The most convenient solution to get a minimal exculsive CLI installation of all the distros is to use [get-eggs](https://github.com/pieroproietti/get-eggs).
 
-Scaricate eggs da [sourceforge](https://sourceforge.net/projects/penguins-eggs/files/DEBS/), quindi installatela:
+
+What you need to do is basically install a minimal CLI system, on Debian I use netistall, server edition in the case of Ubuntu, archiso in the case of Arch Linux and minimal installation for almaliinux, fedora, opensuse and rocky.
+
+get-eggs, need same prerequisites: mostly git and tar, first step, install it:
+
+* AlmaLinux/Fedora/Rocky
+```
+sudo dnf install git tar
+```
+
+* Arch/Manjaro
+```
+sudo pacman -S git tar
+```
+
+* Debian/Devuan/Ubuntu
 
 ```
-sudo dpkg -i penguins_eggs_10.0.0-1_amd64.deb
-sudo apt install -f
+sudo apt install git tar
 ```
 
-OK, andiamo ad configurarlo, se scegliamo il default fa tutto da solo!
+* Openmamba
+```
+sudo dnf install penguins-eggs
+```
+
+* OpenSuSE
+```
+sudo zypper install git tar
+```
+
+## clone get-eggs and install penguins-eggs
 
 ```
-sudo eggs dad --default
+git clone https://github.com/pieroproietti/get-eggs
+cd get-eggs
+sudo ./get-eggs.sh
 ```
-![eggs dad --default](/images/eggs-dad-default.png)
 
-Perfetto! Abbiamo sufficiente spazio libero e, quindi, possiamo procedere.
+![colibri-iso-installing](/images/arch-naked/colibri-iso-installing.png
 
-Se non avessimo abbastanza spazio disponibile `eggs dad` ci suggerisce come aggiungerlo: da uno share remoto o su una partizione locale.
-
-Se vogliamo installare la nostra ISO con Calamares installer, dobbiamo - come dire - installare l'installer, ci basterà dare il comando:
-
+If we want to have calamares installed on our live system, we must to install it:
 ```
 sudo eggs calamares --install
 ```
 
-Bene, siamo pronti per produrre la nostra prima ISO!
+Well, we are ready to produce our first live, with love!
 
 ```
-sudo eggs produce 
+eggs love
 ```
 
-Se, invece di creare una rimasterizzazione distribuibile, volete farvi una copia intera del vostro sistema, potete aggiungere l'opzione `--clone`:
-```
-sudo eggs produce --clone
-```
+You will get your live ISO, named: `egg-of_DISTRO_VERSION_HOSTNAME-CPU-DATE-TIME.iso` example for a Debian bootkworm we will get: `egg-of-debian-bookworm-naked-amd64_2024-12-28_1025.iso`.
 
-Inoltre, potete utilizzare `eggs` per trasferire un vostro server su internet, ma senza esporre direttamente i dati, utilizzando `--cryptedclone`
-```
-sudo eggs produce --cryptedclone
-```
-
-Se volete la massima compressione e la rimozione di eggs e di calamares installer alla fine dell'installazione, basterà aggiungere i flag: --max --release
-```
-sudo eggs produce --max --release
-```
-
-### Problemi?
-
-Chiedete a mamma! `eggs mom`
-
-![eggs-mom](/img/book/eggs-mom.png)
-
-## `Arch`
-
-### Utilizzando `Chaotic-AUR`
-penguins-eggs e calamares non sono presenti nelle repository standard di Arch, mentre è presente nella repository chaotic-AUS, tutto quello che dobbiamo fare è configurarla:
-
-```
- pacman-key --recv-key FBA220DFC880C036 --keyserver keyserver.ubuntu.com
- pacman-key --lsign-key FBA220DFC880C036
- pacman -U 'https://cdn-mirror.chaotic.cx/chaotic-aur/chaotic-keyring.pkg.tar.zst' 'https://cdn-mirror.chaotic.cx/chaotic-aur/chaotic-mirrorlist.pkg.tar.zst'
-```
-
-A questo punto, aggiungiamo alla fine di `/etc/pacman.conf` il seguente testo:
-```
-[chaotic-aur]
-Include = /etc/pacman.d/chaotic-mirrorlist
-```
-
-A questo punto possiamo installare penguins-eggs con il comando: `sudo pacman -Sy penguins-eggs`
-
-### get-eggs
-Potete anche utilizzare il tool `get-eggs`, in questo modo:
-
-* `git clone https://github.com/pieroproietti/get-eggs`
-* `cd get-eggs`
-* `sudo ./get-eggs.sh`
-
-get-eggs funziona attualmente sia su Arch che su Debian e derivate, installando tutto il necessario per configurare penguins-eggs.
-
-
-### Utilizzando `yay`
-
-Su `Arch` potete usare `yay` per installare `eggs`:
-```
-yay penguins-eggs
-```
-
-### Crezione della ISO
-
-A questo punto la procedura è la stessa, 
-
-```
-sudo eggs dad -d
-```
-
-Bene, anche per Arch siamo pronti a produrre la nostra prima ISO!
-
-```
-sudo eggs produce 
-```
-
-Per le altre istruzioni fate riferimento a Debian e poi, che diavolo, usate Arch!
-
-## Manjaro
-
-eggs è sulla community repository di Manjaro, basterà, quindi:
-
-```
-sudo pamac install penguins-eggs
-```
-
-Per il resto come nei casi precedenti.
-
-
-# Suggerimenti e feedback
-
-Cerco di fare questa miniguida breve e coincisa, non sò se ci riesco, se avete problemi o suggerimenti non esitate a scrivermi.
+Of course, is possoble to name it in different way, but the import part is we get an installable system.
 
 
 
