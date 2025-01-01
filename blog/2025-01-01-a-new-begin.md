@@ -48,7 +48,7 @@ Si può fare? Non lo sò, molto probabilmente si, ma a che prezzo?
 
 Non vorrei dipendere troppo da un cloud esterno e quindi da una API su internet. Ma esiste un modello sufficientemente leggero da essere addrestrato nello specifico per questo e che, comunque, sia abbastanza poliglotta da capire direttamente le nostre lingue madri?
 
-Con questi dubbi e proposte, vi saluto lasciandovi queste domande ed un wallper creato dall'amico Jorge.
+Con questi dubbi e proposte, vi saluto lasciandovi queste domande ed un wallpaper creato dall'amico Jorge.
 
 ![](/img/penguins-eggs-wallpaper.jpeg)
 
