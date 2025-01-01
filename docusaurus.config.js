@@ -102,10 +102,6 @@ const config = {
                 label: 'Wardrobe users\' guide',
                 to: '/docs/Tutorial/wardrobe-users-guide',
               },
-              {
-                label: 'Get eggs',
-                to: '/docs/Tutorial/get-eggs',
-              },
             ],
           },
           {
