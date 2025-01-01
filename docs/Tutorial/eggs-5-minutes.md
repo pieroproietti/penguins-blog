@@ -1,7 +1,7 @@
 ---
 title: Cook eggs in 5 minutes!
 authors: pieroproietti
-slug: eggs5
+slug: eggs-5-minutes
 lang: it
 enableComments: true
 ---
