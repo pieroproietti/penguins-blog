@@ -25,7 +25,7 @@ Ragionando questa mattina con il mio amico Seilany, il discorso era nato la sera
 
 Io al sentire questa parola rabbrividisco, non sono un grande pianificatore quanto piuttosto uno che cerca di cogliere i cambiamenti, in un mondo informatico che cambia di continuo, anche per gusti e mode.
 
-Senza essere presuntuoso, credo che se penguins-eggs fosse nato una decina di anni fa, sarebbe di gran lunga più diffuso. Basti pensare che tuttora si trovano persone che scaricano Systemback, quando non remestersys o altre incarnazioni e trascurano o, semplicemente, ignorano questo progetto.
+Senza essere presuntuoso, credo che se penguins-eggs fosse nato una decina di anni fa, sarebbe di gran lunga più diffuso. Basti pensare che tuttora si trovano persone che scaricano Systemback, quando non remastersys o altre incarnazioni e trascurano o, semplicemente, ignorano questo progetto.
 
 E' così purtroppo: penguins-eggs ha avuto il torto di nascere troppo tardi. Tuttavia ad oggi è l'unico strumento del genere attivamente sviluppato e liberamente disponibile.
 
