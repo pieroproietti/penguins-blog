@@ -11,6 +11,7 @@ import Translactions from '@site/src/components/Translactions';
 
 or even less using [get-eggs](/blog/get-eggs), for every supported distro.
 
+### Start from a base system or from your system
 
 The most convenient solution to get a minimal exculsive CLI installation of all the distros is to use [get-eggs](https://github.com/pieroproietti/get-eggs).
 
@@ -24,7 +25,7 @@ get-eggs, need same prerequisites: mostly git and tar, first step, install it:
 sudo dnf install git tar
 ```
 
-* Arch/Manjaro
+* Arch
 ```
 sudo pacman -S git tar
 ```
@@ -35,10 +36,18 @@ sudo pacman -S git tar
 sudo apt install git tar
 ```
 
+* Manjaro
+In Manjaro penguins-eggs is included on the community repo, so:
+```
+sudo pacman -S penguins-eggs
+```
+
 * Openmamba
+In openmamba penguins-eggs is included on the repos, so:
 ```
 sudo dnf install penguins-eggs
 ```
+
 
 * OpenSuSE
 ```
@@ -60,6 +69,8 @@ If we want to have calamares installed on our live system, we must to install it
 sudo eggs calamares --install
 ```
 
+## Produce your first live system
+
 Well, we are ready to produce our first live, with love!
 
 ```
@@ -69,6 +80,3 @@ eggs love
 You will get your live ISO, named: `egg-of_DISTRO_VERSION_HOSTNAME-CPU-DATE-TIME.iso` example for a Debian bootkworm we will get: `egg-of-debian-bookworm-naked-amd64_2024-12-28_1025.iso`.
 
 Of course, is possoble to name it in different way, but the import part is we get an installable system.
-
-
-

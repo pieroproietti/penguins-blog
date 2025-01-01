@@ -32,13 +32,15 @@ Prima o poi, trattandosi di un uovo, troverò anche il modo di implementare un s
 
 ## Installazione
 
-Prima di cominciare a produrre le "uova" occorre fornirsi di un sistema riproduttivo. 
+Prima di cominciare a produrre le "uova" occorre esistere e dotarsi di un sistema riproduttivo. 
 
-Abbiamo diverse possibilità per l'installazione di `penguins-eggs`: 
+Per "esistere" intendiamo che deve esserci un sistema genitore già installato. Su questo, abbiamo diverse possibilità per l'installazione di `penguins-eggs`: 
+
 * pacchetto precompilati
-  * formato .deb per Debian/Devuan/Ubuntu
-  * formato PKGBUILD per `Arch Linux` e Manjaro
-* pacchetti npm: non più utilizzati
+  * formato .deb per Debian/Devuan/Ubuntu e derivate
+  * formato PKGBUILD per Arch e Manjaro
+  * formato rpm per Openmamba
+* pacchetti tar: per Almalinux, fedora e Rocky
 * codice sorgente
 
 Per la maggior parte degli utenti l'installazione del pacchetto precompilato è quella più indicata.
@@ -169,7 +171,7 @@ L'esempio seguente è riferito a Manjaro:
 sudo pamac install nodejs pnpm devel-base
 ```
 
-Su Debian/Devuan/Ubuntu si consiglia la versione `node16.x` dalla repository [NodeSource](https://github.com/nodesource/distributions). 
+Su Debian/Devuan/Ubuntu si consiglia la versione `node18.x` dalla repository [NodeSource](https://github.com/nodesource/distributions). 
 
 Per installare `pnpm`, una volta installati `nodejs` ed `npm`, sarà sufficiente:
 
