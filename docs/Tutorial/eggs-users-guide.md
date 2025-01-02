@@ -1357,7 +1357,7 @@ Tutte le remix create dal sottoscritto sono impostate con user live denominato `
 
 #### Scaricare `eggs` e le ISO
 
-Tutte le versioni di `eggs` e le ISO realizzate dall'autore sono scaricabili dal  blog [penguins-eggs.net](https://penguins-eggs.net) cercando il  [basket](https://penguins-eggs.net/basket/).
+Tutte le versioni di `eggs` e le ISO realizzate dall'autore sono scaricabili dal  blog [penguins-eggs.net](https://penguins-eggs.net) cercando [downloads](https://penguins-eggs.net/drive/).
 
 Trovarete: `arch`, `debian`, `devuan`, `educaandos`, `elementary`, `linuxfx`, `linuxmint`, `manjaro`, `mx-linux`, `neon`, `netrunner`, `plastilinux`, `pop-os`, `quirinux`, `rebornos`, `sodilinux`, `spirallinux`, `telos`, `ubuntu` e `waydroid`. 
 
