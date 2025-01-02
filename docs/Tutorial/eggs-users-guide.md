@@ -55,9 +55,9 @@ Note: Dalla versione 10.0.x sto utilizzando un diverso metodo per pacchetizzare 
 
 Tutto ciò è configurato nel pacchetto penguins-eggs, che attualmente richiede nodejs (>= 18), nel suo fileDEBIAN/control.
 
-Non tutte le distribuzioni e derivate, però hanno di defailt nodejs >=18 disponibile, nelle lore repository originali.
+Non tutte le distribuzioni e derivate, però hanno di default nodejs >=18 disponibile, nelle loro repository originali.
 
-Per installare penguins-eggs, dovremo aggiungere le repository nodesource per nodejs 18 o migliore.
+In questo caso possiamo aggiungere la repository nodesource per nodejs 18 o migliore.
 
 ```
 sudo apt-get install -y curl
@@ -95,7 +95,7 @@ git clone https://github.com/pieroproietti/penguins-eggs
 cd penguins-eggs
 sudo ./get-eggs
 ```
-Su Arch e ed Endeavour penguins-eggs viene installato e viene configurata la repository Chaotic-AUR, segnalatemi i casi un cui una distribuzione Arch based non viene riconosciuta provate ad aggiungere manualmente la repository Chaothic-AUR e segnalatelo, cercheremo di includerla.
+Su Arch e ed Endeavour penguins-eggs viene installato e viene configurata la repository Chaotic-AUR. Se una distribuzione Arch based non viene riconosciuta provate ad aggiungere manualmente la repository Chaothic-AUR, ed installate penguins-eggs. Potete anche segnalarlo così cercheremo di aggiungerla.
 
 #### Utilizzando `Chaotic-AUR`
 penguins-eggs non è presente nelle repository standard di Arch, mentre esiste nella repository chaotic-AUS, tutto quello che dobbiamo fare è configurarla:
@@ -116,7 +116,7 @@ A questo punto possiamo installare penguins-eggs con il comando: `sudo pacman -S
 
 #### Se non volete includere Chaotic-AUR
 
-Su `Arch` potete usare `yay` per installare `eggs`:
+Potete sempre utilizzare usare `yay` per installare `eggs`:
 ```
 yay penguins-eggs
 ```
@@ -130,7 +130,7 @@ pkgbuild -si
 #### `Calamares on Arch Linux`
 Sto utilizzando un pacchetto `calamares-eggs` creato da me stesso. 
 
-Questo pacchetto non esiste ne' nelle repository standard e neppure in Chaotic-AUR, viene semplicemente caricato
+Questo pacchetto però non è presente ne' nelle repository standard e neppure in Chaotic-AUR, viene semplicemente caricato
 sul sito penguins-eggs.net.
 
 Utilizzate il comando: `sudo eggs calamares --install` per scaricarlo ed installarlo.
@@ -213,7 +213,7 @@ Ad esempio:
 
 ```
 sudo ./eggs produce --verbose
-```
+```   
 
 **Nota**: _Potete constatare che l'unica differenza d'uso rispetto ai pacchetti precompilati è che dovrete indicare il path per avviare `eggs`: `./eggs` e dovrete lanciarlo obbligatoriamente dalla directory `~/penguins-eggs`. 
 
