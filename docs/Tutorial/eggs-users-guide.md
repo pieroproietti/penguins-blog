@@ -40,18 +40,20 @@ Per "esistere" intendiamo che deve esserci un sistema genitore già installato. 
   * formato .deb per Debian/Devuan/Ubuntu e derivate
   * formato PKGBUILD per Arch e Manjaro
   * formato rpm per Openmamba
-* pacchetti tar: per Almalinux, fedora e Rocky
+* tarballs installabili: per Almalinux, fedora e Rocky
 * codice sorgente
 
 Per la maggior parte degli utenti l'installazione del pacchetto precompilato è quella più indicata.
 
-### Pacchetti .deb 
+
+
+### Pacchetti .deb per Debian/Devuan/Ubuntu e derivate
 
 I pacchetti .deb sono disponibili per tutte le distribuzioni originali e deridate da: `Debian`, `Devuan` ed `Ubuntu`.
 
 Note: Dalla versione 10.0.x sto utilizzando un diverso metodo per pacchetizzare penguins-eggs: nodejs non è più incluso nel pacchetto come in precedenza, ma dipende dalla disponibilità di nodejs>18 tra i pacchetti disponibili nelle repositories.
 
-Tutto cià è configurato nel pacchetto penguins-eggs, che attualmente richiede nodejs (>= 18), nel suo fileDEBIAN/control.
+Tutto ciò è configurato nel pacchetto penguins-eggs, che attualmente richiede nodejs (>= 18), nel suo fileDEBIAN/control.
 
 Non tutte le distribuzioni e derivate, però hanno di defailt nodejs >=18 disponibile, nelle lore repository originali.
 
@@ -86,7 +88,7 @@ Una volta installato il pacchetto, si può utilizzare il comando `eggs tools ppa
 sudo eggs tools ppa --add
 ```
 
-### `Arch`
+### Pacchetti `PKGBUILD' e precompilati per Arch e derivate
 
 ### Utilizzando `Chaotic-AUR`
 penguins-eggs e calamares non sono presenti nelle repository standard di Arch, mentre è presente nella repository chaotic-AUS, tutto quello che dobbiamo fare è configurarla:
@@ -135,7 +137,7 @@ Installato `ckbcomp`, potete tranquillamente installare calamares utilizzando `y
 yay calamares
 ```
 
-### `Manjaro`
+### Pacchetti precompilati per Manjaro
 
 Su Manjaro, `penguins-eggs` è presente nella repository community di Manjaro, per cui possiamo sia installare `penguins-eggs` con i comandi:
 
@@ -148,15 +150,24 @@ Sia installare `calamares` direttamente da `eggs` con il comando:
 sudo eggs calamares --install
 ```
 
-### `package npm`
+### Pacchetti rpm per Openmamba
+Poichè penguins-eggs è disponibile su Openmamba, il metodo consigliateo è:
+```
+sudo dnf install penguins-eggs
+```
 
-Essendo `eggs` un software sviluppato con `nodejs`, esiste la possibilità di installare `penguins-eggs` direttamente come pacchetto `npm`.
+### Pacchetti tarball per almalinux/fedora/opensuse e Rocky
+I pacchetti tarball consistono semplicemente in un tarball che viene estratto in `/opt/penguins-eggs` e contengono nodejs al loro interno.
 
-Però, poichè i pacchetti `npm` necessitano comunque dei pacchetti delle dipendenze, pur se inizialmente avevo puntato su questo formato - pressochè universale - ed avevo scritto degli appositi moduli per l'installazione dei pacchetti nativi, con l'utilizzo della pacchettizzazione `.deb` e nei vari `PKGBUILD`, si è venuta a creare una inutile duplicazione di codice.
+E' necessario però installare i REQUISITES che sono diversi a seconda della distribuzione in uso.
 
-Pertanto, attualmente i pacchetti `npm` non sono più consigliati. 
+Per facilitare l'installazione, è suggerito procedere con get-eggs:
 
-E' comunque possibile installare `eggs` con `npm`, curando separatamente l'installazione delle varie [dipendenze](#dependencies). 
+```
+git clone https://github.com/pieroproietti/penguins-eggs
+cd penguins-eggs
+sudo ./get-eggs
+```
 
 ## Utilizzo di `eggs` da codice sorgente
 Utilizzare `eggs` a partire dai sorgenti può essere estremamente utile sia per il `debug` che per modificare `eggs` stesso. Può anche garantire una maggiore sicurezza - in caso di dubbi - potrete osservare il codice che sta girando sulla vostra macchina. 
@@ -170,8 +181,6 @@ L'esempio seguente è riferito a Manjaro:
 ```
 sudo pamac install nodejs pnpm devel-base
 ```
-
-Su Debian/Devuan/Ubuntu si consiglia la versione `node18.x` dalla repository [NodeSource](https://github.com/nodesource/distributions). 
 
 Per installare `pnpm`, una volta installati `nodejs` ed `npm`, sarà sufficiente:
 
