@@ -68,7 +68,7 @@ sudo -E bash nodesource_setup.sh
 A questo punto, saremo pronti per installare penguins-eggs al nostro sistema.
 
 
-Se non desiderate includere penguins-eggs-ppa fra le repository del vostro sistema, potete semplicemente scaricare l'ultima versione di eggs dal sito di [sourceforge](https://sourceforge.net/projects/penguins-eggs/files/DEBS/) ed installarla con il comando:
+Se non desiderate includere penguins-eggs-ppa fra le repository del vostro sistema, potete semplicemente scaricare l'ultima versione di eggs dal sito di [penguins-eggs.net](https://penguins-eggs.net/basket/index.php?p=) ed installarla con il comando:
 
 ```
 sudo dpkg -i penguins_eggs-10.0.x.deb
@@ -1357,7 +1357,7 @@ Tutte le remix create dal sottoscritto sono impostate con user live denominato `
 
 #### Scaricare `eggs` e le ISO
 
-Tutte le versioni di `eggs` e le ISO realizzate dall'autore sono scaricabili da `sourgeforge.net` cercando il progetto [penguins-eggs](https://sourceforge.net/projects/penguins-eggs/files/).
+Tutte le versioni di `eggs` e le ISO realizzate dall'autore sono scaricabili dal  blog [penguins-eggs.net](https://penguins-eggs.net) cercando il  [basket](https://penguins-eggs.net/basket/).
 
 Trovarete: `arch`, `debian`, `devuan`, `educaandos`, `elementary`, `linuxfx`, `linuxmint`, `manjaro`, `mx-linux`, `neon`, `netrunner`, `plastilinux`, `pop-os`, `quirinux`, `rebornos`, `sodilinux`, `spirallinux`, `telos`, `ubuntu` e `waydroid`. 
 
@@ -1377,7 +1377,6 @@ Può essere scaricata su [Waidroid-Linux#Latest Beta](https://waydro.id/#wdlinux
 
 ![waidroid-linux](/img/users-guide/Computer_wd.png)
 
-Ulteriori versioni personali - soprattutto per sviluppatori - possono essere invece scaricate dalla pagina [sourceforge di penguins-eggs](https://sourceforge.net/projects/penguins-eggs/files/ISOS/waydroid/).
 
 ### `Quirinux GNU/Linux`
 
@@ -1387,9 +1386,6 @@ Per chi è interessato a realizzare film animati, non posso non consigliare [Qui
 
 La versione quirinux-general può essere anche scaricata dalla pagina [sourceforge di penguins-eggs](https://sourceforge.net/projects/penguins-eggs/files/ISOS/quirinux/).
 
-
-#### Deblinux
-[Deblinux](https://sourceforge.net/projects/deblinux/) di andreone a cui va riconosciuta una grande determinazione ed il coraggio o, la pazzia, di fidarsi di un tool assolutamente sconosciuto.
 
 #### EducAndOS +
 Andrés è stato il primo a creare un tema per `eggs` e la sua remix [EducAndOS+](https://github.com/aosucas499/guadalinex) che è molto utilizzata in Spagna in ambito scolastico.
@@ -1411,19 +1407,21 @@ La sua distro si chiama [NovaOS](https://github.com/NicklasVraa/NovaOS) ed è ba
 
 ![SysLinuxOS](/img/users-guide/syslinuxos.png)
 
-#### Telos
-Non posso non includere l'amico Yannis ed il suo [TeLOS](https://sourceforge.net/projects/teloslinux/) che posso raccomandare anche perchè con Telos ho scritto una delle prime versioni di questa guida.
-
 
 ## Supporto e segnalazioni
 
 `penguins-eggs` è un progetto che consente di rimasterizzare diverse versioni di Linux:
 
+* `AlmaLinux`
 * `Arch Linux`
-* `Debian buster/bullseyes/bookworm + stretch/jessie`
+* `Debian buster/bullseyes/bookworm`
 + `Devuan beowulf/chimaera`
+* `Fedora`
+* `Openmamba`
+* `OpenSuSE`
 * `Manjaro`
-* `Ubuntu bionic/focal/jammy/noble`
+* `Rocky`
+* `Ubuntu bionic/noble`
 
 e la maggior parte delle derivate, ne cito solo alcune: `deepin`, `Linuxmint`, `LMDE`, `KDE neon`, `pop-os!`, `zorin`, etc.
 
@@ -1522,5 +1520,3 @@ Le dipendenze di `penguins-eggs` per Manjaro possono essere rilevate dal [PKGBUI
 ### Altre distribuzioni: Almalinux, Fedora, Openmamba, Opensuse, Rocky
 
 E' possibile consultare la cartella [REQUIREMENTS](https://github.com/pieroproietti/penguins-packs/tree/master/tarballs/requirements), troverete per ogni distribuzione supportata, uno script `install.sh` con la lista dei pacchetti.
-
-
