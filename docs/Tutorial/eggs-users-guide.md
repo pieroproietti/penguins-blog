@@ -95,10 +95,10 @@ git clone https://github.com/pieroproietti/penguins-eggs
 cd penguins-eggs
 sudo ./get-eggs
 ```
-Su arch e ed endeavour penguins-eggs viene installato e viene configurata la repository Chaotic-AUR, segnalatemi i casi un cui una distribuzione Arch based non viene riconosciuta e cercheremo di includerla.
+Su Arch e ed Endeavour penguins-eggs viene installato e viene configurata la repository Chaotic-AUR, segnalatemi i casi un cui una distribuzione Arch based non viene riconosciuta provate ad aggiungere manualmente la repository Chaothic-AUR e segnalatelo, cercheremo di includerla.
 
 #### Utilizzando `Chaotic-AUR`
-penguins-eggs e calamares non sono presenti nelle repository standard di Arch, mentre è presente nella repository chaotic-AUS, tutto quello che dobbiamo fare è configurarla:
+penguins-eggs non è presente nelle repository standard di Arch, mentre esiste nella repository chaotic-AUS, tutto quello che dobbiamo fare è configurarla:
 
 ```
  pacman-key --recv-key FBA220DFC880C036 --keyserver keyserver.ubuntu.com
@@ -114,7 +114,7 @@ Include = /etc/pacman.d/chaotic-mirrorlist
 
 A questo punto possiamo installare penguins-eggs con il comando: `sudo pacman -Sy penguins-eggs`
 
-#### Utilizzando `yay`
+#### Se non volete includere Chaotic-AUR
 
 Su `Arch` potete usare `yay` per installare `eggs`:
 ```
@@ -128,21 +128,21 @@ pkgbuild -si
 ```
 
 #### `Calamares on Arch Linux`
-Se abbiamo installato [Chaotic-AUR](https://aur.chaotic.cx/), abbiamo a disposizione anche calamares e possiamo procedere con pacman o con `sudo eggs calamares --install`.
+Sto utilizzando un pacchetto `calamares-eggs` creato da me stesso. 
 
-##### installare calamares con yay
+Questo pacchetto non esiste ne' nelle repository standard e neppure in Chaotic-AUR, viene semplicemente caricato
+sul sito penguins-eggs.net.
 
-E' possibile installare [`calamares`](https://aur.archlinux.org/packages/calamares-git) con yay, tuttavia - al momento - c'è un problema sul pacchetto [`ckbcomp`](https://aur.archlinux.org/packages/ckbcomp), 
-così per installare `Calamares`, dovete fare questo piccolo workaround:
+Utilizzate il comando: `sudo eggs calamares --install` per scaricarlo ed installarlo.
+
+>NOTE: calamares-eggs utilizza un il pacchetto `ckbcomp` presente solo in Chaotic-AUR. Se non avete installata questa repository è necessario un piccolo workaround.
+
 ```
 git clone https://github.com/pieroproietti/penguins-eggs-pkgbuilds
 cd penguins-eggs-pkgbuilds/aur/ckbcomp
 makepkg -si
 ```
-Installato `ckbcomp`, potete tranquillamente installare calamares utilizzando `yay`:
-```
-yay calamares
-```
+Installato `ckbcomp`, potete tranquillamente installare calamares utilizzando `sudo eggs calamares --install`
 
 ### Pacchetti precompilati per Manjaro
 
