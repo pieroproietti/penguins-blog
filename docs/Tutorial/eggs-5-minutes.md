@@ -62,7 +62,7 @@ cd get-eggs
 sudo ./get-eggs.sh
 ```
 
-![colibri-iso-installing](/images/arch-naked/colibri-iso-installing.png
+![colibri-iso-installing](/images/arch-naked/colibri-iso-installing.png)
 
 If we want to have calamares installed on our live system, we must to install it:
 ```
