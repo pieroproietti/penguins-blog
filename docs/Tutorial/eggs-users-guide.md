@@ -8,10 +8,10 @@ import Translactions from '@site/src/components/Translactions';
 
 <Translactions />
 
-### In case of problems with translation links, You can consult a detailed [README](https://github.com/pieroproietti/penguins-eggs#readme) in English on the repository.
+In case of problems with translation links, You can consult a detailed [README](https://github.com/pieroproietti/penguins-eggs#readme) in English on the repository.
 
 
-Manuale aggiornato a `eggs v10.0.x`
+Manuale aggiornato a `eggs v10.0.x` ultimo aggiornamento 2 gennaio 2025
 
 
 ## Introduzione
@@ -88,9 +88,16 @@ Una volta installato il pacchetto, si può utilizzare il comando `eggs tools ppa
 sudo eggs tools ppa --add
 ```
 
-### Pacchetti `PKGBUILD' e precompilati per Arch e derivate
+### Pacchetti PKGBUILD e precompilati per Arch e derivate
+Il metodo più semplice è agire con `get-eggs`:
+```
+git clone https://github.com/pieroproietti/penguins-eggs
+cd penguins-eggs
+sudo ./get-eggs
+```
+Su arch e ed endeavour penguins-eggs viene installato e viene configurata la repository Chaotic-AUR, segnalatemi i casi un cui una distribuzione Arch based non viene riconosciuta e cercheremo di includerla.
 
-### Utilizzando `Chaotic-AUR`
+#### Utilizzando `Chaotic-AUR`
 penguins-eggs e calamares non sono presenti nelle repository standard di Arch, mentre è presente nella repository chaotic-AUS, tutto quello che dobbiamo fare è configurarla:
 
 ```
@@ -107,7 +114,7 @@ Include = /etc/pacman.d/chaotic-mirrorlist
 
 A questo punto possiamo installare penguins-eggs con il comando: `sudo pacman -Sy penguins-eggs`
 
-### Utilizzando `yay`
+#### Utilizzando `yay`
 
 Su `Arch` potete usare `yay` per installare `eggs`:
 ```
