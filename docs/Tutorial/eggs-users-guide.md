@@ -1456,14 +1456,14 @@ Grazie a tutti e... happy hacking!
 Piero Proietti
 
 
-## `Dependencies`
+## `Dependencies/Requirements`
 
 ### `Debian/Devuan/Ubuntu`
 Essenzialmente possiamo dividere i pacchetti da cui `eggs` dipende, in:
 
 #### Pacchetti comuni
 
-Questi pacchetti sono i prerequisiti di `penguins-eggs` per tutte le versioni installate:
+Questi pacchetti sono i prerequisiti di `penguins-eggs` per Debian/Devuan/Ubuntu e derivate:
 
 ```
 # Description: This file contains the dependencies for the packages in the project.
@@ -1484,7 +1484,6 @@ common:
   - live-boot-initramfs-tools # eggs
   - live-config-systemd | live-config-sysvinit 
   - live-tools # eggs
-  - lsb-release  # eggs
   - lvm2  # pvdisplay in krill
   - nodejs (>= 18)
   - parted 
@@ -1519,4 +1518,9 @@ Le dipendenze di `penguins-eggs` per `Arch Linux` possono essere rilevate dal [P
 
 ### `Manjaro linux`
 Le dipendenze di `penguins-eggs` per Manjaro possono essere rilevate dal [PKGBUILD](https://gitlab.manjaro.org/packages/community/penguins-eggs/-/blob/master/PKGBUILD) su [gitlab Manjaro](https://gitlab.manjaro.org/explore/groups?filter=).
+
+### Altre Almalinux, Fedora, Openmamba, Opensuse, Rochy
+
+Per una analisi più approfondita per ogni distribuzione, consultate [REQUIREMENTS](https://github.com/pieroproietti/penguins-packs/tree/master/tarballs/requirements)
+
 
