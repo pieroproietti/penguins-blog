@@ -153,7 +153,8 @@ sudo pamac install penguins-eggs
 ```
 Sia installare `calamares` direttamente da `eggs` con il comando:
 ```
-sudo eggs calamares --install```
+sudo eggs calamares --install
+```
 
 o con il canonico:
 ```
@@ -181,6 +182,7 @@ sudo ./get-eggs
 ```
 
 ## Utilizzo di `eggs` da codice sorgente
+
 Utilizzare `eggs` a partire dai sorgenti può essere estremamente utile sia per il `debug` che per modificare `eggs` stesso e fare delle aggiunte/correzioni. Può infine garantire una maggiore sicurezza - in caso di dubbi sul progetto - potrete osservare il codice che sta girando sulla vostra macchina. 
 
 Con un po' di esperienza, potrete anche collaborare al progetto stesso!
@@ -193,11 +195,11 @@ L'esempio seguente è riferito a Debian bookworm:
 sudo apt install nodejs npm build-essential
 ```
 
-Su Debian non è presente il pacchetto `pnpm`, ma una volta installati `nodejs` ed `npm`, sarà sufficiente dare il comando:
-
+Su Debian non è presente il pacchetto `pnpm`. Una volta installati nodejs ed npm, dare il comando:
 ```
 sudo npm i pnpm -g
 ```
+
 Su Arch Linux avremo:
 ```
 sudo pacman -S nodejs pnpm 
