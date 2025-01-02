@@ -128,10 +128,9 @@ pkgbuild -si
 ```
 
 #### `Calamares on Arch Linux`
-Sto utilizzando un pacchetto `calamares-eggs` creato da me stesso. 
+Su Arch e derivate sto utilizzando un pacchetto [calamares-eggs](https://github.com/pieroproietti/penguins-packs/tree/master/aur/calamares-eggs) creato da me stesso. 
 
-Questo pacchetto però non è presente ne' nelle repository standard e neppure in Chaotic-AUR, viene semplicemente caricato
-sul sito penguins-eggs.net.
+Questo pacchetto però non è presente ne' nelle repository standard e neppure in Chaotic-AUR, ma viene semplicemente caricato sul sito penguins-eggs.net.
 
 Utilizzate il comando: `sudo eggs calamares --install` per scaricarlo ed installarlo.
 
@@ -146,7 +145,7 @@ Installato `ckbcomp`, potete tranquillamente installare calamares utilizzando `s
 
 ### Pacchetti precompilati per Manjaro
 
-Su Manjaro, `penguins-eggs` è presente nella repository community di Manjaro, per cui possiamo sia installare `penguins-eggs` con i comandi:
+Su Manjaro, `penguins-eggs` e `calamares` sono entrambi presenti nelle repository di Manjaro, per cui possiamo sia installare `penguins-eggs` con i comandi:
 
 ```
 sudo pamac upgrade
@@ -154,7 +153,12 @@ sudo pamac install penguins-eggs
 ```
 Sia installare `calamares` direttamente da `eggs` con il comando:
 ```
-sudo eggs calamares --install
+sudo eggs calamares --install```
+
+o con il canonico:
+```
+sudo pamac upgrade
+sudo pamac install calamares
 ```
 
 ### Pacchetti rpm per Openmamba
@@ -177,23 +181,33 @@ sudo ./get-eggs
 ```
 
 ## Utilizzo di `eggs` da codice sorgente
-Utilizzare `eggs` a partire dai sorgenti può essere estremamente utile sia per il `debug` che per modificare `eggs` stesso. Può anche garantire una maggiore sicurezza - in caso di dubbi - potrete osservare il codice che sta girando sulla vostra macchina. 
+Utilizzare `eggs` a partire dai sorgenti può essere estremamente utile sia per il `debug` che per modificare `eggs` stesso e fare delle aggiunte/correzioni. Può infine garantire una maggiore sicurezza - in caso di dubbi sul progetto - potrete osservare il codice che sta girando sulla vostra macchina. 
 
-Con un po' di esperienza, potrete anche collaborare al progetto.
+Con un po' di esperienza, potrete anche collaborare al progetto stesso!
 
 E' necessario installare sia le [dipendenze](#dependencies) che i pacchetti `nodejs` ed `pnpm`. 
 
-L'esempio seguente è riferito a Manjaro:
+L'esempio seguente è riferito a Debian bookworm:
 
 ```
-sudo pamac install nodejs pnpm devel-base
+sudo apt install nodejs npm build-essential
 ```
 
-Per installare `pnpm`, una volta installati `nodejs` ed `npm`, sarà sufficiente:
+Su Debian non è presente il pacchetto `pnpm`, ma una volta installati `nodejs` ed `npm`, sarà sufficiente dare il comando:
 
 ```
 sudo npm i pnpm -g
 ```
+Su Arch Linux avremo:
+```
+sudo pacman -S nodejs pnpm 
+```
+
+mentre su Manjaro:
+```
+sudo pamac install nodejs pnpm devel-base
+```
+Per le distribuzioni basate su rpm, non sono un esperto, ma probablimente troverete il modo voi stessi.
 
 A questo punto possiamo scaricare il sorgente di `penguins-eggs` con il comando:
 ```
