@@ -16,7 +16,7 @@ Manuale aggiornato a `eggs v10.0.x` ultimo aggiornamento 2 gennaio 2025
 
 ## Introduzione
 
-![Un sistema riproduttivo per pinguini!](/images/manjaro-uefi-booting.png)
+![Un sistema riproduttivo per pinguini](/images/manjaro-uefi-booting.png)
 
 `penguins' eggs` nasce con l'idea della "riproduzione" e "selezione delle popolazioni" applicata ai sistemi operativi. 
 
