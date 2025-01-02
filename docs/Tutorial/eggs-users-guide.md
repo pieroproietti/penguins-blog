@@ -1519,8 +1519,8 @@ Le dipendenze di `penguins-eggs` per `Arch Linux` possono essere rilevate dal [P
 ### `Manjaro linux`
 Le dipendenze di `penguins-eggs` per Manjaro possono essere rilevate dal [PKGBUILD](https://gitlab.manjaro.org/packages/community/penguins-eggs/-/blob/master/PKGBUILD) su [gitlab Manjaro](https://gitlab.manjaro.org/explore/groups?filter=).
 
-### Altre Almalinux, Fedora, Openmamba, Opensuse, Rochy
+### Altre distribuzioni: Almalinux, Fedora, Openmamba, Opensuse, Rocky
 
-Per una analisi più approfondita per ogni distribuzione, consultate [REQUIREMENTS](https://github.com/pieroproietti/penguins-packs/tree/master/tarballs/requirements)
+E' possibile consultare la cartella [REQUIREMENTS](https://github.com/pieroproietti/penguins-packs/tree/master/tarballs/requirements), troverete per ogni distribuzione supportata, uno script `install.sh` con la lista dei pacchetti.
 
 
