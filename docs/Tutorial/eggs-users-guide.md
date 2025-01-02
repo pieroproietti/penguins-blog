@@ -114,27 +114,26 @@ Include = /etc/pacman.d/chaotic-mirrorlist
 
 A questo punto possiamo installare penguins-eggs con il comando: `sudo pacman -Sy penguins-eggs`
 
-#### Se non volete includere Chaotic-AUR
-
-Potete sempre utilizzare usare `yay` per installare `eggs`:
+#### Utilizzando `yay` o `pkgbuild`
+Se non volete includere Chaotic-AUR, potete sempre utilizzare usare `yay` per installare `eggs`:
 ```
 yay penguins-eggs
 ```
-oppure, più tradizionalmente:
+oppure, più tradizionalmente, clonare il paccetto da aur e costruirlo con `pkgbuild -si`
 ```
 git clone https://aur.archlinux.org/penguins-eggs.git penguins-eggs-aur
 cd penguins-eggs-aur
 pkgbuild -si
 ```
 
-#### `Calamares on Arch Linux`
-Su Arch e derivate sto utilizzando un pacchetto [calamares-eggs](https://github.com/pieroproietti/penguins-packs/tree/master/aur/calamares-eggs) creato da me stesso. 
+#### `Calamares su Arch Linux`
+Su Arch e derivate - in genere non è presente il pacchetto calamares - e sto utilizzando per fornire [calamares-eggs](https://github.com/pieroproietti/penguins-packs/tree/master/aur/calamares-eggs) un pacchetto creato da me stesso. 
 
-Questo pacchetto però non è presente ne' nelle repository standard e neppure in Chaotic-AUR, ma viene semplicemente caricato sul sito penguins-eggs.net.
+Questo pacchetto però non è presente ne' nelle repository standard e neppure in Chaotic-AUR, ma viene semplicemente creato e caricato sul sito penguins-eggs.net.
 
-Utilizzate il comando: `sudo eggs calamares --install` per scaricarlo ed installarlo.
+Su Arch, quindi, utilizzate il comando: `sudo eggs calamares --install` per scaricarlo ed installarlo.
 
->NOTE: calamares-eggs utilizza un il pacchetto `ckbcomp` presente solo in Chaotic-AUR. Se non avete installata questa repository è necessario un piccolo workaround.
+>NOTE: calamares-eggs utilizza un il pacchetto `ckbcomp` presente solo in Chaotic-AUR. Se non avete installata questa repository è necessario un ulteriore workaround.
 
 ```
 git clone https://github.com/pieroproietti/penguins-eggs-pkgbuilds
@@ -156,16 +155,15 @@ Sia installare `calamares` direttamente da `eggs` con il comando:
 sudo eggs calamares --install
 ```
 
-o con il canonico:
-```
-sudo pamac upgrade
-sudo pamac install calamares
-```
-
 ### Pacchetti rpm per Openmamba
 Poichè penguins-eggs è disponibile su Openmamba, il metodo consigliateo è:
 ```
 sudo dnf install penguins-eggs
+```
+
+Per installare calamares, anche qui: 
+```
+sudo eggs calamares --install
 ```
 
 ### Pacchetti tarball per almalinux/fedora/opensuse e Rocky
