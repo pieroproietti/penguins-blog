@@ -38,12 +38,6 @@ const config = {
     [
       'classic',
       /** @type {import('@docusaurus/preset-classic').Options} */
-      {
-        gtag: {
-          trackingID: 'G-DCRVZRVWEV',
-          anonymizeIP: true,
-        },
-      },
       ({
         docs: {
           sidebarPath: './sidebars.js',
