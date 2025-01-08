@@ -34,11 +34,12 @@ const config = {
     locales: ['it'],
   },
 
+    
   presets: [
     [
       'classic',
       /** @type {import('@docusaurus/preset-classic').Options} */
-      ({
+      ({    
         docs: {
           sidebarPath: './sidebars.js',
           // Please change this to your repo.
