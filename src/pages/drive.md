@@ -37,6 +37,7 @@ Clik on the links to download from Google Drive [penguins-eggs](https://drive.go
 * [openmamba](/openmamba)
 * [opensuse](/opensuse)
 * [pclinuxos-debian-based](https://drive.google.com/drive/folders/1tSTlwu3NmhJ13sypk_LEPeRcFK4w1Ajy)
+* [pop-os](/pop-os)
 * [predator-os](/predator)
 * [rocky](/rocky)
 * [ubuntu](/ubuntu)
