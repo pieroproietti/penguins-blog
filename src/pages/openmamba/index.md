@@ -1,5 +1,5 @@
 # openmamba
-![](/img/openmamba.svg)
+<img src="https://penguins-eggs.net/img/openmamba.svg" alt="openmamba" width="200"/>
 
 An independent Linux distribution, [openmamba](https://openmamba.org/) is an open source operating system for notebook, desktop, server, single-board and tablet computers.
 
