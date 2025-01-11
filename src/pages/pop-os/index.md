@@ -1,5 +1,5 @@
 # PopOS!
-![](/img/pop-os.svg)
+<img src="https://penguins-eggs.net/img/pop-os.svg" alt="pop-os!" width="200"/>
 
 [PopOS!](https://pop.system76.com/) Pop!_OS is an operating system for STEM and creative professionals who use their computer as a tool to discover and create. Unleash your potential on secure, reliable open source software. Based on your exceptional curiosity, we sense you have a lot of it.
 

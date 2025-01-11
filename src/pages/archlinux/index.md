@@ -1,5 +1,5 @@
 # Arch Linux
-<img src="https://penguins-eggs.net/img/arch.svg" alt="arch" width="100"/>
+<img src="https://penguins-eggs.net/img/arch.svg" alt="arch" width="200"/>
 
 [Arch](https://archlinux.org/) a simple, lightweight distribution.
 
