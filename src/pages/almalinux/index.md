@@ -1,5 +1,5 @@
 # AlmaLinux
-![](/img/almalinux.svg)
+<img src="https://penguins-eggs.net/img/almalinux.svg" alt="almalinux" width="100"/>
 
 [Almalinux](https://almalinux.org/) a free Linux OS for the community, by the community.
 
