@@ -1,5 +1,5 @@
 # Rocky Linux
-![](/img/rocky.svg)
+<img src="https://penguins-eggs.net/img/rocky.svg" alt="rocky" width="200"/>
 
 [Rocky](https://rockylinux.org/): Enterprise Linux, the community way.
 
