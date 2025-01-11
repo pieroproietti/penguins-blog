@@ -16,9 +16,9 @@ Here you can download actual packages to install and reproduce your system.
 # Advice
 calamares is not working with pop-os, reports lack of available partitions.
 
-It is at any rate possible to install the system with the command: sudo eggs install
+It is at any rate possible to install the system with the command: `sudo eggs install`
 
-[PopOS! Discussion](https://github.com/pieroproietti/penguins-blog/discussions/21)
+Continue on [PopOS! Discussion](https://github.com/pieroproietti/penguins-blog/discussions/21)
 
 ## Disclaim
 __Please note what this project is in no way connected to the original distro in any official way, it’s just my personal experiment.__
