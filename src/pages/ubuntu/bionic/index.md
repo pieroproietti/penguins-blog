@@ -1,5 +1,6 @@
 # Ubuntu 18.04 bionic
-![](/img/ubuntu.svg)
+<img src="https://penguins-eggs.net/img/ubuntu.svg" alt="ubuntu" width="200"/>
+
 
 The number 1 open source operating system powers millions of PCs and laptops around the world.
 
