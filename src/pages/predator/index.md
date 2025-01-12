@@ -1,4 +1,5 @@
 # Predator-OS
+<img src="https://predator-os.ir/wp-content/uploads/2023/03/logo3-2-e1679605623854.png" alt="predator" width="100"/>
 
 ## Polymorphic Security Platform
 
@@ -15,6 +16,10 @@ All ISOS have user set to ```live/evolution```, and ```root/evolution```
 Here you can download actual packages to install and reproduce your system.
 
 * [download](https://penguins-eggs.net/basket/index.php?p=packages%2Fdebs)
+
+## Advice
+
+You can continue on [PredatorOS discussion](https://github.com/pieroproietti/penguins-blog/discussions/41)
 
 ## Disclaim
 __Please note what this project is in no way connected to the original distro in any official way, it’s just my personal experiment.__
