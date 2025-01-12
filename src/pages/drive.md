@@ -7,15 +7,13 @@ lang: en
 
 # Downloads
 
-## Packages
+## penguins-eggs packages
 You can download the packages from penguins-eggs.net, currently there is no history but I am counting on retrieving the material on sourceforge.
 
 * [packages](https://penguins-eggs.net/basket/index.php/packages/?p=packages)
 
 
-## ISOS
-
-Clik on the links to download from Google Drive [penguins-eggs](https://drive.google.com/drive/folders/19fwjvsZiW0Dspu2Iq-fQN0J-PDbKBlYY)
+## Remastered ISOs images
 
 * [almalinux](/almalinux)
 * [archlinux](/archlinux)
