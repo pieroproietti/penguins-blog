@@ -15,7 +15,7 @@ Here you can download actual packages to install and reproduce your system.
 
 ## Advice
 
-You can continue on [Debian bookworm discussion](https://github.com/pieroproietti/penguins-blog/discussions/24)
+You can continue on [Debian bookworm discussion](https://github.com/pieroproietti/penguins-blog/discussions/26)
 
 
 ## Disclaim
