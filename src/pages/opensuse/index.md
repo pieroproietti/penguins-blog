@@ -13,5 +13,9 @@ Here you can download actual tarballs to install and reproduce your system.
 
 * [download](https://penguins-eggs.net/basket/index.php?p=packages%2Ftarballs)
 
+## Advice
+
+You can continue on [OpenSuSE discussion](https://github.com/pieroproietti/penguins-blog/discussions/40)
+
 ## Disclaim
 __Please note what this project is in no way connected to the original distro in any official way, it’s just my personal experiment.__
