@@ -1,4 +1,4 @@
-# Debian bookworm
+# Proxmox 8.x
 <img src="https://penguins-eggs.net/img/Proxmox-logo-800-white.svg" alt="proxmox" width="300"/>
 
 
