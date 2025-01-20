@@ -37,6 +37,7 @@ You can download the packages from penguins-eggs.net, currently there is no hist
 * [pclinuxos-debian-based](https://drive.google.com/drive/folders/1tSTlwu3NmhJ13sypk_LEPeRcFK4w1Ajy)
 * [pop-os](/pop-os)
 * [predator-os](/predator)
+* [rhino](/rhino)
 * [rocky](/rocky)
 * [ubuntu](/ubuntu)
   * [bionic](/ubuntu/bionic)
