@@ -15,7 +15,7 @@ Here you can download actual packages to install and reproduce your system.
 
 ## Advice
 
-You can continue on [RhinoOS discussion](https://github.com/pieroproietti/penguins-blog/discussions/47)
+You can continue on [RhinoOS discussion](https://github.com/pieroproietti/penguins-blog/discussions/48
 
 
 ## Disclaim
