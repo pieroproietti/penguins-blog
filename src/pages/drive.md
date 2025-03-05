@@ -5,15 +5,13 @@ slug: downloads
 lang: en
 ---
 
-# Downloads
-
-## penguins-eggs packages
+# penguins-eggs packages
 You can download the packages from penguins-eggs.net, currently there is no history but I am counting on retrieving the material on sourceforge.
 
 * [packages](https://penguins-eggs.net/basket/index.php/packages/?p=packages)
 
 
-## Remastered ISOs images
+# Remastered ISOs images
 
 ## family arch/manjaro
 * [archlinux](/archlinux)
