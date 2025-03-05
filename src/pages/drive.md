@@ -15,33 +15,41 @@ You can download the packages from penguins-eggs.net, currently there is no hist
 
 ## Remastered ISOs images
 
-* [almalinux](/almalinux)
+## family arch/manjaro
 * [archlinux](/archlinux)
-* [biglinux](/biglinux)
+* [manjaro](/manjaro)
+  * [biglinux](/biglinux)
+
+## family debian/devuan/ubuntu
 * [debian](/debian)
   * [bookworm](/debian/bookworm)
   * [trixie](/debian/trixie)
 * [devuan](/devuan)
   * [daedalus](/devuan/daedalus)
   * [excalibur](/devuan/excalibur)
-* [fedora](/fedora)
 * [linuxmint](/linuxmint)
   * [faye](/linuxmint/faye)
   * [wilma](/linuxmint/wilma)
-* [makulu](/makulu)
-* [manjaro](/manjaro)
 * [mxlinux](/mxlinux)
-* [nobara](/nobara)
-* [openmamba](/openmamba)
-* [opensuse](/opensuse)
-* [pclinuxos-debian-based](https://drive.google.com/drive/folders/1tSTlwu3NmhJ13sypk_LEPeRcFK4w1Ajy)
 * [pop-os](/pop-os)
 * [predator-os](/predator)
 * [rhino](/rhino)
-* [rocky](/rocky)
 * [ubuntu](/ubuntu)
   * [bionic](/ubuntu/bionic)
   * [noble](/ubuntu/noble)
+
+## family fedora
+* [almalinux](/almalinux)
+* [fedora](/fedora)
+* [nobara](/nobara)
+* [rocky](/rocky)
+* [ultramarine](/ultramarine)
+
+## family openmamba
+* [openmamba](/openmamba)
+
+## family opensuse
+* [opensuse](/opensuse)
 
 
 
