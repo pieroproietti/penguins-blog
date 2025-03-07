@@ -3,20 +3,19 @@
 
 [Rhino Linux](https://rhinolinux.org/) is an Ubuntu-based, rolling release distribution, with Pacstall & XFCE at its core.
 
-## Penguins' eggs remastered ISOs
-All ISOS have user set to ```live/evolution```, and ```root/evolution```
+## Penguins' eggs remastered ISO's
+All ISO's have their user credentials set to ```live/evolution``` and ```root/evolution```.
 
-* [download](https://drive.google.com/drive/folders/1mSKszldSaO3x4FMx6QXE0wwsz2BP92fm)
+* [Download](https://drive.google.com/drive/folders/1mSKszldSaO3x4FMx6QXE0wwsz2BP92fm)
 
 ## Penguins' eggs packages
 Here you can download actual packages to install and reproduce your system.
 
-* [download](https://penguins-eggs.net/basket/index.php?p=packages%2Fdebs)
+* [Download](https://penguins-eggs.net/basket/index.php?p=packages%2Fdebs)
 
 ## Advice
 
-You can continue on [RhinoOS discussion](https://github.com/pieroproietti/penguins-blog/discussions/48
-
+You can continue on [Rhino Linux discussion](https://github.com/pieroproietti/penguins-blog/discussions/48)
 
 ## Disclaim
 __Please note what this project is in no way connected to the original distro in any official way, it’s just my personal experiment.__

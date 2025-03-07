@@ -1,17 +1,17 @@
 # BigLinux
 ![](/img/biglinux.png)
 
-[BigLinux](https://almalinux.org/) a brasilian Linux OS easy to use!
+[BigLinux](https://www.biglinux.com.br/), a brazilian Linux OS easy to use!
 
-## Penguins' eggs remastered ISOs
-All ISOS have user set to ```live/evolution```, and ```root/evolution```
+## Penguins' eggs remastered ISO's
+All ISO's have their user credentials set to ```live/evolution``` and ```root/evolution```.
 
-* [download](https://drive.google.com/drive/folders/1hWq1-B6nNU09AxddXmPm4GXRsXCECp99)
+* [Download](https://drive.google.com/drive/folders/1hWq1-B6nNU09AxddXmPm4GXRsXCECp99)
 
 ## Penguins' eggs packages
 Here you can download actual tarballs to install and reproduce your system.
 
-* [download](https://penguins-eggs.net/basket/index.php?p=packages%2Faur)
+* [Download](https://penguins-eggs.net/basket/index.php?p=packages%2Faur)
 
 ## Advice
 

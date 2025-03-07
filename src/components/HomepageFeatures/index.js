@@ -8,7 +8,7 @@ const FeatureList = [
     Svg: require('@site/static/img/almalinux.svg').default,
     description: (
       <>
-        <a href="/almalinux">&nbsp;Almalinux&nbsp;</a> a RHEL clone
+        <a href="/almalinux">&nbsp;AlmaLinux,&nbsp;</a>a RHEL clone
       </>
     ),
   },
@@ -17,17 +17,17 @@ const FeatureList = [
     Svg: require('@site/static/img/alpine.svg').default,
     description: (
       <>
-        penguins-eggs on <a href="/alpine">&nbsp;Alpine&nbsp;</a> is actually break.
+        Penguins' eggs on<a href="/alpine">&nbsp;Alpine&nbsp;</a>is actually break.
       </>
     ),
   },
 
   {
-    title: 'Arch',
+    title: 'Arch Linux',
     Svg: require('@site/static/img/arch.svg').default,
     description: (
       <>
-        Adding <a href="/archlinux">&nbsp;Arch&nbsp;</a>
+        Adding<a href="/archlinux">&nbsp;Arch Linux&nbsp;</a>
         was laborious, but it was possible, because the project started and evolved to be as universal as possible.
       </>
     ),
@@ -37,9 +37,9 @@ const FeatureList = [
     Svg: require('@site/static/img/debian.svg').default,
     description: (
       <>
-        Penguins' eggs started on <a href="/debian">Debian</a> in 2017, it still supports jessie, stretch, buster, bullseye,
-        <a href="/debian/bookworm">&nbsp;bookworm&nbsp;</a>
-        and <a href="/debian/trixie">&nbsp;trixie&nbsp;</a>
+        Penguins' eggs started on <a href="/debian">Debian</a> in 2017, it still supports Jessie, Stretch, Buster, Bullseye,
+        <a href="/debian/bookworm">&nbsp;Bookworm&nbsp;</a>
+        and<a href="/debian/trixie">&nbsp;Trixie&nbsp;</a>.
       </>
     ),
   },
@@ -49,13 +49,13 @@ const FeatureList = [
     description: (
       <>
         <a href="/devuan/">Devuan</a>:&nbsp;
-        <a href="/devuan/daedalus/">&nbsp;daedalus</a>, 
-        <a href="/devuan/excalibur/">&nbsp;excalibur</a>, 
+        <a href="/devuan/daedalus/">daedalus</a>,
+        <a href="/devuan/excalibur/">&nbsp;excalibur</a>
       </>
     ),
   },
   {
-    title: 'fedora',
+    title: 'Fedora',
     Svg: require('@site/static/img/fedora.svg').default,
     description: (
       <>
@@ -64,11 +64,11 @@ const FeatureList = [
     ),
   },
   {
-    title: 'Linuxmint',
+    title: 'Linux Mint',
     Svg: require('@site/static/img/linuxmint.svg').default,
     description: (
       <>
-        <a href="/linuxmint">&nbsp;Linuxmint</a> and virtually every Debian, Devuan and Ubuntu derivatives are supported. 
+        <a href="/linuxmint">&nbsp;Linux Mint</a> and virtually every Debian, Devuan and Ubuntu derivatives are supported. 
       </>
     ),
   },
@@ -77,7 +77,7 @@ const FeatureList = [
     Svg: require('@site/static/img/manjaro.svg').default,
     description: (
       <>
-        penguins-eggs is part of community repo of <a href="/manjaro">Manjaro</a>.
+        Penguins' eggs is part of community repo of <a href="/manjaro">Manjaro</a>.
       </>
     ),
   },
@@ -91,20 +91,20 @@ const FeatureList = [
     ),
   },
   {
-    title: 'OpenSuSE',
+    title: 'openSUSE',
     Svg: require('@site/static/img/opensuse.svg').default,
     description: (
       <>
-        <a href="/opensuse">OpenSuSE</a>, the makers' choice for sysadmins, developers and desktop users.
+        <a href="/opensuse">openSUSE</a>, the makers' choice for sysadmins, developers and desktop users.
       </>
     ),
   },
   {
-    title: 'Rocky',
+    title: 'Rocky Linux',
     Svg: require('@site/static/img/rocky.svg').default,
     description: (
       <>
-        <a href="/rocky">RockyLinux</a> a RHEL clone.
+        <a href="/rocky">Rocky Linux</a>, a RHEL clone.
       </>
     ),
   },
@@ -113,7 +113,7 @@ const FeatureList = [
     Svg: require('@site/static/img/ubuntu.svg').default,
     description: (
       <>
-        <a href="/ubuntu">Ubuntu</a> is full supported: 
+        <a href="/ubuntu">Ubuntu</a> is fully supported: 
         <a href="/ubuntu/bionic/">&nbsp;bionic</a>,
         <a href="/ubuntu/noble/">&nbsp;noble</a>
       </>

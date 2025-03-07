@@ -1,19 +1,19 @@
-# Linuxmint wilma
+# Linux Mint Wilma
 ![](/img/linuxmint.svg)
 
-## Penguins' eggs remastered ISOs
-All ISOS have user set to ```live/evolution```, and ```root/evolution```
+## Penguins' eggs remastered ISO's
+All ISO's have their user credentials set to ```live/evolution``` and ```root/evolution```.
 
-* [download](https://drive.google.com/drive/folders/1QTUAG1ZMMJdHDPV9z8OIdOTjUeImBk1G)
+* [Download](https://drive.google.com/drive/folders/1QTUAG1ZMMJdHDPV9z8OIdOTjUeImBk1G)
 
 ## Penguins' eggs packages
 Here you can download actual packages to install and reproduce your system.
 
-* [download](https://penguins-eggs.net/basket/index.php?p=packages%2Fdebs)
+* [Download](https://penguins-eggs.net/basket/index.php?p=packages%2Fdebs)
 
 ## Advice
 
-You can continue on [Linuxmint wilma discussion](https://github.com/pieroproietti/penguins-blog/discussions/34)
+You can continue on [Linux Mint Wilma discussion](https://github.com/pieroproietti/penguins-blog/discussions/34)
 
 
 ## Disclaim
