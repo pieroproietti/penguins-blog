@@ -8,7 +8,7 @@ An Open Source, community owned and governed, forever-free enterprise Linux dist
 ## Penguins' eggs remastered ISO's
 All ISO's have their user credentials set to ```live/evolution``` and ```root/evolution```.
 
-* <a
+<a
   href="https://drive.google.com/drive/folders/1KVd6uRlX5bwICCCuWcX42uxHj3vJRK3T"
     onClick={() => {
     if (typeof window.gtag !== 'undefined') {
@@ -20,7 +20,7 @@ All ISO's have their user credentials set to ```live/evolution``` and ```root/ev
     }
   }}
 >
-Download ISOs
+* Download ISOs
 </a>
 
 
@@ -28,7 +28,7 @@ Download ISOs
 Here you can download actual tarballs to install and reproduce your system.
 
 
-* <a
+<a
   href="https://penguins-eggs.net/basket/index.php?p=packages%2Ftarballs"
     onClick={() => {
     if (typeof window.gtag !== 'undefined') {
@@ -40,7 +40,7 @@ Here you can download actual tarballs to install and reproduce your system.
     }
   }}
 >
-Download packages
+* Download packages
 </a>
 
 ## Advice
