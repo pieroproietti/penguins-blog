@@ -44,6 +44,12 @@ function HomepageHeader() {
             to="/drive">
             Downloads
           </Link>
+          &nbsp;
+          <Link
+            className="button button--secondary button--lg"
+            to="/badget/visitors">
+            Visitors
+          </Link>
 
         </div>
       </div>
