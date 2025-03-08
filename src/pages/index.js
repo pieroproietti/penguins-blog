@@ -47,7 +47,7 @@ function HomepageHeader() {
           &nbsp;
           <Link
             className="button button--secondary button--lg"
-            to="/badget/visitors">
+            to="https://penguins-eggs.net/badget/visitors/">
             Visitors
           </Link>
 
