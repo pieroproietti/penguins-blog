@@ -7,8 +7,22 @@ An Open Source, community owned and governed, forever-free enterprise Linux dist
 
 ## Penguins' eggs remastered ISO's
 All ISO's have their user credentials set to ```live/evolution``` and ```root/evolution```.
+<a
+  href="https://drive.google.com/drive/folders/1KVd6uRlX5bwICCCuWcX42uxHj3vJRK3T"
+    onClick={() => {
+    if (typeof window.gtag !== 'undefined') {
+      window.gtag('event', 'click', {
+        event_category: 'Folder Access',
+        event_label: 'Almalinux',
+        value: 1,
+      });
+    }
+  }}
+>
+  Download
+</a>
 
-* [Download](https://drive.google.com/drive/folders/1KVd6uRlX5bwICCCuWcX42uxHj3vJRK3T)
+* [Download]
 
 ## Penguins' eggs packages
 Here you can download actual tarballs to install and reproduce your system.
