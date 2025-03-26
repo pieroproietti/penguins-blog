@@ -25,11 +25,11 @@ Ecco, da questo "incontro" sta nascendo una nuova generazione di penguins-eggs, 
 
 Sto usando podman, non lo conoscevo affatto, è una alternativa opensource a Docker creata da RedHat ed usata in molti progetti main stream. La cosa che me lo ha fatto scegliere è podman viene usato anche per i container delle CI su github.
 
-In buona sostanza, o sulla macchina locale o attraverso le azioni di github, viene creato un container a partire da una immagine minima della distribuzione da ri-creare, viene quindi installato penguins-eggs e le dipendenze necessarie, poi un set minimo di pacchetti. A questo punnto, lanciando eggs all'interno del container, di ottiene una immagine ISO che prescinde totalmente dal sistema installato!
+In buona sostanza, o sulla macchina locale o attraverso le azioni di github, viene creato un container a partire da una immagine minima della distribuzione da "ri-creare", viene quindi installato penguins-eggs e le dipendenze necessarie, poi un set minimo di pacchetti. A questo punto, lanciando `eggs` all'interno del container, di ottiene una immagine ISO che prescinde totalmente dal sistema installato!
 
 ## Si va bene, ma a che serve?
 
-Serve a molto, ancora non lo scopro appieno e nemmeno ne vedo i limiti: al momento mi permette di avere delle CI su github che costruiscono sia i pacchetti che le ISO ad ogni commit o a richiesta e tracciano gli eventuali errori.
+Serve a molto, ancora non lo scopro appieno ma nemmeno ne vedo i limiti: al momento mi permette di avere delle CI su github che costruiscono sia i pacchetti che le ISO ad ogni commit oppure a richiesta e tracciano gli eventuali errori.
 
 Provate a consultare questo [link](https://github.com/pieroproietti/penguins-eggs/actions) e divertitevi a vedere come una immagine venga creata e rimasterizzata in background con penguins-eggs.
 
