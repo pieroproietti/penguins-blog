@@ -1,7 +1,7 @@
 ---
 authors: pieroproietti
 slug: containers
-title: container
+title: containers
 lang: it
 comments: true # giscus
 enableComments: true
