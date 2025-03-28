@@ -42,19 +42,21 @@ Ringrazio molto [gnuhub](https://github.com/gnuhub) al secolo Wang Stallman, per
 ## Semplificazione
 Il processo creato da Wang su github, prevede l'uso di due container: il primo un container Ubuntu per creare la CI ed un secondo che carica la distribuzione di cui creare l'immagine ISO.
 
-Inizialmente gli script specificavano sia la creazione del container Ubuntu, sia quella dei vari container delle distribuzioni. Ora ho appena riorganizzato il codice creando uno script `10000-ubuntu-container-base.sh` che non fa altro che configurare il container Ubuntu, rendendolo capace di reperire le immagini necesarie, che uso nei vari container di test che utilizzo.
+Inizialmente gli script specificavano sia la creazione del container Ubuntu, sia quella dei vari container delle distribuzioni. Ora ho appena riorganizzato il codice creando uno script `10000-ubuntu-container-base.sh` che non fa altro che configurare il container Ubuntu, rendendolo capace di reperire le immagini necessarie, che poi uso nei vari container di test.
 
 Così abbiamo, nella root del progetto:
 * `10000-ubuntu-container-base.sh`
 * `10000-ubuntu-vm-test.sh`
 * `10002-ubuntu-container-test.sh`
 * `10003-debian-container-test.sh`
-...
+* `...`
 
 
-`10000-ubuntu-container-base.sh` non viene mai lanciato da solo, ma viene chiamato con source dai vari script. Ad asempio:
+]`10000-ubuntu-container-base.sh`](https://github.com/pieroproietti/penguins-eggs/blob/master/10000-ubuntu-container-base.sh) non viene mai lanciato da solo, ma viene chiamato con `source` dai vari script. Ad asempio:
 
 ```
+#!/usr/bin/env bash
+
 set -x
 source ./10000-ubuntu-container-base.sh
 
@@ -79,6 +81,18 @@ date
 ```
 
 Questo costituisce una semplificazione notevole.
+
+## La vendemmia
+
+Terminata la configurazione delle CI in maniera soddisfacente, è tempo di aspettare che l'uva maturi per la vendemmia.
+
+Personalmente, avendone avuto  diretta esperienza, l'ho sempre reputata una attività estremamente faticosa ma d'altra parte quando giunge è l'ora del raccolto e, dall'antichità in poi è considerata una festa.
+
+Occorre capire come "vendemmiare" ovvero come tirare fuori da queste CI o da altre, pacchetti, tarballs ed ISO create!
+
+Non ne ho idea, c'è qualche esperto che può consigliarmi?
+
+
 
 
 
