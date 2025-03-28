@@ -38,3 +38,48 @@ Questo, naturalmente, è anche un ottimo sistema di debug.
 Ringrazio molto [gnuhub](https://github.com/gnuhub) al secolo Wang Stallman, per avermi indicato la strada. 
 
 ![](/images/github-ci.png)
+
+## Semplificazione
+Il processo creato da Wang su github, prevede l'uso di due container: il primo un container Ubuntu per creare la CI ed un secondo che carica la distribuzione di cui creare l'immagine ISO.
+
+Inizialmente gli script specificavano sia la creazione del container Ubuntu, sia quella dei vari container delle distribuzioni. Ora ho appena riorganizzato il codice creando uno script `10000-ubuntu-container-base.sh` che non fa altro che configurare il container Ubuntu, rendendolo capace di reperire le immagini necesarie, che uso nei vari container di test che utilizzo.
+
+Così abbiamo, nella root del progetto:
+* `10000-ubuntu-container-base.sh`
+* `10000-ubuntu-vm-test.sh`
+* `10002-ubuntu-container-test.sh`
+* `10003-debian-container-test.sh`
+...
+
+
+`10000-ubuntu-container-base.sh` non viene mai lanciato da solo, ma viene chiamato con source dai vari script. Ad asempio:
+
+```
+set -x
+source ./10000-ubuntu-container-base.sh
+
+cd $CMD_PATH
+which podman 
+podman --version
+df -h
+
+podman run \
+        --hostname minimal \
+        --privileged \
+        --cap-add all \
+        --ulimit nofile=32000:32000 \
+        --pull=always \
+        -v $PWD/mychroot/ci:/ci \
+        -v /dev:/dev \
+        debian:12.9 \
+        /ci/run-on-debian.sh
+
+df -h
+date
+```
+
+Questo costituisce una semplificazione notevole.
+
+
+
+
