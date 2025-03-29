@@ -102,3 +102,12 @@ Sono riuscito, quindi ad esportare le prime ISO ed i primi tarballs, ma occorre 
 Sono partito da Rocky, il più facile data la quasi sovrapposizione ad Almalinux. Via, via affronteremo gli altri,ma ci vuole tempo. 
 
 Rocky mi ha richiesto comunque qualche ora - e sto imparando cose nuove - vedremo gli altri.
+
+Passato lo scoglio di Rocky, ho affrontato Fedora, poi Openmamba, quindi Opensuse.
+
+Però su Openmamba ed Opensuse mi sono arenato, è roba da fare al mattino, a mente fresca.
+
+Sono così passato a riordinare le CI, a dare un nome decente agli `artifact` e, con l'occasione ho  ridenominato tutti gli scripts per fare posto ai due container `build-packages-debs`  e `build-packages-arch`, ma ne parliamo prossimamente.
+
+
+ 
