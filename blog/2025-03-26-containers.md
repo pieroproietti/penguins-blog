@@ -88,9 +88,18 @@ Terminata la configurazione delle CI in maniera soddisfacente, è tempo di aspet
 
 Personalmente, avendone avuto  diretta esperienza, l'ho sempre reputata una attività estremamente faticosa ma d'altra parte quando giunge è l'ora del raccolto e, dall'antichità in poi è considerata una festa.
 
-Occorre capire come "vendemmiare" ovvero come tirare fuori da queste CI o da altre, pacchetti, tarballs ed ISO create!
+Occorre capire come "vendemmiare" ovvero come tirare fuori da queste CI o da altre, i pacchetti, le tarballs e le ISO create!
 
 Non ne ho idea, c'è qualche esperto che può consigliarmi?
+
+### Preparativi
+Prima di vendemmiare bisogna preparare i recipienti per raccogliere il vino, ovvero sistemare le botti. Non mi dilungo sull'argomento.
+
+Fortunatamente un grande aiuto, ancora una volta, è venuto dal buon Wang Stallman - esperto vignaiuolo cinese - che mi ha modificato gli script per la raccolta dei cosidetti `artifact`.
+
+Sono riuscito, quindi ad esportare le prime ISO ed i primi tarballs, ma occorre ancora pefezionare. Inoltre con questo, sono stati aggiunti gli script per Fedora, Openmamba, OpenSuse e Rocky Linux.
+
+Sono partito dal primo, il più facile, essendo abbastanza uguale ad Almalinux, via, via affronteremo gli altri, ma ci vuole tempo. Rocky mi ha richiesto comuqnue qualche ora di lavoro, vedremo gli altri.
 
 
 
