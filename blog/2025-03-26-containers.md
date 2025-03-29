@@ -99,12 +99,6 @@ Fortunatamente un grande aiuto, ancora una volta, è venuto dal buon Wang Stallm
 
 Sono riuscito, quindi ad esportare le prime ISO ed i primi tarballs, ma occorre ancora pefezionare. Inoltre con questo, sono stati aggiunti gli script per Fedora, Openmamba, OpenSuse e Rocky Linux.
 
-Sono partito dal primo, il più facile, essendo abbastanza simie ad Almalinux. Via, via affronteremo gli altri,ma ci vuole tempo. 
+Sono partito da Rocky, il più facile data la quasi sovrapposizione ad Almalinux. Via, via affronteremo gli altri,ma ci vuole tempo. 
 
 Rocky mi ha richiesto comunque qualche ora - e sto imparando cose nuove - vedremo gli altri.
-
-
-
-
-
-
