@@ -144,6 +144,7 @@ Meglio lasciar perdere, magari usare i container solo per i test sulla CI di git
 
 Sono sfiduciato per dirla tutta, sicuramente mi passerà ma per oggi ho voluto mettere uno stop a questo capitolo pubblicando la versione 10.1.0-1.
 
+Se volete vedere i test, consultate le [Actions](https://github.com/pieroproietti/penguins-eggs/actions) sulla [repo](https://github.com/pieroproietti/penguins-eggs).
 
 Chi vivrà vedrà!
 
