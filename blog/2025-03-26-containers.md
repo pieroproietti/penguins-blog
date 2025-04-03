@@ -131,7 +131,19 @@ Ho provato a riprendere in mano Arch, per usarlo come host.
 Sembra funzionare, ho fatto la ISO di Debian ma quest'ultima, pur con lo stesso codice e container va in kernel panic.
 
 ## Conclusioni
+
+Prendendo in esame le distribuzioni supportate da penguins-eggs: almalinux, arch, debian, devuan, fedora, openmamba, opesuse, rocky ed ubuntu.
+
+La combinazione delle differenti distribuzioni usabili come host è, quindi, pari a nove.
+
+Le stesse, naturalmente sono usabili come container per creare la ISO live. 
+
+Il problema è che nove, moltiplicato nove fa ottantuno. 
+
+Meglio lasciar perdere, magari usare i container solo per i test sulla CI di github.
+
 Sono sfiduciato per dirla tutta, sicuramente mi passerà ma per oggi ho voluto mettere uno stop a questo capitolo pubblicando la versione 10.1.0-1.
+
 
 Chi vivrà vedrà!
 
