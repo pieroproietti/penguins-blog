@@ -146,7 +146,13 @@ Sono sfiduciato per dirla tutta, sicuramente mi passerà ma per oggi ho voluto m
 
 Se volete vedere i test, consultate le [Actions](https://github.com/pieroproietti/penguins-eggs/actions) sulla [repo](https://github.com/pieroproietti/penguins-eggs).
 
+
 Chi vivrà vedrà!
+
+## Ringraziamenti
+
+Un ringraziamento doveroso a [gnuhub](https://github.com/pieroproietti/penguins-eggs) che mi ha letteralmente sorpreso ed mi ha aperto un mondo, quello dei container che non conoscevo affatto.
+
 
 
  
