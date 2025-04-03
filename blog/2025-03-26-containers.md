@@ -99,7 +99,7 @@ Fortunatamente un grande aiuto, ancora una volta, è venuto dal buon Wang Stallm
 
 Sono riuscito, quindi ad esportare le prime ISO ed i primi tarballs, ma occorre ancora pefezionare. Inoltre con questo, sono stati aggiunti gli script per Fedora, Openmamba, OpenSuse e Rocky Linux.
 
-Sono partito da Rocky, il più facile data la quasi sovrapposizione ad Almalinux. Via, via affronteremo gli altri,ma ci vuole tempo. 
+Sono partito da Rocky, più facile data la quasi sovrapposizione con Almalinux. Via, via affronteremo gli altri,ma ci vuole tempo. 
 
 Rocky mi ha richiesto comunque qualche ora - e sto imparando cose nuove - vedremo gli altri.
 
@@ -108,6 +108,32 @@ Passato lo scoglio di Rocky, ho affrontato Fedora, poi Openmamba, quindi Opensus
 Però su Openmamba ed Opensuse mi sono arenato, è roba da fare al mattino, a mente fresca.
 
 Sono così passato a riordinare le CI, a dare un nome decente agli `artifact` e, con l'occasione ho  ridenominato tutti gli scripts per fare posto ai due container `build-packages-debs`  e `build-packages-arch`, ma ne parliamo prossimamente.
+
+Il giorno dopo, il buon `gnuhub` mi ha fatto "notare" di non stravolgere il suo campo: le CI. Ed ha anche ragione, così mi sono confinato nella mia `/pods` dove ho posto tutto il necessario per lo sviluppo in locale e, limitarmi ad usare come host il solo Debian.
+
+Sono passati altri due gierni, ieri finalmente Debian, Devuan ed Ubuntu hanno deciso di funzionare correttamente, 
+come ci si aspetterebbe.
+
+A questo punto, però ho pensato di riscrivere il processo di installazione di penguins-eggs da utilizzare. Le tarballs sono utili, sono compatibili praticamente con tutte le distribuzioni sia lato host che container, ma finora ho sempre rilasciato penguins-eggs come pacchetto della distro dove mi è stato possibile.
+
+Dal mio punto di vista, pubblicare una Distro non aggiornabile, non è una buone idea.
+
+## Riscrittura di penguins-eggs-install
+
+Così ho rivisto l'ex `penguins-eggs-tarballs-install.sh` e l'ho trasformato in un più generico `penguins-eggs-install.sh`. 
+
+Naturalmente per creare i pacchetti DEB devo essere per forza su Debian/Devuan o Ubuntu, ma direi soprattuto su Debian visto che i pacchetti generati da Ubuntu 24.04 non sarebbero compatibili con quest'ultima.
+
+Dopo ancora un po' di lavoro, sono riuscito a ricreare da host Debian, le ISO minimal di Debian, Devuan ed Ubunti, praticamente perfette ad eccezione del fatto - me ne sono accorto successivamente - che non si avviano con UEFI.
+
+Ho provato a riprendere in mano Arch, per usarlo come host.
+
+Sembra funzionare, ho fatto la ISO di Debian ma quest'ultima, pur con lo stesso codice e container va in kernel panic.
+
+## Conclusioni
+Sono sfiduciato per dirla tutta, sicuramente mi passerà ma per oggi ho voluto mettere uno stop a questo capitolo pubblicando la versione 10.1.0-1.
+
+Chi vivrà vedrà!
 
 
  
