@@ -132,7 +132,7 @@ Sembra funzionare, ho fatto la ISO di Debian ma quest'ultima, pur con lo stesso 
 
 ## Conclusioni
 
-Prendendo in esame le distribuzioni supportate da penguins-eggs: almalinux, arch, debian, devuan, fedora, openmamba, opesuse, rocky ed ubuntu.
+Prendendo in esame le distribuzioni supportate da penguins-eggs: almalinux, arch, debian, devuan, fedora, openmamba, opensuse, rocky ed ubuntu.
 
 La combinazione delle differenti distribuzioni usabili come host è, quindi, pari a nove.
 
@@ -144,14 +144,13 @@ Meglio lasciar perdere, magari usare i container solo per i test sulla CI di git
 
 Sono sfiduciato per dirla tutta, sicuramente mi passerà ma per oggi ho voluto mettere uno stop a questo capitolo pubblicando la versione [10.1.0-1](https://github.com/pieroproietti/penguins-eggs/blob/master/CHANGELOG.md#penguins-eggs-1010).
 
-Se volete vedere i test, consultate le [Actions](https://github.com/pieroproietti/penguins-eggs/actions) sulla [repo](https://github.com/pieroproietti/penguins-eggs).
-
+Se volete vedere i risultati dei test, consultate le [Actions](https://github.com/pieroproietti/penguins-eggs/actions) sulla [repo](https://github.com/pieroproietti/penguins-eggs).
 
 Chi vivrà vedrà!
 
 ## Ringraziamenti
 
-Un ringraziamento doveroso a [gnuhub](https://github.com/pieroproietti/penguins-eggs) che mi ha letteralmente sorpreso ed mi ha aperto un mondo, quello dei container che non conoscevo affatto.
+Un ringraziamento doveroso a [gnuhub](https://github.com/pieroproietti/penguins-eggs) che mi ha letteralmente inotrato a, e mi ha aperto un mondo: quello dei container, che non conoscevo affatto.
 
 
 
