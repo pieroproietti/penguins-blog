@@ -150,7 +150,7 @@ Chi vivrà vedrà!
 
 ## Ringraziamenti
 
-Un ringraziamento doveroso a [gnuhub](https://github.com/pieroproietti/penguins-eggs) che mi ha letteralmente inotrato a, e mi ha aperto un mondo: quello dei container, che non conoscevo affatto.
+Un ringraziamento doveroso a [gnuhub](https://github.com/pieroproietti/penguins-eggs) che mi ha letteralmente inoltrato a, e mi ha aperto ad un mondo: quello dei container, che non conoscevo affatto.
 
 
 
