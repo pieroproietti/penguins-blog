@@ -48,12 +48,11 @@ This generates an ISO image in /home/eggs/.
 ## 5. Can I use penguins-eggs without sudo?
 No, certain operations require root privileges to mount filesystems and modify system settings.
 
-## 6. How can I contribute?
-Report bugs/requests via GitHub Issues.
-
-Contribute code via Pull Requests.
-
-Help with translations (check i18n-labeled issues).
+## 6.Error: ENOENT: no such file or directory, stat '/filesystem.squashfs' Code: ENOENT 
+```
+Error: ENOENT: no such file or directory, stat '/filesystem.squashfs' Code: ENOENT
+```
+[#411](https://github.com/pieroproietti/penguins-eggs/issues/411) Use always sudo eggs kill, before to produce an ISO. The command eggs love already include this, so it's not necessary, but if you are creating an ISO using sudo eggs produce and get this error, just use sudo eggs kill before to it.
 
 ## 7. Support for non-Debian/Ubuntu distros?
 Actually penguins-eggs support: Almalinux, Arch, Debian, Devuan, Fedora, Manjaro, Openmamba, OpenSUSE, Rocky, Ubuntu and derivatives.
@@ -63,13 +62,11 @@ Check the official User's guide on  the [penguins-eggs.net](httos://penguins-egg
 
 Other inmportants documents, can be found on the [penguins-eggs](https://github.com/pieroproietti/penguins-eggs), look expecially `README.md` and under `DOCS`.
 
-
-## 9.Error: ENOENT: no such file or directory, stat '/filesystem.squashfs' Code: ENOENT [#411](https://github.com/pieroproietti/penguins-eggs/issues/411)
-```
-Error: ENOENT: no such file or directory, stat '/filesystem.squashfs' Code: ENOENT
-```
-Use always sudo eggs kill, before to produce an ISO. The command eggs love already include this, so it's not necessary, but if you are creating an ISO using sudo eggs produce and get this error, just use sudo eggs kill before to it.
-
+## 9. How can I contribute?
+* Report bugs/requests via GitHub Issues.
+* Contribute code via Pull Requests.
+* Help with translations (check i18n-labeled issues).
+* Share the project and don't forget to leave a star to it on [github](https://github.com/pieroproietti/penguins-eggs).
 
 ## Relevant Issues (for deeper insights)
 
