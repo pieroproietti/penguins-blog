@@ -175,7 +175,7 @@ sudo eggs wardrobe wear wagtail/waydroid  # Configurazioni speciali
 - **Ubuntu** bionic, focal, jammy, noble (.deb)
 
 #### Derivate supportate
-Deepin, EndeavourOS, Garuda Linux, KDE neon, Linux Mint, LMDE, Pop!_OS, Zorin OS e molte altre. Lista completa nei file [derivatives.yaml](https://github.com/pieroproietti/penguins-eggs/blob/master/conf/derivatives.yaml).
+Deepin, EndeavourOS, Garuda Linux, KDE neon, Linux Mint, LMDE, Pop!_OS, Zorin OS e molte altre. Lista completa nei file [derivatives.yaml](https://github.com/pieroproietti/penguins-eggs/blob/master/conf/derivatives.yaml) e [derivatives_fedora.yml](https://github.com/pieroproietti/penguins-eggs/blob/master/conf/derivatives_fedora.yaml).
 
 #### Architetture
 - **amd64** (x86_64)
