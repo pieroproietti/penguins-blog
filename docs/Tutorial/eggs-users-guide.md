@@ -678,15 +678,17 @@ penguins-eggs supporta un'ampia gamma di distribuzioni Linux:
 - **Ubuntu** bionic, focal, jammy, noble (.deb)
 
 ### Derivate supportate
-- **Deepin**
-- **EndeavourOS**
-- **Garuda Linux**
-- **KDE neon**
-- **Linux Mint**
-- **LMDE**
-- **Pop!_OS**
-- **Zorin OS**
-- E molte altre [Derivatives Arch/Debian/Devuan/Ubuntu](https://github.com/pieroproietti/penguins-eggs/blob/master/conf/derivatives.yaml), [Derivatives Fedora](https://github.com/pieroproietti/penguins-eggs/blob/master/conf/derivatives_fedora.yaml).
+- Deepin
+- EndeavourOS
+- Garuda Linux
+- KDE neon
+- Linux Mint
+- LMDE
+- Pop!_OS
+- Zorin OS
+- Altre:
+  - [Arch/Debian/Devuan/Ubuntu](https://github.com/pieroproietti/penguins-eggs/blob/master/conf/derivatives.yaml)
+  - [Fedora](https://github.com/pieroproietti/penguins-eggs/blob/master/conf/derivatives_fedora.yaml).
 
 ### Architetture
 - **amd64** (x86_64)
