@@ -431,7 +431,7 @@ krill è l'installer TUI (Text User Interface) di eggs, progettato per essere ve
 
 **Caratteristiche di krill:**
 - Installazione su sistemi CLI/server
-- Sistemi con < 2GB RAM
+- Sistemi con RAM inferiore a 2GB
 - Installazione unattended
 - Ripristino backup criptati creati con eggs
 
