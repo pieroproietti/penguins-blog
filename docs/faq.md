@@ -63,7 +63,7 @@ No, certain operations require root privileges to mount filesystems and modify s
 * Share the project and don't forget to leave a star to it on [github](https://github.com/pieroproietti/penguins-eggs).
 
 ## 10. GUI
-eggsmaker - a project of [Jorge Luis Endres](https://github.com/jlendres/eggsmaker) - It is an essential and functional Graphical User Interface for penguins-eggs. Available fro Arch, Debian, Devuan and Ubuntu.
+eggsmaker - a project of [Jorge Luis Endres](https://github.com/jlendres/eggsmaker) - It is an essential and functional Graphical User Interface for penguins-eggs. Available for Arch, Debian, Devuan and Ubuntu.
 
 ## Relevant Issues (for deeper insights)
 
