@@ -105,34 +105,53 @@ You will get your live ISO, named following this pattern:
 `egg-of_DISTRO_VERSION_HOSTNAME-ARCH_DATE_TIME.iso`
 
 **Example for a Debian bookworm:**
-`egg-of-debian-bookworm-naked-amd64_2024-12-28_1025.iso`
+`egg-of-debian-bookworm-naked-amd64_2025-05-28_1025.iso`
 
-## Alternative commands
+## eggs commands
 Write `eggs` to get a complete list of commands.
-## What you get
+```
+ remaster system tool, compatible with Arch, Debian, Devuan, Ubuntu and others
 
-## Supported distributions
+VERSION
+  penguins-eggs/10.1.1 linux-x64 node-v20.5.1
 
-penguins-eggs v10.1.x supports:
+USAGE
+  $ eggs [COMMAND]
 
-**Debian family**: Debian (buster, bullseye, bookworm, trixie), Ubuntu (bionic, focal, jammy, noble), Linux Mint, derivatives
+TOPICS
+  export    export iso in the destination host
+  tools     clean system log, apt, etc
+  wardrobe  get warorobe
 
-**Red Hat family**: AlmaLinux, Fedora, Rocky Linux
-
-**Arch family**: Arch Linux, Manjaro, EndeavourOS, Garuda, derivatives
-
-**SUSE family**: OpenSuSE
-
-**Independent**: OpenMamba
-
-**Architectures**: amd64 (x86_64), i386, arm64
+COMMANDS
+  adapt         adapt monitor resolution for VM only
+  analyze       analyze for syncto
+  autocomplete  Display autocomplete installation instructions.
+  calamares     configure calamares or install or configure it
+  config        Configure eggs to run it
+  cuckoo        PXE start with proxy-dhcp
+  dad           ask help from daddy - TUI configuration helper
+  help          Display help for eggs.
+  install       krill: the CLI system installer - the egg became a penguin!
+  kill          kill the eggs/free the nest
+  krill         krill: the CLI system installer - the egg became a penguin!
+  love          the simplest way to get an egg!
+  mom           ask help from mommy - TUI helper
+  pods          eggs pods: build ISOs from containers
+  produce       produce a live image from your system whithout your data
+  status        informations about eggs status
+  syncfrom      restore users and user data from a LUKS volumes
+  syncto        Save users and users' data ENCRYPTED
+  update        update the Penguins' eggs tool
+  version
+```
 
 ## Need help?
 
 - 📖 **Documentation**: [penguins-eggs.net](https://penguins-eggs.net)
 - 🐛 **Issues**: [GitHub Issues](https://github.com/pieroproietti/penguins-eggs/issues)  
-- 💬 **Community**: [Telegram](https://t.me/penguins_eggs)
-- 💬 **Comminity**: [Facebook Group](https://www.facebook.com/groups/128861437762355)
+- 💬 **Telegram**: [Telegram](https://t.me/penguins_eggs)
+- 💬 **Facebook**: [Facebook Group](https://www.facebook.com/groups/128861437762355)
 - 📧 **Contact**: pieroproietti@gmail.com
 
 ---
