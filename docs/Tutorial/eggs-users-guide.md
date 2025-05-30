@@ -83,8 +83,7 @@ Le ISO create si trovano in `/home/eggs/` e hanno utente `live` con password `ev
 ### Produzione ISO
 
 ```bash
-sudo eggs produce                    # Compressione veloce (default)
-sudo eggs produce --standard        # Compressione standard 
+sudo eggs produce                    # Compressione veloca (default)
 sudo eggs produce --max              # Massima compressione
 sudo eggs produce --pendrive         # Ottimizzato per chiavette USB
 sudo eggs produce --clone            # Include dati utente
@@ -110,9 +109,9 @@ sudo eggs install --unattended      # Installazione automatica
 ### Personalizzazione
 
 ```bash
-eggs wardrobe get                    # Scarica configurazioni
-eggs wardrobe list                  # Lista configurazioni disponibili
-sudo eggs wardrobe wear colibri     # Applica configurazione desktop
+eggs wardrobe get                   # Scarica il wardrobe
+eggs wardrobe list                  # Lista costumi disponibili
+sudo eggs wardrobe wear colibri     # Applica costume desktop
 ```
 
 ## Casi d'uso comuni
@@ -121,8 +120,8 @@ sudo eggs wardrobe wear colibri     # Applica configurazione desktop
 
 1. **Preparate il sistema base**: Installate applicazioni, configurate temi, personalizzate
 2. **Pulite il sistema**: `sudo eggs tools clean`
-3. **Producete la ISO**: `sudo eggs produce --standard`
-4. **Per distribuzione finale**: `sudo eggs produce --release`
+3. **Producete la ISO**: `sudo eggs produce --pendrive`
+4. **Per distribuzione finale**: `sudo eggs produce --pendrive --release`
 
 ### Backup del sistema
 
