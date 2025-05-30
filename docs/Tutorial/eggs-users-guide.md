@@ -377,10 +377,10 @@ krill è l'installer TUI di eggs, progettato per:
 
 #### Altri comandi
 
-**`eggs adapt`**: Adatta risoluzione per VM
-**`eggs cuckoo`**: Server PXE per installazioni di rete
-**`eggs export`**: Esporta ISO su host remoti
-**`eggs tools`**: Strumenti di manutenzione
+- `eggs adapt`: Adatta risoluzione per VM
+- `eggs cuckoo`: Server PXE per installazioni di rete
+- `eggs export`: Esporta ISO su host remoti
+- `eggs tools`: Strumenti di manutenzione
 - `clean`: Pulisce cache e log
 - `ppa`: Gestisce repository eggs
 - `skel`: Ricrea `/etc/skel`
