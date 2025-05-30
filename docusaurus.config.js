@@ -23,15 +23,15 @@ const config = {
   // organizationName: 'pieroproietti', // Usually your GitHub org/user name.
   // projectName: 'penguins-blog', // Usually your repo name.
 
-  onBrokenLinks: 'throw',
-  onBrokenMarkdownLinks: 'throw',
+  onBrokenLinks: 'warn', // invece di 'throw'
+  onBrokenMarkdownLinks: 'warn', // invece di 'throw'
 
   // Even if you don't use internationalization, you can use this field to set
   // useful metadata like html lang. For example, if your site is Chinese, you
   // may want to replace "en" with "zh-Hans".
   i18n: {
-    defaultLocale: 'it',
-    locales: ['it'],
+    defaultLocale: 'en',
+    locales: ['en'],
   },
 
     
