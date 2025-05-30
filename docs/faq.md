@@ -10,7 +10,7 @@ import Translactions from '@site/src/components/Translactions';
 
 
 ## 1. What is Penguins' Eggs?
-Penguins' Eggs is a tool to create live ISO images and custom Linux distributions, based on Debian/Ubuntu and derivatives. It allows you to generate reproducible systems or "hatch" new distros.
+Penguins' Eggs is a tool to create live ISO images and custom Linux distributions, initially based on Debian/Ubuntu and derivatives, actually support include Fedora, OpenSUSE and derivatives. It allows you to generate reproducible systems or "hatch" new distros.
 
 ## 2. How do I install penguins-eggs?
 Use `get-get`, universal installer:
