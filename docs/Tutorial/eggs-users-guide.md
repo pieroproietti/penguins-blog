@@ -84,6 +84,7 @@ Le ISO create si trovano in `/home/eggs/` e hanno utente `live` con password `ev
 
 ```bash
 sudo eggs produce                    # Compressione veloca (default)
+sudo eggs produce --standard         # Compressione standard (massima compatibilità)
 sudo eggs produce --max              # Massima compressione
 sudo eggs produce --pendrive         # Ottimizzato per chiavette USB
 sudo eggs produce --clone            # Include dati utente
@@ -342,7 +343,7 @@ FLAGS
 ```
 
 **Algoritmi di compressione:**
-- **Default**: `zstd-level-1` - veloce per test
+- **Default**: `zstd-level-1` - compressione veloce (per test)
 - **--standard**: `xz -b 1M` - buona compressione
 - **--max**: `xz -Xbcj` - massima compressione
 - **--pendrive**: `zstd -b 1M -Xcompression-level 15` - ottimizzato per USB
@@ -369,7 +370,6 @@ krill è l'installer TUI di eggs, progettato per:
 #### Altri comandi
 
 - `eggs adapt`: Adatta risoluzione per VM
-- `eggs cuckoo`: Server PXE per installazioni di rete
 - `eggs export`: Esporta ISO su host remoti
 - `eggs tools`: Strumenti di manutenzione
    - `eggs tools clean`: Pulisce cache e log
