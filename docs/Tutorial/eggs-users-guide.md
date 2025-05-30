@@ -45,7 +45,7 @@ Per "esistere" intendiamo che deve esserci un sistema genitore già installato. 
 
 Per la maggior parte degli utenti l'installazione del pacchetto precompilato è quella più indicata.
 
-### Installazione rapida con get-eggs
+### Installazione universale con get-eggs
 
 **Metodo raccomandato per tutte le distribuzioni:**
 
@@ -61,7 +61,7 @@ Lo script `get-eggs` configura automaticamente nodesource quando necessario e in
 
 I pacchetti .deb sono disponibili per tutte le distribuzioni originali e derivate da: `Debian`, `Devuan` ed `Ubuntu`.
 
-**Nota importante**: Dalla versione 10.0.x, penguins-eggs dipende da nodejs ≥18, che non è direttamente disponibile in tutte le distribuzioni. Possiamo fare affidamento su nodesource per aggiungerli.
+**Nota importante**: Dalla versione 10.0.x, penguins-eggs dipende da nodejs ≥18, che non è direttamente disponibile in tutte le distribuzioni. Possiamo fare affidamento su nodesource per aggiungerlo.
 
 #### Installazione nodejs ≥18
 
@@ -174,7 +174,7 @@ sudo eggs calamares --install
 
 I pacchetti tarball contengono nodejs integrato e vengono estratti in `/opt/penguins-eggs`.
 
-È necessario installare i prerequisiti specifici per ogni distribuzione. Si raccomanda l'uso di get-eggs:
+Si raccomanda l'utilizzodi get-eggs:
 
 ```bash
 git clone https://github.com/pieroproietti/penguins-eggs
@@ -222,8 +222,6 @@ sudo ./eggs produce --verbose
 ## La praticità di una applicazione CLI
 
 Una applicazione CLI presenta molti vantaggi: flag `--help` e `--verbose` per ogni comando, manuale sempre disponibile con `man eggs`, aiuti interattivi come `mom` e `dad`, e autocomplete con `bash-completion`.
-
-### `--help`
 
 ```
 VERSION
@@ -702,8 +700,12 @@ Tutte le remix create dall'autore utilizzano:
 ### Download
 
 Le versioni di eggs e le ISO dell'autore sono disponibili su:
-- [penguins-eggs.net](https://penguins-eggs.net)
-- [SourceForge](https://sourceforge.net/projects/penguins-eggs/)
+* [penguins-eggs.net](https://penguins-eggs.net)
+
+e, con minor frequenza di aggiornamento su: 
+* [SourceForge](https://sourceforge.net/projects/penguins-eggs/)
+
+
 
 ### Immagini naked
 
@@ -747,11 +749,11 @@ Per segnalazioni di bug, richieste di funzionalità o supporto:
 
 Contribuite alla crescita del progetto:
 
-- ⭐ Stelle su [GitHub](https://github.com/pieroproietti/penguins-eggs)
-- 📝 Review su [SourceForge](https://sourceforge.net/projects/penguins-eggs/)
-- 💬 Partecipazione nei gruppi di discussione
-- 📢 Condivisione del progetto
-- 💝 Sponsorizzazione dello sviluppo
+- Stelle su [GitHub](https://github.com/pieroproietti/penguins-eggs)
+- Review su [SourceForge](https://sourceforge.net/projects/penguins-eggs/)
+- Partecipazione nei gruppi di discussione
+- Condivisione del progetto
+- Sponsorizzazione dello sviluppo
 
 ## Dipendenze/Requisiti
 
@@ -838,25 +840,6 @@ Per AlmaLinux, Fedora, OpenMamba, OpenSuSE e Rocky Linux, consultate la cartella
 
 **Architetture**: Supporto esteso per arm64 su più distribuzioni.
 
-## Aggiornamenti recenti
-
-### Versioni 10.0.x
-
-**10.0.59**: Importante aggiornamento per Ubuntu e Linux Mint con supporto per copiare `efi.img` originale per compatibilità Secure Boot.
-
-**10.0.53**: Aggiunto supporto per OpenMamba con pacchetti RPM nativi e lavoro in corso per ALDOS.
-
-**10.0.51**: Miglioramenti per AlmaLinux, BigLinux e Debian con test estensivi dei pacchetti tarball.
-
-## Roadmap futura
-
-Lo sviluppo di penguins-eggs continua con focus su:
-
-- **Supporto Secure Boot**: Miglioramenti per il supporto completo del Secure Boot UEFI
-- **Installazione su partizioni esistenti**: Sviluppo della capacità di installare con krill su partizioni pre-esistenti
-- **Alpine Linux**: Completamento del supporto per Alpine Linux
-- **Gestione LVM semplificata**: Semplificazione della gestione LVM2 in krill
-- **Nuove distribuzioni**: Espansione del supporto a nuove distribuzioni Linux
 
 ## Contribuire al progetto
 
@@ -905,7 +888,7 @@ Con l'aggiunta di funzionalità avanzate come il backup criptato, l'installazion
 
 Il futuro di penguins-eggs è luminoso, con costanti miglioramenti, nuove funzionalità e un supporto sempre più ampio per l'ecosistema Linux. La community crescente e l'interesse delle distribuzioni specializzate dimostrano che eggs ha trovato la sua nicchia nel panorama degli strumenti Linux.
 
-**Buona "cova" a tutti!** 🐧🥚
+**e... Buona "cova" a tutti!**
 
 ---
 
