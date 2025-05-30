@@ -148,8 +148,6 @@ sudo eggs wardrobe wear colibri     # Desktop completo
 sudo eggs wardrobe wear wagtail/waydroid  # Configurazioni speciali
 ```
 
----
-
 ## Approfondimenti
 
 ### Distribuzioni supportate

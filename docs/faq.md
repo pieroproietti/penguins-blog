@@ -67,8 +67,4 @@ eggsmaker - a project of [Jorge Luis Endres](https://github.com/jlendres/eggsmak
 
 ## Relevant Issues (for deeper insights)
 
-```
-Error: ENOENT: no such file or directory, stat '/filesystem.squashfs' Code: ENOENT
-* [#123](https://github.com/pieroproietti/penguins-eggs/issues/123) Request for Arch Linux support.
-* [#456](https://github.com/pieroproietti/penguins-eggs/issues/456): Problems with Calamares installer.
-* [#789](https://github.com/pieroproietti/penguins-eggs/issues/789): Localization improvements (i18n).
+Consult [issues](https://github.com/pieroproietti/penguins-eggs/issues)
