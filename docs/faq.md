@@ -44,7 +44,7 @@ Run:
 sudo eggs produce
 ```
 This generates an ISO image in /home/eggs/.
-```
+
 
 ## 5. Can I use penguins-eggs without sudo?
 No, certain operations require root privileges to mount filesystems and modify system settings.
@@ -71,6 +71,7 @@ Use always sudo eggs kill, before to produce an ISO. The command eggs love alrea
 
 
 ## Relevant Issues (for deeper insights)
+
 * [#123](https://github.com/pieroproietti/penguins-eggs/issues/123) Request for Arch Linux support.
 * [#456](https://github.com/pieroproietti/penguins-eggs/issues/456): Problems with Calamares installer.
 * [#789](https://github.com/pieroproietti/penguins-eggs/issues/789): Localization improvements (i18n).
