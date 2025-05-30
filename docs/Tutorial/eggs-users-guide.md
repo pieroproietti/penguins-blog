@@ -515,7 +515,7 @@ amd64:
 
 - **Arch**: Vedi [PKGBUILD AUR](https://aur.archlinux.org/packages/penguins-eggs)
 - **Manjaro**: [PKGBUILD GitLab](https://gitlab.manjaro.org/packages/community/penguins-eggs/-/blob/master/PKGBUILD)
-- **RPM**: Script in [REQUIREMENTS](https://github.com/pieroproietti/penguins-packs/tree/master/tarballs/requirements)
+- **RPM**: Script in [REQUIREMENTS](https://github.com/pieroproietti/get-eggs/tree/main/tarballs/requirements)
 
 ### Supporto e community
 
