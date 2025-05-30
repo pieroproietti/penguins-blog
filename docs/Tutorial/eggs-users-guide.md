@@ -381,10 +381,10 @@ krill è l'installer TUI di eggs, progettato per:
 - `eggs cuckoo`: Server PXE per installazioni di rete
 - `eggs export`: Esporta ISO su host remoti
 - `eggs tools`: Strumenti di manutenzione
-- `clean`: Pulisce cache e log
-- `ppa`: Gestisce repository eggs
-- `skel`: Ricrea `/etc/skel`
-- `yolk`: Crea repository locale (Debian)
+   - `eggs tools clean`: Pulisce cache e log
+   - `eggs tools ppa`: Gestisce repository eggs
+   - `eggs toolsskel`: Ricrea `/etc/skel`
+   - `eggs tools yolk`: Crea repository locale (Debian)
 
 ### Creazione distribuzioni personalizzate
 
