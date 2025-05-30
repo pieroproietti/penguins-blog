@@ -62,7 +62,14 @@ Check the official User's guide on  the [penguins-eggs.net](httos://penguins-egg
 
 Other inmportants documents, can be found on the [penguins-eggs](https://github.com/pieroproietti/penguins-eggs), look expecially `README.md` and under `DOCS`.
 
-## 9. How can I contribute?
+## 9. Use cases
+- Create personalized Linux distributions for organizations with pre-installed software and configurations.
+- Build rescue/recovery systems with your preferred tools and settings.
+- Develop educational Linux environments for classrooms with specific software packages.
+- Create portable development environments that can be deployed consistently across different machines.
+- Build specialized penetration testing or system administration live distributions.
+
+## 10. How can I contribute?
 * Report bugs/requests via GitHub Issues.
 * Contribute code via Pull Requests.
 * Help with translations (check i18n-labeled issues).
