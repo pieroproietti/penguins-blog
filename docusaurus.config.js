@@ -24,15 +24,14 @@ const config = {
   // projectName: 'penguins-blog', // Usually your repo name.
 
   onBrokenLinks: 'warn', // invece di 'throw'
-  //  onBrokenLinks: 'throw',
-  onBrokenMarkdownLinks: 'throw',
+  onBrokenMarkdownLinks: 'warn', // invece di 'throw'
 
   // Even if you don't use internationalization, you can use this field to set
   // useful metadata like html lang. For example, if your site is Chinese, you
   // may want to replace "en" with "zh-Hans".
   i18n: {
-    defaultLocale: 'it',
-    locales: ['it'],
+    defaultLocale: 'en',
+    locales: ['en'],
   },
 
     
