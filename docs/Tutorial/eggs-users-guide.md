@@ -224,16 +224,18 @@ sudo ./eggs produce --verbose
 Una applicazione CLI presenta molti vantaggi: flag `--help` e `--verbose` per ogni comando, manuale sempre disponibile con `man eggs`, aiuti interattivi come `mom` e `dad`, e autocomplete con `bash-completion`.
 
 ```
+A remaster system tool, compatible with Arch, Debian, Devuan, Ubuntu and others
+
 VERSION
-  penguins-eggs/10.1.0 linux-x64 node-v20.5.1
+  penguins-eggs/10.1.1 linux-x64 node-v20.5.1
 
 USAGE
   $ eggs [COMMAND]
 
 TOPICS
-  export    export deb/docs/iso to the destination host
+  export    export iso in the destination host
   tools     clean system log, apt, etc
-  wardrobe  get wardrobe
+  wardrobe  get warorobe
 
 COMMANDS
   adapt         adapt monitor resolution for VM only
@@ -247,8 +249,10 @@ COMMANDS
   install       krill: the CLI system installer - the egg became a penguin!
   kill          kill the eggs/free the nest
   krill         krill: the CLI system installer - the egg became a penguin!
+  love          the simplest way to get an egg!
   mom           ask help from mommy - TUI helper
-  produce       produce a live image from your system without your data
+  pods          eggs pods: build ISOs from containers
+  produce       produce a live image from your system whithout your data
   status        informations about eggs status
   syncfrom      restore users and user data from a LUKS volumes
   syncto        Save users and users' data ENCRYPTED
