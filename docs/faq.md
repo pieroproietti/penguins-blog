@@ -12,16 +12,20 @@ import Translactions from '@site/src/components/Translactions';
 ## 1. What is Penguins' Eggs?
 Penguins' Eggs is a tool to create live ISO images and custom Linux distributions, based on Debian/Ubuntu and derivatives. It allows you to generate reproducible systems or "hatch" new distros.
 
-## 2. How do I install Eggs?
-You can install it via:
-
-```sh
-curl -fsSL https://pieroproietti.github.io/penguins-eggs-ppa/KEY.gpg | sudo gpg --dearmor -o /etc/apt/trusted.gpg.d/penguins-eggs.gpg
-echo "deb [arch=amd64] https://pieroproietti.github.io/penguins-eggs-ppa ./" | sudo tee /etc/apt/sources.list.d/penguins-eggs.list
-sudo apt update
-sudo apt install eggs
+## 2. How do I install penguins-eggs?
+Use `get-get`, universal installer:
+```bash
+git clone https://github.com/pieroproietti/get-eggs
+cd get-eggs
+sudo ./get-eggs.sh
 ```
-Alternatively, download .deb files from the releases page.
+
+The `get-eggs.sh` script will:
+- Automatically detect your distribution
+- Install the appropriate version of Node.js (≥18) if needed
+- Download and install the correct penguins-eggs package for your system
+- Configure all necessary dependencies
+
 
 # 3. Common Issues & Fixes
 "Permission denied" when running sudo eggs:
@@ -37,33 +41,29 @@ Some issues report dual-boot problems. Use eggs calamares for a more reliable gr
 Run:
 
 ```sh
-sudo eggs produce --clone
-This generates an ISO in /home/eggs/. Use --fast for quicker builds (without full compression).
+sudo eggs produce
+```
+This generates an ISO image in /home/eggs/.
 ```
 
-## 5. Can I use Eggs without sudo?
+## 5. Can I use penguins-eggs without sudo?
 No, certain operations require root privileges to mount filesystems and modify system settings.
 
-## 6. Difference between eggs produce and eggs dad?
-produce: Creates standard live ISOs.
-
-dad: "Docker-like" mode for developing new distros in an isolated environment.
-
-## 7. How can I contribute?
+## 6. How can I contribute?
 Report bugs/requests via GitHub Issues.
 
 Contribute code via Pull Requests.
 
 Help with translations (check i18n-labeled issues).
 
-## 8. Support for non-Debian/Ubuntu distros?
+## 7. Support for non-Debian/Ubuntu distros?
 Some issues request Arch Linux or Fedora support, but it’s currently optimized for Debian-based systems.
 
-## 9. Where’s the full documentation?
+## 8. Where’s the full documentation?
 Check the official Wiki or the penguins-eggs.net website.
 
 
-## 10.Error: ENOENT: no such file or directory, stat '/filesystem.squashfs' Code: ENOENT #411
+## 9.Error: ENOENT: no such file or directory, stat '/filesystem.squashfs' Code: ENOENT #411
 ```
 Error: ENOENT: no such file or directory, stat '/filesystem.squashfs' Code: ENOENT #411
 ```
@@ -71,6 +71,6 @@ Use always sudo eggs kill, before to produce an ISO. The command eggs love alrea
 
 
 ## Relevant Issues (for deeper insights)
-* #123: Request for Arch Linux support.
-* #456: Problems with Calamares installer.
-* #789: Localization improvements (i18n).
+* [#123](https://github.com/pieroproietti/penguins-eggs/issues/123) Request for Arch Linux support.
+* [#456](https://github.com/pieroproietti/penguins-eggs/issues/456): Problems with Calamares installer.
+* [#789](https://github.com/pieroproietti/penguins-eggs/issues/789): Localization improvements (i18n).
