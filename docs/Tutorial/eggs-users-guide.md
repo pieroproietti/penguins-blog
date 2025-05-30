@@ -136,14 +136,6 @@ sudo eggs produce --clone
 sudo eggs produce --cryptedclone
 ```
 
-### Installazione di rete (PXE)
-
-```bash
-sudo eggs cuckoo
-```
-
-Avvia un server PXE per installazioni via rete.
-
 ## Wardrobe - Configurazioni predefinite
 
 Il sistema wardrobe permette di applicare configurazioni desktop predefinite:
@@ -576,7 +568,7 @@ sudo eggs wardrobe wear colibri    # Aggiunge desktop
 
 ## Conclusioni
 
-penguins-eggs rappresenta una soluzione moderna e completa per la rimasterizzazione Linux. Con supporto esteso per distribuzioni e architetture, strumenti avanzati come backup criptati, installazioni PXE e il sistema wardrobe, eggs non è solo un rimasterizzatore ma un ecosistema completo per la gestione di sistemi Linux personalizzati.
+penguins-eggs rappresenta una soluzione moderna e completa per la rimasterizzazione Linux. Con supporto esteso per distribuzioni e architetture, strumenti avanzati come backup criptati ed il sistema wardrobe, eggs non è solo un rimasterizzatore ma un ecosistema completo per la gestione di sistemi Linux personalizzati.
 
 La filosofia della "riproduzione" applicata ai sistemi operativi permette a ogni sistema di "deporre le sue uova" per dare vita a nuovi sistemi, mantenendo le caratteristiche del genitore ma adattandosi a nuovi ambienti.
 
