@@ -45,7 +45,6 @@ sudo eggs produce
 ```
 This generates an ISO image in /home/eggs/.
 
-
 ## 5. Can I use penguins-eggs without sudo?
 No, certain operations require root privileges to mount filesystems and modify system settings.
 
@@ -57,10 +56,12 @@ Contribute code via Pull Requests.
 Help with translations (check i18n-labeled issues).
 
 ## 7. Support for non-Debian/Ubuntu distros?
-Some issues request Arch Linux or Fedora support, but it’s currently optimized for Debian-based systems.
+Actually penguins-eggs support: Almalinux, Arch, Debian, Devuan, Fedora, Manjaro, Openmamba, OpenSUSE, Rocky, Ubuntu and derivatives.
 
 ## 8. Where’s the full documentation?
-Check the official Wiki or the penguins-eggs.net website.
+Check the official User's guide on  the [penguins-eggs.net](httos://penguins-eggs,net) website.
+
+Other inmportants documents, can be found on the [penguins-eggs](https://github.com/pieroproietti/penguins-eggs), look expecially `README.md` and under `DOCS`.
 
 
 ## 9.Error: ENOENT: no such file or directory, stat '/filesystem.squashfs' Code: ENOENT [#411](https://github.com/pieroproietti/penguins-eggs/issues/411)
