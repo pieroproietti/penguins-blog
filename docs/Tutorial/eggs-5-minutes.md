@@ -6,17 +6,16 @@ import Translactions from '@site/src/components/Translactions';
 
 Or even less using `get-eggs`, for every supported distribution.
 
-## Start from a base system or from your system
+## Start from a minimal or customized system
 
-The most convenient solution to get a minimal exclusive CLI installation of all supported distributions is to use `get-eggs`.
+What you need to get started is a simple basic system, with git and tar installed. You can also start with a full distribution or one you have already customized, though.
 
-What you need to do is basically install a minimal CLI system:
-- **Debian**: Use netinstall
-- **Ubuntu**: Use server edition  
-- **Arch Linux**: Use archiso
-- **AlmaLinux/Fedora/OpenSuSE/Rocky**: Use minimal installation
-- **Manjaro**: Any minimal installation
-- **OpenMamba**: Standard installation
+When I create naked versions I start from:
+
+- **Debian**: Using netinstall
+- **Ubuntu**: Using server edition  
+- **Arch Linux**: Using archiso
+- **AlmaLinux/Fedora/OpenSuSE/Rocky**: Using minimal installation
 
 ## Prerequisites
 
