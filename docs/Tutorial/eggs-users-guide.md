@@ -19,7 +19,7 @@ Manuale aggiornato a `eggs v10.1.x` ultimo aggiornamento 30 maggio 2025
 `penguins' eggs` è uno strumento moderno per la rimasterizzazione di sistemi Linux, pensato come successore di Remastersys e Systemback. Il software nasce dall'idea della "riproduzione" applicata ai sistemi operativi: ogni sistema può "deporre le sue uova" per dare vita a nuovi sistemi identici o personalizzati.
 
 **Caratteristiche principali:**
-- Supporto per oltre 15 distribuzioni Linux (Debian, Ubuntu, Arch, Fedora, Manjaro, ecc.)
+- Supporto per oltre 15 distribuzioni Linux (Almalinux, Arch, Debian, Devuan, Fedora, Manjaro, openmamba, openSUSE, Rocky, Ubuntu, ecc.)
 - Installazione semplificata con `get-eggs`
 - Creazione di ISO live avviabili con i vostri dati
 - Installer CLI (krill) e GUI (calamares)
