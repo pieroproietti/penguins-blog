@@ -1,3 +1,9 @@
+---
+title: Cook eggs in 5 minutes
+authors: pieroproietti
+lang: eggs
+enableComments: true
+---
 import Translactions from '@site/src/components/Translactions';
 
 <Translactions />
