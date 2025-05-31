@@ -377,7 +377,7 @@ krill è l'installer TUI di eggs, progettato per:
 - `eggs tools`: Strumenti di manutenzione
    - `eggs tools clean`: Pulisce cache e log
    - `eggs tools ppa`: Gestisce repository eggs
-   - `eggs tool sskel`: Ricrea `/etc/skel`
+   - `eggs tools skel`: Ricrea `/etc/skel`
    - `eggs tools yolk`: Crea repository locale (Debian)
 
 ### Creazione distribuzioni personalizzate
