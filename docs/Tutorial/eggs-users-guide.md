@@ -83,11 +83,16 @@ Le ISO create si trovano in `/home/eggs/` e hanno utente `live` con password `ev
 ### Produzione ISO
 
 ```bash
-sudo eggs produce                    # Compressione veloca (default)
+sudo eggs produce                    # Compressione veloce
+sudo eggs produce --pendrive         # Compressione ottimizzata per chiavette USB
 sudo eggs produce --standard         # Compressione standard (massima compatibilità)
 sudo eggs produce --max              # Massima compressione
-sudo eggs produce --pendrive         # Ottimizzato per chiavette USB
-sudo eggs produce --clone            # Include dati utente
+```
+
+### Produzione ISO con dati utente
+
+```bash
+sudo eggs produce --clone            # Include i dati utente
 sudo eggs produce --cryptedclone     # Dati utente criptati
 ```
 
@@ -141,10 +146,10 @@ sudo eggs produce --cryptedclone
 Il sistema wardrobe permette di applicare configurazioni desktop predefinite:
 
 ```bash
-eggs wardrobe get                    # Scarica il wardrobe
-eggs wardrobe list                  # Mostra configurazioni disponibili
-sudo eggs wardrobe wear duck        # Desktop leggero
-sudo eggs wardrobe wear colibri     # Desktop completo
+eggs wardrobe get                   # Scarica il wardrobe
+eggs wardrobe list                  # Mostra costumi disponibili
+sudo eggs wardrobe wear colibri     # Desktop leggero
+sudo eggs wardrobe wear duck        # Desktop completo
 sudo eggs wardrobe wear wagtail/waydroid  # Configurazioni speciali
 ```
 
@@ -342,9 +347,9 @@ FLAGS
 
 **Algoritmi di compressione:**
 - **Default**: `zstd-level-1` - compressione veloce (per test)
+- **--pendrive**: `zstd -b 1M -Xcompression-level 15` - ottimizzato per USB
 - **--standard**: `xz -b 1M` - buona compressione
 - **--max**: `xz -Xbcj` - massima compressione
-- **--pendrive**: `zstd -b 1M -Xcompression-level 15` - ottimizzato per USB
 
 #### L'installer krill
 
@@ -372,7 +377,7 @@ krill è l'installer TUI di eggs, progettato per:
 - `eggs tools`: Strumenti di manutenzione
    - `eggs tools clean`: Pulisce cache e log
    - `eggs tools ppa`: Gestisce repository eggs
-   - `eggs toolsskel`: Ricrea `/etc/skel`
+   - `eggs tool sskel`: Ricrea `/etc/skel`
    - `eggs tools yolk`: Crea repository locale (Debian)
 
 ### Creazione distribuzioni personalizzate
