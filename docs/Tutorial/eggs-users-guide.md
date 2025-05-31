@@ -540,11 +540,12 @@ amd64:
 #### Riconoscimenti
 
 Ringraziamenti speciali a:
-- **Hosein Seilany** (Predator-OS) - documentazione
-- **Glenn Chugg** - test Ubuntu Noble
-- **Charlie Martinez** (Quirinux) - temi
-- **Silvan Calarco** - supporto OpenMamba
-- **Franco Conidi** (SysLinuxOS) - feedback
+- **Hosein Seilany** (Predator-OS author) - Documentazione e README.md
+- **Charlie Martinez** (Quirinux author) - Eggs icons
+- **Franco Conidi** (SysLinuxOS author) - Feedback
+- **Glenn Chugg** - (LastOSLinux author) - Testing
+- **Jorge Luis Endres** - (eggsmaker author)
+- **Silvan Calarco** - (OpenMamba author) 
 - Tutta la community per feedback e motivazione
 
 ### Download e risorse
