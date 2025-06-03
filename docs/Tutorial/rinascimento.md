@@ -18,7 +18,7 @@ In Italia abbiamo parecchio a cuore il Rinascimento, periodo storico in cui i Co
 
 Ecco, vorrei fare un parallelo con l'epoca d'oro di Remastesys e Systemback, e proporre penguins-eggs - e non solo - come il rinascimento, in minuscolo naturalmente, dei sistemi di rimasterizzazione.
 
-Nel panorama degli strumenti di rimasterizzazione Linux, **penguins-eggs** emerge come l'erede naturale di storici progetti come Remastersys e Systemback. Sviluppato da Piero Proietti, questo tool moderno e versatile rappresenta una soluzione completa per creare distribuzioni personalizzate e backup di sistema su un'ampia gamma di distribuzioni Linux.
+In questo contesto **penguins-eggs** emerge come l'erede naturale di storici progetti come Remastersys e Systemback. Sviluppato da Piero Proietti, questo tool moderno e versatile rappresenta una soluzione completa per creare distribuzioni personalizzate e backup di sistema su un'ampia gamma di distribuzioni Linux.
 
 ## Che cos'è penguins-eggs?
 
