@@ -1,5 +1,6 @@
 ---
-title: presentazione
+title: Il Rinascimento
+slug: rinascimento
 authors: pieroproietti
 lang: it
 enableComments: true
@@ -11,7 +12,11 @@ import Translactions from '@site/src/components/Translactions';
 In case of problems with translation links, You can consult a detailed [README](https://github.com/pieroproietti/penguins-eggs#readme) in English on the repository.
 
 
-# Penguins-eggs: la rinascita degli strumenti di rimasterizzazione Linux
+# Il Rinascimento
+
+In Italia abbiamo parecchio a cuore il Rinascimento, periodo storico in cui i Comuni, le Repubbliche marinare, la città di Firenze e Roma fiorivano attraendo artisti e producendo cultura.
+
+Ecco, vorrei fare un parallelo con l'epoca d'oro di Remastesys e Systemback, e proporre penguins-eggs - e non solo - come il rinascimento, in minuscolo naturalmente, dei sistemi di rimasterizzazione.
 
 Nel panorama degli strumenti di rimasterizzazione Linux, **penguins-eggs** emerge come l'erede naturale di storici progetti come Remastersys e Systemback. Sviluppato da Piero Proietti, questo tool moderno e versatile rappresenta una soluzione completa per creare distribuzioni personalizzate e backup di sistema su un'ampia gamma di distribuzioni Linux.
 
