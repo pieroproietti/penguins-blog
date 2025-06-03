@@ -24,6 +24,9 @@ sudo pacman -S git tar
 
 # Fedora/AlmaLinux/Rocky
 sudo dnf install git tar
+
+# OpenSUSE
+sudo zypper install git tar
 ```
 
 ### 2. Install with get-eggs
