@@ -24,14 +24,14 @@ In questo contesto **penguins-eggs** emerge come l'erede naturale di storici pro
 
 Penguins-eggs è uno strumento di clonazione del sistema e rimasterizzazione delle distribuzioni, progettato per semplificare la creazione di immagini ISO live personalizzate. Il nome evoca l'idea della "riproduzione" applicata ai sistemi operativi: come un pinguino che "cova" le sue uova, il tool permette di "far schiudere" nuovi sistemi da quelli esistenti.
 
-## Compatibilità Multi-Distribuzione: Un Vantaggio Unico
+## Compatibilità Multi-Distribuzione
 
 Una delle caratteristiche più distintive di penguins-eggs è la sua straordinaria compatibilità multi-distribuzione. Nato originariamente su Debian, oggi supporta:
 
 - **Famiglia Debian/Ubuntu**: Debian, Devuan, Ubuntu e derivate (Linux Mint, LMDE, KDE neon)
 - **Arch Linux**: Arch, Manjaro, EndeavourOS, Garuda
 - **Enterprise Linux**: Fedora, Rocky Linux, AlmaLinux
-- **openSUSE**: Supporto completo per la distribuzione SUSE
+- **openSUSE**: Supporto completo per la distribuzione openSUSE
 
 Questa versatilità lo rende unico nel suo genere, eliminando la necessità di utilizzare strumenti diversi per distribuzioni diverse.
 
