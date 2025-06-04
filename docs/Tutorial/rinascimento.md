@@ -89,10 +89,11 @@ Yolk è un repository locale integrato nell'ISO che contiene i pacchetti essenzi
 
 - **Backup e Disaster Recovery**: Creazione di snapshot completi del sistema
 - **Distribuzione Personalizzata**: Sviluppo di spin personalizzate di distribuzioni esistenti
-- **Migrazione di Sistema**: Trasferimento di configurazioni complete su nuovo hardware
+- **Migrazione di Sistema**: Trasferimento di configurazioni complete su nuovo hardware. 
+- **Migrazione al cloud** Utilizzando --cryptedclone è spossibile spostare interi server senza esporre i dati
 - **Ambienti di Sviluppo**: Distribuzione di ambienti preconfigurati per team di sviluppo
 - **Installazioni di Massa**: Deploy automatizzato tramite PXE per parchi macchine
-- **Server CLI**: Creazione e installazione di sistemi server minimal senza interfaccia grafica, utilizzando l'installer TUI krill per deployment rapido e automatizzato
+- **Server CLI**: Creazione e installazione di sistemi server minimal senza interfaccia grafica, utilizzando l'installer TUI krill per deployment rapido e automatizzato.
 
 ## Installazione e Utilizzo
 
