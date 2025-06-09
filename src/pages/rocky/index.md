@@ -8,12 +8,12 @@ Rocky Linux is an open-source enterprise operating system designed to be 100% bu
 ## Penguins' eggs remastered ISO's
 All ISO's have their user credentials set to ```live/evolution``` and ```root/evolution```.
 
-* [Download](https://drive.google.com/drive/folders/1perjMEKAo5F-ezb2TXbae5dACstJ5VAl)
+* [ISOs](https://drive.google.com/drive/folders/1perjMEKAo5F-ezb2TXbae5dACstJ5VAl)
 
 ## Penguins' eggs packages
 Here you can download actual tarballs to install and reproduce your system.
 
-* [Download](https://penguins-eggs.net/basket/index.php?p=packages%2Ftarballs)
+* [Packages](https://penguins-eggs.net/basket/index.php?p=packages%2Ftarballs)
 
 ## Advice
 

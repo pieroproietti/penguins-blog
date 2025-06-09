@@ -8,12 +8,12 @@ Ultramarine Linux is a Fedora-based Linux distribution designed to stay out of y
 ## Penguins' eggs remastered ISO's
 All ISO's have their user credentials set to ```live/evolution``` and ```root/evolution```.
 
-* [Download](https://drive.google.com/drive/folders/1Fx_cb02sh5m5BBUHroZ0kdyI9Xk2WgE-)
+* [ISOs](https://drive.google.com/drive/folders/1Fx_cb02sh5m5BBUHroZ0kdyI9Xk2WgE-)
 
 ## Penguins' eggs packages
 Here you can download actual tarballs to install and reproduce your system.
 
-* [Download](https://penguins-eggs.net/basket/index.php?p=packages%2Ftarballs)
+* [Packages](https://penguins-eggs.net/basket/index.php?p=packages%2Ftarballs)
 
 ## Disclaim
 __Please note what this project is in no way connected to the original distro in any official way, it’s just my personal experiment.__

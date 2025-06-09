@@ -6,12 +6,12 @@
 ## Penguins' eggs remastered ISO's
 All ISO's have their user credentials set to ```live/evolution``` and ```root/evolution```.
 
-* [Download](https://drive.google.com/drive/folders/1-Xq4XfWkzlN14UEBr6ituSQ_A0zRT8Z5)
+* [Packages](https://drive.google.com/drive/folders/1-Xq4XfWkzlN14UEBr6ituSQ_A0zRT8Z5)
 
 ## Penguins' eggs packages
 Here you can download actual packages to install and reproduce your system.
 
-* [Download](https://penguins-eggs.net/basket/index.php?p=packages%2Fdebs)
+* [Packages](https://penguins-eggs.net/basket/index.php?p=packages%2Fdebs)
 
 ## Advice
 
