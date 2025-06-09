@@ -17,7 +17,7 @@ const FeatureList = [
     Svg: require('@site/static/img/alpine.svg').default,
     description: (
       <>
-        Penguins' eggs on<a href="/alpine">&nbsp;Alpine&nbsp;</a> a security-oriented, lightweight Linux distribution based on musl, libc, and busybox.
+        <a href="/alpine">&nbsp;Alpine&nbsp;</a> a security-oriented, lightweight Linux distribution based on musl, libc, and busybox.
       </>
     ),
   },
