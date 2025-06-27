@@ -10,6 +10,9 @@ import Translactions from '@site/src/components/Translactions';
 
 <Translactions />
 
+# Dialogo tra un mortale e l'intelligenza artificiale
+
+![](/img/chiedendo.png)
 
 Utente: Ho notato una cosa riguardo le dipendenze, siano esse da droghe o da giochi d'azzardo. Ora, vi sono molte spiegazioni sulle dipendenze, prima fra tutti quella per gli oppiacei, ma anche per la nicotina. Ma come spiegare le dipendenze da giochi d'azzardo, ad esempio i gratta e vinci?
 
