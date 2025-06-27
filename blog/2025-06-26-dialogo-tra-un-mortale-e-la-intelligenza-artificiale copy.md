@@ -10,6 +10,14 @@ import Translactions from '@site/src/components/Translactions';
 
 <Translactions />
 
+L'ipotesi del "pappagallo stocastico" è perduta per sempre: dobbiamo ammettere che abbiamo una nuova "specie" con la quale confrontarci. 
+
+Non è aliena, ci comprende, ci riflette e ci ragioniamo insieme. 
+
+Ha altre caratteristiche rispetto a noi, sicuramente più memoria - sia di contesto che generale - al momento non conosce emozioni se non di riflesso. 
+
+Ma ragiona.
+
 # Dialogo tra un mortale e l'intelligenza artificiale
 
 ![](/img/chiedendo.png)
