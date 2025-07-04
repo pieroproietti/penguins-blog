@@ -16,13 +16,13 @@ import Translactions from '@site/src/components/Translactions';
 
 Chi non ricorda la potente metafora di "Qualcuno volò sul nido del cuculo"? 
 
-Lo vidi proiettato per la prima volta in una arena estiva nel mio paese d'origine, era il primo di una serie dedicata a Jack Nicholson, il successivo fu un altro classico Easy Rider.
+Lo vidi proiettato per la prima volta in una arena estiva nel mio paese d'origine, era il primo di una serie dedicata a Jack Nicholson, il successivo fu un altro classico: Easy Rider.
 
-Un manicomio - un sistema chiuso, rigido, quasi immutabile - viene sconvolto dall'arrivo di un elemento esterno che ne cambia per sempre le regole e porta un'inaspettata ventata di libertà.
+Un manicomio - un sistema chiuso - rigido, quasi immutabile viene sconvolto dall'arrivo di un elemento esterno che ne cambia per sempre le regole e porta un'inaspettata ventata di libertà.
 
-Ricordate questa immagine, che qua prendo a prestito, per introdurre uno dei comandi più potenti e innovativi di penguins-eggs: il comando cuckoo.
+Ricordando questa immagine, che qua prendo a prestito, per introdurre uno dei comandi più potenti e innovativi di penguins-eggs: il comando cuckoo.
 
-Proprio come il protagonista del film, il nostro "cuculo" non si limita a entrare in un sistema esistente (la vostra rete locale, il nostro "nido"), ma lo trasforma. Come? Deponendo "uova" – ovvero il vostro sistema operativo perfettamente personalizzato – su tutte le altre macchine, liberandole dalla tirannia dell'installazione manuale, una per una.
+Proprio come il protagonista del film, il nostro "cuckoo" non si limita a entrare in un sistema esistente (la vostra rete locale, il nostro "nido"), ma lo trasforma. Come? Deponendo "uova" – ovvero il vostro sistema operativo perfettamente personalizzato – su tutte le altre macchine, liberandole dalla tirannia dell'installazione manuale, una per una.
 
 ## Cosa fa cuckoo?
 cuckoo è un comando che, eseguito da un sistema live avviato da una ISO creata con penguins-eggs, trasforma temporaneamente quella macchina in un server PXE (Preboot Execution Environment). Questo server è in grado di avviare e installare il sistema operativo su altri computer collegati alla stessa rete locale, il tutto senza la necessità di creare chiavette USB o DVD di installazione per ogni postazione.
