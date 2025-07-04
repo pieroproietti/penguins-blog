@@ -18,7 +18,7 @@ Chi non ricorda la potente metafora di "Qualcuno volò sul nido del cuculo"?
 
 Lo vidi proiettato per la prima volta in una arena estiva nel mio paese d'origine, era il primo di una serie dedicata a Jack Nicholson, il successivo fu un altro classico: Easy Rider.
 
-Un manicomio - un sistema chiuso - rigido, quasi immutabile viene sconvolto dall'arrivo di un elemento esterno che ne cambia per sempre le regole e porta un'inaspettata ventata di libertà.
+Un manicomio - un sistema chiuso, rigido, quasi immutabile - viene sconvolto dall'arrivo di un elemento esterno che ne cambia per sempre le regole e porta un'inaspettata ventata di libertà.
 
 Ricordando questa immagine, che qua prendo a prestito, per introdurre uno dei comandi più potenti e innovativi di penguins-eggs: il comando cuckoo.
 
