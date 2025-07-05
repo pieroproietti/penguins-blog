@@ -56,3 +56,10 @@ Flessibilità: Ideale per amministratori di sistema, insegnanti e chiunque abbia
 Con penguins-eggs e il suo comando cuckoo, la distribuzione di sistemi operativi su una rete locale diventa un'operazione rapida, efficiente e, perché no, un piccolo atto di ribellione contro le procedure macchinose.
 
 ![Easy Rider](https://www.hollywoodreporter.com/wp-content/uploads/2019/07/easy_rider_1_-_h_-_1969.jpg?w=1296&h=730&crop=1)
+
+
+## Il team di [Reporp-OS](https://repurpose-it.github.io/Repurp-OS/)
+
+Lascio a loro la parola, se vogliono aggiungere altro.
+
+![team](https://private-user-images.githubusercontent.com/199755/462317216-de9d01d0-3e5d-4f94-a846-297d1fe5eb57.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NTE2ODcxNTcsIm5iZiI6MTc1MTY4Njg1NywicGF0aCI6Ii8xOTk3NTUvNDYyMzE3MjE2LWRlOWQwMWQwLTNlNWQtNGY5NC1hODQ2LTI5N2QxZmU1ZWI1Ny5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUwNzA1JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MDcwNVQwMzQwNTdaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1iMGQwOTA2MWY5NDI2ZmRiNTQxNDk1MzU2YzRkYmVkMjQzZDVhMjQ5MDNjYTExOWY5YTNmNjRmZjUxMjk2ZWFhJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.o6u9fk4poX29RTdkEOoBJBhL8Ud7XgYc2BdRtgpySoI=)
