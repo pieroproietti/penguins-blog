@@ -58,7 +58,7 @@ Con penguins-eggs e il suo comando cuckoo, la distribuzione di sistemi operativi
 ![Easy Rider](https://www.hollywoodreporter.com/wp-content/uploads/2019/07/easy_rider_1_-_h_-_1969.jpg?w=1296&h=730&crop=1)
 
 
-## Il team di [Reporp-OS](https://repurpose-it.github.io/Repurp-OS/)
+## Il team di [Repurp-OS](https://repurpose-it.github.io/Repurp-OS/)
 
 Lascio a loro la parola, per aggiungere altro.
 
