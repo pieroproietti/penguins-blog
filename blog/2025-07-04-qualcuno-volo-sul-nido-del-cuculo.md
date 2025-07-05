@@ -60,6 +60,6 @@ Con penguins-eggs e il suo comando cuckoo, la distribuzione di sistemi operativi
 
 ## Il team di [Reporp-OS](https://repurpose-it.github.io/Repurp-OS/)
 
-Lascio a loro la parola, se vogliono aggiungere altro.
+Lascio a loro la parola, per aggiungere altro.
 
 ![team](https://github-production-user-asset-6210df.s3.amazonaws.com/199755/462317216-de9d01d0-3e5d-4f94-a846-297d1fe5eb57.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20250705%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250705T035011Z&X-Amz-Expires=300&X-Amz-Signature=5ca8fe7eec402398af3a54880f01253d9706e35cdbf9991885111fc2c82ada5a&X-Amz-SignedHeaders=host)
