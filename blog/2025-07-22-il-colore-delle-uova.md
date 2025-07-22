@@ -26,13 +26,13 @@ Il "colore" del pacchetto cambia, ma la "nutrizione" essenziale del software all
 
 I pacchetti vengono creati ognuno sulla relativa distribuzione. Per Debian e i "vecchi" - ma tuttora validi - tarballs, la fonte è Debian bookworm e la repository è [penguins-eggs](https://github.com/pieroproietti/penguins-eggs), il comando di creazione del pacchetto è: `pnpm deb`, mentre per creare una tarball: `pnpm tarballs`.
 
-Per Arch e Manjaro, ma anche per Fedora, openSUSE ed RHEL9 (Rocky ed Almalinux 9.6) la repository per il build è [penguins-packs](https://github.com/pieroproietti/penguins-packs) ed ogni distribuzione ha in proprio folder.
+Per Arch e Manjaro, ma anche per Fedora, openSUSE ed RHEL9 (Rocky ed Almalinux versioni 9.6) la repository per il build è [penguins-packs](https://github.com/pieroproietti/penguins-packs) ed ogni distribuzione ha una propria cartella.
 
 Per Alpine, ho preferito tenere da parte il sorgente per il pacchetto e la modifica - denominata `sidecar` - necessaria per modificare l'init Alpine. Il riferimento è, quindi, la repository [penguins-alpine](https://github.com/pieroproietti/penguins-alpine/).
 
 
 ## Scaricare i pacchetti
-Tutti i pacchetto possono essere trovati sia sulla pagina [sourceforge](https://sourceforge.net/projects/penguins-eggs/files/Packages/) che nel [basker](https://penguins-eggs.net/basket/index.php/packages/?p=packages) di [èenguins-eggs.net](https://penguins-eggs.net).
+Tutti i pacchetto possono essere trovati sia sulla pagina [sourceforge](https://sourceforge.net/projects/penguins-eggs/files/Packages/) che nel [basker](https://penguins-eggs.net/basket/index.php/packages/?p=packages) di [penguins-eggs.net](https://penguins-eggs.net).
 
 
 
