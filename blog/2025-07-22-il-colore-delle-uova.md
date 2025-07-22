@@ -32,7 +32,7 @@ Per Alpine, ho preferito tenere da parte il sorgente per il pacchetto e la modif
 
 
 ## Scaricare i pacchetti
-Tutti i pacchetto possono essere trovati sia sulla pagina [sourceforge](https://sourceforge.net/projects/penguins-eggs/files/Packages/) che nel [basker](https://penguins-eggs.net/basket/index.php/packages/?p=packages) di [penguins-eggs.net](https://penguins-eggs.net).
+Tutti i pacchetto possono essere trovati sia sulla pagina [sourceforge](https://sourceforge.net/projects/penguins-eggs/files/Packages/) che nel [basket](https://penguins-eggs.net/basket/index.php/packages/?p=packages) di [penguins-eggs.net](https://penguins-eggs.net).
 
 
 
