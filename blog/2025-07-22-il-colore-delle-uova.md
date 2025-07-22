@@ -21,3 +21,18 @@ Come il colore di un guscio d'uovo, ogni formato di pacchetto (.deb, .rpm, .pkg.
 Il "colore" del pacchetto cambia, ma la "nutrizione" essenziale del software all'interno non varia. Questa espansione garantisce che, indipendentemente dalla vostra distribuzione preferita, possiate ottenere la stessa, identica esperienza affidabile ed efficace con penguins-eggs.
 
 ![](/images/eggs-packages.png)
+
+## Maggiori informazione e sorgenti dei pacchetti
+
+I pacchetti vengono creati ognuno sopra la relativa distribuzione. Per Debian e i "vecchi" - ma validi - tarballs, la fonte è Debian bookworm e la repository è giusto [penguins-eggs](https://github.com/pieroproietti/penguins-eggs) ed il comando per creare il pacchetto Debian è: `pnpm deb`.
+
+Per Arch e Manjaro, ma anche per i pacchetti RPM di Fedora, openSUSE e RHEL0 la repository dei sorgenti è [penguins-packs](https://github.com/pieroproietti/penguins-packs), ogni distribuzione ha in proprio folder.
+
+Per Alpine, ho preferito - al momento - tenere da parte il sorgente per il pacchetto e le modiche - deniminate `sidecar`. Il riferimento per i pacchetti Alpine è, quindi, la repository [penguins-alpine](https://github.com/pieroproietti/penguins-alpine/).
+
+
+## Scaricare i pacchetti
+I pacchetto possono essere trovati sia sulla pagina [sourceforge](https://sourceforge.net/projects/penguins-eggs/files/Packages/) che nel [basker](https://penguins-eggs.net/basket/index.php/packages/?p=packages) di [èenguins-eggs.net](https://penguins-eggs.net).
+
+
+
