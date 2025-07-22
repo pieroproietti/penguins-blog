@@ -28,7 +28,7 @@ I pacchetti vengono creati ognuno sulla relativa distribuzione. Per Debian e i "
 
 Per Arch e Manjaro, ma anche per Fedora, openSUSE ed RHEL9 (Rocky ed Almalinux 9.6) la repository per il build è [penguins-packs](https://github.com/pieroproietti/penguins-packs) ed ogni distribuzione ha in proprio folder.
 
-Per Alpine, ho preferito tenere da parte il sorgente per il pacchetto e la modifica - denominata `sidecar` . necessaria per modificare l'init Alpine. Il riferimento è, quindi, la repository [penguins-alpine](https://github.com/pieroproietti/penguins-alpine/).
+Per Alpine, ho preferito tenere da parte il sorgente per il pacchetto e la modifica - denominata `sidecar` - necessaria per modificare l'init Alpine. Il riferimento è, quindi, la repository [penguins-alpine](https://github.com/pieroproietti/penguins-alpine/).
 
 
 ## Scaricare i pacchetti
