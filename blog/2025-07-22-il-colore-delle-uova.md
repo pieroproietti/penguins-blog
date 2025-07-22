@@ -24,15 +24,15 @@ Il "colore" del pacchetto cambia, ma la "nutrizione" essenziale del software all
 
 ## Maggiori informazione e sorgenti dei pacchetti
 
-I pacchetti vengono creati ognuno sopra la relativa distribuzione. Per Debian e i "vecchi" - ma validi - tarballs, la fonte è Debian bookworm e la repository è giusto [penguins-eggs](https://github.com/pieroproietti/penguins-eggs) ed il comando per creare il pacchetto Debian è: `pnpm deb`.
+I pacchetti vengono creati ognuno sulla relativa distribuzione. Per Debian e i "vecchi" - ma tuttora validi - tarballs, la fonte è Debian bookworm e la repository è [penguins-eggs](https://github.com/pieroproietti/penguins-eggs), il comando di creazione del pacchetto è: `pnpm deb`, mentre per creare una tarball: `pnpm tarballs`.
 
-Per Arch e Manjaro, ma anche per i pacchetti RPM di Fedora, openSUSE e RHEL0 la repository dei sorgenti è [penguins-packs](https://github.com/pieroproietti/penguins-packs), ogni distribuzione ha in proprio folder.
+Per Arch e Manjaro, ma anche per Fedora, openSUSE ed RHEL9 (Rocky ed Almalinux 9.6) la repository per il build è [penguins-packs](https://github.com/pieroproietti/penguins-packs) ed ogni distribuzione ha in proprio folder.
 
-Per Alpine, ho preferito - al momento - tenere da parte il sorgente per il pacchetto e le modiche - deniminate `sidecar`. Il riferimento per i pacchetti Alpine è, quindi, la repository [penguins-alpine](https://github.com/pieroproietti/penguins-alpine/).
+Per Alpine, ho preferito tenere da parte il sorgente per il pacchetto e la modifica - denominata `sidecar` . necessaria per modificare l'init Alpine. Il riferimento è, quindi, la repository [penguins-alpine](https://github.com/pieroproietti/penguins-alpine/).
 
 
 ## Scaricare i pacchetti
-I pacchetto possono essere trovati sia sulla pagina [sourceforge](https://sourceforge.net/projects/penguins-eggs/files/Packages/) che nel [basker](https://penguins-eggs.net/basket/index.php/packages/?p=packages) di [èenguins-eggs.net](https://penguins-eggs.net).
+Tutti i pacchetto possono essere trovati sia sulla pagina [sourceforge](https://sourceforge.net/projects/penguins-eggs/files/Packages/) che nel [basker](https://penguins-eggs.net/basket/index.php/packages/?p=packages) di [èenguins-eggs.net](https://penguins-eggs.net).
 
 
 
