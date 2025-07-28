@@ -14,22 +14,7 @@ Transform your Linux system into an installable ISO using `penguins-eggs`.
 
 ## Quick Installation
 
-### 1. Install prerequisites
-```bash
-# Debian/Ubuntu
-sudo apt install git tar
-
-# Arch Linux  
-sudo pacman -S git tar
-
-# Fedora/AlmaLinux/Rocky
-sudo dnf install git tar
-
-# OpenSUSE
-sudo zypper install git tar
-```
-
-### 2. Install with get-eggs
+### Install package penguins (all distros)
 ```bash
 git clone https://github.com/pieroproietti/get-eggs
 cd get-eggs
@@ -42,14 +27,9 @@ The `get-eggs.sh` script will automatically:
 - Download and install the correct penguins-eggs package
 - Configure all dependencies
 
-### 3. Configure eggs
+### Create your first live ISO
 ```bash
-sudo eggs dad --default
-```
-
-### 4. Create your ISO
-```bash
-sudo eggs produce
+eggs love -n
 ```
 
 ## Result
@@ -59,13 +39,13 @@ You'll get an ISO named: `egg-of_DISTRO_VERSION_HOSTNAME-ARCH_DATE_TIME.iso`
 
 ## Main Commands
 - `eggs love` - Create live ISO, full automatic
-- `eggs install` - CLI installer 
+- `eggs install` - CLI system installer  (sometime I refere it as krill)
 - `eggs calamares --install` - Graphical installer (optional)
 - `eggs` - Complete command list
 
 ## Support
-- 📖 [penguins-eggs.net](https://penguins-eggs.net)
-- 🐛 [GitHub Issues](https://github.com/pieroproietti/penguins-eggs/issues)
-- 💬 [Telegram](https://t.me/penguins_eggs)
+- [penguins-eggs.net](https://penguins-eggs.net)
+- [GitHub Issues](https://github.com/pieroproietti/penguins-eggs/issues)
+- [Telegram](https://t.me/penguins_eggs)
 
-**With just 4 commands you've created a complete, installable Linux distribution!** 🎉
+**With just 2 commands you've created a complete, installable Linux distribution!** 🎉
