@@ -12,7 +12,11 @@ import Translactions from '@site/src/components/Translactions';
 ## 1. What is Penguins' Eggs?
 Penguins' Eggs is a tool to create live ISO images and custom Linux distributions, initially based on Debian/Ubuntu and derivatives, actually support include Fedora, OpenSUSE and derivatives. It allows you to generate reproducible systems or "hatch" new distros.
 
-## 2. How do I install penguins-eggs?
+## 2. What are the distros supported?
+penguins-eggs is compatible with Almalinux, Arch, Debian, Devuan, Fedora, OpenSUSE, Rocky and Ubuntu and most of derivatives. 
+You can find a complete listo on [supported distros](https://github.com/pieroproietti/get-eggs/blob/main/SUPPORTED-DISTROS.md).
+
+## 3. How do I install penguins-eggs?
 Use `get-get`, universal installer:
 ```bash
 git clone https://github.com/pieroproietti/get-eggs
@@ -25,12 +29,12 @@ The `get-eggs.sh` script will:
 - Download and install the correct penguins-eggs package for your system
 - Configure all necessary dependencies
 
-# 3. Common Issues & Fixes
+# 4. Common Issues & Fixes
 "Permission denied" when running sudo eggs:
 * Check user permissions and ensure the user is in the sudo group.
 * ISO generation errors: Verify required packages (e.g., squashfs-tools, xorriso) are installed.
 
-## 4. How do I create a custom ISO?
+## 5. How do I create a custom ISO?
 Type:
 
 ```sh
@@ -38,31 +42,31 @@ sudo eggs produce
 ```
 This generates an ISO image in /home/eggs/.
 
-## 5. Support for non-Debian/Ubuntu distros?
+## 6. Support for non-Debian/Ubuntu distros?
 Actually penguins-eggs support: Almalinux, Arch, Debian, Devuan, Fedora, Manjaro, Openmamba, OpenSUSE, Rocky, Ubuntu and derivatives.
 
-## 6. Where’s the full documentation?
+## 7. Where’s the full documentation?
 Check the official User's guide on  the [penguins-eggs.net](httos://penguins-eggs,net) website.
 
 Other inmportants documents, can be found on the [penguins-eggs](https://github.com/pieroproietti/penguins-eggs), look expecially `README.md` and under `DOCS`.
 
-## 7. Use cases
+## 8. Use cases
 - Create personalized Linux distributions for organizations with pre-installed software and configurations.
 - Build rescue/recovery systems with your preferred tools and settings.
 - Develop educational Linux environments for classrooms with specific software packages.
 - Create portable development environments that can be deployed consistently across different machines.
 - Build specialized penetration testing or system administration live distributions.
 
-## 8. Can I use penguins-eggs without sudo?
+## 9. Can I use penguins-eggs without sudo?
 No, certain operations require root privileges to mount filesystems and modify system settings.
 
-## 9. How can I contribute?
+## 10. How can I contribute?
 * Report bugs/requests via GitHub Issues.
 * Contribute code via Pull Requests.
 * Help with translations (check i18n-labeled issues).
 * Share the project and don't forget to leave a star to it on [github](https://github.com/pieroproietti/penguins-eggs).
 
-## 10. GUI
+## 11. GUI
 eggsmaker - a project of [Jorge Luis Endres](https://github.com/jlendres/eggsmaker) - It is an essential and functional Graphical User Interface for penguins-eggs. Available for Arch, Debian, Devuan and Ubuntu.
 
 ## Relevant Issues (for deeper insights)
