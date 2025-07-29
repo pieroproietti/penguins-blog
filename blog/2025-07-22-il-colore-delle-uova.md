@@ -31,6 +31,12 @@ Per Arch e Manjaro, ma anche per Fedora, openSUSE ed RHEL9 (Rocky ed Almalinux v
 Per Alpine, ho preferito tenere da parte il sorgente per il pacchetto e la modifica - denominata `sidecar` - necessaria per modificare l'init Alpine. Il riferimento è, quindi, la repository [penguins-alpine](https://github.com/pieroproietti/penguins-alpine/).
 
 
+## Lista delle distribuzioni supportate
+Ieri, ho creato una lista delle distribuzioni supportate, prendendo le prime 100 di [distrowatch](https://distrowatch.com/), sono rimasto impressionato, penguins-eggs è - al momento - il più sofisticato sistema di rimasterizzazione esistente e supporta praticamente più del 90% di quallo che conta.
+
+Trovato la lista, con la possibilità di scaricare delle versioni rimasterizzate e consigli specifici per ogni distro a questo link [SUPPORTED-DISTROS](https://github.com/pieroproietti/get-eggs/blob/main/SUPPORTED-DISTROS.md).
+
+
 ## Scaricare i pacchetti
 Tutti i pacchetto possono essere trovati sia sulla pagina [sourceforge](https://sourceforge.net/projects/penguins-eggs/files/Packages/) che nel [basket](https://penguins-eggs.net/basket/index.php/packages/?p=packages) di [penguins-eggs.net](https://penguins-eggs.net).
 
