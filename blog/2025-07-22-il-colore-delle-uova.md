@@ -35,9 +35,11 @@ Tutti i pacchetto possono essere trovati sia sulla pagina [sourceforge](https://
 
 
 ## Lista delle distribuzioni supportate
-Ieri, ho creato una lista delle distribuzioni supportate, prendendo le prime 100 di [distrowatch](https://distrowatch.com/), sono rimasto impressionato, penguins-eggs è - al momento - il più sofisticato sistema di rimasterizzazione esistente e supporta praticamente più del 90% di quallo che conta.
+Ieri, ho creato una lista delle distribuzioni supportate, prendendo le prime 100 distribuzioni su [distrowatch](https://distrowatch.com/). 
 
-Trovato la lista, con la possibilità di scaricare delle versioni rimasterizzate e consigli specifici per ogni distro a questo link [SUPPORTED-DISTROS](https://github.com/pieroproietti/get-eggs/blob/main/SUPPORTED-DISTROS.md).
+Sono rimasto impressionato: penguins-eggs è - al momento - il più sofisticato sistema di rimasterizzazione esistente e supporta praticamente più del 90% di quallo che conta.
+
+Trovate la lista, con la possibilità di scaricare delle versioni rimasterizzate e consigli specifici per alcune distro su [SUPPORTED-DISTROS](https://github.com/pieroproietti/get-eggs/blob/main/SUPPORTED-DISTROS.md).
 
 
 
