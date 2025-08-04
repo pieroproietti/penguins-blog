@@ -11,7 +11,7 @@ All ISO's have their user credentials set to ```live/evolution``` and ```root/ev
 ## Penguins' eggs packages
 Here you can download actual packages to install and reproduce your system.
 
-* [Packages](https://penguins-eggs.net/basket/index.php?p=packages%2Falpine)
+* [Packages](https://penguins-eggs.net/basket/packages/alpine/x86_64/)
 
 ## Disclaim
 __Please note what this project is in no way connected to the original distro in any official way, it’s just my personal experiment.__

@@ -10,7 +10,7 @@
 ## Penguins' eggs packages
 Here you can download actual packages to install and reproduce your system.
 
-[Download](https://penguins-eggs.net/basket/index.php?p=packages%2Fdebs)
+[Download](https://penguins-eggs.net/basket/packages/debs)
 
 ## Advice
 

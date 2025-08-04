@@ -29,7 +29,7 @@ Here you can download actual tarballs to install and reproduce your system.
 
 
 <a
-  href="https://penguins-eggs.net/basket/index.php?p=packages%2Ftarballs"
+  href="https://penguins-eggs.net/basket/packages/el9"
     onClick={() => {
     if (typeof window.gtag !== 'undefined') {
       window.gtag('event', 'click', {
