@@ -19,18 +19,18 @@ Manuale aggiornato a `eggs v10.1.x` ultimo aggiornamento 30 maggio 2025
 `penguins' eggs` è uno strumento moderno per la rimasterizzazione di sistemi Linux, pensato come successore di Remastersys e Systemback. Il software nasce dall'idea della "riproduzione" applicata ai sistemi operativi: ogni sistema può "deporre le sue uova" per dare vita a nuovi sistemi identici o personalizzati.
 
 **Caratteristiche principali:**
-- Supporto per oltre 15 distribuzioni Linux (Almalinux, Arch, Debian, Devuan, Fedora, Manjaro, openmamba, openSUSE, Rocky, Ubuntu, ecc.)
+- Supporto per oltre 15 distribuzioni Linux (Almalinux, Arch, Debian, Devuan, Fedora, Manjaro, openmamba, openSUSE, Rocky, Ubuntu, [SUPPORTED-DISTROS](https://github.com/pieroproietti/get-eggs/blob/main/SUPPORTED-DISTROS.md).
 - Installazione semplificata con `get-eggs`
-- Creazione di ISO live avviabili con i vostri dati
+- Creazione di ISO live avviabili ed installabile, con o senza i vostri dati.
 - Installer CLI (krill) e GUI (calamares)
 - Backup criptati e installazioni di rete (PXE)
 - Sistema wardrobe per configurazioni predefinite
 
-## Installazione rapida
+## Installazione
 
 ### Metodo universale raccomandato
 
-Questo metodo funziona per **tutte le distribuzioni supportate**:
+Funziona per **tutte le distribuzioni supportate**, tutto quello di cui avete bisogno è di avere git installato:
 
 ```bash
 git clone https://github.com/pieroproietti/get-eggs
@@ -38,7 +38,7 @@ cd get-eggs
 sudo ./get-eggs.sh
 ```
 
-Lo script `get-eggs` configura automaticamente le dipendenze e installa il pacchetto appropriato per la vostra distribuzione.
+Lo script `get-eggs` installerà il pacchetto originale per la vostra distribuzione, soddisfando automaticamente le dipendenze. 
 
 ### Configurazione iniziale
 
@@ -105,11 +105,11 @@ sudo eggs tools clean               # Pulizia cache e log
 eggs status                         # Stato configurazione
 ```
 
-### Installazione
+### Installazione del sistema
 
 ```bash
 sudo eggs install                   # Installer CLI (krill)
-sudo eggs install --unattended      # Installazione automatica
+sudo eggs install --unattended      # Installazione CLI automatica
 ```
 
 ### Personalizzazione
@@ -158,30 +158,48 @@ sudo eggs wardrobe wear wagtail/waydroid  # Configurazioni speciali
 ### Distribuzioni supportate
 
 #### Distribuzioni principali
-- **AlmaLinux** (tarball)
+- **AlmaLinux** (el9 rpm)
+- **Alpine** (apk)
 - **Arch Linux** (AUR/Chaotic-AUR) 
 - **Debian** buster, bullseye, bookworm, trixie (.deb)
 - **Devuan** beowulf, chimaera, daedalus (.deb)
-- **Fedora** (tarball)
+- **Fedora** (fedora rpm)
 - **Manjaro** (repository ufficiale)
-- **OpenMamba** (rpm)
-- **OpenSuSE** (tarball)
-- **Rocky Linux** (tarball)
+- **OpenMamba** (openmamba rpm)
+- **OpenSuSE** (opensuse rpm)
+- **Rocky Linux** (el0 rpm)
 - **Ubuntu** bionic, focal, jammy, noble (.deb)
 
 #### Derivate supportate
-Deepin, EndeavourOS, Garuda Linux, KDE neon, Linux Mint, LMDE, Pop!_OS, Zorin OS e molte altre. Lista completa nei file [derivatives.yaml](https://github.com/pieroproietti/penguins-eggs/blob/master/conf/derivatives.yaml) e [derivatives_fedora.yml](https://github.com/pieroproietti/penguins-eggs/blob/master/conf/derivatives_fedora.yaml).
+Deepin, EndeavourOS, KDE neon, Linux Mint, LMDE, Pop!_OS, Zorin OS e [molte altre](https://github.com/pieroproietti/get-eggs/blob/main/SUPPORTED-DISTROS.md). E' possibile editare i file [derivatives.yaml](https://github.com/pieroproietti/penguins-eggs/blob/master/conf/derivatives.yaml) per le derivate Arch/Debian/Devuan/Ubuntu e [derivatives_fedora.yml](https://github.com/pieroproietti/penguins-eggs/blob/master/conf/derivatives_fedora.yaml) per quelle di derivazione fedora/el9.
 
 #### Architetture
 - **amd64** (x86_64)
-- **i386** (x86)  
+- **i386** (x86)
 - **arm64** (aarch64)
 
 ### Installazione per distribuzione
 
-#### Debian/Devuan/Ubuntu (.deb)
+#### Alpine (apk)
+Scaricare i pacchetti da [penguins-eggs.net](https://penguins-eggs.net/basket/index.php?p=) o dalla pagina [sourceforge](https://sourceforge.net/projects/penguins-eggs/) ed installarli con il comando:
+```bash
+doas apk add ./penguins-eggs-*.apk
+```
 
-**Via PPA (raccomandato):**
+#### Debian/Devuan/Ubuntu (.deb)
+**Installazione manuale:**
+Scaricare il pacchetto da [penguins-eggs.net](https://penguins-eggs.net/basket/index.php?p=) o dalla pagina [sourceforge](https://sourceforge.net/projects/penguins-eggs/) ed instalarlo con il comando:
+```bash
+sudo apt install ./penguins-eggs_25.7.30-1_amd64.deb
+```
+
+Una volta installato il pacchetto penguins-eggs, ootete aggiungere la reposito penguins-eggs-ppa per ternerlo aggiornato:
+```
+sudo eggs tool ppa --add
+```
+
+**Installare via PPA:**
+Copiate ed incollate i seguenti comandi:
 ```bash
 curl -fsSL https://pieroproietti.github.io/penguins-eggs-ppa/KEY.gpg | sudo gpg --dearmor -o /etc/apt/trusted.gpg.d/penguins-eggs.gpg
 echo "deb [arch=$(dpkg --print-architecture)] https://pieroproietti.github.io/penguins-eggs-ppa ./" | sudo tee /etc/apt/sources.list.d/penguins-eggs.list > /dev/null
@@ -189,16 +207,16 @@ sudo apt update
 sudo apt install penguins-eggs
 ```
 
-**Installazione manuale:**
-```bash
-# Scaricate da https://penguins-eggs.net/basket/
-sudo dpkg -i penguins-eggs-10.1.x-1_amd64.deb
-sudo apt install -f  # Se mancano dipendenze
-```
 
 #### Arch Linux
+Scaricare il pacchetto da [penguins-eggs.net](https://penguins-eggs.net/basket/index.php?p=) o dalla pagina [sourceforge](https://sourceforge.net/projects/penguins-eggs/) ed instalarlo con il comando:
+```
+sudo pacman -U ./penguins-eggs-25.7.30-1-any.pkg.tar.zst
+```
 
 **Tramite Chaotic-AUR:**
+Aggiungere la repository Chaotic-AUR vi consente di tenere sempre aggiornato penguins-eggs:
+
 ```bash
 pacman-key --recv-key FBA220DFC880C036 --keyserver keyserver.ubuntu.com
 pacman-key --lsign-key FBA220DFC880C036
@@ -224,8 +242,24 @@ cd penguins-eggs
 makepkg -si
 ```
 
-#### Manjaro
 
+### Fedora, Rocky, Almalinux
+Scaricare il pacchetto da [penguins-eggs.net](https://penguins-eggs.net/basket/index.php?p=) o dalla pagina [sourceforge](https://sourceforge.net/projects/penguins-eggs/) ed instalarlo con il comando:
+```
+sudo dnf install ./penguins-eggs-25.7.30-1.fc42.x86_64.rpm
+```
+Per Rocky ed Almalinux:
+```
+sudo dnf install ./penguins-eggs-25.7.30-1.el9.x86_64.rpm
+```
+
+#### Manjaro
+Penguins-eggs è presente nel repository community, può comunque essere scaricato da [penguins-eggs.net](https://penguins-eggs.net/basket/index.php?p=) o dalla pagina [sourceforge](https://sourceforge.net/projects/penguins-eggs/) ed instalarlo con il comando:
+```
+sudo pacman -U ./penguins-eggs-25.7.30-1-any.pkg.tar.zst
+```
+
+Per installare la versione dalla repository community, basta:
 ```bash
 sudo pamac upgrade
 sudo pamac install penguins-eggs
@@ -235,6 +269,12 @@ sudo pamac install penguins-eggs
 
 ```bash
 sudo dnf install penguins-eggs
+```
+
+#### OpenSUSE
+Scaricare il pacchetto da [penguins-eggs.net](https://penguins-eggs.net/basket/index.php?p=) o dalla pagina [sourceforge](https://sourceforge.net/projects/penguins-eggs/) ed instalarlo con il comando:
+```
+sudo zypper install ./penguins-eggs-25.7.30-1.opensuse.x86_64.rpm
 ```
 
 ### Utilizzo da codice sorgente
