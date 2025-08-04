@@ -12,11 +12,21 @@ The best way to install `penguins-eggs` on your distro is probably to use `get-e
 * `sudo ./get-eggs`
 * and follow instructions.
 
-If you prefere, You can also download the packages from 
-[penguins-eggs.net/basket](https://penguins-eggs.net/basket/index.php/packages/?p=packages) and install them.
+get-eggs detects your distribution and installs the correct package, if available, using the correct commands for your distribution.
+
+Since you will be installing software maintained with the same package manager as your distro, removal is
+easy and complete. Example: `sudo apt purge penguins-eggs` on Debian/Devuan/Ubuntu, 
+`sudo pacman -R penguins-eggs` on Arch/Manjaro/Biglinux, 
+`sudo dnf remove penguins-eggs` on Fedora, Almalinux, and Rocky or
+`sudo zypper remove penguins-eggs` on OpenSUSE.
+
+If you prefere, however, You can also download the package from 
+[penguins-eggs.net/basket](https://penguins-eggs.net/basket/index.php/packages/?p=packages) and install it manually.
 
 ## ISOs images
-I have divided the images into independent and derivative distributions. Supported derivative distributions are included in the list [SUPPORTED-DISTROS](https://github.com/pieroproietti/get-eggs/blob/main/SUPPORTED-DISTROS.md) on [get-eggs](https://github.com/pieroproietti/get-eggs).
+I have divided the images into independent and derivative distributions. Supported derivative distributions 
+are included in the list [SUPPORTED-DISTROS](https://github.com/pieroproietti/get-eggs/blob/main/SUPPORTED-DISTROS.md) 
+on [get-eggs](https://github.com/pieroproietti/get-eggs).
 
 ### Indipendent distros
 #### [Almalinux](/almalinux)
