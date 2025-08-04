@@ -10,7 +10,7 @@ The number 1 open source operating system that powers millions of PCs and laptop
 ## Penguins' eggs packages
 Here you can download actual packages to install and reproduce your system.
 
-[Download](https://penguins-eggs.net/basket/index.php?p=packages%2Fdebs)
+* [Packages](https://penguins-eggs.net/basket/ipackages/debs)
 
 ## Advice
 

@@ -11,7 +11,7 @@ All ISO's have their user credentials set to ```live/evolution``` and ```root/ev
 ## Penguins' eggs packages
 Here you can download actual packages to install and reproduce your system.
 
-* [Packages](https://penguins-eggs.net/basket/index.php?p=packages%2Fdebs)
+* [Packages](https://penguins-eggs.net/basket/ipackages/debs)
 
 ## Advice
 

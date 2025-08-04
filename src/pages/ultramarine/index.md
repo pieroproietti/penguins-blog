@@ -13,7 +13,7 @@ All ISO's have their user credentials set to ```live/evolution``` and ```root/ev
 ## Penguins' eggs packages
 Here you can download actual tarballs to install and reproduce your system.
 
-* [Packages](https://penguins-eggs.net/basket/index.php?p=packages%2Ftarballs)
+* [Packages](https://penguins-eggs.net/basket/ipackages/fedora)
 
 ## Disclaim
 __Please note what this project is in no way connected to the original distro in any official way, it’s just my personal experiment.__
