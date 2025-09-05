@@ -16,12 +16,12 @@ Transform your Linux system into an installable ISO using `penguins-eggs`.
 
 ### Install package penguins (all distros)
 ```bash
-git clone https://github.com/pieroproietti/get-eggs
-cd get-eggs
-sudo ./get-eggs.sh
+git clone https://github.com/pieroproietti/fresh-eggs
+cd fresh-eggs
+sudo ./fresh-eggs.sh
 ```
 
-The `get-eggs.sh` script will automatically:
+The `fresh-eggs.sh` script will automatically:
 - Detect your distribution
 - Install Node.js (≥18) if needed
 - Download and install the correct penguins-eggs package

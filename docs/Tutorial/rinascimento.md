@@ -97,12 +97,12 @@ Yolk è un repository locale integrato nell'ISO che contiene i pacchetti essenzi
 
 ## Installazione e Utilizzo
 
-L'installazione è semplificata attraverso lo script `get-eggs`, che gestisce automaticamente le dipendenze e i repository necessari per tutte le distribuzioni supportate:
+L'installazione è semplificata attraverso lo script `fresh-eggs`, che gestisce automaticamente le dipendenze e i repository necessari per tutte le distribuzioni supportate:
 
 ```bash
-git clone https://github.com/pieroproietti/get-eggs
-cd get-eggs
-sudo ./get-eggs.sh
+git clone https://github.com/pieroproietti/fresh-eggs
+cd fresh-eggs
+sudo ./fresh-eggs.sh
 ```
 
 Una volta installato, la creazione di un'ISO è immediata:

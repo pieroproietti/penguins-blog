@@ -19,8 +19,8 @@ Manuale aggiornato a `eggs v10.1.x` ultimo aggiornamento 30 maggio 2025
 `penguins' eggs` è uno strumento moderno per la rimasterizzazione di sistemi Linux, pensato come successore di Remastersys e Systemback. Il software nasce dall'idea della "riproduzione" applicata ai sistemi operativi: ogni sistema può "deporre le sue uova" per dare vita a nuovi sistemi identici o personalizzati.
 
 **Caratteristiche principali:**
-- Supporto per oltre 15 distribuzioni Linux (Almalinux, Arch, Debian, Devuan, Fedora, Manjaro, openmamba, openSUSE, Rocky, Ubuntu, [SUPPORTED-DISTROS](https://github.com/pieroproietti/get-eggs/blob/main/SUPPORTED-DISTROS.md).
-- Installazione semplificata con `get-eggs`
+- Supporto per oltre 15 distribuzioni Linux (Almalinux, Arch, Debian, Devuan, Fedora, Manjaro, openmamba, openSUSE, Rocky, Ubuntu, [SUPPORTED-DISTROS](https://github.com/pieroproietti/fresh-eggs/blob/main/SUPPORTED-DISTROS.md).
+- Installazione semplificata con `fresh-eggs`
 - Creazione di ISO live avviabili ed installabile, con o senza i vostri dati.
 - Installer CLI (krill) e GUI (calamares)
 - Backup criptati e installazioni di rete (PXE)
@@ -33,12 +33,12 @@ Manuale aggiornato a `eggs v10.1.x` ultimo aggiornamento 30 maggio 2025
 Funziona per **tutte le distribuzioni supportate**, tutto quello di cui avete bisogno è di avere git installato:
 
 ```bash
-git clone https://github.com/pieroproietti/get-eggs
-cd get-eggs
-sudo ./get-eggs.sh
+git clone https://github.com/pieroproietti/fresh-eggs
+cd fresh-eggs
+sudo ./fresh-eggs.sh
 ```
 
-Lo script `get-eggs` installerà il pacchetto originale per la vostra distribuzione, soddisfando automaticamente le dipendenze. 
+Lo script `fresh-eggs` installerà il pacchetto originale per la vostra distribuzione, soddisfando automaticamente le dipendenze. 
 
 ### Configurazione iniziale
 
@@ -171,7 +171,7 @@ sudo eggs wardrobe wear wagtail/waydroid  # Configurazioni speciali
 - **Ubuntu** bionic, focal, jammy, noble (.deb)
 
 #### Derivate supportate
-Deepin, EndeavourOS, KDE neon, Linux Mint, LMDE, Pop!_OS, Zorin OS e [molte altre](https://github.com/pieroproietti/get-eggs/blob/main/SUPPORTED-DISTROS.md). E' possibile editare i file [derivatives.yaml](https://github.com/pieroproietti/penguins-eggs/blob/master/conf/derivatives.yaml) per le derivate Arch/Debian/Devuan/Ubuntu e [derivatives_fedora.yml](https://github.com/pieroproietti/penguins-eggs/blob/master/conf/derivatives_fedora.yaml) per quelle di derivazione fedora/el9.
+Deepin, EndeavourOS, KDE neon, Linux Mint, LMDE, Pop!_OS, Zorin OS e [molte altre](https://github.com/pieroproietti/fresh-eggs/blob/main/SUPPORTED-DISTROS.md). E' possibile editare i file [derivatives.yaml](https://github.com/pieroproietti/penguins-eggs/blob/master/conf/derivatives.yaml) per le derivate Arch/Debian/Devuan/Ubuntu e [derivatives_fedora.yml](https://github.com/pieroproietti/penguins-eggs/blob/master/conf/derivatives_fedora.yaml) per quelle di derivazione fedora/el9.
 
 #### Architetture
 - **amd64** (x86_64)
@@ -431,9 +431,9 @@ krill è l'installer TUI di eggs, progettato per:
 
 2. **Installazione eggs**
    ```bash
-   git clone https://github.com/pieroproietti/get-eggs
-   cd get-eggs
-   sudo ./get-eggs.sh
+   git clone https://github.com/pieroproietti/fresh-eggs
+   cd fresh-eggs
+   sudo ./fresh-eggs.sh
    ```
 
 3. **Configurazione**
@@ -549,7 +549,7 @@ amd64:
 
 - **Arch**: Vedi [PKGBUILD AUR](https://aur.archlinux.org/packages/penguins-eggs)
 - **Manjaro**: [PKGBUILD GitLab](https://gitlab.manjaro.org/packages/community/penguins-eggs/-/blob/master/PKGBUILD)
-- **RPM**: Script in [REQUIREMENTS](https://github.com/pieroproietti/get-eggs/tree/main/tarballs/requirements)
+- **RPM**: Script in [REQUIREMENTS](https://github.com/pieroproietti/fresh-eggs/tree/main/tarballs/requirements)
 
 ### Supporto e community
 

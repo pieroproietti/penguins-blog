@@ -39,7 +39,7 @@ Ieri, ho creato una lista delle distribuzioni supportate, prendendo le prime 100
 
 Sono rimasto impressionato: penguins-eggs è - al momento - il più sofisticato sistema di rimasterizzazione esistente e supporta praticamente più del 90% di quallo che conta.
 
-Trovate la lista, con la possibilità di scaricare delle versioni rimasterizzate e consigli specifici per alcune distro su [SUPPORTED-DISTROS](https://github.com/pieroproietti/get-eggs/blob/main/SUPPORTED-DISTROS.md).
+Trovate la lista, con la possibilità di scaricare delle versioni rimasterizzate e consigli specifici per alcune distro su [SUPPORTED-DISTROS](https://github.com/pieroproietti/fresh-eggs/blob/main/SUPPORTED-DISTROS.md).
 
 
 

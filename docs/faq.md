@@ -14,16 +14,16 @@ Penguins' Eggs is a tool to create live ISO images and custom Linux distribution
 
 ## 2. What are the distros supported?
 penguins-eggs is compatible with Almalinux, Arch, Debian, Devuan, Fedora, OpenSUSE, Rocky and Ubuntu and most of derivatives. 
-You can find a complete listo on [supported distros](https://github.com/pieroproietti/get-eggs/blob/main/SUPPORTED-DISTROS.md).
+You can find a complete listo on [supported distros](https://github.com/pieroproietti/fresh-eggs/blob/main/SUPPORTED-DISTROS.md).
 
 ## 3. How do I install penguins-eggs?
 Use `get-get`, universal installer:
 ```bash
-git clone https://github.com/pieroproietti/get-eggs
-cd get-eggs
-sudo ./get-eggs.sh
+git clone https://github.com/pieroproietti/fresh-eggs
+cd fresh-eggs
+sudo ./fresh-eggs.sh
 ```
-The `get-eggs.sh` script will:
+The `fresh-eggs.sh` script will:
 - Automatically detect your distribution
 - Install the appropriate version of Node.js (≥18) if needed
 - Download and install the correct penguins-eggs package for your system
