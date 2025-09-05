@@ -17,7 +17,7 @@ penguins-eggs is compatible with Almalinux, Arch, Debian, Devuan, Fedora, OpenSU
 You can find a complete listo on [supported distros](https://github.com/pieroproietti/fresh-eggs/blob/main/SUPPORTED-DISTROS.md).
 
 ## 3. How do I install penguins-eggs?
-Use `get-get`, universal installer:
+Use `fresh-eggs`, universal installer:
 ```bash
 git clone https://github.com/pieroproietti/fresh-eggs
 cd fresh-eggs
@@ -42,7 +42,7 @@ sudo eggs produce
 ```
 This generates an ISO image in /home/eggs/.
 
-## 6. Support for non-Debian/Ubuntu distros?
+## 6. Support for a pletora of distros, not only Debian/Ubuntu?
 Actually penguins-eggs support: Almalinux, Arch, Debian, Devuan, Fedora, Manjaro, Openmamba, OpenSUSE, Rocky, Ubuntu and derivatives.
 
 ## 7. Where’s the full documentation?
@@ -51,7 +51,7 @@ Check the official User's guide on  the [penguins-eggs.net](httos://penguins-egg
 Other inmportants documents, can be found on the [penguins-eggs](https://github.com/pieroproietti/penguins-eggs), look expecially `README.md` and under `DOCS`.
 
 ## 8. Use cases
-- Create personalized Linux distributions for organizations with pre-installed software and configurations.
+- Create personalized Linux customizations for organizations with pre-installed software and configurations.
 - Build rescue/recovery systems with your preferred tools and settings.
 - Develop educational Linux environments for classrooms with specific software packages.
 - Create portable development environments that can be deployed consistently across different machines.
