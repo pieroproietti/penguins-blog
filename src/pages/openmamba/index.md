@@ -6,12 +6,8 @@ An independent Linux distribution. [openmamba](https://openmamba.org/) is an ope
 ## Penguins' eggs remastered ISO's
 All ISO's have their user credentials set to ```live/evolution``` and ```root/evolution```.
 
-* [ISOs](https://drive.google.com/drive/folders/1-7LbgkKIrp8hUFTbO3qGtPKzaHter6RM)
-
-## Penguins' eggs packages
-Here you can download actual packages to install and reproduce your system.
-
-* [Packages](https://penguins-eggs.net/basket/packages/openmamba)
+* [ISOs](https://drive.google.com/drive/folders/1Wc07Csh8kJvqENj3oL-VDBU3E6eA9CLU)
+* [Packages](https://drive.google.com/drive/folders/1RI7Xu3FynqRL9P-jcd-dOa_4c2pj2CKx)
 
 ## Advice
 

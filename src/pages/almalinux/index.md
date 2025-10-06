@@ -8,45 +8,12 @@ An Open Source, community owned and governed, forever-free enterprise Linux dist
 ## Penguins' eggs remastered ISO's
 All ISO's have their user credentials set to ```live/evolution``` and ```root/evolution```.
 
-<a
-  href="https://drive.google.com/drive/folders/19fwjvsZiW0Dspu2Iq-fQN0J-PDbKBlYY"
-    onClick={() => {
-    if (typeof window.gtag !== 'undefined') {
-      window.gtag('event', 'click', {
-        event_category: 'Folder Access',
-        event_label: 'almalinux-iso',
-        value: 1,
-      });
-    }
-  }}
->
-* Download ISOs
-</a>
-
-
-## Penguins' eggs packages
-Here you can download actual tarballs to install and reproduce your system.
-
-
-<a
-  href="https://penguins-eggs.net/basket/packages/el9"
-    onClick={() => {
-    if (typeof window.gtag !== 'undefined') {
-      window.gtag('event', 'click', {
-        event_category: 'Folder Access',
-        event_label: 'almalinux-pkg',
-        value: 1,
-      });
-    }
-  }}
->
-* Download packages
-</a>
+* [ISOs](https://drive.google.com/drive/folders/1Wc07Csh8kJvqENj3oL-VDBU3E6eA9CLU)
+* [Packages](https://drive.google.com/drive/folders/1yzkDrcH9WaoYAhILfY7rwkNBroVbnItW)
 
 ## Advice
 
-You can continue on [AlmaLinux discussion](https://github.com/pieroproietti/penguins-blog/discussions/22)
+You can continue on [Rocky Linux discussion](https://github.com/pieroproietti/penguins-blog/discussions/42)
 
 ## Disclaim
 __Please note what this project is in no way connected to the original distro in any official way, it’s just my personal experiment.__
-
