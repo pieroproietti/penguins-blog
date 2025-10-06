@@ -4,20 +4,35 @@ import styles from './styles.module.css';
 
 const FeatureList = [
   {
-    title: 'AlmaLinux',
-    Svg: require('@site/static/img/almalinux.svg').default,
+    title: 'Debian',
+    Svg: require('@site/static/img/debian.svg').default,
     description: (
       <>
-        <a href="/almalinux">&nbsp;AlmaLinux,&nbsp;</a>a RHEL clone
+        Penguins' eggs started on <a href="/debian">Debian</a> in 2017, it still supports Jessie, Stretch, Buster, Bullseye,
+        <a href="/debian/bookworm">&nbsp;Bookworm&nbsp;</a>
+        and<a href="/debian/trixie">&nbsp;Trixie&nbsp;</a>.
       </>
     ),
   },
+
   {
-    title: 'Alpine Linux',
-    Svg: require('@site/static/img/alpine.svg').default,
+    title: 'Ubuntu',
+    Svg: require('@site/static/img/ubuntu.svg').default,
     description: (
       <>
-        <a href="/alpine">&nbsp;Alpine&nbsp;</a> a security-oriented, lightweight Linux distribution based on musl, libc, and busybox.
+        <a href="/ubuntu">Ubuntu</a> is fully supported: 
+        <a href="/ubuntu/bionic/">&nbsp;bionic</a>,
+        <a href="/ubuntu/noble/">&nbsp;noble</a>
+      </>
+    ),
+  },
+
+  {
+    title: 'Fedora',
+    Svg: require('@site/static/img/fedora.svg').default,
+    description: (
+      <>
+      <a href="/fedora">Fedora 41</a>: It's your Operating System.
       </>
     ),
   },
@@ -32,17 +47,47 @@ const FeatureList = [
       </>
     ),
   },
+
   {
-    title: 'Debian',
-    Svg: require('@site/static/img/debian.svg').default,
+    title: 'Alpine Linux',
+    Svg: require('@site/static/img/alpine.svg').default,
     description: (
       <>
-        Penguins' eggs started on <a href="/debian">Debian</a> in 2017, it still supports Jessie, Stretch, Buster, Bullseye,
-        <a href="/debian/bookworm">&nbsp;Bookworm&nbsp;</a>
-        and<a href="/debian/trixie">&nbsp;Trixie&nbsp;</a>.
+        <a href="/alpine">&nbsp;Alpine&nbsp;</a> a security-oriented, lightweight Linux distribution based on musl, libc, and busybox.
       </>
     ),
   },
+
+  {
+    title: 'openSUSE',
+    Svg: require('@site/static/img/opensuse.svg').default,
+    description: (
+      <>
+        <a href="/opensuse">openSUSE</a>, the makers' choice for sysadmins, developers and desktop users.
+      </>
+    ),
+  },
+
+  {
+    title: 'Manjaro/Biglinux',
+    Svg: require('@site/static/img/manjaro.svg').default,
+    description: (
+      <>
+        Penguins' eggs is part of community repo of <a href="/manjaro">Manjaro</a>.
+      </>
+    ),
+  },
+
+  {
+    title: 'Linux Mint/LMDE',
+    Svg: require('@site/static/img/linuxmint.svg').default,
+    description: (
+      <>
+        <a href="/linuxmint">&nbsp;Linux Mint</a> and virtually every Debian, Devuan and Ubuntu derivatives are supported. 
+      </>
+    ),
+  },
+
   {
     title: 'Devuan',
     Svg: require('@site/static/img/devuan.svg').default,
@@ -54,51 +99,17 @@ const FeatureList = [
       </>
     ),
   },
+
   {
-    title: 'Fedora',
-    Svg: require('@site/static/img/fedora.svg').default,
+    title: 'AlmaLinux',
+    Svg: require('@site/static/img/almalinux.svg').default,
     description: (
       <>
-      <a href="/fedora">Fedora 41</a>: It's your Operating System.
+        <a href="/almalinux">&nbsp;AlmaLinux,&nbsp;</a>a RHEL clone
       </>
     ),
   },
-  {
-    title: 'Linux Mint',
-    Svg: require('@site/static/img/linuxmint.svg').default,
-    description: (
-      <>
-        <a href="/linuxmint">&nbsp;Linux Mint</a> and virtually every Debian, Devuan and Ubuntu derivatives are supported. 
-      </>
-    ),
-  },
-  {
-    title: 'Manjaro',
-    Svg: require('@site/static/img/manjaro.svg').default,
-    description: (
-      <>
-        Penguins' eggs is part of community repo of <a href="/manjaro">Manjaro</a>.
-      </>
-    ),
-  },
-  {
-    title: 'openmamba',
-    Svg: require('@site/static/img/openmamba.svg').default,
-    description: (
-      <>
-        <a href="/openmamba">openmamba</a> is an operating system based on the Linux kernel but is not a derivative of other distributions.
-      </>
-    ),
-  },
-  {
-    title: 'openSUSE',
-    Svg: require('@site/static/img/opensuse.svg').default,
-    description: (
-      <>
-        <a href="/opensuse">openSUSE</a>, the makers' choice for sysadmins, developers and desktop users.
-      </>
-    ),
-  },
+
   {
     title: 'Rocky Linux',
     Svg: require('@site/static/img/rocky.svg').default,
@@ -108,14 +119,13 @@ const FeatureList = [
       </>
     ),
   },
+
   {
-    title: 'Ubuntu',
-    Svg: require('@site/static/img/ubuntu.svg').default,
+    title: 'openmamba',
+    Svg: require('@site/static/img/openmamba.svg').default,
     description: (
       <>
-        <a href="/ubuntu">Ubuntu</a> is fully supported: 
-        <a href="/ubuntu/bionic/">&nbsp;bionic</a>,
-        <a href="/ubuntu/noble/">&nbsp;noble</a>
+        <a href="/openmamba">openmamba</a> is an operating system based on the Linux kernel but is not a derivative of other distributions.
       </>
     ),
   },
