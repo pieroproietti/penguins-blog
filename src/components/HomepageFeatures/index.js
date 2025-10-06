@@ -8,7 +8,7 @@ const FeatureList = [
     Svg: require('@site/static/img/debian.svg').default,
     description: (
       <>
-        Penguins' eggs started on <a href="/debian">Debian</a> in 2017, it still supports Jessie, Stretch, Buster, Bullseye,
+        Penguins' eggs started on <a href="/debian">Debian</a> in 2017, it still supports Buster, Bullseye,
         <a href="/debian/bookworm">&nbsp;Bookworm&nbsp;</a>
         and<a href="/debian/trixie">&nbsp;Trixie&nbsp;</a>.
       </>
@@ -21,7 +21,6 @@ const FeatureList = [
     description: (
       <>
         <a href="/ubuntu">Ubuntu</a> is fully supported: 
-        <a href="/ubuntu/bionic/">&nbsp;bionic</a>,
         <a href="/ubuntu/noble/">&nbsp;noble</a>
       </>
     ),
@@ -32,7 +31,7 @@ const FeatureList = [
     Svg: require('@site/static/img/fedora.svg').default,
     description: (
       <>
-      <a href="/fedora">Fedora 41</a>: It's your Operating System.
+      <a href="/fedora">Fedora 42</a>: It's your Operating System.
       </>
     ),
   },
@@ -89,7 +88,7 @@ const FeatureList = [
   },
 
   {
-    title: 'AlmaLinux',
+    title: 'AlmaLinux/EL9',
     Svg: require('@site/static/img/almalinux.svg').default,
     description: (
       <>
@@ -99,7 +98,7 @@ const FeatureList = [
   },
 
   {
-    title: 'Rocky Linux',
+    title: 'Rocky/EL9',
     Svg: require('@site/static/img/rocky.svg').default,
     description: (
       <>
