@@ -89,18 +89,6 @@ const FeatureList = [
   },
 
   {
-    title: 'Devuan',
-    Svg: require('@site/static/img/devuan.svg').default,
-    description: (
-      <>
-        <a href="/devuan/">Devuan</a>:&nbsp;
-        <a href="/devuan/daedalus/">daedalus</a>,
-        <a href="/devuan/excalibur/">&nbsp;excalibur</a>
-      </>
-    ),
-  },
-
-  {
     title: 'AlmaLinux',
     Svg: require('@site/static/img/almalinux.svg').default,
     description: (
@@ -116,6 +104,18 @@ const FeatureList = [
     description: (
       <>
         <a href="/rocky">Rocky Linux</a>, a RHEL clone.
+      </>
+    ),
+  },
+
+  {
+    title: 'Devuan',
+    Svg: require('@site/static/img/devuan.svg').default,
+    description: (
+      <>
+        <a href="/devuan/">Devuan</a>:&nbsp;
+        <a href="/devuan/daedalus/">daedalus</a>,
+        <a href="/devuan/excalibur/">&nbsp;excalibur</a>
       </>
     ),
   },
