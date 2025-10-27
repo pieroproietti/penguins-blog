@@ -10,6 +10,8 @@ import Translactions from '@site/src/components/Translactions';
 
 <Translactions />
 
+![](/images/2025-10-27-luks-eggs-crittografia.png)
+
 ## Cos'è LUKS? Una breve premessa
 Prima di addentrarci nelle nuove e potenti funzionalità di eggs, è fondamentale capire cosa sia LUKS.
 
@@ -84,7 +86,7 @@ Ho dovuto, perciò, adattare l'initramfs alle nuove esigenze dopo aver inutilmen
 
 Come per `homecrypt` ho dovuto creare uno script per permettere l'apertura del volume LUKS con l'interazione dell'utente, ma questa volta tutto è dovuto essere immesso nell'initramfs ed essere eseguito prima dell'avvio della fase di boot vera e propria.
 
-Essendo partito da Debian, la scelta ovvia è rimasta quella di utilizzare `live-boot` ed i suoi hooks, lasciando a quest'ultimo il compito dell'avvio vero e proprio, ma facendogli - prima della fase di mount - tutto preparato con la struttura dell'immagine di avvio in RAM pronta ad essere utilizzata.
+Essendo partito da Debian, la scelta ovvia è rimasta quella di utilizzare `live-boot` ed i suoi hooks, lasciando a quest'ultimo il compito dell'avvio vero e proprio, ma facendogli trovare - prima della fase di mount - tutto preparato con la struttura dell'immagine di avvio in RAM pronta ad essere utilizzata.
 
 Funziona! E funzionerà anche su altre distro non di derivazione Debian, cambiando naturalmente la modalità di configurazione dell'initramfs per ognuna. Ma questo verrà con il tempo.
 
