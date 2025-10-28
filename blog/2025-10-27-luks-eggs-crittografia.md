@@ -33,7 +33,7 @@ Ora che abbiamo rinfrescato il concetto, vediamo come eggs utilizza questa tecno
 
 ## LUKS ed eggs nel passato
 
-È stato molto tempo fa che - grazie alle idee ed ai bisogni di un amministratore di sistema indiano - avevo introdotto i comandi `eggs syncto` ed `eggs sync from` che andavano a creare una live, nella quale la home utente veniva criptata su una immagine LUKS.
+È stato molto tempo fa che - grazie alle idee ed ai bisogni di un amministratore di sistema indiano - avevo introdotto i comandi `eggs syncto` ed `eggs syncfrom` che andavano a creare una live, nella quale la home utente veniva criptata su una immagine LUKS.
 
 Tutto era nato dalla sua necessità di trasferire sistemi via internet senza però mai esporre i dati.
 
@@ -48,7 +48,7 @@ Ho aggiunto al comando `sudo eggs produce` ed a `eggs love` due nuovi flag:
 * `--fullcrypt`
 
 ### `homecrypt`
-Questa opzione consente di criptare l'intera `/home` e gli account degli utenti, che vengono registrati in un volume LUKS denominato `/live/home.img`.
+Questa opzione consente di criptare l'intera `/home` e gli account degli utenti, che vengono registrati in un file immagine LUKS denominato `/live/home.img`.
 
 L'avvio avviene normalmente, e si carica `/live/filesystem.squashfs` che consiste in questo caso in una normale rimasterizzazione standard e, perciò, priva di dati sensibili.
 
@@ -76,7 +76,7 @@ Mi sono scontrato però con la necessità di avviare il sistema.
 
 L'avvio delle live di eggs, è abbastanza semplice, il sistema live è contenuto in `/live/filesystem.squashfs`. Si carica il kernel e gli hook contenuti nell'initramfs vanno a cercare l'immagine live.
 
-In questo caso, però l'immagine live non è contenuta nell'archivio `/live/filesystem.squashfs` del dispositivo di avvio, ma è **contenuta** in `/live/root.img`.
+In questo caso, però nell'immagine non esiste alcun archivio `/live/filesystem.squashfs`, ma quest'ultimo è **contenuto** in `/live/root.img`.
 
 Ed il sistema, ovviamente, non parte.
 
