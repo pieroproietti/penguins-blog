@@ -1,0 +1,79 @@
+---
+sidebar_position: 3
+title: Wardrobe (L'Armadio)
+description: Come automatizzare la creazione del tuo sistema con i costumi
+---
+
+# 👗 Wardrobe: La metodologia di vestizione
+
+Il **Wardrobe** (Armadio) non è un semplice strumento di configurazione della ISO, ma una vera e propria metodologia di lavoro per creare la tua distribuzione personalizzata (Respin).
+
+---
+
+## 🔄 Il Flusso di Lavoro (Respin)
+
+A differenza di altri strumenti, con eggs non si modifica il file ISO "dall'esterno". Il processo segue una logica lineare e pulita:
+
+1.  **SISTEMA NAKED**: Si parte da un'installazione minima (solo riga di comando).
+2.  **VESTIZIONE (Wardrobe)**: Si applica un "costume" al sistema installato per aggiungere programmi, interfacce grafiche e configurazioni.
+3.  **PRODUZIONE (Produce)**: Una volta che il sistema è perfetto, si usa eggs per trasformarlo in una ISO.
+
+
+
+> **Schema riassuntivo:**
+> `Sistema Minimo (CLI) --> Wardrobe (Vestizione) --> Sistema Personalizzato --> Eggs Produce --> ISO Finale`
+
+---
+
+## 🎭 La Metafora del Sarto
+
+* **Costume (Vestito)**: Una directory che contiene il file `index.yaml` (le istruzioni) e gli script necessari.
+* **Accessory (Accessori)**: Componenti aggiuntivi (es. driver, strumenti di sviluppo) che possono essere riutilizzati su più vestiti.
+
+:::info Il Sarto
+Tu fornisci le istruzioni nel file YAML, e **eggs** agisce come un sarto che cuce il vestito direttamente sul tuo sistema installato.
+:::
+
+---
+
+## 🛠️ I Comandi principali
+
+Il guardaroba si gestisce con questi comandi:
+
+### 1. Prendi l'armadio (Get)
+Scarica il repository dei costumi (ufficiali o il tuo fork) in `~/.wardrobe`:
+```bash
+eggs wardrobe get
+```
+
+### 2. Elenca e Mostra (List/Show)
+Vedi quali vestiti sono disponibili e cosa contengono:
+```bash
+eggs wardrobe list
+eggs wardrobe show nome-costume
+```
+
+### 3. Indossa il vestito (Wear)
+Avvia la "vestizione" del sistema attuale. **Attenzione: questo comando modificherà il sistema operativo su cui lo lanci!**
+```bash
+sudo eggs wardrobe wear nome-costume
+```
+
+---
+
+## 🎨 Themes: Personalizzare la ISO
+
+Mentre il Wardrobe "veste" il sistema installato, i **Themes** (Temi) servono a cambiare l'aspetto del file ISO finale. Si usano durante la fase di `produce`:
+
+* Sfondo del boot (GRUB/Isolinux).
+* Branding dell'installer Calamares.
+
+```bash
+sudo eggs produce --theme nome-tema
+```
+
+---
+
+:::tip Perché usare questo metodo?
+Usare il Wardrobe su un sistema "Naked" ti garantisce un sistema finale leggero, pulito e perfettamente documentato. Se vuoi cambiare qualcosa, ti basta modificare il file YAML e ripetere il processo: il risultato sarà sempre identico.
+:::

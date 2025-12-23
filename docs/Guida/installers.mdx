@@ -1,0 +1,51 @@
+---
+sidebar_position: 3
+title: Gli Installer
+description: Come installare la tua ISO con Krill o Calamares
+---
+
+# ⚓ Installare l'uovo: Krill e Calamares
+
+Una volta creata la tua ISO e avviata in modalità Live, il passo finale è l'installazione su disco fisso. Eggs ti offre due strade diverse, a seconda delle tue esigenze e del tipo di sistema che hai creato.
+
+---
+
+## 🐚 Krill: L'installer da terminale (TUI)
+
+**Krill** è l'installer predefinito di eggs. È un installer testuale (TUI - Terminal User Interface) estremamente leggero e veloce.
+
+* **Quando usarlo**: Su sistemi minimali (Naked), su computer vecchi con poca RAM, o se preferisci un approccio rapido e diretto.
+* **Comando**:
+    ```bash
+    sudo eggs install
+    ```
+* **Caratteristiche**: Gestisce il partizionamento, la creazione dell'utente e l'installazione del bootloader (GRUB) in modo essenziale ma robusto.
+
+---
+
+## 🦑 Calamares: L'installer grafico (GUI)
+
+Se hai creato una ISO con un'interfaccia grafica (XFCE, GNOME, KDE, ecc.), puoi offrire un'esperienza di installazione professionale grazie a **Calamares**.
+
+* **Quando usarlo**: Per distribuzioni destinate all'utente finale o se desideri un partizionamento grafico assistito.
+* **Come attivarlo**: Eggs integra Calamares automaticamente se rileva un ambiente grafico. Puoi configurarlo tramite i **Themes** del Wardrobe.
+* **Comando**:
+    ```bash
+    sudo eggs calamares
+    ```
+
+---
+
+## 🤖 Installazione Unattended (Automatica)
+
+Per gli utenti avanzati che devono installare molti computer identici, eggs permette l'installazione **Unattended**.
+
+Utilizzando i file di configurazione YAML presenti nel Wardrobe (cartella `config`), puoi avviare un'installazione che non richiede alcun intervento umano:
+
+```bash
+sudo eggs install --unattended
+```
+
+:::tip Personalizzazione
+Puoi creare il tuo file di configurazione (es. `it.yaml`) per impostare automaticamente la lingua italiana, il fuso orario e le credenziali utente durante l'installazione.
+:::
