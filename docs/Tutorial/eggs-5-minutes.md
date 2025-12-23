@@ -39,9 +39,23 @@ You'll get an ISO named: `egg-of_DISTRO_VERSION_HOSTNAME-ARCH_DATE_TIME.iso`
 
 ## Main Commands
 - `eggs love` - Create live ISO, full automatic
-- `eggs install` - CLI system installer  (sometime I refere it as krill)
+- `eggs krill` - CLI system installer
 - `eggs calamares --install` - Graphical installer (optional)
 - `eggs` - Complete command list
+
+### Create your first live fullcrypted
+This procedure only works with Debian Trixe and Devuan Excalibur, allowing you to have a fully encrypted and usable copy of the system.
+
+```
+sudo eggs produce --fullcrypt
+```
+
+### Create your first live homecrypted
+This procedure works on most distributions. Unlike fullcrypt, which encrypts the entire system, here only user home directories and accounts are encrypted.
+
+```
+sudo eggs produce --homecrypt
+```
 
 ## Support
 - [penguins-eggs.net](https://penguins-eggs.net)
