@@ -1,33 +1,46 @@
 import React from 'react';
 import {useLocation} from '@docusaurus/router';
 
-export default function Translactions({path}) {
-  // function
-  let getLink = (label, tl, hl, path)=> {
-    const location = useLocation();
-    let link = `https://penguins--eggs-net.translate.goog${location.pathname}?_x_tr_sl=auto&_x_tr_tl=${tl}&_x_tr_hl=${hl}&_x_tr_pto=wapp&_x_tr_hist=true`
-    return (
-      <>
-      <a href={link}>{label}</a>&nbsp;
-      </>
-   )
-  }
+export default function Translactions() {
+  const { pathname } = useLocation();
+  
+  // Lista delle lingue supportate
+  const languages = [
+    { label: 'Deutsch', code: 'de' },
+    { label: 'English', code: 'en' },
+    { label: 'Español', code: 'es' },
+    { label: 'Français', code: 'fr' },
+    { label: 'Italiano', code: 'it' },
+    { label: 'Polska', code: 'pl' },
+    { label: 'Portuguese', code: 'pt' },
+    { label: 'Български', code: 'bg' },
+    { label: 'Русский', code: 'ru' },
+    { label: 'Українська', code: 'uk' },
+    { label: 'やまと', 'ja' },
+    { label: '中国', code: 'zh' },
+    { label: 'فارsi', code: 'fa' },
+  ];
+
+  const domain = "https://penguins--eggs-net.translate.goog";
+
   return (
-    <span>
-      {getLink('Deutsch', 'de', 'de', path)}
-      {getLink('English', 'en', 'en', path )}
-      {getLink('Español', 'es', 'es', path)} {/* spagnolo */}
-      {getLink('Français', 'fr', 'fr',path)}
-      {getLink('Italiano', 'it', 'it', path)}
-      {getLink('Polska', 'pl', 'pl', path)} {/* polacco */}
-      {getLink('Portuguese', 'pt', 'pt', path)} {/* portoghese */}
-      {getLink('Български', 'bg', 'bg', path)} {/* bulgaro */}
-      {getLink('Русский', 'ru', 'ru', path)} {/* russo */}
-      {getLink('Українська', 'uk', 'uk', path)} {/* ucraino */}
-      {getLink('やまと', 'ja', 'ja', path)} {/* giapponese */}
-      {getLink('中国', 'zh', 'zh', path)} {/* cinese */}
-      {getLink('فارسی', 'fa', 'fa', path)} {/* persiano */}
-      <br/><br/>
-    </span>
+    <div style={{ marginBottom: '1.5rem', lineHeight: '1.8' }}>
+      {languages.map((lang, idx) => {
+        const url = `${domain}${pathname}?_x_tr_sl=auto&_x_tr_tl=${lang.code}&_x_tr_hl=${lang.code}&_x_tr_pto=wapp`;
+        
+        return (
+          <React.Fragment key={lang.code}>
+            <a 
+              href={url} 
+              style={{ fontSize: '0.9rem', fontWeight: '500' }}
+              rel="nofollow"
+            >
+              {lang.label}
+            </a>
+            {idx < languages.length - 1 && <span>&nbsp; • &nbsp;</span>}
+          </React.Fragment>
+        );
+      })}
+    </div>
   );
 }
