@@ -16,7 +16,7 @@ export default function Translactions() {
     { label: 'Български', code: 'bg' },
     { label: 'Русский', code: 'ru' },
     { label: 'Українська', code: 'uk' },
-    { label: 'やまと', 'ja' },
+    { label: 'やまと', code: 'ja' },
     { label: '中国', code: 'zh' },
     { label: 'فارsi', code: 'fa' },
   ];
