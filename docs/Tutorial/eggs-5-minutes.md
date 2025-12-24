@@ -2,6 +2,7 @@
 title: Cook eggs in 5 minutes
 authors: pieroproietti
 lang: eggs
+sidebar_position: 4
 enableComments: true
 ---
 import Translactions from '@site/src/components/Translactions';

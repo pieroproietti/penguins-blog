@@ -1,6 +1,7 @@
 ---
 title: Eggs users' guide
 authors: pieroproietti
+sidebar_position: 1
 lang: it
 enableComments: true
 ---
