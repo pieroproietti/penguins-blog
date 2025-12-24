@@ -1,14 +1,16 @@
 ---
 sidebar_position: 3
-title: Gli Installer
+title: Gli Installer ⚓
 description: Come installare la tua ISO con Krill o Calamares
 ---
+import Translactions from '@site/src/components/Translactions';
+
+<Translactions />
 
 # ⚓ Installare l'uovo: Krill e Calamares
 
 Una volta creata la tua ISO e avviata in modalità Live, il passo finale è l'installazione su disco fisso. Eggs ti offre due strade diverse, a seconda delle tue esigenze e del tipo di sistema che hai creato.
 
----
 
 ## 🐚 Krill: L'installer da terminale (TUI)
 
@@ -28,10 +30,10 @@ Una volta creata la tua ISO e avviata in modalità Live, il passo finale è l'in
 Se hai creato una ISO con un'interfaccia grafica (XFCE, GNOME, KDE, ecc.), puoi offrire un'esperienza di installazione professionale grazie a **Calamares**.
 
 * **Quando usarlo**: Per distribuzioni destinate all'utente finale o se desideri un partizionamento grafico assistito.
-* **Come attivarlo**: Eggs integra Calamares automaticamente se rileva un ambiente grafico. Puoi configurarlo tramite i **Themes** del Wardrobe.
+* **Come attivarlo**: Eggs consiglia di integrare Calamares se rileva un ambiente grafico. Puoi anche configurarne l'aspetto tramite i **Themes** del Wardrobe.
 * **Comando**:
     ```bash
-    sudo eggs calamares
+    sudo eggs calamares --install
     ```
 
 ---
@@ -47,5 +49,5 @@ sudo eggs install --unattended
 ```
 
 :::tip Personalizzazione
-Puoi creare il tuo file di configurazione (es. `it.yaml`) per impostare automaticamente la lingua italiana, il fuso orario e le credenziali utente durante l'installazione.
+Usando krill, puoi creare il tuo file di configurazione (es. `it.yaml`) per impostare automaticamente la lingua italiana, il fuso orario e le credenziali utente durante l'installazione.
 :::

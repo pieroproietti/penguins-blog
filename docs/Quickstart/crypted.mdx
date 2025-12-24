@@ -1,0 +1,59 @@
+---
+sidebar_position: 5
+title: Sicurezza e Crittografia 🔐
+description: Comprendere le modalità --clone, --homecrypt e --fullcrypt
+enableComments: true
+---
+import Translactions from '@site/src/components/Translactions';
+
+<Translactions />
+
+
+# Clonazione e Sicurezza
+
+Quando decidi di non limitarti a una ISO "Standard" (pulita) e vuoi portare con te i tuoi dati, entri nel mondo della **clonazione**. Penguins-eggs ti offre tre strade, ognuna con un diverso livello di privacy.
+
+---
+
+## 📂 Le tre vie della Clonazione
+
+Sebbene i comandi siano diversi per rapidità di digitazione, puoi pensarli come tre livelli crescenti di protezione:
+
+### 1. Il Clone in chiaro (`--clone`)
+Include la tua `/home` e i tuoi dati, ma questi rimangono accessibili a chiunque entri in possesso della ISO.
+* **Uso:** Backup rapido per uso personale immediato.
+* **Comando:** `sudo eggs produce --clone`
+
+### 2. Il Clone con Dati Protetti (`--homecrypt`)
+Include i tuoi dati, ma cripta la directory `/home` con LUKS. Il sistema si avvia, ma i tuoi file sono "sotto chiave".
+* **Uso:** Massima privacy per i tuoi documenti pur mantenendo un avvio live standard.
+* **Comando:** `sudo eggs produce --homecrypt`
+
+### 3. Il Clone Totale Blindato (`--fullcrypt`)
+Cripta l'intero file system. Nulla è visibile se non si conosce la password, nemmeno la struttura del sistema operativo.
+* **Uso:** Trasporto sicuro su cloud o storage pubblici.
+* **Comando:** `sudo eggs produce --fullcrypt`
+
+---
+
+## 💡 Perché i nomi dei flag sono diversi?
+
+Potresti chiederti perché non usiamo sempre la parola `--clone`. La scelta è pensata per la tua **sicurezza e velocità**:
+
+* **Evitare errori**: Separando i flag, riduciamo il rischio che un utente attivi per sbaglio una cifratura che non voleva (e di cui magari dimentica la password).
+* **Rapidità**: Invece di scrivere comandi lunghissimi come `--clone --with-full-encryption`, ti basta un unico flag specifico per dichiarare la tua intenzione.
+
+> **Nota Tecnica**: Ricorda che sia `--homecrypt` che `--fullcrypt` implicano intrinsecamente il "clonaggio" dei dati. Non serve (e non devi) aggiungere anche il flag `--clone` quando li usi.
+
+---
+
+## 🔐 Riepilogo rapido
+
+
+
+| Comando | Include Dati? | Criptato? | Quando usarlo? |
+| :--- | :---: | :---: | :--- |
+| `produce` | ❌ No | ❌ No | Per distribuire la tua distro a tutti. |
+| `produce --clone` | ✅ Sì | ❌ No | Backup veloce su hardware fidato. |
+| `produce --homecrypt` | ✅ Sì | ✅ Solo Home | Per la tua sicurezza quotidiana. |
+| `produce --fullcrypt` | ✅ Sì | ✅ Tutto | Sicurezza estrema "Zero-Trust". |

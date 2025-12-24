@@ -3,6 +3,9 @@ sidebar_position: 2
 title: Primi Passi 🐣
 description: Come installare eggs e produrre la tua prima ISO
 ---
+import Translactions from '@site/src/components/Translactions';
+
+<Translactions />
 
 # Primi Passi con eggs
 
@@ -20,6 +23,8 @@ cd fresh-eggs
 sudo ./fresh-eggs.sh
 ```
 
+E' possibile. ed è stata testata su quasi tutte le distribuzioni supportate. l'installazione come AppImage. In questo caso, basta scaricare l'utilima versione della AppImage direttamente dal [repository Ufficiale](https://appimage.github.io/penguins-eggs) ed avviarla.
+
 :::tip Verifica l'installazione
 Dopo l'installazione, controlla che tutto sia pronto digitando:
 `eggs status`
@@ -29,9 +34,10 @@ Dopo l'installazione, controlla che tutto sia pronto digitando:
 
 ## 🧹 2. Preparazione (La Pulizia)
 
-Prima di "covare" il tuo uovo, è fondamentale pulire il sistema dai file inutili (cache dei pacchetti, file temporanei). Questo renderà la tua ISO molto più leggera e veloce da caricare.
+Prima di "covare" il tuo uovo, è fondamentale configurare eggs e pulire il sistema dai file inutili (cache dei pacchetti, file temporanei). Questo renderà la tua ISO molto più leggera e veloce da caricare.
 
 ```bash
+sudo eggs dad --default
 sudo eggs tools clean
 ```
 
@@ -54,6 +60,9 @@ sudo eggs produce --clone
 ```
 
 ---
+import Translactions from '@site/src/components/Translactions';
+
+<Translactions />
 
 ## 📂 4. Dove trovo la mia ISO?
 
