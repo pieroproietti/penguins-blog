@@ -59,11 +59,6 @@ Se invece vuoi un backup esatto del tuo PC, inclusi tutti i tuoi file nella cart
 sudo eggs produce --clone
 ```
 
----
-import Translactions from '@site/src/components/Translactions';
-
-<Translactions />
-
 ## 📂 4. Dove trovo la mia ISO?
 
 Al termine del processo (che può durare da pochi minuti a mezz'ora a seconda della potenza del tuo PC), la tua ISO ti aspetta nel **Nido**:
