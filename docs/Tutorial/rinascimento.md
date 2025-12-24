@@ -2,7 +2,7 @@
 title: Il Rinascimento
 slug: rinascimento
 authors: pieroproietti
-sidebar_position: 3
+sidebar_position: 1
 lang: it
 enableComments: true
 ---

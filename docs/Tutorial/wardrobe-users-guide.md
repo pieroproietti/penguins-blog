@@ -2,7 +2,7 @@
 title: Wardrobe users' guide
 authors: pieroproietti
 lang: it
-sidebar_position: 2
+sidebar_position: 3
 enableComments: true
 ---
 import Translactions from '@site/src/components/Translactions';
