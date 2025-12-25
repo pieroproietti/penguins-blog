@@ -109,8 +109,8 @@ eggs status                         # Stato configurazione
 ### Installazione del sistema
 
 ```bash
-sudo eggs install                   # Installer CLI (krill)
-sudo eggs install --unattended      # Installazione CLI automatica
+sudo eggs krill                     # Installer CLI (krill)
+sudo eggs krill --unattended        # Installazione CLI automatica
 ```
 
 ### Personalizzazione
@@ -180,6 +180,10 @@ Deepin, EndeavourOS, KDE neon, Linux Mint, LMDE, Pop!_OS, Zorin OS e [molte altr
 - **arm64** (aarch64)
 
 ### Installazione per distribuzione
+Per tutte le distribuzioni, una volta installato il pacchetto penguins-eggs, potete aggiungere la repository penguins-eggs.net/repos per ternerlo aggiornato:
+```
+sudo eggs tools repo --add
+```
 
 #### Alpine (apk)
 Scaricare i pacchetti da [penguins-eggs.net](https://penguins-eggs.net/basket/index.php?p=) o dalla pagina [sourceforge](https://sourceforge.net/projects/penguins-eggs/) ed installarli con il comando:
@@ -194,57 +198,11 @@ Scaricare il pacchetto da [penguins-eggs.net](https://penguins-eggs.net/basket/i
 sudo apt install ./penguins-eggs_25.7.30-1_amd64.deb
 ```
 
-Una volta installato il pacchetto penguins-eggs, potete aggiungere la repository penguins-eggs.net/repos per ternerlo aggiornato:
-```
-sudo eggs tools repo --add
-```
-
-
-
-**Installare via PPA:**
-Copiate ed incollate i seguenti comandi:
-```bash
-curl -fsSL https://pieroproietti.github.io/penguins-eggs-ppa/KEY.gpg | sudo gpg --dearmor -o /etc/apt/trusted.gpg.d/penguins-eggs.gpg
-echo "deb [arch=$(dpkg --print-architecture)] https://pieroproietti.github.io/penguins-eggs-ppa ./" | sudo tee /etc/apt/sources.list.d/penguins-eggs.list > /dev/null
-sudo apt update
-sudo apt install penguins-eggs
-```
-
-
 #### Arch Linux
 Scaricare il pacchetto da [penguins-eggs.net](https://penguins-eggs.net/basket/index.php?p=) o dalla pagina [sourceforge](https://sourceforge.net/projects/penguins-eggs/) ed instalarlo con il comando:
 ```
 sudo pacman -U ./penguins-eggs-25.7.30-1-any.pkg.tar.zst
 ```
-
-**Tramite Chaotic-AUR:**
-Aggiungere la repository Chaotic-AUR vi consente di tenere sempre aggiornato penguins-eggs:
-
-```bash
-pacman-key --recv-key FBA220DFC880C036 --keyserver keyserver.ubuntu.com
-pacman-key --lsign-key FBA220DFC880C036
-pacman -U 'https://cdn-mirror.chaotic.cx/chaotic-aur/chaotic-keyring.pkg.tar.zst' 'https://cdn-mirror.chaotic.cx/chaotic-aur/chaotic-mirrorlist.pkg.tar.zst'
-```
-
-Aggiungete a `/etc/pacman.conf`:
-```
-[chaotic-aur]
-Include = /etc/pacman.d/chaotic-mirrorlist
-```
-
-```bash
-sudo pacman -Sy penguins-eggs
-```
-
-**Tramite AUR:**
-```bash
-yay penguins-eggs
-# oppure
-git clone https://aur.archlinux.org/penguins-eggs.git
-cd penguins-eggs
-makepkg -si
-```
-
 
 ### Fedora, Rocky, Almalinux
 Scaricare il pacchetto da [penguins-eggs.net](https://penguins-eggs.net/basket/index.php?p=) o dalla pagina [sourceforge](https://sourceforge.net/projects/penguins-eggs/) ed instalarlo con il comando:
@@ -266,12 +224,6 @@ Per installare la versione dalla repository community, basta:
 ```bash
 sudo pamac upgrade
 sudo pamac install penguins-eggs
-```
-
-#### OpenMamba
-
-```bash
-sudo dnf install penguins-eggs
 ```
 
 #### OpenSUSE
