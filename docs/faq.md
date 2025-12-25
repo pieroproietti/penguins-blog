@@ -10,7 +10,7 @@ import Translactions from '@site/src/components/Translactions';
 
 
 ## 1. What is Penguins' Eggs?
-Penguins' Eggs is a tool to create live ISO images and custom Linux distributions, initially based on Debian/Ubuntu and derivatives, actually support include Fedora, OpenSUSE and derivatives. It allows you to generate reproducible systems or "hatch" new distros.
+Penguins' Eggs is a tool to create live ISO images and custom Linux respin, initially based on Debian/Ubuntu and derivatives, actually support include Arch, Fedora, Manjaro, OpenSUSE and derivatives. It allows you to generate reproducible systems or "hatch" new respin. It is also possible to use penguins-eggs to create secure, virtually unbreakable live systems using the --fullcrypt option.
 
 ## 2. What are the distros supported?
 penguins-eggs is compatible with Almalinux, Arch, Debian, Devuan, Fedora, OpenSUSE, Rocky and Ubuntu and most of derivatives. 
@@ -56,6 +56,7 @@ Other inmportants documents, can be found on the [penguins-eggs](https://github.
 - Develop educational Linux environments for classrooms with specific software packages.
 - Create portable development environments that can be deployed consistently across different machines.
 - Build specialized penetration testing or system administration live distributions.
+- Secure, virtually unbreakable live systems.
 
 ## 9. Can I use penguins-eggs without sudo?
 No, certain operations require root privileges to mount filesystems and modify system settings.
