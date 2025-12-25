@@ -11,7 +11,7 @@ import Translactions from '@site/src/components/Translactions';
 
 In case of problems with translation links, You can consult a detailed [README](https://github.com/pieroproietti/penguins-eggs#readme) in English on the repository.
 
-Manuale aggiornato a `eggs v10.1.x` ultimo aggiornamento 30 maggio 2025
+Manuale aggiornato a `eggs v25.12.22-1` ultimo aggiornamento 25 dicembre 2025
 
 ## Introduzione
 
