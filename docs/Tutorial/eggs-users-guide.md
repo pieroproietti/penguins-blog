@@ -20,7 +20,7 @@ Manuale aggiornato a `eggs v10.1.x` ultimo aggiornamento 30 maggio 2025
 `penguins' eggs` è uno strumento moderno per la rimasterizzazione di sistemi Linux, pensato come successore di Remastersys e Systemback. Il software nasce dall'idea della "riproduzione" applicata ai sistemi operativi: ogni sistema può "deporre le sue uova" per dare vita a nuovi sistemi identici o personalizzati.
 
 **Caratteristiche principali:**
-- Supporto per oltre 15 distribuzioni Linux (Almalinux, Arch, Debian, Devuan, Fedora, Manjaro, openmamba, openSUSE, Rocky, Ubuntu, [SUPPORTED-DISTROS](https://github.com/pieroproietti/fresh-eggs/blob/main/SUPPORTED-DISTROS.md).
+- Supporto per oltre 15 distribuzioni Linux (Almalinux, Arch, Debian, Devuan, Fedora, Manjaro, openSUSE, Rocky, Ubuntu, [SUPPORTED-DISTROS](https://github.com/pieroproietti/fresh-eggs/blob/main/SUPPORTED-DISTROS.md).
 - Installazione semplificata con `fresh-eggs`
 - Creazione di ISO live avviabili ed installabile, con o senza i vostri dati.
 - Installer CLI (krill) e GUI (calamares)
@@ -194,10 +194,12 @@ Scaricare il pacchetto da [penguins-eggs.net](https://penguins-eggs.net/basket/i
 sudo apt install ./penguins-eggs_25.7.30-1_amd64.deb
 ```
 
-Una volta installato il pacchetto penguins-eggs, ootete aggiungere la reposito penguins-eggs-ppa per ternerlo aggiornato:
+Una volta installato il pacchetto penguins-eggs, potete aggiungere la repository penguins-eggs.net/repos per ternerlo aggiornato:
 ```
-sudo eggs tool ppa --add
+sudo eggs tools repo --add
 ```
+
+
 
 **Installare via PPA:**
 Copiate ed incollate i seguenti comandi:
