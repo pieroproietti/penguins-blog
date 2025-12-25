@@ -123,7 +123,7 @@ sudo eggs wardrobe wear colibri     # Applica costume desktop
 
 ## Casi d'uso comuni
 
-### Creare una distribuzione personalizzata
+### Creare una respin personalizzata
 
 1. **Preparate il sistema base**: Installate applicazioni, configurate temi, personalizzate
 2. **Pulite il sistema**: `sudo eggs tools clean`
@@ -138,8 +138,14 @@ sudo eggs produce --clone
 ```
 
 **Backup criptato:**
+Su Debian trixie o Devual excalibur, utilizzate --fullcrypt:
 ```bash
-sudo eggs produce --cryptedclone
+sudo eggs produce --fullcrypt 
+```
+
+per le altre distribuzioni utilizzate --homecrypt
+```bash
+sudo eggs produce --homecrypt 
 ```
 
 ## Wardrobe - Configurazioni predefinite
@@ -180,7 +186,7 @@ Deepin, EndeavourOS, KDE neon, Linux Mint, LMDE, Pop!_OS, Zorin OS e [molte altr
 - **arm64** (aarch64)
 
 ### Installazione per distribuzione
-Per tutte le distribuzioni, una volta installato il pacchetto penguins-eggs, potete aggiungere la repository penguins-eggs.net/repos per ternerlo aggiornato:
+Per tutte le distribuzioni, una volta installato il pacchetto penguins-eggs, potete aggiungere la repository `https://penguins-eggs.net/repos` per tenerlo aggiornato:
 ```
 sudo eggs tools repo --add
 ```
@@ -195,29 +201,29 @@ doas apk add ./penguins-eggs-*.apk
 **Installazione manuale:**
 Scaricare il pacchetto da [penguins-eggs.net](https://penguins-eggs.net/basket/index.php?p=) o dalla pagina [sourceforge](https://sourceforge.net/projects/penguins-eggs/) ed instalarlo con il comando:
 ```bash
-sudo apt install ./penguins-eggs_25.7.30-1_amd64.deb
+sudo apt install ./penguins-eggs_25.12.22-1_amd64.deb
 ```
 
 #### Arch Linux
 Scaricare il pacchetto da [penguins-eggs.net](https://penguins-eggs.net/basket/index.php?p=) o dalla pagina [sourceforge](https://sourceforge.net/projects/penguins-eggs/) ed instalarlo con il comando:
 ```
-sudo pacman -U ./penguins-eggs-25.7.30-1-any.pkg.tar.zst
+sudo pacman -U ./penguins-eggs-25.12.22-1-any.pkg.tar.zst
 ```
 
 ### Fedora, Rocky, Almalinux
 Scaricare il pacchetto da [penguins-eggs.net](https://penguins-eggs.net/basket/index.php?p=) o dalla pagina [sourceforge](https://sourceforge.net/projects/penguins-eggs/) ed instalarlo con il comando:
 ```
-sudo dnf install ./penguins-eggs-25.7.30-1.fc42.x86_64.rpm
+sudo dnf install ./penguins-eggs-25.12.22-1.fc42.x86_64.rpm
 ```
 Per Rocky ed Almalinux:
 ```
-sudo dnf install ./penguins-eggs-25.7.30-1.el9.x86_64.rpm
+sudo dnf install ./penguins-eggs-25.12.22-1.el9.x86_64.rpm
 ```
 
 #### Manjaro
 Penguins-eggs è presente nel repository community, può comunque essere scaricato da [penguins-eggs.net](https://penguins-eggs.net/basket/index.php?p=) o dalla pagina [sourceforge](https://sourceforge.net/projects/penguins-eggs/) ed instalarlo con il comando:
 ```
-sudo pacman -U ./penguins-eggs-25.7.30-1-any.pkg.tar.zst
+sudo pacman -U ./penguins-eggs-25.12.22-1-any.pkg.tar.zst
 ```
 
 Per installare la versione dalla repository community, basta:
@@ -229,7 +235,7 @@ sudo pamac install penguins-eggs
 #### OpenSUSE
 Scaricare il pacchetto da [penguins-eggs.net](https://penguins-eggs.net/basket/index.php?p=) o dalla pagina [sourceforge](https://sourceforge.net/projects/penguins-eggs/) ed instalarlo con il comando:
 ```
-sudo zypper install ./penguins-eggs-25.7.30-1.opensuse.x86_64.rpm
+sudo zypper install ./penguins-eggs-25.12.22-1.opensuse.x86_64.rpm
 ```
 
 ### Utilizzo da codice sorgente
