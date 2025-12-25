@@ -130,23 +130,26 @@ sudo eggs wardrobe wear colibri     # Applica costume desktop
 3. **Producete la ISO**: `sudo eggs produce --pendrive`
 4. **Per distribuzione finale**: `sudo eggs produce --pendrive --release`
 
-### Backup del sistema
+### Creare un clone live del sistema 
 
-**Backup normale:**
+**Clone in chiaro:**
 ```bash
 sudo eggs produce --clone
 ```
 
-**Backup criptato:**
-Su Debian trixie o Devual excalibur, utilizzate --fullcrypt:
+**Clone criptato:**
+Su Debian trixie o Devuan excalibur, utilizzate --fullcrypt:
 ```bash
 sudo eggs produce --fullcrypt 
 ```
+Tutto il vostro filesystem risiede in un volume LUKS denominato root.img all'interno della ISO live.
+
 
 per le altre distribuzioni utilizzate --homecrypt
 ```bash
 sudo eggs produce --homecrypt 
 ```
+Tutta la directory `/home/` e gli account degli utenti sono cryptati all'interno di un volume LUKS denominato home.img all'interno della ISO live.
 
 ## Wardrobe - Configurazioni predefinite
 
