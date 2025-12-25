@@ -13,9 +13,9 @@ import Translactions from '@site/src/components/Translactions';
 
 Transform your Linux system into an installable ISO using `penguins-eggs`.
 
-## Quick Installation
+## Quick universal Installation
 
-### Install package penguins (all distros)
+### Install package penguins-eggs (all distros)
 ```bash
 git clone https://github.com/pieroproietti/fresh-eggs
 cd fresh-eggs
@@ -44,15 +44,15 @@ You'll get an ISO named: `egg-of_DISTRO_VERSION_HOSTNAME-ARCH_DATE_TIME.iso`
 - `eggs calamares --install` - Graphical installer (optional)
 - `eggs` - Complete command list
 
-### Create your first live fullcrypted
-This procedure only works with Debian Trixe and Devuan Excalibur, allowing you to have a fully encrypted and usable copy of the system.
+### Create your first secure, virtually unbreakable live systems.
+This procedure only works with Debian Trixe and Devuan Excalibur, allowing you to have a fully encrypted and usable live copy of your system.
 
 ```
 sudo eggs produce --fullcrypt
 ```
 
 ### Create your first live homecrypted
-This procedure works on most distributions. Unlike fullcrypt, which encrypts the entire system, here only user home directories and accounts are encrypted.
+This procedure works on most distributions. Unlike fullcrypt, which encrypts the entire system, here only user home directories and users accounts are encrypted.
 
 ```
 sudo eggs produce --homecrypt
