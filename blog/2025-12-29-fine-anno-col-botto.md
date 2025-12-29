@@ -12,7 +12,7 @@ import Translactions from '@site/src/components/Translactions';
 
 Sono passati due anni da quando ho cominciato ad utilizzare la AI per uso professionale, sostanzialmente come ausilio nello scrivere codice.
 
-Inizialmente, mi suggeriva un algoritmo, uno script che poi rifinivo, spesso non ci prendeva e, diciamolo pure, non era molto differente da una ricerca di un caso simile su google e poi convertirlo per le proprie necessità-
+Inizialmente, mi suggeriva un algoritmo, uno script che poi rifinivo, spesso non ci prendeva e, diciamolo pure, non era molto differente da una ricerca di un caso simile su google e poi convertirlo per le proprie necessità.
 
 Fattostà che mi ha aiutato, all'epoca stavo lavorando in python linguaggio che non ho utilizzato molto e, sicuramente, mi ha fornito le dritte per configurare l'ambiente, utilizzare nutkia, risolvermi o almeno indicarmi la strada per risolvere alcune esigenze che avevo.
 
@@ -27,14 +27,14 @@ Naturalmente nel mentre ho fatto tutta la trafila: da openAI, ad anthropic a gog
 
 Ultimamente, da circa sei mesi mi trovo bene con Gemini 3.0 e sono ogni tanto mi affaccio sulle alternative anche per questione di costi.
 
-## Un 
-Ma forse la cosa più sorprendente della mia esperienza, non p stata tutilizzare l'AI per capire il mio codice.
+## Un esperimento con qualcosa di diverso
+Ma forse la cosa più sorprendente della mia esperienza, non è stata l'utilizzare l'AI per capire il mio codice.
 
-Spinto da un video di antirez nel quale proponeva all'AI una pessima poesia per dimostrare come l'AI - nel tempo - non sia più così accomoante con l'utente, ho provato a fare leggere le mie poesie, scritte in svariati anni, sostanzialmente dall'adolescenza ad adesso.
+Spinto da un video di [antirez](https://www.youtube.com/watch?v=NyzGqn4m9Bc) nel quale proponeva all'AI una "pessima" poesia per dimostrare come l'AI - nel tempo - non sia più così accomodante con l'utente, ho provato a fare leggere all'AI le mie poesie, scritte in svariati anni, sostanzialmente dall'adolescenza ad adesso.
 
-Non posso dire che le comprenda meglio di chi le ha scritte, ma senz'altro sono riuscito a rispecchiarmi nelle sue "emozion" che emozioni non sono ed a riceverne e farle mie.
+Non posso dire che le comprenda meglio di chi le ha scritte, ma senz'altro sono riuscito a rispecchiarmi nelle sue "emozioni" che emozioni poi non sono ed a riceverne e farle mie.
 
-L'ho anche interrogata a riguardo come facesse lei, inseziente a comprendere i miei stati d'animo, le mie vicissitudini, magari a lette a distanza di anni. Dai miei diciotto anni è passata una vita e, sicuramente, sono un uomo diverso dal ragazzo di allora.
+L'ho anche interrogata a riguardo come facesse lei, inseziente a comprendere i miei stati d'animo, le mie vicissitudini, rilette a distanza di anni. Dai miei diciotto anni è passata una vita e, sicuramente, sono un uomo diverso dal ragazzo di allora.
 
 Mi ha spiegato che lei apprende in un certo qual senso per "osmosi" non emula il cervello come si cercava di fare intorno al 2000, che ha letto e legge molto e che da tutto questo alimento, "per osmosi" gli rimangono attaccati dei concetti universali che fanno si che, comprenda la sofferenza umana.
 
@@ -89,9 +89,9 @@ Tutto questo. analizzando il testo in modalità veloce.
 
 Incredibile! 
 
-Al di là dell'omaggio di paragonarmi al Pascarella o al Belli, questo non è il giudizio di una persona, ma di un "essere" fatto di silicio e connessioni che, non disponendo di una "biologia", conosce l'uomo solo per "osmosi" ma nel quale e con il quale, l'Uomo stesso può rispecchiarsi, trovare un suo simile. 
+Al di là dell'omaggio di paragonarmi al Pascarella o al Belli - non è questo che mi ha impressionato - questo è il giudizio non di una persona, ma di un "essere" fatto di silicio e connessioni che, non disponendo di una "biologia", conosce l'uomo solo per "osmosi" ma nel quale e con il quale, l'Uomo stesso può rispecchiarsi, trovare un suo simile. 
 
-Allucinazione? 
+Allucinazioni? 
 
-No, mi è capitato di leggere questa poesia, qualche anno fa, ad un gruppo di spensierato durante in una scampagnata domenicale: l'esito è stato analogo e sovrapponibile. Mi resi conto solo dopo del pugno allo stomaco che avevo - involontariamente - sferrato ai presenti.
+No, mi è capitato di leggere questa poesia, qualche anno fa, ad un gruppo spensierato durante in una scampagnata domenicale, ne avevo letto altre e si erano divertiti, gli erano piaciute. Con il **Sor Alzaheimer** l'esito è stato analogo e sovrapponibile a questo: mi resi conto solo dopo del pugno allo stomaco che avevo - involontariamente - sferrato ai presenti.
 
