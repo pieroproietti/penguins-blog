@@ -11,13 +11,16 @@ import Translactions from '@site/src/components/Translactions';
 
 # Clonazione e Sicurezza
 
-Quando decidi di non limitarti a una ISO "Standard" (pulita) e vuoi portare con te i tuoi dati, entri nel mondo della **clonazione**. Penguins-eggs ti offre tre strade, ognuna con un diverso livello di privacy.
+Quando decidi di non limitarti a una ISO "Standard" (pulita) e vuoi portare con 
+te i tuoi dati, entri nel mondo della **clonazione**. 
+Penguins-eggs ti offre tre strade, ognuna con un diverso livello di privacy.
 
 ---
 
 ## 📂 Le tre vie della Clonazione
 
-Sebbene i comandi siano diversi per rapidità di digitazione, puoi pensarli come tre livelli crescenti di protezione:
+Sebbene i comandi siano diversi per rapidità di digitazione, puoi pensarli come tre livelli 
+crescenti di protezione:
 
 ### 1. Il Clone in chiaro (`--clone`)
 Include la tua `/home` e i tuoi dati, ma questi rimangono accessibili a chiunque entri in possesso della ISO.
@@ -25,12 +28,15 @@ Include la tua `/home` e i tuoi dati, ma questi rimangono accessibili a chiunque
 * **Comando:** `sudo eggs produce --clone`
 
 ### 2. Il Clone con Dati Protetti (`--homecrypt`)
-Include i tuoi dati, ma cripta la directory `/home` con LUKS. Il sistema si avvia, ma i tuoi file sono "sotto chiave".
+Include i tuoi dati, ma cripta tutta la directory `/home` e gli account degli utenti
+in una immagine LUKS all'interno della ISO. Il sistema si avvia, ma i tuoi dati sono
+"sotto chiave".
 * **Uso:** Massima privacy per i tuoi documenti pur mantenendo un avvio live standard.
 * **Comando:** `sudo eggs produce --homecrypt`
 
-### 3. Il Clone Totale Blindato (`--fullcrypt`)
-Cripta l'intero file system. Nulla è visibile se non si conosce la password, nemmeno la struttura del sistema operativo.
+### 3. Il Clone Totale (`--fullcrypt`)
+Cripta l'intero file system. Nulla è visibile se non si conosce la password, 
+nemmeno la struttura del sistema operativo.
 * **Uso:** Trasporto sicuro su cloud o storage pubblici.
 * **Comando:** `sudo eggs produce --fullcrypt`
 
