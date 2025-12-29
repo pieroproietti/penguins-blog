@@ -17,9 +17,9 @@ In case of problems with translation links, You can consult a detailed [README](
 
 In Italia abbiamo parecchio a cuore il Rinascimento, periodo storico in cui i Comuni, le Repubbliche marinare, la città di Firenze e Roma fiorivano attraendo artisti e producendo cultura.
 
-Ecco, vorrei fare un parallelo con l'epoca d'oro di Remastesys e Systemback, e proporre penguins-eggs - e non solo - come il rinascimento, in minuscolo naturalmente, dei sistemi di rimasterizzazione.
+Ecco, vorrei fare un parallelo con l'epoca d'oro di Remastesys e Systemback, e proporre penguins-eggs - e non solo - come un  "rinascimento", in minuscolo, dei sistemi di rimasterizzazione.
 
-In questo contesto **penguins-eggs** emerge come l'erede naturale di storici progetti come Remastersys e Systemback. Sviluppato da Piero Proietti, questo tool moderno e versatile rappresenta una soluzione completa per creare distribuzioni personalizzate e backup di sistema su un'ampia gamma di distribuzioni Linux.
+In questo contesto **penguins-eggs** emerge come l'erede naturale di storici progetti come Remastersys e Systemback. Sviluppato da Piero Proietti, questo tool moderno e versatile rappresenta una soluzione completa per creare respin personalizzate e backup di sistema su un'ampia gamma di distribuzioni Linux.
 
 ## Che cos'è penguins-eggs?
 
@@ -30,7 +30,7 @@ Penguins-eggs è uno strumento di clonazione del sistema e rimasterizzazione del
 Una delle caratteristiche più distintive di penguins-eggs è la sua straordinaria compatibilità multi-distribuzione. Nato originariamente su Debian, oggi supporta:
 
 - **Famiglia Debian/Ubuntu**: Debian, Devuan, Ubuntu e derivate (Linux Mint, LMDE, KDE neon)
-- **Arch Linux**: Arch, Manjaro, EndeavourOS, Garuda
+- **Arch Linux**: Arch, Manjaro/Biglinux, EndeavourOS, Garuda
 - **Enterprise Linux**: Fedora, Rocky Linux, AlmaLinux
 - **openSUSE**: Supporto completo per la distribuzione openSUSE
 
@@ -78,11 +78,11 @@ Yolk è un repository locale integrato nell'ISO che contiene i pacchetti essenzi
 
 ## Vantaggi Distintivi
 
-**Velocità e Efficienza**: Utilizza livefs per l'acquisizione istantanea del sistema live, significativamente più veloce rispetto ai metodi tradizionali di copia dell'intero filesystem.
+**Velocità ed Efficienza**: Utilizza overlayfs per l'acquisizione istantanea del sistema live, significativamente più veloce rispetto ai metodi tradizionali di copia dell'intero filesystem.
 
 **Sicurezza**: Utilizza esclusivamente i pacchetti originali delle distribuzioni senza modificare le liste dei repository, garantendo integrità e affidabilità.
 
-**Facilità d'Uso**: Comandi intuitivi come `eggs produce`, `eggs install`, e assistenti interattivi "mom" e "dad" per la configurazione guidata. L'installer krill permette installazioni CLI rapide anche senza interfaccia grafica.
+**Facilità d'Uso**: Comandi intuitivi come `eggs produce`, `eggs krill`, e assistenti interattivi "mom" e "dad" per la configurazione guidata. L'installer krill permette installazioni CLI rapide anche senza interfaccia grafica.
 
 **Open Source**: Completamente open source e attivamente sviluppato, con una community crescente su GitHub.
 

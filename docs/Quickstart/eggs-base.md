@@ -69,5 +69,5 @@ ls -lh
 ```
 
 :::info Prossimo Passo
-Ora che hai la tua ISO, puoi provarla su una macchina virtuale o passare al livello successivo: [Personalizzare il sistema con il Wardrobe](./wardrobe).
+Ora che hai la tua ISO, puoi provarla su una macchina virtuale o su un hardware fisico e passare al livello successivo: [Personalizzare il sistema con il Wardrobe](./wardrobe).
 :::

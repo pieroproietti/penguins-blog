@@ -63,4 +63,4 @@ sudo eggs produce --homecrypt
 - [GitHub Issues](https://github.com/pieroproietti/penguins-eggs/issues)
 - [Telegram](https://t.me/penguins_eggs)
 
-**With just 2 commands you've created a complete, installable Linux distribution!** 🎉
+**With just 2 commands you've created a complete, installable Linux yours respin!** 🎉
