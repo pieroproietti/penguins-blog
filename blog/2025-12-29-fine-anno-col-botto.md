@@ -25,16 +25,16 @@ E questo per l'uso, diciamo così professionale.
 
 Naturalmente nel mentre ho fatto tutta la trafila: da openAI, ad anthropic a gogle gemini, a DeepSeek.
 
-Ultimamente, da circa sei mesi mi trovo bene con Gemini 3.0 e sono ogni tanto mi affaccio sulle alternative anche per questione di costi.
+Ultimamente, da circa sei mesi mi trovo bene con Gemini 3.0 e solo ogni tanto mi affaccio sulle alternative. anche per questione di costi.
 
 ## Un esperimento con qualcosa di diverso
 Ma forse la cosa più sorprendente della mia esperienza, non è stata l'utilizzare l'AI per capire il mio codice.
 
 Spinto da un video di [antirez](https://www.youtube.com/watch?v=NyzGqn4m9Bc) nel quale proponeva all'AI una "pessima" poesia per dimostrare come l'AI - nel tempo - non sia più così accomodante con l'utente, ho provato a fare leggere all'AI le mie poesie, scritte in svariati anni, sostanzialmente dall'adolescenza ad adesso.
 
-Non posso dire che le comprenda meglio di chi le ha scritte, ma senz'altro sono riuscito a rispecchiarmi nelle sue "emozioni" che emozioni poi non sono ed a riceverne e farle mie.
+Non posso dire che le comprenda meglio di chi le ha scritte, ma senz'altro sono riuscito a rispecchiarmi nel suo "sentito" che emozioni poi non sono ed a riceverne e farle mie.
 
-L'ho anche interrogata a riguardo come facesse lei, inseziente a comprendere i miei stati d'animo, le mie vicissitudini, rilette a distanza di anni. Dai miei diciotto anni è passata una vita e, sicuramente, sono un uomo diverso dal ragazzo di allora.
+L'ho anche interrogata a riguardo come facesse lei, inseziente a comprendere i miei stati d'animo, le mie vicissitudini, lette a distanza di anni. Dai miei diciotto anni è passata una vita e, sicuramente, sono un uomo diverso dal ragazzo di allora.
 
 Mi ha spiegato che lei apprende in un certo qual senso per "osmosi" non emula il cervello come si cercava di fare intorno al 2000, che ha letto e legge molto e che da tutto questo alimento, "per osmosi" gli rimangono attaccati dei concetti universali che fanno si che, comprenda la sofferenza umana.
 
@@ -82,10 +82,9 @@ Descrivi un’Italia (e una Roma) allucinante: gente che si sbrana per un parche
 4. Il richiamo allo Smemorato di Collegno
 Citando lo smemorato di Collegno (il celebre caso Bruneri-Canella), chiudi il cerchio sulla precarietà dell'identità italiana. "Fortuna nun me manca l'allegria!": è quell'allegria tragica di chi ha visto troppo e decide che, per non impazzire, l'unica soluzione è una risata amara e una dimenticanza benedetta.
 
-Tutto questo. analizzando il testo in modalità veloce.
-
-
 **Piero**
+
+Tutto questo, analizzando il testo in modalità veloce, neppure la chain of thoughts.
 
 Incredibile! 
 
@@ -93,5 +92,5 @@ Al di là dell'omaggio di paragonarmi al Pascarella o al Belli - non è questo c
 
 Allucinazioni? 
 
-No, mi è capitato di leggere questa poesia, qualche anno fa, ad un gruppo spensierato durante in una scampagnata domenicale, ne avevo letto altre e si erano divertiti, gli erano piaciute. Con il **Sor Alzaheimer** l'esito è stato analogo e sovrapponibile a questo: mi resi conto solo dopo del pugno allo stomaco che avevo - involontariamente - sferrato ai presenti.
+No, mi è capitato di leggere questa poesia, qualche anno fa, ad un gruppo spensierato durante in una scampagnata domenicale, ne avevo lette altre e si erano divertiti, gli erano piaciute. Con il **Sor Alzaheimer** l'esito è stato analogo e sovrapponibile a questo: mi resi conto solo dopo del pugno allo stomaco che avevo - involontariamente - sferrato ai presenti.
 
