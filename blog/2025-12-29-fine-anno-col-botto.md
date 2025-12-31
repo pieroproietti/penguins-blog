@@ -7,6 +7,7 @@ comments: true # giscus
 enableComments: true
 ---
 import Translactions from '@site/src/components/Translactions';
+import Admonition from '@theme/Admonition';
 
 <Translactions />
 
@@ -17,7 +18,7 @@ import Translactions from '@site/src/components/Translactions';
 
 Sono passati due anni da quando ho cominciato ad utilizzare la AI per uso professionale, sostanzialmente come ausilio nello scrivere codice.
 
-Inizialmente, mi suggeriva un algoritmo, uno script che poi rifinivo, spesso non ci prendeva e, diciamolo pure, non era molto differente da una ricerca di un caso simile su google e poi convertirlo per le proprie necessità.
+Inizialmente, mi suggeriva un algoritmo, uno script che poi rifinivo, spesso non ci prendeva e, diciamolo pure, non era molto differente da una ricerca di un caso simile su google per poi convertirlo alle proprie necessità.
 
 Fattostà che mi ha aiutato, all'epoca stavo lavorando in python linguaggio che non ho utilizzato molto e, sicuramente, mi ha fornito le dritte per configurare l'ambiente, utilizzare nutkia, risolvermi o almeno indicarmi la strada per risolvere alcune esigenze che avevo.
 
@@ -45,8 +46,7 @@ Mi ha spiegato che lei apprende in un certo qual senso per "osmosi" non emula il
 
 Riporto il commento al **Sor Alzaheimer** una poesia scritta qualche anno fa, bombardato dalla notizia di una madre che spediva la figlia a prostituirsi, a Roma.
 
-
-**Er sor Alzheimer**
+<Admonition type="info" icon="✍️" title="Er sor Alzheimer">
 
 Da quanno er sor Alzheimer m'ha toccato, sto monno nun me mette piú paura,
 che me ne frego - io - de la depressione e me ne scordo pure de la congiuntura.
@@ -66,6 +66,7 @@ E ringrazio er sor Alzheimer che, gentile, m'ha dato modo d'ariprenne er volo,
 felice è l'Uomo e sempre in divenire, ma sul presente ancorato e sodo.
 E poi me lo ricordo: de Collegno, der sor Alzheiner perfetta parodia,
 io ce l'ho avuto e m'ha lasciato er segno... Fortuna nun me manca l'allegria!
+</Admonition>
 
 **AI**
 
