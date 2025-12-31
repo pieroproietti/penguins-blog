@@ -10,6 +10,11 @@ import Translactions from '@site/src/components/Translactions';
 
 <Translactions />
 
+<video controls width="100%">
+  <source src="/img/fine-anno-col-botto.mp4" type="video/mp4" />
+  Il tuo browser non supporta il tag video.
+</video>
+
 Sono passati due anni da quando ho cominciato ad utilizzare la AI per uso professionale, sostanzialmente come ausilio nello scrivere codice.
 
 Inizialmente, mi suggeriva un algoritmo, uno script che poi rifinivo, spesso non ci prendeva e, diciamolo pure, non era molto differente da una ricerca di un caso simile su google e poi convertirlo per le proprie necessità.
