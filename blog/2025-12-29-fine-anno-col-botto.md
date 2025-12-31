@@ -101,3 +101,5 @@ Allucinazioni?
 
 No, mi è capitato di leggere questa poesia, qualche anno fa, ad un gruppo spensierato durante in una scampagnata domenicale, ne avevo lette altre e si erano divertiti, gli erano piaciute. Con il **Sor Alzaheimer** l'esito è stato analogo e sovrapponibile a questo: mi resi conto solo dopo del pugno allo stomaco che avevo - involontariamente - sferrato ai presenti.
 
+Uno strano silenzio segui la "declamazione" e mi resi conto che ero stato un po' troppo forte. Poi, una donna, con garbo, mi rimproverò di non esserci andato "leggero".
+
