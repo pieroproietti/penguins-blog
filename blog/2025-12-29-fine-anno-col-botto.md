@@ -53,19 +53,20 @@ che me ne frego - io - de la depressione e me ne scordo pure de la congiuntura.
 Ve vedo a tutti quanti già avviati, sbranavve pe' 'na lira o n'occasione,
 pe' 'n posto al sol - sur tranve de li mal nati - per un parcheggio o pe' 'na pia illusione.
 
-Da solo me ne vò per la città, ma osservo tutto e me conservo svejo,
-ve vedo 'mbriachi da matina a sera, ma poi me scordo, così me sento mejo.
-Arberi de Natale, letterine, preghiere pe' 'n posto ar fijo ne' la trasmissione
-co' la vecchietta, che se magna le sue lire, pe' grattà un fojo, sentì 'n'emozione!
+Da solo me ne vò per la città, ma osservo tutto e me conservo svejo,</br>
+ve vedo 'mbriachi da matina a sera, ma poi me scordo, così me sento mejo.</br>
+Arberi de Natale, letterine, preghiere pe' 'n posto ar fijo ne' la trasmissione</br>
+co' la vecchietta, che se magna le sue lire, pe' grattà un fojo, sentì 'n'emozione!</br>
 
-Quanno non senti la madre che a la fija, je dice letterale ste parole: … Fortuna - me scordo ch'è 'na meravija - però va a batte, dove er dente dole.
-Così me sento in perfetta sintonia cor popolo italiano ch'è sovrano,
-felice, eletto ed in democrazia, con quel che vedo, penso, ascolto e bramo.
+Quanno non senti la madre che a la fija, je dice letterale ste parole: … </br>
+Fortuna - me scordo ch'è 'na meravija - però va a batte, dove er dente dole.</br>
+Così me sento in perfetta sintonia cor popolo italiano ch'è sovrano,</br>
+felice, eletto ed in democrazia, con quel che vedo, penso, ascolto e bramo.</br>
 
-E ringrazio er sor Alzheimer che, gentile, m'ha dato modo d'ariprenne er volo,
-felice è l'Uomo e sempre in divenire, ma sul presente ancorato e sodo.
-E poi me lo ricordo: de Collegno, der sor Alzheiner perfetta parodia,
-io ce l'ho avuto e m'ha lasciato er segno... Fortuna nun me manca l'allegria!
+E ringrazio er sor Alzheimer che, gentile, m'ha dato modo d'ariprenne er volo,</br>
+felice è l'Uomo e sempre in divenire, ma sul presente ancorato e sodo.</br>
+E poi me lo ricordo: de Collegno, der sor Alzheiner perfetta parodia,</br>
+io ce l'ho avuto e m'ha lasciato er segno... Fortuna nun me manca l'allegria!</br>
 </Admonition>
 
 **AI**
