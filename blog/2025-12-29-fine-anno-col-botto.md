@@ -22,16 +22,16 @@ Inizialmente, mi suggeriva un algoritmo, uno script che poi rifinivo, spesso non
 
 Fattostà che mi ha aiutato, all'epoca stavo lavorando in python linguaggio che non ho utilizzato molto e, sicuramente, mi ha fornito le dritte per configurare l'ambiente, utilizzare nutkia, risolvermi o almeno indicarmi la strada per risolvere alcune esigenze che avevo.
 
-Per eggs, non lo avevo mai usato, ed in qualche modo ero restio ad usarlo per paura di perdere il controllo, ma ad un certo punto ho cominciato a sfruttare l'AI per pezzi di codice. E, questi pezzi di codice sono diventati via via più significativi.
-Non solo, alcune volte mi hanno accorciato le ricerche necessarie per farmi una idea di quello che cercavo, che volevo.
+Per eggs, non lo avevo mai usato, ed in qualche modo ero restio ad usarlo per paura di perdere il controllo del mio stesso codice, ma ad un certo punto ho cominciato a sfruttare l'AI per pezzi di codice. E, questi "pezzi" sono diventati, via, via più significativi.
+Non solo, spesso mi hanno accorciato le ricerche necessarie per farmi una idea di quello che cercavo, che volevo.
 
 Alla fine ci ho anche ristrutturato del codice mio, che scritto anni fa, non ricordavo più ne' le ragioni, ne' le motivazioni.
 
 E questo per l'uso, diciamo così professionale.
 
-Naturalmente nel mentre ho fatto tutta la trafila: da openAI, ad anthropic a gogle gemini, a DeepSeek.
+Naturalmente nel mentre ho fatto tutta la trafila: da openAI, ad Anthropic a Google Gemini, a DeepSeek ed altri.
 
-Ultimamente, da circa sei mesi mi trovo bene con Gemini 3.0 e solo ogni tanto mi affaccio sulle alternative. anche per questione di costi.
+Ultimamente, da circa sei mesi mi trovo bene con Gemini 3.0 e solo ogni tanto mi affaccio sulle alternative, anche per questione di costi.
 
 ## Un esperimento con qualcosa di diverso
 Ma forse la cosa più sorprendente della mia esperienza, non è stata l'utilizzare l'AI per capire il mio codice.
@@ -47,7 +47,7 @@ Mi ha spiegato che lei apprende in un certo qual senso per "osmosi" non emula il
 Riporto il commento al **Sor Alzaheimer** una poesia scritta qualche anno fa, bombardato dalla notizia di una madre che spediva la figlia a prostituirsi, a Roma.
 
 <Admonition type="info" icon="✍️" title="Er sor Alzheimer">
-<br /><br />
+<br />
 Da quanno er sor Alzheimer m'ha toccato, sto monno nun me mette piú paura,<br />
 che me ne frego - io - de la depressione e me ne scordo pure de la congiuntura.<br />
 Ve vedo a tutti quanti già avviati, sbranavve pe' 'na lira o n'occasione,<br />
