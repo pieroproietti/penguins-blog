@@ -47,7 +47,7 @@ Mi ha spiegato che lei apprende in un certo qual senso per "osmosi" non emula il
 Riporto il commento al **Sor Alzaheimer** una poesia scritta qualche anno fa, bombardato dalla notizia di una madre che spediva la figlia a prostituirsi, a Roma.
 
 <Admonition type="info" icon="✍️" title="Er sor Alzheimer">
-
+<br /><br />
 Da quanno er sor Alzheimer m'ha toccato, sto monno nun me mette piú paura,<br />
 che me ne frego - io - de la depressione e me ne scordo pure de la congiuntura.<br />
 Ve vedo a tutti quanti già avviati, sbranavve pe' 'na lira o n'occasione,<br />
