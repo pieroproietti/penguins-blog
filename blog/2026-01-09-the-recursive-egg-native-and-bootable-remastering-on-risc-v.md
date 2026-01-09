@@ -44,7 +44,7 @@ cp /usr/share/qemu-efi-riscv64/RISCV_VIRT_VARS.fd debian-efi-vars.fd
 ## 2. L'installazione Base (Debian Netinst)
 Scaricate la ISO di **Debian Trixie (testing) per RISC-V** (la versione `netinst`) e avviamo l'installazione.
 
-![Screenshot Installazione QEMU RISC-V](inserisci-qui-il-tuo-screenshot.png)
+[Screenshot Installazione QEMU RISC-V](./#)
 
 Ecco il comando "magico" per avviare QEMU. Notate l'uso di `virtio-blk-device`:
 
@@ -117,10 +117,10 @@ Una volta dentro:
 2.  Lanciate il comando di produzione:
 
 ```bash
-eggs produce --release -n
+eggs produce -n
 ```
 
-In pochi minuti, `eggs` rimasterizzerà il sistema, comprimerà i dati e genererà una ISO avviabile completa di installer grafico (Krill/Calamares).
+In pochi minuti, `eggs` rimasterizzerà il sistema, comprimerà i dati e genererà una ISO avviabile completa di installer TUI (Krill).
 
 **La novità tecnica:** Eggs ora rileva automaticamente l'architettura `riscv64` e configura GRUB con il flag `--removable`. Questo risolve il problema storico delle macchine virtuali e delle board che non trovano il bootloader al riavvio.
 
@@ -153,9 +153,22 @@ qemu-system-riscv64 \
 
 Se vedete il menu di GRUB e l'installer parte... complimenti! Avete appena creato la vostra distribuzione Linux per RISC-V.
 
+## 6. Dal Virtuale al Reale:  le schede fisiche?
+Una domanda legittima è: *ma questa ISO funzionerà sulla mia scheda VisionFive 2, Star64 o LicheePi 4A che usa U-Boot?*
+
+La risposta è **sì**.
+
+Non c'è bisogno di scrivere complessi script per U-Boot. Le moderne implementazioni di U-Boot su queste schede offrono un layer di compatibilità **UEFI standard**.
+
+Qui entra in gioco l'importanza strategica del fix che abbiamo introdotto in Eggs (il flag `--removable`):
+1.  Eggs installa GRUB nel percorso di fallback standard UEFI: `/EFI/BOOT/BOOTRISCV64.EFI`.
+2.  Quando accendete la vostra scheda, U-Boot (che agisce come un BIOS) scansiona i dischi, trova questo file standard e lo avvia automaticamente.
+
+Quindi, fintanto che la vostra scheda ha un firmware U-Boot aggiornato nella flash SPI, potrete avviare e installare la vostra distribuzione personalizzata esattamente come fareste su un normale PC, senza dover modificare una singola riga di codice o configurazione.
+
 ---
 
 ### Conclusioni
-Il supporto RISC-V in Penguins-Eggs non è più sperimentale: è solido e ricorsivo. Questo apre le porte alla creazione di sistemi custom per schede come VisionFive 2, LicheePi 4A o StarFive, con la stessa facilità con cui si crea una ISO per PC.
+Il supporto RISC-V in Penguins-Eggs non è più sperimentale: è solido e ricorsivo. Questo apre le porte alla creazione di sistemi custom per il crescente ecosistema hardware RISC-V, con la stessa semplicità e potenza che gli utenti di Eggs apprezzano su x86 e ARM.
 
 Il codice è libero, l'uovo è tratto. Buon divertimento! 🐧🥚
