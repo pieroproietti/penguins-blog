@@ -44,8 +44,6 @@ cp /usr/share/qemu-efi-riscv64/RISCV_VIRT_VARS.fd debian-efi-vars.fd
 ## 2. L'installazione Base (Debian Netinst)
 Scaricate la ISO di **Debian Trixie (testing) per RISC-V** (la versione `netinst`) e avviamo l'installazione.
 
-[Screenshot Installazione QEMU RISC-V](./#)
-
 Ecco il comando "magico" per avviare QEMU. Notate l'uso di `virtio-blk-device`:
 
 ```bash
@@ -153,7 +151,7 @@ qemu-system-riscv64 \
 
 Se vedete il menu di GRUB e l'installer parte... complimenti! Avete appena creato la vostra distribuzione Linux per RISC-V.
 
-## 6. Dal Virtuale al Reale:  le schede fisiche?
+## 6. Dal Virtuale al Reale: e le schede fisiche?
 Una domanda legittima è: *ma questa ISO funzionerà sulla mia scheda VisionFive 2, Star64 o LicheePi 4A che usa U-Boot?*
 
 La risposta è **sì**.
