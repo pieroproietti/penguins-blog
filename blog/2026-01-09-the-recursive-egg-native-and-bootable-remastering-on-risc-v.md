@@ -17,7 +17,7 @@ import Admonition from '@theme/Admonition';
 
 Oggi però **Penguins-Eggs** cambia le carte in tavola.
 
-Con l'ultima release, abbiamo raggiunto la **piena ricorsività** su architettura `riscv64`. Cosa significa? Significa che puoi installare Debian, personalizzarla, "covarla" con Eggs e produrre una nuova ISO installabile che si avvia automaticamente, senza hack manuali. L'uovo ha deposto un altro uovo.
+Con l'ultima release, abbiamo raggiunto la **piena ricorsività** su architettura `riscv64`. Cosa significa? Significa che puoi installare Debian o Ubuntu, personalizzarla, "covarla" con Eggs e produrre una nuova ISO installabile che si avvia automaticamente, senza hack manuali. L'uovo ha deposto un altro uovo.
 
 In questo articolo, vi guiderò passo dopo passo nel processo: dall'installazione di una Debian Trixie "pulita" in QEMU, alla creazione della vostra distro RISC-V personalizzata.
 
