@@ -25,7 +25,11 @@ In questo articolo, vi guiderò passo dopo passo nel processo: dall'installazion
 Per prima cosa, ci serve un ambiente di lavoro su Linux. Installeremo QEMU e le utility per l'emulazione (necessarie se state lavorando su un PC x86_64).
 
 ```bash
-sudo apt install qemu-system-riscv64 qemu-user-static binfmt-support qemu-utils
+sudo apt install binfmt-support \
+            qemu-efi-riscv64 \
+            qemu-system-riscv64 \
+            qemu-user-static \
+            qemu-utils 
 ```
 
 Creiamo una cartella di lavoro e prepariamo il disco virtuale e le variabili EFI (il "BIOS" del nostro sistema virtuale):
@@ -165,6 +169,13 @@ Qui entra in gioco l'importanza strategica del fix che abbiamo introdotto in Egg
 Quindi, fintanto che la vostra scheda ha un firmware U-Boot aggiornato nella flash SPI, potrete avviare e installare la vostra distribuzione personalizzata esattamente come fareste su un normale PC, senza dover modificare una singola riga di codice o configurazione.
 
 ---
+
+## Ubuntu 26.04 (Resolute Raccoon)
+Oggi, 10 gennaio 2026, ho replicato con successo il lavoro di rimasterizzazione su Ubuntu 26.04 "Resolute Raccoon", ottenendo una ISO perfettamente avviabile e installabile.
+
+Potete trovare i dettagli tecnici e la documentazione su [Ubuntu RISC-V](https://github.com/pieroproietti/penguins-eggs/blob/master/architectures/UBUNTU-RISCV.md).
+
+Questo risultato è particolarmente significativo perché la prossima LTS, Ubuntu Resolute, impone requisiti molto più stringenti rispetto a Debian Trixie per quanto riguarda le specifiche dell'architettura RISC-V e la conformità UEFI.
 
 ### Conclusioni
 Il supporto RISC-V in Penguins-Eggs non è più sperimentale: è solido e ricorsivo. Questo apre le porte alla creazione di sistemi custom per il crescente ecosistema hardware RISC-V, con la stessa semplicità e potenza che gli utenti di Eggs apprezzano su x86 e ARM.
