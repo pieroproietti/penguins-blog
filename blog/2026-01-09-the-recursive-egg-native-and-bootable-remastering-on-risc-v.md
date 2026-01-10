@@ -175,9 +175,9 @@ Quindi, fintanto che la vostra scheda ha un firmware U-Boot aggiornato nella fla
 ## Ubuntu 26.04 (Resolute Raccoon)
 Oggi, 10 gennaio 2026, ho replicato con successo il lavoro di rimasterizzazione su Ubuntu 26.04 "Resolute Raccoon", ottenendo una ISO perfettamente avviabile e installabile.
 
-Potete trovare i dettagli tecnici e la documentazione su [Ubuntu RISC-V](https://github.com/pieroproietti/penguins-eggs/blob/master/architectures/UBUNTU-RISCV.md).
-
 Questo risultato è particolarmente significativo perché la prossima LTS, Ubuntu Resolute, impone requisiti molto più stringenti rispetto a Debian Trixie per quanto riguarda le specifiche dell'architettura RISC-V e la conformità UEFI.
+
+Potete trovare i dettagli tecnici e la documentazione su [Ubuntu RISC-V](https://github.com/pieroproietti/penguins-eggs/blob/master/architectures/UBUNTU-RISCV.md).
 
 ### Conclusioni
 Il supporto RISC-V in Penguins-Eggs non è più sperimentale: è solido e ricorsivo. Questo apre le porte alla creazione di sistemi custom per il crescente ecosistema hardware RISC-V, con la stessa semplicità e potenza che gli utenti di Eggs apprezzano su x86 e ARM.
