@@ -183,3 +183,5 @@ Questo risultato è particolarmente significativo perché la prossima LTS, Ubunt
 Il supporto RISC-V in Penguins-Eggs non è più sperimentale: è solido e ricorsivo. Questo apre le porte alla creazione di sistemi custom per il crescente ecosistema hardware RISC-V, con la stessa semplicità e potenza che gli utenti di Eggs apprezzano su x86 e ARM.
 
 Il codice è libero, l'uovo è tratto. Buon divertimento! 🐧🥚
+
+Potete trovare le immagini ISO ottenute nel mio drive [ISOS-NAKED-RISCV64](https://drive.google.com/drive/folders/19ees30PC4u0XEqyw9TYYEmqEGVWvTOay) o sulla pagina [penguins-eggs](https://sourceforge.net/projects/penguins-eggs/) di sourceforge.
