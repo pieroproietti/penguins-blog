@@ -11,7 +11,7 @@ import Translactions from '@site/src/components/Translactions';
 
 In case of problems with translation links, You can consult a detailed [README](https://github.com/pieroproietti/penguins-eggs#readme) in English on the repository.
 
-Manuale aggiornato a `eggs v25.12.22-1` ultimo aggiornamento 25 dicembre 2025
+Manuale aggiornato a `eggs v26.1.21-1` ultimo aggiornamento 25 dicembre 2025
 
 ## Introduzione
 
@@ -85,9 +85,9 @@ Le ISO create si trovano in `/home/eggs/` e hanno utente `live` con password `ev
 
 ```bash
 sudo eggs produce                    # Compressione veloce
+sudo eggs produce --max              # Massima compressione
 sudo eggs produce --pendrive         # Compressione ottimizzata per chiavette USB
 sudo eggs produce --standard         # Compressione standard (massima compatibilità)
-sudo eggs produce --max              # Massima compressione
 ```
 
 ### Produzione ISO con dati utente
@@ -177,16 +177,19 @@ sudo eggs wardrobe wear wagtail/waydroid  # Configurazioni speciali
 - **Manjaro** (repository ufficiale)
 - **OpenMamba** (openmamba rpm)
 - **OpenSuSE** (opensuse rpm)
-- **Rocky Linux** (el0 rpm)
-- **Ubuntu** bionic, focal, jammy, noble (.deb)
+- **Rocky Linux** (el9 rpm)
+- **Ubuntu** focal, jammy, noble (.deb)
 
 #### Derivate supportate
 Deepin, EndeavourOS, KDE neon, Linux Mint, LMDE, Pop!_OS, Zorin OS e [molte altre](https://github.com/pieroproietti/fresh-eggs/blob/main/SUPPORTED-DISTROS.md). E' possibile editare i file [derivatives.yaml](https://github.com/pieroproietti/penguins-eggs/blob/master/conf/derivatives.yaml) per le derivate Arch/Debian/Devuan/Ubuntu e [derivatives_fedora.yml](https://github.com/pieroproietti/penguins-eggs/blob/master/conf/derivatives_fedora.yaml) per quelle di derivazione fedora/el9.
 
 #### Architetture
+I pacchetti .deb sono disponibili per le seguenti architetture:
 - **amd64** (x86_64)
 - **i386** (x86)
 - **arm64** (aarch64)
+- **riscv64** (riscv64)
+
 
 ### Installazione per distribuzione
 Per tutte le distribuzioni, una volta installato il pacchetto penguins-eggs, potete aggiungere la repository `https://penguins-eggs.net/repos` per tenerlo aggiornato:
@@ -204,29 +207,29 @@ doas apk add ./penguins-eggs-*.apk
 **Installazione manuale:**
 Scaricare il pacchetto da [penguins-eggs.net](https://penguins-eggs.net/basket/index.php?p=) o dalla pagina [sourceforge](https://sourceforge.net/projects/penguins-eggs/) ed instalarlo con il comando:
 ```bash
-sudo apt install ./penguins-eggs_25.12.22-1_amd64.deb
+sudo apt install ./penguins-eggs-26.1.21-1_amd64.deb
 ```
 
 #### Arch Linux
 Scaricare il pacchetto da [penguins-eggs.net](https://penguins-eggs.net/basket/index.php?p=) o dalla pagina [sourceforge](https://sourceforge.net/projects/penguins-eggs/) ed instalarlo con il comando:
 ```
-sudo pacman -U ./penguins-eggs-25.12.22-1-any.pkg.tar.zst
+sudo pacman -U ./penguins-eggs-26.1.21-1-any.pkg.tar.zst
 ```
 
 ### Fedora, Rocky, Almalinux
 Scaricare il pacchetto da [penguins-eggs.net](https://penguins-eggs.net/basket/index.php?p=) o dalla pagina [sourceforge](https://sourceforge.net/projects/penguins-eggs/) ed instalarlo con il comando:
 ```
-sudo dnf install ./penguins-eggs-25.12.22-1.fc42.x86_64.rpm
+sudo dnf install ./penguins-eggs-26.1.21-1.fc42.x86_64.rpm
 ```
 Per Rocky ed Almalinux:
 ```
-sudo dnf install ./penguins-eggs-25.12.22-1.el9.x86_64.rpm
+sudo dnf install ./penguins-eggs-26.1.21-1.el9.x86_64.rpm
 ```
 
 #### Manjaro
 Penguins-eggs è presente nel repository community, può comunque essere scaricato da [penguins-eggs.net](https://penguins-eggs.net/basket/index.php?p=) o dalla pagina [sourceforge](https://sourceforge.net/projects/penguins-eggs/) ed instalarlo con il comando:
 ```
-sudo pacman -U ./penguins-eggs-25.12.22-1-any.pkg.tar.zst
+sudo pacman -U ./penguins-eggs-26.1.21-1-any.pkg.tar.zst
 ```
 
 Per installare la versione dalla repository community, basta:
@@ -238,7 +241,7 @@ sudo pamac install penguins-eggs
 #### OpenSUSE
 Scaricare il pacchetto da [penguins-eggs.net](https://penguins-eggs.net/basket/index.php?p=) o dalla pagina [sourceforge](https://sourceforge.net/projects/penguins-eggs/) ed instalarlo con il comando:
 ```
-sudo zypper install ./penguins-eggs-25.12.22-1.opensuse.x86_64.rpm
+sudo zypper install ./penguins-eggs-26.1.21-1.opensuse.x86_64.rpm
 ```
 
 ### Utilizzo da codice sorgente
@@ -431,11 +434,11 @@ krill è l'installer TUI di eggs, progettato per:
 
 ```
 wardrobe/
-├── costumes/           # Configurazioni complete
+├── costumes/          # Configurazioni complete
 │   ├── colibri/       # Desktop GNOME
 │   ├── duck/          # Desktop leggero
 │   └── wagtail/       # Configurazioni speciali
-└── accessories/        # Componenti aggiuntivi
+└── accessories/       # Componenti aggiuntivi
     ├── firmwares/     # Driver proprietari
     └── multimedia/    # Codec multimediali
 ```
@@ -447,11 +450,11 @@ wardrobe/
 3. **Testate**: `eggs wardrobe get your-repo`
 4. **Condividete** con la community
 
-### Novità versione 10.1.x
+### Novità versione 26.1.x
 
 #### Miglioramenti principali
 
-**Refactoring con AI**: Importante refactoring del codice con l'aiuto di Claude.ai per maggiore efficienza.
+**Refactoring con AI**: Importante refactoring del codice con l'aiuto di Claude.ai e antigravity.google per maggiore efficienza.
 
 **Supporto RPM migliorato**: Immagini ISO avviabili su UEFI per AlmaLinux, Fedora, OpenSuSE, Rocky Linux.
 
@@ -591,4 +594,4 @@ La filosofia della "riproduzione" applicata ai sistemi operativi permette a ogni
 
 ---
 
-*Copyright (c) 2017, 2025 Piero Proietti, dual licensed under the MIT or GPL Version 2 licenses.*
+*Copyright (c) 2017, 2026 Piero Proietti, dual licensed under the MIT or GPL Version 2 licenses.*
