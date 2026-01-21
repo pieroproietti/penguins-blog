@@ -26,10 +26,10 @@ Insieme, abbiamo affrontato diverse sfide nel codebase di `penguins-eggs`:
 3.  **Aggiornamento Documentazione**: Antigravity ha analizzato la struttura attuale del progetto (inclusi i cambiamenti nella directory `NEST`) e ha aggiornato di conseguenza la documentazione (`THE-NEST.md`, `SOURCE.md`), assicurando che riflettesse la realtà del codice.
 4.  **Gestione delle Dipendenze**: Abbiamo aggiornato i workflow di GitHub per utilizzare Node.js 22, allineandoci agli standard più recenti.
 5.  **Debugging Intelligente**: Abbiamo indagato su problemi complessi, come quelli relativi alla configurazione di `initrd` per CachyOS e la gestione dei percorsi ISO.
-5. **Documentazione°° Non ho cambiato molto, ma tutti i documenti dentro la repository sono stati aggiornati e, soprattutto, allineati al codice attuale. Inutile dire che la AI ha una memoria migliore della mia, spesso dimentico.
-6. **Aggiornamento blog**: L'appetito vien mandiando, anche quasto scritto è stato realizzato con l'AI, letto ed ampliato dall'autore.
+5. **Documentazione** non ho cambiato molto, ma tutti i documenti dentro la repository sono stati aggiornati e, soprattutto, allineati al codice aggiornato. Inutile sottolineare che la AI ha una memoria molto migliore della mia.
+6. **Aggiornamento blog**, l'appetito vien mangiando: anche questo scritto è stato realizzato con l'AI, ovviamente letto ed integrato dall'autore.
 
-Tutto questo in una sola settimana di lavoro, **erano mesi** che mi rifiutavo di aggionare i pacchetto per timore di rompere il codice.
+Tutto questo in una sola settimana di lavoro ed **erano mesi** che mi rifiutavo di aggiornare i pacchetti npm per timore di rompere il codice, nonchè tutto il resto.
 
 ## L'Esperienza "Agentic"
 
@@ -37,8 +37,10 @@ La differenza sostanziale rispetto ad altri tool è la modalità "Agentic". Anti
 
 È come avere un pair programmer instancabile, che conosce a memoria la documentazione e non si dimentica mai di aggiornare un riferimento o un import.
 
+Insomma, lo possiamo considerare un "coautore" del progetto, almeno da quest'anno, certo partire da una base stabile ed avere come altro coautore l'umano che ha creato la base aiuta, ma - forse - non è indispensabie.
+
 ## Conclusione
 
-L'integrazione di strumenti come Google Antigravity nel flusso di lavoro di `penguins-eggs` è un passo avanti notevole. Ci permette di concentrarci sulle scelte architetturali e creative, lasciando all'AI il compito di mantenere il codice pulito, coerente e ben documentato.
+L'integrazione di strumenti come Google Antigravity nel flusso di lavoro di `penguins-eggs` è un passo avanti notevole. Nel mentre permette di concentrarci sulle scelte architetturali e creative, lasciando all'AI il compito di mantenere il codice pulito, coerente e ben documentato.
 
-Il futuro dello sviluppo open source è sempre più collaborativo, e i nostri collaboratori non devono per forza essere umani. 🐧🤖
+Inoltre, e non è uno scherzo, potrebbe essere più semplice per un nuovo sviluppatore salire a bordo, vedremo. Ad ogni modo lo sviluppo open source è sempre più collaborativo, ma da quest'anno i nostri collaboratori non devono per forza essere solamente umani.
