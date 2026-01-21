@@ -14,16 +14,22 @@ import Translactions from '@site/src/components/Translactions';
 
 In questi giorni ho avuto modo di provare un nuovo strumento straordinario: **Google Antigravity**. Non è il solito assistente AI che completa le righe di codice; è un vero e proprio collaboratore autonomo ("agentic") capace di navigare l'intero progetto, comprendere il contesto e agire con precisione.
 
+Non ho termini di paragone con altri prodotti AI, come ChatGPT, Claude ed altro, non li ho mai provati estensivamente come questo.
+
 Si supera lo scoglio del contesto ed è possibile richiedere modifiche strutturali o modificare il sorgente per aderire a nuove versioni di pacchetti impiegati, etc.
 
 ## Cosa abbiamo fatto insieme
 
 Insieme, abbiamo affrontato diverse sfide nel codebase di `penguins-eggs`:
+1. **Aggiornamento dei pacchetti js**: nel tempo - penguins-eggs esiste da parecchi anni, i pacchetti si evolgono. Spesso l'operazione è semplice, ma a volte cambia anche la semantica, le inclusioni, etc. Rischiare di sfasciare tutto è stato il mio cruccio per molto tempo, sino a quando non ho trovato Antigravity.
+2.  **Refactoring Profondo**: Abbiamo pulito il codice, sistemando le esportazioni in `classes/incubation/fisherman-helper/settings.ts` e standardizzando la concatenazione dei percorsi usando `path.join` per migliorare la compatibilità.
+3.  **Aggiornamento Documentazione**: Antigravity ha analizzato la struttura attuale del progetto (inclusi i cambiamenti nella directory `NEST`) e ha aggiornato di conseguenza la documentazione (`THE-NEST.md`, `SOURCE.md`), assicurando che riflettesse la realtà del codice.
+4.  **Gestione delle Dipendenze**: Abbiamo aggiornato i workflow di GitHub per utilizzare Node.js 22, allineandoci agli standard più recenti.
+5.  **Debugging Intelligente**: Abbiamo indagato su problemi complessi, come quelli relativi alla configurazione di `initrd` per CachyOS e la gestione dei percorsi ISO.
+5. **Documentazione°° Non ho cambiato molto, ma tutti i documenti dentro la repository sono stati aggiornati e, soprattutto, allineati al codice attuale. Inutile dire che la AI ha una memoria migliore della mia, spesso dimentico.
+6. **Aggiornamento blog**: L'appetito vien mandiando, anche quasto scritto è stato realizzato con l'AI, letto ed ampliato dall'autore.
 
-1.  **Refactoring Profondo**: Abbiamo pulito il codice, sistemando le esportazioni in `classes/incubation/fisherman-helper/settings.ts` e standardizzando la concatenazione dei percorsi usando `path.join` per migliorare la compatibilità.
-2.  **Aggiornamento Documentazione**: Antigravity ha analizzato la struttura attuale del progetto (inclusi i cambiamenti nella directory `NEST`) e ha aggiornato di conseguenza la documentazione (`THE-NEST.md`, `SOURCE.md`), assicurando che riflettesse la realtà del codice.
-3.  **Gestione delle Dipendenze**: Abbiamo aggiornato i workflow di GitHub per utilizzare Node.js 22, allineandoci agli standard più recenti.
-4.  **Debugging Intelligente**: Abbiamo indagato su problemi complessi, come quelli relativi alla configurazione di `initrd` per CachyOS e la gestione dei percorsi ISO.
+Tutto questo in una sola settimana di lavoro, **erano mesi** che mi rifiutavo di aggionare i pacchetto per timore di rompere il codice.
 
 ## L'Esperienza "Agentic"
 
