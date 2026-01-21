@@ -25,11 +25,11 @@ Usando l'agente supera lo scoglio della limitazione del contesto ed è possibile
 Insieme, abbiamo affrontato diverse sfide nel codebase di `penguins-eggs`:
 1. **Aggiornamento dei pacchetti js**: nel tempo - penguins-eggs esiste da parecchi anni - i pacchetti si evolgono. Spesso l'operazione è semplice, ma a volte cambia anche la semantica, le inclusioni, etc. Rischiare di sfasciare tutto è stato il mio cruccio per molto tempo, sino a quando non ho trovato Antigravity che, conoscendo sia la vecchia versione del pacchetto che la nuova, adatta automaticamente il codice e, se sbaglia, lo ripete.
 2.  **Refactoring Profondo**: Abbiamo pulito il codice, cercando di uniformare le variabili, sistemando le esportazioni e standardizzando la concatenazione dei percorsi usando `path.join`. Si poteva fare a mano? Si, ma ci sarebbe voluto molto più tempo.
-3.  **Aggiornamento Documentazione**: Antigravity ha analizzato la struttura attuale del progetto (inclusi i cambiamenti nella directory `NEST`) e ha aggiornato di conseguenza la documentazione (`THE-NEST.md`, `SOURCE.md`), assicurando che riflettesse la realtà del codice.
+3.  **Aggiornamento Documentazione**: Antigravity ha analizzato la struttura attuale del progetto (inclusi i cambiamenti nella directory `NEST`) e ha aggiornato di conseguenza la documentazione (`[THE-NEST.md](https://github.com/pieroproietti/penguins-eggs/blob/master/DOCS/THE-NEST.md)`, `[SOURCE.md](https://github.com/pieroproietti/penguins-eggs/blob/master/DOCS/SOURCE.md)`), assicurando che riflettesse la realtà del codice.
 4.  **Gestione delle Dipendenze**: Abbiamo aggiornato i workflow di GitHub per utilizzare Node.js 22, allineandoci agli standard più recenti.
 5.  **Debugging Intelligente**: Abbiamo indagato su problemi complessi, come quelli relativi alla configurazione di `initrd` per CachyOS e la gestione dei percorsi ISO.
-5. **Documentazione** non ho cambiato molto, ma tutti i documenti dentro la repository sono stati aggiornati e, soprattutto, allineati al codice aggiornato. Inutile sottolineare che la AI ha una memoria molto migliore della mia.
-6. **Aggiornamento blog**, l'appetito vien mangiando: anche questo scritto è stato realizzato con l'AI, ovviamente letto ed integrato dall'autore.
+5. **Documentazione** non ho cambiato molto, ma tutti i [documenti](https://github.com/pieroproietti/penguins-eggs/tree/master/DOCS) dentro la repository sono stati allineati allineati al codice aggiornato. ed è inutile sottolineare che la AI ha una memoria migliore della mia!
+6. **Aggiornamento blog**, l'appetito vien mangiando: anche questo scritto è stato realizzato con l'AI, ovviamente letto ed integrato dall'autore in più passaggi.
 
 Tutto questo in una sola settimana di lavoro ed **erano mesi** che mi rifiutavo di aggiornare i pacchetti npm per timore di rompere il codice, nonchè tutto il resto.
 
