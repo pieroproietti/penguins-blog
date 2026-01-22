@@ -3,7 +3,6 @@ authors: pieroproietti
 slug: google-antigravity-experience
 title: 'La nostra esperienza con Google Antigravity'
 lang: it
-comments: true
 enableComments: true
 ---
 import Translactions from '@site/src/components/Translactions';
@@ -23,7 +22,7 @@ Usando l'agente si supera lo scoglio della limitazione del contesto ed è possib
 ## Cosa abbiamo fatto insieme
 
 Insieme, abbiamo affrontato diverse sfide nel codebase di `penguins-eggs`:
-1. **Aggiornamento dei pacchetti js**: nel tempo - penguins-eggs esiste da parecchi anni - i pacchetti si evolgono. Spesso l'operazione è semplice, ma a volte cambia anche la semantica, le inclusioni, etc. Rischiare di sfasciare tutto è stato il mio cruccio per molto tempo, sino a quando non ho trovato Antigravity che, conoscendo sia la vecchia versione del pacchetto che la nuova, adatta automaticamente il codice e, se sbaglia, lo ripete.
+1. **Aggiornamento dei pacchetti npm**: nel tempo - penguins-eggs esiste da parecchi anni - i pacchetti si evolgono. Spesso l'operazione è semplice, ma a volte cambia anche la sintassi, servono nuove inclusioni, etc. Rischiare di sfasciare tutto è stato sempre il mio cruccio, sino a quando non ho trovato Antigravity che, conoscendo sia la vecchia versione del pacchetto che la nuova, adatta automaticamente il codice e, se sbaglia, lo ripete.
 2.  **Refactoring Profondo**: Abbiamo pulito il codice, cercando di uniformare le variabili, sistemando le esportazioni e standardizzando la concatenazione dei percorsi usando `path.join`. Si poteva fare a mano? Si, ma ci sarebbe voluto molto più tempo.
 3.  **Aggiornamento Documentazione**: Antigravity ha analizzato la struttura attuale del progetto (inclusi i cambiamenti nella directory `NEST`) e ha aggiornato di conseguenza la documentazione ([THE-NEST.md](https://github.com/pieroproietti/penguins-eggs/blob/master/DOCS/THE-NEST.md), [SOURCE.md](https://github.com/pieroproietti/penguins-eggs/blob/master/DOCS/SOURCE.md)), assicurando che riflettesse la realtà del codice.
 4.  **Gestione delle Dipendenze**: Abbiamo aggiornato i workflow di GitHub per utilizzare Node.js 22, allineandoci agli standard più recenti.
