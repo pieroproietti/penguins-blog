@@ -28,7 +28,7 @@ Insieme, abbiamo affrontato diverse sfide nel codebase di `penguins-eggs`:
 3.  **Aggiornamento Documentazione**: Antigravity ha analizzato la struttura attuale del progetto (inclusi i cambiamenti nella directory `NEST`) e ha aggiornato di conseguenza la documentazione ([THE-NEST.md](https://github.com/pieroproietti/penguins-eggs/blob/master/DOCS/THE-NEST.md), [SOURCE.md](https://github.com/pieroproietti/penguins-eggs/blob/master/DOCS/SOURCE.md)), assicurando che riflettesse la realtà del codice.
 4.  **Gestione delle Dipendenze**: Abbiamo aggiornato i workflow di GitHub per utilizzare Node.js 22, allineandoci agli standard più recenti.
 5.  **Debugging Intelligente**: Abbiamo indagato su problemi complessi, come quelli relativi alla configurazione di `initrd` per CachyOS e la gestione dei percorsi ISO.
-5. **Documentazione** non ho cambiato molto, ma tutti i [documenti](https://github.com/pieroproietti/penguins-eggs/tree/master/DOCS) dentro la repository sono stati allineati allineati al codice aggiornato. ed è inutile sottolineare che la AI ha una memoria migliore della mia!
+53. **Documentazione** non ho cambiato molto, ma tutti i [documenti](https://github.com/pieroproietti/penguins-eggs/tree/master/DOCS) dentro la repository sono stati allineati al codice aggiornato. ed è inutile sottolineare che la AI ha una memoria migliore della mia!
 6. **Aggiornamento blog**, l'appetito vien mangiando: anche questo scritto è stato realizzato con l'AI, ovviamente letto ed integrato dall'autore in più passaggi.
 
 Tutto questo in una sola settimana di lavoro ed **erano mesi** che mi rifiutavo di aggiornare i pacchetti npm per timore di rompere il codice, nonchè tutto il resto.
@@ -39,7 +39,7 @@ La differenza sostanziale rispetto a tool precedenti è la modalità "Agentic". 
 
 È come avere un pair programmer instancabile, che conosce a memoria la documentazione e non si dimentica mai di aggiornare un riferimento o un import.
 
-Insomma, lo possiamo considerare un "coautore" del progetto, almeno da quest'anno in poi. Certamente partire da una base stabile ed avere come altro coautore l'umano che ha creato la base aiuta, ma - forse - non è indispensabie.
+Insomma, lo possiamo considerare un "coautore" del progetto, almeno da quest'anno in poi. Certamente partire da una base stabile ed avere come altro coautore l'umano che ha creato la base aiuta, ma - forse - non è indispensabile.
 
 Chissà che in futuro non mi faccia fuori!
 
@@ -53,6 +53,17 @@ Ad ogni modo lo sviluppo open source è sempre più collaborativo e da quest'ann
 
 Un abbraccio a tutti umani e non.
 
+# Vibe Coding
+E' da qualche mese ormai che trovo spesso il termine "Vibe Coding", che quasi non sopportavo più il termine - a volte abusato come tutti i termini di moda - ma forse questo che sto descrivendo è esattamente ciò che si intende con Vibe Coding.
+
+Ecco una sintesi della sua storia.
+
+- Creative Coding (2010s): Fai tutto a mano (il vecchio Antigravity di Mr. Doob).
+- AI Assistants (2022-2023): Copilot ti suggerisce la riga successiva.
+- AI Editors (2024 - Cursor): L'AI scrive interi blocchi, ma devi guidarla molto.
+- Agentic IDEs (2024/25 - Windsurf): L'AI capisce il contesto dell'intero progetto e agisce autonomamente (il vero salto di qualità).
+- Google ha stretto un accordo da circa 2.4 miliardi di dollari per integrare i team e le tecnologie di Windsurf (precedentemente nota come Exafunction) nel suo team Google DeepMind, focalizzandosi sull'assistenza alla programmazione AI. 
+- Google Antigravity (2025/26): Google prende il concetto di "Agente" di Windsurf, lo fonde con il concetto di "Fisica/Gioco" del vecchio esperimento, creando un ambiente dove il codice si genera e si modifica in tempo reale in modo quasi organico.
 
 # Link
 * [Google Antigravity](https://antigravity.google/)
