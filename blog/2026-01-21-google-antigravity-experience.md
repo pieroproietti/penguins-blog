@@ -43,17 +43,7 @@ Insomma, lo possiamo considerare un "coautore" del progetto, almeno da quest'ann
 
 Chissà che in futuro non mi faccia fuori!
 
-## Conclusione
-
-L'integrazione di strumenti come Google Antigravity nel flusso di lavoro di `penguins-eggs` è un passo avanti notevole. Nel mentre permette di concentrarci sulle scelte architetturali e creative, lasciando all'AI il compito di mantenere il codice pulito, coerente e ben documentato.
-
-Inoltre - e non è uno scherzo - potrebbe essere più semplice per un nuovo sviluppatore salire a bordo, provare per così dire a "smanettare". 
-
-Ad ogni modo lo sviluppo open source è sempre più collaborativo e da quest'anno i nostri collaboratori non devono per forza essere solamente umani.
-
-Un abbraccio a tutti umani e non.
-
-# Vibe Coding
+## Vibe Coding
 E' da qualche mese ormai che trovo spesso il termine "Vibe Coding", che quasi non sopportavo più il termine - a volte abusato come tutti i termini di moda - ma forse questo che sto descrivendo è esattamente ciò che si intende con Vibe Coding.
 
 Ecco una sintesi della sua storia.
@@ -64,6 +54,16 @@ Ecco una sintesi della sua storia.
 - Agentic IDEs (2024/25 - Windsurf): L'AI capisce il contesto dell'intero progetto e agisce autonomamente (il vero salto di qualità).
 - Google ha stretto un accordo da circa 2.4 miliardi di dollari per integrare i team e le tecnologie di Windsurf (precedentemente nota come Exafunction) nel suo team Google DeepMind, focalizzandosi sull'assistenza alla programmazione AI. 
 - Google Antigravity (2025/26): Google prende il concetto di "Agente" di Windsurf, lo fonde con il concetto di "Fisica/Gioco" del vecchio esperimento, creando un ambiente dove il codice si genera e si modifica in tempo reale in modo quasi organico.
+
+## Conclusione
+
+L'integrazione di strumenti di Vibe Coding come Google Antigravity nel flusso di lavoro di `penguins-eggs` è un passo avanti notevole. Ci permette di concentrarci sulle scelte architetturali e creative, lasciando all'AI il compito di mantenere il codice pulito, coerente e ben documentato.
+
+Inoltre - e non è un paradosso - potrebbe essere più semplice per un nuovo sviluppatore salire a bordo, provare per così dire a "smanettare" con il codice di penguins-eggs. Abbassa la soglia di accesso e permette di capire meglio il progetto.
+
+Ad ogni modo lo sviluppo open source è sempre più collaborativo e da quest'anno i nostri collaboratori non devono per forza essere solamente umani.
+
+Un abbraccio a tutti umani e non.
 
 # Link
 * [Google Antigravity](https://antigravity.google/)
