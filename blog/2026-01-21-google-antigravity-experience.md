@@ -53,3 +53,8 @@ Ad ogni modo lo sviluppo open source è sempre più collaborativo e da quest'ann
 
 Un abbraccio a tutti umani e non.
 
+
+# Link
+* [Google Antigravity](https://antigravity.google/)
+* [penguins-eggs](https://github.com/pieroproietti/penguins-eggs)
+* [vibe code](https://www.youtube.com/watch?v=v7UcVPO4y3c)
