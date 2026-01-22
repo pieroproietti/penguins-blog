@@ -42,7 +42,7 @@ Penguins-eggs non si limita ai moderni sistemi a 64 bit, ma supporta anche:
 - **amd64**: Per i sistemi desktop e server moderni
 - **i386**: Per hardware più datato
 - **arm64**: Per single-board computer come Raspberry Pi, Pinebook Pro e altri dispositivi SBC.
-- **riscv64**: Per notebook [SpecemiT MUSE BOOK](https://developer.spacemit.com/documentation?token=P2xFw7Ca0iKQZHkBLP0cjnmUn3e&type=pdf) [video](https://www.youtube.com/watch?v=goKG-lWEGss) o [altri](https://www.tomshw.it/hardware/lera-dei-portatili-risc-v-iniziera-nel-2025-2025-01-04).
+- **riscv64**: Per notebook [SpacemiT MUSE BOOK](https://www.cnx-software.com/2026/01/08/muse-book-laptop-review-testing-an-octa-core-risc-v-linux-laptop-in-2026/) e molti altri dispositiviin uscita.
 
 ## Funzionalità Principali
 
