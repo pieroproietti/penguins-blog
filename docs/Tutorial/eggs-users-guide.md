@@ -11,7 +11,7 @@ import Translactions from '@site/src/components/Translactions';
 
 In case of problems with translation links, You can consult a detailed [README](https://github.com/pieroproietti/penguins-eggs#readme) in English on the repository.
 
-Manuale aggiornato a `eggs v26.1.21-1` ultimo aggiornamento 25 dicembre 2025
+Manuale aggiornato a `eggs v26.1.21` ultimo aggiornamento 22 gennaio 2026
 
 ## Introduzione
 
@@ -364,7 +364,6 @@ krill è l'installer TUI di eggs, progettato per:
 - Installazione su sistemi CLI/server
 - Sistemi con `<2GB` RAM
 - Installazione unattended
-- Ripristino backup criptati
 
 **Passi dell'installazione:**
 1. **welcome** - Selezione lingua
@@ -383,7 +382,7 @@ krill è l'installer TUI di eggs, progettato per:
 - `eggs export`: Esporta ISO su host remoti
 - `eggs tools`: Strumenti di manutenzione
    - `eggs tools clean`: Pulisce cache e log
-   - `eggs tools ppa`: Gestisce repository eggs
+   - `eggs tools repo`: Gestisce repository eggs
    - `eggs tools skel`: Ricrea `/etc/skel`
    - `eggs tools yolk`: Crea repository locale (Debian)
 
@@ -423,7 +422,7 @@ krill è l'installer TUI di eggs, progettato per:
 
 #### Consigli per la distribuzione
 
-- **Dimensioni**: Mantenete ISO sotto 4-5 GB
+- **Dimensioni**: Mantenete le ISO sotto 4-5 GB
 - **Test**: Testate regolarmente su VM
 - **Documentazione**: Create guide per gli utenti
 - **Repository**: Considerate una repository per aggiornamenti
@@ -486,7 +485,7 @@ wardrobe/
 
 **EducAndOS+**: Prima con tema personalizzato eggs, molto usata nelle scuole spagnole.
 
-**NovaOS**: Basata su Linux Mint, creata da Nicklas.
+**NovaOS**: Basata su Linux Mint, creata da Nicklas (in mio Signore delle stelle!)
 
 **PredatorOS**: Debian-based per penetration testing.
 
@@ -503,7 +502,7 @@ common:
   - dosfstools, dpkg-dev, git
   - isolinux, jq, live-boot
   - live-config-systemd
-  - nodejs (>= 18)
+  - nodejs (>= 22)
   - parted, rsync
   - squashfs-tools, xorriso
 
@@ -578,7 +577,7 @@ sudo eggs wardrobe wear colibri    # Aggiunge desktop
 
 ## Conclusioni
 
-penguins-eggs rappresenta una soluzione moderna e completa per la rimasterizzazione Linux. Con supporto esteso per distribuzioni e architetture, strumenti avanzati come backup criptati ed il sistema wardrobe, eggs non è solo un rimasterizzatore ma un ecosistema completo per la gestione di sistemi Linux personalizzati.
+penguins-eggs rappresenta una soluzione moderna e completa per la rimasterizzazione Linux. Con supporto esteso sia per distribuzioni che per architetture, strumenti avanzati come backup criptati ed il sistema wardrobe. eggs non è solo un di rimasterizzazione ma un ecosistema completo per la gestione di sistemi Linux personalizzati usabile anche in contesti CD/CI (continuous integration, e continuous delivery.
 
 La filosofia della "riproduzione" applicata ai sistemi operativi permette a ogni sistema di "deporre le sue uova" per dare vita a nuovi sistemi, mantenendo le caratteristiche del genitore ma adattandosi a nuovi ambienti.
 
