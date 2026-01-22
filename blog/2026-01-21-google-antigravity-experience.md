@@ -12,7 +12,7 @@ import Translactions from '@site/src/components/Translactions';
 
 # Collaborare con un'Intelligenza Aliena: Google Antigravity
 
-In questi giorni ho avuto modo di provare un nuovo strumento straordinario: **[Google Antigravity](https://antigravity.google/)**. 
+In questi giorni ho avuto modo di provare uno strumento straordinario: **[Google Antigravity](https://antigravity.google/)**. 
 
 Non è il solito assistente AI che completa le righe di codice; è un vero e proprio collaboratore autonomo ("agentic") capace di navigare l'intero progetto, comprendere il contesto e agire con precisione.
 
