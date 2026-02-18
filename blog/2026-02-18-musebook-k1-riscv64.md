@@ -46,7 +46,11 @@ Ma la vera sorpresa è stata la scoperta del "ponte": il file `env_k1-x.txt`. Se
 ## Il muro del Reboot Loop
 Tuttavia, la strada del pioniere non è mai priva di ostacoli. Attualmente mi trovo davanti a quello che chiamo "il muro del logo": il sistema parte, legge la configurazione, carica il kernel... e poi si resetta in unn ciclo infinito.
 
-Inoltre mi sono accorto che bisogna rimuovere la configurazione di extlinux perchè. in caso contrario il sistema non parte affatt.
+Inoltre mi sono accorto che bisogna rimuovere la configurazione di extlinux perchè. in caso contrario il sistema non parte affatto.
 
-Ho lanciato un segnale di aiuto su Discord e nelle community specializzate. Essere tra i primi a percorrere una strada significa anche accettare di fermarsi per studiare la mappa quando il sentiero scompare.
+Con sorpresa mi sono accorto che il buon QEMU con RISCV64 sta facendo un lavoro meraviglioso, ma sull'hardware reale le sfide sono forse maggiori.
+
+Andare avanti per tentativi ed errori non è certo la strada migliore, quindi ho deciso di chiedere aiuto.
+
+Ho lanciato un segnale di aiuto su [Discord](https://discord.com/channels/1352083695238119555/1352083697020436535) e nelle community specializzate. Essere tra i primi a percorrere una strada significa anche accettare di fermarsi per studiare la mappa quando il sentiero scompare.
 
