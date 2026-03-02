@@ -69,3 +69,37 @@ Ma qua per qualche ragione si blocca.
 
 Potrebbe essere il fatto che uso boot=live nella configurazione di avvio, ma non sono sicuro.
 
+In ogni caso il mio attuale env_k1-x.txt è il seguente:
+
+```
+knl_name=vmlinuz-6.6.63
+ramdisk_name=initrd.img-6.6.63
+dtb_dir=spacemit/6.6.63
+bootargs=console=tty0 earlycon=sbi boot=live components root=/dev/ram0 rw ignore_loglevel debug
+
+```
+
+Ma premenfo ESC durante l'avvio, osservo:
+
+
+```
+[rootfs: clean, 13/204000 files, 583949/814592 blocks
+resize2fs 1.47.0 (5-Feb-2023)
+Please run 'e2fsck -f /dev/mmcblk0p6' first.
+
+mount: mounting /dev on /root/dev failed: No such file or directory
+mount: mounting /dev on /root/dev failed: No such file or directory
+[mount: mounting /run on /root/run failed: No such file or directory
+run-init: can't execute '/sbin/init': No such file or directory
+Target filesystem doesn't have requested /sbin/init.
+run-init: can't execute '/sbin/init': No such file or directory
+run-init: can't execute '/etc/init': No such file or directory
+run-init: can't execute '/bin/init': No such file or directory
+run-init: can't execute '/bin/sh': No such file or directory
+run-init: can't execute '': No such file or directory
+No init found. Try passing init= bootarg.
+
+_
+```
+
+Sembrerebbe che il problema sia nel fatto che non viene trovato /sbin/init. Ma non capisco perché. 
