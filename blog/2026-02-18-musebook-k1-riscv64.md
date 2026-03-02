@@ -54,3 +54,17 @@ Andare avanti per tentativi ed errori non è certo la strada migliore, quindi ho
 
 Ho lanciato un segnale di aiuto su [Discord](https://discord.com/channels/1352083695238119555/1352083697020436535) e nelle community specializzate. Essere tra i primi a percorrere una strada significa anche accettare di fermarsi per studiare la mappa quando il sentiero scompare.
 
+
+## Reprise
+
+Ho scoperto la particolare via di partizionamento del disco che ho riprodotto con genimage e molte altre particolarità.
+
+Attualmente la img creata con eggs e che è la copia live del sistema Bianbuos 2.2 è comparabile alla originale ma con un unico difetto: non avvia!
+
+Non sono riuscito a connettermi con UARP-to-USB (via seriale) o meglio mi vengono fuori caratteri incomprensibili.
+
+La microsd, però, parte e carica il logo bianbu, quindi carica il kernel. 
+
+Ma è er qualche ragione si blocca.
+
+Potrebbe essere il fatto che uso boot=live nella configurazione di avvio, ma non sono sicuro.
