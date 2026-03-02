@@ -59,11 +59,11 @@ Ho lanciato un segnale di aiuto su [Discord](https://discord.com/channels/135208
 
 Alla fine ho scoperto che il metodo di partizionamento è riproducibile con [genimage](https://github.com/pengutronix/genimage), e la configurazione è scritta in `genimage.cfg`. Sia la configurazione che i necessari binari sono ottenibili scaricando la versione .zip del firmware invece di quella img.zip.
 
-Quindi, al momento 1 marzo 2026, l'immagine creata con eggs è perfettamente riconosciuta dal Musebook, ma con un unico grave difetto: non avvia!
+Quindi, al 1 marzo 2026, l'immagine creata con penguins-eggs è perfettamente riconosciuta dal Musebook, ma con un unico grave difetto: non avvia!
 
 Non sono riuscito a connettermi con UART-to-USB (via seriale) o meglio mi vengono fuori caratteri incomprensibili.
 
-Il mio attuale env_k1-x.txt è il seguente:
+Il mio attuale `env_k1-x.txt` è il seguente:
 
 ```
 knl_name=vmlinuz-6.6.63
@@ -73,7 +73,7 @@ bootargs=console=tty0 earlycon=sbi boot=live components root=/dev/ram0 rw ignore
 
 ```
 
-La microsd è riconosciuta avviabile, carica il logo e carica il kernel, ma ma si blocca. 
+La microsd è riconosciuta avviabile, carica il logo quindi carica il kernel, ma si blocca con questo output:
 
 ```
 [rootfs: clean, 13/204000 files, 583949/814592 blocks
@@ -95,4 +95,8 @@ No init found. Try passing init= bootarg.
 _
 ```
 
-Va a cercare `/sbin/init` ma sto usando boo=live come argomento del kernel.
+Perchè va a cercare `/sbin/init` visto che sto passando `boot=live` come argomento del kernel? E, nel caso di Debian 13 RISCV64 il paramatro boot=live funziona normalmente. Non capisco.
+
+Prego chiunque possa darmi un suggerimento di farsi avanti.
+
+
