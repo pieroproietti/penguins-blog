@@ -57,14 +57,15 @@ Ho lanciato un segnale di aiuto su [Discord](https://discord.com/channels/135208
 
 ## Reprise
 
-Ho scoperto la particolare via di partizionamento del disco che ho riprodotto con genimage e molte altre particolarità.
+Alla fine ho scoperto che il metodo di partizionamento è riproducibile con [genimage](https://github.com/pengutronix/genimage), e la configurazione è scritta in `genimage.cfg`. Sia la configurazione che i necessari binari sono ottenibili scaricando la versione .zip del firmware invece di quella img.zip.
 
-Attualmente la img creata con eggs e che è la copia live del sistema Bianbuos 2.2 è comparabile alla originale ma con un unico difetto: non avvia!
+Quindi, al momento 1 marzo 2026, l'immagine creata con eggs è perfettamente riconosciuta dal Musebook, ma con un unico grave difetto: non avvia!
 
-Non sono riuscito a connettermi con UARP-to-USB (via seriale) o meglio mi vengono fuori caratteri incomprensibili.
+Non sono riuscito a connettermi con UART-to-USB (via seriale) o meglio mi vengono fuori caratteri incomprensibili.
 
 La microsd, però, parte e carica il logo bianbu, quindi carica il kernel. 
 
-Ma è er qualche ragione si blocca.
+Ma qua per qualche ragione si blocca.
 
 Potrebbe essere il fatto che uso boot=live nella configurazione di avvio, ma non sono sicuro.
+
