@@ -63,13 +63,7 @@ Quindi, al momento 1 marzo 2026, l'immagine creata con eggs è perfettamente ric
 
 Non sono riuscito a connettermi con UART-to-USB (via seriale) o meglio mi vengono fuori caratteri incomprensibili.
 
-La microsd, però, parte e carica il logo bianbu, quindi carica il kernel. 
-
-Ma qua per qualche ragione si blocca.
-
-Potrebbe essere il fatto che uso boot=live nella configurazione di avvio, ma non sono sicuro.
-
-In ogni caso il mio attuale env_k1-x.txt è il seguente:
+Il mio attuale env_k1-x.txt è il seguente:
 
 ```
 knl_name=vmlinuz-6.6.63
@@ -79,8 +73,7 @@ bootargs=console=tty0 earlycon=sbi boot=live components root=/dev/ram0 rw ignore
 
 ```
 
-Ma premenfo ESC durante l'avvio, osservo:
-
+La microsd è riconosciuta avviabile, carica il logo e carica il kernel, ma ma si blocca. 
 
 ```
 [rootfs: clean, 13/204000 files, 583949/814592 blocks
@@ -102,4 +95,4 @@ No init found. Try passing init= bootarg.
 _
 ```
 
-Sembrerebbe che il problema sia nel fatto che non viene trovato /sbin/init. Ma non capisco perché. 
+Va a cercare `/sbin/init` ma sto usando boo=live come argomento del kernel.
