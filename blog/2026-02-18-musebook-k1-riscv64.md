@@ -99,4 +99,9 @@ Perchè va a cercare `/sbin/init` visto che sto passando `boot=live` come argome
 
 Prego chiunque possa darmi un suggerimento di farsi avanti.
 
+## 3 marzo 2026
+E dopo molte, molte prove, la fatica è stata ricompensata.
 
+Il primo boot di una rimasterizzata con penguins-eggs su RISCV64 è andato a buon fine!
+
+![](./img/first-boot-musebook.jpg)
