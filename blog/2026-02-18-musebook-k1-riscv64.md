@@ -104,4 +104,4 @@ E dopo molte, molte prove, la fatica è stata ricompensata.
 
 Il primo boot di una rimasterizzata con penguins-eggs su RISCV64 è andato a buon fine!
 
-![](./img/first-boot-musebook.jpg)
+![](/img/first-boot-musebook.jpg)
