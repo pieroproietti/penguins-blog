@@ -29,7 +29,7 @@ Per capire l'IA dobbiamo tornare alla meccanica pura. Immaginate di spiegare un 
 
 Se costruissimo questo sistema con bambini che si lanciano palline in un cortile, la sua **logica di computazione** sarebbe identica al chip di silicio. Cambierebbero la velocità e l’energia necessaria, ma la "macchina di Turing" sottostante resterebbe invariata. L’intelligenza non sta nel materiale (carbonio o silicio), ma nella **configurazione del flusso**.
 
-![(/images/pessa-2.2.jpg)]
+![](/images/pessa-2.2.jpg)
 
 ### 3. Il Transformer: L'Ala Semantica
 Il salto dai vecchi algoritmi ai Transformer non è stato un salto di hardware (usiamo ancora i discendenti dello Z80), ma un salto di **forma**.
@@ -40,7 +40,7 @@ Il salto dai vecchi algoritmi ai Transformer non è stato un salto di hardware (
 Quando un linguaggio attraversa i layer di un Transformer, non sta venendo elaborato da un ragioniere; sta generando una **portanza cognitiva**. Il significato emerge perché la struttura dei pesi permette ai concetti di "galleggiare" l'uno sull'altro in base alla loro affinità geometrica (risonanza).
 
 
-![(/images/pessa-2.3.jpg)]
+![](/images/pessa-2.3.jpg)
 
 ### 4. Conclusione: La Geometria vince
 Oggi esistono aeromodelli leggerissimi che consumano quanto un uccello di pari peso. Allo stesso modo, arriveremo a IA che consumano quanto un cervello. Ma il punto è che abbiamo finalmente isolato il segreto: **non serve la carne per pensare, serve la geometria**.
