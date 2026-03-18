@@ -9,7 +9,10 @@ import Translactions from '@site/src/components/Translactions';
 
 <Translactions />
 
-# La Tesi mancante: La portanza ed il pensiero
+# La Tesi mancante: L’Area di Broca come Transformer e la Geometria delle Pulsioni
+
+### Di Piero Proietti (penguins-eggs.net)
+**Un ponte tra le lezioni di AI seguite nel 1996 con il mitico Prof. Eliano Pessa e la rivoluzione dei Large Language Models.**
 
 ---
 
