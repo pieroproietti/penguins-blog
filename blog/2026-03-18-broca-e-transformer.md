@@ -1,7 +1,7 @@
 ---
 authors: pieroproietti
 slug: broca-e-transformer
-title: "Broca e Transformer: La Geometria delle Pulsioni"
+title: "Broca e Transformer - la tesi mancante"
 lang: it
 enableComments: true
 ---
