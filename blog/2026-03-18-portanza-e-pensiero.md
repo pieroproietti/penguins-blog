@@ -52,3 +52,19 @@ Siamo passati dal "battito d'ali" della biologia al "jet di silicio" dei Transfo
 
 
 
+### Riferimenti per la Parte 2: La Fisica della Portanza e del Bit
+
+Per chi vuole capire come un "ammasso di ferraglia" possa sollevarsi o pensare, ecco le coordinate tecniche:
+
+* **Anderson, J. D. (2016).** *Fundamentals of Aerodynamics*. Il testo sacro per capire la portanza. Spiega perché l'ala non ha bisogno di battere per generare volo, proprio come il Transformer non ha bisogno di "sentire" per generare senso. [Scheda McGraw Hill](https://www.mheducation.com/highered/product/fundamentals-aerodynamics-anderson/M9781259129919.html)
+
+
+* **Zilog Z80 CPU User Manual.** Per i nostalgici e per chi vuole vedere come otto registri e un quarzo hanno cambiato il mondo. La prova che la logica è indipendente dal supporto. [Manuale Originale PDF](https://www.zilog.com/docs/z80/um0080.pdf)
+
+
+* **Shannon, C. E. (1948).** *A Mathematical Theory of Communication*. Il big bang dell'informazione. Claude Shannon spiega che il "messaggio" è geometria e probabilità, non materia. [Bell System Technical Journal](https://ieeexplore.ieee.org/document/6773024)
+
+* **Turing, A. M. (1936).** *On Computable Numbers*. Dove si dimostra che una macchina fatta di carta e nastro può calcolare tutto ciò che è calcolabile. Il fondamento della nostra "macchina a palline da tennis". [Testo originale su Oxford Academic](https://academic.oup.com/lms/article-lookup/doi/10.1112/plms/s2-42.1.230)
+
+
+* **Wolfram, S. (2023).** *What Is ChatGPT Doing ... and Why Does It Work?* Una spiegazione moderna su come i modelli linguistici creano una "traiettoria" nello spazio semantico, simile alla portanza di un'ala. [Link al blog di Wolfram](https://writings.stephenwolfram.com/2023/02/what-is-chatgpt-doing-and-why-does-it-work/)
