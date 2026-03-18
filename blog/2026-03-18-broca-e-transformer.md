@@ -85,7 +85,7 @@ Questa tesi si poggia su pilastri della ricerca neuroscientifica e computazional
 Questa tesi si poggia su pilastri della ricerca neuroscientifica e computazionale. Di seguito i riferimenti diretti per chi desidera approfondire la convergenza tra biologia e silicio.
 
 ### 1. Fondamenti e Sistemi Complessi (Scuola di Pessa)
-* **Pessa, E. (1992).** *Statistica e dinamica delle reti neurali*. Roma: Di Renzo Editore. [Scheda Biografica e Opere di Eliano Pessa](https://metis.uniroma1.it/pessa/profilo.html)
+* **Pessa, E. (1992).** *Statistica e dinamica delle reti neurali*. Roma: Di Renzo Editore. [Scheda Biografica e Opere di Eliano Pessa](https://it.wikipedia.org/wiki/Eliano_Pessa)
 * **Pessa, E., & Penna, M. P. (2000).** *Modelli neurocomputazionali*. Roma: Carocci. [Scheda Editore Carocci](https://www.carocci.it/index.php?option=com_carocci&task=schedalibro&isbn=9788843016488)
 
 ### 2. L'Architettura Transformer
