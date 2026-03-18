@@ -80,23 +80,27 @@ Trent'anni dopo, la tesi di Eliano Pessa trova la sua quadratura: siamo algoritm
 
 Questa tesi si poggia su pilastri della ricerca neuroscientifica e computazionale. Di seguito i riferimenti diretti per chi desidera approfondire la convergenza tra biologia e silicio.
 
+## Bibliografia e Riferimenti Scientifici
+
+Questa tesi si poggia su pilastri della ricerca neuroscientifica e computazionale. Di seguito i riferimenti diretti per chi desidera approfondire la convergenza tra biologia e silicio.
+
 ### 1. Fondamenti e Sistemi Complessi (Scuola di Pessa)
-* **Pessa, E. (1992).** *Statistica e dinamica delle reti neurali*. Roma: Di Renzo Editore. [Scheda autore su ResearchGate](https://www.researchgate.net/scientific-contributions/Eliano-Pessa-38378631)
-* **Pessa, E., & Penna, M. P. (2000).** *Modelli neurocomputazionali*. Roma: Carocci. [Riferimento accademico](https://www.carocci.it/index.php?option=com_carocci&task=schedalibro&Itemid=72&isbn=9788843016488)
+* **Pessa, E. (1992).** *Statistica e dinamica delle reti neurali*. Roma: Di Renzo Editore. [Scheda Biografica e Opere di Eliano Pessa](https://metis.uniroma1.it/pessa/profilo.html)
+* **Pessa, E., & Penna, M. P. (2000).** *Modelli neurocomputazionali*. Roma: Carocci. [Scheda Editore Carocci](https://www.carocci.it/index.php?option=com_carocci&task=schedalibro&isbn=9788843016488)
 
 ### 2. L'Architettura Transformer
-* **Vaswani, A., et al. (2017).** *Attention Is All You Need*. Il paper fondamentale che ha introdotto il concetto di Self-Attention. [Leggi su arXiv.org](https://arxiv.org/abs/1706.03762)
+* **Vaswani, A., et al. (2017).** *Attention Is All You Need*. Il paper fondamentale che ha introdotto il concetto di Self-Attention. [Versione PDF su arXiv.org](https://arxiv.org/pdf/1706.03762.pdf)
 
 
 ### 3. La Convergenza Cerebrale (Brain-Score)
-* **Schrimpf, M., et al. (2021).** *The neural architecture of language: Integrative modeling of predictivity and complexity*. Dimostra come i Transformer mappino l'attività dell'Area di Broca. [Leggi su PNAS](https://www.pnas.org/doi/10.1073/pnas.2105646118)
-* **Caucheteux, C., & King, J. R. (2022).** *Brains and algorithms partially converge in natural language processing*. Sulla convergenza gerarchica tra cervello e algoritmi. [Leggi su Nature Communications](https://www.nature.com/articles/s41467-022-31361-w)
+* **Schrimpf, M., et al. (2021).** *The neural architecture of language: Integrative modeling of predictivity and complexity*. Studio sulla mappatura tra Transformer e Area di Broca. [Articolo completo su PNAS](https://www.pnas.org/doi/full/10.1073/pnas.2105646118)
+* **Caucheteux, C., & King, J. R. (2022).** *Brains and algorithms partially converge in natural language processing*. Sulla convergenza gerarchica. [Articolo su Nature Communications](https://www.nature.com/articles/s41467-022-31361-w)
 
 
 ### 4. Dopamina e Loss Function
-* **Schultz, W. (1997).** *A neural substrate of prediction and reward*. Il lavoro originale sulla dopamina come segnale di errore (Reward Prediction Error). [Leggi su Science](https://www.science.org/doi/10.1126/science.275.5306.1593)
-* **Glimcher, P. W. (2011).** *Foundations of Neuroeconomic Analysis*. Sulla formalizzazione matematica del valore e delle pulsioni. [Oxford Scholarship Online](https://academic.oup.com/book/25134)
+* **Schultz, W. (1997).** *A neural substrate of prediction and reward*. Il lavoro originale sul Reward Prediction Error. [Abstract e testo su Science](https://www.science.org/doi/10.1126/science.275.5306.1593)
+* **Glimcher, P. W. (2011).** *Foundations of Neuroeconomic Analysis*. Sulla formalizzazione matematica del valore. [Link Oxford Academic](https://academic.oup.com/book/25134)
 
 
 ### 5. Neuropsicologia Classica
-* **Lurija, A. R. (1973).** *The Working Brain: An Introduction to Neuropsychology*. Il testo fondamentale sui sistemi funzionali complessi e le lesioni corticali. [Riferimento su Google Books](https://books.google.com/books?id=0Xn-AgAAQBAJ)
+* **Lurija, A. R. (1973).** *The Working Brain: An Introduction to Neuropsychology*. Testo fondamentale sui sistemi funzionali complessi. [Versione digitale su Archive.org](https://archive.org/details/workingbrainintr0000luri)
