@@ -56,5 +56,36 @@ La vita reale, con il suo calore biologico, il suo errore imprevedibile e il suo
 
 Ma quanto somiglia però... 
 
+### Vademecum: La Meccanica del Transformer (Modello 175B)
+
+1. L'INGRESSO: TOKEN & EMBEDDING
+- Token: L'unità minima (parola o parte di essa). È l'indirizzo di una riga in una tabella.
+- Embedding: Il "DNA" del token. Un vettore di 12.288 numeri decimali. 
+- Concetto chiave: L'embedding non è solo un numero, è una coordinata in uno spazio a 12.288 dimensioni. La vicinanza tra due vettori indica affinità semantica.
+
+2. IL MOTORE: PESI E SIGNIFICATO
+- I Pesi (W): Matrici fisse (12.288 x 12.288) residenti in ogni layer. Non appartengono al token, ma al circuito.
+- La Trasformazione: Il token (vettore) attraversa tre matrici di pesi per assumere tre ruoli:
+    * Wq (Query): Cosa il token "cerca" negli altri (Permessi).
+    * Wk (Key): Cosa il token "offre" agli altri (Connessioni).
+    * Wv (Value): Il contenuto informativo che il token trasmette (Carico).
+- Il Significato: Non è statico. Nasce dall'interazione (prodotto scalare) tra le Query e le Key di tutti i token presenti nella frase.
+
+3. LA STRUTTURA: I 96 STRATI (LAYER)
+- Profondità: Il modello top-level elabora il dato attraverso 96 piani consecutivi.
+- Add & Norm (Connessione Residua): Ad ogni piano, il risultato del calcolo viene "sommato" al vettore originale. 
+- Concetto chiave: Il token non viene mai sovrascritto, ma "arricchito". Al piano 96, il vettore ha la stessa dimensione iniziale (12.288), ma è saturo di tutto il contesto della frase.
+
+4. L'USCITA: LA SCOMMESSA GEOMETRICA
+- L'Ultimo Token: Il sistema si concentra sul vettore in uscita al 96° piano dell'ultimo token della sequenza.
+- Un-embedding: Quel vettore "iper-arricchito" viene confrontato con i 100.000 vettori del vocabolario iniziale.
+- Il Miracolo: La parola che "risuona" di più con quel vettore finale è quella che viene scritta sullo schermo.
+- Ciclo Autoregressivo: Scritta la parola, essa diventa parte dell'input e il processo ricomincia da zero per la parola successiva.
+
+5. I NUMERI DEL GIGANTE (RIASSUNTO)
+- Dimensione Vettore (d_model): 12.288
+- Matrice dei Pesi (d^2): ~151 Milioni di parametri per singola matrice.
+- Memoria Modello: ~350 GB (In formato float16).
+
 ---
 **Piero Proietti** - *Riflessioni su AI, sistemi e biologia.*
