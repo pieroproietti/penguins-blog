@@ -61,7 +61,31 @@ sudo eggs produce --max
 * **Scegliete penguins-eggs** se siete sviluppatori o sistemisti. Se avete bisogno di supportare Arch o Fedora, se lavorate su ARM/RISC-V o se volete automatizzare la distribuzione tramite rete (**Cuckoo**) e script complessi (**Wardrobe**).
 
 
+## Test sul campo: penguins-eggs vs distroClone
+
+Per passare dalla teoria alla pratica, ho effettuato un test reale creando una ISO della mia distribuzione di sviluppo **Colibrì** (basata su **Debian Trixie**) utilizzando entrambi gli strumenti. Ecco com'è andata.
+
+### L'esperienza d'uso
+Essendo lo sviluppatore di **penguins-eggs**, per me l'uso del mio tool risulta ovviamente più naturale, ma devo dire che utilizzare **distroClone** è stato estremamente semplice e intuitivo. Entrambi i software hanno portato a termine il compito in modo eccellente, producendo ISO perfettamente funzionanti.
+
+### Velocità e Compressione
+Ho notato che **penguins-eggs** mantiene un vantaggio in termini di velocità pura. Questo è dovuto principalmente all'architettura del processo che evita, per buona parte, la fase di copia fisica dei file, oltre che alla gestione della compressione di default.
+
+Un dato interessante emerge dalla scelta dell'algoritmo di compressione:
+* Passando alla compressione **xz**, la differenza è notevole.
+* Il peso della ISO finale è sceso da **2,4 GB** a soli **1,8 GB**. 
+Sebbene la compressione massima richieda più tempo, il risparmio di spazio (circa il 25%) ne giustifica ampiamente l'attesa per chi deve distribuire l'immagine.
+
+### Fair Play Tecnico
+Un dettaglio che ho apprezzato molto: **distroClone** rileva e rimuove automaticamente penguins-eggs se presente nel sistema, evitando conflitti durante la build. È un'ottima accortezza tecnica. Al momento eggs non ricambia il "favore", ma è una funzionalità che mi è piaciuta e che valuterò di implementare nelle prossime release.
+
+### Una visione comune
+In conclusione, entrambi si confermano strumenti ottimi e solidi. Credo fermamente che la **rimasterizzazione** non dovrebbe essere un "optional" per esperti, ma una funzionalità nativa di ogni distribuzione Linux (e non solo). Permettere a chiunque di creare la propria ISO personalizzata è un atto di libertà digitale.
+
+I miei complimenti vanno all'amico **Franco Conidi**. Ci siamo conosciuti ai tempi in cui entrambi cercavamo disperatamente un'alternativa a *Systemback*, prima ancora che iniziassi l'avventura con penguins-eggs. È un piacere vedere come entrambi siamo riusciti a dare una risposta concreta a quella necessità.
+
 repo: 
 - [distroclone](https://github.com/fconidi/distroClone)
 - [penguins-eggs](https://github.com/penguins-eggs/penguins-eggs)
+
 
