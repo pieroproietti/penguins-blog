@@ -61,3 +61,7 @@ sudo eggs produce --max
 * **Scegliete penguins-eggs** se siete sviluppatori o sistemisti. Se avete bisogno di supportare Arch o Fedora, se lavorate su ARM/RISC-V o se volete automatizzare la distribuzione tramite rete (**Cuckoo**) e script complessi (**Wardrobe**).
 
 
+repo: 
+- [distroclone](https://github.com/fconidi/distroClone)
+- [penguins-eggs](https://github.com/penguins-eggs/penguins-eggs)
+
