@@ -47,9 +47,9 @@ Dopo un breve scambio di idee con l'autore di mx-snapshot, e dati anche gli stru
 
 Si può fare? Da solo penso proprio di no, anche se in tre giorni in effetti ho tirato fuori più di qualcosa: addirittura creo già la ISO funzionante ed è velocissimo. Ma non mi illudo, la strada è lunga.
 
-In sostanza, per non ritrovarci con l'ennesima 'banana' informatica, serve una vera squadra. Cerco sviluppatori per il codice, grafici per dare un volto al progetto e finanziatori per dargli ossigeno. Se questa visione vi stuzzica, uniamo le forze e facciamo crescere oa insieme.
+In sostanza, per non ritrovarci con l'ennesima 'banana' informatica, serve una vera squadra. Cerco sviluppatori per il codice, grafici per dare un volto al progetto e finanziatori per dargli ossigeno. Se questa visione vi stuzzica, uniamo le forze e facciamolo crescere insieme.
 
 
-# Riperimenti
-- [repository](https://github.com/pieroproietti/oa)
-- [documentazione](https://github.com/pieroproietti/oa/tree/main/docs)
+# Riferimenti 
+- [oa repository](https://github.com/pieroproietti/oa)
+- [oa documentazione](https://github.com/pieroproietti/oa/tree/main/docs)
