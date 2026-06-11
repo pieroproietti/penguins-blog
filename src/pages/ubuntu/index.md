@@ -4,8 +4,7 @@
 The number 1 open source operating system that powers millions of PCs and laptops around the world.
 
 ## Penguins' eggs remastered version
-* [Ubuntu 18.10 Bionic](/ubuntu/bionic/)
-* [Ubuntu 24.10 Noble](/ubuntu/noble/)
+* [Ubuntu 24.04 LTS Noble](/ubuntu/noble/)
 
 ## Penguins' eggs packages
 Here you can download actual packages to install and reproduce your system.

@@ -30,7 +30,7 @@ pnpm serve          # serve the production build (also ./serve.sh)
 | `src/pages/` | Landing pages, one folder per supported distro (debian, archlinux, fedora, alpine, almalinux, devuan, …) plus `index.js`. |
 | `src/components/` | React components: `GiscusComponent` (comments via Giscus), `HomepageFeatures`, `Translactions`. |
 | `static/` | Served as-is at the site root: `images/`, `img/`, **`llms.txt`** (AI context, see below). |
-| `oa-tools/` | **Mirror of `~/oa-tools/DOCS/`**, published at `/oa-tools` via a second docs-plugin instance (`sidebarsOaTools.js`, navbar item "oa-tools"). The source of truth is the oa-tools repo: when its DOCS change, re-copy them here. Only `index.md` and the `_category_.json` files are blog-specific. |
+| `oa-tools/` | **Mirror of `~/oa-tools/DOCS/`**, published at `/oa-tools` via a second docs-plugin instance (`sidebarsOaTools.js`, navbar item "oa-tools"). The source of truth is the oa-tools repo: when its DOCS change, run `./sync-oa-docs.sh`. Only `index.md` and the `_category_.json` files are blog-specific. |
 | `docusaurus.config.js` | Site config: url `https://penguins-eggs.net`, locale `en`, Google gtag/Tag Manager, `onBrokenLinks: 'warn'`. |
 
 ## static/llms.txt — keep it true

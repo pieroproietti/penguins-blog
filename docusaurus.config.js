@@ -24,7 +24,12 @@ const config = {
   // projectName: 'penguins-blog', // Usually your repo name.
 
   onBrokenLinks: 'warn', // invece di 'throw'
-  onBrokenMarkdownLinks: 'warn', // invece di 'throw'
+
+  markdown: {
+    hooks: {
+      onBrokenMarkdownLinks: 'warn', // invece di 'throw'
+    },
+  },
 
   // Even if you don't use internationalization, you can use this field to set
   // useful metadata like html lang. For example, if your site is Chinese, you
@@ -67,6 +72,7 @@ const config = {
         blog: {
           showReadingTime: true,
           blogSidebarCount: 'ALL',
+          onUntruncatedBlogPosts: 'ignore', // i post storici non hanno <!--truncate-->
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           // editUrl: 'https://github.com/pieroproietti/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',

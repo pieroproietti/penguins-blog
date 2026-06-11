@@ -13,6 +13,8 @@ import Translactions from '@site/src/components/Translactions';
 
 Sono dieci anni, più o meno, di penguins-eggs: ha avuto un certo successo ma è un'ammazzata eroica. Nel tempo mi ha dato grandi soddisfazioni, come avere l'onore di conoscere Hossein Seilany, autore di predator-os e molto altro, che non sento più per la sconsiderata azione di guerra israelo/americana. Stefano Capitani di Manjaro, che mi ha aiutato ad estendere penguins-eggs verso Manjaro ed Arch Linux, che poi è stato il primo passo per renderlo più universale aggiungendo successivamente altre distro: RHEL, SUSE.
 
+<!--truncate-->
+
 Insomma, mi ha portato ad una posizione privilegiata: osservare gli affanni dietro Waydroid, Charlie Martinez ed il suo Quirinux, Franco Conidi ed il suo DistroClone. Tanta gente e tanti anni: fatica, soddisfazioni ed esperienza.
 
 Ma siamo sempre lì: nonostante abbia avuto delle collaborazioni, il progetto è andato avanti sostanzialmente in solitaria. L'unico con cui mi sentivo spesso era proprio Hossein e che dire: Trump è evidentemente più potente di me.
