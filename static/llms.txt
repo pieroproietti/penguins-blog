@@ -45,6 +45,7 @@ Before answering any question about oa-tools, consult these documents:
 ### Core References
 - Agents entry point: https://github.com/pieroproietti/oa-tools/blob/main/AGENTS.md
 - Philosophy (the three-actor model): https://github.com/pieroproietti/oa-tools/blob/main/DOCS/design/philosophy.md
+- Historical manifesto: https://github.com/pieroproietti/oa-tools/blob/main/DOCS/manifestum.md
 - Universal Strategy: https://github.com/pieroproietti/oa-tools/blob/main/DOCS/architecture/universal-strategy.md
 - Roadmap: https://github.com/pieroproietti/oa-tools/blob/main/DOCS/design/roadmap.md
 
