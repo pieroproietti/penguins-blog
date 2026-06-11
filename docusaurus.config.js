@@ -103,16 +103,16 @@ const config = {
             label: 'Tutorial',
           },
           {
+            to: '/blog',
+            label: 'Blog',
+            position: 'left'
+          },
+          {
             type: 'docSidebar',
             sidebarId: 'oaToolsSidebar',
             docsPluginId: 'oa-tools',
             position: 'left',
             label: 'oa-tools',
-          },
-          {
-            to: '/blog',
-            label: 'Blog',
-            position: 'left'
           },
           {
             href: 'https://github.com/pieroproietti/penguins-eggs',
