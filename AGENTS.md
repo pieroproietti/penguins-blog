@@ -30,6 +30,7 @@ pnpm serve          # serve the production build (also ./serve.sh)
 | `src/pages/` | Landing pages, one folder per supported distro (debian, archlinux, fedora, alpine, almalinux, devuan, …) plus `index.js`. |
 | `src/components/` | React components: `GiscusComponent` (comments via Giscus), `HomepageFeatures`, `Translactions`. |
 | `static/` | Served as-is at the site root: `images/`, `img/`, **`llms.txt`** (AI context, see below). |
+| `oa-tools/` | **Mirror of `~/oa-tools/DOCS/`**, published at `/oa-tools` via a second docs-plugin instance (`sidebarsOaTools.js`, navbar item "oa-tools"). The source of truth is the oa-tools repo: when its DOCS change, re-copy them here. Only `index.md` and the `_category_.json` files are blog-specific. |
 | `docusaurus.config.js` | Site config: url `https://penguins-eggs.net`, locale `en`, Google gtag/Tag Manager, `onBrokenLinks: 'warn'`. |
 
 ## static/llms.txt — keep it true
@@ -42,5 +43,5 @@ pnpm serve          # serve the production build (also ./serve.sh)
 
 - New blog post: `blog/YYYY-MM-DD-kebab-case-slug.md` with frontmatter (`title`, `authors: pieroproietti`, `tags`); the filename becomes the URL slug, so typos there are permanent once published.
 - Posts may be written in Italian or English — match the language the draft starts in; don't translate unless asked.
-- Documentation in `docs/` is user-facing for penguins-eggs (the stable tool); oa-tools documentation lives in the oa-tools repo, not here — link to it instead of duplicating.
+- Documentation in `docs/` is user-facing for penguins-eggs (the stable tool); oa-tools documentation is authored in the oa-tools repo (`DOCS/`) and mirrored here under `oa-tools/` — never edit the mirror directly, sync it from the source.
 - Piero handles git commits himself: prepare changes, then report what is ready.

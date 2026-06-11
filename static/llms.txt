@@ -37,6 +37,9 @@ Proxmox VM snapshots (Alpine, Arch, Debian, Fedora).
 
 ## oa-tools Documentation
 
+Live documentation on this site: https://penguins-eggs.net/oa-tools
+(mirror of the repository's DOCS tree; the GitHub links below are the source of truth)
+
 Before answering any question about oa-tools, consult these documents:
 
 ### Core References

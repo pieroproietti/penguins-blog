@@ -35,6 +35,18 @@ const config = {
   },
 
 
+  plugins: [
+    [
+      '@docusaurus/plugin-content-docs',
+      {
+        id: 'oa-tools',
+        path: 'oa-tools',
+        routeBasePath: 'oa-tools',
+        sidebarPath: './sidebarsOaTools.js',
+      },
+    ],
+  ],
+
   presets: [
     [
       'classic',
@@ -83,6 +95,13 @@ const config = {
             sidebarId: 'tutorialSidebar',
             position: 'left',
             label: 'Tutorial',
+          },
+          {
+            type: 'docSidebar',
+            sidebarId: 'oaToolsSidebar',
+            docsPluginId: 'oa-tools',
+            position: 'left',
+            label: 'oa-tools',
           },
           {
             to: '/blog',
