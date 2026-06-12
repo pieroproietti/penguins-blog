@@ -137,3 +137,7 @@ Un uovo alla volta.
 *oa-tools è disponibile su [GitHub](https://github.com/pieroproietti/oa-tools).*  
 *Documentazione: [penguins-eggs.net/oa-tools](https://penguins-eggs.net/oa-tools)*  
 *penguins-eggs (stabile, produzione): [GitHub](https://github.com/pieroproietti/penguins-eggs)*
+
+Sia penguins-eggs che oa-tools condividono la stessa repository nativa. per abilitarla usare il comando:
+
+```eggs tool repo --add``` su penguins-eggs o ```eggs tools repo add``` su oa-tools.
