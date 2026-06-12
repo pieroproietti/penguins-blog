@@ -1,7 +1,7 @@
 ---
 authors: pieroproietti
 slug: scripta-volant
-title: "Sulla vita nell'epoca dello "Scripta Volant""
+title: "Sulla vita nell'epoca dello Scripta Volant"
 lang: it
 enableComments: true
 ---
