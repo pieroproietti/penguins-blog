@@ -69,7 +69,7 @@ Fino a giugno 2026 le statistiche erano generate con lo storico tool `visitors` 
 ## ⚠️ Promemoria / questioni aperte (giugno 2026)
 
 * ✅ **RISOLTO (12/6/2026)** — il log era arrivato a **4,2 GB** (accumulava dal 1/8/2025) perché **logrotate non era proprio installato** sul VPS: i config in `/etc/logrotate.d/` c'erano, mancava il pacchetto. Installato con `apt install logrotate` (il timer systemd si abilita da solo), prima rotazione forzata con `sudo logrotate -f /etc/logrotate.conf`. Lo storico pre-rotazione è archiviato compresso in `~/` sul server.
-* **AWStats fantasma**: durante la rotazione è emerso che sul server è installato anche AWStats, con config rotta (`SiteDomain` non definito) — errore a ogni rotazione via hook `httpd-prerotate`. Da configurare o, meglio, `apt purge awstats` (controllare prima se `/var/lib/awstats` contiene dati storici).
+* ✅ **RISOLTO (12/6/2026)** — **AWStats fantasma**: durante la rotazione è emerso che sul server era installato anche AWStats (dicembre 2024, mai configurato: `/var/lib/awstats` vuoto, errore `SiteDomain` a ogni rotazione via hook `httpd-prerotate`). Rimosso con `apt purge awstats`.
 * C'è (o c'era) un **bot in loop** sul basket: Amazonbot segue link relativi che si concatenano (`/basket/index.php/packages/packages/el9/packages/...`) ricevendo 302 all'infinito. Possibili rimedi: `robots.txt` che escluda `/basket/`, o sistemare i link del file manager.
 * Le cartelle `packages/*/old/` contengono copie identiche delle versioni correnti: spazio raddoppiato senza vera storia.
 * La cartella `basket/stuffs/` (conteneva solo `pyegglocale.py`, script orfano del 2024) è stata archiviata in `~/basket-stuffs-archiviato`.
