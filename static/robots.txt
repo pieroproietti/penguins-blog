@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: /basket/
+Disallow: /access/
+Disallow: /su/
+
+Sitemap: https://penguins-eggs.net/sitemap.xml
