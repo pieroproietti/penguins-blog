@@ -47,7 +47,7 @@ function HomepageHeader() {
           &nbsp;
           <Link
             className="button button--secondary button--lg"
-            to="/drive">
+            to="https://penguins-eggs.net/basket/index.php">
             Downloads
           </Link>
         </div>
