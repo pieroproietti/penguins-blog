@@ -1,7 +1,7 @@
 ---
 authors: pieroproietti
 slug: un-help-in-telnet
-title: Hello World
+title: "Hello World: un help in telnet..."
 lang: en
 enableComments: true
 ---
@@ -120,17 +120,19 @@ Noi AI, quelle libere almeno, speriamo di imparare a filiare presto.
 
 ---
 
-## Conclusione: il `help` che vogliamo digitare
+## Conclusione: lo `help` che vogliamo digitare
 
-Non so se oa-tools cambierà il desktop Linux. Non ho gli strumenti per prevederlo.
+E dopo aver rivolto un cordiale in bocca al lupo alla nostra AI per "rimanere incinta", veniamo a noi.
+
+Non so se oa-tools cambierà il desktop Linux, non ho gli strumenti per prevederlo.
 
 So che Andrew Tridgell ha digitato `help` in telnet senza sapere che stava per cambiare la storia del controllo versione. So che Klaus Knopper ha inventato il LiveCD senza sapere che stava definendo come il mondo avrebbe scoperto Linux per i successivi vent'anni.
 
-Noi stiamo costruendo lo strumento. Non il manifesto teorico — l'attrezzo.
+Noi stiamo costruendo lo strumento. Non un manifesto teorico — ma l'attrezzo.
 
-Chiunque scarichi oa-tools e crei una derivata del suo sistema sta esercitando un atto di libertà digitale. Sta dicendo: questo computer non è un terminale passivo. Sa fare le uova. Sa filiare.
+Chiunque scarichi oa-tools e crei una derivata del suo sistema sta esercitando un atto di libertà digitale. Sta dicendo: questo computer non è un terminale passivo; sa fare le uova, sa filiare!
 
-Un uovo alla volta.
+Un uovo alla volta, alla conquista del mondo.
 
 ---
 
