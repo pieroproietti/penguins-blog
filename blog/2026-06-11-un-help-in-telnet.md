@@ -144,6 +144,6 @@ Sia penguins-eggs che oa-tools condividono la stessa repository nativa. per abil
 
 ```eggs tool repo --add``` su penguins-eggs o ```eggs tools repo add``` su oa-tools.
 
-![](/images/un-help-1.jpg)
-![](/images/un-help-2.webp)
-![](/images/un-help-4.jpg)
+![](/img/un-help-1.jpg)
+![](/img/un-help-2.webp)
+![](/img/un-help-3.jpg)
