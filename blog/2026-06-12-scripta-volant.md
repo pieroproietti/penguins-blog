@@ -1,7 +1,7 @@
 ---
 authors: pieroproietti
 slug: scripta-volant
-title: "Scripta volant"
+title: "Sulla vita nell'epoca dello "Scripta Volant""
 lang: it
 enableComments: true
 ---
@@ -9,7 +9,7 @@ import Translactions from '@site/src/components/Translactions';
 
 <Translactions />
 
-## Scripta Volant: L'illusione della forma scritta
+## Sulla vita nell'epoca dello Scripta Volant
 
 > "Verba volant, scripta manent."
 > *(Caio Tito, discorso al Senato Romano)*
