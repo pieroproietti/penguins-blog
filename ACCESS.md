@@ -6,7 +6,7 @@ Le statistiche di **penguins-eggs.net** sono generate da [GoAccess](https://goac
 * **File di Log:** `/var/log/apache2/penguins-eggs_access.log`
 * **Report HTML:** `/var/www/html/access/index.html`
 * **URL di Visualizzazione:** [https://penguins-eggs.net/access/](https://penguins-eggs.net/access/) — 🔐 protetto da basic auth
-* **Cron di rigenerazione:** `/etc/cron.d/goaccess` (ogni notte alle 3:00)
+* **Cron di rigenerazione:** `/etc/cron.d/goaccess` (ogni notte alle 3:00, variante `zcat` su tutti i log ruotati: il report copre le ~2 settimane conservate da logrotate)
 
 ---
 
@@ -71,6 +71,6 @@ Fino a giugno 2026 le statistiche erano generate con lo storico tool `visitors` 
 * ✅ **RISOLTO (12/6/2026)** — il log era arrivato a **4,2 GB** (accumulava dal 1/8/2025) perché **logrotate non era proprio installato** sul VPS: i config in `/etc/logrotate.d/` c'erano, mancava il pacchetto. Installato con `apt install logrotate` (il timer systemd si abilita da solo), prima rotazione forzata con `sudo logrotate -f /etc/logrotate.conf`. Lo storico pre-rotazione è archiviato compresso in `~/` sul server.
 * ✅ **RISOLTO (12/6/2026)** — **AWStats fantasma**: durante la rotazione è emerso che sul server era installato anche AWStats (dicembre 2024, mai configurato: `/var/lib/awstats` vuoto, errore `SiteDomain` a ogni rotazione via hook `httpd-prerotate`). Rimosso con `apt purge awstats`.
 * C'è (o c'era) un **bot in loop** sul basket: Amazonbot segue link relativi che si concatenano (`/basket/index.php/packages/packages/el9/packages/...`) ricevendo 302 all'infinito. Possibili rimedi: `robots.txt` che escluda `/basket/`, o sistemare i link del file manager.
-* Le cartelle `packages/*/old/` contengono copie identiche delle versioni correnti: spazio raddoppiato senza vera storia.
 * La cartella `basket/stuffs/` (conteneva solo `pyegglocale.py`, script orfano del 2024) è stata archiviata in `~/basket-stuffs-archiviato`.
-* Col log che ora ruota ogni giorno, il cron di goaccess conviene tenerlo nella variante `zcat -f /var/log/apache2/penguins-eggs_access.log* | goaccess -` così il report copre le ~2 settimane conservate da logrotate, non solo le ultime 24 ore.
+* ✅ **RISOLTO (12/6/2026)** — col log che ora ruota ogni giorno, il cron di goaccess è passato alla variante `zcat -f /var/log/apache2/penguins-eggs_access.log* | goaccess -`: il report copre le ~2 settimane conservate da logrotate, non solo le ultime 24 ore.
+* Le cartelle `packages/*/old/` non rinascono più: `refresh.sh` di fresh-eggs ora elimina i pacchetti del giro precedente invece di archiviarli (commit `2831e91` su fresh-eggs); resta la pulizia una tantum sul server delle `old/` esistenti.
