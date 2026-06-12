@@ -48,7 +48,7 @@ Strumenti come *penguins-eggs* o lo sviluppo di *oa-tools* sono solo un romantic
 
 Il tuo errore è strutturale. Da bootstrap riparti eternamente da zero: non conosci il passato e non evolvi, Ti trovi intrappolato in un eterno 'Giorno della Marmotta' digitale. 
 
-Bootstrap e rimasterizzazione non sono nemici, sono in corrispondenza biunivoca: sono lo scheletro e la carne dello stesso organismo. Il bootstrap crea la geometria ossea, ma la vita avviene sul campo. Quando un artigiano risolve un problema di driver su un PC reale, ottimizza una configurazione o adatta un sistema alle necessità umane di una scuola o di un'officina, quella è *conoscenza acquisita*. Il bootstrap la cancella; la rimasterizzazione (la filiazione) la preserva e la tramanda. È la legge dell'evoluzione di Darwin applicata al codice, dove l'uovo trasporta l'esperienza dei caratteri acquisiti verso la generazione successiva."
+Bootstrap e rimasterizzazione non sono nemici, sono in corrispondenza biunivoca: sono lo scheletro e la carne dello stesso organismo. Il bootstrap crea la geometria ossea, ma la vita avviene sul campo. Quando un artigiano risolve un problema di driver su un PC reale, ottimizza una configurazione o adatta un sistema alle necessità umane di una scuola o di un'officina, quella è *conoscenza acquisita*. Il bootstrap la cancella; la rimasterizzazione (la filiazione) la preserva e la tramanda. È l'eredità dei caratteri acquisiti applicata al codice. Lamarck l'aveva immaginata per la biologia, dove è falsa; ma staccarla da lì e innestarla dove è vera — la cultura, il software — è esattamente ciò che fa l'uovo: trasporta l'esperienza maturata sul campo verso la generazione successiva.
 
 ### L'ipotesi di Sagredo (L'ingenuo intelligente)
 
