@@ -82,7 +82,7 @@ La risposta, dopo due mesi, è sì.
 
 - **`oa`** — il motore scritto in C. Gestisce mount/umount con propagazione privata (`MS_PRIVATE`), OverlayFS per il filesystem live, la creazione delle identità utente scrivendo direttamente `passwd` e `shadow` senza dipendere da `useradd`, le maschere tmpfs per evitare loop ricorsivi. Zero dipendenze, syscall native.
 
-- **`coa`** — l'orchestratore scritto in Go. Legge i template YAML per ogni distribuzione, pianifica le operazioni, chiama i worker (gli `ell`) per i task specifici: mksquashfs, xorriso, gestione initramfs, bootloader GRUB/ISOLINUX.
+- **`coa`** — l'orchestratore scritto in Go. Legge i template YAML per ogni distribuzione, pianifica le operazioni, e viene richiamato come worker da oa per i task specifici: autologin-gui, copy, mksquashfs, script, shell, template, xorriso.
 
 La chiave dell'universalità è `LIKE_ID`: invece di mantenere una tabella statica di "Linux Mint deriva da Ubuntu che deriva da Debian", usiamo quello che ogni distro dichiara già in `/etc/os-release`. La fonte di verità è la distro stessa.
 
@@ -92,7 +92,7 @@ Meno di una settimana per rimasterizzare Debian. Poi Arch e Manjaro, quindi Fedo
 
 ---
 
-## Bello ed interessante, ma chi dovrebbe bloccarci?
+## Bello ed interessante, ma a chi potrebbe dare fastidio?
 
 Tridgell ha digitato `help` e ha fatto tremare un monopolio. Microsoft ha risposto spostando i pali della porta — prima con Active Directory, poi con il cloud.
 
