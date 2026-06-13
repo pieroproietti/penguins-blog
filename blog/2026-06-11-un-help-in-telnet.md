@@ -92,21 +92,21 @@ Meno di una settimana per rimasterizzare Debian. Poi Arch e Manjaro, quindi Fedo
 
 ---
 
-## Bello ed interessante, ma a chi potrebbe dare fastidio?
+## Interessante, ma a chi potrebbe dar fastidio?
 
 Tridgell ha digitato `help` e ha fatto tremare un monopolio. Microsoft ha risposto spostando i pali della porta — prima con Active Directory, poi con il cloud.
 
-Ammesso che questa prospettiva avrà successo, a chi potrebbe dare fastidio?
+Ammesso che questa prospettiva possa nuovamente avere successo, essere riportata in auge, a chi potrebbe dar fastidio?
 
 Non Microsoft — non le importa, e ad Apple nemmeno. L'una vive nel proprio ecosistema chiuso e non si preoccupa del remastering; l'altra è diventata nel frattempo un mezzo parente che fa, indiscutibilmente, uno dei migliori Unix di sempre.
 
 Ma un problema vero potrebbe nascere all'interno dell'ecosistema Linux stesso. Potrebbe trattarsi di una distribuzione enterprise che decide che il remastering 'non è supportato'. Potrebbe essere un cambio architetturale di systemd che, pur avendomi semplificato la vita, distrugga di colpo le assunzioni su cui si basa il mio lavoro. O ancora, uno scenario in cui un nuovo modello di licenza renda illegale la creazione di copie di sistema derivate e installabili.
 
-Esiste però anche uno scenario diametralmente opposto: la possibilità che i creatori di distribuzioni e i produttori di hardware comprendano il valore di questa flessibilità e decidano di collaborare. Un esempio concreto mi è capitato di recente, quando SpacemiT mi ha inviato un Musebook basato su architettura RISC-V K1; lavorandoci intensamente con penguins-eggs, sono riuscito a generare un'immagine di sistema sperimentale ma perfettamente funzionante. Sarebbe straordinario poter ripetere questa esperienza sul nuovo SpacemiT K3, accompagnando lo sviluppo di questa promettente architettura in attesa che le specifiche UEFI si stabilizzino al punto da permetterci di usare le classiche .iso (l'equivalente dei nostri vecchi CD-ROM), superando l'attuale necessità di forgiare file .img su misura per il boot.
+Esiste però anche uno scenario diametralmente opposto: la possibilità che i creatori di distribuzioni e i produttori di hardware comprendano il valore di questa flessibilità e decidano di collaborare. Un esempio concreto mi è capitato di recente, quando SpacemiT mi ha inviato un Musebook basato su architettura RISC-V K1; lavorandoci intensamente con penguins-eggs, sono riuscito a generare un'immagine di sistema sperimentale ma perfettamente funzionante. Sarebbe straordinario poter ripetere questa esperienza sul nuovo SpacemiT K3, accompagnando lo sviluppo di questa architettura in attesa che le specifiche UEFI si stabilizzino al punto da permetterci di usare le classiche .iso (l'equivalente dei nostri vecchi CD-ROM), superando l'attuale necessità di forgiare file .img su misura per il boot.
 
-Perché un desktop che "filia" non minaccia il cloud, non minaccia abbonamenti, non minaccia nessun business enterprise.
+Perché un desktop che "filia" non minaccia il cloud, non minaccia abbonamenti, non minaccia nessun business enterprise, ma può accorciare sviluppo ed adozione.
 
-Minaccia solo la monocultura. E la diversitàm la varianza, fa comodo a tutti — persino a chi ha il monopolio in un certo ambito ed è abbastanza lungimirante da capirlo.
+Minaccia semmai la monocultura, contribuendo a diffusione, diversità e varianza. In sostanza dovrebbe far comodo a tutti — persino a chi ha il monopolio in un certo ambito ma è abbastanza lungimirante da capirlo.
 
 ---
 
