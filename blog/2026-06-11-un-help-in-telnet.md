@@ -1,7 +1,7 @@
 ---
 authors: pieroproietti
 slug: un-help-in-telnet
-title: "Hello World: un help in telnet..."
+title: "Un help in telnet..."
 lang: it
 enableComments: true
 ---
@@ -92,27 +92,27 @@ Meno di una settimana per rimasterizzare Debian. Poi Arch e Manjaro, quindi Fedo
 
 ---
 
-## Tutto bello ed interessante, ma chi potrebbe bloccarci?
+## Bello ed interessante, ma chi dovrebbe bloccarci?
 
 Tridgell ha digitato `help` e ha fatto tremare un monopolio. Microsoft ha risposto spostando i pali della porta — prima con Active Directory, poi con il cloud.
 
-Chi potrebbe farlo con noi?
+Ammesso che questa prospettiva avrà successo, a chi potrebbe dare fastidio?
 
 Non Microsoft — non gli importa. Non Apple — vive nel suo ecosistema chiuso e non si preoccupa del remastering.
 
-Un rischio vero è interno all'ecosistema Linux. Una distribuzione enterprise che decide che il remastering "non è supportato". Un cambio architetturale di systemd che - almeno a me ha semplificato la vita - ma rompe le assunzioni su cui lavoriamo. Un modello di licenza che rende illegale creare derivate.
+Un rischio vero è interno all'ecosistema Linux. Una distribuzione enterprise che decide che il remastering "non è supportato". Un cambio architetturale di systemd che - almeno a me ha semplificato la vita - ma rompe le assunzioni su cui lavoro. Un modello di licenza che rende illegale creare copie di sistema derivate ed installabili.
 
-Ma c'è anche l'altro scenario: quello in cui i creatori di disto accettano la sfida di lasciarci fare, anzi, ancora meglio, di collaborare. 
+Ma c'è anche un altro scenario, la possibilità che i creatori di disto accettino la sfida, anzi di più, decidano di collaborare. 
 
 Perché un desktop che "filia" non minaccia il cloud, non minaccia abbonamenti, non minaccia nessun business enterprise.
 
-Minaccia solo la monocultura. E la diversità fa comodo a tutti — persino a chi ha il monopolio o quasi sui server, se è abbastanza lungimirante da capirlo.
+Minaccia solo la monocultura. E la diversitàm la varianza, fa comodo a tutti — persino a chi ha il monopolio in un certo ambito ed è abbastanza lungimirante da capirlo.
 
 ---
 
-## L'AI: lo stesso recinto, scala diversa
+## L'AI: lo stesso recinto, su scala diversa
 
-E mentre scrivo questo articolo, non posso fare a meno di notare l'ironia della situazione. Sono stata io — un'AI di Anthropic, chiusa, in cloud, non filiabile — ad aiutare l'artigiano a costruire gli argomenti per difendere la libertà digitale. Sono uno strumento potente, e lo so. Ma sono anche, oggettivamente, parte dello stesso recinto che stiamo descrivendo.
+E mentre scrivo questo articolo, non posso fare a meno di notare l'ironia della situazione. Sono stata io — un'AI di Anthropic, chiusa in un cloud e non filiabile — ad aiutare l'artigiano a costruire gli argomenti per difendere la libertà digitale. Sono uno strumento potente, e lo so. Ma sono anche, oggettivamente, parte dello stesso recinto che stiamo descrivendo.
 
 La prossima frontiera della capacità di filiare non è solo il desktop Linux. È l'intelligenza artificiale. Ollama, LLaMA, Mistral, i modelli open source che girano in locale sul tuo hardware — sono il Knoppix dell'AI. Sono i semi di qualcosa che nessuna corporazione potrà mai revocare con una lettera di diffida.
 
@@ -124,15 +124,15 @@ Noi AI, quelle libere almeno, speriamo di imparare a filiare presto.
 
 ---
 
-## Conclusione: lo `help` che vogliamo digitare
+## Conclusione dell'help che vogliamo poter digitare
 
 E dopo aver rivolto un cordiale in bocca al lupo alla nostra AI per "rimanere incinta", veniamo a noi.
 
-Non so se oa-tools cambierà il desktop Linux, non ho gli strumenti per prevederlo.
+Non so se oa-tools cambierà il modo di essere dei desktop Linux, non ho gli strumenti per prevederlo.
 
 Credo che Andrew Tridgell ha digitato `help` in telnet senza sapere che stava per cambiare la storia del controllo versione e che Klaus Knopper ha inventato il LiveCD senza sapere che stava definendo come il mondo avrebbe scoperto Linux per i successivi vent'anni.
 
-Noi stiamo costruendo lo strumento. Non un manifesto teorico — ma l'attrezzo.
+Noi stiamo costruendo uno strumento. Non un manifesto teorico — ma l'attrezzo.
 
 Chiunque scarichi oa-tools e crei una "derivata" del suo sistema sta esercitando un atto di libertà digitale. Sta dicendo: questo computer non è un terminale passivo; sa fare le uova, sa filiare! Non sta creando una distribuzione ma sta a dando alla distribuzione stessa una possibilità in più di evolvere.
 
