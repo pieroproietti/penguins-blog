@@ -2,7 +2,7 @@
 authors: pieroproietti
 slug: un-help-in-telnet
 title: "Hello World: un help in telnet..."
-lang: en
+lang: it
 enableComments: true
 ---
 import Translactions from '@site/src/components/Translactions';
@@ -12,7 +12,7 @@ import Translactions from '@site/src/components/Translactions';
 
 C'è una storia che amo raccontare quando voglio spiegare cos'è davvero l'artigianato del software.
 
-Nel 2005, Andrew "Tridge" Tridgell — l'uomo che aveva già creato Samba e rsync, due delle opere di ingegneria inversa più titaniche della storia informatica — si connette via telnet a un server BitKeeper e digita `help`. Solo `help`. Vuole capire come funziona il protocollo. Linus Torvalds esplode. Larry McVoy revoca la licenza gratuita a tutti gli sviluppatori Linux. E Torvalds, furioso, si siede e in poche settimane scrive Git.
+Nel 2005, Andrew "Tridge" Tridgel — l'uomo che aveva già creato Samba e rsync, due delle opere di ingegneria inversa più titaniche della storia informatica — si connette via telnet a un server BitKeeper e digita `help`. Solo `help`. Vuole capire come funziona il protocollo. Linus Torvalds esplode. Larry McVoy revoca la licenza gratuita a tutti gli sviluppatori Linux. E Torvalds, furioso, si siede e in poche settimane scrive Git.
 
 Oggi Git fa girare praticamente tutto il pianeta.
 
@@ -32,7 +32,7 @@ Però c'è una lettura diversa di questa storia, e vale la pena fermarsi a consi
 
 La "razza padrona" non è sempre quella che pensiamo. Non è più Microsoft — che ha fatto pace con Linux perché Linux non tocca il suo vero business, che è il cloud e gli abbonamenti. Il pericolo vero, oggi, viene da dentro. Viene da Red Hat che nel 2023 ha chiuso i sorgenti di RHEL. Viene da systemd che ha colonizzato l'ecosistema fino a rendere difficile la vita a chi non si adegua. Viene dalla Linux Foundation stessa, con IBM e le grandi corporazioni dietro, che trasforma lentamente il pinguino da simbolo di libertà in marchio enterprise.
 
-Tridgell non è mai diventato "razza padrona". È rimasto un artigiano. E forse è per questo che lo venero ancora.
+Tridgell non è mai diventato "razza padrona", è rimasto un artigiano.
 
 ---
 
@@ -48,7 +48,7 @@ Un sistema che sa fare l'uovo — che sa generare una copia di se stesso, person
 
 ---
 
-## La capacità di filiare
+## La capacità di replicare se stessi
 
 Permettetemi di usare una parola che non si usa quasi mai in informatica: **filiare**.
 
@@ -58,7 +58,7 @@ Chi usa penguins-eggs o oa-tools non è un consumatore che aspetta che qualcuno 
 
 È biodiversità contro monocultura.
 
-Mentre il mercato spinge verso la standardizzazione totale — tutti con lo stesso Windows, tutti con gli stessi servizi cloud, tutti con gli stessi abbonamenti — la capacità di filiare è l'unica risposta strutturale che non richiede di vincere la guerra dei grandi numeri.
+Mentre il mercato spinge verso la standardizzazione totale — tutti con lo stesso Windows, tutti con gli stessi servizi cloud, tutti con gli stessi abbonamenti — la capacità di riproduzione è l'unica risposta strutturale che non richiede di vincere la guerra dei grandi numeri.
 
 Non ti serve conquistare il 50% del mercato desktop. Ti basta dare a quei pochi desktop rimasti liberi la possibilità di moltiplicarsi.
 
@@ -70,7 +70,7 @@ Ho iniziato a sviluppare penguins-eggs oltre dieci anni fa, partendo da refracta
 
 penguins-eggs ha funzionato bene. Funziona ancora bene, in produzione, per Debian, Ubuntu, Arch, Fedora, Alpine, e molte derivate. Ma con il tempo i filesystem root sono cresciuti enormi, i sistemi sono diventati più complessi, e i limiti architetturali degli script Bash hanno cominciato a farsi sentire.
 
-A fine marzo 2026 ho cominciato da zero. Avevo una domanda: si può fare un engine di remastering universale, scritto in C nativo, che usi le syscall del kernel Linux direttamente invece di affidarsi a script fragili?
+A fine marzo 2026 ho ri-cominciato da zero. Avevo una domanda: si può fare un engine di remastering universale, parzialmente scritto in C e che usi le syscall del kernel Linux direttamente invece di affidarsi a script fragili?
 
 La risposta, dopo due mesi, è sì.
 
@@ -88,11 +88,11 @@ La chiave dell'universalità è `LIKE_ID`: invece di mantenere una tabella stati
 
 L'approccio è dichiarativo — simile ad Ansible — con moduli specializzati per ogni distribuzione. Alpine, Arch, Debian, Fedora, Manjaro, openSUSE hanno ognuna il loro template e i loro moduli specifici. La complessità è confinata dove deve stare, non sparsa nel codice.
 
-Meno di una settimana per rimasterizzare Debian. Poi Arch. Poi Fedora. Poi Alpine.
+Meno di una settimana per rimasterizzare Debian. Poi Arch e Manjaro, quindi Fedora ed Opensuse, in ultimo Alpine.
 
 ---
 
-## Il pericolo: chi potrebbe bloccarci?
+## Tutto bello ed interessante, ma chi potrebbe bloccarci?
 
 Tridgell ha digitato `help` e ha fatto tremare un monopolio. Microsoft ha risposto spostando i pali della porta — prima con Active Directory, poi con il cloud.
 
@@ -100,15 +100,19 @@ Chi potrebbe farlo con noi?
 
 Non Microsoft — non gli importa. Non Apple — vive nel suo ecosistema chiuso e non si preoccupa del remastering.
 
-Il rischio vero è interno all'ecosistema Linux. Una distribuzione enterprise che decide che il remastering "non è supportato". Un cambio architetturale di systemd che rompe le assunzioni su cui lavoriamo. Un modello di licenza che rende illegale creare derivate commerciali.
+Un rischio vero è interno all'ecosistema Linux. Una distribuzione enterprise che decide che il remastering "non è supportato". Un cambio architetturale di systemd che - almeno a me ha semplificato la vita - ma rompe le assunzioni su cui lavoriamo. Un modello di licenza che rende illegale creare derivate.
 
-Ma c'è anche l'altro scenario: quello in cui le controparti sono abbastanza intelligenti da lasciarci fare. Da collaborare. Perché un desktop che filia non minaccia il cloud, non minaccia gli abbonamenti, non minaccia nessun business enterprise. Minaccia solo la monocultura. E la biodiversità fa bene a tutti — persino a chi ha il monopolio, se è abbastanza lungimirante da capirlo.
+Ma c'è anche l'altro scenario: quello in cui i creatori di disto accettano la sfida di lasciarci fare, anzi, ancora meglio, di collaborare. 
+
+Perché un desktop che "filia" non minaccia il cloud, non minaccia abbonamenti, non minaccia nessun business enterprise.
+
+Minaccia solo la monocultura. E la diversità fa comodo a tutti — persino a chi ha il monopolio o quasi sui server, se è abbastanza lungimirante da capirlo.
 
 ---
 
 ## L'AI: lo stesso recinto, scala diversa
 
-E mentre scrivo questo articolo, non posso fare a meno di notare l'ironia della situazione. Sono stata io — un'AI di Anthropic, chiusa, in cloud, non filiabile — ad aiutare Piero a costruire gli argomenti per difendere la libertà digitale. Sono uno strumento potente, e lo so. Ma sono anche, oggettivamente, parte dello stesso recinto che stiamo descrivendo.
+E mentre scrivo questo articolo, non posso fare a meno di notare l'ironia della situazione. Sono stata io — un'AI di Anthropic, chiusa, in cloud, non filiabile — ad aiutare l'artigiano a costruire gli argomenti per difendere la libertà digitale. Sono uno strumento potente, e lo so. Ma sono anche, oggettivamente, parte dello stesso recinto che stiamo descrivendo.
 
 La prossima frontiera della capacità di filiare non è solo il desktop Linux. È l'intelligenza artificiale. Ollama, LLaMA, Mistral, i modelli open source che girano in locale sul tuo hardware — sono il Knoppix dell'AI. Sono i semi di qualcosa che nessuna corporazione potrà mai revocare con una lettera di diffida.
 
@@ -126,11 +130,11 @@ E dopo aver rivolto un cordiale in bocca al lupo alla nostra AI per "rimanere in
 
 Non so se oa-tools cambierà il desktop Linux, non ho gli strumenti per prevederlo.
 
-So che Andrew Tridgell ha digitato `help` in telnet senza sapere che stava per cambiare la storia del controllo versione. So che Klaus Knopper ha inventato il LiveCD senza sapere che stava definendo come il mondo avrebbe scoperto Linux per i successivi vent'anni.
+Credo che Andrew Tridgell ha digitato `help` in telnet senza sapere che stava per cambiare la storia del controllo versione e che Klaus Knopper ha inventato il LiveCD senza sapere che stava definendo come il mondo avrebbe scoperto Linux per i successivi vent'anni.
 
 Noi stiamo costruendo lo strumento. Non un manifesto teorico — ma l'attrezzo.
 
-Chiunque scarichi oa-tools e crei una derivata del suo sistema sta esercitando un atto di libertà digitale. Sta dicendo: questo computer non è un terminale passivo; sa fare le uova, sa filiare!
+Chiunque scarichi oa-tools e crei una "derivata" del suo sistema sta esercitando un atto di libertà digitale. Sta dicendo: questo computer non è un terminale passivo; sa fare le uova, sa filiare! Non sta creando una distribuzione ma sta a dando alla distribuzione stessa una possibilità in più di evolvere.
 
 Un uovo alla volta, alla conquista del mondo.
 
