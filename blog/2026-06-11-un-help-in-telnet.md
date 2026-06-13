@@ -98,11 +98,11 @@ Tridgell ha digitato `help` e ha fatto tremare un monopolio. Microsoft ha rispos
 
 Ammesso che questa prospettiva avrà successo, a chi potrebbe dare fastidio?
 
-Non Microsoft — non gli importa. Non Apple — vive nel suo ecosistema chiuso e non si preoccupa del remastering.
+Non Microsoft — non le importa, e ad Apple nemmeno. L'una vive nel proprio ecosistema chiuso e non si preoccupa del remastering; l'altra è diventata nel frattempo un mezzo parente che fa, indiscutibilmente, uno dei migliori Unix di sempre.
 
-Un rischio vero è interno all'ecosistema Linux. Una distribuzione enterprise che decide che il remastering "non è supportato". Un cambio architetturale di systemd che - almeno a me ha semplificato la vita - ma rompe le assunzioni su cui lavoro. Un modello di licenza che rende illegale creare copie di sistema derivate ed installabili.
+Ma un problema vero potrebbe nascere all'interno dell'ecosistema Linux stesso. Potrebbe trattarsi di una distribuzione enterprise che decide che il remastering 'non è supportato'. Potrebbe essere un cambio architetturale di systemd che, pur avendomi semplificato la vita, distrugga di colpo le assunzioni su cui si basa il mio lavoro. O ancora, uno scenario in cui un nuovo modello di licenza renda illegale la creazione di copie di sistema derivate e installabili.
 
-Ma c'è anche un altro scenario, la possibilità che i creatori di disto accettino la sfida, anzi di più, decidano di collaborare. 
+Esiste però anche uno scenario diametralmente opposto: la possibilità che i creatori di distribuzioni e i produttori di hardware comprendano il valore di questa flessibilità e decidano di collaborare. Un esempio concreto mi è capitato di recente, quando SpacemiT mi ha inviato un Musebook basato su architettura RISC-V K1; lavorandoci intensamente con penguins-eggs, sono riuscito a generare un'immagine di sistema sperimentale ma perfettamente funzionante. Sarebbe straordinario poter ripetere questa esperienza sul nuovo SpacemiT K3, accompagnando lo sviluppo di questa promettente architettura in attesa che le specifiche UEFI si stabilizzino definitivamente per avviarsi su CDROM.
 
 Perché un desktop che "filia" non minaccia il cloud, non minaccia abbonamenti, non minaccia nessun business enterprise.
 
