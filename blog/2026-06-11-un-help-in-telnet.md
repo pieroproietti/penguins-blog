@@ -1,7 +1,7 @@
 ---
 authors: pieroproietti
 slug: un-help-in-telnet
-title: "Un help in telnet..."
+title: "Un help in telnet"
 lang: it
 enableComments: true
 ---

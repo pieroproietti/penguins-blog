@@ -97,15 +97,15 @@ const config = {
         },
         items: [
           {
+            to: '/blog',
+            label: 'Blog',
+            position: 'left'
+          },
+          {
             type: 'docSidebar',
             sidebarId: 'tutorialSidebar',
             position: 'left',
             label: 'Tutorial',
-          },
-          {
-            to: '/blog',
-            label: 'Blog',
-            position: 'left'
           },
           {
             type: 'docSidebar',
@@ -115,8 +115,8 @@ const config = {
             label: 'oa-tools',
           },
           {
-            href: 'https://github.com/pieroproietti/penguins-eggs',
-            label: 'penguins-eggs',
+            href: 'https://penguins-eggs.net/llms.txt',
+            label: 'llms.txt',
             position: 'right',
           },
         ],
