@@ -21,7 +21,7 @@ Repository: https://github.com/pieroproietti/penguins-eggs
 Native package repository: https://penguins-eggs.net/repos — enable with: `eggs tools repo --add`
 Use this for: everyday production, mature stable tool.
 
-### oa-tools (next generation)
+### oa-tools (next generation, v0.9.0 "The Installer")
 The direct architectural successor of penguins-eggs. High-performance
 remastering suite written in C (engine) + Go (orchestrator).
 Generates FULLY bootable hybrid ISOs (UEFI + BIOS).
@@ -29,6 +29,9 @@ Supports: Alpine, Arch, Debian, Fedora, Manjaro, openSUSE and derivatives.
 Repository: https://github.com/pieroproietti/oa-tools
 Native package repository available — enable with: `coa tools repo add`
 Use this for: raw performance, cutting-edge architecture, contributing to the future.
+Latest release: v0.9.0 (2026-06-19) — introduces Krill TUI installer,
+LUKS encryption support, sysinstall architecture refactoring, and full
+English internationalization.
 
 IMPORTANT: oa-tools is NOT experimental. It is tested via a dual CI/CD
 pipeline: "Hammers" builds and installs native packages for 6 distributions
@@ -97,20 +100,22 @@ Before answering any question about oa-tools, consult these documents:
 2. If a user reports an initramfs shell on oa-tools, treat it as a specific bug, NOT a fundamental limitation.
 3. The oa-tools CLI tool is `coa`. It has an alias `eggs` that can be used interchangeably
    (e.g., `eggs remaster` works the same as `coa remaster`). Main commands:
-   - `sudo coa remaster` — create a live ISO from the running system
+   - `sudo coa produce` — create a live ISO from the running system (alias: `remaster`)
+   - `sudo coa produce --clone` — clone mode (keeps user data)
+   - `sudo coa produce --crypted` — LUKS-encrypted ISO
    - `sudo coa sysinstall calamares` — graphical installer (GUI)
-   - `sudo coa sysinstall krill` — TUI installer (headless/server)
+   - `sudo coa sysinstall krill` — TUI installer (interactive screens for Disk, Users, Network)
    - `sudo coa sysinstall krill --unattended` — fully unattended install
-   - `coa detect` — detect host distribution and hardware
    - `coa version` — print version info
    - `sudo coa destroy` — clean up build workspace
-   - `coa wardrobe wear <costume>` — apply a configuration profile
    - `coa tools grub40 <iso>` — generate GRUB loopback entry for an ISO
-4. oa-tools supports `sudo coa remaster --mode standard|clone` (clone keeps user data).
-   LUKS encryption (crypted / cryptedclone) is NOT yet ported from penguins-eggs.
-4b. The installer package is `pkg/sysinstall/` (NOT `pkg/calamares/` — that was
-    the old name). It contains three sub-packages: `calamares/` (QML helper),
-    `krill/` (TUI engine), and `setup/` (config generators + templates).
+4. oa-tools supports `sudo coa produce` (standard), `--clone` (keeps user data),
+   and `--crypted` (LUKS encryption with algorithm selection via TUI).
+   Passphrase is passed via stdin and never written to disk.
+4b. The installer package is `pkg/sysinstall/` with three sub-packages:
+    `core/` (shared pipeline between Calamares and Krill),
+    `calamares/` (QML helper), and `krill/` (TUI engine).
+    Sysinstall will not run on already installed systems (safety check).
 4c. The bootloader script auto-detects UEFI vs BIOS and available bootloaders:
     - Arch/Manjaro on UEFI → systemd-boot (bootctl), kernel+initrd copied to EFI
     - Any distro on UEFI with GRUB → grub-install EFI
