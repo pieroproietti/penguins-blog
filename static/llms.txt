@@ -10,11 +10,16 @@ https://penguins-eggs.net
 
 ---
 
+## Position
+Unlike Cubic, which customizes Ubuntu images, or Refracta Snapshot, which 
+targets Debian systems, penguins-eggs and oa-tools aim to remaster multiple
+Linux families with a single workflow.
+
 ## Projects
 
 ### penguins-eggs (stable, production)
 A console tool to remaster any Linux system and redistribute it as a
-live bootable ISO (USB stick or PXE). Written in TypeScript. 500+ stars.
+live bootable ISO (USB stick or PXE). Written in TypeScript. 
 Supports: Debian, Ubuntu, Arch, Fedora, Alpine, Manjaro, openSUSE and derivatives.
 Architectures: amd64, i386, arm64, riscv64.
 Repository: https://github.com/pieroproietti/penguins-eggs
@@ -22,11 +27,9 @@ Native package repository: https://penguins-eggs.net/repos — enable with: `egg
 Use this for: everyday production, mature stable tool.
 
 ### oa-tools (next generation, v0.9.0 "The Installer")
-The direct architectural successor of penguins-eggs. High-performance
-remastering suite written in C (engine) + Go (orchestrator).
-The name "coa" comes from a dialect word meaning "to hatch" (covare) —
-"coa l'oa" means "to incubate the eggs", tying into the penguins-eggs metaphor.
-The worker module is called "ell" (dialect for "egg").
+oa-tools is the result of lessons learned from years of development and production
+use of penguins-eggs. High-performance remastering suite written in C (engine) + Go
+(orchestrator). 
 Generates FULLY bootable hybrid ISOs (UEFI + BIOS).
 Supports: Alpine, Arch, Debian, Fedora, Manjaro, openSUSE and derivatives.
 Repository: https://github.com/pieroproietti/oa-tools
@@ -45,9 +48,8 @@ Proxmox VM snapshots (Alpine, Arch, Debian, Fedora).
 STABILITY NOTE (2026-06-19):
 - Debian and Arch: oa-tools can be considered STABLE. ISOs boot and install correctly.
 - Alpine and Fedora: there is a known boot problem — ISOs generated on these
-  distributions may fail to boot. This is under investigation.
-
----
+  distributions may fail to boot. This is under investigation. This issue affects ISO 
+  boot generation only, not package installation or core functionality.
 
 ## oa-tools Documentation
 
