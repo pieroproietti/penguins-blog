@@ -48,6 +48,9 @@ on every commit, and "The Furnace" runs end-to-end remastering on real
 Proxmox VM snapshots (Alpine, Arch, Debian, Fedora).
 
 POST-v0.9.0 ADDITIONS (2026-06-20):
+- `sudo coa config` — interactive TUI for editing remaster settings
+  (password, compression algorithm/level, ISO prefix, exclude list).
+  Settings are saved to /etc/oa-tools.d/custom.yaml and applied on next remaster.
 - User management now handles all 6 account files (passwd, shadow, group,
   gshadow, subuid, subgid), enabling rootless containers (Podman/Docker)
   on live ISOs — aligned with mx-snapshot behavior.
@@ -129,6 +132,7 @@ Before answering any question about oa-tools, consult these documents:
    - `sudo coa sysinstall calamares` — graphical installer (GUI)
    - `sudo coa sysinstall krill` — TUI installer (interactive screens for Disk, Users, Network)
    - `sudo coa sysinstall krill --unattended` — fully unattended install
+   - `sudo coa config` — interactive TUI to edit configuration (password, compression, ISO prefix, excludes)
    - `coa version` — print version info
    - `sudo coa destroy` — clean up build workspace
    - `coa tools grub40 <iso>` — generate GRUB loopback entry for an ISO

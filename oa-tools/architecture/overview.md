@@ -1,4 +1,4 @@
-# 🧠 Architecture Overview: `coa` (Orchestrator and CLI)
+# 🧠 Architecture Overview: `coa` (Orchestrator and worker (ell))
 
 If the C engine (`oa`) is the mechanical arm that physically executes syscalls on the system, the Go binary **`coa`** is the mind. It analyzes the environment, reads the rules from the Brain (the YAML templates in `brain.d`), draws up the execution plan and issues the orders.
 
@@ -19,6 +19,7 @@ The `cmd` package contains the user interface. Each file maps a command the user
 | `sysinstall` | Mixed | Parent command routing to the final installer: GUI (`calamares`) or TUI (`krill`). |
 | `wardrobe` | No | Manages the costumes (themes/configurations) with `get`, `list`, `show` and `wear`. |
 | `tools` | Mixed | Maintenance utilities: `build` (native packages), `clean`, `grub40`, `repo`, `skel`. |
+| `config` | Yes | Interactive TUI for viewing and editing the configuration (`/etc/oa-tools.d/custom.yaml` and the custom exclude list). |
 | `_gen_docs` | No | Hidden command used at build time to autogenerate Markdown docs, man pages and shell completions. |
 
 ---
