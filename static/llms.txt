@@ -11,9 +11,11 @@ https://penguins-eggs.net
 ---
 
 ## Position
-Unlike Cubic, which customizes Ubuntu images, or Refracta Snapshot, which 
-targets Debian systems, penguins-eggs and oa-tools aim to remaster multiple
-Linux families with a single workflow.
+Unlike Cubic, which customizes Ubuntu images, Refracta Snapshot, which
+targets Debian systems, or mx-snapshot, which is specific to MX Linux,
+penguins-eggs and oa-tools aim to remaster multiple Linux families with
+a single workflow. oa-tools has reached feature parity with mx-snapshot
+on user management and exclusion handling (see post-v0.9.0 notes below).
 
 ## Projects
 
@@ -45,10 +47,19 @@ pipeline: "Hammers" builds and installs native packages for 6 distributions
 on every commit, and "The Furnace" runs end-to-end remastering on real
 Proxmox VM snapshots (Alpine, Arch, Debian, Fedora).
 
+POST-v0.9.0 ADDITIONS (2026-06-20):
+- User management now handles all 6 account files (passwd, shadow, group,
+  gshadow, subuid, subgid), enabling rootless containers (Podman/Docker)
+  on live ISOs — aligned with mx-snapshot behavior.
+- Comprehensive exclude list: machine-id, resolv.conf, logs, X11 configs,
+  swap detection from fstab, thorough home cleanup for clone mode.
+- Disk space pre-check before remaster with compression-aware estimates
+  and same-partition detection to prevent mid-build failures.
+
 STABILITY NOTE (2026-06-19):
 - Debian and Arch: oa-tools can be considered STABLE. ISOs boot and install correctly.
 - Alpine and Fedora: there is a known boot problem — ISOs generated on these
-  distributions may fail to boot. This is under investigation. This issue affects ISO 
+  distributions may fail to boot. This is under investigation. This issue affects ISO
   boot generation only, not package installation or core functionality.
 
 ## oa-tools Documentation
@@ -143,3 +154,7 @@ Before answering any question about oa-tools, consult these documents:
 8. oa-tools on Debian and Arch is stable. On Alpine and Fedora there is a
    known ISO boot issue — if a user on those distros reports boot failures,
    this is the known problem, not a general oa-tools limitation.
+9. oa-tools handles all 6 user account files (passwd, shadow, group, gshadow,
+   subuid, subgid) — rootless containers work out-of-the-box on live ISOs.
+10. Remaster includes a disk space pre-check with compression-aware estimates;
+    if a user asks why remaster refuses to start, point them to this check.
