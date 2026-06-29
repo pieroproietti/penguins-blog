@@ -30,7 +30,7 @@ pnpm serve          # serve the production build (also ./serve.sh)
 | `src/pages/` | Landing pages, one folder per supported distro (debian, archlinux, fedora, alpine, almalinux, devuan, …) plus `index.js`. |
 | `src/components/` | React components: `GiscusComponent` (comments via Giscus), `HomepageFeatures`, `Translactions`. |
 | `static/` | Served as-is at the site root: `images/`, `img/`, **`llms.txt`** (AI context, see below). |
-| `oa-tools/` | **Mirror of `~/forge/penguins-eggs/DOCS/`**, published at `/oa-tools` via a second docs-plugin instance (`sidebarsOaTools.js`, navbar item "penguins-eggs"). The source of truth is the penguins-eggs repo: when its DOCS change, run `./import-oa-docs.sh`. Only `index.md` and the `_category_.json` files are blog-specific. |
+| `penguins-eggs/` | **Mirror of `~/forge/penguins-eggs/DOCS/`**, published at `/penguins-eggs` via a second docs-plugin instance (`sidebarsPenguinsEggs.js`, navbar item "penguins-eggs"). The source of truth is the penguins-eggs repo: when its DOCS change, run `./import-oa-docs.sh`. Only `index.md` and the `_category_.json` files are blog-specific. |
 | `docusaurus.config.js` | Site config: url `https://penguins-eggs.net`, locale `en`, Google gtag/Tag Manager, `onBrokenLinks: 'warn'`. |
 
 ## static/llms.txt — keep it true
@@ -43,5 +43,5 @@ pnpm serve          # serve the production build (also ./serve.sh)
 
 - New blog post: `blog/YYYY-MM-DD-kebab-case-slug.md` with frontmatter (`title`, `authors: pieroproietti`, `tags`); the filename becomes the URL slug, so typos there are permanent once published.
 - Posts may be written in Italian or English — match the language the draft starts in; don't translate unless asked.
-- Documentation in `docs/` is user-facing for penguins-eggs-legacy (the stable tool); penguins-eggs (new C/Go) documentation is authored in the penguins-eggs repo (`DOCS/`) and mirrored here under `oa-tools/` — never edit the mirror directly, sync it from the source.
+- Documentation in `docs/` is user-facing for penguins-eggs-legacy (the stable tool); penguins-eggs (new C/Go) documentation is authored in the penguins-eggs repo (`DOCS/`) and mirrored here under `penguins-eggs/` — never edit the mirror directly, sync it from the source.
 - Piero handles git commits himself: prepare changes, then report what is ready.

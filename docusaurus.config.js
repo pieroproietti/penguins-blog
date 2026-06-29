@@ -44,10 +44,10 @@ const config = {
     [
       '@docusaurus/plugin-content-docs',
       {
-        id: 'oa-tools',
-        path: 'oa-tools',
-        routeBasePath: 'oa-tools',
-        sidebarPath: './sidebarsOaTools.js',
+        id: 'penguins-eggs',
+        path: 'penguins-eggs',
+        routeBasePath: 'penguins-eggs',
+        sidebarPath: './sidebarsPenguinsEggs.js',
       },
     ],
   ],
@@ -97,14 +97,9 @@ const config = {
         },
         items: [
           {
-            to: '/blog',
-            label: 'Blog',
-            position: 'left'
-          },
-          {
             type: 'docSidebar',
-            sidebarId: 'oaToolsSidebar',
-            docsPluginId: 'oa-tools',
+            sidebarId: 'penguinsEggsSidebar',
+            docsPluginId: 'penguins-eggs',
             position: 'left',
             label: 'penguins-eggs',
           },
@@ -113,6 +108,11 @@ const config = {
             sidebarId: 'tutorialSidebar',
             position: 'left',
             label: 'penguins-eggs-legacy',
+          },
+          {
+            to: '/blog',
+            label: 'Blog',
+            position: 'left'
           },
           {
             href: 'https://penguins-eggs.net/llms.txt',
