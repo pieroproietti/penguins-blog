@@ -103,16 +103,16 @@ const config = {
           },
           {
             type: 'docSidebar',
-            sidebarId: 'tutorialSidebar',
-            position: 'left',
-            label: 'Tutorial',
-          },
-          {
-            type: 'docSidebar',
             sidebarId: 'oaToolsSidebar',
             docsPluginId: 'oa-tools',
             position: 'left',
-            label: 'oa-tools',
+            label: 'penguins-eggs',
+          },
+          {
+            type: 'docSidebar',
+            sidebarId: 'tutorialSidebar',
+            position: 'left',
+            label: 'penguins-eggs-legacy',
           },
           {
             href: 'https://penguins-eggs.net/llms.txt',

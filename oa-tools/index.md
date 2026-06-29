@@ -1,19 +1,19 @@
 ---
 slug: /
 sidebar_position: 1
-title: oa-tools
+title: penguins-eggs
 ---
 
-# 🥚 oa-tools
+# 🥚 penguins-eggs
 
-**oa-tools** is the next-generation remastering suite, the architectural successor of [penguins-eggs](https://github.com/pieroproietti/penguins-eggs). It turns a running Linux system into a bootable hybrid ISO (UEFI + BIOS), powered by two static binaries:
+**penguins-eggs** is the next-generation remastering suite, the architectural successor of [penguins-eggs-legacy](https://github.com/pieroproietti/penguins-eggs-legacy). It turns a running Linux system into a bootable hybrid ISO (UEFI + BIOS), powered by two static binaries:
 
 - **`coa`** (Go) — the Mind: reads the Brain templates, compiles the flight plan, drives the whole process;
 - **`oa`** (C) — the Arm: executes the plan close to the metal, delegating high-level tasks back to the Go worker (`coa ell`).
 
 Supported today: **Alpine, Arch, Debian, Fedora, Manjaro, openSUSE** and derivatives.
 
-> Source: [github.com/pieroproietti/oa-tools](https://github.com/pieroproietti/oa-tools) — this documentation mirrors the repository's `DOCS/` tree.
+> Source: [github.com/pieroproietti/penguins-eggs](https://github.com/pieroproietti/penguins-eggs) — this documentation mirrors the repository's `DOCS/` tree.
 
 ## Where to start
 

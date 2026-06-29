@@ -6,7 +6,7 @@
 # Blog-specific files (index.md, _category_.json) are preserved.
 set -e
 
-SRC="${1:-$HOME/forge/oa-tools/DOCS}"
+SRC="${1:-$HOME/forge/penguins-eggs/DOCS}"
 DEST="$(cd "$(dirname "$0")" && pwd)/oa-tools"
 
 if [ ! -d "$SRC/architecture" ]; then
