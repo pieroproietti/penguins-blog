@@ -159,8 +159,7 @@ const config = {
             items: [
               {
                 label: 'Downloads',
-                href: 'https://penguins-eggs.net/basket/
-                ',
+                href: 'https://penguins-eggs.net/basket/',
               },
               {
                 label: 'Sourceforge',
