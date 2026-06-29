@@ -198,26 +198,26 @@ sudo eggs tools repo --add
 ```
 
 #### Alpine (apk)
-Scaricare i pacchetti da [penguins-eggs.net](https://penguins-eggs.net/basket/index.php?p=) o dalla pagina [sourceforge](https://sourceforge.net/projects/penguins-eggs/) ed installarli con il comando:
+Scaricare i pacchetti da [penguins-eggs.net](https://penguins-eggs.net/basket/) o dalla pagina [sourceforge](https://sourceforge.net/projects/penguins-eggs/) ed installarli con il comando:
 ```bash
 doas apk add ./penguins-eggs-*.apk
 ```
 
 #### Debian/Devuan/Ubuntu (.deb)
 **Installazione manuale:**
-Scaricare il pacchetto da [penguins-eggs.net](https://penguins-eggs.net/basket/index.php?p=) o dalla pagina [sourceforge](https://sourceforge.net/projects/penguins-eggs/) ed instalarlo con il comando:
+Scaricare il pacchetto da [penguins-eggs.net](https://penguins-eggs.net/basket/) o dalla pagina [sourceforge](https://sourceforge.net/projects/penguins-eggs/) ed instalarlo con il comando:
 ```bash
 sudo apt install ./penguins-eggs-26.1.21-1_amd64.deb
 ```
 
 #### Arch Linux
-Scaricare il pacchetto da [penguins-eggs.net](https://penguins-eggs.net/basket/index.php?p=) o dalla pagina [sourceforge](https://sourceforge.net/projects/penguins-eggs/) ed instalarlo con il comando:
+Scaricare il pacchetto da [penguins-eggs.net](https://penguins-eggs.net/basket/) o dalla pagina [sourceforge](https://sourceforge.net/projects/penguins-eggs/) ed instalarlo con il comando:
 ```
 sudo pacman -U ./penguins-eggs-26.1.21-1-any.pkg.tar.zst
 ```
 
 ### Fedora, Rocky, Almalinux
-Scaricare il pacchetto da [penguins-eggs.net](https://penguins-eggs.net/basket/index.php?p=) o dalla pagina [sourceforge](https://sourceforge.net/projects/penguins-eggs/) ed instalarlo con il comando:
+Scaricare il pacchetto da [penguins-eggs.net](https://penguins-eggs.net/basket/) o dalla pagina [sourceforge](https://sourceforge.net/projects/penguins-eggs/) ed instalarlo con il comando:
 ```
 sudo dnf install ./penguins-eggs-26.1.21-1.fc42.x86_64.rpm
 ```
@@ -227,7 +227,7 @@ sudo dnf install ./penguins-eggs-26.1.21-1.el9.x86_64.rpm
 ```
 
 #### Manjaro
-Penguins-eggs è presente nel repository community, può comunque essere scaricato da [penguins-eggs.net](https://penguins-eggs.net/basket/index.php?p=) o dalla pagina [sourceforge](https://sourceforge.net/projects/penguins-eggs/) ed instalarlo con il comando:
+Penguins-eggs è presente nel repository community, può comunque essere scaricato da [penguins-eggs.net](https://penguins-eggs.net/basket/) o dalla pagina [sourceforge](https://sourceforge.net/projects/penguins-eggs/) ed instalarlo con il comando:
 ```
 sudo pacman -U ./penguins-eggs-26.1.21-1-any.pkg.tar.zst
 ```
@@ -239,7 +239,7 @@ sudo pamac install penguins-eggs
 ```
 
 #### OpenSUSE
-Scaricare il pacchetto da [penguins-eggs.net](https://penguins-eggs.net/basket/index.php?p=) o dalla pagina [sourceforge](https://sourceforge.net/projects/penguins-eggs/) ed instalarlo con il comando:
+Scaricare il pacchetto da [penguins-eggs.net](https://penguins-eggs.net/basket/) o dalla pagina [sourceforge](https://sourceforge.net/projects/penguins-eggs/) ed instalarlo con il comando:
 ```
 sudo zypper install ./penguins-eggs-26.1.21-1.opensuse.x86_64.rpm
 ```

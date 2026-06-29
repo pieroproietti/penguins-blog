@@ -31,7 +31,7 @@ Per Arch e Manjaro, ma anche per Fedora, openSUSE ed RHEL9 (Rocky ed Almalinux v
 Per Alpine, ho preferito tenere da parte il sorgente per il pacchetto e la modifica - denominata `sidecar` - necessaria per modificare l'init Alpine. Il riferimento è, quindi, la repository [penguins-alpine](https://github.com/pieroproietti/penguins-alpine/).
 
 ## Scaricare i pacchetti
-Tutti i pacchetto possono essere trovati sia sulla pagina [sourceforge](https://sourceforge.net/projects/penguins-eggs/files/Packages/) che nel [basket](https://penguins-eggs.net/basket/index.php/packages/?p=packages) di [penguins-eggs.net](https://penguins-eggs.net).
+Tutti i pacchetto possono essere trovati sia sulla pagina [sourceforge](https://sourceforge.net/projects/penguins-eggs/files/Packages/) che nel [basket](https://penguins-eggs.net/basket/packages/packages) di [penguins-eggs.net](https://penguins-eggs.net).
 
 
 ## Lista delle distribuzioni supportate

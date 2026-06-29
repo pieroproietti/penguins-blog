@@ -11,7 +11,7 @@ import Translactions from '@site/src/components/Translactions';
 <Translactions />
 E' passato un po' di tempo dall'ultimo articolo del blog, ma non invano. 
 
-Oltre a [fedora](https://www.fedoraproject.org/it/), sono finite nel [cestino delle uova](https://penguins-eggs.net/basket/index.php?p=isos) anche [AlmaLinux](https://almalinux.org) e [RockyLinux](https://rockylinux.org/), le due maggiori distribuzioni opensource compatibili con [RedHat Enterprise Linux](https://www.redhat.com).
+Oltre a [fedora](https://www.fedoraproject.org/it/), sono finite nel [cestino delle uova](https://penguins-eggs.net/basket/isos) anche [AlmaLinux](https://almalinux.org) e [RockyLinux](https://rockylinux.org/), le due maggiori distribuzioni opensource compatibili con [RedHat Enterprise Linux](https://www.redhat.com).
 
 Tutto questo naturalmente ha richiesto impegno e lavoro, abbiamo praticamente la possibilità di rimasterizzare qualsiasi distribuzione Linux.Ok mancano ancora [VoidLinux](https://voidlinux.org/) e [Gentoo](https://www.gentoo.org/), ma deve valerne la pena.
 
@@ -78,7 +78,7 @@ Saremo automaticamente loggati, e non ci resta che far partire l'installazione!
 ![](/images/almalinux-9.5-beta-reinstalling.png)
 
 
-Potete scaricare l'esperimento direttamente dal [cestino delle uova](https://penguins-eggs.net/basket/index.php?p=isos) e, mi raccomando, fresche! 
+Potete scaricare l'esperimento direttamente dal [cestino delle uova](https://penguins-eggs.net/basket/isos) e, mi raccomando, fresche! 
 
 **egg-of_almalinux-9.5-naked_amd64_2024-11-15_2029.iso**.
 
@@ -115,7 +115,7 @@ A ruota avremo anche RockyLinux 9.5, anche se per il momento, non sono riuscito 
 
 Direi che il ritardo è minimo rispetto al vantaggio di vivere liberi, mettere le mani sul prodotto quando esce poter valutare subito, non tra due, tre mesi o peggio. come normalmente succede.
 
-Ho rimasterizzato la nuova AlmaLinux 9.5 e la potete trovare nel [basket](https://penguins-eggs.net/basket/index.php?p=isos)
+Ho rimasterizzato la nuova AlmaLinux 9.5 e la potete trovare nel [basket](https://penguins-eggs.net/basket/isos/)
 
 ![](https://almalinux.org/blog-images/2024/2024-11-18-almalinux-9-5-stable.png)
 
