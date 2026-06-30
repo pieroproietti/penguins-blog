@@ -19,7 +19,7 @@ The `cmd` package contains the user interface. Each file maps a command the user
 | `sysinstall` | Mixed | Parent command routing to the final installer: GUI (`calamares`) or TUI (`krill`). |
 | `wardrobe` | No | Manages the costumes (themes/configurations) with `get`, `list`, `show` and `wear`. |
 | `tools` | Mixed | Maintenance utilities: `build` (native packages), `clean`, `grub40`, `repo`, `skel`. |
-| `config` | Yes | Interactive TUI for viewing and editing the configuration (`/etc/oa-tools.d/custom.yaml` and the custom exclude list). |
+| `config` | Yes | Interactive TUI for viewing and editing the configuration (`/etc/penguins-eggs.d/custom.yaml` and the custom exclude list). |
 | `_gen_docs` | No | Hidden command used at build time to autogenerate Markdown docs, man pages and shell completions. |
 
 ---
@@ -45,7 +45,7 @@ At this point Go has finished the "intelligence" work and produced a complete, s
 
 ---
 
-This two-phase design (logic and abstraction in **Go** ➔ raw syscall execution in **C**) is what makes **oa-tools** a perfect hybrid: the maintainability and flexibility of modern Go, fused with the surgical isolation, speed and low-level safety of C.
+This two-phase design (logic and abstraction in **Go** ➔ raw syscall execution in **C**) is what makes **penguins-eggs (oa edition)** a perfect hybrid: the maintainability and flexibility of modern Go, fused with the surgical isolation, speed and low-level safety of C.
 
 ---
 

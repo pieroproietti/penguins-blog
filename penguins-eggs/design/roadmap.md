@@ -16,7 +16,7 @@
 The rewrite is done (`coa/pkg/sysinstall/krill` + `coa/pkg/sysinstall/krill/engine`); what remains:
 - **Automatic dispatcher**: `coa sysinstall` without subcommand should detect the environment (display server + calamares binary) and pick the GUI or the TUI by itself, as per the original design.
 - **btrfs subvolumes**: the engine currently mounts btrfs flat; the `@/@home/@cache/@log` layout described in `mount.conf` is not applied yet.
-- **TUI polish**: the static-address fields arrive prefilled and cursor editing can be confusing — add a quick clear (ctrl+u) or select-all-on-focus. The Welcome screen wording "version oa-tools vX" is ambiguous (it is the oa-tools version, not the OS one).
+- **TUI polish**: the static-address fields arrive prefilled and cursor editing can be confusing — add a quick clear (ctrl+u) or select-all-on-focus. The Welcome screen wording "version penguins-eggs vX" is ambiguous (it is the penguins-eggs version, not the OS one).
 - **displaymanager autologin** covers lightdm/sddm/gdm; other DMs are silently skipped.
 
 ### 2. Multi-architecture detection
@@ -43,7 +43,7 @@ To be integrated in `NewDistro()` before the arm64/riscv64 ports.
 `/home/eggs` appears literally in the shell commands of `base.yaml.tmpl`. If the user changes `settings.remaster.work_dir`, the shell commands do not respect it. Solution: pass it as a template variable inside the shell commands too:
 
 ```yaml
-command: "/etc/oa-tools.d/scripts/copy-kernel-initrd.sh {{ .settings.remaster.work_dir }}"
+command: "/etc/penguins-eggs.d/scripts/copy-kernel-initrd.sh {{ .settings.remaster.work_dir }}"
 ```
 
 ### 4. generate-efi.img as a dedicated module
@@ -62,6 +62,6 @@ The `cleanup` step is commented out in the YAML. If the pipeline fails midway, m
 
 ## Visibility / Community
 
-- Problem: oa-tools has few stars despite its quality — penguins-eggs still captures all the traffic.
+- Problem: the oa edition repo has few stars despite its quality — the legacy penguins-eggs repo still captures all the traffic.
 - Plan: wait for Debian/Ubuntu feature parity, then a technical blog post + HackerNews ("I rewrote my remastering tool in C+Go, here's why").
-- The penguins-eggs README already mentions oa-tools as the successor — strengthen that link.
+- The legacy penguins-eggs README already mentions the oa edition as the successor — strengthen that link.

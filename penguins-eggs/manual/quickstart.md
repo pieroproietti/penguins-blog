@@ -1,29 +1,11 @@
 # Quick Start
 
-## Coming from penguins-eggs?
-
-oa-tools is the next-generation successor of penguins-eggs, rewritten in C+Go for speed and reliability. If you already know `eggs`, you already know `oa-tools`: the binary is installed as both `coa` and `eggs`, so your muscle memory keeps working.
-
-| penguins-eggs | oa-tools | Notes |
-|---|---|---|
-| `sudo eggs produce` | `sudo eggs produce` | Same command, same result |
-| `sudo eggs produce` | `sudo coa remaster` | Native name, identical behavior |
-| `sudo eggs kill` | `sudo eggs kill` | Works as before |
-| `sudo eggs kill` | `sudo coa destroy` | Native name |
-| `sudo eggs install` | `sudo coa sysinstall krill` | TUI installer |
-| `sudo eggs calamares` | `sudo coa sysinstall calamares` | GUI installer |
-| `eggs config` | `coa config` | Interactive configuration TUI |
-| `eggs adapt` | `coa adapt` | VM screen resize |
-| `eggs tools skel` | `coa tools skel` | Rebuild /etc/skel |
-| `eggs wardrobe wear colibri` | `coa wardrobe wear colibri` | Apply a costume |
-
-In short: replace `eggs` with `coa` if you want, or keep using `eggs` — both work.
 
 ## Install
 
 ### From packages (recommended)
 
-Packages are built automatically for every supported family. Download the latest from [GitHub Releases](https://github.com/pieroproietti/oa-tools/releases) or add the official repository:
+Packages are built automatically for every supported family. Download the latest from [GitHub Releases](https://github.com/pieroproietti/penguins-eggs/releases) or add the official repository:
 
 ```bash
 sudo coa tools repo add
@@ -32,8 +14,8 @@ sudo coa tools repo add
 ### From source
 
 ```bash
-git clone https://github.com/pieroproietti/oa-tools.git
-cd oa-tools
+git clone https://github.com/pieroproietti/penguins-eggs.git
+cd penguins-eggs
 make
 sudo make install
 ```
@@ -76,7 +58,7 @@ sudo coa remaster
 sudo coa config
 ```
 
-Change the live user password, the compression algorithm (zstd/xz/lz4/gzip), the compression level, the ISO filename prefix, and edit the custom exclude list — all from a single interface. Settings are saved to `/etc/oa-tools.d/custom.yaml` and applied automatically on the next `coa remaster`.
+Change the live user password, the compression algorithm (zstd/xz/lz4/gzip), the compression level, the ISO filename prefix, and edit the custom exclude list — all from a single interface. Settings are saved to `/etc/penguins-eggs.d/custom.yaml` and applied automatically on the next `coa remaster`.
 
 ### Remaster with LUKS encryption (Debian family)
 
@@ -125,7 +107,7 @@ sudo update-grub
 
 ## Supported distributions
 
-oa-tools detects the host automatically. Currently supported families:
+penguins-eggs (oa edition) detects the host automatically. Currently supported families:
 
 | Family | Examples |
 |---|---|

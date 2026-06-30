@@ -1,6 +1,6 @@
 # 🛠️ `coa` Command Reference
 
-`coa` (which means "to hatch") is the universal orchestrator for system remastering and installation. As the command-line interface of the **oa-tools** project, it incubates your tasks: it delegates the configuration logic to the *parser*, the plan compilation to the *planner* (both in Go), and the low-level execution to the C native engine *oa* (eggs).
+`coa` (which means "to hatch") is the universal orchestrator for system remastering and installation. As the command-line interface of the **penguins-eggs (oa edition)** project, it incubates your tasks: it delegates the configuration logic to the *parser*, the plan compilation to the *planner* (both in Go), and the low-level execution to the C native engine *oa* (eggs).
 
 On systems migrating from penguins-eggs, the legacy alias `eggs` works interchangeably with `coa`.
 
@@ -91,7 +91,7 @@ Manages the wardrobe: ready-made desktop configurations ("costumes") that can be
 ## ⚙️ Configuration
 
 ### `coa config`
-Interactive TUI for viewing and editing the oa-tools configuration. The settings are stored in `/etc/oa-tools.d/custom.yaml` and override the built-in defaults used by the parser during remastering.
+Interactive TUI for viewing and editing the penguins-eggs configuration. The settings are stored in `/etc/penguins-eggs.d/custom.yaml` and override the built-in defaults used by the parser during remastering.
 
 *   **Usage:** `sudo coa config`
 
@@ -110,10 +110,10 @@ Editable fields:
 Use `↑`/`↓` to move between fields, `←`/`→` to cycle the algorithm, and type to edit text fields.
 
 #### Excludes tab
-Shows the current content of `/etc/oa-tools.d/custom.exclude.list` and opens it in `$EDITOR` (default: `nano`) on `Enter`. Paths listed here are excluded from the squashfs during remastering.
+Shows the current content of `/etc/penguins-eggs.d/custom.exclude.list` and opens it in `$EDITOR` (default: `nano`) on `Enter`. Paths listed here are excluded from the squashfs during remastering.
 
 #### Save tab
-Choose **Save and exit** or **Exit without saving**. On save, the configuration is written to `/etc/oa-tools.d/custom.yaml`.
+Choose **Save and exit** or **Exit without saving**. On save, the configuration is written to `/etc/penguins-eggs.d/custom.yaml`.
 
 ---
 

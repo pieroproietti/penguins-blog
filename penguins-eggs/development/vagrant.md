@@ -4,7 +4,7 @@
 
 **Current focus: Arch Linux guest on a Debian host**
 
-This document describes how to set up, use and manage the local virtualization environment based on **Vagrant** and **KVM/libvirt** for end-to-end testing and packaging of `oa-tools`.
+This document describes how to set up, use and manage the local virtualization environment based on **Vagrant** and **KVM/libvirt** for end-to-end testing and packaging of **penguins-eggs (oa edition)**.
 
 Using Vagrant with libvirt makes it possible to test real remastering on native kernels, exploiting hardware acceleration and isolating the complex mounts from the host system.
 
@@ -91,9 +91,9 @@ echo "nameserver 1.1.1.1" | sudo tee -a /etc/resolv.conf
 ```
 
 ### Native build and test
-Your local code is automatically mapped to `/home/vagrant/oa-tools`.
+Your local code is automatically mapped to `/home/vagrant/penguins-eggs`.
 ```bash
-cd /home/vagrant/oa-tools
+cd /home/vagrant/penguins-eggs
 ./m  # or your build command for coa/oa
 
 # Run the full remastering flight on a real kernel
