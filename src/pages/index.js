@@ -17,31 +17,31 @@ function HomepageHeader() {
         <div className={styles.buttons}>
           <Link
             className="button button--secondary button--lg"
-            to="/docs/donate">
+            to="/penguins-eggs-legacy/donate">
             Donate
           </Link>
           &nbsp;
           <Link
             className="button button--secondary button--lg"
-            to="/docs/Quickstart/introduzione">
+            to="/penguins-eggs-legacy/Quickstart/introduzione">
             Quickstart
           </Link>
           &nbsp;
           <Link
             className="button button--secondary button--lg"
-            to="/docs/Tutorial/eggs-users-guide">
+            to="/penguins-eggs-legacy/Tutorial/eggs-users-guide">
             Eggs users' guide
           </Link>
           &nbsp;
           <Link
             className="button button--secondary button--lg"
-            to="/docs/Tutorial/wardrobe-users-guide">
+            to="/penguins-eggs-legacy/Tutorial/wardrobe-users-guide">
             Wardrobe
           </Link>
           &nbsp;
           <Link
             className="button button--secondary button--lg"
-            to="/docs/faq">
+            to="/penguins-eggs-legacy/faq">
             FAQ 
           </Link>
           &nbsp;

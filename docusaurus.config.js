@@ -64,6 +64,7 @@ const config = {
 
         docs: {
           sidebarPath: './sidebars.js',
+          routeBasePath: 'penguins-eggs-legacy',
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           //editUrl:
@@ -129,11 +130,11 @@ const config = {
             items: [
               {
                 label: 'Eggs users\' guide',
-                to: '/docs/Tutorial/eggs-users-guide',
+                to: '/penguins-eggs-legacy/Tutorial/eggs-users-guide',
               },
               {
                 label: 'Wardrobe users\' guide',
-                to: '/docs/Tutorial/wardrobe-users-guide',
+                to: '/penguins-eggs-legacy/Tutorial/wardrobe-users-guide',
               },
             ],
           },

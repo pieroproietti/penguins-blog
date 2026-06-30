@@ -47,7 +47,7 @@ It works and you can find numerous examples of distros remastered with eggs dire
 It doesn't come from nothing, the first commit is in 2017, now three years ago.
 
 ## USER MANUAL AND INSTRUCTIONS
-You can find the user manual in differnt languages [english](https://penguins--eggs-net.translate.goog/docs/Tutorial/eggs-users-guide?_x_tr_sl=auto&_x_tr_tl=en&_x_tr_hl=en&_x_tr_pto=wapp&_x_tr_hist=true), [italiano](/docs/Tutorial/eggs-users-guide), português and informations, curiosities, [forum](https://penguins-eggs.net).
+You can find the user manual in differnt languages [english](https://penguins--eggs-net.translate.goog/penguins-eggs-legacy/Tutorial/eggs-users-guide?_x_tr_sl=auto&_x_tr_tl=en&_x_tr_hl=en&_x_tr_pto=wapp&_x_tr_hist=true), [italiano](/penguins-eggs-legacy/Tutorial/eggs-users-guide), português and informations, curiosities, [forum](https://penguins-eggs.net).
 
 There is a series of easy [video terminal](https://penguins-eggs.net/terminal/) examples too.
 
