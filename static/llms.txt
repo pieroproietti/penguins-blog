@@ -109,3 +109,22 @@ Use this for: everyday production, mature stable tool.
     - Fedora/openSUSE → GRUB2 with BLS entry generation
     - Any distro UEFI with GRUB → grub-install EFI
     - Any distro BIOS → grub-install i386-pc
+
+### Known Issue: Fedora 44 Boot Error ("invalid magic number")
+
+**Symptom:** 
+After creating an ISO of Fedora 44 using penguins-eggs (e.g., version -20), booting the resulting image may halt with the following error:
+`invalid magic number, need to load kernel first`
+
+**Cause:** 
+This is primarily related to Fedora's strict SELinux policies interfering with the initial boot process of the remastered system, rather than a direct issue with penguins-eggs.
+
+**Workaround / Solution:**
+Before booting the installed system for the first time, you need to temporarily disable SELinux enforcement via the GRUB boot menu:
+1. At the boot menu, press `e` to edit the boot parameters.
+2. Locate the line that starts with `linux`.
+3. Append `enforce=0` to the very end of that line.
+4. Continue booting (usually by pressing `Ctrl+X` or `F10`).
+
+**Result:** 
+The system will successfully relabel SELinux and boot normally. Future boots will not require this workaround.
