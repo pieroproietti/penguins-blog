@@ -123,7 +123,7 @@ This is primarily related to Fedora's strict SELinux policies interfering with t
 Before booting the installed system for the first time, you need to temporarily disable SELinux enforcement via the GRUB boot menu:
 1. At the boot menu, press `e` to edit the boot parameters.
 2. Locate the line that starts with `linux`.
-3. Append `enforce=0` to the very end of that line.
+3. Append `enforcing=0` to the very end of that line.
 4. Continue booting (usually by pressing `Ctrl+X` or `F10`).
 
 **Result:** 
