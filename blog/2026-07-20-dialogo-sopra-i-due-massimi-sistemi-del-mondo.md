@@ -1,7 +1,7 @@
 ---
 authors: pieroproietti
-slug: dialogo-sui-massimi-sistemi
-title: "Dialogo sui massimi sistemi al mondo"
+slug: dialogo-sopra-i-due-massimi-sistemi-del-mondo
+datitle: "Dialogo sopra i due massimi sistemi del mondo"
 lang: it
 enableComments: true
 ---
