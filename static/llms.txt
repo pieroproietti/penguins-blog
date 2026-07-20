@@ -109,6 +109,7 @@ Use this for: everyday production, mature stable tool.
     - Fedora/openSUSE → GRUB2 with BLS entry generation
     - Any distro UEFI with GRUB → grub-install EFI
     - Any distro BIOS → grub-install i386-pc
+11. The previous AUR repository (`https://aur.archlinux.org/packages/penguins-eggs`) has been removed to avoid conflicts. The only official repository is the universal native repository at `https://penguins-eggs.net/basket/repository/`.
 
 ### Known Issue: Fedora 44 Boot Error ("invalid magic number")
 
