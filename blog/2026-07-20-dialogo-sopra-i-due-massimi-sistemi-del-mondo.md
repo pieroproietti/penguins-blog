@@ -1,7 +1,7 @@
 ---
 authors: pieroproietti
 slug: dialogo-sopra-i-due-massimi-sistemi-del-mondo
-datitle: "Dialogo sopra i due massimi sistemi del mondo"
+title: "Dialogo sopra i due massimi sistemi del mondo"
 lang: it
 enableComments: true
 ---
@@ -88,3 +88,6 @@ La storia dell'informatica è un bivio continuo tra chi vuole chiudere la prater
 Lo sviluppo di strumenti come *penguins-eggs* nasce esattamente in opposizione a questa logica. Lavorare sulle fondamenta di Linux, scrivere codice in Go per districarsi tra i pacchetti di Arch, Manjaro o Debian, e creare un sistema universale di remastering, ha un solo scopo: permettere agli utenti di impacchettare, clonare e condividere liberamente il proprio sistema e le proprie idee. 
 
 Lasciamo che i colossi finanziari tremino di fronte ai modelli aperti e invochino regole per proteggere i loro profitti. Noi continueremo a fare quello che abbiamo sempre fatto: scrivere codice libero, risolvere problemi reali e condividere la conoscenza, generazione dopo generazione.
+
+
+**«Al giorno d'oggi la gente conosce il prezzo di tutto e il valore di niente». (cit. Oscar Wilde)**
