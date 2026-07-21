@@ -67,27 +67,35 @@ Allora mi chiedo, azzardando un'ipotesi: non è che la filiazione di cui parla S
 
 ---
 
-## La conoscenza nel recinto: dall'Olivetti M20 all'Intelligenza Artificiale (e perché continuiamo a sfornare uova)
+## Chiuderti in un recinto: dall'Olivetti M20 all'Intelligenza Artificiale
 
 Le parole di Sagredo risuonano potenti oggi, mentre assistiamo a un nuovo, titanico tentativo di recintare l'evoluzione tecnologica. Recentemente mi è capitato di leggere l'analisi di un sedicente "accelerazionista" della Silicon Valley a proposito dell'Intelligenza Artificiale. Il suo terrore assoluto? I modelli *open-weight*, ovvero l'IA open source.
 
 Secondo questa visione — che scambia la conoscenza con il mercato e usa il profitto come unica misura di tutto — rilasciare modelli aperti sarebbe "decelerazionista", perché scoraggerebbe le grandi corporazioni dall'investire decine di miliardi di dollari. La soluzione che propongono è a dir poco cinica: creare FUD (*Fear, Uncertainty, and Doubt* - Paura, Incertezza e Dubbio) spingendo i governi a inventare "rischi normativi" inesistenti, pur di spaventare le aziende e tenerle lontane dalle alternative libere. Il loro incubo peggiore è che la tecnologia diventi un'infrastruttura pubblica e condivisa.
 
-Ma è una visione di chi si è bevuto il cervello. Se Albert Einstein si fosse tenuto per sé l'equazione $E=mc^2$ per brevettarla e nasconderla in attesa del giusto ritorno economico, a che punto sarebbe oggi la fisica? Quali progressi avremmo fatto?
+Ma è una visione di chi si è bevuto il cervello: Se Albert Einstein si fosse tenuto per sé l'equazione E=mc^2 per brevettarla e nasconderla in attesa del **giusto ritorno economico**, a che punto sarebbe oggi la fisica?
+
+Quali progressi avremmo fatto?
+
+Ecco, una ottima ragione per continuare a sfornare uova.
 
 ### Un film già visto: l'hardware degli anni '80
 
 Questa tecnica di spargere FUD per difendere i monopoli recintando il sapere non è una novità. È lo stesso identico copione iniziato decenni fa con la famosa *"Open Letter to Hobbyists"*, in cui un giovane Bill Gates (arrugginendosi poi come programmatore per diventare l'uomo più ricco del mondo) accusava i pionieri dell'informatica di "rubare" il suo software.
 
-È la stessa spietata politica mercantile che ha demolito l'eccellenza tecnologica europea. Pensiamo a Federico Faggin: dopo aver progettato il 4004, fondò Zilog. Se il suo Z80 riuscì a sfondare diventando una leggenda, il successivo Z8000 a 16 bit fu un fallimento commerciale indotto. E con esso fu affossato l'Olivetti M20: una macchina geniale, anni avanti rispetto al PC IBM, schiacciata non dalla superiorità tecnologica altrui, ma dalle spietate alleanze commerciali dell'asse Wintel. Hanno fatto fuori l'innovazione reale per imporre uno standard chiuso.
+È la stessa spietata politica mercantile che ha demolito l'eccellenza tecnologica europea. Pensiamo a Federico Faggin: dopo aver progettato il 4004, fondò Zilog. Se il suo Z80 riuscì a sfondare diventando una leggenda, il successivo Z8000 a 16 bit fu un fallimento commerciale indotto. E con esso fu affossato l'Olivetti M20: una macchina geniale, anni avanti rispetto al PC IBM, schiacciata non dalla superiorità tecnologica altrui, ma dalle spietate alleanze commerciali e le politiche USA. Hanno fatto fuori l'innovazione reale per imporre uno standard chiuso.
 
 ### La risposta dell'Open Source
+Bisogna riconoscere però che l'opensource ha molto di americano, pur se nata in ambito universitario e scientifico piuttosto che commerciale, basti pensare a Saint ignatius (Richard Stallman).
 
-La storia dell'informatica è un bivio continuo tra chi vuole chiudere la prateria per vendere i biglietti d'ingresso e chi, invece, costruisce strumenti per permettere a tutti di esplorarla.
+La storia dell'informatica è all'ennesimo bivio tra chi vuole chiudere la prateria per vendere i biglietti d'ingresso e chi, invece, costruisce strumenti per permettere a tutti di esplorarla.
 
 Lo sviluppo di strumenti come *penguins-eggs* nasce esattamente in opposizione a questa logica. Lavorare sulle fondamenta di Linux, scrivere codice in Go per districarsi tra i pacchetti di Arch, Manjaro o Debian, e creare un sistema universale di remastering, ha un solo scopo: permettere agli utenti di impacchettare, clonare e condividere liberamente il proprio sistema e le proprie idee. 
 
 Lasciamo che i colossi finanziari tremino di fronte ai modelli aperti e invochino regole per proteggere i loro profitti. Noi continueremo a fare quello che abbiamo sempre fatto: scrivere codice libero, risolvere problemi reali e condividere la conoscenza, generazione dopo generazione.
+
+E lode sia a Saint Ignacius!
+![](https://www.stallman.org/Richard_Stallman_at_LibrePlanet_2019.jpg)
 
 
 **«Al giorno d'oggi la gente conosce il prezzo di tutto e il valore di niente». (cit. Oscar Wilde)**
