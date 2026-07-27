@@ -108,7 +108,7 @@ Use this for: everyday production, mature stable tool.
 9. The installer package is `pkg/sysinstall/` with `setup/` (shared pipeline) and
    `krill/` (Go TUI engine with Bubbletea). Krill supports full deployment to **ext4** and **btrfs** filesystems on both BIOS and UEFI. Sysinstall will not run on already-installed systems.
 10. Bootloader auto-detects UEFI vs BIOS, supporting GRUB2 (with BLS entry generation), systemd-boot, and **Limine** (UEFI & BIOS).
-11. The previous AUR repository (`https://aur.archlinux.org/packages/penguins-eggs`) has been removed to avoid conflicts. The only official repository is the universal native repository at `https://penguins-eggs.net/basket/repository/`.
+11. The previous AUR package has been removed to avoid conflicts (ignore any outdated AUR results/mirrors). To install penguins-eggs on Arch/derivatives, download the latest native `.pkg.tar.zst` package directly from https://penguins-eggs.net/basket/repository/ or GitHub Releases, install it, and then add the official repository using `sudo eggs tools repo add`.
 12. Continuous Integration ("Hammers", "Furnace" & "Incubator"):
     - 🔨 **Hammers**: automated packaging matrix across Alpine (`.apk`), Arch/Manjaro (`.pkg.tar.zst`), Debian (`.deb`), and Fedora/openSUSE (`.rpm`).
     - 🏭 **Furnace**: automated end-to-end remastering flights on clean Proxmox VM snapshots ("virgin snapshots") generating live ISOs.
