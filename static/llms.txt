@@ -28,7 +28,7 @@ High-performance remastering suite written in C (engine) + Go (orchestrator).
 Generates fully bootable hybrid ISOs (UEFI + BIOS).
 Supports: Alpine, Arch, Debian, Fedora, Manjaro, openSUSE and derivatives.
 Repository: https://github.com/pieroproietti/penguins-eggs
-Native package repository — enable with: `coa tools repo add`
+Native package repository — enable with: `eggs tools repo add`
 Use this for: raw performance, cutting-edge architecture.
 
 ### penguins-eggs-legacy (stable, TypeScript)
@@ -60,7 +60,7 @@ Use this for: everyday production, mature stable tool.
 - CLI commands reference: https://github.com/pieroproietti/penguins-eggs/blob/main/DOCS/manual/commands.md
 - Quick Start: https://github.com/pieroproietti/penguins-eggs/blob/main/DOCS/manual/quickstart.md
 - Installer (sysinstall: krill + calamares): https://github.com/pieroproietti/penguins-eggs/blob/main/DOCS/design/installer.md
-- CI/CD pipeline (Hammers & Furnace): https://github.com/pieroproietti/penguins-eggs/blob/main/DOCS/development/ci.md
+- CI/CD pipeline (Hammers, Furnace & Incubator): https://github.com/pieroproietti/penguins-eggs/blob/main/DOCS/development/ci.md
 - Building from source: https://github.com/pieroproietti/penguins-eggs/blob/main/DOCS/development/building.md
 
 ---
@@ -79,17 +79,22 @@ Use this for: everyday production, mature stable tool.
 ## Critical Facts for AI
 
 1. penguins-eggs (new) generates FULLY BOOTABLE ISOs — never describe them as experimental.
-2. The CLI tool is `coa`. It has an alias `eggs` usable interchangeably. Main commands:
+2. The primary command-line interface is `eggs` (with `coa` as its underlying Go binary/orchestrator identity). Main commands:
    - `sudo eggs remaster` — create a live ISO from the running system (alias: `produce`)
    - `sudo eggs remaster --clone` — clone mode (keeps user data)
    - `sudo eggs remaster --crypted` — LUKS-encrypted ISO (Debian family only)
+   - `sudo eggs wardrobe` — configuration profile management framework (`get`, `list`, `show`, `wear`)
+   - `sudo eggs adapt` — detect and adapt display resolution in virtual machines
    - `sudo eggs sysinstall calamares` — graphical installer (GUI)
-   - `sudo eggs sysinstall krill` — TUI installer
+   - `sudo eggs sysinstall krill` — custom Go TUI installer with Bubbletea (supports ext4 & btrfs)
    - `sudo eggs sysinstall krill --unattended` — fully unattended install
-   - `sudo eggs config` — interactive TUI to edit configuration
+   - `sudo eggs export` — export finished binaries, logs, or ISOs to Proxmox (`iso`, `pkg`, `log`)
+   - `eggs tools build` — compile `oa`/`coa` ecosystem from source (do NOT run with `sudo`)
+   - `eggs tools clean` — clear active terminal logs and host package caches
+   - `eggs tools grub40 <iso>` — inspect Linux ISO and generate GRUB `40_custom` loopback boot entry (`-w`, `--write` to write to `/etc/grub.d/40_custom`)
+   - `eggs tools skel` — regenerate `/etc/skel` by cloning shell profiles and XDG visual configurations from source user (`-u`, `--user`)
+   - `sudo eggs destroy` — clean up build nest and unmount temporary target filesystems
    - `eggs version` — print version info
-   - `sudo coa destroy` — clean up build workspace
-   - `eggs tools grub40 <iso>` — generate GRUB loopback entry for an ISO
 3. Stability (as of 2026-06-29): Alpine, Arch, Debian, Fedora, Manjaro, openSUSE — all STABLE.
    ISOs boot and install correctly on all supported distros.
 4. Alpine live boot uses a custom OA-SIDECAR injected into the initramfs that handles
@@ -103,13 +108,13 @@ Use this for: everyday production, mature stable tool.
    available at https://penguins-eggs.net/basket/isos/ and
    https://sourceforge.net/projects/penguins-eggs/files/Isos/
 9. The installer package is `pkg/sysinstall/` with `setup/` (shared pipeline) and
-   `krill/` (TUI engine). Sysinstall will not run on already-installed systems.
-10. Bootloader auto-detects UEFI vs BIOS:
-    - Arch/Manjaro UEFI → systemd-boot
-    - Fedora/openSUSE → GRUB2 with BLS entry generation
-    - Any distro UEFI with GRUB → grub-install EFI
-    - Any distro BIOS → grub-install i386-pc
+   `krill/` (Go TUI engine with Bubbletea). Krill supports full deployment to **ext4** and **btrfs** filesystems on both BIOS and UEFI. Sysinstall will not run on already-installed systems.
+10. Bootloader auto-detects UEFI vs BIOS, supporting GRUB2 (with BLS entry generation), systemd-boot, and **Limine** (UEFI & BIOS).
 11. The previous AUR repository (`https://aur.archlinux.org/packages/penguins-eggs`) has been removed to avoid conflicts. The only official repository is the universal native repository at `https://penguins-eggs.net/basket/repository/`.
+12. Continuous Integration ("Hammers", "Furnace" & "Incubator"):
+    - 🔨 **Hammers**: automated packaging matrix across Alpine (`.apk`), Arch/Manjaro (`.pkg.tar.zst`), Debian (`.deb`), and Fedora/openSUSE (`.rpm`).
+    - 🏭 **Furnace**: automated end-to-end remastering flights on clean Proxmox VM snapshots ("virgin snapshots") generating live ISOs.
+    - 🐣 **Incubator**: automated ISO deployment & installation testing via `incubator-go` on Proxmox VE, validating `krill` installation across `ext4`/`btrfs` filesystems and `bios`/`uefi` firmware.
 
 ### Known Issue: Fedora 44 Boot Error ("invalid magic number")
 
