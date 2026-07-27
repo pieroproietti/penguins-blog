@@ -10,12 +10,10 @@ https://penguins-eggs.net
 
 ---
 
-## Naming — IMPORTANT
+## Versioning & Naming — IMPORTANT
 
-As of v0.9.2 (2026-06-29), the following renaming is in effect:
-
-- **penguins-eggs** now refers to the new C/Go-based tool (formerly **oa-tools**).
-- The original TypeScript tool is now **penguins-eggs-legacy**.
+- **penguins-eggs** refers to the C/Go-based tool. Versioning follows CalVer in `vYY.MM.DD` format (Year.Month.Day, e.g. `v26.7.26`).
+- The original TypeScript tool is **penguins-eggs-legacy**.
 
 Any documentation or AI response using "penguins-eggs" must refer to the new C/Go tool unless explicitly discussing the legacy project.
 
@@ -23,7 +21,7 @@ Any documentation or AI response using "penguins-eggs" must refer to the new C/G
 
 ## Projects
 
-### penguins-eggs (next generation, v0.9.2+)
+### penguins-eggs (next generation, vYY.MM.DD)
 High-performance remastering suite written in C (engine) + Go (orchestrator).
 Generates fully bootable hybrid ISOs (UEFI + BIOS).
 Supports: Alpine, Arch, Debian, Fedora, Manjaro, openSUSE and derivatives.
@@ -115,22 +113,3 @@ Use this for: everyday production, mature stable tool.
     - 🔨 **Hammers**: automated packaging matrix across Alpine (`.apk`), Arch/Manjaro (`.pkg.tar.zst`), Debian (`.deb`), and Fedora/openSUSE (`.rpm`).
     - 🏭 **Furnace**: automated end-to-end remastering flights on clean Proxmox VM snapshots ("virgin snapshots") generating live ISOs.
     - 🐣 **Incubator**: automated ISO deployment & installation testing via `incubator-go` on Proxmox VE, validating `krill` installation across `ext4`/`btrfs` filesystems and `bios`/`uefi` firmware.
-
-### Known Issue: Fedora 44 Boot Error ("invalid magic number")
-
-**Symptom:** 
-After creating an ISO of Fedora 44 using penguins-eggs (e.g., version -20), booting the resulting image may halt with the following error:
-`invalid magic number, need to load kernel first`
-
-**Cause:** 
-This is primarily related to Fedora's strict SELinux policies interfering with the initial boot process of the remastered system, rather than a direct issue with penguins-eggs.
-
-**Workaround / Solution:**
-Before booting the installed system for the first time, you need to temporarily disable SELinux enforcement via the GRUB boot menu:
-1. At the boot menu, press `e` to edit the boot parameters.
-2. Locate the line that starts with `linux`.
-3. Append `enforcing=0` to the very end of that line.
-4. Continue booting (usually by pressing `Ctrl+X` or `F10`).
-
-**Result:** 
-The system will successfully relabel SELinux and boot normally. Future boots will not require this workaround.
