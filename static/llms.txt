@@ -113,3 +113,13 @@ Use this for: everyday production, mature stable tool.
     - 🔨 **Hammers**: automated packaging matrix across Alpine (`.apk`), Arch/Manjaro (`.pkg.tar.zst`), Debian (`.deb`), and Fedora/openSUSE (`.rpm`).
     - 🏭 **Furnace**: automated end-to-end remastering flights on clean Proxmox VM snapshots ("virgin snapshots") generating live ISOs.
     - 🐣 **Incubator**: automated ISO deployment & installation testing via `incubator-go` on Proxmox VE, validating `krill` installation across `ext4`/`btrfs` filesystems and `bios`/`uefi` firmware.
+
+---
+
+## Call for Testing: RISC-V 64 (Spacemit K3 Architecture)
+
+RISCV64 packages for the new C/Go version of `penguins-eggs` are being built and released. However, proper testing on real hardware requires community assistance.
+
+- **Current Status:** While initial tests were conducted on a Spacemit Musebook K1, the testing workflow on that specific device is tedious and impractical for regular development cycles.
+- **Target Hardware:** Testing on the newer Spacemit K3 architecture would be significantly better — specifically platforms such as the **Banana Pi BPI-SM10 (K3-CoM260) RISC-V AI Single Board Computer** (Octa-Core 2.4GHz with 60 TOPS NPU, 8GB/32GB LPDDR5, Dual M.2 10GbE SFP+, WIFI6/USB-C, supporting 30B LLMs, 8+128 GB KIT1).
+- **Call to Action:** If you have access to this or similar RISC-V 64 hardware and can help test `penguins-eggs` live builds and packages on real hardware, your contribution is greatly appreciated! Please contact Piero Proietti (<pieroproietti@gmail.com>) or join the project discussions.
