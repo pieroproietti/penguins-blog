@@ -9,17 +9,12 @@ set -e
 SRC="${1:-$HOME/forge/penguins-eggs/DOCS}"
 DEST="$(cd "$(dirname "$0")" && pwd)/penguins-eggs"
 
-if [ ! -d "$SRC/architecture" ]; then
-    echo "❌ Sorgente non valida: $SRC (manca architecture/)" >&2
+if [ ! -d "$SRC" ]; then
+    echo "❌ Sorgente non valida: $SRC" >&2
     exit 1
 fi
 
-for dir in architecture design development manual; do
-    rsync -a --delete --exclude '_category_.json' "$SRC/$dir/" "$DEST/$dir/"
-done
-
-# Root-level docs (skip README.md — the blog has its own index.md)
-rsync -a --exclude 'README.md' --include '*.md' --exclude '*' "$SRC/" "$DEST/"
+rsync -a --delete --exclude '_category_.json' --exclude 'index.md' --exclude 'README.md' "$SRC/" "$DEST/"
 
 echo "✅ Mirror penguins-eggs sincronizzato da $SRC"
 echo "   Ricorda: pnpm build per verificare prima del commit."
