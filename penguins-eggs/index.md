@@ -17,7 +17,7 @@ Supported today: **Alpine, Arch, Debian, Fedora, Manjaro, openSUSE** and derivat
 
 ## Where to start
 
-- New to the project? Read the [Philosophy](1-philosophy/1-philosophy.md) — the three-actor model in two pages.
+- New to the project? Read the [Manifestum](1-philosophy/1-manifestum.md) or [Philosophy](1-philosophy/2-philosophy.md) — origins and the three-actor model.
 - Want the big picture of the orchestrator? [Architecture overview](3-developer-manual/architecture/1-overview.md).
 - Curious about the C engine? [The C Arm: oa](3-developer-manual/architecture/3-oa.md) and its Go counterpart [coa ell](3-developer-manual/architecture/4-ell.md).
 - Ready to use it? [Command reference](2-user-manual/2-commands.md) and [Building from source](3-developer-manual/architecture/2-building.md).
