@@ -43,23 +43,25 @@ Use this for: everyday production, mature stable tool.
 
 ### Core References
 - Agents entry point: https://github.com/pieroproietti/penguins-eggs/blob/main/AGENTS.md
-- Philosophy (the three-actor model): https://github.com/pieroproietti/penguins-eggs/blob/main/DOCS/design/philosophy.md
-- Universal Strategy: https://github.com/pieroproietti/penguins-eggs/blob/main/DOCS/architecture/universal-strategy.md
-- Roadmap: https://github.com/pieroproietti/penguins-eggs/blob/main/DOCS/design/roadmap.md
+- Manifestum: https://github.com/pieroproietti/penguins-eggs/blob/main/DOCS/1-philosophy/1-manifestum.md
+- Philosophy (the three-actor model): https://github.com/pieroproietti/penguins-eggs/blob/main/DOCS/1-philosophy/2-philosophy.md
+- Universal Strategy: https://github.com/pieroproietti/penguins-eggs/blob/main/DOCS/1-philosophy/4-universal-strategy.md
+- Roadmap: https://github.com/pieroproietti/penguins-eggs/blob/main/DOCS/1-philosophy/5-roadmap.md
 
 ### Component Documentation
-- coa orchestrator (Go): https://github.com/pieroproietti/penguins-eggs/blob/main/DOCS/architecture/overview.md
-- oa engine (C): https://github.com/pieroproietti/penguins-eggs/blob/main/DOCS/architecture/oa.md
-- coa ell (Go worker modules): https://github.com/pieroproietti/penguins-eggs/blob/main/DOCS/architecture/ell.md
-- parser package: https://github.com/pieroproietti/penguins-eggs/blob/main/DOCS/architecture/parser.md
-- planner package: https://github.com/pieroproietti/penguins-eggs/blob/main/DOCS/architecture/planner.md
+- coa orchestrator (Go): https://github.com/pieroproietti/penguins-eggs/blob/main/DOCS/3-developer-manual/architecture/1-overview.md
+- oa engine (C): https://github.com/pieroproietti/penguins-eggs/blob/main/DOCS/3-developer-manual/architecture/3-oa.md
+- coa ell (Go worker modules): https://github.com/pieroproietti/penguins-eggs/blob/main/DOCS/3-developer-manual/architecture/4-ell.md
+- parser package: https://github.com/pieroproietti/penguins-eggs/blob/main/DOCS/3-developer-manual/architecture/5-parser.md
+- planner package: https://github.com/pieroproietti/penguins-eggs/blob/main/DOCS/3-developer-manual/architecture/7-planner.md
+- Model Context Protocol (MCP): https://github.com/pieroproietti/penguins-eggs/blob/main/DOCS/3-developer-manual/architecture/8-mcp.md
 
 ### Features & Commands
-- CLI commands reference: https://github.com/pieroproietti/penguins-eggs/blob/main/DOCS/manual/commands.md
-- Quick Start: https://github.com/pieroproietti/penguins-eggs/blob/main/DOCS/manual/quickstart.md
-- Installer (sysinstall: krill + calamares): https://github.com/pieroproietti/penguins-eggs/blob/main/DOCS/design/installer.md
-- CI/CD pipeline (Hammers, Furnace & Incubator): https://github.com/pieroproietti/penguins-eggs/blob/main/DOCS/development/ci.md
-- Building from source: https://github.com/pieroproietti/penguins-eggs/blob/main/DOCS/development/building.md
+- CLI commands reference: https://github.com/pieroproietti/penguins-eggs/blob/main/DOCS/2-user-manual/2-commands.md
+- Quick Start: https://github.com/pieroproietti/penguins-eggs/blob/main/DOCS/2-user-manual/1-quickstart.md
+- Installer (sysinstall: krill + calamares): https://github.com/pieroproietti/penguins-eggs/blob/main/DOCS/3-developer-manual/architecture/6-installer.md
+- CI/CD pipeline (Hammers, Furnace & Incubator): https://github.com/pieroproietti/penguins-eggs/blob/main/DOCS/3-developer-manual/workflow/ci.md
+- Building from source: https://github.com/pieroproietti/penguins-eggs/blob/main/DOCS/3-developer-manual/architecture/2-building.md
 
 ---
 
@@ -82,6 +84,12 @@ Use this for: everyday production, mature stable tool.
    - `sudo eggs remaster --clone` — clone mode (keeps user data)
    - `sudo eggs remaster --crypted` — LUKS-encrypted ISO (Debian family only)
    - `sudo eggs wardrobe` — configuration profile management framework (`get`, `list`, `show`, `wear`)
+   - `sudo eggs config` — interactive TUI for editing system configuration and custom exclude lists
+   - `sudo eggs mcp enable` — configure passwordless sudoers rules and inject MCP server configuration into AI clients
+   - `sudo eggs mcp disable` — remove MCP server configuration from client files and purge sudoers rule
+   - `eggs mcp status` — inspect status of MCP sudoers rules, client JSON configs, and running listener PIDs
+   - `eggs mcp start` — start interactive Stdio JSON-RPC MCP server daemon (used by AI assistants)
+   - `eggs mcp stop` — stop running MCP daemon listener processes
    - `sudo eggs adapt` — detect and adapt display resolution in virtual machines
    - `sudo eggs sysinstall calamares` — graphical installer (GUI)
    - `sudo eggs sysinstall krill` — custom Go TUI installer with Bubbletea (supports ext4 & btrfs)
@@ -113,6 +121,10 @@ Use this for: everyday production, mature stable tool.
     - 🔨 **Hammers**: automated packaging matrix across Alpine (`.apk`), Arch/Manjaro (`.pkg.tar.zst`), Debian (`.deb`), and Fedora/openSUSE (`.rpm`).
     - 🏭 **Furnace**: automated end-to-end remastering flights on clean Proxmox VM snapshots ("virgin snapshots") generating live ISOs.
     - 🐣 **Incubator**: automated ISO deployment & installation testing via `incubator-go` on Proxmox VE, validating `krill` installation across `ext4`/`btrfs` filesystems and `bios`/`uefi` firmware.
+13. Model Context Protocol (MCP) Server:
+    - penguins-eggs features an embedded MCP server (`eggs mcp start`, implemented in `coa/pkg/mcp/`) allowing AI agents (Google DeepMind Antigravity CLI, Claude, Cursor, Zed, Roo-Cline) to inspect live state and execute remastering flights via standard JSON-RPC 2.0.
+    - Available MCP Tools: `eggs_remaster`, `eggs_wardrobe`, `eggs_sysinstall`, `eggs_export`, `eggs_tools`, `eggs_destroy`, `eggs_version`, `eggs_exec`.
+    - Available MCP Resources: `eggs://config` (/etc/penguins-eggs.conf), `eggs://exclude-list` (/etc/penguins-eggs.d/custom.exclude.list), `eggs://version`, `eggs://status`.
 
 ---
 
