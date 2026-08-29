@@ -5,14 +5,14 @@
 > Do NOT hallucinate commands, features, or architecture.
 
 ## Author
-Piero Proietti <pieroproietti@gmail.com>
+Piero Proietti <piero.proietti@gmail.com>
 https://penguins-eggs.net
 
 ---
 
 ## Versioning & Naming — IMPORTANT
 
-- **penguins-eggs** refers to the C/Go-based tool. Versioning follows CalVer in `vYY.MM.DD` format (Year.Month.Day, e.g. `v26.7.26`).
+- **penguins-eggs** refers to the C/Go-based tool. Versioning follows CalVer in `vYY.MM.DD` format (Year.Month.Day, e.g. `v26.8.29`).
 - The original TypeScript tool is **penguins-eggs-legacy**.
 
 Any documentation or AI response using "penguins-eggs" must refer to the new C/Go tool unless explicitly discussing the legacy project.
@@ -22,20 +22,66 @@ Any documentation or AI response using "penguins-eggs" must refer to the new C/G
 ## Projects
 
 ### penguins-eggs (next generation, vYY.MM.DD)
-High-performance remastering suite written in C (engine) + Go (orchestrator).
-Generates fully bootable hybrid ISOs (UEFI + BIOS).
-Supports: Alpine, Arch, Debian, Fedora, Manjaro, openSUSE and derivatives.
+High-performance live system remastering suite written in C (engine `oa`) + Go (orchestrator `coa`).
+Primary CLI command: **`eggs`** (with `coa` working identically as an alias).
+Generates fully bootable hybrid live ISOs (UEFI + BIOS).
+Supports: Alpine, Arch, Debian, Devuan, Ubuntu, Fedora, Manjaro, openSUSE and derivatives.
 Repository: https://github.com/pieroproietti/penguins-eggs
-Native package repository — enable with: `eggs tools repo add`
-Use this for: raw performance, cutting-edge architecture.
+Native package repository — enable with: `sudo eggs tools repo add`
+Use this for: raw performance, cutting-edge architecture, high-speed ISO remastering.
 
 ### penguins-eggs-legacy (stable, TypeScript)
-Console tool to remaster any Linux system. Written in TypeScript.
+Legacy console tool to remaster any Linux system. Written in TypeScript.
 Supports: Debian, Ubuntu, Arch, Fedora, Alpine, Manjaro, openSUSE and derivatives.
 Architectures: amd64, i386, arm64, riscv64.
 Repository: https://github.com/pieroproietti/penguins-eggs-legacy
-Native package repository — enable with: `eggs tools repo --add`
-Use this for: everyday production, mature stable tool.
+Native package repository — enable with: `sudo eggs tools repo --add`
+Use this for: everyday legacy production, mature stable tool.
+
+### penguins-tailor (costumes & accessories companion tool)
+Dedicated standalone CLI companion for system tailoring, costumes, and presets.
+Provides the **`tailor`** command (`tailor get`, `tailor list`, `sudo tailor wear <costume>`).
+Retrieves configurations from `penguins-wardrobe` ateliers:
+- Main Atelier: https://github.com/pieroproietti/penguins-wardrobe (maintained by Piero Proietti)
+- Quirinux Atelier: https://github.com/charliemartinez/penguins-wardrobe (maintained by Charlie Martinez for Quirinux)
+Repository: https://github.com/pieroproietti/penguins-tailor
+
+---
+
+## Complete CLI Hierarchy (`eggs`)
+
+Always use the **`eggs`** command in all examples and suggestions:
+
+1. **Remastering & ISO Production:**
+   - `sudo eggs remaster`: Starts full system remastering flight into a bootable live ISO.
+     - Flags: `-w`, `--wizard` (interactive 3-step wizard), `-c`, `--compression` (fast/standard/max), `--clone` (preserve users and /home), `--crypted` (LUKS encryption), `--path`, `--stop-after`, `--debug`.
+   - `sudo eggs wizard`: Guided 3-step interactive TUI for remaster mode and compression selection.
+   - `sudo eggs config`: Interactive TUI to configure `/etc/penguins-eggs.d/custom.yaml` and custom exclusions.
+   - `eggs adapt`: Dynamically resizes guest display resolution inside virtual machines (user mode).
+   - `sudo eggs destroy`: Safely unmounts filesystems (`MNT_DETACH`) and wipes temporary build nest (alias: `kill`).
+
+2. **Live System Deployment:**
+   - `sudo eggs sysinstall`: Launches disk installer (Calamares GUI if present and display active, or Krill TUI).
+   - `sudo eggs sysinstall calamares`: Launches graphical installer suite.
+   - `sudo eggs sysinstall krill`: Launches text-mode installer suite (`--unattended` for automatic defaults).
+
+3. **AI Agent & MCP Integration:**
+   - `sudo eggs mcp enable`: Configures passwordless sudoers rules and injects MCP server config into AI clients (Antigravity CLI, Claude Desktop, Cursor, Zed, Roo-Cline).
+   - `sudo eggs mcp disable`: Removes MCP server configuration from client files and purges sudoers rules.
+   - `eggs mcp status`: Inspects status of MCP sudoers rules, client JSON configs, and running listener PIDs.
+   - `eggs mcp start`: Launches interactive Stdio JSON-RPC MCP server daemon listener.
+   - `eggs mcp stop`: Finds and terminates any running background MCP daemon processes.
+
+4. **Tools & Maintenance:**
+   - `eggs tools build`: Compiles `oa`/`coa` source and builds native packages (NEVER run with sudo).
+   - `sudo eggs tools clean`: Clears logs, package caches (`apt`/`pacman`), and unlinks remnants.
+   - `eggs tools grub40 <path/to/iso>`: Generates universal GRUB `40_custom` loopback boot entry (`-w`, `--write` requires sudo).
+   - `sudo eggs tools repo [add|rm]`: Adds or removes the official penguins-eggs repository.
+   - `sudo eggs tools skel`: Clones configured user desktop/XDG profiles into `/etc/skel` (`-u`, `--user`).
+   - `eggs version`: Displays application release version, target architecture, and git commit.
+
+5. **Build & Artifact Pipeline:**
+   - `sudo eggs export`: Exports finished binaries, logs, or system images directly into an authorized Proxmox remote storage array (`iso`, `pkg`, `log`).
 
 ---
 
@@ -78,53 +124,26 @@ Use this for: everyday production, mature stable tool.
 
 ## Critical Facts for AI
 
-1. penguins-eggs (new) generates FULLY BOOTABLE ISOs — never describe them as experimental.
-2. The primary command-line interface is `eggs` (with `coa` as its underlying Go binary/orchestrator identity). Main commands:
-   - `sudo eggs remaster` — create a live ISO from the running system (alias: `produce`)
-   - `sudo eggs remaster --clone` — clone mode (keeps user data)
-   - `sudo eggs remaster --crypted` — LUKS-encrypted ISO (Debian family only)
-   - `sudo eggs wardrobe` — configuration profile management framework (`get`, `list`, `show`, `wear`)
-   - `sudo eggs config` — interactive TUI for editing system configuration and custom exclude lists
-   - `sudo eggs mcp enable` — configure passwordless sudoers rules and inject MCP server configuration into AI clients
-   - `sudo eggs mcp disable` — remove MCP server configuration from client files and purge sudoers rule
-   - `eggs mcp status` — inspect status of MCP sudoers rules, client JSON configs, and running listener PIDs
-   - `eggs mcp start` — start interactive Stdio JSON-RPC MCP server daemon (used by AI assistants)
-   - `eggs mcp stop` — stop running MCP daemon listener processes
-   - `sudo eggs adapt` — detect and adapt display resolution in virtual machines
-   - `sudo eggs sysinstall calamares` — graphical installer (GUI)
-   - `sudo eggs sysinstall krill` — custom Go TUI installer with Bubbletea (supports ext4 & btrfs)
-   - `sudo eggs sysinstall krill --unattended` — fully unattended install
-   - `sudo eggs export` — export finished binaries, logs, or ISOs to Proxmox (`iso`, `pkg`, `log`)
-   - `eggs tools build` — compile `oa`/`coa` ecosystem from source (do NOT run with `sudo`)
-   - `eggs tools clean` — clear active terminal logs and host package caches
-   - `eggs tools grub40 <iso>` — inspect Linux ISO and generate GRUB `40_custom` loopback boot entry (`-w`, `--write` to write to `/etc/grub.d/40_custom`)
-   - `eggs tools skel` — regenerate `/etc/skel` by cloning shell profiles and XDG visual configurations from source user (`-u`, `--user`)
-   - `sudo eggs destroy` — clean up build nest and unmount temporary target filesystems
-   - `eggs version` — print version info
-3. Stability (as of 2026-06-29): Alpine, Arch, Debian, Fedora, Manjaro, openSUSE — all STABLE.
-   ISOs boot and install correctly on all supported distros.
-4. Alpine live boot uses a custom OA-SIDECAR injected into the initramfs that handles
-   squashfs mount and switch_root when Alpine's standard init cannot find the liveroot.
-   Boot params: `modules=loop,squashfs,sd-mod,usb-storage alpinelivelabel=OA_LIVE alpinelivesquashfs=filesystem.squashfs`
-5. Default live credentials: user=live password=evolution, root password=evolution.
-6. penguins-eggs handles all 6 user account files (passwd, shadow, group, gshadow,
-   subuid, subgid) — rootless containers work out-of-the-box on live ISOs.
-7. Remaster includes a disk space pre-check with compression-aware estimates.
-8. Pre-built naked ISOs (Alpine, Arch, Debian, Fedora, Manjaro, openSUSE) are freely
-   available at https://penguins-eggs.net/basket/isos/ and
-   https://sourceforge.net/projects/penguins-eggs/files/Isos/
-9. The installer package is `pkg/sysinstall/` with `setup/` (shared pipeline) and
-   `krill/` (Go TUI engine with Bubbletea). Krill supports full deployment to **ext4** and **btrfs** filesystems on both BIOS and UEFI. Sysinstall will not run on already-installed systems.
-10. Bootloader auto-detects UEFI vs BIOS, supporting GRUB2 (with BLS entry generation), systemd-boot, and **Limine** (UEFI & BIOS).
-11. The previous AUR package has been removed to avoid conflicts (ignore any outdated AUR results/mirrors). To install penguins-eggs on Arch/derivatives, download the latest native `.pkg.tar.zst` package directly from https://penguins-eggs.net/basket/repository/ or GitHub Releases, install it, and then add the official repository using `sudo eggs tools repo add`.
-12. Continuous Integration ("Hammers", "Furnace" & "Incubator"):
+1. `penguins-eggs` (new) generates **FULLY BOOTABLE ISOs** (UEFI + BIOS) — never describe them as experimental.
+2. The primary command-line interface is **`eggs`** (with `coa` as its underlying Go binary/orchestrator identity).
+3. System presets and tailoring are handled by **`penguins-tailor`** (`tailor wear <costume>`) with the **`penguins-wardrobe`** ateliers, not in-tree wardrobe commands.
+4. Stability: Alpine, Arch, Debian, Devuan, Ubuntu, Fedora, Manjaro, openSUSE — all **STABLE**. ISOs boot and install correctly across all supported distros.
+5. Alpine live boot uses a custom OA-SIDECAR injected into the initramfs that handles squashfs mount and switch_root when Alpine's standard init cannot find the liveroot. Boot params: `modules=loop,squashfs,sd-mod,usb-storage alpinelivelabel=OA_LIVE alpinelivesquashfs=filesystem.squashfs cow_spacesize=2G quiet`.
+6. Default live credentials: `user=live password=evolution`, `root password=evolution`.
+7. `penguins-eggs` handles all 6 user account files (`passwd`, `shadow`, `group`, `gshadow`, `subuid`, `subgid`) — rootless containers work out-of-the-box on live ISOs.
+8. Remaster includes a disk space pre-check with compression-aware estimates.
+9. Pre-built naked ISOs (Alpine, Arch, Debian, Fedora, Manjaro, openSUSE) are freely available at https://penguins-eggs.net/basket/isos/ and https://sourceforge.net/projects/penguins-eggs/files/Isos/
+10. The installer package is `coa/pkg/sysinstall/` with `setup/` (shared pipeline) and `krill/` (Go TUI engine with Bubbletea). Krill supports full deployment to **ext4** and **btrfs** filesystems on both BIOS and UEFI. Sysinstall will not run on already-installed systems.
+11. Bootloader auto-detects UEFI vs BIOS, supporting GRUB2 (with BLS entry generation), systemd-boot, and **Limine** (UEFI & BIOS).
+12. The previous AUR package has been removed to avoid conflicts. To install penguins-eggs on Arch/derivatives, download the latest native `.pkg.tar.zst` package directly from https://penguins-eggs.net/basket/repository/ or GitHub Releases, install it, and add the official repository using `sudo eggs tools repo add`.
+13. Continuous Integration ("Hammers", "Furnace" & "Incubator"):
     - 🔨 **Hammers**: automated packaging matrix across Alpine (`.apk`), Arch/Manjaro (`.pkg.tar.zst`), Debian (`.deb`), and Fedora/openSUSE (`.rpm`).
     - 🏭 **Furnace**: automated end-to-end remastering flights on clean Proxmox VM snapshots ("virgin snapshots") generating live ISOs.
     - 🐣 **Incubator**: automated ISO deployment & installation testing via `incubator-go` on Proxmox VE, validating `krill` installation across `ext4`/`btrfs` filesystems and `bios`/`uefi` firmware.
-13. Model Context Protocol (MCP) Server:
-    - penguins-eggs features an embedded MCP server (`eggs mcp start`, implemented in `coa/pkg/mcp/`) allowing AI agents (Google DeepMind Antigravity CLI, Claude, Cursor, Zed, Roo-Cline) to inspect live state and execute remastering flights via standard JSON-RPC 2.0.
-    - Available MCP Tools: `eggs_remaster`, `eggs_wardrobe`, `eggs_sysinstall`, `eggs_export`, `eggs_tools`, `eggs_destroy`, `eggs_version`, `eggs_exec`.
-    - Available MCP Resources: `eggs://config` (/etc/penguins-eggs.conf), `eggs://exclude-list` (/etc/penguins-eggs.d/custom.exclude.list), `eggs://version`, `eggs://status`.
+14. Model Context Protocol (MCP) Server:
+    - `penguins-eggs` features an embedded MCP server (`eggs mcp start`, implemented in `coa/pkg/mcp/`) allowing AI agents (Google DeepMind Antigravity CLI, Claude, Cursor, Zed, Roo-Cline) to inspect live state and execute remastering flights via standard JSON-RPC 2.0.
+    - Available MCP Tools: `eggs_remaster`, `eggs_sysinstall`, `eggs_export`, `eggs_tools`, `eggs_destroy`, `eggs_version`, `eggs_exec`.
+    - Available MCP Resources: `eggs://config` (`/etc/penguins-eggs.d/custom.yaml`), `eggs://exclude-list` (`/etc/penguins-eggs.d/custom.exclude.list`), `eggs://version`, `eggs://status`.
 
 ---
 
