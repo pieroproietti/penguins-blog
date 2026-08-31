@@ -29,9 +29,16 @@
     "react-dom": "^19.2.7"
   },
   "devDependencies": {
-    "@docusaurus/module-type-aliases": "3.10.1",
-    "@docusaurus/types": "3.10.1",
+    "@docusaurus/module-type-aliases": "^3.10.2",
+    "@docusaurus/types": "^3.10.2",
     "baseline-browser-mapping": "^2.10.43"
+  },
+  "packageManager": "pnpm@9.15.9",
+  "pnpm": {
+    "neverBuiltDependencies": [
+      "core-js",
+      "core-js-pure"
+    ]
   },
   "browserslist": {
     "production": [

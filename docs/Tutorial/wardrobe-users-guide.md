@@ -669,7 +669,7 @@ L'assistente AI genererà la configurazione completa, ottimizzerà la lista dei 
 
 ## 📜 Licenza e Crediti
 
-* **Autore**: Piero Proietti <piero.proietti@gmail.com>
+* **Autore**: Piero Proietti [piero.proietti@gmail.com](mailto:piero.proietti@gmail.com)
 * **Collaborazioni & Ringraziamenti**: Un ringraziamento speciale a **[Charlie Martínez](https://github.com/charliemartinez)** ([Quirinux](https://quirinux.org)) per il prezioso supporto, il continuo testing e la stretta collaborazione nello sviluppo e sperimentazione di `penguins-tailor`.
 * **Sito Ufficiale**: [penguins-eggs.net](https://penguins-eggs.net)
 * **Codice Sorgente Tailor**: [github.com/pieroproietti/penguins-tailor](https://github.com/pieroproietti/penguins-tailor)
