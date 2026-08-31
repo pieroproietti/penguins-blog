@@ -8,77 +8,78 @@ import Translactions from '@site/src/components/Translactions';
 
 <Translactions />
 
-# 👗 Wardrobe: La metodologia di vestizione
+# 👗 Wardrobe & Tailor: La metodologia di vestizione
 
-Il **Wardrobe** (Armadio) non è un semplice strumento di configurazione della ISO, ma una vera e propria metodologia di lavoro per creare la tua distribuzione personalizzata (Respin).
+L'ecosistema per la personalizzazione e l'allestimento di distribuzioni Linux adotta una chiara separazione delle responsabilità tra il **Sarto** (`tailor`), il **Guardaroba** (`wardrobe`) e la **Rimasterizzazione** (`eggs`).
 
 ---
 
+## 🔄 Il Flusso di Lavoro Modulare
 
-## 🔄 Il Flusso di Lavoro (Respin)
+Con `penguins-tailor` e `penguins-eggs`, il ciclo di vita per creare la propria distribuzione personalizzata (Respin) è completamente modulare:
 
-A differenza di altri strumenti, con eggs non si modifica il file ISO "dall'esterno". Il processo segue una logica lineare e pulita:
-
-1.  **SISTEMA NAKED**: Si parte da un'installazione minima (solo riga di comando).
-2.  **VESTIZIONE (Wardrobe)**: Si applica un "costume" al sistema installato per aggiungere programmi, interfacce grafiche e configurazioni.
-3.  **PRODUZIONE (Produce)**: Una volta che il sistema è perfetto, si usa eggs per trasformarlo in una ISO.
-
-
+1. **SISTEMA NAKED**: Si parte da un'installazione Linux minimale da riga di comando (Debian, Devuan, Ubuntu, o derivate).
+2. **ALLERSTIMENTO (Tailor & Wardrobe)**: Con `tailor` si applica un "costume" dal guardaroba per installare desktop environment, applicazioni, pacchetti e configurazioni.
+3. **PRODUZIONE ISO (Eggs)**: Una volta configurato e testato il sistema, si utilizza `eggs` per generare l'immagine Live ISO avviabile e installabile.
 
 > **Schema riassuntivo:**
-> `Sistema Minimo (CLI) --> Wardrobe (Vestizione) --> Sistema Personalizzato --> Eggs Produce --> ISO Finale`
+> `Sistema Minimo (CLI) --> Tailor Wear (Vestizione) --> Sistema Personalizzato --> Eggs (ISO Live)`
 
 ---
 
-## 🎭 La Metafora del Sarto
+## 🎭 La Metafora dell'Atelier Sartoriale
 
-* **Costume (Vestito)**: Una directory che contiene il file `index.yaml` (le istruzioni) e gli script necessari.
-* **Accessory (Accessori)**: Componenti aggiuntivi (es. driver, strumenti di sviluppo) che possono essere riutilizzati su più vestiti.
-
-:::info Il Sarto
-Tu fornisci le istruzioni nel file YAML, e **eggs** agisce come un sarto che cuce il vestito direttamente sul tuo sistema installato.
-:::
-
----
-
-## 🛠️ I Comandi principali
-
-Il guardaroba si gestisce con questi comandi:
-
-### 1. Prendi l'armadio (Get)
-Scarica il repository dei costumi (ufficiali o il tuo fork) in `~/.wardrobe`:
-```bash
-eggs wardrobe get
-```
-
-### 2. Elenca e Mostra (List/Show)
-Vedi quali vestiti sono disponibili e cosa contengono:
-```bash
-eggs wardrobe list
-eggs wardrobe show nome-costume
-```
-
-### 3. Indossa il vestito (Wear)
-Avvia la "vestizione" del sistema attuale. **Attenzione: questo comando modificherà il sistema operativo su cui lo lanci!**
-```bash
-sudo eggs wardrobe wear nome-costume
-```
+* **Il Sarto (`penguins-tailor` / `tailor`)**: Lo strumento CLI autonomo scritto in **Go** che interpreta le ricette, gestisce l'installazione dei pacchetti e applica le personalizzazioni.
+* **Costume (`v2/costumes/`)**: La ricetta completa per allestire un Desktop Environment (es. `colibri`, `duck`, `eagle`, `quirinux`, `chicks`).
+* **Accessory (`v2/accessories/`)**: Componenti software modulari (es. `base`, `eggs-dev`, `firmwares`, `flatpak`, `graphics`, `office`, `multimedia`) riutilizzabili su più costumi.
+* **Preseed Debconf (`packages.preseed`)**: File facoltativo presente in ogni costume o accessorio per azzerare qualsiasi richiesta interattiva debconf durante l'installazione dei pacchetti.
+* **Themes / Vendors (`v2/vendors/`)**: Personalizzazioni grafiche per il boot live (GRUB/Isolinux) e il branding dell'installer Calamares.
 
 ---
 
-## 🎨 Themes: Personalizzare la ISO
+## 🛠️ I Comandi Principali (`tailor`)
 
-Mentre il Wardrobe "veste" il sistema installato, i **Themes** (Temi) servono a cambiare l'aspetto del file ISO finale. Si usano durante la fase di `produce`:
+Il guardaroba si gestisce tramite il comando **`tailor`**:
 
-* Sfondo del boot (GRUB/Isolinux).
-* Branding dell'installer Calamares.
-
+### 1. Scarica o aggiorna il guardaroba (`tailor get`)
+Clona o aggiorna il repository dei costumi in `~/.wardrobe`:
 ```bash
-sudo eggs produce --theme nome-tema
+# Guardaroba ufficiale
+tailor get
+
+# Oppure un atelier personalizzato / fork
+tailor get https://github.com/charliemartinez/penguins-wardrobe
+```
+
+### 2. Elenca e Ispeziona i Costumi (`tailor list` / `tailor show`)
+Visualizza i costumi disponibili e i relativi dettagli:
+```bash
+tailor list
+tailor show colibri
+```
+
+### 3. Indossa il Costume (`sudo tailor wear`)
+Avvia l'allestimento del sistema in tempo reale con interfaccia TUI Split-Screen:
+```bash
+# Simulazione preventiva sicura
+tailor wear colibri --dry-run
+
+# Applicazione reale
+sudo tailor wear colibri
 ```
 
 ---
 
-:::tip Perché usare questo metodo?
-Usare il Wardrobe su un sistema "Naked" ti garantisce un sistema finale leggero, pulito e perfettamente documentato. Se vuoi cambiare qualcosa, ti basta modificare il file YAML e ripetere il processo: il risultato sarà sempre identico.
+## 🎨 Temi e Branding per la Live ISO
+
+Mentre `tailor` veste il sistema installato, i **Vendors/Themes** definiscono il branding dell'immagine Live e dell'installer Calamares generati da `eggs`:
+
+```bash
+sudo eggs produce --theme vendors/educaandos-plus
+```
+
+---
+
+:::tip Perché usare questa metodologia?
+Allestire un sistema partendo da una base minimale (*naked*) garantisce un sistema finale leggero, riproducibile e perfettamente documentato nelle ricette YAML. Per approfondire tutte le funzionalità, consulta la [Guida Completa di Penguins' Wardrobe e Tailor](/docs/Tutorial/wardrobe-users-guide).
 :::

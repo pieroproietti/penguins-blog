@@ -10,7 +10,9 @@ The source of **https://penguins-eggs.net** — blog, documentation and landing 
 
 Sibling repos on this machine:
 - `~/forge/penguins-eggs-legacy` — the TypeScript remaster tool (see its `AGENTS.md` for the full architecture map);
-- `~/forge/penguins-eggs` — the C/Go successor (see `AGENTS.md` and `DOCS/`).
+- `~/forge/penguins-eggs` — the C/Go successor (see `AGENTS.md` and `DOCS/`);
+- `~/forge/penguins-tailor` — the Go-based companion CLI for system tailoring and presets (`tailor`);
+- `~/forge/penguins-wardrobe` — the declarative YAML recipes (costumes, accessories, preseed, sysroot) under `v2/`.
 
 ## Key commands
 
