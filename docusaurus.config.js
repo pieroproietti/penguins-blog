@@ -50,6 +50,15 @@ const config = {
         sidebarPath: './sidebarsPenguinsEggs.js',
       },
     ],
+    [
+      '@docusaurus/plugin-content-docs',
+      {
+        id: 'tailor',
+        path: 'tailor',
+        routeBasePath: 'tailor',
+        sidebarPath: './sidebarsTailor.js',
+      },
+    ],
   ],
 
   presets: [
@@ -102,18 +111,25 @@ const config = {
             sidebarId: 'penguinsEggsSidebar',
             docsPluginId: 'penguins-eggs',
             position: 'left',
-            label: 'penguins-eggs',
+            label: 'eggs',
+          },
+          {
+            type: 'docSidebar',
+            sidebarId: 'tailorSidebar',
+            docsPluginId: 'tailor',
+            position: 'left',
+            label: 'tailor',
+          },
+          {
+            to: '/blog',
+            label: 'blog',
+            position: 'left',
           },
           {
             type: 'docSidebar',
             sidebarId: 'tutorialSidebar',
             position: 'left',
-            label: 'penguins-eggs-legacy',
-          },
-          {
-            to: '/blog',
-            label: 'Blog',
-            position: 'left'
+            label: 'eggs-legacy',
           },
           {
             href: 'https://penguins-eggs.net/llms.txt',
@@ -134,7 +150,7 @@ const config = {
               },
               {
                 label: 'Wardrobe users\' guide',
-                to: '/penguins-eggs-legacy/Tutorial/wardrobe-users-guide',
+                to: '/tailor/wardrobe-users-guide',
               },
             ],
           },

@@ -124,15 +124,17 @@ sudo eggs-legacy krill --unattended        # Avvia l'installazione automatica no
 
 ---
 
-## Wardrobe - Configurazioni predefinite
+## Wardrobe & Tailor - Configurazioni predefinite
 
-Il sistema wardrobe consente di scaricare e applicare costumi (desktop preconfigurati e personalizzazioni) sul sistema:
+Il sistema wardrobe consente di scaricare e applicare costumi (desktop preconfigurati e personalizzazioni) sul sistema. Nelle versioni attuali dell'ecosistema, l'allestimento è gestito dal tool dedicato **[Penguins' Tailor](/tailor)** (`tailor`):
 
 ```bash
-eggs-legacy wardrobe get                   # Scarica o aggiorna il guardaroba
-eggs-legacy wardrobe list                  # Elenca i costumi disponibili nel sistema
-sudo eggs-legacy wardrobe wear colibri     # Applica il costume desktop colibri
+tailor get                   # Scarica o aggiorna il guardaroba
+tailor list                  # Elenca i costumi disponibili nel sistema
+sudo tailor wear colibri     # Applica il costume desktop colibri
 ```
+
+Per la documentazione completa e approfondita, consulta la **[Guida Utente di Tailor & Wardrobe](/tailor/wardrobe-users-guide)**.
 
 ---
 

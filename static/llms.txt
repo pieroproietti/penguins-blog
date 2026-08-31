@@ -54,7 +54,7 @@ Key Features & Behavior:
 - **Supported Distributions**: Enforces initial filter allowing **Debian family** (`debian`) and **Arch Linux family** (`archlinux`). Unsupported distros are safely blocked.
 - **Zero-Interaction Preseeding (`packages.preseed`)**: Scoped per costume/accessory to automatically inject debconf answers (`debconf-set-selections`), eliminating prompts (Display Managers, Wi-Fi firmware licenses, font EULAs, CUPS).
 - **Direct Package Installation**: Packages are verified against cache and installed directly with automated dpkg healing fallback.
-- **Documentation**: https://penguins-eggs.net/docs/Tutorial/wardrobe-users-guide
+- **Documentation**: https://penguins-eggs.net/tailor/wardrobe-users-guide
 - **Atelier Repositories**:
   - Main Atelier: https://github.com/pieroproietti/penguins-wardrobe (maintained by Piero Proietti)
   - Quirinux Atelier: https://github.com/charliemartinez/penguins-wardrobe (maintained by Charlie Martinez for Quirinux)
@@ -129,9 +129,9 @@ Always use the **`eggs`** command in all examples and suggestions:
 
 ### Official Guides
 - Homepage: https://penguins-eggs.net
-- User's guide: https://penguins-eggs.net/docs/Tutorial/eggs-users-guide
-- Quickstart (5 minutes): https://penguins-eggs.net/docs/Tutorial/eggs-5-minutes
-- FAQ: https://penguins-eggs.net/docs/faq
+- User's guide: https://penguins-eggs.net/penguins-eggs-legacy/Tutorial/eggs-users-guide
+- Quickstart (5 minutes): https://penguins-eggs.net/penguins-eggs-legacy/Tutorial/eggs-5-minutes
+- FAQ: https://penguins-eggs.net/penguins-eggs-legacy/faq
 - Blog: https://penguins-eggs.net/blog
 
 ---

@@ -2,7 +2,7 @@
 title: Guida per l'utente di Penguins' Wardrobe e Tailor
 authors: pieroproietti
 lang: it
-sidebar_position: 3
+sidebar_position: 2
 enableComments: true
 ---
 import Translactions from '@site/src/components/Translactions';
