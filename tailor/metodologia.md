@@ -1,85 +1,77 @@
 ---
 sidebar_position: 3
-title: Wardrobe 👗
-description: automatizzare la creazione del tuo sistema con i costumi
+title: La metodologia di vestizione
+description: Preparare il proprio sistema con costumi e accessori
 enableComments: true
 ---
 import Translactions from '@site/src/components/Translactions';
 
 <Translactions />
 
-# 👗 Wardrobe & Tailor: La metodologia di vestizione
+# Dal sistema minimale al proprio desktop
 
-L'ecosistema per la personalizzazione e l'allestimento di distribuzioni Linux adotta una chiara separazione delle responsabilità tra il **Sarto** (`tailor`), il **Guardaroba** (`wardrobe`) e la **Rimasterizzazione** (`eggs`).
+Un costume permette di descrivere e ripetere l'allestimento del sistema: quali programmi installare, quali configurazioni applicare e quale aspetto dare al desktop. **Tailor** esegue la vestizione usando le ricette conservate in **Wardrobe**, l'atelier.
 
----
+## 1. Preparare la base
 
-## 🔄 Il Flusso di Lavoro Modulare
+Si parte da una distribuzione compatibile con il costume, per esempio Debian o Devuan con un'installazione minimale. Su un sistema con il repository di eggs configurato, installa il sarto:
 
-Con `penguins-tailor` e `penguins-eggs`, il ciclo di vita per creare la propria distribuzione personalizzata (Respin) è completamente modulare:
-
-1. **SISTEMA NAKED**: Si parte da un'installazione Linux minimale da riga di comando (Debian, Devuan, Ubuntu, o derivate).
-2. **ALLERSTIMENTO (Tailor & Wardrobe)**: Con `tailor` si applica un "costume" dal guardaroba per installare desktop environment, applicazioni, pacchetti e configurazioni.
-3. **PRODUZIONE ISO (Eggs)**: Una volta configurato e testato il sistema, si utilizza `eggs` per generare l'immagine Live ISO avviabile e installabile.
-
-> **Schema riassuntivo:**
-> `Sistema Minimo (CLI) --> Tailor Wear (Vestizione) --> Sistema Personalizzato --> Eggs (ISO Live)`
-
----
-
-## 🎭 La Metafora dell'Atelier Sartoriale
-
-* **Il Sarto (`penguins-tailor` / `tailor`)**: Lo strumento CLI autonomo scritto in **Go** che interpreta le ricette, gestisce l'installazione dei pacchetti e applica le personalizzazioni.
-* **Costume (`v2/costumes/`)**: La ricetta completa per allestire un Desktop Environment (es. `colibri`, `duck`, `eagle`, `quirinux`, `chicks`).
-* **Accessory (`v2/accessories/`)**: Componenti software modulari (es. `base`, `eggs-dev`, `firmwares`, `flatpak`, `graphics`, `office`, `multimedia`) riutilizzabili su più costumi.
-* **Preseed Debconf (`packages.preseed`)**: File facoltativo presente in ogni costume o accessorio per azzerare qualsiasi richiesta interattiva debconf durante l'installazione dei pacchetti.
-* **Themes / Vendors (`v2/vendors/`)**: Personalizzazioni grafiche per il boot live (GRUB/Isolinux) e il branding dell'installer Calamares.
-
----
-
-## 🛠️ I Comandi Principali (`tailor`)
-
-Il guardaroba si gestisce tramite il comando **`tailor`**:
-
-### 1. Scarica o aggiorna il guardaroba (`tailor get`)
-Clona o aggiorna il repository dei costumi in `~/.wardrobe`:
 ```bash
-# Guardaroba ufficiale
-tailor get
-
-# Oppure un atelier personalizzato / fork
-tailor get https://github.com/charliemartinez/penguins-wardrobe
+sudo apt update
+sudo apt install penguins-tailor
 ```
 
-### 2. Elenca e Ispeziona i Costumi (`tailor list` / `tailor show`)
-Visualizza i costumi disponibili e i relativi dettagli:
+La [guida utente](./wardrobe-users-guide.md#installare-tailor) descrive installazione e compatibilità attuale.
+
+## 2. Scegliere il costume
+
 ```bash
+tailor get
 tailor list
 tailor show colibri
 ```
 
-### 3. Indossa il Costume (`sudo tailor wear`)
-Avvia l'allestimento del sistema in tempo reale con interfaccia TUI Split-Screen:
-```bash
-# Simulazione preventiva sicura
-tailor wear colibri --dry-run
+Il costume raccoglie programmi e impostazioni per un allestimento completo. Gli accessori permettono di condividere gruppi di programmi e configurazioni tra più costumi.
 
-# Applicazione reale
+Prima della vestizione leggi la ricetta e guarda la sua cartella `sysroot/`: il suo contenuto sarà copiato su `/`. Qui trovi sfondi, icone e configurazioni; i percorsi nella cartella corrispondono a quelli del sistema di destinazione.
+
+## 3. Vestire il sistema
+
+```bash
 sudo tailor wear colibri
 ```
 
----
+Tailor installa i pacchetti, applica gli accessori, copia i file di `sysroot/` e avvia i comandi previsti dalla ricetta. Al termine sincronizza `/etc/skel` nella home dell'utente individuato, così anche l'utente esistente riceve le impostazioni del costume.
 
-## 🎨 Temi e Branding per la Live ISO
+Per esaminare in anticipo le operazioni puoi usare `sudo tailor wear colibri --dry-run --linear`. La versione attuale salta l'applicazione della ricetta, ma esegue comunque l'aggiornamento iniziale degli indici APT e può scrivere log o recuperare l'atelier.
 
-Mentre `tailor` veste il sistema installato, i **Vendors/Themes** definiscono il branding dell'immagine Live e dell'installer Calamares generati da `eggs`:
+Controlla il report finale e prova la sessione desktop: programmi, pannelli, sfondo e icone devono corrispondere al risultato desiderato. Se è stato installato un nuovo kernel, riavvia prima di rimasterizzare.
 
-```bash
-sudo eggs produce --theme vendors/educaandos-plus
+## 4. Dare un'identità alla live
+
+Il costume può selezionare un bundle nella directory `v2/branding/`:
+
+```yaml
+name: my-desktop
+branding: quirinux
 ```
 
----
+Tailor copia il contenuto di quel bundle in `/etc/penguins-eggs.d/branding/`. Eggs lo usa per il boot della live e per l'installer. Un costume senza `branding` rimuove il bundle precedentemente attivo; applicare direttamente un accessorio lo conserva.
 
-:::tip Perché usare questa metodologia?
-Allestire un sistema partendo da una base minimale (*naked*) garantisce un sistema finale leggero, riproducibile e perfettamente documentato nelle ricette YAML. Per approfondire tutte le funzionalità, consulta la [Guida Completa di Penguins' Wardrobe e Tailor](./wardrobe-users-guide).
-:::
+Le grafiche del desktop distribuite con `sysroot/` e il branding della live hanno destinazioni diverse. La [guida al branding](./branding.md) spiega come prepararli, compreso il comportamento di `branding.desc` per Calamares.
+
+## 5. Creare la ISO
+
+Quando il sistema è pronto, con penguins-eggs C/Go installato:
+
+```bash
+sudo eggs remaster
+```
+
+Il percorso completo è:
+
+```text
+Sistema minimale → tailor wear → Sistema personalizzato → eggs remaster → ISO live
+```
+
+Per costruire il tuo costume, segui l'esempio passo passo nella [guida comune di Wardrobe e Tailor](./wardrobe-users-guide.md#scrivere-una-ricetta).

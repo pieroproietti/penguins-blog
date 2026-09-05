@@ -7,72 +7,59 @@ import Translactions from '@site/src/components/Translactions';
 
 <Translactions />
 
-# 👔 Penguins' Tailor & Wardrobe
+# Penguins' Tailor & Wardrobe
 
-**Penguins' Tailor** (`tailor`) è uno strumento CLI autonomo, moderno e veloce scritto in **Go** dedicato alla configurazione, allestimento e personalizzazione automatizzata di distribuzioni Linux attraverso ricette dichiarative YAML.
+**Penguins' Tailor è il sarto; Penguins' Wardrobe è il guardaroba.** Insieme permettono di partire da un'installazione Linux minimale e vestirla con programmi, grafiche e configurazioni, seguendo ricette riutilizzabili. Sono progetti creati da Piero Proietti.
 
-Lavora in stretta sinergia con **[Penguins' Wardrobe](https://github.com/pieroproietti/penguins-wardrobe)** (il guardaroba ufficiale dei costumi e degli accessori) e con **[Penguins' Eggs](https://penguins-eggs.net)** (lo strumento di rimasterizzazione e produzione ISO Live).
+Un **costume** prepara un sistema completo, per esempio un desktop XFCE. Un **accessorio** aggiunge una funzione, come gli strumenti per la grafica o la suite da ufficio. Il programma `tailor` legge queste ricette dall'atelier e le applica al sistema.
 
----
+## Installare e usare Tailor
 
-## 🎭 La Metafora dell'Atelier
+Su Debian e derivate, con il repository di eggs già configurato:
 
-L'intero ecosistema è concepito come un vero e proprio atelier sartoriale:
-
-* **Il Sarto (`tailor`)**: l'eseguibile CLI che rileva l'hardware e la distribuzione in uso, scarica il guardaroba e applica i vestiti desiderati. Può lavorare sia con il guardaroba ufficiale che con atelier/fork di terze parti.
-* **Costumi (`v2/costumes/`)**: le ricette complete per allestire un Desktop Environment (XFCE, Cinnamon, MATE, GNOME, ecc.) o una configurazione tematica (es. `colibri`, `duck`, `eagle`, `quirinux`, `chicks`, `gypaetus`, `seagull`).
-* **Accessori (`v2/accessories/`)**: componenti software modulari e riutilizzabili (es. `base`, `eggs-dev`, `firmwares`, `flatpak`, `graphics`, `office`, `multimedia`, `waydroid`).
-* **Preseed Debconf (`packages.preseed`)**: configurazione automatizzata a zero interazione per eliminare ogni prompt Debian/Debconf (Display Manager, licenze firmware proprietari, font Microsoft).
-* **Temi / Vendors (`v2/vendors/`)**: personalizzazioni grafiche e di branding per il boot live (GRUB, Isolinux) e per l'installer [Calamares](https://calamares.io).
-* **Sysroot Overlay (`sysroot/`)**: albero del filesystem sovrapposto direttamente su `/` (es. `/etc/skel/`, sfondi, icone), con sincronizzazione automatica dei permessi dell'utente non-root.
-
----
-
-## 🔄 Il Flusso di Lavoro Modulare con Eggs
-
-Grazie alla separazione tra **Tailor** (allestimento del sistema) ed **Eggs** (rimasterizzazione), il ciclo di vita per creare la propria distribuzione personalizzata (Respin) è completamente modulare:
-
-```
-[ Installazione Base Naked (CLI) ]
-               │
-               ▼
-   tailor get [url] [-b branch]
-   sudo tailor wear <costume>
-               │
-               ▼
-[ Test e Personalizzazione Locale ]
-               │
-               ▼
-      sudo eggs produce --theme ...
-               │
-               ▼
-    [ Immagine ISO Live Pronta! ]
+```bash
+sudo apt update
+sudo apt install penguins-tailor
 ```
 
-1. **Sistema Naked**: Si parte da un'installazione Linux minimale a riga di comando (Debian, Devuan, Ubuntu, Arch Linux).
-2. **Vestizione (Tailor)**: Si indossa un costume dal guardaroba per installare pacchetti, configurare l'interfaccia e preparare l'ambiente.
-3. **Produzione ISO (Eggs)**: Si utilizza `eggs` per generare l'immagine Live ISO avviabile (UEFI + BIOS) e installabile su disco fisso.
+Poi scegli il costume:
 
----
+```bash
+tailor get
+tailor list
+tailor show colibri
+sudo tailor wear colibri
+```
 
-## 🛠️ Comandi Rapidi di `tailor`
+Il gestore pacchetti attualmente implementato per la vestizione è APT. Verifica le distribuzioni previste dal costume scelto. La [guida utente](./wardrobe-users-guide.md#installare-tailor) spiega anche come aggiungere il repository tramite eggs e come compilare Tailor dai sorgenti.
 
-| Comando | Descrizione |
-| :--- | :--- |
-| **`tailor get [url]`** | Clona o aggiorna il repository dei costumi in `~/.wardrobe`. |
-| **`tailor list`** | Elenca tutti i costumi disponibili nel guardaroba locale. |
-| **`tailor show <costume>`** | Mostra i metadati dettagliati, i pacchetti e gli accessori di un costume. |
-| **`sudo tailor wear <costume>`** | Applica il costume al sistema con interfaccia TUI Split-Screen in tempo reale. |
-| **`tailor wear <costume> --dry-run`** | Simula l'applicazione del costume senza modificare il sistema. |
-| **`tailor export [pkg\|log]`** | Trasferisce pacchetti compilati o report di esecuzione via SSH. |
-| **`tailor tools build`** | Compila ed esporta i pacchetti nativi di distribuzione (`.deb`, `.rpm`, `.pkg.tar.zst`, `.apk`). |
-| **`sudo tailor tools repo [add\|rm]`** | Configura o rimuove i repository ufficiali di `penguins-eggs.net`. |
+## Come il costume dà forma al sistema
 
----
+La ricetta YAML indica i pacchetti da installare, gli accessori da aggiungere e gli script da eseguire. La cartella **`sysroot/`** contiene invece i file da distribuire: sfondi, icone, temi e configurazioni.
 
-## 📚 Documentazione
+Durante la vestizione, il contenuto di `sysroot/` viene copiato su **`/`**, mantenendo i percorsi. Per esempio:
 
-* **[Guida Utente Completa di Tailor & Wardrobe](./wardrobe-users-guide)**: La guida esaustiva a comandi, anatomia delle ricette YAML v2, debconf preseeding, resilienza e creazione di nuovi costumi.
-* **[Metodologia di Vestizione](./metodologia)**: Panoramica concettuale sulla filosofia di allestimento modulare.
-* **[Repository GitHub Penguins' Tailor](https://github.com/pieroproietti/penguins-tailor)**: Codice sorgente e issue tracker del sarto.
-* **[Repository GitHub Penguins' Wardrobe](https://github.com/pieroproietti/penguins-wardrobe)**: Il guardaroba ufficiale con tutte le ricette v2.
+```text
+sysroot/usr/share/backgrounds/mio-sfondo.png
+    → /usr/share/backgrounds/mio-sfondo.png
+```
+
+Le impostazioni sotto `sysroot/etc/skel/` arrivano in `/etc/skel` e vengono poi sincronizzate nella home dell'utente individuato da Tailor. `sysroot/` può contenere file per qualsiasi parte del sistema, ma conviene includere soltanto ciò che serve al costume.
+
+Il **branding**, conservato in `v2/branding/`, definisce l'aspetto del boot live e dell'installer. Il costume lo seleziona con la proprietà `branding`; Tailor ne installa il contenuto in `/etc/penguins-eggs.d/branding/`.
+
+## Dal sistema vestito alla live
+
+Dopo aver verificato il desktop e le configurazioni, usa penguins-eggs C/Go per creare una ISO live avviabile:
+
+```bash
+sudo eggs remaster
+```
+
+## Documentazione comune
+
+- [Guida utente di Wardrobe e Tailor](./wardrobe-users-guide.md): installazione, comandi, creazione di un costume, sysroot e diagnosi.
+- [Metodologia di vestizione](./metodologia.md): il percorso dalla base minimale al sistema personalizzato.
+- [Branding della live e di Calamares](./branding.md): struttura, precedenze, immagini e `branding.desc`.
+- [Penguins' Tailor su GitHub](https://github.com/pieroproietti/penguins-tailor): codice del programma.
+- [Penguins' Wardrobe su GitHub](https://github.com/pieroproietti/penguins-wardrobe): ricette e sorgente della guida comune.
