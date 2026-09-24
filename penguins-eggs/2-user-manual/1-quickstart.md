@@ -39,17 +39,32 @@ That's it. The ISO is hybrid (BIOS + UEFI) and ready to boot from USB or in a VM
 
 ## Common workflows
 
-### Customize the desktop, then remaster
+### Customize the desktop with penguins-tailor, then remaster
+
+You can configure and dress your system with ready-made desktop configurations ("costumes") and accessories before remastering using the companion tool **[penguins-tailor](https://github.com/pieroproietti/penguins-tailor)** (`tailor`). Costumes are retrieved from wardrobe ateliers (such as the main atelier [pieroproietti/penguins-wardrobe](https://github.com/pieroproietti/penguins-wardrobe) or Charlie Martinez's [charliemartinez/penguins-wardrobe](https://github.com/charliemartinez/penguins-wardrobe)):
 
 ```bash
-# Apply a preset desktop configuration ("costume")
-eggs wardrobe get
-eggs wardrobe list
-sudo eggs wardrobe wear colibri
+# 1. Download or update costumes from the atelier
+tailor get
 
-# Build the ISO
+# 2. List available costumes
+tailor list
+
+# 3. Apply a costume (e.g. colibri)
+sudo tailor wear colibri
+
+# 4. Remaster the tailored system into a live ISO
 sudo eggs remaster
 ```
+
+### Graphical desktop experience with penguins-gui
+
+If you prefer a desktop application, you can use **[penguins-gui](https://github.com/pieroproietti/penguins-gui)**: an independent desktop GUI for `penguins-eggs` written in Go with the Fyne toolkit. It lets you:
+- Select remaster modes (Standard Live, System Clone, or Crypted Clone with graphical passphrase dialogs);
+- Monitor build output in real time with copy and clear actions;
+- Locate and open the produced ISO folder with `xdg-open`;
+- Install `penguins-eggs` CLI and Calamares (with Qt5/Qt6 dependencies) directly from the menus;
+- Run maintenance tasks (update `/etc/skel`, configure `grub40`, clean remnants, kill staging).
 
 ### Customize compression and ISO naming
 
@@ -77,15 +92,15 @@ sudo eggs sysinstall calamares
 # TUI (works on console, serial, ssh)
 sudo eggs sysinstall krill
 
-# Headless / unattended
-sudo eggs sysinstall krill --unattended
+# Coexist multi-boot mode
+sudo eggs sysinstall krill --coexist
 ```
 
 ### Debug a remaster problem
 
 ```bash
 # Stop after a specific step, leaving the chroot mounted for inspection
-sudo eggs remaster --stop-after coa-initrd
+sudo eggs remaster --stop-after initramfs
 
 # Print the JSON flight plan without building anything
 sudo eggs remaster --debug
@@ -115,7 +130,7 @@ sudo eggs mcp enable
 eggs mcp status
 ```
 
-Once enabled, your AI assistant can discover penguins-eggs tools and remaster your system, wear costumes, or inspect configuration on demand.
+Once enabled, your AI assistant can discover penguins-eggs tools and remaster your system or inspect configuration on demand.
 
 ## Supported distributions
 
@@ -126,9 +141,11 @@ penguins-eggs detects the host automatically. Currently supported families:
 | Alpine | Alpine Linux |
 | Arch | Arch Linux, EndeavourOS, Garuda |
 | Debian | Debian, Ubuntu, Pop!_OS, Linux Mint, Kali, MX Linux |
-| Fedora | Fedora, Nobara |
+| Fedora | Fedora, Nobara *(recommended: `SELINUX=permissive` in `/etc/selinux/config`)* |
 | Manjaro | Manjaro, BigLinux |
 | openSUSE | openSUSE Tumbleweed |
+
+> **Fedora Note**: On Fedora systems, it is recommended to set `SELINUX=permissive` in `/etc/selinux/config` (or run `sudo setenforce 0`) to avoid unexplained permission blocks during remastering.
 
 Adding a new distribution requires only a new template module directory under `brain.d/modules/` — no Go or C changes.
 
