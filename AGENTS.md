@@ -31,11 +31,12 @@ pnpm serve          # serve the production build (also ./serve.sh)
 | `blog/` | ~150 posts (2020→today), filename format `YYYY-MM-DD-slug.md`; authors in `blog/authors.yml`. Posts are mixed English/Italian (one in Portuguese). |
 | `docs/` | User documentation for penguins-eggs-legacy: `Quickstart/`, `Tutorial/` (users guide, eggs-5-minutes, rinascimento), `faq.md`, `donate.md`. Published at `/penguins-eggs-legacy` (navbar item "eggs-legacy", sidebar in `sidebars.js`). |
 | `tailor/` | User documentation for penguins-tailor and penguins-wardrobe: `index.md`, `wardrobe-users-guide.md`, `metodologia.md`. Published at `/tailor` (navbar item "tailor", sidebar in `sidebarsTailor.js`). |
+| `gui/` | User documentation for penguins-gui: `index.md`. Published at `/gui` (navbar item "gui", sidebar in `sidebarsGui.js`). |
 | `src/pages/` | Landing pages, one folder per supported distro (debian, archlinux, fedora, alpine, almalinux, devuan, …) plus `index.js`. |
 | `src/components/` | React components: `GiscusComponent` (comments via Giscus), `HomepageFeatures`, `Translactions`. |
 | `static/` | Served as-is at the site root: `images/`, `img/`, **`llms.txt`** (AI context, see below). |
 | `penguins-eggs/` | **Mirror of `~/forge/penguins-eggs/DOCS/`**, published at `/penguins-eggs` via docs-plugin instance (`sidebarsPenguinsEggs.js`, navbar item "eggs"). The source of truth is the penguins-eggs repo: when its DOCS change, run `./import-oa-docs.sh`. Only `index.md` and the `_category_.json` files are blog-specific. |
-| `docusaurus.config.js` | Site config: url `https://penguins-eggs.net`, locale `en`, Google gtag/Tag Manager, `onBrokenLinks: 'warn'`. Navbar: `penguins' eggs` \| `eggs` \| `tailor` \| `blog` \| `eggs-legacy`. |
+| `docusaurus.config.js` | Site config: url `https://penguins-eggs.net`, locale `en`, Google gtag/Tag Manager, `onBrokenLinks: 'warn'`. Navbar: `penguins' eggs` \| `eggs` \| `gui` \| `tailor` \| `blog` \| `eggs-legacy`. |
 
 ## static/llms.txt — keep it true
 

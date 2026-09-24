@@ -53,6 +53,15 @@ const config = {
     [
       '@docusaurus/plugin-content-docs',
       {
+        id: 'gui',
+        path: 'gui',
+        routeBasePath: 'gui',
+        sidebarPath: './sidebarsGui.js',
+      },
+    ],
+    [
+      '@docusaurus/plugin-content-docs',
+      {
         id: 'tailor',
         path: 'tailor',
         routeBasePath: 'tailor',
@@ -115,6 +124,13 @@ const config = {
           },
           {
             type: 'docSidebar',
+            sidebarId: 'guiSidebar',
+            docsPluginId: 'gui',
+            position: 'left',
+            label: 'gui',
+          },
+          {
+            type: 'docSidebar',
             sidebarId: 'tailorSidebar',
             docsPluginId: 'tailor',
             position: 'left',
@@ -147,6 +163,10 @@ const config = {
               {
                 label: 'Eggs users\' guide',
                 to: '/penguins-eggs-legacy/Tutorial/eggs-users-guide',
+              },
+              {
+                label: 'GUI guide',
+                to: '/gui',
               },
               {
                 label: 'Wardrobe users\' guide',
