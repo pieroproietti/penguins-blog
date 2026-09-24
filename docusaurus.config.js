@@ -161,7 +161,7 @@ const config = {
             title: 'Docs',
             items: [
               {
-                label: 'Eggs users\' guide',
+                label: 'Eggs legacy users\' guide (IT)',
                 to: '/penguins-eggs-legacy/Tutorial/eggs-users-guide',
               },
               {

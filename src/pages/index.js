@@ -23,14 +23,14 @@ function HomepageHeader() {
           &nbsp;
           <Link
             className="button button--secondary button--lg"
-            to="/penguins-eggs-legacy/Quickstart/introduzione">
+            to="/penguins-eggs/user-manual/quickstart">
             Quickstart
           </Link>
           &nbsp;
           <Link
             className="button button--secondary button--lg"
             to="/penguins-eggs-legacy/Tutorial/eggs-users-guide">
-            Eggs users' guide
+            Eggs legacy users' guide (IT)
           </Link>
           &nbsp;
           <Link
