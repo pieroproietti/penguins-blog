@@ -145,7 +145,7 @@ const config = {
             type: 'docSidebar',
             sidebarId: 'tutorialSidebar',
             position: 'left',
-            label: 'eggs-legacy',
+            label: 'eggs-legacy (deprecated)',
           },
           {
             href: 'https://penguins-eggs.net/llms.txt',

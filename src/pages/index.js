@@ -29,12 +29,6 @@ function HomepageHeader() {
           &nbsp;
           <Link
             className="button button--secondary button--lg"
-            to="/penguins-eggs-legacy/Tutorial/eggs-users-guide">
-            Eggs legacy users' guide (IT)
-          </Link>
-          &nbsp;
-          <Link
-            className="button button--secondary button--lg"
             to="/tailor/wardrobe-users-guide">
             Wardrobe
           </Link>
