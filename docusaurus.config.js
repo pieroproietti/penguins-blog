@@ -140,7 +140,7 @@ const config = {
             type: 'docSidebar',
             sidebarId: 'tutorialSidebar',
             position: 'left',
-            label: 'legacy (deprecated)',
+            label: 'legacy (nodejs)',
           },
           {
             to: '/blog',
