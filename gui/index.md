@@ -16,7 +16,7 @@ It brings the power of `eggs` remastering directly to desktop environments, enab
 
 You can start with **penguins-gui**, even if `penguins-eggs` is not installed yet:
 
-1. Download the **penguins-gui** package for your distribution from the website's [Downloads](/basket/) section.
+1. Download the **penguins-gui** package for your distribution from the website's [Downloads](https://penguins-eggs.net/basket/) section.
 2. Install the downloaded package using your distribution's package manager.
 3. Launch **penguins-gui** and select **Install penguins-eggs CLI** from the **Edit** menu.
 

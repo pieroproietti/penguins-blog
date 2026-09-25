@@ -35,7 +35,7 @@ function HomepageHeader() {
           &nbsp;
           <Link
             className="button button--secondary button--lg"
-            to="/penguins-eggs/faq">
+            to="/penguins-eggs-legacy/faq">
             FAQ 
           </Link>
           &nbsp;
