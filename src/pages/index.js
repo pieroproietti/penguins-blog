@@ -34,7 +34,7 @@ function HomepageHeader() {
             Downloads
           </Link>
           <Link
-            className="button button--secondary button--lg"
+            className={clsx('button button--secondary button--lg', styles.donateButton)}
             to="/penguins-eggs-legacy/donate">
             Donate
           </Link>

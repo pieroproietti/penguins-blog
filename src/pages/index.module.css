@@ -21,3 +21,14 @@
   align-items: center;
   justify-content: center;
 }
+
+.donateButton {
+  --ifm-button-background-color: #87ceeb;
+  --ifm-button-border-color: #87ceeb;
+  --ifm-button-color: #163747;
+}
+
+.donateButton:hover {
+  --ifm-button-background-color: #6bc4e7;
+  --ifm-button-border-color: #6bc4e7;
+}
