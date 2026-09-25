@@ -22,6 +22,17 @@
   justify-content: center;
 }
 
+.headerImageContainer {
+  padding-top: 2rem;
+}
+
+.headerImage {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+}
+
 .donateButton {
   --ifm-button-background-color: #0077cc;
   --ifm-button-border-color: #0077cc;
