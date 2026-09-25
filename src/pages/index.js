@@ -15,34 +15,28 @@ function HomepageHeader() {
         <h1 className="hero__title">{siteConfig.title}</h1>
         <p className="hero__subtitle">{siteConfig.tagline}</p>
         <div className={styles.buttons}>
+          &nbsp;
           <Link
             className="button button--secondary button--lg"
-            to="/penguins-eggs-legacy/donate">
-            Donate
+            to="/gui/">
+            Quickstart GUI
           </Link>
           &nbsp;
           <Link
             className="button button--secondary button--lg"
             to="/penguins-eggs/user-manual/quickstart">
-            Quickstart
-          </Link>
-          &nbsp;
-          <Link
-            className="button button--secondary button--lg"
-            to="/tailor/wardrobe-users-guide">
-            Wardrobe
-          </Link>
-          &nbsp;
-          <Link
-            className="button button--secondary button--lg"
-            to="/penguins-eggs-legacy/faq">
-            FAQ 
+            Quickstart CLI
           </Link>
           &nbsp;
           <Link
             className="button button--secondary button--lg"
             to="https://penguins-eggs.net/basket/">
             Downloads
+          </Link>
+          <Link
+            className="button button--secondary button--lg"
+            to="/penguins-eggs-legacy/donate">
+            Donate
           </Link>
         </div>
       </div>
