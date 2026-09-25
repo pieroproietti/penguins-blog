@@ -12,6 +12,18 @@ It brings the power of `eggs` remastering directly to desktop environments, enab
 
 ---
 
+## 📦 Installation & First Start
+
+You can start with **penguins-gui**, even if `penguins-eggs` is not installed yet:
+
+1. Download the **penguins-gui** package for your distribution from the website's [Downloads](/basket/) section.
+2. Install the downloaded package using your distribution's package manager.
+3. Launch **penguins-gui** and select **Install penguins-eggs CLI** from the **Edit** menu.
+
+The GUI will configure the appropriate package repositories and install **penguins-eggs** for you. Once installation is complete, you can start creating your live ISO directly from the GUI.
+
+---
+
 ## 🏗️ Architectural Placement
 
 `penguins-gui` is designed with strict modular separation:
