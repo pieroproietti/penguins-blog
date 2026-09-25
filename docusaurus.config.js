@@ -117,17 +117,17 @@ const config = {
         items: [
           {
             type: 'docSidebar',
-            sidebarId: 'penguinsEggsSidebar',
-            docsPluginId: 'penguins-eggs',
-            position: 'left',
-            label: 'eggs',
-          },
-          {
-            type: 'docSidebar',
             sidebarId: 'guiSidebar',
             docsPluginId: 'gui',
             position: 'left',
             label: 'gui',
+          },
+          {
+            type: 'docSidebar',
+            sidebarId: 'penguinsEggsSidebar',
+            docsPluginId: 'penguins-eggs',
+            position: 'left',
+            label: 'eggs',
           },
           {
             type: 'docSidebar',
@@ -145,7 +145,7 @@ const config = {
             type: 'docSidebar',
             sidebarId: 'tutorialSidebar',
             position: 'left',
-            label: 'eggs-legacy (deprecated)',
+            label: 'legacy (deprecated)',
           },
           {
             href: 'https://penguins-eggs.net/llms.txt',

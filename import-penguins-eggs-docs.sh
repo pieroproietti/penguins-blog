@@ -1,6 +1,6 @@
 #!/bin/bash
 # Import penguins-eggs documentation into the blog mirror (./penguins-eggs).
-# Usage: ./import-oa-docs.sh [path-to-penguins-eggs-DOCS]
+# Usage: ./import-penguins-eggs-docs.sh [path-to-penguins-eggs-DOCS]
 #
 # The source of truth is penguins-eggs/DOCS; never edit ./penguins-eggs by hand.
 # Blog-specific files (index.md, _category_.json) are preserved.

@@ -1,1 +1,1 @@
-npm install -g pnpm@9 
+sudo npm install -g pnpm@9 
