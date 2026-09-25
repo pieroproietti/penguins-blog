@@ -23,12 +23,12 @@
 }
 
 .donateButton {
-  --ifm-button-background-color: #87ceeb;
-  --ifm-button-border-color: #87ceeb;
-  --ifm-button-color: #163747;
+  --ifm-button-background-color: #0077cc;
+  --ifm-button-border-color: #0077cc;
+  --ifm-button-color: #ffffff;
 }
 
 .donateButton:hover {
-  --ifm-button-background-color: #6bc4e7;
-  --ifm-button-border-color: #6bc4e7;
+  --ifm-button-background-color: #005fa3;
+  --ifm-button-border-color: #005fa3;
 }
