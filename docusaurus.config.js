@@ -137,15 +137,15 @@ const config = {
             label: 'tailor',
           },
           {
-            to: '/blog',
-            label: 'blog',
-            position: 'left',
-          },
-          {
             type: 'docSidebar',
             sidebarId: 'tutorialSidebar',
             position: 'left',
             label: 'legacy (deprecated)',
+          },
+          {
+            to: '/blog',
+            label: 'blog',
+            position: 'left',
           },
           {
             href: 'https://penguins-eggs.net/llms.txt',
