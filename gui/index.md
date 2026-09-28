@@ -22,6 +22,7 @@ You can start with **penguins-gui**, even if `penguins-eggs` is not installed ye
 
 The GUI will configure the appropriate package repositories and install **penguins-eggs** for you. Once installation is complete, you can start creating your live ISO directly from the GUI.
 
+![penguins-gui](/images/linuxmint-penguins-gui-appimage.png)
 
 
 ---
