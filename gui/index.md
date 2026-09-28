@@ -16,15 +16,12 @@ It brings the power of `eggs` remastering directly to desktop environments, enab
 
 You can start with **penguins-gui**, even if `penguins-eggs` is not installed yet:
 
-1. Download the **penguins-gui AppImage** (x86_64) or the native package for your distribution from the website's [Downloads](https://penguins-eggs.net/basket/) section.
-2. If you choose the **AppImage**, make it executable (`chmod +x penguins-gui-*.AppImage`) and launch it directly. If you choose a **native package**, install it using your distribution's package manager.
+2. Install the downloaded package using your distribution's package manager.
 3. Launch **penguins-gui** and select **Install penguins-eggs CLI** from the **Edit** menu.
 
 The GUI will configure the appropriate package repositories and install **penguins-eggs** for you. Once installation is complete, you can start creating your live ISO directly from the GUI.
 
-The AppImage contains the graphical interface; **penguins-eggs** is installed as a native package through your distribution's package manager.
 
-For an example tested on **Linux Mint**, read [penguins-gui in AppImage: il punto di partenza per Eggs](https://penguins-eggs.net/blog/2026/09/28/penguins-gui-appimage-il-punto-di-partenza) (in Italian), which describes the process from launching the AppImage to creating a live ISO.
 
 ---
 
