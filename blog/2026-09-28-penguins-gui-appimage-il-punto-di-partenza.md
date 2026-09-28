@@ -53,3 +53,6 @@ L'AppImage attuale è per **x86_64** e richiede un desktop Linux con librerie di
 Anche la produzione entra nel normale flusso del progetto: **Hammers** è ora configurato per costruire l'AppImage insieme ai pacchetti nativi e allegarla alle release, con il relativo checksum.
 
 L'idea per chi arriva è semplice: **comincia da penguins-gui, installa Eggs dalla sua finestra e crea la tua prima ISO.** Su Mint, oggi, ho fatto proprio questo.
+
+
+https://github.com/pieroproietti/penguins-gui/releases/tag/v26.9.23
