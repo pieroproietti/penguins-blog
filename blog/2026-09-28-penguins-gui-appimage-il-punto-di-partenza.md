@@ -56,3 +56,5 @@ L'idea per chi arriva è semplice: **comincia da penguins-gui, installa Eggs dal
 
 
 https://github.com/pieroproietti/penguins-gui/releases/tag/v26.9.23
+
+![penguins-gui](/images/linuxmint-penguins-gui-appimage.png)
