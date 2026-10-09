@@ -115,3 +115,42 @@ Il codice sorgente di `penguins-chef`, le ricette e la documentazione sono dispo
 https://github.com/pieroproietti/penguins-chef
 
 Buona cucina a tutti! 🐧👨‍🍳
+
+
+### Condire in altre salse: la ricetta del musicista (con l'aiuto dell'IA)
+
+Il vero punto di forza di `penguins-chef` è la sua estrema modularità. Non sei costretto a subire i preset standard: puoi prendere una categoria esistente — come `multimedia/`, `development/` o `education/` — e cucinare la tua ricetta su misura.
+
+Immagina di essere un musicista, un producer o un chitarrista che vuole trasformare la sua installazione Linux in una workstation audio professionale a bassissima latenza. Invece di perdere ore a ricordare quali pacchetti installare o come configurare i permessi in tempo reale (`limits.conf`), puoi chiedere direttamente all'IA di scriverti la ricetta perfetta.
+
+Basta chiedere all'assistente:
+> *"Fammi una ricetta YAML per penguins-chef da mettere in `multimedia/music-pro.yaml` che installi PipeWire, Ardour, i plugin essenziali e configuri i permessi realtime per l'audio."*
+
+E l'IA ti restituirà un blocco pulito, pronto da salvare nella tua forgia:
+
+```yaml
+name: music-pro
+description: "Configurazione ottimizzata per produzione musicale e audio a bassa latenza"
+packages:
+  install:
+    - pipewire
+    - pipewire-audio
+    - wireplumber
+    - ardour
+    - qjackctl
+    - guitarix
+configuration:
+  - file: /etc/security/limits.d/99-audio.conf
+    content: |
+      @audio - rtprio 99
+      @audio - memlock unlimited
+      @audio - nice -20
+```
+Una volta salvato il file nella cartella multimedia/, basterà richiamarlo con chef apply per vederlo cucinato e applicato sul sistema. Che tu sia un developer con la fissa per Go, un grafico con il pacchetto di fotoritocco o un musicista in cerca di zero latenza, la forgia si adatta al tuo stile.
+
+La ricetta del musicista non l'ho provata ma "temo" che funzioni... Naledetto a me ed a quando ruppi a quindici anni il ponte della chitarrina che la buonanima di mio padre decise di regalarmi...
+
+Sdeng, sdeng, sdeng, quante canzoni scordate ho scritto o semplicemente cantato e dimenticato, nelle sere di inverno, in campagna - alle cinque faceva buio - prima di andare a dormire a 10/12°C nel massimo confort di una casa scaldata a legna!
+
+![](/images/penguins-chef.jpeg)
+
