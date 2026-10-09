@@ -150,6 +150,8 @@ Una volta salvato il file nella cartella multimedia/, basterà richiamarlo con c
 
 La ricetta del musicista non l'ho provata ma "temo" che funzioni... Naledetto a me ed a quando ruppi a quindici anni il ponte della chitarrina che la buonanima di mio padre decise di regalarmi...
 
+Nota: La realtà è un po diversa, conviene fargli analizzare la repository prima ed agire con gli agenti, nel mio caso ho utilizzato agy di gemini. La configurazione reale è all'interno del progetto stesso: [music-pro.yaml](https://github.com/pieroproietti/penguins-chef/blob/main/recipes/multimedia/music-pro.yaml).
+
 Sdeng, sdeng, sdeng, quante canzoni scordate ho scritto o semplicemente cantato e dimenticato, nelle sere di inverno, in campagna - alle cinque faceva buio - prima di andare a dormire a 10/12°C nel massimo confort di una casa scaldata a legna!
 
 ![](/images/penguins-chef.jpeg)
