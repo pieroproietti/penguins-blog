@@ -130,11 +130,9 @@ const config = {
             label: 'eggs',
           },
           {
-            type: 'docSidebar',
-            sidebarId: 'tailorSidebar',
-            docsPluginId: 'tailor',
+            to: '/blog/2026/10/09/penguins-chef-cucinare-il-proprio-linux',
+            label: 'chef',
             position: 'left',
-            label: 'tailor',
           },
           {
             type: 'docSidebar',
