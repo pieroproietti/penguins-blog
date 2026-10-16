@@ -32,7 +32,7 @@ pnpm serve          # serve the production build (also ./serve.sh)
 | `src/pages/` | Landing pages, one folder per supported distro (debian, archlinux, fedora, alpine, almalinux, devuan, …) plus `index.js`. |
 | `src/components/` | React components: `GiscusComponent` (comments via Giscus), `HomepageFeatures`, `Translactions`. |
 | `static/` | Served as-is at the site root: `images/`, `img/`, **`llms.txt`** (AI context, see below). |
-| `docusaurus.config.js` | Site config: url `https://penguins-eggs.net`, locale `en`, Google gtag/Tag Manager, `onBrokenLinks: 'warn'`. Navbar: `penguins' eggs` \| `gui` \| `eggs` \| `chef` \| `no matter` \| `blog` \| `llms.txt`. |
+| `docusaurus.config.js` | Site config: url `https://penguins-eggs.net`, locale `en`, Google gtag/Tag Manager, `onBrokenLinks: 'warn'`. Navbar: `penguins' eggs` \| `gui` \| `eggs` \| `chef` \| `blog` \| `no matter` \| `llms.txt`. |
 
 ## static/llms.txt — keep it true
 

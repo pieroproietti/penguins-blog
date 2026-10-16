@@ -91,15 +91,16 @@ const config = {
             label: 'chef',
           },
           {
+            to: '/blog',
+            label: 'blog',
+            position: 'left',
+          },
+          {
             type: 'docSidebar',
             sidebarId: 'noMatterSidebar',
             position: 'left',
             label: 'no matter',
-          },
-          {
-            to: '/blog',
-            label: 'blog',
-            position: 'left',
+            className: 'navbar-no-matter',
           },
           {
             href: 'https://penguins-eggs.net/llms.txt',
