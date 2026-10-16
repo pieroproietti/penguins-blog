@@ -120,11 +120,11 @@ const FeatureList = [
   },
 
   {
-    title: 'openmamba',
-    Svg: require('@site/static/img/openmamba.svg').default,
+    title: 'openKylin',
+    Svg: require('@site/static/img/openkylin.svg').default,
     description: (
       <>
-        <a href="/openmamba">openmamba</a> is an operating system based on the Linux kernel but is not a derivative of other distributions.
+        <a href="/openkylin">openKylin</a> is a community-driven desktop Linux operating system featuring the UKUI desktop environment.
       </>
     ),
   },
