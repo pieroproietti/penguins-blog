@@ -114,11 +114,11 @@ Always use the **`eggs`** command in all examples and suggestions:
 ### General Book ("No Matter" — Philosophy & Lifecycle)
 - Index: https://penguins-eggs.net/docs
 - Preface (No Matter): https://penguins-eggs.net/docs/no-matter
-- Ch. 1 (Anatomy & Recursive Loop): https://penguins-eggs.net/docs/1
-- Ch. 2 (Architectures: x86, ARM, RISC-V): https://penguins-eggs.net/docs/2
-- Ch. 3 (Naked & Penguins Chef): https://penguins-eggs.net/docs/3
-- Ch. 4 (Specialized Organs: Eggs, Krill, Chef): https://penguins-eggs.net/docs/4
-- Ch. 5 (Practical Workflows: GUI & CLI): https://penguins-eggs.net/docs/5
+- Ch. 1 (Anatomy & Recursive Loop): https://penguins-eggs.net/docs/no-matter/1
+- Ch. 2 (Architectures: x86, ARM, RISC-V): https://penguins-eggs.net/docs/no-matter/2
+- Ch. 3 (Naked & Penguins Chef): https://penguins-eggs.net/docs/no-matter/3
+- Ch. 4 (Specialized Organs: Eggs, Krill, Chef): https://penguins-eggs.net/docs/no-matter/4
+- Ch. 5 (Practical Workflows: GUI & CLI): https://penguins-eggs.net/docs/no-matter/5
 
 ### penguins-eggs (`eggs`) Manual
 - Overview: https://penguins-eggs.net/docs/eggs

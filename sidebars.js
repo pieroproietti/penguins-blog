@@ -9,8 +9,8 @@ const sidebars = {
       label: 'Indice generale',
     },
     {
-      type: 'doc',
-      id: 'no-matter',
+      type: 'ref',
+      id: 'no-matter/no-matter',
       label: 'Premessa: No Matter',
     },
     {
@@ -18,11 +18,11 @@ const sidebars = {
       label: 'Il Libro di Penguins\' Eggs',
       collapsed: false,
       items: [
-        { type: 'doc', id: '1', label: 'Cap. 1: L\'anatomia di un organismo vivente' },
-        { type: 'doc', id: '2', label: 'Cap. 2: Supporto architetturale' },
-        { type: 'doc', id: '3', label: 'Cap. 3: La naked e penguins-chef' },
-        { type: 'doc', id: '4', label: 'Cap. 4: Gli strumenti del mestiere' },
-        { type: 'doc', id: '5', label: 'Cap. 5: Guide pratiche e flussi' },
+        { type: 'ref', id: 'no-matter/1', label: 'Cap. 1: L\'anatomia di un organismo vivente' },
+        { type: 'ref', id: 'no-matter/2', label: 'Cap. 2: Supporto architetturale' },
+        { type: 'ref', id: 'no-matter/3', label: 'Cap. 3: La naked e penguins-chef' },
+        { type: 'ref', id: 'no-matter/4', label: 'Cap. 4: Gli strumenti del mestiere' },
+        { type: 'ref', id: 'no-matter/5', label: 'Cap. 5: Guide pratiche e flussi' },
       ],
     },
     {
@@ -30,6 +30,19 @@ const sidebars = {
       id: 'eggs-users-guide',
       label: 'Eggs users\' guide (Legacy)',
     },
+  ],
+
+  noMatterSidebar: [
+    {
+      type: 'doc',
+      id: 'no-matter/no-matter',
+      label: 'Premessa: No Matter',
+    },
+    { type: 'doc', id: 'no-matter/1', label: 'Cap. 1: L\'anatomia di un organismo vivente' },
+    { type: 'doc', id: 'no-matter/2', label: 'Cap. 2: Supporto architetturale' },
+    { type: 'doc', id: 'no-matter/3', label: 'Cap. 3: La naked e penguins-chef' },
+    { type: 'doc', id: 'no-matter/4', label: 'Cap. 4: Gli strumenti del mestiere' },
+    { type: 'doc', id: 'no-matter/5', label: 'Cap. 5: Guide pratiche e flussi' },
   ],
 
   eggsSidebar: [
@@ -81,12 +94,12 @@ const sidebars = {
       collapsed: true,
       items: [
         { type: 'ref', id: 'index', label: 'Indice generale' },
-        { type: 'ref', id: 'no-matter', label: 'Premessa: No Matter' },
-        { type: 'ref', id: '1', label: 'Cap. 1: L\'anatomia' },
-        { type: 'ref', id: '2', label: 'Cap. 2: Architetture' },
-        { type: 'ref', id: '3', label: 'Cap. 3: Naked e Chef' },
-        { type: 'ref', id: '4', label: 'Cap. 4: Gli strumenti' },
-        { type: 'ref', id: '5', label: 'Cap. 5: Il ciclo vitale' },
+        { type: 'ref', id: 'no-matter/no-matter', label: 'Premessa: No Matter' },
+        { type: 'ref', id: 'no-matter/1', label: 'Cap. 1: L\'anatomia' },
+        { type: 'ref', id: 'no-matter/2', label: 'Cap. 2: Architetture' },
+        { type: 'ref', id: 'no-matter/3', label: 'Cap. 3: Naked e Chef' },
+        { type: 'ref', id: 'no-matter/4', label: 'Cap. 4: Gli strumenti' },
+        { type: 'ref', id: 'no-matter/5', label: 'Cap. 5: Il ciclo vitale' },
         { type: 'ref', id: 'eggs-users-guide', label: 'Eggs users\' guide (Legacy)' },
       ],
     },

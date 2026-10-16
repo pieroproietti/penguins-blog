@@ -28,11 +28,11 @@ pnpm serve          # serve the production build (also ./serve.sh)
 | Path | Content |
 | :--- | :--- |
 | `blog/` | ~150 posts (2020→today), filename format `YYYY-MM-DD-slug.md`; authors in `blog/authors.yml`. Posts are mixed English/Italian (one in Portuguese). |
-| `docs/` | Unified documentation published at `/docs` (`sidebars.js`), with `<Translactions />` on every page:<ul><li>Root (`docs/*.md`): General book (*No Matter* preface + Chapters 1–5), `donate.md`, and historical `eggs-users-guide.md`.</li><li>`docs/eggs/`: User and developer documentation for `penguins-eggs` (`eggsSidebar`, navbar item `eggs`).</li><li>`docs/chef/`: User and architecture documentation for `penguins-chef` (`chefSidebar`, navbar item `chef`).</li><li>`docs/gui/`: User and developer documentation for `penguins-gui` (`guiSidebar`, navbar item `gui`).</li></ul> |
+| `docs/` | Unified documentation published at `/docs` (`sidebars.js`), with `<Translactions />` on every page:<ul><li>Root (`docs/*.md`): `index.md`, `donate.md`, and historical `eggs-users-guide.md`.</li><li>`docs/no-matter/`: General book (*No Matter* preface + Chapters 1–5) (`noMatterSidebar`, navbar item `no matter`).</li><li>`docs/eggs/`: User and developer documentation for `penguins-eggs` (`eggsSidebar`, navbar item `eggs`).</li><li>`docs/chef/`: User and architecture documentation for `penguins-chef` (`chefSidebar`, navbar item `chef`).</li><li>`docs/gui/`: User and developer documentation for `penguins-gui` (`guiSidebar`, navbar item `gui`).</li></ul> |
 | `src/pages/` | Landing pages, one folder per supported distro (debian, archlinux, fedora, alpine, almalinux, devuan, …) plus `index.js`. |
 | `src/components/` | React components: `GiscusComponent` (comments via Giscus), `HomepageFeatures`, `Translactions`. |
 | `static/` | Served as-is at the site root: `images/`, `img/`, **`llms.txt`** (AI context, see below). |
-| `docusaurus.config.js` | Site config: url `https://penguins-eggs.net`, locale `en`, Google gtag/Tag Manager, `onBrokenLinks: 'warn'`. Navbar: `penguins' eggs` \| `gui` \| `eggs` \| `chef` \| `blog` \| `llms.txt`. |
+| `docusaurus.config.js` | Site config: url `https://penguins-eggs.net`, locale `en`, Google gtag/Tag Manager, `onBrokenLinks: 'warn'`. Navbar: `penguins' eggs` \| `gui` \| `eggs` \| `chef` \| `no matter` \| `blog` \| `llms.txt`. |
 
 ## static/llms.txt — keep it true
 

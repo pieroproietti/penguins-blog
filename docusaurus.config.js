@@ -91,6 +91,12 @@ const config = {
             label: 'chef',
           },
           {
+            type: 'docSidebar',
+            sidebarId: 'noMatterSidebar',
+            position: 'left',
+            label: 'no matter',
+          },
+          {
             to: '/blog',
             label: 'blog',
             position: 'left',
@@ -110,7 +116,7 @@ const config = {
             items: [
               {
                 label: 'Il Libro (No Matter)',
-                to: '/docs',
+                to: '/docs/no-matter',
               },
               {
                 label: 'Eggs guide',
