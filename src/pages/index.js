@@ -63,6 +63,15 @@ export default function Home() {
           />
         </div>
         <HomepageFeatures />
+        <div className={clsx('container', styles.videoContainer)}>
+          <video
+            className={styles.promoVideo}
+            controls
+            preload="metadata">
+            <source src={useBaseUrl('/video/video_en.mp4#t=0.1')} type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        </div>
       </main>
     </Layout>
   );
