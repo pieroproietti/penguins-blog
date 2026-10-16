@@ -18,11 +18,6 @@ const config = {
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/',
 
-  // GitHub pages deployment config.
-  // If you aren't using GitHub pages, you don't need these.
-  // organizationName: 'pieroproietti', // Usually your GitHub org/user name.
-  // projectName: 'penguins-blog', // Usually your repo name.
-
   onBrokenLinks: 'warn', // invece di 'throw'
 
   markdown: {
@@ -31,44 +26,12 @@ const config = {
     },
   },
 
-  // Even if you don't use internationalization, you can use this field to set
-  // useful metadata like html lang. For example, if your site is Chinese, you
-  // may want to replace "en" with "zh-Hans".
   i18n: {
     defaultLocale: 'en',
     locales: ['en'],
   },
 
-
-  plugins: [
-    [
-      '@docusaurus/plugin-content-docs',
-      {
-        id: 'penguins-eggs',
-        path: 'penguins-eggs',
-        routeBasePath: 'penguins-eggs',
-        sidebarPath: './sidebarsPenguinsEggs.js',
-      },
-    ],
-    [
-      '@docusaurus/plugin-content-docs',
-      {
-        id: 'gui',
-        path: 'gui',
-        routeBasePath: 'gui',
-        sidebarPath: './sidebarsGui.js',
-      },
-    ],
-    [
-      '@docusaurus/plugin-content-docs',
-      {
-        id: 'tailor',
-        path: 'tailor',
-        routeBasePath: 'tailor',
-        sidebarPath: './sidebarsTailor.js',
-      },
-    ],
-  ],
+  plugins: [],
 
   presets: [
     [
@@ -81,20 +44,14 @@ const config = {
         },
 
         docs: {
+          path: 'docs',
+          routeBasePath: 'docs',
           sidebarPath: './sidebars.js',
-          routeBasePath: 'penguins-eggs-legacy',
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          //editUrl:
-          // 'https://github.com/pieroproietti/penguins-blog/tree/main/packages/create-docusaurus/templates/shared/',
         },
         blog: {
           showReadingTime: true,
           blogSidebarCount: 'ALL',
           onUntruncatedBlogPosts: 'ignore', // i post storici non hanno <!--truncate-->
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          // editUrl: 'https://github.com/pieroproietti/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         },
         theme: {
           customCss: './src/css/custom.css',
@@ -118,27 +75,20 @@ const config = {
           {
             type: 'docSidebar',
             sidebarId: 'guiSidebar',
-            docsPluginId: 'gui',
             position: 'left',
             label: 'gui',
           },
           {
             type: 'docSidebar',
-            sidebarId: 'penguinsEggsSidebar',
-            docsPluginId: 'penguins-eggs',
+            sidebarId: 'eggsSidebar',
             position: 'left',
             label: 'eggs',
           },
           {
-            to: '/blog/2026/10/09/penguins-chef-cucinare-il-proprio-linux',
-            label: 'chef',
-            position: 'left',
-          },
-          {
             type: 'docSidebar',
-            sidebarId: 'tutorialSidebar',
+            sidebarId: 'chefSidebar',
             position: 'left',
-            label: 'legacy',
+            label: 'chef',
           },
           {
             to: '/blog',
@@ -159,16 +109,24 @@ const config = {
             title: 'Docs',
             items: [
               {
-                label: 'Eggs legacy users\' guide (IT)',
-                to: '/penguins-eggs-legacy/Tutorial/eggs-users-guide',
+                label: 'Il Libro (No Matter)',
+                to: '/docs',
+              },
+              {
+                label: 'Eggs guide',
+                to: '/docs/eggs',
+              },
+              {
+                label: 'Chef guide',
+                to: '/docs/chef',
               },
               {
                 label: 'GUI guide',
-                to: '/gui',
+                to: '/docs/gui',
               },
               {
-                label: 'Wardrobe users\' guide',
-                to: '/tailor/wardrobe-users-guide',
+                label: 'Eggs users\' guide (Legacy)',
+                to: '/docs/eggs-users-guide',
               },
             ],
           },
@@ -217,5 +175,3 @@ const config = {
 };
 
 export default config;
-
-

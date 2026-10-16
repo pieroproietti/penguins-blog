@@ -23,7 +23,7 @@ La soddisfazione è vedere funzionare tutto il percorso, dal primo avvio alla ri
 
 Chi vuole creare una ISO del proprio sistema deve prima procurarsi gli strumenti. Finora questo primo passo poteva richiedere di capire quale pacchetto scaricare, come aggiungere il repository e come installare Eggs.
 
-Con [penguins-gui](/gui) in formato AppImage il percorso che ho provato su Mint è questo:
+Con [penguins-gui](/docs/gui) in formato AppImage il percorso che ho provato su Mint è questo:
 
 1. Scaricare l'AppImage di **penguins-gui**, renderla eseguibile e avviarla.
 2. Dal menu **Edit**, scegliere la voce per installare la CLI di Penguins' Eggs.

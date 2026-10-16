@@ -19,13 +19,13 @@ function HomepageHeader() {
           &nbsp;
           <Link
             className="button button--secondary button--lg"
-            to="/gui/">
+            to="/docs/gui">
             Quickstart GUI
           </Link>
           &nbsp;
           <Link
             className="button button--secondary button--lg"
-            to="/penguins-eggs/user-manual/quickstart">
+            to="/docs/eggs/quickstart">
             Quickstart CLI
           </Link>
           &nbsp;
@@ -36,7 +36,7 @@ function HomepageHeader() {
           </Link>
           <Link
             className={clsx('button button--secondary button--lg', styles.donateButton)}
-            to="/penguins-eggs-legacy/donate">
+            to="/docs/donate">
             Donate
           </Link>
         </div>

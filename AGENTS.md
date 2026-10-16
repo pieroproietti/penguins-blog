@@ -6,14 +6,13 @@
 
 ## What this repo is
 
-The source of **https://penguins-eggs.net** — blog, documentation and landing pages for penguins-eggs and penguins-eggs-legacy. Built with **Docusaurus 3.9** (React 19), package manager **pnpm**.
+The source of **https://penguins-eggs.net** — blog, documentation and landing pages for `penguins-eggs`, `penguins-chef`, `penguins-gui`, and `penguins-eggs-legacy`. Built with **Docusaurus 3.10** (React 19), package manager **pnpm**.
 
 Sibling repos on this machine:
-- `~/forge/penguins-eggs-legacy` — the TypeScript remaster tool (see its `AGENTS.md` for the full architecture map);
-- `~/forge/penguins-eggs` — the C/Go successor (see `AGENTS.md` and `DOCS/`);
-- `~/forge/penguins-gui` — the desktop Graphical User Interface (Go + Fyne) for penguins-eggs;
-- `~/forge/penguins-tailor` — the Go-based companion CLI for system tailoring and presets (`tailor`);
-- `~/forge/penguins-wardrobe` — the declarative YAML recipes (costumes, accessories, preseed, sysroot) under `v2/`.
+- `~/forge/penguins-eggs` — the C/Go remastering suite (`eggs`, `coa`, `oa`);
+- `~/forge/penguins-chef` — the declarative Go-based YAML provisioning engine and recipes (`chef`);
+- `~/forge/penguins-gui` — the desktop Graphical User Interface (Go + Fyne) for `penguins-eggs` and `penguins-chef`;
+- `~/forge/penguins-eggs-legacy` — the classic TypeScript remaster tool (`eggs-legacy`).
 
 ## Key commands
 
@@ -29,24 +28,20 @@ pnpm serve          # serve the production build (also ./serve.sh)
 | Path | Content |
 | :--- | :--- |
 | `blog/` | ~150 posts (2020→today), filename format `YYYY-MM-DD-slug.md`; authors in `blog/authors.yml`. Posts are mixed English/Italian (one in Portuguese). |
-| `docs/` | User documentation for penguins-eggs-legacy: `Quickstart/`, `Tutorial/` (users guide, eggs-5-minutes, rinascimento), `faq.md`, `donate.md`. Published at `/penguins-eggs-legacy` (navbar item "eggs-legacy", sidebar in `sidebars.js`). |
-| `tailor/` | User documentation for penguins-tailor and penguins-wardrobe: `index.md`, `wardrobe-users-guide.md`, `metodologia.md`. Published at `/tailor` (navbar item "tailor", sidebar in `sidebarsTailor.js`). |
-| `gui/` | User documentation for penguins-gui: `index.md`. Published at `/gui` (navbar item "gui", sidebar in `sidebarsGui.js`). |
+| `docs/` | Unified documentation published at `/docs` (`sidebars.js`), with `<Translactions />` on every page:<ul><li>Root (`docs/*.md`): General book (*No Matter* preface + Chapters 1–5), `donate.md`, and historical `eggs-users-guide.md`.</li><li>`docs/eggs/`: User and developer documentation for `penguins-eggs` (`eggsSidebar`, navbar item `eggs`).</li><li>`docs/chef/`: User and architecture documentation for `penguins-chef` (`chefSidebar`, navbar item `chef`).</li><li>`docs/gui/`: User and developer documentation for `penguins-gui` (`guiSidebar`, navbar item `gui`).</li></ul> |
 | `src/pages/` | Landing pages, one folder per supported distro (debian, archlinux, fedora, alpine, almalinux, devuan, …) plus `index.js`. |
 | `src/components/` | React components: `GiscusComponent` (comments via Giscus), `HomepageFeatures`, `Translactions`. |
 | `static/` | Served as-is at the site root: `images/`, `img/`, **`llms.txt`** (AI context, see below). |
-| `penguins-eggs/` | **Mirror of `~/forge/penguins-eggs/DOCS/`**, published at `/penguins-eggs` via docs-plugin instance (`sidebarsPenguinsEggs.js`, navbar item "eggs"). The source of truth is the penguins-eggs repo: when its DOCS change, run `./import-oa-docs.sh`. Only `index.md` and the `_category_.json` files are blog-specific. |
-| `docusaurus.config.js` | Site config: url `https://penguins-eggs.net`, locale `en`, Google gtag/Tag Manager, `onBrokenLinks: 'warn'`. Navbar: `penguins' eggs` \| `eggs` \| `gui` \| `tailor` \| `blog` \| `eggs-legacy`. |
+| `docusaurus.config.js` | Site config: url `https://penguins-eggs.net`, locale `en`, Google gtag/Tag Manager, `onBrokenLinks: 'warn'`. Navbar: `penguins' eggs` \| `gui` \| `eggs` \| `chef` \| `blog` \| `llms.txt`. |
 
 ## static/llms.txt — keep it true
 
-`static/llms.txt` is served at `https://penguins-eggs.net/llms.txt` and follows the [llms.txt standard](https://llmstxt.org): it is the entry point AI assistants use to answer questions about penguins-eggs and penguins-eggs-legacy.
+`static/llms.txt` is served at `https://penguins-eggs.net/llms.txt` and follows the [llms.txt standard](https://llmstxt.org): it is the entry point AI assistants use to answer questions about `penguins-eggs`, `penguins-chef`, `penguins-gui`, and `penguins-eggs-legacy`.
 
-**When the penguins-eggs DOCS tree or CLI changes, this file must be updated too.** Its links point to `penguins-eggs/DOCS/architecture|design|development|manual/` on GitHub — verify they resolve before committing. Do not let it drift into describing features that do not exist (or denying ones that do).
+**When the documentation tree or CLI changes, this file must be updated too.** Do not let it drift into describing features that do not exist (or denying ones that do).
 
 ## Conventions
 
 - New blog post: `blog/YYYY-MM-DD-kebab-case-slug.md` with frontmatter (`title`, `authors: pieroproietti`, `tags`); the filename becomes the URL slug, so typos there are permanent once published.
-- Posts may be written in Italian or English — match the language the draft starts in; don't translate unless asked.
-- Documentation in `docs/` is user-facing for penguins-eggs-legacy (the stable tool); penguins-eggs (new C/Go) documentation is authored in the penguins-eggs repo (`DOCS/`) and mirrored here under `penguins-eggs/` — never edit the mirror directly, sync it from the source.
+- Posts and docs include `import Translactions from '@site/src/components/Translactions';` and `<Translactions />` after the frontmatter for instant multilingual translation links.
 - Piero handles git commits himself: prepare changes, then report what is ready.

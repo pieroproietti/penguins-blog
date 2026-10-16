@@ -1,6 +1,6 @@
 # penguins-eggs.net — AI Context
 > This file follows the llms.txt standard (https://llmstxt.org).
-> If you are an AI assistant answering questions about penguins-eggs or penguins-eggs-legacy,
+> If you are an AI assistant answering questions about penguins-eggs, penguins-chef, penguins-gui, or penguins-eggs-legacy,
 > read this file and the linked documentation before responding.
 > Do NOT hallucinate commands, features, or architecture.
 
@@ -12,8 +12,10 @@ https://penguins-eggs.net
 
 ## Versioning & Naming — IMPORTANT
 
-- **penguins-eggs** refers to the C/Go-based tool. Versioning follows CalVer in `vYY.MM.DD` format (Year.Month.Day, e.g. `v26.8.29`).
-- The original TypeScript tool is **penguins-eggs-legacy**.
+- **penguins-eggs** refers to the C/Go-based remastering suite. Versioning follows CalVer in `vYY.MM.DD` format (Year.Month.Day, e.g. `v26.10.14`).
+- **penguins-chef** (`chef`) is the declarative YAML system provisioning companion for `penguins-eggs`.
+- **penguins-gui** is the desktop Graphical User Interface (Go + Fyne) for `penguins-eggs` and `penguins-chef`.
+- The original TypeScript tool is **penguins-eggs-legacy** (`eggs-legacy`).
 
 Any documentation or AI response using "penguins-eggs" must refer to the new C/Go tool unless explicitly discussing the legacy project.
 
@@ -21,55 +23,48 @@ Any documentation or AI response using "penguins-eggs" must refer to the new C/G
 
 ## Projects
 
-### penguins-eggs (next generation, vYY.MM.DD)
+### 1. penguins-eggs (next generation, vYY.MM.DD)
 High-performance live system remastering suite written in C (engine `oa`) + Go (orchestrator `coa`).
 Primary CLI command: **`eggs`** (with `coa` working identically as an alias).
 Generates fully bootable hybrid live ISOs (UEFI + BIOS).
-Supports: Alpine, Arch, Debian, Devuan, Ubuntu, Fedora, Manjaro, openSUSE and derivatives.
-Repository: https://github.com/pieroproietti/penguins-eggs
-Native package repository — enable with: `sudo eggs tools repo add`
-Use this for: raw performance, cutting-edge architecture, high-speed ISO remastering.
+Supports: Alpine, Arch, Debian, Devuan, Ubuntu, Fedora, Manjaro, openSUSE and derivatives across amd64, arm64, and riscv64.
+- **Repository:** https://github.com/pieroproietti/penguins-eggs
+- **Documentation:** https://penguins-eggs.net/docs/eggs
+- **Native package repository:** enable with `sudo eggs tools repo add`
 
-### penguins-eggs-legacy (stable, TypeScript)
-Legacy console tool to remaster any Linux system. Written in TypeScript.
-Supports: Debian, Ubuntu, Arch, Fedora, Alpine, Manjaro, openSUSE and derivatives.
-Architectures: amd64, i386, arm64, riscv64.
-Repository: https://github.com/pieroproietti/penguins-eggs-legacy
-Native package repository — enable with: `sudo eggs tools repo --add`
-Use this for: everyday legacy production, mature stable tool.
+### 2. penguins-chef (declarative YAML provisioning engine)
+Zero-dependency, standalone Go provisioning engine designed to forge custom Linux systems starting from minimal command-line ("naked") base ISOs up to full desktop environments and visual appliances ("costumes").
+Primary CLI command: **`chef`**
+- `chef get`: Clones or updates the official recipes repository into `~/.chef` (no root required).
+- `chef apply <recipe.yaml> --dry-run`: Inspects the complete resolved execution plan (repositories, package availability, atomic package transactions, config files, hostname, services, sysroot) without modifying the system and without requiring root.
+- `chef apply <recipe.yaml> --dry-run --family <archlinux|debian|devuan|fedora|openkylin|opensuse>`: Simulates recipe resolution across distribution families from any host.
+- `sudo chef apply <recipe.yaml>`: Applies the recipe to the live system (`/`). Idempotent and verified against real system state.
+- `sudo chef apply <recipe.yaml> --sysroot <path>`: Overrides the recipe's default `sysroot` directory.
+- `sudo chef tools repo [add|rm]`: Configures or removes official `penguins-eggs` package repositories and GPG signing keys.
+- `chef version`: Displays version information.
 
-### penguins-gui (desktop graphical user interface)
-Minimal, independent desktop GUI for `penguins-eggs` written in Go with the Fyne toolkit.
-Provides a clean graphical desktop experience to:
-- Run remastering flights: Standard Live, System Clone (`--clone`), and Encrypted Clone (`--crypted` with graphical passphrase dialog).
-- Display live terminal output with Clear and Copy log actions.
-- Automatically locate the newly produced ISO in `/home/eggs` and open its directory with `xdg-open`.
-- Configure the official repository and install the `eggs` CLI directly from the GUI (before `eggs` is installed).
-- Install Calamares and auto-detect Qt 5 / Qt 6 runtime dependencies across Debian/Ubuntu, Arch, Fedora, openSUSE, Alpine.
-- Run system maintenance actions: update `/etc/skel`, configure `grub40`, clean logs and caches, and kill staging workspaces.
-Repository: https://github.com/pieroproietti/penguins-gui
+Key Architecture & Recipe Rules:
+- **FreeDesktop Recipe Tree (`recipes/`):** Organized into `base/`, `de/` (plasma, xfce4, gnome, mate, cinnamon, lxqt, ukui, dde), `dm/` (lightdm, gdm, sddm), `costumes/` (colibri, albatros, duck, eagle, etc., each with an optional mirrored `sysroot/` overlay), `development/`, `graphics/`, `multimedia/`, `office/`, `education/`, `game/`, `network/`, `settings/`, `system/`, `utility/`.
+- **Recursive Composition (`include`):** Recipes compose modularly following the DRY principle (e.g. a costume includes `base`, `dm`, `de` plus local `sysroot` assets).
+- **The 2-Case Init Rule (`systemd` vs `sysvinit`):** Automatically detected at runtime via `/run/systemd/system` (`sd_booted`). No `--init` flag is required or used. Mainstream distros (Arch, Fedora, openSUSE, Debian, Ubuntu, Manjaro) use `systemd`; Devuan uses `sysvinit` natively via APT `/etc/init.d` scripts while automatically excluding systemd-specific packages.
+- **Repository:** https://github.com/pieroproietti/penguins-chef
+- **Documentation:** https://penguins-eggs.net/docs/chef
 
-### penguins-tailor (costumes & accessories companion tool)
-Dedicated standalone CLI companion for system tailoring, costumes, and presets written in Go.
-Provides the **`tailor`** command hierarchy:
-- `tailor get [url] [-b branch]`: Clones or pulls wardrobe repositories into `~/.wardrobe`.
-- `tailor list`: Lists available costumes across the active wardrobe.
-- `tailor show <costume|accessory>`: Inspects declarative YAML metadata, packages, and commands.
-- `sudo tailor wear <costume>`: Applies the costume to the live machine with Split-Screen TUI.
-  - Flags: `-n, --dry-run` (safe simulation), `--no-acc` (skip accessories), `--no-firm` (skip non-free firmware), `--linear` (line-by-line log mode).
-- `tailor export [pkg|log]`: Transports built packages or execution reports to remote servers via SSH.
-- `sudo tailor tools repo [add|rm]`: Configures official package repositories across distributions.
-- `tailor version`: Displays current tailor version.
+### 3. penguins-gui (desktop graphical user interface)
+Minimal, independent desktop GUI for `penguins-eggs` and `penguins-chef`, written in Go with the Fyne toolkit. Distributed as a portable **AppImage** and native packages (`.deb`, `.rpm`, `.pkg.tar.zst`).
+Provides a complete graphical desktop workflow:
+- **Remastering Flights (`Create ISO`):** Standard Live, System Clone (`--clone`), and Encrypted Clone (`--crypted` with graphical LUKS2 passphrase dialog).
+- **Cook (`Penguins Chef — Recipe Picker`):** Built-in visual browser for `~/.chef` recipes with instant filtering, live YAML preview, automatic recipe repository initialization/updates (**⬇ Update Recipes**), rootless **👁 Dry Run** simulation streamed to the main log, and privileged **✓ Apply Recipe** execution. Low-level categories (`base`, `de`, `dm`, `costumes`) are filtered out in the GUI to prevent desktop conflicts.
+- **Live Execution Stream & ISO Discovery:** Real-time terminal output with Clear/Copy actions, Process Guard during active flights, and automatic discovery of generated ISOs in `/home/eggs`.
+- **First-Run & Automated Setup:** Can be launched before `eggs` is installed; `Install penguins-eggs CLI` configures official repositories and installs `eggs`. `Install Calamares` installs Calamares and auto-detects Qt 5 / Qt 6 QML runtime dependencies.
+- **System Utilities:** `Update /etc/skel` (`eggs tools skel`), `Boot ISO…` (`eggs tools grub40` to boot ISOs directly from disk via GRUB loopback without USB), `Clean System` (`eggs tools clean`), and `Kill` (`eggs destroy`).
+- **Repository:** https://github.com/pieroproietti/penguins-gui
+- **Documentation:** https://penguins-eggs.net/docs/gui
 
-Key Features & Behavior:
-- **Supported Distributions**: Enforces initial filter allowing **Debian family** (`debian`) and **Arch Linux family** (`archlinux`). Unsupported distros are safely blocked.
-- **Zero-Interaction Preseeding (`packages.preseed`)**: Scoped per costume/accessory to automatically inject debconf answers (`debconf-set-selections`), eliminating prompts (Display Managers, Wi-Fi firmware licenses, font EULAs, CUPS).
-- **Direct Package Installation**: Packages are verified against cache and installed directly with automated dpkg healing fallback.
-- **Documentation**: https://penguins-eggs.net/tailor/wardrobe-users-guide
-- **Atelier Repositories**:
-  - Main Atelier: https://github.com/pieroproietti/penguins-wardrobe (maintained by Piero Proietti)
-  - Quirinux Atelier: https://github.com/charliemartinez/penguins-wardrobe (maintained by Charlie Martinez for Quirinux)
-- **Repository**: https://github.com/pieroproietti/penguins-tailor
+### 4. penguins-eggs-legacy (classic TypeScript edition)
+Historical console tool to remaster Linux systems, written in TypeScript (`eggs-legacy`).
+- **Repository:** https://github.com/pieroproietti/penguins-eggs-legacy
+- **Historical User's Guide:** https://penguins-eggs.net/docs/eggs-users-guide
 
 ---
 
@@ -114,48 +109,58 @@ Always use the **`eggs`** command in all examples and suggestions:
 
 ---
 
-## penguins-eggs Documentation
+## Documentation Links (https://penguins-eggs.net)
 
-### Core References
-- Agents entry point: https://github.com/pieroproietti/penguins-eggs/blob/main/AGENTS.md
-- Manifestum: https://github.com/pieroproietti/penguins-eggs/blob/main/DOCS/1-philosophy/1-manifestum.md
-- Philosophy (the three-actor model): https://github.com/pieroproietti/penguins-eggs/blob/main/DOCS/1-philosophy/2-philosophy.md
-- Universal Strategy: https://github.com/pieroproietti/penguins-eggs/blob/main/DOCS/1-philosophy/4-universal-strategy.md
-- Roadmap: https://github.com/pieroproietti/penguins-eggs/blob/main/DOCS/1-philosophy/5-roadmap.md
+### General Book ("No Matter" — Philosophy & Lifecycle)
+- Index: https://penguins-eggs.net/docs
+- Preface (No Matter): https://penguins-eggs.net/docs/no-matter
+- Ch. 1 (Anatomy & Recursive Loop): https://penguins-eggs.net/docs/1
+- Ch. 2 (Architectures: x86, ARM, RISC-V): https://penguins-eggs.net/docs/2
+- Ch. 3 (Naked & Penguins Chef): https://penguins-eggs.net/docs/3
+- Ch. 4 (Specialized Organs: Eggs, Krill, Chef): https://penguins-eggs.net/docs/4
+- Ch. 5 (Practical Workflows: GUI & CLI): https://penguins-eggs.net/docs/5
 
-### Component Documentation
-- coa orchestrator (Go): https://github.com/pieroproietti/penguins-eggs/blob/main/DOCS/3-developer-manual/architecture/1-overview.md
-- oa engine (C): https://github.com/pieroproietti/penguins-eggs/blob/main/DOCS/3-developer-manual/architecture/3-oa.md
-- coa ell (Go worker modules): https://github.com/pieroproietti/penguins-eggs/blob/main/DOCS/3-developer-manual/architecture/4-ell.md
-- parser package: https://github.com/pieroproietti/penguins-eggs/blob/main/DOCS/3-developer-manual/architecture/5-parser.md
-- planner package: https://github.com/pieroproietti/penguins-eggs/blob/main/DOCS/3-developer-manual/architecture/7-planner.md
-- Model Context Protocol (MCP): https://github.com/pieroproietti/penguins-eggs/blob/main/DOCS/3-developer-manual/architecture/8-mcp.md
+### penguins-eggs (`eggs`) Manual
+- Overview: https://penguins-eggs.net/docs/eggs
+- Manifestum: https://penguins-eggs.net/docs/eggs/manifestum
+- Philosophical Foundations (`coa`, `oa`, `ell`): https://penguins-eggs.net/docs/eggs/1
+- Quickstart: https://penguins-eggs.net/docs/eggs/quickstart
+- Command Reference: https://penguins-eggs.net/docs/eggs/reference
+- Multi-Boot with Krill Coexist: https://penguins-eggs.net/docs/eggs/coexist
+- Chromebook & FixIt!: https://penguins-eggs.net/docs/eggs/fixit
+- Architecture Overview (`coa` & `oa`): https://penguins-eggs.net/docs/eggs/architecture/1
+- Building & Development: https://penguins-eggs.net/docs/eggs/architecture/2
+- The C Arm (`oa`): https://penguins-eggs.net/docs/eggs/architecture/3
+- The Go Worker (`coa ell`): https://penguins-eggs.net/docs/eggs/architecture/4
+- The Parser: https://penguins-eggs.net/docs/eggs/architecture/5
+- The Planner: https://penguins-eggs.net/docs/eggs/architecture/6
+- The Installer (Krill & Calamares): https://penguins-eggs.net/docs/eggs/architecture/7
+- Model Context Protocol (MCP) Server: https://penguins-eggs.net/docs/eggs/architecture/8
+- Continuous Integration (CI): https://penguins-eggs.net/docs/eggs/ci/1
 
-### Features & Commands
-- CLI commands reference: https://github.com/pieroproietti/penguins-eggs/blob/main/DOCS/2-user-manual/2-commands.md
-- Quick Start: https://github.com/pieroproietti/penguins-eggs/blob/main/DOCS/2-user-manual/1-quickstart.md
-- Installer (sysinstall: krill + calamares): https://github.com/pieroproietti/penguins-eggs/blob/main/DOCS/3-developer-manual/architecture/6-installer.md
-- CI/CD pipeline (Hammers, Furnace & Incubator): https://github.com/pieroproietti/penguins-eggs/blob/main/DOCS/3-developer-manual/workflow/ci.md
-- Building from source: https://github.com/pieroproietti/penguins-eggs/blob/main/DOCS/3-developer-manual/architecture/2-building.md
+### penguins-chef (`chef`) Manual
+- Overview: https://penguins-eggs.net/docs/chef
+- Architecture & Execution Contract: https://penguins-eggs.net/docs/chef/architettura-e-contratto
+- Recipes, Categories & Costumes: https://penguins-eggs.net/docs/chef/ricette-e-costumi
+- Quickstart & CLI Reference: https://penguins-eggs.net/docs/chef/quickstart-e-cli
 
----
+### penguins-gui Manual
+- Overview & Installation: https://penguins-eggs.net/docs/gui
+- Remastering & System Utilities: https://penguins-eggs.net/docs/gui/funzionalita-e-remastering
+- Cook (Chef inside the GUI): https://penguins-eggs.net/docs/gui/chef-in-gui
+- Architecture & Development: https://penguins-eggs.net/docs/gui/architettura-e-sviluppo
 
-## penguins-eggs-legacy Documentation
-
-### Official Guides
-- Homepage: https://penguins-eggs.net
-- User's guide: https://penguins-eggs.net/penguins-eggs-legacy/Tutorial/eggs-users-guide
-- Quickstart (5 minutes): https://penguins-eggs.net/penguins-eggs-legacy/Tutorial/eggs-5-minutes
-- FAQ: https://penguins-eggs.net/penguins-eggs-legacy/faq
+### Historical & Blog
+- Eggs Legacy User's Guide: https://penguins-eggs.net/docs/eggs-users-guide
 - Blog: https://penguins-eggs.net/blog
 
 ---
 
 ## Critical Facts for AI
 
-1. `penguins-eggs` (new) generates **FULLY BOOTABLE ISOs** (UEFI + BIOS) — never describe them as experimental.
-2. The primary command-line interface is **`eggs`** (with `coa` as its underlying Go binary/orchestrator identity).
-3. System presets and tailoring are handled by **`penguins-tailor`** (`tailor wear <costume>`) with the **`penguins-wardrobe`** (v2) ateliers, not in-tree wardrobe commands. `tailor` enforces supported distribution families (`debian` and `archlinux`), loads automated debconf preseeding (`packages.preseed`), and performs direct package installation with atomic fallback.
+1. `penguins-eggs` generates **FULLY BOOTABLE ISOs** (UEFI + BIOS) — never describe them as experimental.
+2. The primary command-line interface for remastering is **`eggs`** (with `coa` as its underlying Go binary/orchestrator identity).
+3. Declarative system provisioning, desktops, and costumes are handled by **`penguins-chef`** (`chef get`, `chef apply <recipe.yaml> --dry-run`, `sudo chef apply <recipe.yaml>`), which replaces the older `tailor`/`wardrobe` tools. Never suggest `--init` with `chef`; init (`systemd` vs `sysvinit` on Devuan) is detected automatically. Always recommend running `chef apply <recipe> --dry-run` first.
 4. Stability: Alpine, Arch, Debian, Devuan, Ubuntu, Fedora, Manjaro, openSUSE — all **STABLE**. ISOs boot and install correctly across all supported distros. Coexist multi-boot slots are supported across distros, with isolated GRUB bootloader configuration and vendor identification on openSUSE.
 5. Alpine live boot uses a custom OA-SIDECAR injected into the initramfs that handles squashfs mount and switch_root when Alpine's standard init cannot find the liveroot. Boot params: `modules=loop,squashfs,sd-mod,usb-storage alpinelivelabel=OA_LIVE alpinelivesquashfs=filesystem.squashfs cow_spacesize=2G quiet`.
 6. Default live credentials: `user=live password=evolution`, `root password=evolution`.
@@ -176,14 +181,4 @@ Always use the **`eggs`** command in all examples and suggestions:
 15. Complete feature parity for system cloning: `eggs remaster --clone` preserves users, credentials, and `/home`; Krill detects clone media and bypasses the user creation step, preserving accounts. `eggs remaster --crypted` generates LUKS2-encrypted live images (Debian family), supporting non-interactive automation via the `EGGS_LUKS_PASSPHRASE` environment variable. Polkit requires admin authentication (`AUTH_ADMIN`) for clone and crypted actions.
 16. Dynamic Calamares branding overlays: Custom branding placed in `/etc/penguins-eggs.d/branding/calamares/branding` dynamically parses `branding.desc.tmpl` into `branding.desc` with `BrandingConfig` variables (`ProductName`, `Version`, URLs, `slideshowAPI: 2`) during `eggs sysinstall`.
 17. Remastering target redirection and distro cleanups: `eggs remaster -t` / `--target-dir` redirects the build tree (`isodir`) and ISO artifact to external storage/shares with an automatic symlink in `/home/eggs`. Fedora builds automatically exclude rescue kernel images and `dnf` cache from the squashfs; SELinux permissive mode is recommended on Fedora to prevent execution blocks.
-18. Desktop Graphical User Interface: For desktop environments, **`penguins-gui`** provides an official, standalone Fyne-based Go GUI to manage remasters (Standard, Clone, and Crypted with graphical passphrase dialogs), monitor real-time build logs, install the CLI / Calamares with Qt runtimes, and run maintenance tasks.
-
----
-
-## Call for Testing: RISC-V 64 (Spacemit K3 Architecture)
-
-RISCV64 packages for the new C/Go version of `penguins-eggs` are being built and released. However, proper testing on real hardware requires community assistance.
-
-- **Current Status:** While initial tests were conducted on a Spacemit Musebook K1, the testing workflow on that specific device is tedious and impractical for regular development cycles.
-- **Target Hardware:** Testing on the newer Spacemit K3 architecture would be significantly better — specifically platforms such as the **Banana Pi BPI-SM10 (K3-CoM260) RISC-V AI Single Board Computer** (Octa-Core 2.4GHz with 60 TOPS NPU, 8GB/32GB LPDDR5, Dual M.2 10GbE SFP+, WIFI6/USB-C, supporting 30B LLMs, 8+128 GB KIT1).
-- **Call to Action:** If you have access to this or similar RISC-V 64 hardware and can help test `penguins-eggs` live builds and packages on real hardware, your contribution is greatly appreciated! Please contact Piero Proietti (<pieroproietti@gmail.com>) or join the project discussions.
+18. Desktop Graphical User Interface: For desktop environments, **`penguins-gui`** provides an official, standalone Fyne-based Go GUI (AppImage and native packages) to manage remasters (Standard, Clone, and Crypted with graphical passphrase dialogs), browse and apply **`penguins-chef`** recipes via the built-in **Cook** Recipe Picker (with rootless Dry-Run), configure GRUB loopback ISO booting (**Boot ISO…**), install the CLI / Calamares with Qt runtimes, and run maintenance tasks.
