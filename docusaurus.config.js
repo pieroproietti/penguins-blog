@@ -103,6 +103,11 @@ const config = {
             className: 'navbar-no-matter',
           },
           {
+            to: '/docs/about-me',
+            label: 'about me',
+            position: 'left',
+          },
+          {
             href: 'https://penguins-eggs.net/llms.txt',
             label: 'llms.txt',
             position: 'right',
