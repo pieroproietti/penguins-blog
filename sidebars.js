@@ -71,7 +71,7 @@ const sidebars = {
       label: '1. Filosofia e visione',
       collapsed: false,
       items: [
-        { type: 'doc', id: 'eggs/manifestum', label: 'Premessa: un famoso dialogo' },
+        { type: 'doc', id: 'eggs/manifestum', label: 'Manifestum: un famoso dialogo' },
         { type: 'doc', id: 'eggs/1', label: 'Genesi e filosofia di eggs' },
         { type: 'doc', id: 'eggs/2', label: 'La triade: Eggs, Chef e GUI' },
       ],

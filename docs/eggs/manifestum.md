@@ -1,12 +1,12 @@
 ---
-title: "Premessa: un famoso dialogo..."
+title: "Manifestum: un famoso dialogo..."
 ---
 
 import Translactions from '@site/src/components/Translactions';
 
 <Translactions />
 
-# Premessa: un famoso dialogo...
+# Manifestum: un famoso dialogo...
 
 C'è un momento, nella vita di ogni amministratore di sistemi o sviluppatore di Linux, in cui ci si guarda intorno e ci si rende conto che la macchina su cui si sta lavorando non è più un semplice aggregato di pacchetti: è diventata un habitat. 
 
