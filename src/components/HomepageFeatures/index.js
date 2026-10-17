@@ -4,34 +4,21 @@ import styles from './styles.module.css';
 
 const FeatureList = [
   {
-    title: 'Debian',
-    Svg: require('@site/static/img/debian.svg').default,
+    title: 'AlmaLinux/EL9',
+    Svg: require('@site/static/img/almalinux.svg').default,
     description: (
       <>
-        Penguins' eggs started on <a href="/debian">Debian</a> in 2017, it still supports Buster, Bullseye,
-        <a href="/debian/bookworm">&nbsp;Bookworm&nbsp;</a>
-        and<a href="/debian/trixie">&nbsp;Trixie&nbsp;</a>.
+        <a href="/almalinux">&nbsp;AlmaLinux,&nbsp;</a>a RHEL clone
       </>
     ),
   },
 
   {
-    title: 'Ubuntu',
-    Svg: require('@site/static/img/ubuntu.svg').default,
+    title: 'Alpine Linux',
+    Svg: require('@site/static/img/alpine.svg').default,
     description: (
       <>
-        <a href="/ubuntu">Ubuntu</a> is fully supported: 
-        <a href="/ubuntu/noble/">&nbsp;noble</a>
-      </>
-    ),
-  },
-
-  {
-    title: 'Fedora',
-    Svg: require('@site/static/img/fedora.svg').default,
-    description: (
-      <>
-      <a href="/fedora">Fedora 42</a>: It's your Operating System.
+        <a href="/alpine">&nbsp;Alpine&nbsp;</a> a security-oriented, lightweight Linux distribution based on musl, libc, and busybox.
       </>
     ),
   },
@@ -48,61 +35,13 @@ const FeatureList = [
   },
 
   {
-    title: 'Alpine Linux',
-    Svg: require('@site/static/img/alpine.svg').default,
+    title: 'Debian',
+    Svg: require('@site/static/img/debian.svg').default,
     description: (
       <>
-        <a href="/alpine">&nbsp;Alpine&nbsp;</a> a security-oriented, lightweight Linux distribution based on musl, libc, and busybox.
-      </>
-    ),
-  },
-
-  {
-    title: 'openSUSE',
-    Svg: require('@site/static/img/opensuse.svg').default,
-    description: (
-      <>
-        <a href="/opensuse">openSUSE</a>, the makers' choice for sysadmins, developers and desktop users.
-      </>
-    ),
-  },
-
-  {
-    title: 'Manjaro/Biglinux',
-    Svg: require('@site/static/img/manjaro.svg').default,
-    description: (
-      <>
-        Penguins' eggs is part of community repo of <a href="/manjaro">Manjaro</a>.
-      </>
-    ),
-  },
-
-  {
-    title: 'Linux Mint/LMDE',
-    Svg: require('@site/static/img/linuxmint.svg').default,
-    description: (
-      <>
-        <a href="/linuxmint">&nbsp;Linux Mint</a> and virtually every Debian, Devuan and Ubuntu derivatives are supported. 
-      </>
-    ),
-  },
-
-  {
-    title: 'AlmaLinux/EL9',
-    Svg: require('@site/static/img/almalinux.svg').default,
-    description: (
-      <>
-        <a href="/almalinux">&nbsp;AlmaLinux,&nbsp;</a>a RHEL clone
-      </>
-    ),
-  },
-
-  {
-    title: 'Rocky/EL9',
-    Svg: require('@site/static/img/rocky.svg').default,
-    description: (
-      <>
-        <a href="/rocky">Rocky Linux</a>, a RHEL clone.
+        Penguins' eggs started on <a href="/debian">Debian</a> in 2017, it still supports Buster, Bullseye,
+        <a href="/debian/bookworm">&nbsp;Bookworm&nbsp;</a>
+        and<a href="/debian/trixie">&nbsp;Trixie&nbsp;</a>.
       </>
     ),
   },
@@ -120,11 +59,72 @@ const FeatureList = [
   },
 
   {
+    title: 'Fedora',
+    Svg: require('@site/static/img/fedora.svg').default,
+    description: (
+      <>
+      <a href="/fedora">Fedora 42</a>: It's your Operating System.
+      </>
+    ),
+  },
+
+  {
+    title: 'Linux Mint/LMDE',
+    Svg: require('@site/static/img/linuxmint.svg').default,
+    description: (
+      <>
+        <a href="/linuxmint">&nbsp;Linux Mint</a> and virtually every Debian, Devuan and Ubuntu derivatives are supported. 
+      </>
+    ),
+  },
+
+  {
+    title: 'Manjaro/Biglinux',
+    Svg: require('@site/static/img/manjaro.svg').default,
+    description: (
+      <>
+        Penguins' eggs is part of community repo of <a href="/manjaro">Manjaro</a>.
+      </>
+    ),
+  },
+
+  {
     title: 'openKylin',
     Svg: require('@site/static/img/openkylin.svg').default,
     description: (
       <>
         <a href="/openkylin">openKylin</a> is a community-driven desktop Linux operating system featuring the UKUI desktop environment.
+      </>
+    ),
+  },
+
+  {
+    title: 'openSUSE',
+    Svg: require('@site/static/img/opensuse.svg').default,
+    description: (
+      <>
+        <a href="/opensuse">openSUSE</a>, the makers' choice for sysadmins, developers and desktop users.
+      </>
+    ),
+  },
+
+  {
+    title: 'Rocky/EL9',
+    Svg: require('@site/static/img/rocky.svg').default,
+    description: (
+      <>
+        <a href="/rocky">Rocky Linux</a>, a RHEL clone.
+      </>
+    ),
+  },
+
+  {
+    title: 'Ubuntu',
+    Svg: require('@site/static/img/ubuntu.svg').default,
+    description: (
+      <>
+        <a href="/ubuntu">Ubuntu</a> is fully supported: 
+        <a href="/ubuntu/noble/">&nbsp;noble</a>
       </>
     ),
   },
