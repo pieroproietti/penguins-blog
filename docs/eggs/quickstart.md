@@ -1,12 +1,12 @@
 ---
-title: "Quickstart: Dalla sorgente all'uovo in 5 passi"
+title: "Guida rapida: dalla sorgente all'uovo in 5 passi"
 ---
 
 import Translactions from '@site/src/components/Translactions';
 
 <Translactions />
 
-# Quickstart: Dalla sorgente all'uovo in 5 passi
+# Guida rapida: dalla sorgente all'uovo in 5 passi
 
 Se vuoi toccare con mano la potenza di `penguins-eggs` senza perderti in configurazioni complesse, questo percorso ti porta dall'installazione iniziale alla produzione della tua prima ISO live avviabile.
 
@@ -23,10 +23,10 @@ Assicurati di trovarti su una distribuzione supportata (**Debian, Ubuntu, Devuan
 ## 2. Primo avvio e installazione di `eggs`
 Hai due strade per installare `penguins-eggs` su una macchina vergine:
 
-### Via A — Dal Desktop con [`penguins-gui`](../gui/index.md)
+### Via A — dal desktop con [`penguins-gui`](../gui/index.md)
 Scarica l'AppImage di `penguins-gui`, avviala e seleziona dal menu **`Edit → Install penguins-egg CLI`**: la GUI configurerà da sola i repository e installerà `eggs`.
 
-### Via B — Da Terminale (Pacchetto nativo)
+### Via B — da terminale (pacchetto nativo)
 Scarica l'ultimo pacchetto nativo per la tua distribuzione da [GitHub Releases](https://github.com/pieroproietti/penguins-eggs/releases/latest) o dal [basket di penguins-eggs.net](https://penguins-eggs.net/basket/repository/) e installalo con il tuo gestore pacchetti:
 - **Debian / Ubuntu / Devuan / Mint:** `sudo apt install ./penguins-eggs_*_amd64.deb`
 - **Arch Linux / Manjaro:** `sudo pacman -U ./penguins-eggs-*-x86_64.pkg.tar.zst` *(il vecchio pacchetto AUR è stato ritirato per evitare conflitti; usa sempre il pacchetto e il repository ufficiale)*

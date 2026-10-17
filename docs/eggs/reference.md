@@ -1,12 +1,12 @@
 ---
-title: "Command Reference: La guida completa alla CLI di Eggs"
+title: "Riferimento dei comandi: la guida completa alla CLI di Eggs"
 ---
 
 import Translactions from '@site/src/components/Translactions';
 
 <Translactions />
 
-# Command Reference: La guida completa alla CLI di Eggs
+# Riferimento dei comandi: la guida completa alla CLI di Eggs
 
  **`eggs`** è l'interfaccia a riga di comando primaria di `penguins-eggs` (il binario è disponibile anche con l'alias **`coa`**). Orchestra il parser e il planner in Go (`coa`), l'esecutore nativo in C (`oa`) e i moduli worker (`coa ell`).
 
@@ -14,7 +14,7 @@ import Translactions from '@site/src/components/Translactions';
 
 ---
 
-## 🧭 Panoramica Rapida dei Comandi
+## 🧭 Panoramica rapida dei comandi
 
 | Comando | `sudo` | Descrizione |
 | :--- | :---: | :--- |
@@ -32,7 +32,7 @@ import Translactions from '@site/src/components/Translactions';
 
 ---
 
-## 🚀 1. Rimasterizzazione e Produzione ISO (`remaster` / `wizard`)
+## 🚀 1. Rimasterizzazione e produzione ISO (`remaster` / `wizard`)
 
 ### `sudo eggs wizard`
 Avvia un flusso interattivo guidato in **3 passi** nel terminale per selezionare la modalità di volo (*Standard Live*, *System Clone*, *Crypted Clone*), il profilo di compressione SquashFS (*Fast*, *Standard*, *Maximum*), rivedere il riepilogo e lanciare la creazione della ISO.
@@ -63,7 +63,7 @@ In modalità interattiva, `--crypted` apre un wizard TUI che permette di accetta
 
 ---
 
-## 💿 2. Installazione sul Ferro (`sysinstall` e `coexist`)
+## 💿 2. Installazione sul ferro (`sysinstall` e `coexist`)
 
 ### `sudo eggs sysinstall [calamares|krill]`
 Orchestra l'installazione del sistema live sul disco fisso generando la directory `/etc/penguins-eggs.d/installer.d/` e avviando l'interfaccia scelta:
@@ -82,7 +82,7 @@ Gestisce il multi-boot isolato basato sull'architettura [Pure Slots](./coexist.m
 
 ---
 
-## ⚙️ 3. Configurazione e Manutenzione (`config`, `tools`, `destroy`)
+## ⚙️ 3. Configurazione e manutenzione (`config`, `tools`, `destroy`)
 
 ### `sudo eggs config`
 Apre una TUI interattiva organizzata in **3 schede** (navigabili con `Tab` / `Shift+Tab`):
@@ -103,7 +103,7 @@ Il distruttore sicuro: smonta l'albero dei mount point virtuali e degli overlay 
 
 ---
 
-## 🌐 4. Utilità VM, Esportazione e Versione (`adapt`, `export`, `version`)
+## 🌐 4. Utilità VM, esportazione e versione (`adapt`, `export`, `version`)
 
 * `eggs adapt`: ridimensiona e adatta dinamicamente la risoluzione video della sessione grafica quando si esegue una live all'interno di una macchina virtuale (non richiede `sudo`).
 * `sudo eggs export [iso|pkg|log] [--clean]`: trasferisce le ISO prodotte, i pacchetti compilati o i log di esecuzione verso uno storage array remoto Proxmox VE configurato (con `--clean` rimuove le build precedenti).
@@ -111,7 +111,7 @@ Il distruttore sicuro: smonta l'albero dei mount point virtuali e degli overlay 
 
 ---
 
-## 🤖 5. Integrazione con Agenti IA (`eggs mcp`)
+## 🤖 5. Integrazione con agenti IA (`eggs mcp`)
 
 Gestisce il server **Model Context Protocol (MCP)** integrato in `coa` (vedi [Architettura MCP](./architecture/8.md)):
 * `sudo eggs mcp enable`: crea `/etc/sudoers.d/penguins-eggs-mcp` e inietta automaticamente la configurazione del server MCP nei client IA rilevati (**Antigravity CLI, Claude Desktop, Cursor, Zed, VSCode Roo-Cline**).

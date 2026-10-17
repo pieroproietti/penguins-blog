@@ -8,13 +8,13 @@ import Translactions from '@site/src/components/Translactions';
 
 <Translactions />
 
-# 🥚 Penguins' Eggs: Il motore della rimasterizzazione
+# 🥚 Penguins' Eggs: il motore della rimasterizzazione
 
 **`penguins-eggs`** è la suite di remastering di nuova generazione che trasforma un sistema Linux in esecuzione in un'immagine ISO ibrida avviabile (UEFI + BIOS), pronta per viaggiare su chiavetta USB, rete o disco fisso ed essere installata tramite **Krill** (TUI) o **Calamares** (GUI).
 
 Il motore è costruito attorno a due binari statici che incarnano il modello Master-Worker:
-- **`coa`** (in Go) — **La Mente**: legge i template, analizza il sistema ospite e compila il piano di volo formale (`oa-plan.json`), oltre a fornire il tecnico specializzato **`coa ell`**;
-- **`oa`** (in C) — **Il Braccio**: esegue il piano a stretto contatto con il kernel e il metallo della macchina, governando mount point, OverlayFS e chroot con zero dipendenze.
+- **`coa`** (in Go) — **la mente**: legge i template, analizza il sistema ospite e compila il piano di volo formale (`oa-plan.json`), oltre a fornire il tecnico specializzato **`coa ell`**;
+- **`oa`** (in C) — **il braccio**: esegue il piano a stretto contatto con il kernel e il metallo della macchina, governando mount point, OverlayFS e chroot con zero dipendenze.
 
 Supporta nativamente le principali famiglie Linux (**Debian, Ubuntu, Devuan, Arch Linux, Manjaro, Fedora, openSUSE, Alpine**) su architetture **x86_64, ARM64 e RISC-V**.
 
@@ -22,16 +22,16 @@ Supporta nativamente le principali famiglie Linux (**Debian, Ubuntu, Devuan, Arc
 
 ## 🧭 Percorso di lettura
 
-### 1. Filosofia e Visione
-- **[Manifestum: Un famoso dialogo](./manifestum.md)** — Salviati, Sagredo e Simplicio discutono di materia, silicio ed evoluzione del software.
-- **[Filogenesi e Fondamenti di Eggs](./1.md)** — Dal "Brain inquinato" in Bash al modello a tre attori (`coa`, `oa`, `ell`), il Principio di Trasparenza e la Strategia Universale (*Eggs & Bananas*).
-- **[La Triade Organica: Eggs, Chef e GUI](./2.md)** — Come cooperano il motore di remastering (`eggs`), la cucina dichiarativa ([`penguins-chef`](../chef/index.md)) e l'interfaccia grafica desktop ([`penguins-gui`](../gui/index.md)).
+### 1. Filosofia e visione
+- **[Premessa: un famoso dialogo...](./manifestum.md)** — Salviati, Sagredo e Simplicio discutono di materia, silicio ed evoluzione del software.
+- **[Genesi e filosofia di eggs](./1.md)** — Dal "brain inquinato" in Bash al modello a tre attori (`coa`, `oa`, `ell`), il principio di trasparenza e la strategia universale (*Eggs & Bananas*).
+- **[La triade organica: Eggs, Chef e GUI](./2.md)** — Come cooperano il motore di remastering (`eggs`), la cucina dichiarativa ([`penguins-chef`](../chef/index.md)) e l'interfaccia grafica desktop ([`penguins-gui`](../gui/index.md)).
 
-### 2. Manuale Utente e Sysadmin
-- **[Quickstart: Dalla sorgente all'uovo](./quickstart.md)** — Dal bootstrap del pacchetto e del repository fino alla produzione della prima ISO o di un clone in 5 passi.
-- **[Command Reference (CLI)](./reference.md)** — Guida completa ai comandi `eggs remaster`, `eggs wizard`, `eggs config`, `eggs coexist`, `eggs tools`, `eggs sysinstall`, `eggs export` ed `eggs mcp`.
-- **[Multi-Boot con Krill Coexist](./coexist.md)** — Far convivere più distribuzioni Linux indipendenti su un unico disco UEFI con l'architettura *Pure Slots*.
-- **[Chromebook e recupero hardware (FixIt!)](./fixit.md)** — Dare nuova vita all'hardware rigido o con storage eMMC ridotto.
+### 2. Manuale utente e amministratore di sistema
+- **[Guida rapida: dalla sorgente all'uovo in 5 passi](./quickstart.md)** — Dal bootstrap del pacchetto e del repository fino alla produzione della prima ISO o di un clone in 5 passi.
+- **[Riferimento dei comandi (CLI)](./reference.md)** — Guida completa ai comandi `eggs remaster`, `eggs wizard`, `eggs config`, `eggs coexist`, `eggs tools`, `eggs sysinstall`, `eggs export` ed `eggs mcp`.
+- **[Avvio multiplo con Krill Coexist](./coexist.md)** — Far convivere più distribuzioni Linux indipendenti su un unico disco UEFI con l'architettura a slot puri (*Pure Slots*).
+- **[Chromebook: dare nuova vita al ferro rigido (FixIt!)](./fixit.md)** — Dare nuova vita all'hardware rigido o con storage eMMC ridotto.
 
 ### 3. Architettura interna e sviluppo (`coa` + `oa`)
 Il percorso segue l'ordine cronologico esatto di un volo di rimasterizzazione, dalla lettura dei template fino al collaudo automatizzato:

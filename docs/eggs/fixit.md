@@ -1,12 +1,12 @@
 ---
-title: "Chromebook: Dare nuova vita al ferro rigido"
+title: "Chromebook: dare nuova vita al ferro rigido"
 ---
 
 import Translactions from '@site/src/components/Translactions';
 
 <Translactions />
 
-# Chromebook: Dare nuova vita al ferro rigido
+# Chromebook: dare nuova vita al ferro rigido
 
 Tra le applicazioni più stimolanti di `penguins-eggs` vi è la sua adozione nei progetti di recupero hardware d'oltreoceano, come quelli curati da **FixIt!** negli Stati Uniti. Qui, vecchi Chromebook dismessi o vincolati da ecosistemi chiusi vengono trasformati in macchine Linux pienamente operative.
 

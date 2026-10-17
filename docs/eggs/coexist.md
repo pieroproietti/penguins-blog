@@ -1,12 +1,12 @@
 ---
-title: "Guida Pratica: Multi-Boot Linux con penguins-eggs e Krill Coexist"
+title: "Guida pratica: avvio multiplo Linux con penguins-eggs e Krill Coexist"
 ---
 
 import Translactions from '@site/src/components/Translactions';
 
 <Translactions />
 
-# Guida Pratica: Multi-Boot Linux con penguins-eggs e Krill Coexist
+# Guida pratica: avvio multiplo Linux con penguins-eggs e Krill Coexist
 
 La nuova architettura **Pure Slots** di **Krill Coexist** (introdotta in `penguins-eggs v26.9.15`) consente di far convivere molteplici distribuzioni Linux completamente indipendenti su un unico disco fisso o virtuale UEFI, senza conflitti di bootloader, senza sovrapposizioni di filesystem e senza complesse configurazioni manuali.
 
@@ -14,7 +14,7 @@ Questa guida illustra la procedura passo-passo basata su un'installazione reale:
 
 ---
 
-## Panoramica dell'Architettura "Pure Slots"
+## Panoramica dell'architettura a slot puri ("Pure Slots")
 
 Un disco preparato per la modalità Coexist adotta una struttura lineare e robusta:
 1. **1 sola partizione ESP (EFI System Partition)**: da 512 MiB formattata FAT32 (`/dev/sdb1`), condivisa per i file di avvio UEFI ma isolata a livello di directory.
@@ -25,7 +25,7 @@ Ogni sistema installato riceve un **System Name (ID)** univoco (ad es. `sdb2-arc
 
 ---
 
-## Fase 1: Inizializzazione del Disco con `eggs coexist init`
+## Fase 1: inizializzazione del disco con `eggs coexist init`
 
 Avviando il sistema da una qualsiasi live creata con penguins-eggs (oppure direttamente da una sessione con `eggs` installato):
 
@@ -52,7 +52,7 @@ Al termine, il disco è pronto per accogliere qualsiasi distribuzione Linux.
 
 ---
 
-## Fase 2: Installazione del Primo Sistema (es. Arch Linux)
+## Fase 2: installazione del primo sistema (es. Arch Linux)
 
 Avviamo l'installer con:
 ```bash
@@ -73,7 +73,7 @@ Proseguiamo con la schermata utenti e confermiamo. Al termine, Arch Linux sarà 
 
 ---
 
-## Fase 3: Installazione del Secondo Sistema (es. Devuan)
+## Fase 3: installazione del secondo sistema (es. Devuan)
 
 Riavviando la macchina con la ISO live di un'altra distribuzione (nel nostro esempio **Devuan**), eseguiamo nuovamente:
 ```bash
@@ -98,7 +98,7 @@ Completiamo l'installazione: Devuan viene installato nel secondo slot in pochi m
 
 ---
 
-## Fase 4: Popolamento degli Slot Successivi (Manjaro, Ubuntu, Debian...)
+## Fase 4: popolamento degli slot successivi (Manjaro, Ubuntu, Debian...)
 
 Ripetiamo la medesima procedura avviando le live delle altre distribuzioni desiderate:
 
@@ -115,7 +115,7 @@ Allo stesso modo, proseguiamo negli slot successivi:
 
 ---
 
-## Risultato Finale: Menu di Boot UEFI Multi-Distro
+## Risultato finale: menu di avvio UEFI multi-distribuzione
 
 Al riavvio della macchina o della macchina virtuale, accedendo al Boot Menu del firmware UEFI (tasto F11/F12 o menu firmware OVMF/QEMU):
 
@@ -130,7 +130,7 @@ Tutte le distribuzioni compaiono nel menu di avvio del firmware con la loro voce
 
 ---
 
-## Vantaggi Chiave di Questo Approccio
+## Vantaggi chiave di questo approccio
 
 1. **Zero conflitti tra bootloader**: Ciascun sistema installa GRUB esclusivamente nella propria sottodirectory `/boot/efi/EFI/<System_Name>` e registra la propria voce NVRAM indipendente. Non esiste un "GRUB master" che rischia di corrompersi o che deve essere aggiornato ogni volta che un'altra distro aggiorna il proprio kernel.
 2. **Sostituzione e reinstallazione pulita (`PURGE PREVIOUS`)**: Se in futuro si desidera rimpiazzare una distribuzione in uno slot (ad esempio sostituire Manjaro su `/dev/sdb4` con Fedora), Krill rileva la vecchia etichetta `sdb4-manjaro`, rimuove automaticamente la directory EFI corrispondente e la vecchia voce NVRAM (`PURGE PREVIOUS`), riformatta solo quello slot e installa la nuova distro senza toccare nessuno degli altri slot.
