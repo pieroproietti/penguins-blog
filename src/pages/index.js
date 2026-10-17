@@ -30,6 +30,12 @@ function HomepageHeader() {
           </Link>
           <Link
             className="button button--secondary button--lg"
+            title="Watch promo video"
+            to="https://penguins-eggs.net/video/video_en.mp4">
+            Video
+          </Link>
+          <Link
+            className="button button--secondary button--lg"
             to="https://penguins-eggs.net/basket/">
             Downloads
           </Link>
