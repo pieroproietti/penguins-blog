@@ -53,6 +53,6 @@ Forse, la condanna è rileggere, magari tornarci sopra dopo una bella dormita.
 
 Ma è spettacolare, non avrei mai scritto questo testo dopo un pomeriggio e forse una mattina a rileggere e correggere il tutto.
 
-Forse, alla fine, è un lavoro collettivo: partecipa chi legge. decodifoca ed apprezza lo scritto o meno, ne prende una parte, il tutto o un'idea e lo trasperta in un altro contesto.
+Forse, alla fine, è un lavoro collettivo: partecipa chi legge, decodifica ed apprezza lo scritto o meno, ne prende una parte, il tutto o un'idea e lo trasporta in un altro contesto.
 
 O mi maledice :-D
