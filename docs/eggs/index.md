@@ -33,14 +33,14 @@ Supporta nativamente le principali famiglie Linux (**Debian, Ubuntu, Devuan, Arc
 - **[Multi-Boot con Krill Coexist](./coexist.md)** — Far convivere più distribuzioni Linux indipendenti su un unico disco UEFI con l'architettura *Pure Slots*.
 - **[Chromebook e recupero hardware (FixIt!)](./fixit.md)** — Dare nuova vita all'hardware rigido o con storage eMMC ridotto.
 
-### 3. Architettura Interna e Sviluppo (`coa` + `oa`)
+### 3. Architettura interna e sviluppo (`coa` + `oa`)
 Il percorso segue l'ordine cronologico esatto di un volo di rimasterizzazione, dalla lettura dei template fino al collaudo automatizzato:
-1. **[Panoramica Architetturale: Mente e Braccio](./architecture/1.md)** — L'orchestratore `coa`, l'esecutore `oa` e il worker `coa ell`.
-2. **[Compilazione e Sviluppo (Building)](./architecture/2.md)** — Requisiti della toolchain (Go 1.25+, GCC), `Makefile` e generazione pacchetti con `eggs tools build`.
-3. **[Il Parser (Rilevamento e Template del Brain)](./architecture/5.md)** — Come `DetectAndLoad()` identifica la distro e compila i template Go nella struct `Profile`.
-4. **[Il Planner (La Strategia di Volo e `oa-plan.json`)](./architecture/6.md)** — Compilazione dei task `OATask`, iniezione della pipeline LUKS e lista di esclusione `excludes.list`.
-5. **[Il modulo `oa` (Il Braccio in C)](./architecture/3.md)** — Il dispatcher in C, la gestione utenti (`oa-yocto.c`) e lo smontaggio sicuro (`MNT_DETACH`).
-6. **[Il modulo `coa ell` (Il Tecnico Specializzato in Go)](./architecture/4.md)** — L'*Envelope Protocol* su STDIN e i moduli worker (`mksquashfs`, `xorriso`, `template`, `autologin-gui`).
-7. **[L'Installer Unificato: Krill e Calamares](./architecture/7.md)** — Un solo motore (`/etc/penguins-eggs.d/installer.d/`), due volti (TUI e GUI) e la strategia bootloader.
-8. **[Model Context Protocol (MCP) Server](./architecture/8.md)** — Il demone JSON-RPC 2.0 integrato per agenti IA (Antigravity, Claude, Cursor, Zed, Roo-Cline).
-9. **[Continuous Integration: Hammers, Furnace e Incubator](./ci/1.md)** — La triade di automazione tra container GitHub Actions e macchine virtuali Proxmox VE.
+1. **[Panoramica architetturale: mente, braccio e tecnico](./architecture/1.md)** — L'orchestratore `coa`, l'esecutore `oa` e il tecnico `coa ell`.
+2. **[Compilazione e sviluppo: strumenti e pacchettizzazione](./architecture/2.md)** — Requisiti di compilazione (Go 1.25+, GCC), `Makefile` e generazione pacchetti con `eggs tools build`.
+3. **[Il navigatore: l'analizzatore (`parser`)](./architecture/5.md)** — Come `DetectAndLoad()` identifica la distro e compila i modelli Go nella struct `Profile`.
+4. **[L'ingegnere: il pianificatore (`planner` e `oa-plan.json`)](./architecture/6.md)** — Compilazione dei compiti `OATask`, iniezione della pipeline LUKS e lista di esclusione `excludes.list`.
+5. **[Il braccio in C: il modulo `oa`](./architecture/3.md)** — Lo smistatore in C, la gestione utenti (`oa-yocto.c`) e lo smontaggio sicuro (`MNT_DETACH`).
+6. **[Il tecnico in Go: il modulo `coa ell`](./architecture/4.md)** — Il protocollo a busta su STDIN e i moduli esecutori (`mksquashfs`, `xorriso`, `template`, `autologin-gui`).
+7. **[L'installatore unificato: Krill e Calamares](./architecture/7.md)** — Un solo motore (`/etc/penguins-eggs.d/installer.d/`), due volti (TUI e GUI) e la strategia bootloader.
+8. **[Il server MCP: integrazione nativa con agenti IA](./architecture/8.md)** — Il demone JSON-RPC 2.0 integrato per agenti IA (Antigravity, Claude, Cursor, Zed, Roo-Cline).
+9. **[Integrazione continua: Hammers, Furnace e Incubator](./ci/1.md)** — La triade di automazione tra container GitHub Actions e macchine virtuali Proxmox VE.
