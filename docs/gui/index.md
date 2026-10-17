@@ -39,7 +39,7 @@ Se preferisci il pacchetto nativo per la tua distribuzione, sono disponibili i p
   ```
 - **Fedora:**
   ```bash
-  sudo dnf install ./penguins-gui-*.fc44.x86_64.rpm
+  sudo dnf install ./penguins-gui-*.x86_64.rpm
   ```
 - **openSUSE (Leap / Tumbleweed / Slowroll):**
   ```bash
@@ -52,7 +52,7 @@ Se preferisci il pacchetto nativo per la tua distribuzione, sono disponibili i p
 
 ### 3. Configurazione automatica di `penguins-eggs`
 Se avvii `penguins-gui` su una macchina ancora priva del motore `eggs`:
-1. Apri il menu **Edit** (o **Tools**) e seleziona **Install penguins-eggs CLI**.
+1. Apri il menu **Edit** e seleziona **Install penguins-egg CLI**.
 2. La GUI rileverà automaticamente la tua distribuzione (Debian, Ubuntu, Devuan, Arch, Manjaro, Fedora, openSUSE, Alpine), configurerà i repository ufficiali e le chiavi GPG, e installerà `penguins-eggs`.
 3. Non appena l'installazione termina, la GUI sblocca istantaneamente i controlli di remastering senza bisogno di riavviare l'applicazione.
 
@@ -66,6 +66,8 @@ Se avvii `penguins-gui` su una macchina ancora priva del motore `eggs`:
 penguins-gui (Desktop GUI) ──► eggs (CLI) ──► coa (La Mente in Go) ──► oa (Il Braccio in C)
                            └─► chef (CLI)
 ```
+
+> **Cosa sono `coa` e `oa`?** Nel dialetto dell'autore, ***coa*** significa *"covare"* e ***oa*** significa *"uova"*. Quando premi un pulsante su `penguins-gui`, la GUI invoca il comando pubblico `eggs`: dietro le quinte, **`coa`** (l'orchestratore in Go, *la Mente*) analizza il sistema e compila il piano di volo formale, mentre **`oa`** (l'esecutore nativo in C, *il Braccio*) compie il lavoro pesante vicino al kernel (mount point, OverlayFS, utenti). Per approfondire, consulta la [Panoramica Architetturale di Eggs](../eggs/architecture/1.md).
 
 - **Zero Accoppiamento Interno:** La GUI non importa pacchetti interni di `eggs` o `chef`; comunica esclusivamente attraverso le loro interfacce pubbliche a riga di comando.
 - **Separazione dei Privilegi:** L'applicazione grafica gira sempre nello spazio dell'utente ordinario. Solo i singoli comandi che modificano il sistema vengono elevati al momento dell'esecuzione tramite **Polkit (`pkexec`)** o `sudo`.

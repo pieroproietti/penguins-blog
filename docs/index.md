@@ -31,7 +31,7 @@ import Translactions from '@site/src/components/Translactions';
 ## [Capitolo 4: Gli organi specializzati (Gli strumenti del mestiere)](./no-matter/4.md)
 * **Eggs:** Il cuore della remastering e della creazione di ISO ibride, standard, clone o crittografate (LUKS).
 * **Krill:** Il TUI system installer pensato per gestire partizioni complesse, mount point personalizzati e coesistenza multi-boot.
-* **Wardrobe e costumi:** La gestione degli elementi di contorno per vestire la live secondo le necessità.
+* **La vestizione tramite le ricette di Chef:** La gestione dichiarativa dei costumi e degli overlay `sysroot` per vestire la live secondo le necessità.
 
 ## [Capitolo 5: Il ciclo vitale (Guide pratiche e flussi di lavoro)](./no-matter/5.md)
 * Dal primo avvio alla configurazione del repository nativo.
@@ -40,9 +40,9 @@ import Translactions from '@site/src/components/Translactions';
 
 ---
 
-## Manuali degli Strumenti
+## Manuali degli Strumenti (Percorso dal Desktop al Metallo)
 
-* 🥚 **[Manuale di `penguins-eggs` (`eggs`)](./eggs/index.md)** — Filosofia, Quickstart, Command Reference, Krill Coexist e Architettura interna (`coa` + `oa`).
-* 👨‍🍳 **[Manuale di `penguins-chef` (`chef`)](./chef/index.md)** — Il motore dichiarativo a ricette YAML per plasmare il proprio Linux partendo da una base `naked`.
-* 🖥️ **[Manuale di `penguins-gui`](./gui/index.md)** — Il sensore grafico desktop (AppImage e pacchetti nativi) con integrazione *Cook* e avvio ISO da GRUB.
+* 🖥️ **[1. Manuale di `penguins-gui` (Il Sensore Grafico)](./gui/index.md)** — Per chi parte dal desktop: avvio tramite AppImage o pacchetti nativi, creazione ISO con un clic, integrazione *Cook* (Recipe Picker) e avvio ISO da GRUB.
+* 👨‍🍳 **[2. Manuale di `penguins-chef` (`chef` — La Cucina Dichiarativa)](./chef/index.md)** — Per chi assembla il proprio sistema: il motore a ricette YAML, il contratto in 8 passi, il *dry-run* senza root e i costumi per plasmare Linux partendo da una base `naked`.
+* 🥚 **[3. Manuale di `penguins-eggs` (`eggs` — Il Motore di Remastering)](./eggs/index.md)** — Per utenti, sysadmin e sviluppatori: Filosofia, Quickstart, Command Reference completa, Multi-Boot con Krill Coexist, Architettura interna (`coa` + `oa` + `ell`), Server MCP e CI.
 * 🏛️ **[Eggs Users' Guide (Edizione storica TypeScript)](./eggs-users-guide.md)** — Il manuale storico di `penguins-eggs-legacy`.

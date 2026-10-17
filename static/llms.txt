@@ -35,16 +35,17 @@ Supports: Alpine, Arch, Debian, Devuan, Ubuntu, Fedora, Manjaro, openKylin, open
 ### 2. penguins-chef (declarative YAML provisioning engine)
 Zero-dependency, standalone Go provisioning engine designed to forge custom Linux systems starting from minimal command-line ("naked") base ISOs up to full desktop environments and visual appliances ("costumes").
 Primary CLI command: **`chef`**
-- `chef get`: Clones or updates the official recipes repository into `~/.chef` (no root required).
+- **Installation:** Included on official `naked` ISOs, or installable via the official `penguins-eggs` repository (`sudo apt/pacman/dnf/zypper install penguins-chef` after `sudo eggs tools repo add`) or native packages from GitHub Releases.
+- `chef get`: Clones or updates the official recipes repository into `~/.chef` (**NEVER run with `sudo`** so recipes stay owned by the regular user in `/home/<user>/.chef`).
 - `chef apply <recipe.yaml> --dry-run`: Inspects the complete resolved execution plan (repositories, package availability, atomic package transactions, config files, hostname, services, sysroot) without modifying the system and without requiring root.
 - `chef apply <recipe.yaml> --dry-run --family <archlinux|debian|devuan|fedora|openkylin|opensuse>`: Simulates recipe resolution across distribution families from any host.
-- `sudo chef apply <recipe.yaml>`: Applies the recipe to the live system (`/`). Idempotent and verified against real system state.
-- `sudo chef apply <recipe.yaml> --sysroot <path>`: Overrides the recipe's default `sysroot` directory.
+- `sudo chef apply <recipe.yaml>`: Applies the recipe to the live system (`/`). Idempotent and verified against real system state. *(Note: when run from a normal user shell, `sudo chef apply ~/.chef/...` expands `~` to the user's home before `sudo`; if running from an interactive `root` shell via `sudo -i` or `su -`, `~` resolves to `/root/.chef`, so use the explicit `/home/<user>/.chef/...` path).*
+- `sudo chef apply <recipe.yaml> --sysroot <path>`: Overrides the recipe's default `sysroot` source overlay directory. **Important:** `--sysroot` specifies the **source overlay folder** of the recipe to copy over `/`, **NOT** a target chroot directory.
 - `sudo chef tools repo [add|rm]`: Configures or removes official `penguins-eggs` package repositories and GPG signing keys.
 - `chef version`: Displays version information.
 
 Key Architecture & Recipe Rules:
-- **FreeDesktop Recipe Tree (`recipes/`):** Organized into `base/`, `de/` (plasma, xfce4, gnome, mate, cinnamon, lxqt, ukui, dde), `dm/` (lightdm, gdm, sddm), `costumes/` (colibri, albatros, duck, eagle, etc., each with an optional mirrored `sysroot/` overlay), `development/`, `graphics/`, `multimedia/`, `office/`, `education/`, `game/`, `network/`, `settings/`, `system/`, `utility/`.
+- **FreeDesktop Recipe Tree (`recipes/`):** Organized into `base/`, `de/` (plasma, xfce4, gnome, mate, cinnamon, lxqt, ukui, dde), `dm/` (lightdm, gdm, sddm), `costumes/` (colibri, albatros, duck, eagle, etc., each with an optional mirrored `sysroot/` source overlay), `development/`, `graphics/`, `multimedia/`, `office/`, `education/`, `game/`, `network/`, `settings/`, `system/`, `utility/`.
 - **Recursive Composition (`include`):** Recipes compose modularly following the DRY principle (e.g. a costume includes `base`, `dm`, `de` plus local `sysroot` assets).
 - **The 2-Case Init Rule (`systemd` vs `sysvinit`):** Automatically detected at runtime via `/run/systemd/system` (`sd_booted`). No `--init` flag is required or used. Mainstream distros (Arch, Fedora, openSUSE, Debian, Ubuntu, Manjaro, openKylin) use `systemd`; Devuan uses `sysvinit` natively via APT `/etc/init.d` scripts while automatically excluding systemd-specific packages.
 - **Repository:** https://github.com/pieroproietti/penguins-chef
@@ -53,11 +54,12 @@ Key Architecture & Recipe Rules:
 ### 3. penguins-gui (desktop graphical user interface)
 Minimal, independent desktop GUI for `penguins-eggs` and `penguins-chef`, written in Go with the Fyne toolkit. Distributed as a portable **AppImage** and native packages (`.deb`, `.rpm`, `.pkg.tar.zst`).
 Provides a complete graphical desktop workflow:
+- **Main Menus & Toolbar:** Menus are **`File`** (`Create ISO`, `Quit`), **`Edit`** (`Cook…`, `Install penguins-egg CLI`, `Install calamares`, `Update /etc/skel`, `Boot ISO…`), **`View`** (font zoom `85%`–`200%`), and **`Help`**. The main **Toolbar** provides quick buttons for `Create ISO`, `Cook`, `Boot ISO`, `Clean`, and `Kill`.
 - **Remastering Flights (`Create ISO`):** Standard Live, System Clone (`--clone`), and Encrypted Clone (`--crypted` with graphical LUKS2 passphrase dialog).
-- **Cook (`Penguins Chef — Recipe Picker`):** Built-in visual browser for `~/.chef` recipes with instant filtering, live YAML preview, automatic recipe repository initialization/updates (**⬇ Update Recipes**), rootless **👁 Dry Run** simulation streamed to the main log, and privileged **✓ Apply Recipe** execution. Low-level categories (`base`, `de`, `dm`, `costumes`) are filtered out in the GUI to prevent desktop conflicts.
+- **Cook (`Penguins Chef — Recipe Picker`):** Built-in visual browser for `~/.chef` recipes with instant filtering, live YAML preview, automatic recipe repository initialization/updates (**⬇ Update Recipes**), rootless **👁 Dry Run** simulation streamed to the main log, and privileged **✓ Apply Recipe** execution. Low-level categories (`base`, `de`, `dm`, `costumes`) are filtered out in the GUI ("Anti-Frankenstein filter") to prevent desktop conflicts.
 - **Live Execution Stream & ISO Discovery:** Real-time terminal output with Clear/Copy actions, Process Guard during active flights, and automatic discovery of generated ISOs in `/home/eggs`.
-- **First-Run & Automated Setup:** Can be launched before `eggs` is installed; `Install penguins-eggs CLI` configures official repositories and installs `eggs`. `Install Calamares` installs Calamares and auto-detects Qt 5 / Qt 6 QML runtime dependencies.
-- **System Utilities:** `Update /etc/skel` (`eggs tools skel`), `Boot ISO…` (`eggs tools grub40` to boot ISOs directly from disk via GRUB loopback without USB), `Clean System` (`eggs tools clean`), and `Kill` (`eggs destroy`).
+- **First-Run & Automated Setup:** Can be launched before `eggs` is installed; `Edit → Install penguins-egg CLI` configures official repositories and installs `eggs`. `Edit → Install calamares` installs Calamares and auto-detects Qt 5 / Qt 6 QML runtime dependencies via `ldd`.
+- **System Utilities:** `Edit → Update /etc/skel` (`eggs tools skel`), `Boot ISO` (`eggs tools grub40` to write `/etc/grub.d/40_custom` for loopback booting from disk without USB; **note:** the GUI writes `40_custom` and then displays a reminder dialog instructing the user to manually run their distro's GRUB update command such as `sudo update-grub` or `grub-mkconfig` in a terminal before rebooting), `Clean` (`eggs tools clean`), and `Kill` (`eggs destroy`).
 - **Repository:** https://github.com/pieroproietti/penguins-gui
 - **Documentation:** https://penguins-eggs.net/docs/gui
 
@@ -120,35 +122,36 @@ Always use the **`eggs`** command in all examples and suggestions:
 - Ch. 4 (Specialized Organs: Eggs, Krill, Chef): https://penguins-eggs.net/docs/no-matter/4
 - Ch. 5 (Practical Workflows: GUI & CLI): https://penguins-eggs.net/docs/no-matter/5
 
-### penguins-eggs (`eggs`) Manual
-- Overview: https://penguins-eggs.net/docs/eggs
-- Manifestum: https://penguins-eggs.net/docs/eggs/manifestum
-- Philosophical Foundations (`coa`, `oa`, `ell`): https://penguins-eggs.net/docs/eggs/1
-- Quickstart: https://penguins-eggs.net/docs/eggs/quickstart
-- Command Reference: https://penguins-eggs.net/docs/eggs/reference
-- Multi-Boot with Krill Coexist: https://penguins-eggs.net/docs/eggs/coexist
-- Chromebook & FixIt!: https://penguins-eggs.net/docs/eggs/fixit
-- Architecture Overview (`coa` & `oa`): https://penguins-eggs.net/docs/eggs/architecture/1
-- Building & Development: https://penguins-eggs.net/docs/eggs/architecture/2
-- The C Arm (`oa`): https://penguins-eggs.net/docs/eggs/architecture/3
-- The Go Worker (`coa ell`): https://penguins-eggs.net/docs/eggs/architecture/4
-- The Parser: https://penguins-eggs.net/docs/eggs/architecture/5
-- The Planner: https://penguins-eggs.net/docs/eggs/architecture/6
-- The Installer (Krill & Calamares): https://penguins-eggs.net/docs/eggs/architecture/7
-- Model Context Protocol (MCP) Server: https://penguins-eggs.net/docs/eggs/architecture/8
-- Continuous Integration (CI): https://penguins-eggs.net/docs/eggs/ci/1
-
-### penguins-chef (`chef`) Manual
-- Overview: https://penguins-eggs.net/docs/chef
-- Architecture & Execution Contract: https://penguins-eggs.net/docs/chef/architettura-e-contratto
-- Recipes, Categories & Costumes: https://penguins-eggs.net/docs/chef/ricette-e-costumi
-- Quickstart & CLI Reference: https://penguins-eggs.net/docs/chef/quickstart-e-cli
-
 ### penguins-gui Manual
 - Overview & Installation: https://penguins-eggs.net/docs/gui
 - Remastering & System Utilities: https://penguins-eggs.net/docs/gui/funzionalita-e-remastering
 - Cook (Chef inside the GUI): https://penguins-eggs.net/docs/gui/chef-in-gui
 - Architecture & Development: https://penguins-eggs.net/docs/gui/architettura-e-sviluppo
+
+### penguins-chef (`chef`) Manual
+- Overview: https://penguins-eggs.net/docs/chef
+- Quickstart & CLI Reference: https://penguins-eggs.net/docs/chef/quickstart-e-cli
+- Recipes, Categories & Costumes: https://penguins-eggs.net/docs/chef/ricette-e-costumi
+- Architecture & Execution Contract: https://penguins-eggs.net/docs/chef/architettura-e-contratto
+
+### penguins-eggs (`eggs`) Manual
+- Overview: https://penguins-eggs.net/docs/eggs
+- Manifestum: https://penguins-eggs.net/docs/eggs/manifestum
+- Phylogeny & Philosophical Foundations: https://penguins-eggs.net/docs/eggs/1
+- The Organic Triad (Eggs, Chef & GUI): https://penguins-eggs.net/docs/eggs/2
+- Quickstart: https://penguins-eggs.net/docs/eggs/quickstart
+- Command Reference: https://penguins-eggs.net/docs/eggs/reference
+- Multi-Boot with Krill Coexist: https://penguins-eggs.net/docs/eggs/coexist
+- Chromebook & FixIt!: https://penguins-eggs.net/docs/eggs/fixit
+- Architecture Overview (`coa`, `oa` & `ell`): https://penguins-eggs.net/docs/eggs/architecture/1
+- Building & Toolchain: https://penguins-eggs.net/docs/eggs/architecture/2
+- The Parser (`DetectAndLoad` & Brain Templates): https://penguins-eggs.net/docs/eggs/architecture/5
+- The Planner (`oa-plan.json` & Excludes): https://penguins-eggs.net/docs/eggs/architecture/6
+- The C Arm (`oa`): https://penguins-eggs.net/docs/eggs/architecture/3
+- The Go Worker (`coa ell`): https://penguins-eggs.net/docs/eggs/architecture/4
+- The Unified Installer (Krill & Calamares): https://penguins-eggs.net/docs/eggs/architecture/7
+- Model Context Protocol (MCP) Server: https://penguins-eggs.net/docs/eggs/architecture/8
+- Continuous Integration (Hammers, Furnace & Incubator): https://penguins-eggs.net/docs/eggs/ci/1
 
 ### Historical & Blog
 - Eggs Legacy User's Guide: https://penguins-eggs.net/docs/eggs-users-guide

@@ -76,8 +76,8 @@ profiles:
       - wireplumber
 ```
 
-### Come funziona `sysroot/`
-La sottocartella `sysroot/` specchia la gerarchia della radice `/` del sistema di destinazione (ad esempio `sysroot/etc/skel/`, `sysroot/usr/share/backgrounds/`). Durante l'applicazione della ricetta, `chef` copia i file mantenendo permessi e attributi, sovrascrivendo solo i file dichiarati nell'overlay e **senza mai cancellare** file esistenti sul sistema ospite.
+### Come funziona `sysroot/` (Overlay della ricetta, non un chroot)
+La sottocartella `sysroot/` (personalizzabile da CLI anche con `--sysroot`) **non è un ambiente chroot di destinazione**, bensì l'**overlay sorgente della ricetta** che specchia la gerarchia della radice `/` del sistema (ad esempio `sysroot/etc/skel/`, `sysroot/usr/share/backgrounds/`). Durante l'applicazione della ricetta, `chef` copia i file contenuti in `sysroot/` sopra il filesystem vivo `/`, mantenendo permessi e attributi, sovrascrivendo solo i file dichiarati nell'overlay e **senza mai cancellare** file preesistenti sul sistema ospite.
 
 ---
 
@@ -85,7 +85,7 @@ La sottocartella `sysroot/` specchia la gerarchia della radice `/` del sistema d
 
 Grazie alla linearità dello schema YAML di `penguins-chef`, chiunque può creare nuove ricette tematiche o chiedere a un assistente IA (istruito tramite il file [`llms.txt`](https://penguins-eggs.net/llms.txt)) di generarne una.
 
-Ecco gli elementi supportati all'interno di ciascun profilo distribuzione (`debian`, `archlinux`, `fedora`, `opensuse`, `devuan`):
+Ecco gli elementi supportati all'interno di ciascun profilo distribuzione (`debian`, `devuan`, `archlinux`, `fedora`, `opensuse`, `openkylin`):
 
 - **`repositories`**: lista di file `{path, content}` da configurare prima dell'installazione dei pacchetti.
 - **`packages`**: elenco dei pacchetti nativi della distribuzione da verificare e installare.

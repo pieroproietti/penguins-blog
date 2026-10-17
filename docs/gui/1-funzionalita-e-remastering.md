@@ -31,24 +31,28 @@ Selezionando la modalità desiderata e premendo **Create ISO** (o dal menu *File
 
 ## 🛠️ 2. Strumenti di Preparazione e Manutenzione
 
-La barra degli strumenti e i menu **Edit** / **Tools** integrano gli aiutanti di sistema per preparare la macchina senza passare dal terminale:
+Il menu **Edit** (per gli strumenti di preparazione: *Cook…*, *Install penguins-egg CLI*, *Install calamares*, *Update /etc/skel*, *Boot ISO…*) e la **barra degli strumenti principale (Toolbar)** (con i pulsanti rapidi *Create ISO*, *Cook*, *Boot ISO*, *Clean* e *Kill*) integrano gli aiutanti di sistema per preparare la macchina senza passare dal terminale:
 
-### 🎨 Installa Calamares (con rilevamento automatico Qt5/Qt6)
+### 🎨 Installa Calamares (`Edit → Install calamares`)
 - Installa l'installer grafico **Calamares** tramite il gestore pacchetti nativo della distribuzione.
 - Ispeziona automaticamente il binario installato tramite `ldd` per determinare se è compilato su **Qt 5** o **Qt 6**.
 - Installa di conseguenza i moduli runtime QML e Quick Controls corrispondenti, garantendo il perfetto funzionamento delle slideshow durante l'installazione (`slideshowAPI: 2`).
 
-### 👤 Aggiorna `/etc/skel` (`Update /etc/skel`)
+### 👤 Aggiorna `/etc/skel` (`Edit → Update /etc/skel`)
 - Esegue `eggs tools skel` per clonare la configurazione visiva, i temi, le icone e le impostazioni del desktop dell'utente corrente dentro `/etc/skel`.
 - In questo modo, sia l'utente della sessione live sia i nuovi utenti creati dopo l'installazione erediteranno esattamente l'aspetto del tuo desktop.
 
-### 💿 Avvia ISO da Disco senza USB (`Boot ISO…` / `grub40`)
-- Configura automaticamente **GRUB** (`/etc/grub.d/40_custom`) per avviare l'immagine ISO generata direttamente dal disco fisso in modalità *loopback*, senza bisogno di masterizzare una chiavetta USB.
-- Sostituisce in modo pulito i blocchi contrassegnati da Eggs con la nuova ISO selezionata, creando backup non eseguibili per evitare voci duplicate nel menu di avvio, e ricorda di aggiornare la configurazione di GRUB (`sudo update-grub`).
+### 💿 Avvia ISO da Disco senza USB (`Boot ISO` / `Edit → Boot ISO…`)
+- Invoca `eggs tools grub40` e aggiorna con privilegi elevati `/etc/grub.d/40_custom` per avviare l'immagine ISO generata direttamente dal disco fisso in modalità *loopback*, senza bisogno di masterizzare una chiavetta USB.
+- Sostituisce in modo pulito i blocchi contrassegnati da Eggs con la nuova ISO selezionata, creando backup non eseguibili per evitare voci duplicate nel menu di avvio.
+- **Nota importante su GRUB (aggiornamento manuale):** per sicurezza e compatibilità multi-distribuzione, `penguins-gui` scrive la regola in `/etc/grub.d/40_custom` ma **non esegue automaticamente il ricalcolo di `grub.cfg`**. Al termine dell'operazione, una finestra di dialogo ti ricorderà di eseguire manualmente nel terminale il comando di aggiornamento GRUB della tua distribuzione prima di riavviare:
+  - **Debian / Ubuntu / Devuan / Mint:** `sudo update-grub`
+  - **Arch Linux / Manjaro:** `sudo grub-mkconfig -o /boot/grub/grub.cfg`
+  - **Fedora / openSUSE:** `sudo grub2-mkconfig -o /boot/grub2/grub.cfg`
 
-### 🧹 Pulizia e Recupero (`Clean` e `Kill`)
-- **Clean System (`eggs tools clean`):** Ripulisce le cache dei gestori pacchetti (`apt`, `pacman`, ecc.) e i log di sistema prima di creare l'immagine ISO, riducendo le dimensioni dell'uovo finale.
-- **Kill / Destroy (`eggs destroy`):** Smonta in sicurezza i filesystem virtuali (`MNT_DETACH`) e rimuove la directory di lavoro temporanea nel caso in cui un processo di remastering sia stato interrotto.
+### 🧹 Pulizia e Recupero (Pulsanti `Clean` e `Kill` sulla Toolbar)
+- **Clean (`eggs tools clean`):** Ripulisce le cache dei gestori pacchetti (`apt`, `pacman`, ecc.) e i log di sistema prima di creare l'immagine ISO, riducendo le dimensioni dell'uovo finale.
+- **Kill (`eggs destroy`):** Smonta in sicurezza i filesystem virtuali (`MNT_DETACH`) e rimuove la directory di lavoro temporanea nel caso in cui un processo di remastering sia stato interrotto.
 
-### 🔍 Zoom dei Caratteri e Accessibilità (`View`)
+### 🔍 Zoom dei Caratteri e Accessibilità (Menu `View`)
 - Dal menu **View** (o con le scorciatoie `Ctrl +`, `Ctrl -`, `Ctrl 0`) puoi scalare dinamicamente la dimensione dei font dell'interfaccia (dall'85% al 200%). La preferenza viene salvata automaticamente tra le sessioni.

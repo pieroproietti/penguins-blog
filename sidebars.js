@@ -26,6 +26,16 @@ const sidebars = {
       ],
     },
     {
+      type: 'category',
+      label: 'Manuali della Triade',
+      collapsed: false,
+      items: [
+        { type: 'ref', id: 'gui/index', label: '1. Penguins GUI (Desktop)' },
+        { type: 'ref', id: 'chef/index', label: '2. Penguins Chef (Ricette YAML)' },
+        { type: 'ref', id: 'eggs/index', label: '3. Penguins\' Eggs (Motore CLI)' },
+      ],
+    },
+    {
       type: 'doc',
       id: 'eggs-users-guide',
       label: 'Eggs users\' guide (Legacy)',
@@ -33,6 +43,11 @@ const sidebars = {
   ],
 
   noMatterSidebar: [
+    {
+      type: 'ref',
+      id: 'index',
+      label: 'Indice generale',
+    },
     {
       type: 'doc',
       id: 'no-matter/no-matter',
@@ -57,16 +72,16 @@ const sidebars = {
       collapsed: false,
       items: [
         { type: 'doc', id: 'eggs/manifestum', label: 'Manifestum: Un famoso dialogo' },
-        { type: 'doc', id: 'eggs/1', label: 'I Fondamenti Filosofici' },
-        { type: 'doc', id: 'eggs/2', label: 'L\'orizzonte evolutivo' },
+        { type: 'doc', id: 'eggs/1', label: 'Filogenesi e Fondamenti' },
+        { type: 'doc', id: 'eggs/2', label: 'La Triade Organica: Eggs, Chef e GUI' },
       ],
     },
     {
       type: 'category',
-      label: '2. Manuale Utente',
+      label: '2. Manuale Utente e Sysadmin',
       collapsed: false,
       items: [
-        { type: 'doc', id: 'eggs/quickstart', label: 'Quickstart' },
+        { type: 'doc', id: 'eggs/quickstart', label: 'Quickstart: In 5 passi' },
         { type: 'doc', id: 'eggs/reference', label: 'Command Reference (CLI)' },
         { type: 'doc', id: 'eggs/coexist', label: 'Multi-Boot con Krill Coexist' },
         { type: 'doc', id: 'eggs/fixit', label: 'Chromebook e FixIt!' },
@@ -74,34 +89,24 @@ const sidebars = {
     },
     {
       type: 'category',
-      label: '3. Architettura e Sviluppo',
+      label: '3. Architettura Interna e Sviluppo',
       collapsed: false,
       items: [
-        { type: 'doc', id: 'eggs/architecture/1', label: '1. Panoramica: Mente e Braccio' },
-        { type: 'doc', id: 'eggs/architecture/2', label: '2. Compilazione e Sviluppo' },
-        { type: 'doc', id: 'eggs/architecture/3', label: '3. Il modulo oa (C)' },
-        { type: 'doc', id: 'eggs/architecture/4', label: '4. Il modulo ell (Go)' },
-        { type: 'doc', id: 'eggs/architecture/5', label: '5. Il Parser' },
-        { type: 'doc', id: 'eggs/architecture/6', label: '6. Il Planner' },
+        { type: 'doc', id: 'eggs/architecture/1', label: '1. Panoramica: Mente, Braccio e Tecnico' },
+        { type: 'doc', id: 'eggs/architecture/2', label: '2. Compilazione e Toolchain' },
+        { type: 'doc', id: 'eggs/architecture/5', label: '3. Il Parser (Brain e Template)' },
+        { type: 'doc', id: 'eggs/architecture/6', label: '4. Il Planner (oa-plan.json)' },
+        { type: 'doc', id: 'eggs/architecture/3', label: '5. Il Braccio in C (oa)' },
+        { type: 'doc', id: 'eggs/architecture/4', label: '6. Il Tecnico in Go (coa ell)' },
         { type: 'doc', id: 'eggs/architecture/7', label: '7. L\'Installer (Krill e Calamares)' },
-        { type: 'doc', id: 'eggs/architecture/8', label: '8. Server MCP (IA)' },
+        { type: 'doc', id: 'eggs/architecture/8', label: '8. Server MCP (Agenti IA)' },
         { type: 'doc', id: 'eggs/ci/1', label: '9. Continuous Integration (CI)' },
       ],
     },
     {
-      type: 'category',
-      label: 'Visione Generale e Storico',
-      collapsed: true,
-      items: [
-        { type: 'ref', id: 'index', label: 'Indice generale' },
-        { type: 'ref', id: 'no-matter/no-matter', label: 'Premessa: No Matter' },
-        { type: 'ref', id: 'no-matter/1', label: 'Cap. 1: L\'anatomia' },
-        { type: 'ref', id: 'no-matter/2', label: 'Cap. 2: Architetture' },
-        { type: 'ref', id: 'no-matter/3', label: 'Cap. 3: Naked e Chef' },
-        { type: 'ref', id: 'no-matter/4', label: 'Cap. 4: Gli strumenti' },
-        { type: 'ref', id: 'no-matter/5', label: 'Cap. 5: Il ciclo vitale' },
-        { type: 'ref', id: 'eggs-users-guide', label: 'Eggs users\' guide (Legacy)' },
-      ],
+      type: 'ref',
+      id: 'eggs-users-guide',
+      label: 'Eggs users\' guide (Legacy)',
     },
   ],
 
@@ -113,8 +118,8 @@ const sidebars = {
     },
     {
       type: 'doc',
-      id: 'chef/architettura-e-contratto',
-      label: 'Architettura e Contratto',
+      id: 'chef/quickstart-e-cli',
+      label: 'Quickstart e CLI Reference',
     },
     {
       type: 'doc',
@@ -123,8 +128,8 @@ const sidebars = {
     },
     {
       type: 'doc',
-      id: 'chef/quickstart-e-cli',
-      label: 'Quickstart e CLI Reference',
+      id: 'chef/architettura-e-contratto',
+      label: 'Architettura e Contratto',
     },
   ],
 

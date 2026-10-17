@@ -46,6 +46,6 @@ Il motore analizza lo stato reale della macchina (o simula quello di un'altra di
 
 ## 🗺️ Esplora la documentazione di Chef
 
-- **[Architettura e Contratto di Esecuzione](./1-architettura-e-contratto.md):** Come funziona il motore interno, la pipeline verificabile in 8 passi, il supporto multi-famiglia e la gestione automatica dell'init system (`systemd` e `sysvinit`).
+- **[Quickstart e Command Reference (`chef`)](./3-quickstart-e-cli.md):** Guida pratica dall'installazione del binario `chef` e la prima esecuzione di `chef get` fino alla produzione della ISO con `eggs remaster`, con l'elenco completo dei comandi CLI.
 - **[Struttura delle Ricette, Categorie e Costumi](./2-ricette-e-costumi.md):** L'organizzazione FreeDesktop dell'albero `recipes/`, la composizione DRY con `include`, gli overlay `sysroot` e come scrivere le proprie ricette personalizzate.
-- **[Quickstart e Command Reference (`chef`)](./3-quickstart-e-cli.md):** Guida pratica dalla prima esecuzione di `chef get` fino alla produzione della ISO con `eggs remaster`, con l'elenco completo dei comandi CLI.
+- **[Architettura e Contratto di Esecuzione](./1-architettura-e-contratto.md):** Come funziona il motore interno, la pipeline verificabile in 8 passi, il supporto multi-famiglia e la gestione automatica dell'init system (`systemd` e `sysvinit`).
