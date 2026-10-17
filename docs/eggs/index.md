@@ -28,7 +28,7 @@ Supporta nativamente le principali famiglie Linux (**Debian, Ubuntu, Devuan, Arc
 - **[La triade: Eggs, Chef e GUI](./2.md)** — Come cooperano il motore di remastering (`eggs`), la cucina dichiarativa ([`penguins-chef`](../chef/index.md)) e l'interfaccia grafica desktop ([`penguins-gui`](../gui/index.md)).
 
 ### 2. Manuale utente e amministratore di sistema
-- **[Guida rapida: dalla sorgente all'uovo in 5 passi](./quickstart.md)** — Dal bootstrap del pacchetto e del repository fino alla produzione della prima ISO o di un clone in 5 passi.
+- **[Guida rapida: dal sistema installato alla ISO live (uovo) in 5 passi](./quickstart.md)** — Dal bootstrap del pacchetto e del repository fino alla produzione della prima ISO o di un clone in 5 passi.
 - **[Riferimento dei comandi (CLI)](./reference.md)** — Guida completa ai comandi `eggs remaster`, `eggs wizard`, `eggs config`, `eggs coexist`, `eggs tools`, `eggs sysinstall`, `eggs export` ed `eggs mcp`.
 - **[Avvio multiplo con Krill Coexist](./coexist.md)** — Far convivere più distribuzioni Linux indipendenti su un unico disco UEFI con l'architettura a slot puri (*Pure Slots*).
 - **[Chromebook: dare nuova vita al ferro rigido (FixIt!)](./fixit.md)** — Dare nuova vita all'hardware rigido o con storage eMMC ridotto.

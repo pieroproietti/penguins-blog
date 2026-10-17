@@ -1,12 +1,12 @@
 ---
-title: "Guida rapida: dalla sorgente all'uovo in 5 passi"
+title: "Guida rapida: dal sistema installato alla ISO live (uovo) in 5 passi"
 ---
 
 import Translactions from '@site/src/components/Translactions';
 
 <Translactions />
 
-# Guida rapida: dalla sorgente all'uovo in 5 passi
+# Guida rapida: dal sistema installato alla ISO live (uovo) in 5 passi
 
 Se vuoi toccare con mano la potenza di `penguins-eggs` senza perderti in configurazioni complesse, questo percorso ti porta dall'installazione iniziale alla produzione della tua prima ISO live avviabile.
 
