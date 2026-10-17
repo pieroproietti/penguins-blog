@@ -42,7 +42,7 @@ import Translactions from '@site/src/components/Translactions';
 
 ## Manuali degli Strumenti (Percorso dal Desktop al Metallo)
 
-* 🖥️ **[1. Manuale di `penguins-gui` (Il Sensore Grafico)](./gui/index.md)** — Per chi parte dal desktop: avvio tramite AppImage o pacchetti nativi, creazione ISO con un clic, integrazione *Cook* (Recipe Picker) e avvio ISO da GRUB.
+* 🖥️ **[1. Manuale di `penguins-gui` (l'interfaccia grafica desktop)](./gui/index.md)** — Per chi parte dal desktop: avvio tramite AppImage o pacchetti nativi, creazione ISO con un clic, integrazione *Cook* (selettore di ricette) e avvio ISO da GRUB.
 * 👨‍🍳 **[2. Manuale di `penguins-chef` (`chef` — La Cucina Dichiarativa)](./chef/index.md)** — Per chi assembla il proprio sistema: il motore a ricette YAML, il contratto in 8 passi, il *dry-run* senza root e i costumi per plasmare Linux partendo da una base `naked`.
 * 🥚 **[3. Manuale di `penguins-eggs` (`eggs` — Il Motore di Remastering)](./eggs/index.md)** — Per utenti, sysadmin e sviluppatori: Filosofia, Quickstart, Command Reference completa, Multi-Boot con Krill Coexist, Architettura interna (`coa` + `oa` + `ell`), Server MCP e CI.
 * 🏛️ **[Eggs Users' Guide (Edizione storica TypeScript)](./eggs-users-guide.md)** — Il manuale storico di `penguins-eggs-legacy`.

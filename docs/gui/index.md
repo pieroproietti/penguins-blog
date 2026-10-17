@@ -8,9 +8,9 @@ import Translactions from '@site/src/components/Translactions';
 
 <Translactions />
 
-# Penguins GUI: il sensore grafico 🖥️🐧
+# Penguins GUI: l'interfaccia grafica desktop 🖥️🐧
 
-Nell'anatomia di `penguins-eggs`, l'efficienza nasce dalla divisione rigorosa dei compiti tra **il motore** (la CLI rocciosa e scriptabile) e **il sensore** (il cruscotto grafico leggero e reattivo).
+Nell'architettura di `penguins-eggs`, l'efficienza nasce dalla divisione rigorosa dei compiti tra **il motore** (la CLI rocciosa e scriptabile) e **l'interfaccia grafica desktop** (il cruscotto leggero e reattivo).
 
 **`penguins-gui`** è l'interfaccia grafica desktop minimale e indipendente per l'ecosistema Penguins, sviluppata in **Go** utilizzando il toolkit cross-platform **[Fyne](https://fyne.io)**.
 

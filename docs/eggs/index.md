@@ -25,7 +25,7 @@ Supporta nativamente le principali famiglie Linux (**Debian, Ubuntu, Devuan, Arc
 ### 1. Filosofia e Visione
 - **[Manifestum: Un famoso dialogo](./manifestum.md)** — Salviati, Sagredo e Simplicio discutono di materia, silicio ed evoluzione del software.
 - **[Filogenesi e Fondamenti di Eggs](./1.md)** — Dal "Brain inquinato" in Bash al modello a tre attori (`coa`, `oa`, `ell`), il Principio di Trasparenza e la Strategia Universale (*Eggs & Bananas*).
-- **[La Triade Organica: Eggs, Chef e GUI](./2.md)** — Come cooperano il motore di remastering (`eggs`), la cucina dichiarativa ([`penguins-chef`](../chef/index.md)) e il sensore grafico ([`penguins-gui`](../gui/index.md)).
+- **[La Triade Organica: Eggs, Chef e GUI](./2.md)** — Come cooperano il motore di remastering (`eggs`), la cucina dichiarativa ([`penguins-chef`](../chef/index.md)) e l'interfaccia grafica desktop ([`penguins-gui`](../gui/index.md)).
 
 ### 2. Manuale Utente e Sysadmin
 - **[Quickstart: Dalla sorgente all'uovo](./quickstart.md)** — Dal bootstrap del pacchetto e del repository fino alla produzione della prima ISO o di un clone in 5 passi.
