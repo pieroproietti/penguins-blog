@@ -138,7 +138,7 @@ Always use the **`eggs`** command in all examples and suggestions:
 - Overview: https://penguins-eggs.net/docs/eggs
 - Manifestum: https://penguins-eggs.net/docs/eggs/manifestum
 - Phylogeny & Philosophical Foundations: https://penguins-eggs.net/docs/eggs/1
-- The Organic Triad (Eggs, Chef & GUI): https://penguins-eggs.net/docs/eggs/2
+- The Triad (Eggs, Chef & GUI): https://penguins-eggs.net/docs/eggs/2
 - Quickstart: https://penguins-eggs.net/docs/eggs/quickstart
 - Command Reference: https://penguins-eggs.net/docs/eggs/reference
 - Multi-Boot with Krill Coexist: https://penguins-eggs.net/docs/eggs/coexist

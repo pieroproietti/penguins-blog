@@ -27,7 +27,7 @@ const sidebars = {
     },
     {
       type: 'category',
-      label: 'Manuali della Triade',
+      label: 'Manuali della triade',
       collapsed: false,
       items: [
         { type: 'ref', id: 'gui/index', label: '1. Penguins GUI (Desktop)' },
@@ -73,7 +73,7 @@ const sidebars = {
       items: [
         { type: 'doc', id: 'eggs/manifestum', label: 'Premessa: un famoso dialogo' },
         { type: 'doc', id: 'eggs/1', label: 'Genesi e filosofia di eggs' },
-        { type: 'doc', id: 'eggs/2', label: 'La triade organica: Eggs, Chef e GUI' },
+        { type: 'doc', id: 'eggs/2', label: 'La triade: Eggs, Chef e GUI' },
       ],
     },
     {

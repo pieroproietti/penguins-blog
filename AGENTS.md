@@ -44,4 +44,5 @@ pnpm serve          # serve the production build (also ./serve.sh)
 
 - New blog post: `blog/YYYY-MM-DD-kebab-case-slug.md` with frontmatter (`title`, `authors: pieroproietti`, `tags`); the filename becomes the URL slug, so typos there are permanent once published.
 - Posts and docs include `import Translactions from '@site/src/components/Translactions';` and `<Translactions />` after the frontmatter for instant multilingual translation links.
-- Piero handles git commits himself: prepare changes, then report what is ready.
+- Italian titles in `docs/` (`title:` frontmatter, `#`/`##`/`###` headings, and `sidebars.js` labels) must be in Italian sentence case: capitalize only the first word and proper nouns/acronyms (`C`, `Go`, `Krill`, `Calamares`, `MCP`, `CI`, etc.) — never use English Title Case.
+- Piero handles git commits himself (unless he explicitly asks to commit and push): prepare changes, then report what is ready.
