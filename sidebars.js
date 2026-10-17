@@ -142,7 +142,7 @@ const sidebars = {
     {
       type: 'doc',
       id: 'gui/funzionalita-e-remastering',
-      label: 'Remastering e Strumenti',
+      label: 'Rimasterizzazione e strumenti',
     },
     {
       type: 'doc',
@@ -152,7 +152,7 @@ const sidebars = {
     {
       type: 'doc',
       id: 'gui/architettura-e-sviluppo',
-      label: 'Architettura e Sviluppo',
+      label: 'Architettura e sviluppo',
     },
   ],
 };

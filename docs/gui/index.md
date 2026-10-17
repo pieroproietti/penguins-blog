@@ -8,7 +8,7 @@ import Translactions from '@site/src/components/Translactions';
 
 <Translactions />
 
-# Penguins GUI: Il sensore grafico 🖥️🐧
+# Penguins GUI: il sensore grafico 🖥️🐧
 
 Nell'anatomia di `penguins-eggs`, l'efficienza nasce dalla divisione rigorosa dei compiti tra **il motore** (la CLI rocciosa e scriptabile) e **il sensore** (il cruscotto grafico leggero e reattivo).
 
@@ -20,18 +20,18 @@ Porta la potenza della rimasterizzazione di `eggs` e della cucina dichiarativa d
 
 ---
 
-## 📦 Installazione e Primo Avvio (anche senza `eggs` preinstallato)
+## 📦 Installazione e primo avvio (anche senza `eggs` preinstallato)
 
 Uno dei punti di forza di `penguins-gui` è il suo **ciclo di vita indipendente**: puoi scaricarla e avviarla anche su una distribuzione Linux appena installata in cui `penguins-eggs` non è ancora presente.
 
-### 1. Avvio tramite AppImage (Universale)
+### 1. Avvio tramite AppImage (universale)
 Scarica l'ultima **AppImage** dalla pagina delle [release ufficiali su GitHub](https://github.com/pieroproietti/penguins-gui/releases/latest), rendila eseguibile e avviala come normale utente desktop:
 ```bash
 chmod +x penguins-gui-*.AppImage
 ./penguins-gui-*.AppImage
 ```
 
-### 2. Installazione tramite Pacchetti Nativi
+### 2. Installazione tramite pacchetti nativi
 Se preferisci il pacchetto nativo per la tua distribuzione, sono disponibili i pacchetti `.deb`, `.rpm` e `.pkg.tar.zst`:
 - **Debian / Ubuntu / Devuan / Linux Mint:**
   ```bash
@@ -58,7 +58,7 @@ Se avvii `penguins-gui` su una macchina ancora priva del motore `eggs`:
 
 ---
 
-## 🏗️ Posizionamento Architetturale
+## 🏗️ Posizionamento architetturale
 
 `penguins-gui` è progettata con una separazione modulare netta:
 
@@ -67,16 +67,16 @@ penguins-gui (Desktop GUI) ──► eggs (CLI) ──► coa (La Mente in Go) �
                            └─► chef (CLI)
 ```
 
-> **Cosa sono `coa` e `oa`?** Nel dialetto dell'autore, ***coa*** significa *"covare"* e ***oa*** significa *"uova"*. Quando premi un pulsante su `penguins-gui`, la GUI invoca il comando pubblico `eggs`: dietro le quinte, **`coa`** (l'orchestratore in Go, *la Mente*) analizza il sistema e compila il piano di volo formale, mentre **`oa`** (l'esecutore nativo in C, *il Braccio*) compie il lavoro pesante vicino al kernel (mount point, OverlayFS, utenti). Per approfondire, consulta la [Panoramica Architetturale di Eggs](../eggs/architecture/1.md).
+> **Cosa sono `coa` e `oa`?** Nel dialetto dell'autore, ***coa*** significa *"covare"* e ***oa*** significa *"uova"*. Quando premi un pulsante su `penguins-gui`, la GUI invoca il comando pubblico `eggs`: dietro le quinte, **`coa`** (l'orchestratore in Go, *la Mente*) analizza il sistema e compila il piano di volo formale, mentre **`oa`** (l'esecutore nativo in C, *il Braccio*) compie il lavoro pesante vicino al kernel (mount point, OverlayFS, utenti). Per approfondire, consulta la [panoramica architetturale di Eggs](../eggs/architecture/1.md).
 
-- **Zero Accoppiamento Interno:** La GUI non importa pacchetti interni di `eggs` o `chef`; comunica esclusivamente attraverso le loro interfacce pubbliche a riga di comando.
-- **Separazione dei Privilegi:** L'applicazione grafica gira sempre nello spazio dell'utente ordinario. Solo i singoli comandi che modificano il sistema vengono elevati al momento dell'esecuzione tramite **Polkit (`pkexec`)** o `sudo`.
-- **Trasparenza Totale:** Ogni comando eseguito e ogni riga di output vengono mostrati in tempo reale nel terminale integrato della finestra principale.
+- **Zero accoppiamento interno:** La GUI non importa pacchetti interni di `eggs` o `chef`; comunica esclusivamente attraverso le loro interfacce pubbliche a riga di comando.
+- **Separazione dei privilegi:** L'applicazione grafica gira sempre nello spazio dell'utente ordinario. Solo i singoli comandi che modificano il sistema vengono elevati al momento dell'esecuzione tramite **Polkit (`pkexec`)** o `sudo`.
+- **Trasparenza totale:** Ogni comando eseguito e ogni riga di output vengono mostrati in tempo reale nel terminale integrato della finestra principale.
 
 ---
 
 ## 🗺️ Esplora la documentazione di Penguins GUI
 
-- **[Voli di Remastering e Strumenti di Sistema](./1-funzionalita-e-remastering.md):** Le modalità di creazione ISO (Standard, Clone, Crypted LUKS), la gestione di `/etc/skel`, Calamares e l'avvio diretto da disco (`Boot ISO…`).
-- **[Cook: Penguins Chef dentro Penguins GUI](./2-chef-in-gui.md):** Come esplorare, simulare in *dry-run* e applicare le ricette YAML di `penguins-chef` con un clic tramite il **Recipe Picker** integrato.
-- **[Architettura, Requisiti e Sviluppo](./3-architettura-e-sviluppo.md):** Architettura interna Fyne + `CLIAdapter`, requisiti di sistema e compilazione dei pacchetti da sorgente.
+- **[Voli di rimasterizzazione e strumenti di sistema](./1-funzionalita-e-remastering.md):** Le modalità di creazione ISO (Standard, Clone, Crypted LUKS), la gestione di `/etc/skel`, Calamares e l'avvio diretto da disco (`Boot ISO…`).
+- **[Cook: Penguins Chef dentro Penguins GUI](./2-chef-in-gui.md):** Come esplorare, simulare in *dry-run* e applicare le ricette YAML di `penguins-chef` con un clic tramite il selettore di ricette integrato.
+- **[Architettura, requisiti e sviluppo](./3-architettura-e-sviluppo.md):** Architettura interna Fyne + `CLIAdapter`, requisiti di sistema e compilazione dei pacchetti da sorgente.

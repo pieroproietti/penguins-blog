@@ -1,7 +1,7 @@
 ---
 sidebar_position: 3
 title: "Cook: Chef dentro la GUI"
-description: Come usare il Recipe Picker integrato in penguins-gui per esplorare, simulare con dry-run e applicare le ricette di penguins-chef.
+description: Come usare il selettore di ricette integrato in penguins-gui per esplorare, simulare con dry-run e applicare le ricette di penguins-chef.
 ---
 
 import Translactions from '@site/src/components/Translactions';
@@ -14,7 +14,7 @@ L'integrazione nativa di **[`penguins-chef`](../chef/index.md)** all'interno di 
 
 ---
 
-## 🎨 Il pulsante "Cook" e il Recipe Picker
+## 🎨 Il pulsante "Cook" e il selettore di ricette
 
 Sulla barra degli strumenti principale di `penguins-gui` (e nel menu *Edit → Cook…*) è presente l'azione **Cook**, contrassegnata dall'icona della tavolozza dei colori.
 
@@ -40,16 +40,16 @@ Facendo clic su **Cook**, si apre la finestra interattiva **Penguins Chef — Re
 
    > **Filtro anti-Frankenstein:** All'interno di `penguins-gui`, le categorie strutturali di basso livello (`base`, `de`, `dm` e `costumes`) vengono **deliberatamente escluse** dalla lista. Poiché la GUI gira su un sistema che possiede già il proprio Display Manager e Desktop Environment attivi, questo filtro impedisce di sovrapporre ambienti grafici contrastanti. Per il provisioning da zero su una base *naked* a riga di comando, resta sempre disponibile la CLI completa di [`chef`](../chef/3-quickstart-e-cli.md).
 
-4. **Anteprima YAML e Metadati Live:**
+4. **Anteprima YAML e metadati in tempo reale:**
    Selezionando una ricetta nella colonna di sinistra, il pannello di destra mostra la descrizione, il percorso del file, le famiglie di distribuzioni supportate e il codice sorgente YAML completo della ricetta.
 
 ---
 
-## 👁️ Dry-Run e Applicazione con un clic
+## 👁️ Simulazione e applicazione con un clic
 
 Il principio fondamentale di `penguins-chef` — *non agire mai alla cieca* — è preservato integralmente nell'interfaccia grafica:
 
-- **👁 Dry Run (Senza Root):** Avvia la simulazione della ricetta selezionata senza richiedere la password di amministratore e senza modificare alcun file. L'intero piano di esecuzione (verifica repository, pacchetti da installare, file di configurazione, servizi) viene stampato in tempo reale nel log principale di `penguins-gui`.
+- **👁 Dry Run (senza root):** Avvia la simulazione della ricetta selezionata senza richiedere la password di amministratore e senza modificare alcun file. L'intero piano di esecuzione (verifica repository, pacchetti da installare, file di configurazione, servizi) viene stampato in tempo reale nel log principale di `penguins-gui`.
 - **✓ Apply Recipe:** Una volta verificato il piano, premi *Apply Recipe* per richiedere l'elevazione dei privilegi (Polkit/`sudo`) e cucinare effettivamente la ricetta sul sistema.
 
 ---
