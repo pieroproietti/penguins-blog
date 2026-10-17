@@ -11,7 +11,7 @@ import Translactions from '@site/src/components/Translactions';
 
 <Translactions />
 
-Questo post nasce al termine di un pomeriggio passato a limare la documentazione di `penguins-eggs`, `penguins-gui` e la pagina principale del sito insieme alla AI.
+Questo post nasce al termine di un pomeriggio passato a limare la documentazione di `penguins-gui`, `penguins-eggs`, `penguins-chef` e la pagina principale del sito insieme alla AI.
 
 Non stavamo scrivendo un nuovo modulo in C o in Go, né stavamo risolvendo un bug del kernel: stavamo facendo quel lavoro silenzioso di rifinitura su parole, titoli e pulsanti che fa la differenza tra un progetto buttato lì e uno strumento accogliente per chi arriva da fuori. Ed è proprio in queste pieghe apparentemente piccole che si capisce cosa significhi davvero, oggi, **lavorare con la AI**.
 
@@ -23,7 +23,7 @@ La AI aveva aiutato a stendere in tempi rapidissimi una mole impressionante di d
 
 - **I titoli con le Maiuscole su Ogni Parola:** un classico tic ereditato dall'inglese (*Title Case*). In inglese si scrive così; in italiano no, appesantisce la pagina e sa subito di traduzione meccanica.
 - **Le metafore che prendono la mano:** nei manuali avevamo definito `penguins-gui` come *"il sensore grafico"*. Dal punto di vista interno di `eggs`, il ragionamento filava pure: la CLI è il motore e la GUI raccoglie il nostro input. Ma provate a mettervi nei panni di un utente normale che cerca un programma per il proprio desktop e si trova davanti un *"sensore grafico"*: la faccenda diventa contorta. Un utente si aspetta semplicemente **l'interfaccia grafica desktop**.
-- **Gli aggettivi di troppo:** *"la triade organica"* quando basta — ed è molto più forte — *"la triade"*; *"dalla sorgente all'uovo"* nella guida rapida, che fa subito pensare al codice sorgente da compilare anziché al partire da un sistema già installato per arrivare alla ISO live; oppure i pulsanti `Quickstart GUI` e `Quickstart CLI` sulla home page che sul monitor del PC stavano benissimo, ma sullo schermo del telefonino sbordavano, mentre accorciandoli in `GUI` e `CLI` (con un semplice tooltip e l'aggiunta del tasto `Video`) tutto torna a respirare.
+- **Qualche confusione:** *"dalla sorgente all'uovo"* nella guida rapida, che fa subito pensare al codice sorgente da compilare anziché al partire da un sistema già installato per arrivare alla ISO live; oppure i pulsanti `Quickstart GUI` e `Quickstart CLI` sulla home page che sul monitor del PC stavano benissimo, ma sullo schermo del telefonino sbordavano, mentre accorciandoli in `GUI` e `CLI` (con un semplice tooltip e l'aggiunta del tasto `Video`) tutto torna a respirare.
 
 C'è stato un momento significativo durante la sessione: appena ho fatto notare che *"sensore grafico"* suonava contorto, la AI è partita in quarta per sostituirlo al volo in tutti i file. L'ho fermata: *«Non ti chiedo di cambiarlo subito, ma di leggere la pagina e ragionare insieme su un termine più adatto»*.
 
@@ -49,6 +49,7 @@ In `penguins-eggs` abbiamo adottato la metafora della **mente** (`coa`) e del **
 
 Ma la rotta, la scelta delle parole, la responsabilità di ciò che finisce in un commit e il piacere stesso di costruire qualcosa che funzioni e sia chiaro per gli altri, quelli restano nostri. Ed è giusto e bello che sia così.
 
+## Conclusioni
 Forse, la condanna è rileggere, magari tornarci sopra dopo una bella dormita. 
 
 Ma è spettacolare, non avrei mai scritto questo testo dopo un pomeriggio e forse una mattina a rileggere e correggere il tutto.
