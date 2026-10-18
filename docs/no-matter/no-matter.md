@@ -1,5 +1,5 @@
 ---
-title: "Premessa: La continuità dell'esperienza"
+title: "La continuità dell'esperienza"
 ---
 
 import Translactions from '@site/src/components/Translactions';
@@ -9,7 +9,7 @@ import Translactions from '@site/src/components/Translactions';
 *«What is mind? No matter. What is matter? Never mind.»*  
 — Old English joke
 
-# Premessa: La continuità dell'esperienza
+# La continuità dell'esperienza
 
 Se chiedessi a un ingegnere tradizionale che cos'è un sistema operativo, ti parlerebbe di megabyte, di kernel, di file system e di tabelle di partizioni. Ti descriverebbe la materia: il ferro grezzo, i transistor di silicio che scattano a miliardi di cicli al secondo, i bit che scorrono veloci e ciechi nei circuiti.
 
