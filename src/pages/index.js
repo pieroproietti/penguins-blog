@@ -36,6 +36,12 @@ function HomepageHeader() {
           </Link>
           <Link
             className="button button--secondary button--lg"
+            title="Access statistics"
+            to="https://penguins-eggs.net/access/">
+            Statistics
+          </Link>
+          <Link
+            className="button button--secondary button--lg"
             to="https://penguins-eggs.net/basket/">
             Downloads
           </Link>
