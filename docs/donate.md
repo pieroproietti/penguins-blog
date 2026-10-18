@@ -16,4 +16,4 @@ I currently support several server-side and desktop distributions with [native r
 
 [![donate](https://img.shields.io/badge/Donate-00457C?style=for-the-badge&logo=paypal&logoColor=white)](https://paypal.me/penguinseggs)
 
-![](https://penguins-eggs.net/img/penguins-header.png)
+[](https://penguins-eggs.net/img/penguins-header.png)
