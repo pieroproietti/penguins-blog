@@ -30,23 +30,25 @@ function HomepageHeader() {
           </Link>
           <Link
             className="button button--secondary button--lg"
-            title="Watch promo video"
+            title="Watch demonstration video"
             to="https://penguins-eggs.net/video/video_en.mp4">
             Video
           </Link>
           <Link
             className="button button--secondary button--lg"
-            title="Access statistics"
-            to="https://penguins-eggs.net/access/">
-            Statistics
-          </Link>
-          <Link
-            className="button button--secondary button--lg"
+            title="Download packages and ISOS"
             to="https://penguins-eggs.net/basket/">
             Downloads
           </Link>
           <Link
+            className="button button--secondary button--lg"
+            title="Access statistics"
+            to="https://penguins-eggs.net/access/">
+            Stat
+          </Link>
+          <Link
             className={clsx('button button--secondary button--lg', styles.donateButton)}
+            title="Donate"
             to="/docs/donate">
             Donate
           </Link>
