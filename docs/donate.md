@@ -7,9 +7,9 @@ lang: en
 import Translactions from '@site/src/components/Translactions';
 
 <Translactions />
-![](https://penguins-eggs.net/img/penguins-header.png)
 
 ## A professional and universal remastering tool for all major distributions
+![](https://penguins-eggs.net/img/penguins-header.png)
 
 It took years of work to create the penguins-eggs, and I also incurred expenses for renting the site and subscribing to Google Gemini, for the artificial intelligence that is now indispensable.
 
