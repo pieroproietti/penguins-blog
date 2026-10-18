@@ -7,7 +7,7 @@ lang: en
 import Translactions from '@site/src/components/Translactions';
 
 <Translactions />
-|[](https://penguins-eggs.net/img/penguins-header.png)
+![](https://penguins-eggs.net/img/penguins-header.png)
 
 ## A professional and universal remastering tool for all major distributions
 
