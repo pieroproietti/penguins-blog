@@ -42,9 +42,9 @@ function HomepageHeader() {
           </Link>
           <Link
             className="button button--secondary button--lg"
-            title="Access statistics"
-            to="https://penguins-eggs.net/access/">
-            Stat
+            title="Penguins Eggs Worldwide Usage"
+            to="https://penguins-eggs.net/api/census">
+            Stats
           </Link>
           <Link
             className={clsx('button button--secondary button--lg', styles.donateButton)}
