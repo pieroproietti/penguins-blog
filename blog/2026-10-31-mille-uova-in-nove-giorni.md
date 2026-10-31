@@ -52,7 +52,6 @@ L'Europa raccoglie quasi la metà degli eventi mondiali (**47,7%**):
 * **La Germania (7,4%)** e **la Francia (4,2%)** sono motori instancabili su Linux Mint, Ubuntu, CachyOS e Manjaro.
 * Dall'Est arriva una chicca tecnica: in **Russia** qualcuno ha rimasterizzato con successo **Astra Linux** con il suo desktop proprietario **Fly** su hardware reale, mentre in **Ucraina** si clonano sistemi leggeri con Debian, XFCE e **BunsenLabs**. Davanti a due popoli vicini che condividono anche la passione per la tecnica ed il software libero, e fa ancora più male pensare alla tragedia della guerra e alle vite spezzate: la speranza è che torni presto la ragionevolezza e la pace.
 
-### 4. Medio Oriente: Fucine indipendenti tra Iran e Turchia
 ### 4. Medio Oriente: Fucine indipendenti, resilienza e reti invisibili
 Qui si respira forte la voglia di indipendenza tecnologica, ma anche il riflesso delle tensioni che attraversano la regione:
 
