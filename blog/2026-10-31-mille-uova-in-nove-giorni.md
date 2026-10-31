@@ -75,6 +75,22 @@ Scorrendo la lista delle 41 distribuzioni rilevate in soli nove giorni, oltre al
 
 > *Quirinux, Soplos, OpenKylin, CachyOS, Crow, Fleurdelix, Fantastic, Omarchy, BigLinux, OpenOS, Zorin, Aquarevive, EndeavourOS, KDE Neon, Synex, AnduinOS, JCN, ParsOS, Sparky, Nexiquar, Antarctic, BigCommunity, ObsidianOS, Parrot, Pop!_OS, Astra, BunsenLabs, KayelOS, Lware, PawnOS, Siduction.*
 
+## L'albero genealogico: quando l'uovo si schiude
+
+C'è un parametro nei dati del censimento che racconta una storia ancora più profonda delle semplici statistiche geografiche: il **`parent_id`**. 
+
+In Penguins' Eggs, ogni volta che viene generata una ISO, a quella macchina "madre" viene associato un identificativo unico. Quando poi quell'uovo viene portato su un altro computer e installato tramite `krill` (`sysinstall`), il nuovo sistema registra e trasmette il codice identificativo della matrice da cui è nato.
+
+Guardando questi legami di parentela emergono dinamiche affascinanti:
+
+* **L'albero a raggiera (una madre, molti figli):** è lo schema tipico delle aule informatiche e dei parchi macchine aziendali. In **Québec**, a **Nairobi** e in **Vietnam**, vediamo un'unica macchina madre che prepara la distribuzione ideale e, nel giro di poche ore, genera una covata di 4 o 5 installazioni figlie su computer fisici indipendenti.
+* **La staffetta generazionale (madre -> figlia -> nipote):** è il ciclo biologico dell'open source nella sua forma più pura. Una macchina nata da un'installazione (`sysinstall`) viene riconfigurata, arricchita di nuovi pacchetti e a sua volta rimasterizzata (`remaster`), diventando una nuova madre che dà vita a una seconda generazione di sistemi. 
+* **La gemmazione (il backup di se stessi):** in moltissimi casi, soprattutto tra gli utenti di workstation personali in Italia, Giappone e Germania con il flag `--clone`, il `parent_id` traccia la storia del disaster recovery e dell'aggiornamento hardware. Una macchina clona se stessa per rinascere identica su un nuovo disco NVMe o su un nuovo portatile.
+
+In termini biologici, il `parent_id` dimostra che Penguins' Eggs non è un binario morto: trasforma ogni singola installazione in un organismo vitale, capace di riprodursi, evolvere e adattarsi all'ambiente in cui viene trapiantato.
+
+## Conclusioni
+
 Quando ho iniziato a scrivere questo progetto a Roma, l'idea era semplice: dare a chiunque la libertà di prendere il proprio sistema Linux, chiuderlo in un uovo (una ISO live installabile) e portarlo con sé o regalarlo agli altri, indipendentemente dalla distribuzione usata. Anzi a dire il vero, l'idea era ed è rendere il proprio sistema fertile e riproduttivo, che è la soluzione più semplice di tanti mali e favorisce la diffusione.
 
 Vedere che oggi quell'uovo schiude sistemi operativi in un'aula del Québec, su un vecchio Chromebook nel Midwest, in un centro di formazione a Nairobi e su una workstation con openKylin in Cina è la ricompensa più grande che potessi desiderare.
