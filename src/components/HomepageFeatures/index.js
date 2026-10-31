@@ -40,7 +40,7 @@ const FeatureList = [
     description: (
       <>
         Penguins' eggs started on <a href="/debian">Debian</a> in 2017, it still supports Buster, Bullseye,
-        <a href="/debian">&nbsp;Trixie&nbsp;</a>.
+        <a href="/debian">&nbsp;Debian&nbsp;</a>.
       </>
     ),
   },
@@ -51,7 +51,6 @@ const FeatureList = [
     description: (
       <>
         <a href="/devuan/">Devuan</a>:&nbsp;
-        <a href="/devuan/">excalibur</a>
       </>
     ),
   },
