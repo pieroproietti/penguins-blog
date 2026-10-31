@@ -1,20 +1,15 @@
-# Devuan
+# Devuan Excalibur
 ![](/img/devuan.svg)
 
-Devuan GNU/Linux is a free software operating system for your computer. Free software means you are free to use, copy and distribute, study, change the software, and share your modifications with the community.
+## Penguins' eggs remastered ISO's
+All ISO's have their user credentials set to ```live/evolution``` and ```root/evolution```.
 
-## Penguins' eggs remastered version
-* [Devuan 5 daedalus](/devuan/daedalus/)
-* [Devuan 6 excalibur](/devuan/excalibur/)
-
-## Penguins' eggs packages
-Here you can download actual packages to install and reproduce your system.
-
-[Download](https://penguins-eggs.net/basket/packages/debs)
+* [ISOs](https://drive.google.com/drive/folders/1FYZPsIkYiJozfYIF6yqDVFSa6-c0eVC4)
+* [Packages](https://drive.google.com/drive/folders/1xfyXIfdSv4tA74i_HNZh8xJXxGvBp-GV)
 
 ## Advice
 
-You can continue on [Devuan discussion](https://github.com/pieroproietti/penguins-blog/discussions/28)
+You can continue on [Devuan Excalibur discussion](https://github.com/pieroproietti/penguins-blog/discussions/30)
 
 ## Disclaim
 __Please note what this project is in no way connected to the original distro in any official way, it’s just my personal experiment.__
