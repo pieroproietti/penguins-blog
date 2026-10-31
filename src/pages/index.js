@@ -85,6 +85,25 @@ export default function Home() {
             Your browser does not support the video tag.
           </video>
         </div>
+        <div className={clsx('container', styles.wechatContainer)}>
+          <div className={styles.wechatCard}>
+            <a
+              href={useBaseUrl('/img/wechat-artisan.png')}
+              target="_blank"
+              rel="noopener noreferrer"
+              title="WeChat QR code">
+              <img
+                className={styles.wechatImage}
+                src={useBaseUrl('/img/wechat-artisan.png')}
+                alt="Scan with WeChat"
+                width="820"
+                height="1262"
+                loading="lazy"
+              />
+            </a>
+            <p className={styles.wechatCaption}>Scan with WeChat</p>
+          </div>
+        </div>
       </main>
     </Layout>
   );

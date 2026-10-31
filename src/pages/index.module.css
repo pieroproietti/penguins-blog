@@ -61,3 +61,40 @@
   --ifm-button-background-color: #005fa3;
   --ifm-button-border-color: #005fa3;
 }
+
+.wechatContainer {
+  padding-top: 1rem;
+  padding-bottom: 3rem;
+  display: flex;
+  justify-content: center;
+}
+
+.wechatCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.wechatImage {
+  display: block;
+  width: 100%;
+  max-width: 260px;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.wechatImage:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.2);
+}
+
+.wechatCaption {
+  margin-top: 0.75rem;
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: var(--ifm-color-emphasis-700);
+}
+
