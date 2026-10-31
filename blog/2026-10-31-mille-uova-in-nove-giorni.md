@@ -11,8 +11,6 @@ import Translactions from '@site/src/components/Translactions';
 
 <Translactions />
 
-# Mille uova in nove giorni: il mondo visto da Penguins' Eggs
-
 Nove giorni fa abbiamo acceso **`penguins-census`**, un piccolo faro silenzioso per capire cosa succede là fuori quando qualcuno lancia `eggs remaster` o `eggs sysinstall`. 
 
 Non volevamo tracciare gli utenti — non ci interessa sapere *chi* siete — ma volevamo rispondere a una domanda semplice che ogni sviluppatore open source si fa quando lavora chiuso nella sua stanza: **questo codice serve davvero a qualcuno?**
