@@ -5,9 +5,9 @@ title: "Broca e Transformer - la tesi mancante"
 lang: it
 enableComments: true
 ---
-import Translactions from '@site/src/components/Translactions';
+import Translations from '@site/src/components/Translations';
 
-<Translactions />
+<Translations />
 
 # La Tesi mancante: L’Area di Broca come Transformer e la Geometria delle Pulsioni
 

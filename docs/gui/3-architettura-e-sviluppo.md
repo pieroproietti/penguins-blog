@@ -4,9 +4,9 @@ title: Architettura e sviluppo
 description: Architettura interna Fyne + CLIAdapter, requisiti di sistema e compilazione multi-distro di penguins-gui.
 ---
 
-import Translactions from '@site/src/components/Translactions';
+import Translations from '@site/src/components/Translations';
 
-<Translactions />
+<Translations />
 
 # Architettura, requisiti e sviluppo
 

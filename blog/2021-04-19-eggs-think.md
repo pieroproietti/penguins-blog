@@ -5,9 +5,9 @@ title: eggs think
 lang: en
 enableComments: true
 ---
-import Translactions from '@site/src/components/Translactions';
+import Translations from '@site/src/components/Translations';
 
-<Translactions />
+<Translations />
 
 New ideas are boiling in the pot, I'm trying to improve the eggs interface using react but always staying within the CLI.
 

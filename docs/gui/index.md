@@ -4,9 +4,9 @@ title: Introduzione a Penguins GUI
 description: Il cruscotto grafico indipendente in Go e Fyne per governare penguins-eggs e penguins-chef dalla scrivania.
 ---
 
-import Translactions from '@site/src/components/Translactions';
+import Translations from '@site/src/components/Translations';
 
-<Translactions />
+<Translations />
 
 # Penguins GUI: l'interfaccia grafica desktop 🖥️🐧
 

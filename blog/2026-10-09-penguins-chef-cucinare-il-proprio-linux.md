@@ -7,9 +7,9 @@ lang: it
 enableComments: true
 ---
 
-import Translactions from '@site/src/components/Translactions';
+import Translations from '@site/src/components/Translations';
 
-<Translactions />
+<Translations />
 
 Nel post precedente parlavo di Plastilinux: della voglia di riprenderci il controllo del ferro, di partire da un sistema e plasmarlo come vogliamo invece di accettare immagini pre-confezionate e blindate.
 

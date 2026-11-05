@@ -5,9 +5,9 @@ title: Disperato erotico stomp
 lang: it
 enableComments: true
 ---
-import Translactions from '@site/src/components/Translactions';
+import Translations from '@site/src/components/Translations';
 
-<Translactions />
+<Translations />
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/jSQ_ovNRIec" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 

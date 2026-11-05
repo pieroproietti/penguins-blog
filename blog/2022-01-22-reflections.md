@@ -5,9 +5,9 @@ title: Reflections
 lang: en
 enableComments: true
 ---
-import Translactions from '@site/src/components/Translactions';
+import Translations from '@site/src/components/Translations';
 
-<Translactions />
+<Translations />
 
 It's amazing how after so much effort to create a unique remastering tool, it turns out well.
 

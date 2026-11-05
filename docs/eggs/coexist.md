@@ -2,9 +2,9 @@
 title: "Guida pratica: avvio multiplo Linux con penguins-eggs e Krill Coexist"
 ---
 
-import Translactions from '@site/src/components/Translactions';
+import Translations from '@site/src/components/Translations';
 
-<Translactions />
+<Translations />
 
 # Guida pratica: avvio multiplo Linux con penguins-eggs e Krill Coexist
 

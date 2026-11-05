@@ -2,9 +2,9 @@
 title: "La continuità dell'esperienza"
 ---
 
-import Translactions from '@site/src/components/Translactions';
+import Translations from '@site/src/components/Translations';
 
-<Translactions />
+<Translations />
 
 *«What is mind? No matter. What is matter? Never mind.»*  
 — Old English joke

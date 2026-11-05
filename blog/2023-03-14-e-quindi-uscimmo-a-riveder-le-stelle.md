@@ -5,9 +5,9 @@ title: E quindi uscimmo a riveder le stelle
 lang: it
 enableComments: true
 ---
-import Translactions from '@site/src/components/Translactions';
+import Translations from '@site/src/components/Translations';
 
-<Translactions />
+<Translations />
 
 ![Dante Alighieri](/images/dantealighieri.webp)
 ...

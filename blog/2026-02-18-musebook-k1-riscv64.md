@@ -5,9 +5,9 @@ title: musebook-k1-riscv64
 lang: en
 enableComments: true
 ---
-import Translactions from '@site/src/components/Translactions';
+import Translations from '@site/src/components/Translations';
 
-<Translactions />
+<Translations />
 Era la fine di dicembre, pioveva molto e faceva freddo, giorni di festa, buoni per sviluppare.
 
 Non ricordo perchè mi venne di provare la virtualizzazione di QEMU per l'architettura RISCV64, fatto sta che mi misi all'opera e. credo che già per la festa della befana avessi una versione funzionante di eggs per RISCV64 e la rimasterizzazione completa di Debian 13 ed Ubuntu 26.04.

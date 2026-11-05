@@ -5,9 +5,9 @@ title: "Distroclone vs Penguins Eggs"
 lang: it
 enableComments: true
 ---
-import Translactions from '@site/src/components/Translactions';
+import Translations from '@site/src/components/Translations';
 
-<Translactions />
+<Translations />
 
 Nota: Questa comparazione è interamente il risultato di una richiesta all'AI di Google Gemini
 

@@ -6,9 +6,9 @@ lang: it
 enableComments: true
 ---
 
-import Translactions from '@site/src/components/Translactions';
+import Translations from '@site/src/components/Translations';
 
-<Translactions />
+<Translations />
 
 Ho iniziato le `denos' eggs` come un esperimento per capire se [cliffy](https://deno.land/x/cliffy@v1.0.0-rc.3) potesse essere utilizzata per rifare `eggs`. L'esperimento sembrerebbe riuscito.
 

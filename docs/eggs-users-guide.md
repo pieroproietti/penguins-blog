@@ -6,9 +6,9 @@ sidebar_position: 10
 lang: it
 enableComments: true
 ---
-import Translactions from '@site/src/components/Translactions';
+import Translations from '@site/src/components/Translations';
 
-<Translactions />
+<Translations />
 
 In case of problems with translation links, You can consult a detailed [README](https://github.com/pieroproietti/penguins-eggs-legacy#readme) in English on the repository.
 

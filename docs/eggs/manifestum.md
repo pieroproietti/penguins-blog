@@ -2,9 +2,9 @@
 title: "Manifestum: un famoso dialogo..."
 ---
 
-import Translactions from '@site/src/components/Translactions';
+import Translations from '@site/src/components/Translations';
 
-<Translactions />
+<Translations />
 
 # Manifestum: un famoso dialogo...
 

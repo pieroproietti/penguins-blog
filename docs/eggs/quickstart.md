@@ -2,9 +2,9 @@
 title: "Guida rapida: dal sistema installato alla ISO live (uovo) in 5 passi"
 ---
 
-import Translactions from '@site/src/components/Translactions';
+import Translations from '@site/src/components/Translations';
 
-<Translactions />
+<Translations />
 
 # Guida rapida: dal sistema installato alla ISO live (uovo) in 5 passi
 

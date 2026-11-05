@@ -1,7 +1,7 @@
 import React from 'react';
 import {useLocation} from '@docusaurus/router';
 
-export default function Translactions() {
+export default function Translations() {
   const { pathname } = useLocation();
   
   // Lista delle lingue supportate

@@ -5,9 +5,9 @@ title: eggs update -i
 lang: en
 enableComments: true
 ---
-import Translactions from '@site/src/components/Translactions';
+import Translations from '@site/src/components/Translations';
 
-<Translactions />
+<Translations />
 
 A few days ago, I was thinking about a way to solve the problem of updating eggs in case it is installed as a deb package, the mode that seems to be the most used.
 

@@ -6,9 +6,9 @@ lang: it
 enableComments: true
 ---
 
-import Translactions from '@site/src/components/Translactions';
+import Translations from '@site/src/components/Translations';
 
-<Translactions />
+<Translations />
 
 ![remote space](/images/spatiul-cosmic.jpg) 
 Foto concessa da: [publicdomainpictures](https://www.publicdomainpictures.net/en/view-image.php?image=31051&picture=space)

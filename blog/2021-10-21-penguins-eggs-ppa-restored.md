@@ -5,9 +5,9 @@ title: penguins-eggs-ppa
 lang: en
 enableComments: true
 ---
-import Translactions from '@site/src/components/Translactions';
+import Translations from '@site/src/components/Translations';
 
-<Translactions />
+<Translations />
 
 After a bit of trial and error I finally managed to recreate the ppa [penguins-eggs-ppa](https://pieroproietti.github.io/penguins-eggs-ppa/) repository.
 

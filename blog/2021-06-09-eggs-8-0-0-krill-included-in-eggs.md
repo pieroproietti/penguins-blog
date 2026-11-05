@@ -5,9 +5,9 @@ title: eggs 8.0.0 krill and arm64 version
 lang: en
 enableComments: true
 ---
-import Translactions from '@site/src/components/Translactions';
+import Translations from '@site/src/components/Translations';
 
-<Translactions />
+<Translations />
 
 After so long time we have a major version, why?
 

@@ -6,9 +6,9 @@ lang: it
 enableComments: true
 ---
 
-import Translactions from '@site/src/components/Translactions';
+import Translations from '@site/src/components/Translations';
 
-<Translactions />
+<Translations />
 
 Oggi, dopo molto tempo, torno a scrivere qualcosa sul blog, tanto tempo è passato da fine gennaio, quando ho presentato PenGUI ancora in stato non funzionante.
 

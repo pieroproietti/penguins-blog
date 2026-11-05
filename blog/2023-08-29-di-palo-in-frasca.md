@@ -6,9 +6,9 @@ lang: it
 enableComments: true
 ---
 
-import Translactions from '@site/src/components/Translactions';
+import Translations from '@site/src/components/Translations';
 
-<Translactions />
+<Translations />
 
 Non riesco a trovare ulteriori informazioni su come fare installare btrfs su una distribuzione tipo Debian o Arch, o meglio, non riesco a reperire quello che mi manca:
 

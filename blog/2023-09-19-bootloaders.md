@@ -6,9 +6,9 @@ lang: en
 enableComments: true
 ---
 
-import Translactions from '@site/src/components/Translactions';
+import Translations from '@site/src/components/Translations';
 
-<Translactions />
+<Translations />
 
 So far eggs is only compatible with grub, but other bootloaders will need to be included, I noticed on [archinstall](https://wiki.archlinux.org/title/archinstall) the possibility of installing:
 * systemd-boot

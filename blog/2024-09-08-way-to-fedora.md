@@ -6,9 +6,9 @@ lang: it
 enableComments: true
 ---
 
-import Translactions from '@site/src/components/Translactions';
+import Translations from '@site/src/components/Translations';
 
-<Translactions />
+<Translations />
 
 E così, ridendo e scherzando è finita l'estate ed è maturato l'esordio di fedora 40 su penguins-eggs!
 

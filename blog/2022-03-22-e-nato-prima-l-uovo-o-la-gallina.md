@@ -4,9 +4,9 @@ slug: e-nato-prima-l-uovo-o-la-gallina
 title: E' nato prima l'uovo o la gallina?
 lang: it
 ---
-import Translactions from '@site/src/components/Translactions';
+import Translations from '@site/src/components/Translations';
 
-<Translactions />
+<Translations />
 
 
 Quante volte da bambini ci siamo fatti questa domanda? Da grandi, forse abbiamo trovato anche la risposta: è nato prima l'uovo.

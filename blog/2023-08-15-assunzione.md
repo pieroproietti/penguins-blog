@@ -6,9 +6,9 @@ lang: it
 enableComments: true
 ---
 
-import Translactions from '@site/src/components/Translactions';
+import Translations from '@site/src/components/Translations';
 
-<Translactions />
+<Translations />
 
 Oggi per la Chiesa è la festa dell'Assunta, «La Vergine Maria, completato il corso della sua vita terrena, fu assunta alla gloria celeste in anima e corpo».
 

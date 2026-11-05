@@ -5,9 +5,9 @@ title: Le specie presenti
 lang: it
 enableComments: true
 ---
-import Translactions from '@site/src/components/Translactions';
+import Translations from '@site/src/components/Translations';
 
-<Translactions />
+<Translations />
 
 Continuando la nostra metafora abbiamo ormai quattro specie presenti:
 

@@ -4,9 +4,9 @@ title: Rimasterizzazione e strumenti
 description: Creazione di ISO Standard, Clone e Crypted LUKS, configurazione di Calamares, /etc/skel e avvio ISO da GRUB in penguins-gui.
 ---
 
-import Translactions from '@site/src/components/Translactions';
+import Translations from '@site/src/components/Translations';
 
-<Translactions />
+<Translations />
 
 # Voli di rimasterizzazione e strumenti di sistema
 

@@ -5,9 +5,9 @@ title: Well, the big moment has come!
 lang: en
 enableComments: true
 ---
-import Translactions from '@site/src/components/Translactions';
+import Translations from '@site/src/components/Translations';
 
-<Translactions />
+<Translations />
 
 # Eggs compatible with Debian 10, Ubuntu 20.20, Ubuntu 18.04, Linux Mint 20 and Linux Mint 19.3
 

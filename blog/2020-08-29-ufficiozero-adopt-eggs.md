@@ -5,9 +5,9 @@ title: UfficioZero adopt eggs
 lang: eng
 enableComments: true
 ---
-import Translactions from '@site/src/components/Translactions';
+import Translations from '@site/src/components/Translations';
 
-<Translactions />
+<Translations />
 
 ## ![ZERO OFFICE](https://www.ufficiozero.org/template/logo2.png) 
 

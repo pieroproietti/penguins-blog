@@ -4,9 +4,9 @@ title: Architettura e Contratto
 description: Il contratto di esecuzione in 8 passi, i backend multi-distribuzione e la gestione automatica dell'init system in penguins-chef.
 ---
 
-import Translactions from '@site/src/components/Translactions';
+import Translations from '@site/src/components/Translations';
 
-<Translactions />
+<Translations />
 
 # Architettura e Contratto di Esecuzione
 

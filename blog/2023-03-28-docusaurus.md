@@ -5,9 +5,9 @@ title: Docusaurus
 lang: it
 enableComments: true
 ---
-import Translactions from '@site/src/components/Translactions';
+import Translations from '@site/src/components/Translations';
 
-<Translactions />
+<Translations />
 
 E' da qualche tempo che cercavo qualcosa di più strutturato per il blog, qualcosa di semplice ed allo stesso modo potente, in grado di crescere.
 

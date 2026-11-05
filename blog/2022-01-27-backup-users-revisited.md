@@ -5,9 +5,9 @@ title: Backup useres revisited
 lang: it
 enableComments: true
 ---
-import Translactions from '@site/src/components/Translactions';
+import Translations from '@site/src/components/Translations';
 
-<Translactions />
+<Translations />
 
 E' da qualche tempo che sto pensando di rendere eggs utile per effettuare backup,
 

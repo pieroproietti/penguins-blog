@@ -5,9 +5,9 @@ title: That will be the future
 lang: en
 enableComments: true
 ---
-import Translactions from '@site/src/components/Translactions';
+import Translations from '@site/src/components/Translations';
 
-<Translactions />
+<Translations />
 
 Lately, before releasing version 7.6.47-1, I had a strong but constructive discussion with one of my users. 
 

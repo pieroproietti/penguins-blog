@@ -4,9 +4,9 @@ title: Introduzione a Penguins' Eggs
 description: Il motore universale di remastering e clonazione Linux basato sull'architettura ibrida in Go (coa) e C (oa).
 ---
 
-import Translactions from '@site/src/components/Translactions';
+import Translations from '@site/src/components/Translations';
 
-<Translactions />
+<Translations />
 
 # 🥚 Penguins' Eggs: il motore della rimasterizzazione
 

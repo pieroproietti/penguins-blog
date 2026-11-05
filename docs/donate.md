@@ -4,9 +4,9 @@ authors: pieroproietti
 slug: donate
 lang: en
 ---
-import Translactions from '@site/src/components/Translactions';
+import Translations from '@site/src/components/Translations';
 
-<Translactions />
+<Translations />
 
 ### A professional and universal remastering tool for all major distributions
 

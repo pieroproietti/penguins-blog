@@ -7,9 +7,9 @@ lang: it
 enableComments: true
 ---
 
-import Translactions from '@site/src/components/Translactions';
+import Translations from '@site/src/components/Translations';
 
-<Translactions />
+<Translations />
 
 Questo post nasce al termine di un pomeriggio passato a limare la documentazione di `penguins-gui`, `penguins-eggs`, `penguins-chef` e la pagina principale del sito insieme alla AI.
 

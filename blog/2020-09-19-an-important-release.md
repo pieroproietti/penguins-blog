@@ -5,9 +5,9 @@ title: An important release
 lang: en
 enableComments: true
 ---
-import Translactions from '@site/src/components/Translactions';
+import Translations from '@site/src/components/Translations';
 
-<Translactions />
+<Translations />
 
 Same days ago I released eggs-7.6.39_1.deb
 

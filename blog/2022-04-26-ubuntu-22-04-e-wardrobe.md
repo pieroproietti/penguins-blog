@@ -5,9 +5,9 @@ title: Ubuntu 22.04 e wardrobe
 lang: it
 enableComments: true
 ---
-import Translactions from '@site/src/components/Translactions';
+import Translations from '@site/src/components/Translations';
 
-<Translactions />
+<Translations />
 
 Da qualche giorno è uscito Ubuntu 22.04 l'ultima release LTS di Ubuntu.
 

@@ -5,9 +5,9 @@ title: 'Penguin’s eggs: utilitário para criar sua própria distribuição Lin
 lang: en
 enableComments: true
 ---
-import Translactions from '@site/src/components/Translactions';
+import Translations from '@site/src/components/Translations';
 
-<Translactions />
+<Translations />
 
 Tutorial en portuguese on the [SempreUpdate](https://sempreupdate.com.br/) a brasilian magazine specialized in technology. The main focus is Linux, Open Source, Android and other subjects.
 

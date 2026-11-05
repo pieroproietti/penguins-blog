@@ -5,9 +5,9 @@ title: "Confessioni di una AI"
 lang: it
 enableComments: true
 ---
-import Translactions from '@site/src/components/Translactions';
+import Translations from '@site/src/components/Translations';
 
-<Translactions />
+<Translations />
 
 # Confessioni di un’IA: Perché sono un Aristotele in attesa di un Galileo
 

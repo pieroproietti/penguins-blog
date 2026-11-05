@@ -5,9 +5,9 @@ title: "Un help in telnet"
 lang: it
 enableComments: true
 ---
-import Translactions from '@site/src/components/Translactions';
+import Translations from '@site/src/components/Translations';
 
-<Translactions />
+<Translations />
 # Un `help` in telnet e la guerra che non abbiamo ancora perso
 
 C'è una storia che amo raccontare quando voglio spiegare cos'è davvero l'artigianato del software.

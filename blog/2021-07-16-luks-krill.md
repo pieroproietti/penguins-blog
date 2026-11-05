@@ -5,9 +5,9 @@ title: LUKS krill
 lang: it
 enableComments: true
 ---
-import Translactions from '@site/src/components/Translactions';
+import Translations from '@site/src/components/Translations';
 
-<Translactions />
+<Translations />
 
 
 Cercando di capire come far funzinare krill con luks, vediamo come viene impostato luks per l'installazione fullencrypted su una VM con /dev/sda di 32 GB con Ubuntu.

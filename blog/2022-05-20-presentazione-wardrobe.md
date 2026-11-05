@@ -5,9 +5,9 @@ title: Presentazione wardrobe
 lang: it
 enableComments: true
 ---
-import Translactions from '@site/src/components/Translactions';
+import Translations from '@site/src/components/Translations';
 
-<Translactions />
+<Translations />
 
 
 Dicono che a volte un video è meglio di mille parole.

@@ -6,9 +6,9 @@ lang: en
 enableComments: true
 ---
 
-import Translactions from '@site/src/components/Translactions';
+import Translations from '@site/src/components/Translations';
 
-<Translactions />
+<Translations />
 
 I wrote something about [blendOS](https://blendos.co/) in this previous [post](https://penguins-eggs.net/blog/blendos), now I'm trying to build blendOS image, following official [blendOS Documentation](https://docs.blendos.co/) and particularly this pages:
 

@@ -2,9 +2,9 @@
 title: "Riferimento dei comandi: la guida completa alla CLI di Eggs"
 ---
 
-import Translactions from '@site/src/components/Translactions';
+import Translations from '@site/src/components/Translations';
 
-<Translactions />
+<Translations />
 
 # Riferimento dei comandi: la guida completa alla CLI di Eggs
 

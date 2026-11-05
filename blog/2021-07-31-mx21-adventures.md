@@ -5,9 +5,9 @@ title: MX21 adventures
 lang: en
 enableComments: true
 ---
-import Translactions from '@site/src/components/Translactions';
+import Translations from '@site/src/components/Translations';
 
-<Translactions />
+<Translations />
 
 Few days ago, MX-Linux annunced his new beta release MX21. based on Debian.
 

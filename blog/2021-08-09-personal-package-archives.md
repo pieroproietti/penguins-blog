@@ -5,9 +5,9 @@ title: Personal Package Archives PPA
 lang: en
 enableComments: true
 ---
-import Translactions from '@site/src/components/Translactions';
+import Translations from '@site/src/components/Translations';
 
-<Translactions />
+<Translations />
 
 Today on the advice of the excellent Yannis I've created a PPA repository for eggs. 
 

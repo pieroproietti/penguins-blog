@@ -7,9 +7,9 @@ lang: it
 enableComments: true
 ---
 
-import Translactions from '@site/src/components/Translactions';
+import Translations from '@site/src/components/Translations';
 
-<Translactions />
+<Translations />
 
 Ti sei fatto il tuo Linux. Hai scelto il desktop, installato gli strumenti, sistemato gli script, limato le configurazioni finché accendi la macchina e sai dove mettere le mani.
 

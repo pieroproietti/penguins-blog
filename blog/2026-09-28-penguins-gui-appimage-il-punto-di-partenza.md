@@ -7,9 +7,9 @@ lang: it
 enableComments: true
 ---
 
-import Translactions from '@site/src/components/Translactions';
+import Translations from '@site/src/components/Translations';
 
-<Translactions />
+<Translations />
 
 Ho provato l'AppImage di **penguins-gui** su Linux Mint. L'ho avviata, le ho fatto configurare il repository nativo di penguins-eggs e installare Eggs. Poi ho creato la ISO.
 

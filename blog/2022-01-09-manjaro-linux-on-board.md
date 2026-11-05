@@ -5,9 +5,9 @@ title: manjaro linux on board
 lang: it
 enableComments: true
 ---
-import Translactions from '@site/src/components/Translactions';
+import Translations from '@site/src/components/Translations';
 
-<Translactions />
+<Translations />
 
 ___[E quindi uscimmo a riveder le stelle](https://it.wikipedia.org/wiki/E_quindi_uscimmo_a_riveder_le_stelle)___
 

@@ -5,9 +5,9 @@ title: Good LUKS eggs!
 lang: en
 enableComments: true
 ---
-import Translactions from '@site/src/components/Translactions';
+import Translations from '@site/src/components/Translations';
 
-<Translactions />
+<Translations />
 
 
 Per molto tempo, sino a qualche settimana fa, non ho aggiunto una opzione di backup ad eggs per un preciso motivo: non volevo che inavvertitamente un utente potesse mettere a rischio i suoi dati.

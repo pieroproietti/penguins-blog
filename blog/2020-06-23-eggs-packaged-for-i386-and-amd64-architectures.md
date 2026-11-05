@@ -5,9 +5,9 @@ title: eggs packaged for for i386 and amd64 architectures
 lang: en
 enableComments: true
 ---
-import Translactions from '@site/src/components/Translactions';
+import Translations from '@site/src/components/Translations';
 
-<Translactions />
+<Translations />
 
 Sometimes, to move forward, you need to step back first.
 

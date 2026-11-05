@@ -6,9 +6,9 @@ lang: it
 enableComments: true
 ---
 
-import Translactions from '@site/src/components/Translactions';
+import Translations from '@site/src/components/Translations';
 
-<Translactions />
+<Translations />
 
 ![Qualcuno volà sul nido del cuculo](https://www.billyrivistacinematografica.it/wp-content/uploads/2021/07/kesey-16-932x618.jpeg)
 

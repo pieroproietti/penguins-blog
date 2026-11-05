@@ -6,9 +6,9 @@ lang: it
 enableComments: true
 ---
 
-import Translactions from '@site/src/components/Translactions';
+import Translations from '@site/src/components/Translations';
 
-<Translactions />
+<Translations />
 
 L'anno scorso è stato ricco di soddisfazioni, siamo passati da un programma che era utilizzabile su Arch/Debian/Devuan/Ubuntu e derivate ad un prodotto che comprende anche fedora, opensuse. RHEL compatibili come AlmaLinux e Rocky ed una distro indipendente come Openmamba.
 

@@ -4,9 +4,9 @@ slug: eggs-una-utility-per-creare-la-propria-distribuzione-linux
 title: eggs una utility per creare la propria distribuzione Linux
 lang: it
 ---
-import Translactions from '@site/src/components/Translactions';
+import Translations from '@site/src/components/Translations';
 
-<Translactions />
+<Translations />
 
 Se hai sempre desiderato di creare e mantenere una tua distribuzione Linux personalizzata, forse è il momento di provare a realizzarlo con questa simpatica utility.
 

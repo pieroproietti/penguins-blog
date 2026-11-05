@@ -5,9 +5,9 @@ title: 'wardrobe: colibri, duck, eagle and owl'
 lang: it
 enableComments: true
 ---
-import Translactions from '@site/src/components/Translactions';
+import Translations from '@site/src/components/Translations';
 
-<Translactions />
+<Translations />
 
 Dopo qualche settimana di esperienza dalla creazione di un sistema di scripting per creare - a partire da versione naked - delle customizzazioni complete, sono lieto di annunciare che tutte le mie attuali customizzazioni sono stare ri-create e vengono ad essere gestite con **eggs wardrobe**.
 

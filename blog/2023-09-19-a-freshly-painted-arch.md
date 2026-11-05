@@ -6,9 +6,9 @@ lang: it
 enableComments: true
 ---
 
-import Translactions from '@site/src/components/Translactions';
+import Translations from '@site/src/components/Translations';
 
-<Translactions />
+<Translations />
 
 Tra i vari follower del gruppo Telegram, ve ne è uno particolare, un ragazzo canadese che ormai mi accompagna da qualche anno.
 

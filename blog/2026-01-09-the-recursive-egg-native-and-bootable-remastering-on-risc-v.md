@@ -6,10 +6,10 @@ lang: it
 comments: true # giscus
 enableComments: true
 ---
-import Translactions from '@site/src/components/Translactions';
+import Translations from '@site/src/components/Translations';
 import Admonition from '@theme/Admonition';
 
-<Translactions />
+<Translations />
 
 # L'Uovo Ricorsivo: Rimasterizzazione nativa e bootabile su RISC-V
 

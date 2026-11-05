@@ -4,9 +4,9 @@ title: "Cook: Chef dentro la GUI"
 description: Come usare il selettore di ricette integrato in penguins-gui per esplorare, simulare con dry-run e applicare le ricette di penguins-chef.
 ---
 
-import Translactions from '@site/src/components/Translactions';
+import Translations from '@site/src/components/Translations';
 
-<Translactions />
+<Translations />
 
 # Cook: Penguins Chef dentro Penguins GUI 🍳🎨
 

@@ -7,9 +7,9 @@ lang: it
 enableComments: true
 ---
 
-import Translactions from '@site/src/components/Translactions';
+import Translations from '@site/src/components/Translations';
 
-<Translactions />
+<Translations />
 
 Ogni tanto è utile fermarsi, mettere da parte per un'ora il compilatore e l'editor di testo, e guardare i log del server per capire cosa succede davvero là fuori.
 

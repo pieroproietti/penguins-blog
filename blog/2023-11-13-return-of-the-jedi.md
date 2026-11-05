@@ -6,9 +6,9 @@ lang: it
 enableComments: true
 ---
 
-import Translactions from '@site/src/components/Translactions';
+import Translations from '@site/src/components/Translations';
 
-<Translactions />
+<Translations />
 
 Il [Ritorno dello Jedi](https://it.wikipedia.org/wiki/Il_ritorno_dello_Jedi) è il terzo episodio di Guerre Stellari, uscito nel 1983.
 

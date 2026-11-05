@@ -5,9 +5,9 @@ title: mom and dad
 lang: en
 enableComments: true
 ---
-import Translactions from '@site/src/components/Translactions';
+import Translations from '@site/src/components/Translations';
 
-<Translactions />
+<Translations />
 
 ![mom](/images/mom.png)
 

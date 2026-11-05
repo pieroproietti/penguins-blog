@@ -5,9 +5,9 @@ title: 'wardrobe: ironing'
 lang: it
 enableComments: true
 ---
-import Translactions from '@site/src/components/Translactions';
+import Translations from '@site/src/components/Translations';
 
-<Translactions />
+<Translations />
 
 
 Ho pensato di utilizzare un file yaml per definire i pacchetti e le modifiche da attuare per passare da una configurazione generica, senza interfaccia grafica ne' servizi, ad una customizzazione, anche spinta come andremo a vedere.

@@ -2,9 +2,9 @@
 title: "Indice della documentazione: penguins' eggs"
 ---
 
-import Translactions from '@site/src/components/Translactions';
+import Translations from '@site/src/components/Translations';
 
-<Translactions />
+<Translations />
 
 # Indice della documentazione: penguins' eggs
 

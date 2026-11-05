@@ -4,9 +4,9 @@ title: Quickstart e CLI Reference
 description: Guida rapida e riferimento completo dei comandi del binario chef.
 ---
 
-import Translactions from '@site/src/components/Translactions';
+import Translations from '@site/src/components/Translations';
 
-<Translactions />
+<Translations />
 
 # Quickstart e Command Reference (`chef`)
 

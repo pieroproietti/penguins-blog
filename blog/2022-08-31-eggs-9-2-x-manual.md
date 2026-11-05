@@ -5,9 +5,9 @@ title: eggs 9.2.x manual
 lang: en
 enableComments: true
 ---
-import Translactions from '@site/src/components/Translactions';
+import Translations from '@site/src/components/Translations';
 
-<Translactions />
+<Translations />
 
 
 I am rewriting the new edition of the manual aligned to eggs 9.2.x. Original edition of the eggs manual is released in Italian, of course other languages can be accessed using machine translation.

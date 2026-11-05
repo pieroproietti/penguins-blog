@@ -2,9 +2,9 @@
 title: "Chromebook: dare nuova vita al ferro rigido"
 ---
 
-import Translactions from '@site/src/components/Translactions';
+import Translations from '@site/src/components/Translations';
 
-<Translactions />
+<Translations />
 
 # Chromebook: dare nuova vita al ferro rigido
 

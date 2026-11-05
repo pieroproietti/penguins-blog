@@ -5,9 +5,9 @@ title: "Proxmox VE on ARM64"
 lang: it
 enableComments: true
 ---
-import Translactions from '@site/src/components/Translactions';
+import Translations from '@site/src/components/Translations';
 
-<Translactions />
+<Translations />
 
 Quando è uscita la Raspberry Pi 4 con ben 4 GB di RAM, l'acquistai,non poteva mancare alla mia esperienza!
 

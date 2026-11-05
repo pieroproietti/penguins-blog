@@ -5,9 +5,9 @@ title: Alla ricerca dell'arca perduta
 lang: it
 enableComments: true
 ---
-import Translactions from '@site/src/components/Translactions';
+import Translations from '@site/src/components/Translations';
 
-<Translactions />
+<Translations />
 
 Da un paio di giorni - ormai una settimana fa - sto cercando di far funzionare versioni "antiche" Debian con eggs.
 

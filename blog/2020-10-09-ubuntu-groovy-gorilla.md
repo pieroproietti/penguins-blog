@@ -5,9 +5,9 @@ title: Ubuntu groovy gorilla
 lang: en
 enableComments: true
 ---
-import Translactions from '@site/src/components/Translactions';
+import Translations from '@site/src/components/Translations';
 
-<Translactions />
+<Translations />
 
 I updated the manual today - only in [italian](/docs/eggs-users-guide) and [english](https://penguins--eggs-net.translate.goog/docs/eggs-users-guide?_x_tr_sl=auto&_x_tr_tl=en&_x_tr_hl=en&_x_tr_pto=wapp&_x_tr_hist=true), _automatic and revised translation_ - and tried for the first time eggs with Ubuntu groovy gorilla. It seems to be going apart from a little problem with the calamares displaymanager module that at the moment I simply removed. (It only serves to manage the possible autologin). 
 

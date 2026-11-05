@@ -4,9 +4,9 @@ title: Ricette, Categorie e Costumi
 description: Come sono organizzate le ricette YAML di penguins-chef, la composizione con include e la creazione di costumi personalizzati.
 ---
 
-import Translactions from '@site/src/components/Translactions';
+import Translations from '@site/src/components/Translations';
 
-<Translactions />
+<Translations />
 
 # Struttura delle Ricette, Categorie e Costumi
 

@@ -5,9 +5,9 @@ title: 'wardrobe: accessories'
 lang: it
 enableComments: true
 ---
-import Translactions from '@site/src/components/Translactions';
+import Translations from '@site/src/components/Translations';
 
-<Translactions />
+<Translations />
 
 Ieri ho creato un "vestitino" giusto per aggiungerlo ad una remix di Linuxmint elsie che, come noto, è di base estremamente completa.
 

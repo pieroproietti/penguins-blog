@@ -5,9 +5,9 @@ title: penguins wardrobe readme
 lang: it
 enableComments: true
 ---
-import Translactions from '@site/src/components/Translactions';
+import Translations from '@site/src/components/Translations';
 
-<Translactions />
+<Translations />
 
 Ho scritto e terrò aggiornato un importante [README](https://github.com/pieroproietti/penguins-wardrobe/tree/main/DOCUMENTATION#penguins-wardrobe) su [penguins-wardrobe](https://github.com/pieroproietti/penguins-wardrobe) ed il suo utilizzo. 
 

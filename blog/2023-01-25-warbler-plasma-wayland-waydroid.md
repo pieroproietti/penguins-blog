@@ -5,9 +5,9 @@ title: 'Warbler: plasma/wayland/waydroid'
 lang: en
 enableComments: true
 ---
-import Translactions from '@site/src/components/Translactions';
+import Translations from '@site/src/components/Translations';
 
-<Translactions />
+<Translations />
 
 This is the second version of this experiment, the first - a year ago - was  just named waydroid. It's a temptative to create a slim ISO to be used for develpment.
 

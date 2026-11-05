@@ -6,9 +6,9 @@ lang: it
 enableComments: true
 ---
 
-import Translactions from '@site/src/components/Translactions';
+import Translations from '@site/src/components/Translations';
 
-<Translactions />
+<Translations />
 
 E' passato un mese, forse due dall'inizio dell'avventura con Alpine Linux visto che ho cominciato dopo metà giugno. 
 

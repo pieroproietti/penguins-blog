@@ -6,9 +6,9 @@ lang: it
 comments: true # giscus
 enableComments: true
 ---
-import Translactions from '@site/src/components/Translactions';
+import Translations from '@site/src/components/Translations';
 
-<Translactions />
+<Translations />
 
 ![](/images/2025-10-27-luks-eggs-crittografia.png)
 

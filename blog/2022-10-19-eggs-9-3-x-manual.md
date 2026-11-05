@@ -5,9 +5,9 @@ title: eggs 9.3.x manual
 lang: en
 enableComments: true
 ---
-import Translactions from '@site/src/components/Translactions';
+import Translations from '@site/src/components/Translations';
 
-<Translactions />
+<Translations />
 
 
 The move to eggs **9.3.x** was mainly characterized by the introduction and improvement of the cuckoo command to get a PXE server directly from our live. While previously I used **dnsmasq** to get services **proxy-dhcpd** and **dhcpd**, actually thanks to [FOGProject/node-dhcproxy](https://github.com/FOGProject/node-dhcproxy) we use just node and only a **proxy-dhcpd** service. 

@@ -5,9 +5,9 @@ title: eggs book updated
 lang: it
 enableComments: true
 ---
-import Translactions from '@site/src/components/Translactions';
+import Translations from '@site/src/components/Translations';
 
-<Translactions />
+<Translations />
 
 Ho appena finito di aggiornare il [manuale di eggs](https://penguins-eggs.net/docs/Tutorial/eggs-users-guide) allineandolo alla versione 9.x.
 

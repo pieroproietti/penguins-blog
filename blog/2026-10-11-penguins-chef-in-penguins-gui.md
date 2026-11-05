@@ -7,9 +7,9 @@ lang: it
 enableComments: true
 ---
 
-import Translactions from '@site/src/components/Translactions';
+import Translations from '@site/src/components/Translations';
 
-<Translactions />
+<Translations />
 
 Nei post recenti abbiamo esplorato due tasselli fondamentali della nostra idea di sistema su misura: da una parte **[penguins-gui](/blog/2026/09/28/penguins-gui-appimage-il-punto-di-partenza)**, l'interfaccia desktop che rende immediata e visuale la creazione di una live con Eggs; dall'altra **[penguins-chef](/blog/2026/10/09/penguins-chef-cucinare-il-proprio-linux)**, lo strumento dichiarativo a ricette YAML che permette di plasmare il sistema dal basso, componendo desktop, strumenti e costumi senza bloatware.
 

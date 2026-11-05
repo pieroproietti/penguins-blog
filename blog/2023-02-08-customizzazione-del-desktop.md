@@ -5,9 +5,9 @@ title: Customizzazione del desktop
 lang: en
 enableComments: true
 ---
-import Translactions from '@site/src/components/Translactions';
+import Translations from '@site/src/components/Translations';
 
-<Translactions />
+<Translations />
 
 Partiamo dal desktop standard ed andiamo a modificare, in maniera arbitraria sia lo sfondo che la posizione del menu portando il basso.
 ![desktop-custom](/images/matteo-customizzazione.png)

@@ -5,9 +5,9 @@ title: OEM installation
 lang: it
 enableComments: true
 ---
-import Translactions from '@site/src/components/Translactions';
+import Translations from '@site/src/components/Translations';
 
-<Translactions />
+<Translations />
 
 Sto valutando la possibilità di inserire una installazione OEM all'interno di krill per semplificare il processo di distribuzione di versioni verticali di Linux.
 

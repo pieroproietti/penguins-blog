@@ -5,9 +5,9 @@ title: eggs and cuckoos
 lang: it
 enableComments: true
 ---
-import Translactions from '@site/src/components/Translactions';
+import Translations from '@site/src/components/Translations';
 
-<Translactions />
+<Translations />
 
 ![eggs-and-cuckoos](/images/eggs-and-cuckoos/cuckoo.jpg)
 

@@ -5,9 +5,9 @@ title: Is There Anybody Out There?
 lang: en
 enableComments: true
 ---
-import Translactions from '@site/src/components/Translactions';
+import Translations from '@site/src/components/Translations';
 
-<Translactions />
+<Translations />
 
 These are currently the 10 most clicked distros on [distrowatch](https://distrowatch.com/), to date we can already remaster 
 most of them!

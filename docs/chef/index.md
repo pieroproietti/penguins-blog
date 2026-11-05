@@ -4,9 +4,9 @@ title: Introduzione a Penguins Chef
 description: Il motore dichiarativo a ricette YAML per plasmare il proprio sistema Linux partendo da una base naked.
 ---
 
-import Translactions from '@site/src/components/Translactions';
+import Translations from '@site/src/components/Translations';
 
-<Translactions />
+<Translations />
 
 # Penguins Chef: Cucinare il proprio Linux, ricetta per ricetta 👨‍🍳🐧
 

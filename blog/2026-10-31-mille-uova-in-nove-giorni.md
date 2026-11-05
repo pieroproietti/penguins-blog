@@ -7,9 +7,9 @@ lang: it
 enableComments: true
 ---
 
-import Translactions from '@site/src/components/Translactions';
+import Translations from '@site/src/components/Translations';
 
-<Translactions />
+<Translations />
 
 Nove giorni fa abbiamo acceso **`penguins-census`**, un piccolo faro silenzioso per capire cosa succede là fuori quando qualcuno lancia `eggs remaster` o `eggs sysinstall`. 
 
