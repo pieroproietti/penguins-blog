@@ -155,6 +155,44 @@ const sidebars = {
       label: 'Architettura e sviluppo',
     },
   ],
+
+  zappaSidebar: [
+    {
+      type: 'doc',
+      id: 'dalla-zappa-al-silicio/index',
+      label: 'Dalla zappa al silicio',
+    },
+    {
+      type: 'doc',
+      id: 'dalla-zappa-al-silicio/1',
+      label: 'Cap. 1: La zappa, il trapano e il cavo coassiale',
+    },
+    {
+      type: 'doc',
+      id: 'dalla-zappa-al-silicio/2',
+      label: 'Cap. 2: La foresta e le nicchie ecologiche',
+    },
+    {
+      type: 'doc',
+      id: 'dalla-zappa-al-silicio/3',
+      label: 'Cap. 3: L\'apparato riproduttivo',
+    },
+    {
+      type: 'doc',
+      id: 'dalla-zappa-al-silicio/4',
+      label: 'Cap. 4: Dalla semente al suolo: x86, ARM e RISC-V',
+    },
+    {
+      type: 'doc',
+      id: 'dalla-zappa-al-silicio/5',
+      label: 'Cap. 5: Il ramo e la foglia: naked, Chef e GUI',
+    },
+    {
+      type: 'doc',
+      id: 'dalla-zappa-al-silicio/6',
+      label: 'Cap. 6: Verso la Cina e oltre',
+    },
+  ],
 };
 
 export default sidebars;
