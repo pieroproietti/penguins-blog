@@ -1,5 +1,5 @@
 ---
-title: "2026 OpenAtom Developer Conference Zhengzhou - Appendice: openKylin e penguins-eggs"
+title: "2026 OpenAtom Developer Conference Zhengzhou - Appendice A: openKylin e penguins-eggs"
 authors: pieroproietti
 tags: [openkylin, penguins-eggs]
 description: "Adattamenti necessari per rendere penguinseggs pienamente compatibile con openKylin"
