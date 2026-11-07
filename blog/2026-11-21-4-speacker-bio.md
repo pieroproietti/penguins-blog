@@ -1,5 +1,5 @@
 ---
-title: "2026 OpenAtom Developer Conference Zhengzhou - Speacker bio"
+title: "OADC 2026 - Speacker bio"
 ---
 
 **Piero Proietti**

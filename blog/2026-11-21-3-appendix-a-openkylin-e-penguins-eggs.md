@@ -1,5 +1,5 @@
 ---
-title: "2026 OADC Zhengzhou - Appendice A: openKylin e penguins-eggs"
+title: "OADC 2026 - Appendice A: openKylin e penguins-eggs"
 authors: pieroproietti
 tags: [openkylin, penguins-eggs]
 description: "Adattamenti necessari per rendere penguinseggs pienamente compatibile con openKylin"
