@@ -1,5 +1,5 @@
 ---
-title: "2026 OpenAtom Developer Conference Zhengzhou - Appendice B: RISC-V ed ARM64"
+title: "2026 OADC Zhengzhou - Appendice B: RISC-V ed ARM64"
 authors: pieroproietti
 tags: [openkylin, penguins-eggs]
 description: "Adattamenti necessari per rendere penguinseggs pienamente compatibile con openKylin"
