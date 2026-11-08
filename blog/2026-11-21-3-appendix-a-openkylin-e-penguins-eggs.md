@@ -48,5 +48,5 @@ Today, **openKylin is supported as a first-class citizen** in `penguins-eggs`:
 
 1. **Native Support & Inheritance:** `openkylin` is natively mapped in `distro.go` and indexed in `index.yaml` to dynamically inherit Debian family templates, scripts, and `wardrobe` costumes.
 2. **Continuous Automated Testing ("The Furnace"):** openKylin is integrated into my automated Proxmox VE CI pipeline (`furnace-openkylin.yml`), where every commit is validated through an end-to-end remastering process and a clean-snapshot boot test.
-3. **Freedom to Remaster:** Any openKylin developer or user can now generate custom `naked` servers, lightweight `xfce4` or `ukui` customized  workstations, or full personal backups in minutes with a single command (`sudo eggs produce`).
+3. **Freedom to Remaster:** Any openKylin developer or user can now generate custom `naked` servers, lightweight `xfce4` or `ukui` customized  workstations, or full personal backups in minutes with a single command (`sudo eggs remaster`).
 
