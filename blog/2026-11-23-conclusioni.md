@@ -41,14 +41,14 @@ Per finire, consiglio un viaggio in Cina a tutti, anche solo per turismo visto p
 Di ritorno sul [census](https://penguins-eggs.net/api/census) una gradita sorpresa, tra le distro più utilizzate è spuntata [goldendoglinux](https://goldendoglinux.org/) con 67 eventi.
 
 ## Qualche immagine
-![L'hotel](./images&IMG_20261115_124444.jpg)
-![Il centro conferenze](IMG_20261119_092732.jpg)
-![Gli stand in preparazione](IMG_20261119_184453.jpg)
-![Le prove la sera prima](IMG_20261119_185223.jpg)
-![Stand openKylin](IMG_20261120_105852.jpg)
-![Un marziano ed un robot](IMG_20261120_111611.jpg)
-![Robot piu grandi](IMG_20261120_114938.jpg)
-![La conferenza](IMG_20261120_140709.jpg)
+![L'hotel](/img/zhengzhou/IMG_20261115_124444.jpg)
+![Il centro conferenze](/img/zhengzhou/IMG_20261119_092732.jpg)
+![Gli stand in preparazione la sera prima](/img/zhengzhou/IMG_20261119_184453.jpg)
+![Le prove della sera](/img/zhengzhou/IMG_20261119_185223.jpg)
+![Lo stand openKylin](/img/zhengzhou/IMG_20261120_105852.jpg)
+![Un marziano ed un robot](/img/zhengzhou/IMG_20261120_111611.jpg)
+![Robot piu grandi](/img/zhengzhou/IMG_20261120_114938.jpg)
+![La conferenza](/img/zhengzhou/IMG_20261120_140709.jpg)
 
 
 
