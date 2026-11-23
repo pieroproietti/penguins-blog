@@ -40,6 +40,89 @@ Per finire, consiglio un viaggio in Cina a tutti, anche solo per turismo visto p
 
 Di ritorno sul [census](https://penguins-eggs.net/api/census) una gradita sorpresa, tra le distro più utilizzate è spuntata [goldendoglinux](https://goldendoglinux.org/) con 67 eventi.
 
+Di seguito la foto attuale:
+
+```
+=== FILE: census.jsonl (record totali: 3161, righe invalide: 0) ===
+=== RECORD CN: 115 | UUID univoci: 59 ===
+=== INTERVALLO CN: 2026-10-26T17:27:06Z -> 2026-11-23T07:41:37Z ===
+
+--- AZIONI ---
+  remaster                             :   91 ( 79.1%)
+  sysinstall                           :   24 ( 20.9%)
+
+--- DISTRO (id) ---
+  ubuntu                               :   70 ( 60.9%)
+  linuxmint                            :   13 ( 11.3%)
+  arch                                 :   12 ( 10.4%)
+  omarchy                              :    9 (  7.8%)
+  openkylin                            :    7 (  6.1%)
+  debian                               :    4 (  3.5%)
+
+--- DISTRO + RELEASE + CODENAME ---
+  ubuntu 24.04 (noble)                 :   33 ( 28.7%)
+  ubuntu 26.04 (resolute)              :   24 ( 20.9%)
+  arch - (-)                           :   12 ( 10.4%)
+  linuxmint 7 (gigi)                   :   10 (  8.7%)
+  omarchy 4.0.6 (-)                    :    9 (  7.8%)
+  openkylin 3.0 (huanghe)              :    7 (  6.1%)
+  ubuntu - (-)                         :    7 (  6.1%)
+  ubuntu 22.04 (jammy)                 :    4 (  3.5%)
+  debian 13 (trixie)                   :    4 (  3.5%)
+  linuxmint 22.3 (zena)                :    3 (  2.6%)
+  ubuntu 25.04 (plucky)                :    1 (  0.9%)
+  ubuntu 20.04 (focal)                 :    1 (  0.9%)
+
+--- ARCHITETTURE ---
+  amd64                                :  108 ( 93.9%)
+  arm64                                :    7 (  6.1%)
+
+--- DESKTOP / SESSIONE ---
+  cli                                  :   37 ( 32.2%)
+  gnome                                :   32 ( 27.8%)
+  hyprland                             :   13 ( 11.3%)
+  cinnamon                             :   10 (  8.7%)
+  xfce                                 :    9 (  7.8%)
+  sway                                 :    7 (  6.1%)
+  lxqt                                 :    4 (  3.5%)
+  ukui                                 :    2 (  1.7%)
+  niri                                 :    1 (  0.9%)
+
+--- VIRTUALIZZAZIONE ---
+  none                                 :   75 ( 65.2%)
+  vmware                               :   21 ( 18.3%)
+  oracle                               :   15 ( 13.0%)
+  microsoft                            :    3 (  2.6%)
+  kvm                                  :    1 (  0.9%)
+
+--- ANDAMENTO GIORNALIERO CN ---
+  2026-10-26:    1
+  2026-10-27:    3
+  2026-10-29:    9
+  2026-10-30:    6
+  2026-10-31:    1
+  2026-11-02:    1
+  2026-11-03:    2
+  2026-11-04:    7
+  2026-11-05:   11
+  2026-11-08:    2
+  2026-11-09:    1
+  2026-11-10:    9
+  2026-11-11:   11
+  2026-11-12:    4
+  2026-11-13:    2
+  2026-11-14:    6
+  2026-11-15:    1
+  2026-11-16:    4
+  2026-11-17:    2
+  2026-11-18:    4
+  2026-11-19:    6
+  2026-11-20:    9
+  2026-11-21:    2
+  2026-11-22:    8
+  2026-11-23:    3
+```
+
 ## Qualche immagine
 * L'hotel al mio arrivo
 ![L'hotel](/img/zhengzhou/IMG_20261115_124444.jpg)
