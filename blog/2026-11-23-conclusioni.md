@@ -41,16 +41,26 @@ Per finire, consiglio un viaggio in Cina a tutti, anche solo per turismo visto p
 Di ritorno sul [census](https://penguins-eggs.net/api/census) una gradita sorpresa, tra le distro più utilizzate è spuntata [goldendoglinux](https://goldendoglinux.org/) con 67 eventi.
 
 ## Qualche immagine
+* L'hotel al mio arrivo
 ![L'hotel](/img/zhengzhou/IMG_20261115_124444.jpg)
+* Il centro conferenze di Zhengzhou
 ![Il centro conferenze](/img/zhengzhou/IMG_20261119_092732.jpg)
+* Gli stand in preparazione la sera prima
 ![Gli stand in preparazione la sera prima](/img/zhengzhou/IMG_20261119_184453.jpg)
+* Le nostra prove
 ![Le prove della sera](/img/zhengzhou/IMG_20261119_185223.jpg)
+* Lo stand di openKylin
 ![Lo stand openKylin](/img/zhengzhou/IMG_20261120_105852.jpg)
+* Un marziano ed un robot
 ![Un marziano ed un robot](/img/zhengzhou/IMG_20261120_111611.jpg)
-![Robot piu grandi](/img/zhengzhou/IMG_20261120_114938.jpg)
+* Robot ad altezza umana
+![Robot ad altezza umana](/img/zhengzhou/IMG_20261120_114938.jpg)
+* La conferenza
 ![La conferenza](/img/zhengzhou/IMG_20261120_140709.jpg)
+* Il mio talk
 ![Il mio talk](/img/zhengzhou/b38864c367e52f8fdbbd5ba93cf82b52.jpg)
 ![Il mio talk](/img/zhengzhou/b8129dabda81e97bb297c3c5e1915236.jpg)
+* La cena finale
 ![Il mio talk](/img/zhengzhou/ebeee80cb22813a6d5a587fa4f5c017e.jpg)
 ![i piatti](/img/zhengzhou/IMG_20261120_190034.jpg)
 ![Il mio tavolo](/img/zhengzhou/il-mio-tavolo.jpeg)
