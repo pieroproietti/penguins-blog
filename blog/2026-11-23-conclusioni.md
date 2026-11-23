@@ -52,7 +52,7 @@ Di ritorno sul [census](https://penguins-eggs.net/api/census) una gradita sorpre
 ![Il mio talk](/img/zhengzhou/b38864c367e52f8fdbbd5ba93cf82b52.jpg)
 ![Il mio talk](/img/zhengzhou/b8129dabda81e97bb297c3c5e1915236.jpg)
 ![Il mio talk](/img/zhengzhou/ebeee80cb22813a6d5a587fa4f5c017e.jpg)
-![i piatti](IMG_20261120_190034.jpg)
+![i piatti](/img/zhengzhou/IMG_20261120_190034.jpg)
 ![Il mio tavolo](/img/zhengzhou/il-mio-tavolo.jpeg)
 
 
