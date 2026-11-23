@@ -129,7 +129,7 @@ Di seguito la situazione cinese attuale:
 * L'hotel al mio arrivo
 ![L'hotel](/img/zhengzhou/IMG_20261115_124444.jpg)
 * Il centro conferenze di Zhengzhou
-![Il centro conferenze](/img/zhengzhou/IMG_20261119_092732.jpg)
+![Zhengzhou International Cultural Exchange Center](/img/zhengzhou/IMG_20261119_092732.jpg)
 * Gli stand in preparazione la sera prima
 ![Gli stand in preparazione la sera prima](/img/zhengzhou/IMG_20261119_184453.jpg)
 * Le nostra prove
@@ -152,7 +152,11 @@ Di seguito la situazione cinese attuale:
 ![i piatti](/img/zhengzhou/IMG_20261120_190034.jpg)
 
 ## Link
-[Unite for AI Native, Co-build a Global Ecosystem! The 2026 OpenAtom Developer Conference's openKylin Open Source Forum was successfully held](https://www.openkylin.top/news/4237-en.html)
+* [Unite for AI Native, Co-build a Global Ecosystem! The 2026 OpenAtom Developer Conference's openKylin Open Source Forum was successfully held](https://www.openkylin.top/news/4237-en.html)
+* [Zhengzhou International Cultural Exchange Center](https://www.forcitis.com/en/case/culture-sports/187)
+* [openKylin](https://www.openkylin.top/)
+* [fossasia](https://fossasia.org/)
+
 
 
 
