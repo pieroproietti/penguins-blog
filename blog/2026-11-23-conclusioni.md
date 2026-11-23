@@ -37,12 +37,12 @@ Solo vedere il traffico, sia nella zona nuova dove ho alloggiato che in centro, 
 Per finire, consiglio un viaggio in Cina a tutti, anche solo per turismo visto pure che con 50 euro ci ho campato una settimana, ma soprattutto per aprirsi la mente.
 
 ## La conferenza
-La conferenza è riportata su https://www.openkylin.top/news/4237-en.html, qua mi preme sottolineare come ad un certo punto in mezzo a tutti gli interventi in cinese, il nostro eroe abbia ascoltato un talk sia pure da remoto in inglese, quando è apparso in collegamento video Mario Behling, il fondatore di FOSSASIA. Ma setire da uno schermo gigante, seduto in prima fila, il mio nome e parole di stima per il nostro lavoro, con un saluto caloroso e il riconoscimento esplicito dell'integrazione del mio progetto in openKylin, mi ha creato una dissonanza cognitiva tanto che mi sono alzato incerto se riverire lo schermo o la platea dei presenti; poi ripensandoci a mente fredda ti accorgi di quanto lontano possano viaggiare poche righe di codice scritte nel silenzio di casa.
+La conferenza è riportata su https://www.openkylin.top/news/4237-en.html, qua mi preme sottolineare come ad un certo punto in mezzo a tutti gli interventi in cinese, il nostro eroe abbia ascoltato un talk sia pure da remoto in inglese, quando è apparso in collegamento video Mario Behling, il fondatore di FOSSASIA. Ma sentire da uno schermo gigante, seduto in prima fila, il mio nome e parole di stima per il nostro lavoro, con il riconoscimento esplicito dell'integrazione del mio progetto in openKylin, mi ha creato una dissonanza cognitiva tanto che mi sono alzato incerto se riverire lo schermo o la platea dei presenti; poi ripensandoci a mente fredda ti accorgi di quanto lontano possano viaggiare poche righe di codice scritte nel silenzio di casa.
 
 ## Futuri sviluppi
-Di ritorno a casa sul [census](https://penguins-eggs.net/api/census) una gradita sorpresa, tra le distro più utilizzate è spuntata [goldendoglinux](https://goldendoglinux.org/) con 67 eventi.
+Di ritorno a Roma sul [census](https://penguins-eggs.net/api/census) una gradita sorpresa, tra le distro più utilizzate è spuntata [goldendoglinux](https://goldendoglinux.org/) con 67 eventi, frutto di di qualche studio in Spagna e Korea.
 
-Di seguito la foto attuale:
+Di seguito la situazione cinese attuale:
 
 ```
 === FILE: census.jsonl (record totali: 3161, righe invalide: 0) ===
