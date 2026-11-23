@@ -62,8 +62,9 @@ Di ritorno sul [census](https://penguins-eggs.net/api/census) una gradita sorpre
 ![Il mio talk](/img/zhengzhou/b8129dabda81e97bb297c3c5e1915236.jpg)
 * La cena finale
 ![Il mio talk](/img/zhengzhou/ebeee80cb22813a6d5a587fa4f5c017e.jpg)
-![i piatti](/img/zhengzhou/IMG_20261120_190034.jpg)
+* La cena dopo la fatica con tutto lo staff
 ![Il mio tavolo](/img/zhengzhou/il-mio-tavolo.jpeg)
+![i piatti](/img/zhengzhou/IMG_20261120_190034.jpg)
 
 
 
