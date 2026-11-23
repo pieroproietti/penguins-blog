@@ -12,7 +12,7 @@ Mi restano emozioni profonde. Era la prima volta che andavo in Cina e, sì, ne s
 
 Dall'hotel dove i robot che prendono l'ascensore sono la cosa più normale del mondo, all'uso dell'intelligenza artificiale per cercare di abbattere le barriere linguistiche, fino all'estrema gentilezza e disponibilità dei cinesi in generale.
 
-Sul lato tecnico non posso fare a meno di notare che in Cina i trentenni la fanno da padroni, mentre da noi quasi non esistono: spesso relegati a fare fotocopie in una prolungata adolescenza lavorativa, quasi una condanna all'inazione.
+Sul lato umano non posso fare a meno di notare che in Cina i trentenni la fanno da padroni, mentre da noi quasi non esistono: spesso relegati a fare fotocopie in una prolungata adolescenza lavorativa, quasi una condanna all'inazione.
 
 I bambini vanno a scuola da soli, anche alle elementari, almeno a Zhengzhou e nella zona nuova dove ho alloggiato.
 
@@ -35,3 +35,21 @@ Ho risolto prima cambiando 50 euro che mi sono bastati per tutta la settimana, p
 Solo vedere il traffico, sia nella zona nuova dove ho alloggiato che in centro, muoversi senza fare rumore: è tutto elettrico, dalle biciclette ai tricicli, dai quadricicli alle auto. Mentre qua da noi si discute ancora su quale sia la soluzione, vederla attuata dal vivo non ha prezzo.
 
 Per finire, consiglio un viaggio in Cina a tutti, anche solo per turismo visto pure che con 50 euro ci ho campato una settimana, ma soprattutto per aprirsi la mente.
+
+## Futuri sviluppi
+
+Di ritorno sul [census](https://penguins-eggs.net/api/census) una gradita sorpresa, tra le distro più utilizzate è spuntata [goldendoglinux](https://goldendoglinux.org/) con 67 eventi.
+
+## Qualche immagine
+![L'hotel](./images&IMG_20261115_124444.jpg)
+![Il centro conferenze](IMG_20261119_092732.jpg)
+![Gli stand in preparazione](IMG_20261119_184453.jpg)
+![Le prove la sera prima](IMG_20261119_185223.jpg)
+![Stand openKylin](IMG_20261120_105852.jpg)
+![Un marziano ed un robot](IMG_20261120_111611.jpg)
+![Robot piu grandi](IMG_20261120_114938.jpg)
+![La conferenza](IMG_20261120_140709.jpg)
+
+
+
+
