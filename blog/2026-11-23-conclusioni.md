@@ -149,5 +149,8 @@ Di seguito la foto attuale:
 ![Il mio tavolo](/img/zhengzhou/il-mio-tavolo.jpeg)
 ![i piatti](/img/zhengzhou/IMG_20261120_190034.jpg)
 
+## Link
+[Unite for AI Native, Co-build a Global Ecosystem! The 2026 OpenAtom Developer Conference's openKylin Open Source Forum was successfully held](https://www.openkylin.top/news/4237-en.html)
+
 
 
