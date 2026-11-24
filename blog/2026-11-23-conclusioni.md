@@ -37,7 +37,13 @@ Solo vedere il traffico, sia nella zona nuova dove ho alloggiato che in centro, 
 Per finire, consiglio un viaggio in Cina a tutti, anche solo per turismo visto pure che con 50 euro ci ho campato una settimana, ma soprattutto per aprirsi la mente.
 
 ## La conferenza
-La conferenza è riportata su https://www.openkylin.top/news/4237-en.html, qua mi preme sottolineare come ad un certo punto in mezzo a tutti gli interventi in cinese, il nostro eroe abbia ascoltato un talk sia pure da remoto in inglese, quando è apparso in collegamento video [Mario Behling](https://mariobehling.com/), il fondatore di [FOSSASIA](https://fossasia.org/). Ma sentire da uno schermo gigante, seduto in prima fila, il mio nome e parole di stima per il nostro lavoro, con il riconoscimento esplicito dell'integrazione del mio progetto in openKylin, mi ha creato una dissonanza cognitiva tale che mi sono alzato incerto se riverire lo schermo o la platea dei presenti; poi ripensandoci a mente fredda ti accorgi di quanto lontano possano viaggiare poche righe di codice scritte nel silenzio di casa.
+Il 20 novembre 2026, la conferenza degli sviluppatori OpenAtom 2026 (2026 OpenAtom Developers Conference), promossa dalla Fondazione Open Source OpenAtom, si è tenuta solennemente a Zhengzhou. Nel pomeriggio dello stesso giorno si è svolto con successo il forum open-source OpenAtom openKylin (denominato "openKylin"), uno dei sotto-forum chiave dell'evento. Rappresentanti provenienti da università, imprese e comunità open source hanno condiviso i più recenti progressi ed esperienze pratiche sui sistemi operativi a codice sorgente aperto, concentrandosi sui sistemi operativi basati su agenti intelligenti, sugli ecosistemi applicativi e dei chip e sulle applicazioni industriali, discutendo insieme di innovazione tecnologica e sviluppo dell'ecosistema. [link](https://www.openkylin.top/news/4237-en.html)
+
+Qua mi preme soprattutto sottolineare come - in mezzo a tutti gli interventi in cinese - il nostro eroe abbia ascoltato un talk sia pure da remoto in inglese, quando è apparso in collegamento remoto [Mario Behling](https://mariobehling.com/), il fondatore di [FOSSASIA](https://fossasia.org/). 
+
+Ma sentire da uno schermo gigante, io seduto in prima fila, il mio nome e parole di stima per il nostro lavoro, con il riconoscimento esplicito dell'integrazione del mio progetto in openKylin, mi ha creato una dissonanza cognitiva tale che mi sono alzato incerto se riverire lo schermo o la platea dei presenti.
+
+Ripensandoci a mente fredda mi accordo di quanto lontano possano viaggiare delle righe di codice scritte nel silenzio di casa.
 
 ## Futuri sviluppi
 Di ritorno a Roma sul [census](https://penguins-eggs.net/api/census) una gradita sorpresa, tra le distro più utilizzate è spuntata [goldendoglinux](https://goldendoglinux.org/) con 67 eventi, frutto di di qualche studio in Spagna e Korea.
@@ -147,10 +153,10 @@ Di seguito la situazione cinese attuale:
 ![Il mio talk](/img/zhengzhou/b8129dabda81e97bb297c3c5e1915236.jpg)
 * La cena finale
 ![Il mio talk](/img/zhengzhou/ebeee80cb22813a6d5a587fa4f5c017e.jpg)
-* La cena dopo la fatica con tutto lo staff
+* La cena dopo la fatica con i giovani dello staff
 ![Il mio tavolo](/img/zhengzhou/1000024718.jpg)
 ![Il mio tavolo](/img/zhengzhou/il-mio-tavolo.jpeg)
-![i piatti](/img/zhengzhou/IMG_20261120_190034.jpg)
+![I piatti](/img/zhengzhou/IMG_20261120_190034.jpg)
 
 ## Link
 * [Unite for AI Native, Co-build a Global Ecosystem! The 2026 OpenAtom Developer Conference's openKylin Open Source Forum was successfully held](https://www.openkylin.top/news/4237-en.html)
