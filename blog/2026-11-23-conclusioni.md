@@ -148,6 +148,7 @@ Di seguito la situazione cinese attuale:
 * La cena finale
 ![Il mio talk](/img/zhengzhou/ebeee80cb22813a6d5a587fa4f5c017e.jpg)
 * La cena dopo la fatica con tutto lo staff
+![Il mio tavolo](/img/zhengzhou/1000024718.jpg)
 ![Il mio tavolo](/img/zhengzhou/il-mio-tavolo.jpeg)
 ![i piatti](/img/zhengzhou/IMG_20261120_190034.jpg)
 
